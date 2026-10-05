@@ -8,6 +8,7 @@
 #include <linux/module.h>
 #include <linux/mutex.h>
 #include <linux/of.h>
+#include <linux/pm_runtime.h>
 #include <linux/regmap.h>
 #include <linux/sysfs.h>
 
@@ -232,6 +233,29 @@ static void sc132gs_power_off(struct sc132gs *sensor)
 		clk_disable_unprepare(sensor->xclk);
 }
 
+/* Stream-on holds a PM reference until stream-off. PM callbacks do not take
+ * sensor->lock: resume/put may run synchronously while that lock is held.
+ */
+static int sc132gs_runtime_resume(struct device *dev)
+{
+	struct v4l2_subdev *sd = dev_get_drvdata(dev);
+
+	return sc132gs_power_on(to_sc132gs(sd));
+}
+
+static int sc132gs_runtime_suspend(struct device *dev)
+{
+	struct v4l2_subdev *sd = dev_get_drvdata(dev);
+
+	sc132gs_power_off(to_sc132gs(sd));
+	return 0;
+}
+
+static const struct dev_pm_ops sc132gs_pm_ops = {
+	SET_RUNTIME_PM_OPS(sc132gs_runtime_suspend,
+			   sc132gs_runtime_resume, NULL)
+};
+
 static int sc132gs_write_regs(struct sc132gs *sensor,
 			      const struct sc132gs_reg *regs,
 			      size_t count)
@@ -379,8 +403,8 @@ static int sc132gs_s_stream(struct v4l2_subdev *sd, int enable)
 		goto unlock;
 
 	if (enable) {
-		ret = sc132gs_power_on(sensor);
-		if (ret)
+		ret = pm_runtime_resume_and_get(sensor->dev);
+		if (ret < 0)
 			goto unlock;
 		ret = sc132gs_write_mode(sensor);
 		if (!ret) {
@@ -404,7 +428,7 @@ static int sc132gs_s_stream(struct v4l2_subdev *sd, int enable)
 		}
 		if (ret) {
 			dev_err(sensor->dev, "stream-on programming failed: %d\n", ret);
-			sc132gs_power_off(sensor);
+			pm_runtime_put_sync_suspend(sensor->dev);
 			goto unlock;
 		}
 		ret = regmap_read(sensor->regmap, SC132GS_REG_CTRL_MODE, &mode);
@@ -414,7 +438,7 @@ static int sc132gs_s_stream(struct v4l2_subdev *sd, int enable)
 				ret, ret ? 0 : mode);
 			if (!ret)
 				ret = -EIO;
-			sc132gs_power_off(sensor);
+			pm_runtime_put_sync_suspend(sensor->dev);
 			goto unlock;
 		}
 		dev_info(sensor->dev, "stream-on confirmed: reg 0x0100=0x%02x\n",
@@ -424,7 +448,8 @@ static int sc132gs_s_stream(struct v4l2_subdev *sd, int enable)
 				   SC132GS_MODE_STANDBY);
 		if (ret)
 			dev_err(sensor->dev, "stream-off programming failed: %d\n", ret);
-		sc132gs_power_off(sensor);
+		pm_runtime_mark_last_busy(sensor->dev);
+		pm_runtime_put_autosuspend(sensor->dev);
 	}
 	sensor->streaming = !!enable;
 
@@ -601,17 +626,22 @@ static int sc132gs_probe(struct i2c_client *client)
 		ctrl->flags |= V4L2_CTRL_FLAG_READ_ONLY;
 	if (sensor->ctrls.error) {
 		ret = sensor->ctrls.error;
-		goto free_entity;
+		goto free_ctrls;
 	}
 	sensor->sd.ctrl_handler = &sensor->ctrls;
+	/* Probe identified the sensor and left its clock disabled. */
+	pm_runtime_set_suspended(dev);
+	pm_runtime_set_autosuspend_delay(dev, 1000);
+	pm_runtime_use_autosuspend(dev);
+	pm_runtime_enable(dev);
 
 	ret = v4l2_async_register_subdev_sensor(&sensor->sd);
 	if (ret)
-		goto free_ctrls;
+		goto disable_pm;
 	ret = device_create_file(dev, &dev_attr_trigger_60fps);
 	if (ret) {
 		v4l2_async_unregister_subdev(&sensor->sd);
-		goto free_ctrls;
+		goto disable_pm;
 	}
 
 	dev_info(dev,
@@ -620,9 +650,11 @@ static int sc132gs_probe(struct i2c_client *client)
 		 sensor->external_trigger ? "external-trigger slave" : "free-run");
 	return 0;
 
+disable_pm:
+	pm_runtime_disable(dev);
+	pm_runtime_dont_use_autosuspend(dev);
 free_ctrls:
 	v4l2_ctrl_handler_free(&sensor->ctrls);
-free_entity:
 	media_entity_cleanup(&sensor->sd.entity);
 	return ret;
 }
@@ -634,6 +666,13 @@ static void sc132gs_remove(struct i2c_client *client)
 
 	device_remove_file(&client->dev, &dev_attr_trigger_60fps);
 	v4l2_async_unregister_subdev(sd);
+	if (sensor->streaming)
+		sc132gs_s_stream(sd, 0);
+	pm_runtime_disable(&client->dev);
+	if (!pm_runtime_status_suspended(&client->dev))
+		sc132gs_power_off(sensor);
+	pm_runtime_set_suspended(&client->dev);
+	pm_runtime_dont_use_autosuspend(&client->dev);
 	v4l2_ctrl_handler_free(&sensor->ctrls);
 	media_entity_cleanup(&sd->entity);
 	mutex_destroy(&sensor->lock);
@@ -649,6 +688,7 @@ static struct i2c_driver sc132gs_i2c_driver = {
 	.driver = {
 		.name = "sc132gs",
 		.of_match_table = sc132gs_of_match,
+		.pm = &sc132gs_pm_ops,
 	},
 	.probe = sc132gs_probe,
 	.remove = sc132gs_remove,
