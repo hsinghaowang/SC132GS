@@ -9,6 +9,7 @@
 #include <cstring>
 #include <deque>
 #include <fcntl.h>
+#include <iostream>
 #include <optional>
 #include <poll.h>
 #include <stdexcept>
@@ -264,12 +265,18 @@ struct StereoCapture::Impl {
                     have_pair = false;
                     continue;
                 }
-                if (have_pair && (one.sequence != last0 + 1 ||
-                                  two.sequence != last1 + 1)) {
+                if (have_pair && (one.sequence <= last0 ||
+                                  two.sequence <= last1)) {
                     throw std::runtime_error(
-                        "capture frame gap cam0=" + std::to_string(last0) +
+                        "capture sequence regressed cam0=" + std::to_string(last0) +
                         "->" + std::to_string(one.sequence) + " cam1=" +
                         std::to_string(last1) + "->" + std::to_string(two.sequence));
+                }
+                if (have_pair && (one.sequence != last0 + 1 ||
+                                  two.sequence != last1 + 1)) {
+                    std::cerr << "capture frame gap cam0=" << last0 << "->"
+                              << one.sequence << " cam1=" << last1 << "->"
+                              << two.sequence << "; continuing\n";
                 }
                 have_pair = true;
                 last0 = one.sequence;
