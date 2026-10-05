@@ -1,0 +1,42 @@
+# Local scratch, downloaded dependencies, and external checkouts
+/tmp/
+/vlc-help.txt
+/outputs/linux-qcom-1084/
+/outputs/01a0a426-77c4-7df0-b2f0-80d22f6588a5/
+**/node_modules/
+**/platform-tools/
+**/usb_driver/
+
+# Build products and local runtime state
+**/build/
+**/build-*/
+**/bin/
+**/obj/
+**/__pycache__/
+*.pyc
+*.exe
+*.dll
+*.so
+*.so.*
+*.ko
+*.o
+*.obj
+*.pdb
+*.log
+*.pid
+
+# Captures, device images, and downloaded archives
+**/captures/
+*.raw
+*.h265
+*.img
+*.dtb
+*.zip
+*.tar.gz
+*.tgz
+/outputs/sc132gs_v4l2_probe/recovery-tools/canonical-x03/dtb.bin
+/outputs/stereo_h265_rtsp/diagnostics/*.png
+
+# Keep the rollback record, exclude its snapshots and extracted history
+/outputs/ae-restore-20261005/*
+!/outputs/ae-restore-20261005/README.md

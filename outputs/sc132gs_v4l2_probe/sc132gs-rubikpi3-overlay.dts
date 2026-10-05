@@ -1,0 +1,72 @@
+/dts-v1/;
+/plugin/;
+
+/*
+ * First-probe topology only:
+ *   RUBIK camera slot 0 -> CCI1 master 0 -> CSIPHY1 -> VFE RDI.
+ * D-Robotics' public 1088x1280 RAW10 receiver configuration specifies one
+ * data lane at 1200 Mbps total. 600 MHz is therefore the CSI-2 DDR link
+ * frequency. It remains unverified on QCS6490 until CSIPHY/CSID frame
+ * evidence exists.
+ */
+
+&cci1 {
+	status = "okay";
+};
+
+&cci1_i2c0 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	clock-frequency = <100000>;
+
+	sc132gs: camera@32 {
+		compatible = "smartsens,sc132gs";
+		reg = <0x32>;
+		reset-gpios = <&tlmm 57 1>;
+
+		port {
+			sc132gs_ep: endpoint {
+				clock-lanes = <7>;
+				data-lanes = <0>;
+				link-frequencies = /bits/ 64 <600000000>;
+				remote-endpoint = <&camss_ep>;
+			};
+		};
+	};
+};
+
+&camss {
+	status = "okay";
+	/* Ubuntu's packaged DTB uses the non-standard plural spelling. */
+	power-domain-names = "ife0", "ife1", "ife2", "top";
+	/* The SC7280 CAMSS resource table requests this clock as cpas_ahb. */
+	clock-names = "camnoc_axi",
+		"csi0", "csi1", "csi2", "csi3", "csi4",
+		"csiphy0", "csiphy0_timer",
+		"csiphy1", "csiphy1_timer",
+		"csiphy2", "csiphy2_timer",
+		"csiphy3", "csiphy3_timer",
+		"csiphy4", "csiphy4_timer",
+		"cpas_ahb", "gcc_camera_axi", "soc_ahb",
+		"vfe0_axi", "vfe0", "vfe0_cphy_rx",
+		"vfe1_axi", "vfe1", "vfe1_cphy_rx",
+		"vfe2_axi", "vfe2", "vfe2_cphy_rx",
+		"vfe0_lite", "vfe0_lite_cphy_rx",
+		"vfe1_lite", "vfe1_lite_cphy_rx";
+	vdda-phy-supply = <&vreg_l10c_0p88>;
+	vdda-pll-supply = <&vreg_l6b_1p2>;
+
+	ports {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		port@1 {
+			reg = <1>;
+
+			camss_ep: endpoint {
+				clock-lanes = <7>;
+				data-lanes = <0>;
+				remote-endpoint = <&sc132gs_ep>;
+			};
+		};
+	};
+};

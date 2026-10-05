@@ -1,0 +1,22 @@
+#!/bin/sh
+exec tail -n +3 "$0"
+# Dedicated, non-default entry. Keep the normal Ubuntu entry unchanged.
+menuentry 'Ubuntu CAMSS host-only probe' --id 'camss-host-only-probe' {
+	insmod gzio
+	insmod part_gpt
+	insmod ext2
+	search --no-floppy --fs-uuid --set=root db6f28b1-7807-4305-8e0d-1ce17219ef7e
+	linux /boot/vmlinuz-6.8.0-1084-qcom root=UUID=db6f28b1-7807-4305-8e0d-1ce17219ef7e ro console=ttyMSM0,115200n8 pcie_pme=nomsi earlycon systemd.unit=multi-user.target
+	devicetree /boot/dtb/sc132gs/qcs6490-rubikpi3-camss-host-only.dtb
+	initrd /boot/initrd.img-6.8.0-1084-qcom
+}
+
+menuentry 'Ubuntu SC132GS V4L2 probe' --id 'sc132gs-v4l2-probe' {
+	insmod gzio
+	insmod part_gpt
+	insmod ext2
+	search --no-floppy --fs-uuid --set=root db6f28b1-7807-4305-8e0d-1ce17219ef7e
+	linux /boot/vmlinuz-6.8.0-1084-qcom root=UUID=db6f28b1-7807-4305-8e0d-1ce17219ef7e ro console=ttyMSM0,115200n8 pcie_pme=nomsi earlycon systemd.unit=multi-user.target
+	devicetree /boot/dtb/sc132gs/qcs6490-rubikpi3-sc132gs-v4l2.dtb
+	initrd /boot/initrd.img-6.8.0-1084-qcom
+}
