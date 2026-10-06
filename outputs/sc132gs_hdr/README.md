@@ -1,5 +1,12 @@
 # SC132GS single-frame HDR — 2026-10-06
 
+The later mode-controller update supports both two-lane Linear 60 FPS and HDR
+30 FPS with the same Device Tree. Use `sudo sc132gs-ctl set-mode linear` or
+`sudo sc132gs-ctl set-mode hdr`; mode switches manage both eyes, AE and RTSP.
+See [runtime mode switching](../sc132gs_v4l2_probe/MODE_SWITCH.md). The module
+parameter selects only the initial mode; read actual runtime state with
+`sc132gs-ctl mode` or `sudo sc132gs-ctl status`.
+
 The two GS130WI sensors on RUBIK Pi 3 use the vendor 1088×1280 RAW10
 30 FPS two-lane HDR register sequence. This enables sensor HDR; it does not
 apply a contrast/gamma filter or alternate software exposures.
@@ -33,7 +40,11 @@ preserves the sensor HDR settings and 30-FPS capture mode.
 - Exposure follows the vendor `extra_mode` implementation: the control value
   multiplied by four is written to `0x3e31/0x3e32`. The driver uses a conservative
   control ceiling of 2176, based on the vendor long-exposure bound. These are
-  vendor control units, not a verified microsecond conversion.
+  compatibility control units: the datasheet's 1/16-line register encoding
+  makes one HDR control step 1/4 nominal line. Physical duration in this trigger
+  profile is not verified. HDRC ratio `0x5400` now follows the page-21 formula
+  at every exposure update, grouped with `0x3e31/32`; see
+  [ratio verification and RAW comparison](../sc132gs_v4l2_probe/HDR_RATIO.md).
   In the faulty trigger profile, changing this control from 200 to 2176 did
   not appreciably change scene brightness, while the legacy long-exposure
   registers did. A register write alone is not physical exposure validation.

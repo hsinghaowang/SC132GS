@@ -1,0 +1,33 @@
+{
+  "mode": "linear",
+  "fps": 60,
+  "fdt_sha256": "86f44d16cfca74c00c27ee9df56e47ee344c1b788210d9a331b683f7ab5bd804",
+  "streaming_mode_change_rejected": true,
+  "concurrent_switch_rejected": true,
+  "paired_capture": "pairs=300 elapsed_s=4.98385 fps=59.9938 max_timestamp_delta_us=264 cam0_sequence=62..361 cam1_sequence=58..357 luma_checksum=48868",
+  "raw": [
+    {
+      "camera": 0,
+      "bytes_per_frame": 1740800,
+      "frames": 3,
+      "unique_frames": 3,
+      "hashes": [
+        "0993761328b6228a4304f9301ed41e992568aa2bbbdb2f19fb39258482396bb5",
+        "cf32cc29278d91108b3a31f0c643922d02bb63eba8fbb725862a9971c7ef0903",
+        "e9cbfbc115c20982016fa119f452902cb1708ba24dde1c61a850939a2667d496"
+      ]
+    },
+    {
+      "camera": 1,
+      "bytes_per_frame": 1740800,
+      "frames": 3,
+      "unique_frames": 3,
+      "hashes": [
+        "85231aee95a548b0051fe58341f97fea893ddaca49f5f8299ec5a68c0ab2bf86",
+        "a77c8cfc2d58816cef99ce825d09a1e90c930579428b8e1ff247c49c0a0d8269",
+        "f08b039c349c283025a61188956f006ac10370f87a3395690b68d7e4432657bf"
+      ]
+    }
+  ],
+  "restart": "camera_mode phase=inspecting\ncamera_mode phase=stopping\ncamera_mode phase=configuring\ncamera_mode phase=starting\ncamera_mode phase=verifying\ncamera_mode phase=persisting\ncamera_mode phase=ready\nok camera_mode=linear fps=60 running=1"
+}

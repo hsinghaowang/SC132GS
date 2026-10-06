@@ -1,0 +1,249 @@
+{
+  "before": "ok mode=auto camera_mode=hdr hdr_enabled=1 target_percent=40 cam0_percent=37 cam1_percent=40 exposure_lines=2176 gain_index=59 fps_x10=299 max_exposure_lines=2176 brightness_limited=0 error_errno=0",
+  "updates": [
+    {
+      "control": 8,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 32,
+          "ratio": 255,
+          "gain": [
+            35,
+            63
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 32,
+          "ratio": 255,
+          "gain": [
+            35,
+            63
+          ]
+        }
+      ]
+    },
+    {
+      "control": 200,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 800,
+          "ratio": 246,
+          "gain": [
+            35,
+            63
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 800,
+          "ratio": 246,
+          "gain": [
+            35,
+            63
+          ]
+        }
+      ]
+    },
+    {
+      "control": 808,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 3232,
+          "ratio": 220,
+          "gain": [
+            35,
+            63
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 3232,
+          "ratio": 220,
+          "gain": [
+            35,
+            63
+          ]
+        }
+      ]
+    },
+    {
+      "control": 1492,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 5968,
+          "ratio": 191,
+          "gain": [
+            35,
+            63
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 5968,
+          "ratio": 191,
+          "gain": [
+            35,
+            63
+          ]
+        }
+      ]
+    },
+    {
+      "control": 2176,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            35,
+            63
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            35,
+            63
+          ]
+        }
+      ]
+    },
+    {
+      "control": 808,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 3232,
+          "ratio": 220,
+          "gain": [
+            35,
+            63
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 3232,
+          "ratio": 220,
+          "gain": [
+            35,
+            63
+          ]
+        }
+      ]
+    },
+    {
+      "control": 2176,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            35,
+            63
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            35,
+            63
+          ]
+        }
+      ]
+    }
+  ],
+  "invalid_controls": [
+    {
+      "subdev": "/dev/v4l-subdev27",
+      "input": 0,
+      "result": "",
+      "cached_control": 8,
+      "registers": {
+        "total": 23872,
+        "second": 32,
+        "ratio": 255,
+        "gain": [
+          35,
+          63
+        ]
+      }
+    },
+    {
+      "subdev": "/dev/v4l-subdev27",
+      "input": 2177,
+      "result": "",
+      "cached_control": 2176,
+      "registers": {
+        "total": 23872,
+        "second": 8704,
+        "ratio": 162,
+        "gain": [
+          35,
+          63
+        ]
+      }
+    },
+    {
+      "subdev": "/dev/v4l-subdev28",
+      "input": 0,
+      "result": "",
+      "cached_control": 8,
+      "registers": {
+        "total": 23872,
+        "second": 32,
+        "ratio": 255,
+        "gain": [
+          35,
+          63
+        ]
+      }
+    },
+    {
+      "subdev": "/dev/v4l-subdev28",
+      "input": 2177,
+      "result": "",
+      "cached_control": 2176,
+      "registers": {
+        "total": 23872,
+        "second": 8704,
+        "ratio": 162,
+        "gain": [
+          35,
+          63
+        ]
+      }
+    }
+  ],
+  "restored_registers": [
+    {
+      "total": 23872,
+      "second": 8704,
+      "ratio": 162,
+      "gain": [
+        35,
+        63
+      ]
+    },
+    {
+      "total": 23872,
+      "second": 8704,
+      "ratio": 162,
+      "gain": [
+        35,
+        63
+      ]
+    }
+  ],
+  "after": "ok mode=auto camera_mode=hdr hdr_enabled=1 target_percent=40 cam0_percent=37 cam1_percent=41 exposure_lines=2176 gain_index=59 fps_x10=300 max_exposure_lines=2176 brightness_limited=0 error_errno=0"
+}

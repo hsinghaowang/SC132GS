@@ -1,5 +1,68 @@
 # 雙目 RAW10 → 各眼水平鏡像 → 左右並排 H.265 → RTSP 原型
 
+## HDR / Linear 切換（2026-10-06）
+
+板端 `sudo sc132gs-ctl set-mode linear` 選擇 2-lane Linear 60 FPS；
+`sudo sc132gs-ctl set-mode hdr` 選擇 2-lane HDR 30 FPS。
+兩眼、曝光控制及串流由同一控制器管理，RTSP 位址保持
+`rtsp://192.168.137.226:8554/stereo`。切換期間連線會中斷。
+啟動腳本依兩眼實際 WDR 控制狀態選擇 FPS；`hdr` 模組參數只代表初始模式。
+詳見 [模式切換與 UML](../sc132gs_v4l2_probe/MODE_SWITCH.md)。
+
+2026-10-06 後續實測發現，AE 的 `fps_x10` 依感測器序號與時間戳
+估計感測器幀率，不能代表串流實際交付幀率。當時 Linear 顯示約
+60 FPS，但串流處理約 25 FPS、RTSP 接收約 12 FPS，並出現序號缺口。
+另外，編碼器驅動保留已關閉的 session，導致重連時超過 session 上限。
+停止串流且確認編碼器裝置無使用者後，重新載入 `iris_vpu` 清除殘留；
+CAMSS 與感測器驅動保持載入。RTSP 程式補上 `stop_on_disconnect`
+與每秒清理過期 session，釋放沒有送 TEARDOWN 就離線的客戶端資源。
+連續三次重連取得約 59.77、60.15、60.59 FPS；雙客戶端測試中一個
+離線後，另一個仍維持約 59.88 FPS。這些是 RTP 接收量測，尚不是
+Windows VLC 顯示 FPS 或長時間穩定性的證明。
+
+上述短時間測試後，503 再次復發；只清理 RTSP session 無法解決
+編碼器驅動保留已關閉實例的問題。後續修正將硬體編碼管線移出
+RTSP media factory，由 `StereoRtspServer::Impl` 在服務啟動時建立一次，
+持續輸出 H.265 AU 到 appsink。播放器的 appsrc 只接收已編碼資料並
+做 RTP 封包傳送，斷線／重連不建立新的硬體編碼器。每次建立 RTSP
+media 會請求包含 headers 的關鍵幀，並從該連線的第一個關鍵幀
+重新計算時間戳。
+
+模式控制器停止服務後，依 sysfs 驅動身分找出 codec 裝置，確認
+沒有外部使用者才重新載入 `iris_vpu`，清除模式切換前的韌體 session。
+外部 codec 使用者存在時回報 busy。CAMSS、感測器及 Device Tree
+保留。log 新增 `encoded_fps` 與 `rtsp_fps`，分別顯示實際編碼及
+推送至 RTSP appsrc 的幀率；`rtsp_fps` 不代表 VLC 顯示幀率。
+
+修正後 15 次連續突然斷線／重連均取得約 60 FPS；三輪 HDR／Linear
+切換各取得約 30／60 FPS。軟體解碼取得 418 張相異的 2176×1280
+兩眼畫面。證據位於 `../sc132gs_v4l2_probe/mode-switch-evidence-20261006/`
+的 `persistent-encoder-*.json` 與圖片。這次驗證涵蓋超過先前 session
+上限的重連次數，仍不代表無限期運行測試。
+
+```mermaid
+sequenceDiagram
+    participant Service as 串流服務
+    participant Encoder as 硬體編碼器
+    participant RTSP as RTSP 傳送管線
+    actor Player as VLC
+    Service->>Encoder: 啟動一次，持續編碼
+    Player->>RTSP: 連線
+    RTSP->>Encoder: 請求含 headers 的關鍵幀
+    Encoder-->>RTSP: H.265 影格
+    RTSP-->>Player: RTP 影像
+    Player->>RTSP: 斷線
+    Note over Encoder: 持續運作，重連不重建編碼器
+    Player->>RTSP: 重新連線
+    Encoder-->>RTSP: 新關鍵幀
+    RTSP-->>Player: RTP 影像
+    Service->>Encoder: 模式切換時停止並重建
+```
+
+兩種模式共用 AE 目標與 8-bit 灰階輸出，畫面整體亮度接近是可能的。
+感測器 HDR 是分段光響應；目前已驗證寄存器模式切換，尚未以受控
+亮暗場景量測兩種模式的有效動態範圍差異。
+
 ## Bayer 網格修正（2026-10-06）
 
 目前兩路 `pRAA` 是 RGGB Bayer RAW10。原先將每個感測器樣本直接當成

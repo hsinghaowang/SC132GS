@@ -1,0 +1,19 @@
+{
+  "linear": "camera_mode phase=inspecting\ncamera_mode phase=stopping\ncamera_mode phase=configuring\ncamera_mode phase=starting\ncamera_mode phase=verifying\ncamera_mode phase=persisting\ncamera_mode phase=ready\nok camera_mode=linear fps=60 running=1\n",
+  "linear_status": "ok mode=off camera_mode=linear hdr_enabled=0 target_percent=37 cam0_percent=31 cam1_percent=33 exposure_lines=808 gain_index=56 fps_x10=600 max_exposure_lines=1330 brightness_limited=0 error_errno=0\n",
+  "hdr": "camera_mode phase=inspecting\ncamera_mode phase=stopping\ncamera_mode phase=configuring\ncamera_mode phase=starting\ncamera_mode phase=verifying\ncamera_mode phase=persisting\ncamera_mode phase=ready\nok camera_mode=hdr fps=30 running=1\n",
+  "hdr_status": "ok mode=off camera_mode=hdr hdr_enabled=1 target_percent=37 cam0_percent=36 cam1_percent=39 exposure_lines=808 gain_index=56 fps_x10=299 max_exposure_lines=2176 brightness_limited=0 error_errno=0\n",
+  "idempotent_no_restart": true,
+  "late_failure_recovery": "camera_mode phase=inspecting\ncamera_mode phase=stopping\ncamera_mode phase=configuring\ncamera_mode phase=starting\ncamera_mode phase=verifying\ncamera_mode phase=persisting\ncamera_mode phase=restoring\nerror code=mode_switch reason=persistence errno=22 restored=1 restore_reason=none restore_errno=0\n",
+  "recovered_status": "ok mode=auto camera_mode=hdr hdr_enabled=1 target_percent=40 cam0_percent=17 cam1_percent=19 exposure_lines=2176 gain_index=16 fps_x10=300 max_exposure_lines=2176 brightness_limited=0 error_errno=0\n",
+  "registers": {
+    "18": {
+      "3018_3019": "0x32 0x0c",
+      "3220_3225": "0xc3 0x00 0x32 0x48 0x00 0x00"
+    },
+    "16": {
+      "3018_3019": "0x32 0x0c",
+      "3220_3225": "0xc3 0x00 0x32 0x48 0x00 0x00"
+    }
+  }
+}

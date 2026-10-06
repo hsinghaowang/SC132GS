@@ -1,0 +1,17 @@
+[
+  "codec=H265 rtp_packets=970 access_units=180 fps=59.99 over_tcp=True",
+  "codec=H265 rtp_packets=1014 access_units=180 fps=59.99 over_tcp=True",
+  "codec=H265 rtp_packets=970 access_units=180 fps=60.29 over_tcp=True",
+  "codec=H265 rtp_packets=1039 access_units=180 fps=59.99 over_tcp=True",
+  "codec=H265 rtp_packets=1028 access_units=181 fps=60.30 over_tcp=True",
+  "codec=H265 rtp_packets=1006 access_units=180 fps=59.99 over_tcp=True",
+  "codec=H265 rtp_packets=1035 access_units=182 fps=60.64 over_tcp=True",
+  "codec=H265 rtp_packets=1045 access_units=182 fps=60.66 over_tcp=True",
+  "codec=H265 rtp_packets=1063 access_units=182 fps=60.33 over_tcp=True",
+  "codec=H265 rtp_packets=1010 access_units=180 fps=59.99 over_tcp=True",
+  "codec=H265 rtp_packets=1043 access_units=183 fps=60.67 over_tcp=True",
+  "codec=H265 rtp_packets=971 access_units=180 fps=59.99 over_tcp=True",
+  "codec=H265 rtp_packets=1002 access_units=180 fps=59.99 over_tcp=True",
+  "codec=H265 rtp_packets=1025 access_units=180 fps=59.99 over_tcp=True",
+  "codec=H265 rtp_packets=1037 access_units=180 fps=59.67 over_tcp=True"
+]

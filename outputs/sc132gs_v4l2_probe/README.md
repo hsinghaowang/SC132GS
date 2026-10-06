@@ -1,5 +1,24 @@
 # SC132GS standard V4L2 first probe on RUBIK Pi 3
 
+## HDR / Linear 統一切換（2026-10-06）
+
+兩種模式共用 2-lane 接線與 Device Tree，每眼皆為 1088×1280 RAW10。
+在板端使用：
+
+```sh
+sudo sc132gs-ctl set-mode linear  # Linear 60 FPS
+sudo sc132gs-ctl set-mode hdr     # HDR 30 FPS
+sc132gs-ctl mode
+sudo sc132gs-ctl status
+```
+
+控制器會停止串流、設定兩眼、重新建立曝光控制與串流，再確認實測 FPS。
+保留目標亮度與 AE 開關；曝光數值改用所選模式的預設值。
+切換失敗會嘗試回復兩眼與原串流，並分別回報切換及回復錯誤。
+成功後保存下次驅動載入的初始模式。重開機後也可用 `set-mode` 啟動串流。
+切換會中斷 RTSP 連線，VLC 可能需要重新連線。
+完整 API、Mermaid UML、部署與驗證說明見 [MODE_SWITCH.md](MODE_SWITCH.md)。
+
 ## Sensor power and controls (2026-10-01 source update)
 
 The driver now uses runtime PM to enable xclk/reset during sensor access and

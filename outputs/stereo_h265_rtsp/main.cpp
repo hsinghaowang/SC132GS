@@ -35,6 +35,12 @@ int main(int argc, char** argv) {
             else if (option == "--fps") settings.frame_rate = positive_int(value);
             else if (option == "--brightness")
                 settings.target_brightness_percent = positive_int(value);
+            else if (option == "--auto-exposure") {
+                const std::string mode(value);
+                if (mode != "on" && mode != "off")
+                    throw std::invalid_argument("auto-exposure must be on or off");
+                settings.auto_exposure = mode == "on";
+            }
             else throw std::invalid_argument("unknown option: " + option);
         }
         if (settings.cam0.empty() || settings.cam1.empty() ||

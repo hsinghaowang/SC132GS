@@ -1,0 +1,129 @@
+{
+  "before": "ok mode=auto camera_mode=hdr hdr_enabled=1 target_percent=40 cam0_percent=37 cam1_percent=40 exposure_lines=2176 gain_index=58 fps_x10=299 max_exposure_lines=2176 brightness_limited=0 error_errno=0",
+  "checks": [
+    {
+      "bus": 18,
+      "control": 808,
+      "before": {
+        "total": 23872,
+        "second": 8704,
+        "ratio": 128,
+        "gain": [
+          35,
+          62
+        ]
+      },
+      "staged": {
+        "total": 23872,
+        "second": 8704,
+        "ratio": 128,
+        "gain": [
+          35,
+          62
+        ]
+      },
+      "after": {
+        "total": 23872,
+        "second": 3232,
+        "ratio": 220,
+        "gain": [
+          35,
+          62
+        ]
+      }
+    },
+    {
+      "bus": 16,
+      "control": 808,
+      "before": {
+        "total": 23872,
+        "second": 8704,
+        "ratio": 128,
+        "gain": [
+          35,
+          62
+        ]
+      },
+      "staged": {
+        "total": 23872,
+        "second": 8704,
+        "ratio": 128,
+        "gain": [
+          35,
+          62
+        ]
+      },
+      "after": {
+        "total": 23872,
+        "second": 3232,
+        "ratio": 220,
+        "gain": [
+          35,
+          62
+        ]
+      }
+    },
+    {
+      "bus": 18,
+      "control": 2176,
+      "before": {
+        "total": 23872,
+        "second": 3232,
+        "ratio": 220,
+        "gain": [
+          35,
+          62
+        ]
+      },
+      "staged": {
+        "total": 23872,
+        "second": 3232,
+        "ratio": 220,
+        "gain": [
+          35,
+          62
+        ]
+      },
+      "after": {
+        "total": 23872,
+        "second": 8704,
+        "ratio": 162,
+        "gain": [
+          35,
+          62
+        ]
+      }
+    },
+    {
+      "bus": 16,
+      "control": 2176,
+      "before": {
+        "total": 23872,
+        "second": 3232,
+        "ratio": 220,
+        "gain": [
+          35,
+          62
+        ]
+      },
+      "staged": {
+        "total": 23872,
+        "second": 3232,
+        "ratio": 220,
+        "gain": [
+          35,
+          62
+        ]
+      },
+      "after": {
+        "total": 23872,
+        "second": 8704,
+        "ratio": 162,
+        "gain": [
+          35,
+          62
+        ]
+      }
+    }
+  ]
+}

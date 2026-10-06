@@ -7,6 +7,7 @@
 #include <sys/socket.h>
 #include <sys/un.h>
 #include <unistd.h>
+#include "sc132gs-mode.hpp"
 
 namespace {
 
@@ -14,12 +15,66 @@ constexpr std::string_view kSocketPath = "/run/sc132gs-ae.sock";
 
 void usage() {
     std::cerr << "usage: sc132gs-ctl status | set-brightness <1..90> | "
-                 "auto off | max-exposure-us <0..40000>\n";
+                 "auto off | max-exposure-us <0..40000> | mode | set-mode hdr|linear\n";
+}
+
+class ModeProgress final : public sc132gs::ModeController::Observer {
+public:
+    void on_phase(sc132gs::ModeController::Phase phase) noexcept override {
+        constexpr const char* names[]{"inspecting","stopping","configuring","starting",
+                                     "verifying","persisting","restoring","ready"};
+        std::cerr << "camera_mode phase=" << names[static_cast<int>(phase)] << '\n';
+    }
+};
+const char* error_name(sc132gs::ModeErrorCode code) {
+    using sc132gs::ModeErrorCode;
+    switch (code) {
+    case ModeErrorCode::none: return "none";
+    case ModeErrorCode::busy: return "busy";
+    case ModeErrorCode::permission: return "permission";
+    case ModeErrorCode::device: return "device";
+    case ModeErrorCode::service: return "service";
+    case ModeErrorCode::verification: return "verification";
+    case ModeErrorCode::persistence: return "persistence";
+    case ModeErrorCode::internal: return "internal";
+    }
+    return "internal";
+}
+int mode_command(int argc, char** argv) {
+    using namespace sc132gs;
+    const bool changing=std::string_view(argv[1])=="set-mode";
+    if ((changing && (argc!=3 || (std::string_view(argv[2])!="hdr" && std::string_view(argv[2])!="linear"))) ||
+        (!changing && argc!=2)) { usage(); return 2; }
+    try {
+        LinuxModeBackend backend(changing);
+        if (changing) {
+            ModeProgress progress;
+            ModeController controller(backend,&progress);
+            const auto result=controller.set_mode(std::string_view(argv[2])=="hdr"?CameraMode::hdr:CameraMode::linear);
+            if (!result.success) {
+                std::cerr << "error code=mode_switch reason=" << error_name(result.error.code)
+                          << " errno=" << result.error.system_error << " restored=" << result.restored
+                          << " restore_reason=" << error_name(result.restore_error.code)
+                          << " restore_errno=" << result.restore_error.system_error << '\n';
+                return 1;
+            }
+        }
+        const auto state=backend.inspect();
+        std::cout << "ok camera_mode=" << (state.mode==CameraMode::hdr?"hdr":"linear")
+                  << " fps=" << state.fps << " running=" << state.running << '\n';
+        return 0;
+    } catch (const ModeFailure& e) {
+        std::cerr << "error code=mode_operation reason=" << error_name(e.error.code)
+                  << " errno=" << e.error.system_error << '\n';
+        return 1;
+    } catch (const std::exception&) { std::cerr << "error code=mode_internal\n"; return 1; }
 }
 
 } // namespace
 
 int main(int argc, char** argv) {
+    if (argc>=2 && (std::string_view(argv[1])=="mode" || std::string_view(argv[1])=="set-mode"))
+        return mode_command(argc,argv);
     std::string request;
     if (argc == 2 && std::string_view(argv[1]) == "status") {
         request = "status";

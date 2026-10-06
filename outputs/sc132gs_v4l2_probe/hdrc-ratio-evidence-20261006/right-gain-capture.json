@@ -1,0 +1,279 @@
+{
+  "before": "ok mode=auto camera_mode=hdr hdr_enabled=1 target_percent=40 cam0_percent=39 cam1_percent=43 exposure_lines=2176 gain_index=61 fps_x10=299 max_exposure_lines=2176 brightness_limited=0 error_errno=0",
+  "conditions": [
+    {
+      "label": "a-before",
+      "exposure_control": 2176,
+      "gain_indices": [
+        61,
+        61
+      ],
+      "registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            39,
+            33
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            39,
+            33
+          ]
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "frame_bytes": 1740800,
+          "frames": 12,
+          "hashes": [
+            "f57a4a7367532751f1ddd1ca378f483b601f152f314d56bd6bec357660e52f30",
+            "33996261649cb98a47ec439aea4c50765f58623b67b468a7771bef1525230c2c",
+            "dda60cdd3eff1373ca3b95ebc9207f893c111a62d9fa3e7998112ca1e44f8b3b",
+            "324f0003527ad6e4816d4fcf8f59f27c7972c3fcc15985fc411eebc087e1429c",
+            "52f65d3c053617ec400c6cd0f7231eaa31c57d4f98aaea744862c1e611327d02",
+            "de50c4b0d4620105b20c2fed0d41c9cba10593073ed5f805019ac7e07af47a19",
+            "86b123a9e4812dc4118c9655e921d59deeb884dc55540d663dbe73a83eaccf2f",
+            "6ab731457e1717862618d783ac851a5c736309292950f9454b7873b878c168ce",
+            "c9253026f67615b881b761cd6dd3c5ddcd7c31a7ff1f9cc31d8de20354af4627",
+            "123c9c0f805fcaa1b6012348c450bda77f7b145d93cdf2ae8b070ef3cdad6583",
+            "d2f2bd405a3063201ee0539b570031a5609de26e1c6b1fb79091349e08afd117",
+            "563234694944b57cf7a82828c303f08d9f90925a0b5907ad5a35ebcd6d1023b2"
+          ]
+        },
+        {
+          "eye": 1,
+          "frame_bytes": 1740800,
+          "frames": 12,
+          "hashes": [
+            "9955ad1274bbc43da4c8667986c66f419044a36edc910dccf971668d2646acbc",
+            "0f9f421e874e59c423ffad698c2390d64c07417ade17c3af6359965d8189e4b9",
+            "bf80f20e6cf209b71cb3ec21435c7155a4a2275148ca5ead3fc5c68e3f8b982e",
+            "e2007cad4cb566292521f38c5d1920143529c68e286b4c6f9dcd8544756ad168",
+            "72d54ea42f20dfeb6295fd93205ca3907d31978489fa31910b764022f02d92a5",
+            "fb935c79c12c71d0e29802fc81f96b6ba18849b932410f8974bb66781650940e",
+            "72564fdedb82ae4581e247f888c762115c4c9f4fe17c81d3207411ee3845c915",
+            "1c7ccc58bfa17831170d6e2fd756ed1ff46224aac1f8ba9089365d3e84f17202",
+            "9a668afed57daeb1188e4bc05ce157da875133e1a6203648565747195cbb344d",
+            "4eeca97fd087fda06918a0d20e0f88f5a906f63b4e63b6a5be262d15f208a5e0",
+            "2fbd0c1994210917d24c2db401ae3ec15ab2422256bfa3f6cfd41c609a98cf7b",
+            "069ce942540d7e0495a1de070c8efe5fa43ad33b68c720468b2ea5a95ed05ddf"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "b-match",
+      "exposure_control": 2176,
+      "gain_indices": [
+        61,
+        57
+      ],
+      "registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            39,
+            33
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            35,
+            61
+          ]
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "frame_bytes": 1740800,
+          "frames": 12,
+          "hashes": [
+            "bc6de992f9d703d96e253f9e26025cb6d74758842c17c6b1c632d591d1b8b2cb",
+            "591bc27d92114f1da3bb59a844c15ad5666dece54792fd173890c4abfa574da1",
+            "70707330d25b9926a9ba87bece7adc99395b2fac718f0f71296b21706c296ab3",
+            "aafc012a742753bf8b5454f966db614f34aa0ccc44a4b2d5c1c8ce928d9670c2",
+            "a3feb6a48ac982fe953ceb4cf39bfa0cd8c8e4a706249df12080bee20940eb84",
+            "63c8dad1b3ce1bcc4bc41ce6a0e5aba7f74d044d0967f30201241d66851e7364",
+            "82e8456f8b7c26ea6c6b0fd74d8d88cebef1ab5a94ebe42879f733cdca7e3787",
+            "fae0889a162d628dcb9c468f8392e6a91be1f03659445cf1e5f84d1c392d14e2",
+            "b870e712560680d9350b6899a2a7a43c8be881153ad5d886827f12ffb00722c1",
+            "f102674b3cbbaf7fdd034623ce170b1dedc06382e8d82dc5d54ec5276fa479e6",
+            "80bc46fc6769bdda906d54fd2dab664f754860207fbbe20ba08f6bc41b8c1192",
+            "d7e17affdec4098d29fcd95cf960a8904b2e3015a2747f1298b002fe5f82b0ae"
+          ]
+        },
+        {
+          "eye": 1,
+          "frame_bytes": 1740800,
+          "frames": 12,
+          "hashes": [
+            "882a015914c933c0df7edd692b1b6935c7d3bd3315cbd2e4d7400baddf36919d",
+            "9623f7882877d6d5a486da9457fe12a5c16e2d059a2ae96c593bfea100ecf5ec",
+            "d37c0f967ef290db2ecf277280183fcbcbc316848bb6def7757885b357840f58",
+            "304800ebeacc967da56ae5997bd034851f764d25e9e7d236aa4697816f281271",
+            "dca375d6344c5e495dc31e2049b35b83e57d078f800c3b817c70bdc036490fcf",
+            "bae424ce1d1cd9207ac8745e3ffbd2624a8051560042180aba8481f65899f7da",
+            "fbf81117847da477c90c7df67bebb7a344692dc66c80bc45d65df77c1b6f113b",
+            "5894055d9bf91eee5b40cf63f0133e574fc466cb324478cbbb48a794321c7f97",
+            "96976d5348f274331992625aae478c265298648bc8159f2d32c065ae5a677803",
+            "845cc164525fcad70a58651e17e2cd0a82f0cb63056f6b45edca0b606847ec2f",
+            "6fe706133c8dc0ed8bce71f2f34826cf581badb5ec71e18129e518cf54bd9b56",
+            "9cc99f3dc4e70419466708683f1b80f9ede96891411fba866e6cc77f0c58a108"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "c-minimum",
+      "exposure_control": 2176,
+      "gain_indices": [
+        61,
+        0
+      ],
+      "registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            39,
+            33
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            3,
+            32
+          ]
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "frame_bytes": 1740800,
+          "frames": 12,
+          "hashes": [
+            "19315d98bf8e62feaa0f805f2642d4ba945d14629da572f93bd7250a6b536765",
+            "f287075141032b13fc7db9c1eff48fede54556ba9aaa690f938c36e9734c57f7",
+            "c5a643c16470bebd2cbd262d080df35c085034fa188708588b6f8d87e15c18b4",
+            "78140835dcd2d66a56f1417189bf719ddea65dac304e6035bf4fa350227ddb01",
+            "e47a2c1b7031776c6017f068badf031fc3d742edc312b871994887a71a26517b",
+            "8a94c8ece3463f80ae23975aaa9015db2297212bbd487358d43d53e6c8116768",
+            "691ca9a76f94515cfe097642aaa3760e0c3a15f42e85d7d1431f656bf03a054c",
+            "18636a1fcd6c8590735c666c1a3ae80af9e82e84515b398b834883ffbed469df",
+            "73b1fa9b9b9124baa8bf4b253269c81e3e646a14c6a2c0e1ee230236331bee66",
+            "38d4c97f0ce9fc3cfb93cc89e1ea2dbb066544c92253732247181ca5d3a8490e",
+            "e7908c3e18708ef0379fd3d048341fbe5ec775723acafcf916fb49547e1cbe7f",
+            "9d5abfa4cd96a6783460b9a120a8b4cedaa095b43f4b7ddeeee6f26f31e53708"
+          ]
+        },
+        {
+          "eye": 1,
+          "frame_bytes": 1740800,
+          "frames": 12,
+          "hashes": [
+            "de677982799308a1970d7b4b98c403efc2875ce8190d97099ec9bff02024007e",
+            "bc711f241af6e37be3c7053b44dc05dd9bfe80ef0de4fe6bfaf26358de2dc7cf",
+            "27f879ce2de6f480d0ffbf4489bfe28738f575adfcc96691a86b030c926cd334",
+            "fae763f24037a1df7bcf8e2257b0315ed9be626f0c892d6a447990a459b15802",
+            "7e28c9feec4979df29ba0650e418ac2514391d20b908cb523d44fb0e056daba4",
+            "920d8ebb8e8a3a78cfdb2ad7141143a83ef26f1ba0caa3c312a4e06c6ae8e314",
+            "5eaba1177a498a4ee7db26b3e046e7dd82a6b866a5612851422c5640c51c2b49",
+            "41c135331c99ce929e4e8d26aa5cf83181893abc769fdb53b6c9c55abdca0c37",
+            "7b075faf9e717d6fe01e7edd79d5fb97104f90ee522a6d5f427102e77330c38f",
+            "a37fdeb8431906631c08ae812dd2c7306f5dec426fd220b72e4c5c51578e5d58",
+            "c31110e4e6f1fe763b98653f07176252a4326152d90adb5f7c1741fa5a3feed1",
+            "c2faa1520b55f8159377ad5e0799980b61902ec07ae533377f153f03381c8ff2"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "a-after",
+      "exposure_control": 2176,
+      "gain_indices": [
+        61,
+        61
+      ],
+      "registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            39,
+            33
+          ]
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "ratio": 162,
+          "gain": [
+            39,
+            33
+          ]
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "frame_bytes": 1740800,
+          "frames": 12,
+          "hashes": [
+            "6a2303fe2f3d9b4ddb867a319664af015208f1c98464b12fe8515eefe9d20a1a",
+            "8b0b2ef62af85eaa2538eecb2b97c507c12412588455979ca532df5b875febc1",
+            "be9e0605043f0ce17bdd2c70452c865995060d21716ff2da8ca757bb14261d2b",
+            "2e8419f7a0b65994d094650676fa79ca16cf6ad061018843baa7855c1e5a4c9a",
+            "f1a861f964c895cb26e88e129bc5be0ddf21b623b8b1cfbb73a285cf5cfa9c30",
+            "cef16ac53806bbb09c43288a96b2f6dba397fda6b732e05741ab8ac71dfa5084",
+            "79f531561f6cad4c6f9e4d6602f1006e48cfcfa48e60fca0f57fd626e19493a7",
+            "54997b730da178f288632d2c9b554fd49de5e2fe0555fc0f956eca475cba5540",
+            "42bc12774aca89e3287c98cd951e41c0271d5862f5abcbe7316b4a01afa86d92",
+            "4723528fe1acb815b9637427cc231b735e4feb9f1cf1811f024ca33e1253b81f",
+            "e8f76483017255d4004b9abbbf823aacb2e9867d70ee4b6d293b080d8f75d233",
+            "65cf95abec4dec6b8c8e81359a2033292d14ff13c505e8f6b5a878369a2acd99"
+          ]
+        },
+        {
+          "eye": 1,
+          "frame_bytes": 1740800,
+          "frames": 12,
+          "hashes": [
+            "e255dadb38ffb6343e0f11f0535e2cd9749f46f6732db4e1fcabeda9c24906da",
+            "aad73ed5671465ce00ecb694269d54cebe4ae208851bf74681994662c166b174",
+            "633663a59be000b13ec43b24c1d87bad6255bdff4e27a7a6a876ca2bb267f5a0",
+            "2efad805706d3e7432e310e78e7b7b8d6acb272de5558abc42ddc072bff14418",
+            "b220119cf4c1d7a14e289d16675cec76d894be2fd04e8817282e53b48d36a672",
+            "b5aac29a4cdab6ef3a7c7ba5baf783741e8a3d5ad566d802b8369cfdb98b2460",
+            "56bb77f46b2178fb3ed396b5919a9d9545bea935616fecc7f79eb00ea85f6322",
+            "1c8e8b47d5f85e2bbe647fe979a4d1b39e2f7564a098b13e25226322592b4a55",
+            "ed682e3d1c7cd5045051d55bea8a0b3d161c35bece7af058714d4d3f31073d31",
+            "c5f451d971e6fbea2990f99047b208f2b81de1627e8c16e18b04d7ff016a046c",
+            "0554289b67f453a89aa047dabffcda0e258b134c7a4e8c1fd41f745c3bd50e20",
+            "6cb1ff3bb538d6d3f1d9c2183298b0ace7bd70f786edc83bcf4a0ef0baf971bc"
+          ]
+        }
+      ]
+    }
+  ],
+  "restore": "camera_mode phase=inspecting\ncamera_mode phase=stopping\ncamera_mode phase=configuring\ncamera_mode phase=starting\ncamera_mode phase=verifying\ncamera_mode phase=persisting\ncamera_mode phase=ready\nok camera_mode=hdr fps=30 running=1",
+  "after": "ok mode=auto camera_mode=hdr hdr_enabled=1 target_percent=40 cam0_percent=22 cam1_percent=24 exposure_lines=2176 gain_index=32 fps_x10=300 max_exposure_lines=2176 brightness_limited=0 error_errno=0"
+}

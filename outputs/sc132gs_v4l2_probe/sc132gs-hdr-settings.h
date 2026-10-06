@@ -106,6 +106,7 @@ static const struct sc132gs_reg sc132gs_hdr_1088x1280_regs[] = {
 	{0x4837, 0x11},
 	{0x5000, 0x0e},
 	{0x5001, 0x01},
+	/* Vendor seed; STREAMON applies the exposure-dependent HDRC ratio. */
 	{0x5400, 0x80},
 	{0x5401, 0xff},
 	{0x5402, 0x01},

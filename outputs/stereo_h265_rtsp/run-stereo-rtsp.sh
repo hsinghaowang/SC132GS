@@ -11,13 +11,31 @@ CAM1=${CAM1:-$("$DISCOVER" cam1)}
 BIND=${BIND:-127.0.0.1}
 PORT=${PORT:-8554}
 DOWNSCALE=${DOWNSCALE:-1}
-FPS=${FPS:-30}
-if [[ -r /sys/module/sc132gs/parameters/hdr ]] &&
-   [[ $(cat /sys/module/sc132gs/parameters/hdr) == Y ]] && (( FPS != 30 )); then
-    echo 'The installed SC132GS HDR mode requires FPS=30.' >&2
+CTL=${CTL:-/usr/local/bin/sc132gs-ctl}
+mode_status=$("$CTL" mode)
+if [[ $mode_status == 'ok camera_mode=hdr '* ]]; then
+    FPS=${FPS:-30}
+    if (( FPS != 30 )); then
+        echo 'SC132GS HDR mode requires FPS=30.' >&2
+        exit 1
+    fi
+elif [[ $mode_status == 'ok camera_mode=linear '* ]]; then
+    FPS=${FPS:-60}
+    if (( FPS != 30 && FPS != 60 )); then
+        echo 'SC132GS Linear mode requires FPS=30 or FPS=60.' >&2
+        exit 1
+    fi
+else
+    echo 'Cannot determine a consistent mode for both cameras.' >&2
     exit 1
 fi
 BRIGHTNESS=${BRIGHTNESS:-40}
+AUTO_EXPOSURE=${AUTO_EXPOSURE:-1}
+case "$AUTO_EXPOSURE" in
+    1) AE_MODE=on ;;
+    0) AE_MODE=off ;;
+    *) echo 'AUTO_EXPOSURE must be 0 or 1.' >&2; exit 1 ;;
+esac
 FSYNC_LOG=${FSYNC_LOG:-/tmp/sc132gs-rtsp-fsync.log}
 
 generator_pid=
@@ -54,4 +72,5 @@ fi
 kill -USR1 "$generator_pid"
 "$SERVER_BIN" --cam0 "$CAM0" --cam1 "$CAM1" \
     --bind "$BIND" --port "$PORT" --mount /stereo \
-    --downscale "$DOWNSCALE" --fps "$FPS" --brightness "$BRIGHTNESS"
+    --downscale "$DOWNSCALE" --fps "$FPS" --brightness "$BRIGHTNESS" \
+    --auto-exposure "$AE_MODE"

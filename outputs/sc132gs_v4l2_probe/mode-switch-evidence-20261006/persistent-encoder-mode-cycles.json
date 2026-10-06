@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "hdr",
+    "probe": "codec=H265 rtp_packets=1462 access_units=91 fps=30.00 over_tcp=True"
+  },
+  {
+    "mode": "linear",
+    "probe": "codec=H265 rtp_packets=944 access_units=180 fps=59.99 over_tcp=True"
+  },
+  {
+    "mode": "hdr",
+    "probe": "codec=H265 rtp_packets=1488 access_units=91 fps=30.15 over_tcp=True"
+  },
+  {
+    "mode": "linear",
+    "probe": "codec=H265 rtp_packets=996 access_units=180 fps=59.67 over_tcp=True"
+  },
+  {
+    "mode": "hdr",
+    "probe": "codec=H265 rtp_packets=1460 access_units=90 fps=29.82 over_tcp=True"
+  },
+  {
+    "mode": "linear",
+    "probe": "codec=H265 rtp_packets=972 access_units=180 fps=59.35 over_tcp=True"
+  }
+]

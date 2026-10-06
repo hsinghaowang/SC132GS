@@ -1,0 +1,16 @@
+2026-10-06 subsequent live Linear diagnosis
+Before recovery: camera_mode=linear, hdr_enabled=0, fps_x10=599;
+3018/3019 use two lanes; 3220=83, 5001=00 on both sensors.
+Actual delivered pairs approximately 25 FPS, RTSP approximately 12.08 FPS,
+with capture sequence gaps. Encoder reported max session count exceeded.
+A stream-only restart temporarily produced RTP 59.92 FPS but subsequent
+reconnects failed with 503; closed kernel encoder instances remained.
+After stopping capture and verifying video33 had no open users and iris_vpu
+had zero module users, reloaded iris_vpu and started Linear through controller.
+Added RTSP stop_on_disconnect and periodic session-pool cleanup.
+Three consecutive abrupt-disconnect/reconnect tests: 59.77, 60.15, 60.59 FPS.
+Two concurrent clients: short reader 59.92 FPS, continuing reader 59.88 FPS.
+The longer reader continued after the short reader disconnected.
+CTest: 4/4 passed after the change. Final selected camera mode: Linear 60 FPS.
+RTP FPS is not proof of Windows VLC displayed/decoded FPS.
+HDR register switch verified; effective dynamic-range improvement not measured.

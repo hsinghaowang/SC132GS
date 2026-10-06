@@ -4,7 +4,7 @@ project(stereo_h265_rtsp LANGUAGES CXX)
 find_package(PkgConfig REQUIRED)
 find_package(Threads REQUIRED)
 pkg_check_modules(GST REQUIRED IMPORTED_TARGET
-    gstreamer-1.0 gstreamer-app-1.0 gstreamer-rtsp-server-1.0)
+    gstreamer-1.0 gstreamer-app-1.0 gstreamer-video-1.0 gstreamer-rtsp-server-1.0)
 
 set(SC132GS_AE_SOURCE_DIR
     "${CMAKE_CURRENT_SOURCE_DIR}/../sc132gs_v4l2_probe"
@@ -22,6 +22,12 @@ target_compile_options(stereo-h265-rtsp PRIVATE -Wall -Wextra -Wpedantic)
 
 include(CTest)
 if(BUILD_TESTING)
+    add_executable(camera-mode-check
+        "${SC132GS_AE_SOURCE_DIR}/sc132gs-mode-check.cpp"
+        "${SC132GS_AE_SOURCE_DIR}/sc132gs-mode.cpp")
+    target_compile_features(camera-mode-check PRIVATE cxx_std_20)
+    target_compile_options(camera-mode-check PRIVATE -Wall -Wextra -Wpedantic)
+    add_test(NAME camera-mode-check COMMAND camera-mode-check)
     add_executable(bayer-luma-check BayerLumaCheck.cpp BayerLuma.cpp)
     target_compile_features(bayer-luma-check PRIVATE cxx_std_20)
     target_compile_options(bayer-luma-check PRIVATE -Wall -Wextra -Wpedantic)

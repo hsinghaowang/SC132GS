@@ -30,6 +30,9 @@
 #define SC132GS_PIXEL_RATE        63000000
 #define SC132GS_LINK_FREQ_DEFAULT 600000000UL
 #define SC132GS_REG_EXPOSURE_H    0x3e00
+#define SC132GS_REG_HDR_EXPOSURE  0x3e31
+#define SC132GS_REG_HDRC_RATIO    0x5400
+#define SC132GS_REG_GROUP_HOLD    0x3800
 #define SC132GS_REG_ANALOGUE_GAIN 0x3e08
 #define SC132GS_EXPOSURE_DEFAULT  808
 #define SC132GS_EXPOSURE_MAX      2560
@@ -68,7 +71,7 @@ MODULE_PARM_DESC(external_trigger,
 
 static bool hdr;
 module_param(hdr, bool, 0444);
-MODULE_PARM_DESC(hdr, "Use vendor single-frame HDR RAW10 30fps two-lane mode");
+MODULE_PARM_DESC(hdr, "Initial mode only; runtime mode uses wide_dynamic_range while stopped");
 
 static s64 sc132gs_link_freq_menu[] = { SC132GS_LINK_FREQ_DEFAULT };
 
@@ -154,26 +157,72 @@ struct sc132gs {
 	struct v4l2_ctrl_handler ctrls;
 	struct v4l2_ctrl *exposure;
 	struct v4l2_ctrl *analogue_gain;
+	struct v4l2_ctrl *pixel_rate;
+	bool hdr_mode;
+	unsigned int data_lanes;
 	struct mutex lock;
 	bool streaming;
 	bool external_trigger;
 	bool hardware_initialized;
 };
 
+static int sc132gs_write_hdr_exposure(struct sc132gs *sensor,
+				     unsigned int control_value)
+{
+	u8 total_bytes[3];
+	unsigned int total, second, ratio;
+	int ret, release_ret;
+
+	/* Preserve the existing vendor control scale. The datasheet defines
+	 * BOTH register encodings in 1/16-line units: control_value * 4 encodes
+	 * control_value / 4 lines, not control_value lines. Do not infer us from
+	 * the linear-mode pixel clock when using this HDR PLL/trigger profile.
+	 */
+	if (control_value > 0xffff / 4)
+		return -ERANGE;
+	second = control_value * 4;
+	ret = regmap_bulk_read(sensor->regmap, SC132GS_REG_EXPOSURE_H,
+			       total_bytes, sizeof(total_bytes));
+	if (ret)
+		return ret;
+	total = ((total_bytes[0] & 0x0f) << 16) |
+		(total_bytes[1] << 8) | total_bytes[2];
+	if (!total || second >= total)
+		return -ERANGE;
+
+	/* SC132GS datasheet V2.6, table 2-3. Both operands use the same units.
+	 * Round to nearest integer; the 20-bit total fits this u32 arithmetic.
+	 */
+	ratio = DIV_ROUND_CLOSEST(255U * (total - second), total);
+
+	/* Table 2-8: stage group 0, close it, then apply the complete group.
+	 * A failed staging write must not launch a partial exposure/ratio pair.
+	 * The caller holds sensor->lock across this whole transaction.
+	 */
+	ret = regmap_write(sensor->regmap, SC132GS_REG_GROUP_HOLD, 0x00);
+	if (ret)
+		return ret;
+	ret = regmap_write(sensor->regmap, SC132GS_REG_HDR_EXPOSURE,
+			   second >> 8);
+	if (!ret)
+		ret = regmap_write(sensor->regmap, SC132GS_REG_HDR_EXPOSURE + 1,
+				   second & 0xff);
+	if (!ret)
+		ret = regmap_write(sensor->regmap, SC132GS_REG_HDRC_RATIO, ratio);
+	release_ret = regmap_write(sensor->regmap, SC132GS_REG_GROUP_HOLD, 0x10);
+	if (ret)
+		return ret;
+	if (release_ret)
+		return release_ret;
+	return regmap_write(sensor->regmap, SC132GS_REG_GROUP_HOLD, 0x60);
+}
+
 static int sc132gs_write_exposure(struct sc132gs *sensor, unsigned int lines)
 {
-	if (hdr) {
-		/* Vendor extra_mode control: write four times the requested value.
-		 * Physical time conversion differs from the linear-mode registers.
-		 */
-		unsigned int value = lines * 4;
-		int ret = regmap_write(sensor->regmap, 0x3e31, value >> 8);
-
-		if (ret)
-			return ret;
-		return regmap_write(sensor->regmap, 0x3e32, value & 0xff);
-	}
 	int ret;
+
+	if (sensor->hdr_mode)
+		return sc132gs_write_hdr_exposure(sensor, lines);
 
 	ret = regmap_write(sensor->regmap, SC132GS_REG_EXPOSURE_H,
 			   (lines >> 12) & 0x0f);
@@ -205,6 +254,27 @@ static int sc132gs_set_ctrl(struct v4l2_ctrl *ctrl)
 {
 	struct sc132gs *sensor = container_of(ctrl->handler, struct sc132gs,
 						 ctrls);
+
+	if (ctrl->id == V4L2_CID_WIDE_DYNAMIC_RANGE) {
+		int ret;
+
+		if (sensor->streaming)
+			return -EBUSY;
+		if (ctrl->val && sensor->data_lanes != 2)
+			return -EINVAL;
+		ret = __v4l2_ctrl_modify_range(sensor->exposure, 8,
+			ctrl->val ? 2176 : SC132GS_EXPOSURE_MAX, 1,
+			SC132GS_EXPOSURE_DEFAULT);
+		if (ret)
+			return ret;
+		sensor->hdr_mode = ctrl->val;
+		v4l2_ctrl_activate(sensor->pixel_rate, !sensor->hdr_mode);
+		/* Reset control units when changing mode; AE is recreated by the
+		 * userspace coordinator. Registers are applied at next STREAMON.
+		 */
+		return __v4l2_ctrl_s_ctrl(sensor->exposure,
+					SC132GS_EXPOSURE_DEFAULT);
+	}
 
 	/* The current mode table is restored before every stream-on. */
 	if (!sensor->streaming)
@@ -304,7 +374,7 @@ static int sc132gs_write_mode(struct sc132gs *sensor)
 {
 	int ret;
 
-	if (hdr) {
+	if (sensor->hdr_mode) {
 		ret = sc132gs_write_regs(sensor, sc132gs_hdr_1088x1280_regs,
 					ARRAY_SIZE(sc132gs_hdr_1088x1280_regs));
 		if (ret || !sensor->external_trigger)
@@ -315,6 +385,15 @@ static int sc132gs_write_mode(struct sc132gs *sensor)
 
 	ret = sc132gs_write_regs(sensor, sc132gs_1088x1280_regs,
 				 ARRAY_SIZE(sc132gs_1088x1280_regs));
+	if (!ret && sensor->data_lanes == 2) {
+		/* V2.6 p14: 3018[7:5] encodes lane count minus one.
+		 * Enable the second PHY lane using the vendor two-lane pad mask.
+		 * Linear PLL, line timing and RAW10 format remain unchanged.
+		 */
+		ret = regmap_write(sensor->regmap, 0x3018, 0x32);
+		if (!ret)
+			ret = regmap_write(sensor->regmap, 0x3019, 0x0c);
+	}
 	if (ret || !sensor->external_trigger)
 		return ret;
 
@@ -334,11 +413,14 @@ static ssize_t trigger_60fps_store(struct device *dev,
 
 	if (!sysfs_streq(buf, "1"))
 		return -EINVAL;
-	/* Linear overrides would destroy the HDR frame timing. */
-	if (hdr)
-		return -EOPNOTSUPP;
-
 	mutex_lock(&sensor->lock);
+	/* Check the mode under the same lock as WDR/STREAMON. Otherwise a
+	 * concurrent mode switch could apply Linear timing to an HDR stream.
+	 */
+	if (sensor->hdr_mode) {
+		ret = -EOPNOTSUPP;
+		goto unlock;
+	}
 	if (!sensor->streaming || !sensor->external_trigger) {
 		ret = -EBUSY;
 		goto unlock;
@@ -387,7 +469,7 @@ static int sc132gs_verify_mode(struct sc132gs *sensor)
 	unsigned int i;
 	int ret;
 
-	if (hdr) {
+	if (sensor->hdr_mode) {
 		for (i = 0; i < ARRAY_SIZE(hdr_expected); ++i) {
 			unsigned int expected = hdr_expected[i].value;
 			if (sensor->external_trigger && hdr_expected[i].address == 0x3222)
@@ -417,14 +499,20 @@ static int sc132gs_verify_mode(struct sc132gs *sensor)
 	}
 
 	for (i = 0; i < ARRAY_SIZE(common_expected); ++i) {
+		unsigned int expected = common_expected[i].value;
+
+		if (sensor->data_lanes == 2 && common_expected[i].address == 0x3018)
+			expected = 0x32;
+		if (sensor->data_lanes == 2 && common_expected[i].address == 0x3019)
+			expected = 0x0c;
 		ret = regmap_read(sensor->regmap, common_expected[i].address, &value);
 		if (ret)
 			return ret;
-		if (value != common_expected[i].value) {
+		if (value != expected) {
 			dev_err(sensor->dev,
 				"mode verify failed: reg 0x%04x expected 0x%02x got 0x%02x\n",
 				common_expected[i].address,
-				common_expected[i].value, value);
+				expected, value);
 			return -EIO;
 		}
 	}
@@ -485,11 +573,11 @@ static int sc132gs_s_stream(struct v4l2_subdev *sd, int enable)
 		ret = sc132gs_write_mode(sensor);
 		if (!ret) {
 			dev_info(sensor->dev, "mode table written (%zu registers, %s)\n",
-				 hdr ? ARRAY_SIZE(sc132gs_hdr_1088x1280_regs) +
+				 sensor->hdr_mode ? ARRAY_SIZE(sc132gs_hdr_1088x1280_regs) +
 				 (sensor->external_trigger ? ARRAY_SIZE(sc132gs_hdr_fsync_regs) : 0) :
 				 ARRAY_SIZE(sc132gs_1088x1280_regs) +
 				 (sensor->external_trigger ? ARRAY_SIZE(sc132gs_external_trigger_regs) : 0),
-				 hdr ? "single-frame HDR" :
+				 sensor->hdr_mode ? "single-frame HDR" :
 				 (sensor->external_trigger ? "external-trigger slave" : "free-run"));
 			ret = sc132gs_verify_mode(sensor);
 		}
@@ -631,24 +719,24 @@ static int sc132gs_probe(struct i2c_client *client)
 	struct device *dev = &client->dev;
 	struct sc132gs *sensor;
 	struct v4l2_ctrl *ctrl;
-	int ret;
+	int ret, lanes;
 
-	if (hdr) {
+	{
 		struct device_node *endpoint = of_graph_get_next_endpoint(dev->of_node, NULL);
-		int lanes;
-
 		if (!endpoint)
-			return dev_err_probe(dev, -EINVAL, "HDR requires CSI endpoint\n");
+			return dev_err_probe(dev, -EINVAL, "CSI endpoint required\n");
 		lanes = of_property_count_u32_elems(endpoint, "data-lanes");
 		of_node_put(endpoint);
-		if (lanes != 2)
-			return dev_err_probe(dev, -EINVAL, "HDR requires two data lanes, got %d\n", lanes);
+		if ((lanes != 1 && lanes != 2) || (hdr && lanes != 2))
+			return dev_err_probe(dev, -EINVAL, "Invalid CSI lane count %d for initial mode\n", lanes);
 	}
 
 	sensor = devm_kzalloc(dev, sizeof(*sensor), GFP_KERNEL);
 	if (!sensor)
 		return -ENOMEM;
 	sensor->dev = dev;
+	sensor->data_lanes = lanes;
+	sensor->hdr_mode = hdr;
 	mutex_init(&sensor->lock);
 	sensor->external_trigger = force_external_trigger ||
 		of_property_read_bool(dev->of_node, "smartsens,external-trigger");
@@ -712,17 +800,18 @@ static int sc132gs_probe(struct i2c_client *client)
 	 * 63MHz pixel rate until HDR timing is characterized. CSI receivers use
 	 * the separately reported link frequency for this mode.
 	 */
-	if (!hdr) {
+	{
 		ctrl = v4l2_ctrl_new_std(&sensor->ctrls, NULL, V4L2_CID_PIXEL_RATE,
 					 SC132GS_PIXEL_RATE, SC132GS_PIXEL_RATE, 1,
 					 SC132GS_PIXEL_RATE);
 		if (ctrl)
 			ctrl->flags |= V4L2_CTRL_FLAG_READ_ONLY;
+		sensor->pixel_rate = ctrl;
+		if (ctrl)
+			v4l2_ctrl_activate(ctrl, !sensor->hdr_mode);
 	}
-	ctrl = v4l2_ctrl_new_std(&sensor->ctrls, NULL, V4L2_CID_WIDE_DYNAMIC_RANGE,
+	ctrl = v4l2_ctrl_new_std(&sensor->ctrls, &sc132gs_ctrl_ops, V4L2_CID_WIDE_DYNAMIC_RANGE,
 				 0, 1, 1, hdr);
-	if (ctrl)
-		ctrl->flags |= V4L2_CTRL_FLAG_READ_ONLY;
 	if (sensor->ctrls.error) {
 		ret = sensor->ctrls.error;
 		goto free_ctrls;

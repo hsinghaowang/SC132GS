@@ -1,0 +1,67 @@
+Start testing: Oct 06 15:43 CST
+----------------------------------------------------------
+1/4 Testing: camera-mode-check
+1/4 Test: camera-mode-check
+Command: "/home/ubuntu/stereo-h265-rtsp/build/camera-mode-check"
+Directory: /home/ubuntu/stereo-h265-rtsp/build
+"camera-mode-check" start time: Oct 06 15:43 CST
+Output:
+----------------------------------------------------------
+mode transaction/recovery checks passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"camera-mode-check" end time: Oct 06 15:43 CST
+"camera-mode-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: bayer-luma-check
+2/4 Test: bayer-luma-check
+Command: "/home/ubuntu/stereo-h265-rtsp/build/bayer-luma-check"
+Directory: /home/ubuntu/stereo-h265-rtsp/build
+"bayer-luma-check" start time: Oct 06 15:43 CST
+Output:
+----------------------------------------------------------
+RGGB flat color, precision, borders, padded stride, scales and ramp passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"bayer-luma-check" end time: Oct 06 15:43 CST
+"bayer-luma-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: raw10-luma-check
+3/4 Test: raw10-luma-check
+Command: "/home/ubuntu/stereo-h265-rtsp/build/raw10-luma-check"
+Directory: /home/ubuntu/stereo-h265-rtsp/build
+"raw10-luma-check" start time: Oct 06 15:43 CST
+Output:
+----------------------------------------------------------
+RAW10 luma correctness passed; neon=1
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"raw10-luma-check" end time: Oct 06 15:43 CST
+"raw10-luma-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: stereo-compose-check
+4/4 Test: stereo-compose-check
+Command: "/home/ubuntu/stereo-h265-rtsp/build/stereo-compose-check"
+Directory: /home/ubuntu/stereo-h265-rtsp/build
+"stereo-compose-check" start time: Oct 06 15:43 CST
+Output:
+----------------------------------------------------------
+per-eye mirrored side-by-side NV12 composition passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"stereo-compose-check" end time: Oct 06 15:43 CST
+"stereo-compose-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 06 15:43 CST

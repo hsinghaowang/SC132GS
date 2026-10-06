@@ -1,0 +1,76 @@
+{
+  "conditions": [
+    {
+      "eye": 0,
+      "label": "a-before",
+      "mean_raw10": 411.20492727242265,
+      "median_raw10": 351.0,
+      "p99_raw10": 1023.0,
+      "saturated_percent": 9.109431248085171,
+      "temporal_std_median_raw10": 8.98571491241455
+    },
+    {
+      "eye": 0,
+      "label": "b-formula",
+      "mean_raw10": 410.868221208161,
+      "median_raw10": 351.0,
+      "p99_raw10": 1023.0,
+      "saturated_percent": 9.091707117417279,
+      "temporal_std_median_raw10": 8.967146873474121
+    },
+    {
+      "eye": 0,
+      "label": "a-after",
+      "mean_raw10": 411.0093187519148,
+      "median_raw10": 351.0,
+      "p99_raw10": 1023.0,
+      "saturated_percent": 9.110179227941176,
+      "temporal_std_median_raw10": 8.956686019897461
+    },
+    {
+      "eye": 1,
+      "label": "a-before",
+      "mean_raw10": 450.5864113601984,
+      "median_raw10": 389.0,
+      "p99_raw10": 1023.0,
+      "saturated_percent": 10.915718826593137,
+      "temporal_std_median_raw10": 9.463379859924316
+    },
+    {
+      "eye": 1,
+      "label": "b-formula",
+      "mean_raw10": 450.4101223814721,
+      "median_raw10": 389.0,
+      "p99_raw10": 1023.0,
+      "saturated_percent": 10.910447064568014,
+      "temporal_std_median_raw10": 9.426248550415039
+    },
+    {
+      "eye": 1,
+      "label": "a-after",
+      "mean_raw10": 450.23208911372166,
+      "median_raw10": 389.0,
+      "p99_raw10": 1023.0,
+      "saturated_percent": 10.913462919347426,
+      "temporal_std_median_raw10": 9.416297912597656
+    }
+  ],
+  "comparison": [
+    {
+      "eye": 0,
+      "a_repeat_mean_absolute_difference_raw10": 3.6182574702244183,
+      "b_vs_a_mean_absolute_difference_raw10": 2.985083755792356,
+      "stable_pixel_fraction": 0.8803567325367647,
+      "b_vs_a_stable_signed_difference_raw10": -0.2083333333333428,
+      "b_vs_a_stable_absolute_difference_raw10": 2.25
+    },
+    {
+      "eye": 1,
+      "a_repeat_mean_absolute_difference_raw10": 4.07055113549326,
+      "b_vs_a_mean_absolute_difference_raw10": 3.276219566195619,
+      "stable_pixel_fraction": 0.8532513786764706,
+      "b_vs_a_stable_signed_difference_raw10": 2.842170943040401e-14,
+      "b_vs_a_stable_absolute_difference_raw10": 2.458333333333343
+    }
+  ]
+}

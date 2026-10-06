@@ -23,6 +23,7 @@ struct Settings {
     int downscale{1};
     int frame_rate{30};
     int target_brightness_percent{40};
+    bool auto_exposure{true};
 };
 
 // Captures synchronized V4L2 camera frames until SIGINT/SIGTERM.
