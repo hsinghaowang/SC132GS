@@ -12,6 +12,11 @@ BIND=${BIND:-127.0.0.1}
 PORT=${PORT:-8554}
 DOWNSCALE=${DOWNSCALE:-1}
 FPS=${FPS:-30}
+if [[ -r /sys/module/sc132gs/parameters/hdr ]] &&
+   [[ $(cat /sys/module/sc132gs/parameters/hdr) == Y ]] && (( FPS != 30 )); then
+    echo 'The installed SC132GS HDR mode requires FPS=30.' >&2
+    exit 1
+fi
 BRIGHTNESS=${BRIGHTNESS:-40}
 FSYNC_LOG=${FSYNC_LOG:-/tmp/sc132gs-rtsp-fsync.log}
 

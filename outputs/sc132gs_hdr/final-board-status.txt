@@ -1,0 +1,17 @@
+[   55.642295] sc132gs 16-0030: HDR FSYNC pad configuration read-back verified
+[   55.649926] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[   69.996055] sc132gs 18-0032: mode table written (141 registers, single-frame HDR)
+[   70.015163] sc132gs 18-0032: HDR mode read-back verified (15 registers)
+[   70.030266] sc132gs 18-0032: HDR FSYNC pad configuration read-back verified
+[   70.037382] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[   70.201109] sc132gs 16-0030: mode table written (141 registers, single-frame HDR)
+[   70.227664] sc132gs 16-0030: HDR mode read-back verified (15 registers)
+[   70.243500] sc132gs 16-0030: HDR FSYNC pad configuration read-back verified
+[   70.250325] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Y
+0 1
+0 1
+54d8eed46ae24ae6bd992a3b36ef8d25d0783070b476ca8e4a43c02a4ae14271  /lib/modules/6.8.0-1084-qcom/extra/sc132gs.ko
+F8700962E3B94B4F773C6DC
+F8700962E3B94B4F773C6DC
+ok mode=auto hdr_enabled=1 target_percent=40 cam0_percent=36 cam1_percent=41 exposure_lines=2176 gain_index=83 fps_x10=300 max_exposure_lines=2176 brightness_limited=0 error_errno=0

@@ -1,0 +1,250 @@
+{
+  "cam0-trigger-slave": [
+    {
+      "row": 0,
+      "changed_byte_fraction": 0.8181985294117647,
+      "temporal_noise": 7.505553499465135,
+      "spatial_residual": 6.1666666666667425
+    },
+    {
+      "row": 128,
+      "changed_byte_fraction": 0.8655560661764706,
+      "temporal_noise": 5.291502622129181,
+      "spatial_residual": 4.0
+    },
+    {
+      "row": 256,
+      "changed_byte_fraction": 0.791943359375,
+      "temporal_noise": 6.6583281184793925,
+      "spatial_residual": 5.000000000000057
+    },
+    {
+      "row": 384,
+      "changed_byte_fraction": 0.862741268382353,
+      "temporal_noise": 7.571877794400365,
+      "spatial_residual": 6.416666666666629
+    },
+    {
+      "row": 512,
+      "changed_byte_fraction": 0.8594956341911765,
+      "temporal_noise": 8.144527815247079,
+      "spatial_residual": 6.833333333333314
+    },
+    {
+      "row": 640,
+      "changed_byte_fraction": 0.8701832490808824,
+      "temporal_noise": 8.504900548115383,
+      "spatial_residual": 7.083333333333314
+    },
+    {
+      "row": 768,
+      "changed_byte_fraction": 0.7559742647058824,
+      "temporal_noise": 8.717797887081348,
+      "spatial_residual": 7.583333333333371
+    },
+    {
+      "row": 896,
+      "changed_byte_fraction": 0.8195571001838236,
+      "temporal_noise": 7.371114795831994,
+      "spatial_residual": 6.833333333333314
+    },
+    {
+      "row": 1024,
+      "changed_byte_fraction": 0.8495174632352941,
+      "temporal_noise": 7.505553499465135,
+      "spatial_residual": 17.25
+    },
+    {
+      "row": 1152,
+      "changed_byte_fraction": 0.8446633731617647,
+      "temporal_noise": 7.76745346515403,
+      "spatial_residual": 22.91666666666663
+    }
+  ],
+  "cam0-trigger-long500": [
+    {
+      "row": 0,
+      "changed_byte_fraction": 0.7996036305147058,
+      "temporal_noise": 5.131601439446884,
+      "spatial_residual": 3.6666666666666856
+    },
+    {
+      "row": 128,
+      "changed_byte_fraction": 0.8041819852941177,
+      "temporal_noise": 3.605551275463989,
+      "spatial_residual": 2.583333333333343
+    },
+    {
+      "row": 256,
+      "changed_byte_fraction": 0.7657944623161764,
+      "temporal_noise": 4.358898943540674,
+      "spatial_residual": 3.166666666666657
+    },
+    {
+      "row": 384,
+      "changed_byte_fraction": 0.8337459788602941,
+      "temporal_noise": 5.033222956847166,
+      "spatial_residual": 3.666666666666657
+    },
+    {
+      "row": 512,
+      "changed_byte_fraction": 0.8358369715073529,
+      "temporal_noise": 5.507570547286101,
+      "spatial_residual": 3.75
+    },
+    {
+      "row": 640,
+      "changed_byte_fraction": 0.844186580882353,
+      "temporal_noise": 5.507570547286102,
+      "spatial_residual": 3.916666666666657
+    },
+    {
+      "row": 768,
+      "changed_byte_fraction": 0.7817267922794118,
+      "temporal_noise": 5.859465277082315,
+      "spatial_residual": 4.25
+    },
+    {
+      "row": 896,
+      "changed_byte_fraction": 0.8423828125,
+      "temporal_noise": 5.131601439446884,
+      "spatial_residual": 4.333333333333343
+    },
+    {
+      "row": 1024,
+      "changed_byte_fraction": 0.8588120404411764,
+      "temporal_noise": 5.507570547286101,
+      "spatial_residual": 15.166666666666629
+    },
+    {
+      "row": 1152,
+      "changed_byte_fraction": 0.8507956112132353,
+      "temporal_noise": 5.686240703077327,
+      "spatial_residual": 21.166666666666686
+    }
+  ],
+  "cam0-trigger-long808": [
+    {
+      "row": 0,
+      "changed_byte_fraction": 0.8270737591911764,
+      "temporal_noise": 6.244997998398398,
+      "spatial_residual": 4.75
+    },
+    {
+      "row": 128,
+      "changed_byte_fraction": 0.8330623851102941,
+      "temporal_noise": 4.163331998932266,
+      "spatial_residual": 3.083333333333343
+    },
+    {
+      "row": 256,
+      "changed_byte_fraction": 0.7802648207720588,
+      "temporal_noise": 5.196152422706632,
+      "spatial_residual": 3.8333333333333286
+    },
+    {
+      "row": 384,
+      "changed_byte_fraction": 0.8601016773897059,
+      "temporal_noise": 6.110100926607786,
+      "spatial_residual": 4.666666666666629
+    },
+    {
+      "row": 512,
+      "changed_byte_fraction": 0.8631031709558824,
+      "temporal_noise": 6.6583281184793925,
+      "spatial_residual": 4.833333333333343
+    },
+    {
+      "row": 640,
+      "changed_byte_fraction": 0.8662367876838235,
+      "temporal_noise": 6.8068592855540455,
+      "spatial_residual": 5.0
+    },
+    {
+      "row": 768,
+      "changed_byte_fraction": 0.7947782628676471,
+      "temporal_noise": 7.211102550927978,
+      "spatial_residual": 5.416666666666686
+    },
+    {
+      "row": 896,
+      "changed_byte_fraction": 0.864309512867647,
+      "temporal_noise": 6.110100926607787,
+      "spatial_residual": 5.333333333333314
+    },
+    {
+      "row": 1024,
+      "changed_byte_fraction": 0.8774270450367647,
+      "temporal_noise": 6.506407098647712,
+      "spatial_residual": 15.999999999999943
+    },
+    {
+      "row": 1152,
+      "changed_byte_fraction": 0.8622702205882353,
+      "temporal_noise": 6.557438524302,
+      "spatial_residual": 21.666666666666742
+    }
+  ],
+  "cam0-trigger-long1492": [
+    {
+      "row": 0,
+      "changed_byte_fraction": 0.8182416130514706,
+      "temporal_noise": 7.54983443527075,
+      "spatial_residual": 6.333333333333329
+    },
+    {
+      "row": 128,
+      "changed_byte_fraction": 0.8649155560661764,
+      "temporal_noise": 5.507570547286101,
+      "spatial_residual": 4.0
+    },
+    {
+      "row": 256,
+      "changed_byte_fraction": 0.7923770680147059,
+      "temporal_noise": 6.6583281184793925,
+      "spatial_residual": 5.083333333333329
+    },
+    {
+      "row": 384,
+      "changed_byte_fraction": 0.8637724034926471,
+      "temporal_noise": 7.54983443527075,
+      "spatial_residual": 6.416666666666671
+    },
+    {
+      "row": 512,
+      "changed_byte_fraction": 0.8619399126838235,
+      "temporal_noise": 8.144527815247079,
+      "spatial_residual": 6.75
+    },
+    {
+      "row": 640,
+      "changed_byte_fraction": 0.8786563648897059,
+      "temporal_noise": 8.504900548115383,
+      "spatial_residual": 7.083333333333314
+    },
+    {
+      "row": 768,
+      "changed_byte_fraction": 0.7588694852941177,
+      "temporal_noise": 8.717797887081348,
+      "spatial_residual": 7.5
+    },
+    {
+      "row": 896,
+      "changed_byte_fraction": 0.8214556525735294,
+      "temporal_noise": 7.234178138070235,
+      "spatial_residual": 6.75
+    },
+    {
+      "row": 1024,
+      "changed_byte_fraction": 0.8520593979779412,
+      "temporal_noise": 7.505553499465135,
+      "spatial_residual": 17.25
+    },
+    {
+      "row": 1152,
+      "changed_byte_fraction": 0.8444508272058824,
+      "temporal_noise": 7.767453465154029,
+      "spatial_residual": 22.916666666666657
+    }
+  ]
+}

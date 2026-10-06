@@ -10,7 +10,7 @@ set(SC132GS_AE_SOURCE_DIR
     "${CMAKE_CURRENT_SOURCE_DIR}/../sc132gs_v4l2_probe"
     CACHE PATH "Directory containing SC132GS AE and control server sources")
 add_executable(stereo-h265-rtsp main.cpp StereoRtspServer.cpp StereoCapture.cpp
-    Raw10Luma.cpp StereoComposeNV12.cpp
+    Raw10Luma.cpp BayerLuma.cpp StereoComposeNV12.cpp
     "${SC132GS_AE_SOURCE_DIR}/sc132gs-ae.cpp"
     "${SC132GS_AE_SOURCE_DIR}/sc132gs-control-server.cpp")
 target_compile_features(stereo-h265-rtsp PUBLIC cxx_std_20)
@@ -22,6 +22,10 @@ target_compile_options(stereo-h265-rtsp PRIVATE -Wall -Wextra -Wpedantic)
 
 include(CTest)
 if(BUILD_TESTING)
+    add_executable(bayer-luma-check BayerLumaCheck.cpp BayerLuma.cpp)
+    target_compile_features(bayer-luma-check PRIVATE cxx_std_20)
+    target_compile_options(bayer-luma-check PRIVATE -Wall -Wextra -Wpedantic)
+    add_test(NAME bayer-luma-check COMMAND bayer-luma-check)
     add_executable(raw10-luma-check Raw10LumaCheck.cpp Raw10Luma.cpp)
     target_compile_features(raw10-luma-check PRIVATE cxx_std_20)
     target_compile_options(raw10-luma-check PRIVATE -Wall -Wextra -Wpedantic)
@@ -34,7 +38,7 @@ if(BUILD_TESTING)
     add_test(NAME stereo-compose-check COMMAND stereo-compose-check)
 
     add_executable(stereo-capture-check StereoCaptureCheck.cpp
-        StereoCapture.cpp Raw10Luma.cpp)
+        StereoCapture.cpp BayerLuma.cpp)
     target_compile_features(stereo-capture-check PRIVATE cxx_std_20)
     target_compile_options(stereo-capture-check PRIVATE -Wall -Wextra -Wpedantic)
 endif()

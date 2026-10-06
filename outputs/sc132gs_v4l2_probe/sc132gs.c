@@ -8,6 +8,7 @@
 #include <linux/module.h>
 #include <linux/mutex.h>
 #include <linux/of.h>
+#include <linux/of_graph.h>
 #include <linux/pm_runtime.h>
 #include <linux/regmap.h>
 #include <linux/sysfs.h>
@@ -65,12 +66,18 @@ module_param_named(external_trigger, force_external_trigger, bool, 0444);
 MODULE_PARM_DESC(external_trigger,
 		 "Put every SC132GS instance in external FSYNC slave mode");
 
+static bool hdr;
+module_param(hdr, bool, 0444);
+MODULE_PARM_DESC(hdr, "Use vendor single-frame HDR RAW10 30fps two-lane mode");
+
 static s64 sc132gs_link_freq_menu[] = { SC132GS_LINK_FREQ_DEFAULT };
 
 struct sc132gs_reg {
 	u16 address;
 	u8 value;
 };
+
+#include "sc132gs-hdr-settings.h"
 
 /* Public D-Robotics first-probe table; stream-on is intentionally separate. */
 static const struct sc132gs_reg sc132gs_1088x1280_regs[] = {
@@ -126,6 +133,17 @@ static const struct sc132gs_reg sc132gs_trigger_60fps_regs[] = {
 	{0x320e, 0x05}, {0x320f, 0x78}, {0x3222, 0x00},
 };
 
+/* Keep HDR mode bits and 4500-line VTS. Do not reuse linear 0x3225=0x04:
+ * it introduces a fixed lower-frame artifact. Dual RAW A/B and 20-Hz
+ * trigger-following tests confirm that its reset value 0x00 avoids this.
+ */
+static const struct sc132gs_reg sc132gs_hdr_fsync_regs[] = {
+	{0x3222, 0x32},
+	{0x3223, 0x48}, {0x3226, 0x08}, {0x3227, 0x08},
+	{0x3217, 0x00}, {0x3218, 0x00}, {0x322b, 0x0b},
+	{0x3225, 0x00}, {0x300a, 0x62},
+};
+
 struct sc132gs {
 	struct device *dev;
 	struct regmap *regmap;
@@ -144,6 +162,17 @@ struct sc132gs {
 
 static int sc132gs_write_exposure(struct sc132gs *sensor, unsigned int lines)
 {
+	if (hdr) {
+		/* Vendor extra_mode control: write four times the requested value.
+		 * Physical time conversion differs from the linear-mode registers.
+		 */
+		unsigned int value = lines * 4;
+		int ret = regmap_write(sensor->regmap, 0x3e31, value >> 8);
+
+		if (ret)
+			return ret;
+		return regmap_write(sensor->regmap, 0x3e32, value & 0xff);
+	}
 	int ret;
 
 	ret = regmap_write(sensor->regmap, SC132GS_REG_EXPOSURE_H,
@@ -275,6 +304,15 @@ static int sc132gs_write_mode(struct sc132gs *sensor)
 {
 	int ret;
 
+	if (hdr) {
+		ret = sc132gs_write_regs(sensor, sc132gs_hdr_1088x1280_regs,
+					ARRAY_SIZE(sc132gs_hdr_1088x1280_regs));
+		if (ret || !sensor->external_trigger)
+			return ret;
+		return sc132gs_write_regs(sensor, sc132gs_hdr_fsync_regs,
+					 ARRAY_SIZE(sc132gs_hdr_fsync_regs));
+	}
+
 	ret = sc132gs_write_regs(sensor, sc132gs_1088x1280_regs,
 				 ARRAY_SIZE(sc132gs_1088x1280_regs));
 	if (ret || !sensor->external_trigger)
@@ -296,6 +334,9 @@ static ssize_t trigger_60fps_store(struct device *dev,
 
 	if (!sysfs_streq(buf, "1"))
 		return -EINVAL;
+	/* Linear overrides would destroy the HDR frame timing. */
+	if (hdr)
+		return -EOPNOTSUPP;
 
 	mutex_lock(&sensor->lock);
 	if (!sensor->streaming || !sensor->external_trigger) {
@@ -325,6 +366,12 @@ static DEVICE_ATTR_WO(trigger_60fps);
 
 static int sc132gs_verify_mode(struct sc132gs *sensor)
 {
+	static const struct sc132gs_reg hdr_expected[] = {
+		{0x3018, 0x32}, {0x3019, 0x0c}, {0x301f, 0xe0},
+		{0x3208, 0x04}, {0x3209, 0x40}, {0x320a, 0x05}, {0x320b, 0x00},
+		{0x320e, 0x11}, {0x320f, 0x94}, {0x3220, 0xc3}, {0x3222, 0x30},
+		{0x5001, 0x01}, {0x36e9, 0x53}, {0x36f9, 0x24}, {0x4837, 0x11},
+	};
 	static const struct sc132gs_reg common_expected[] = {
 		{0x3018, 0x12}, {0x3019, 0x0e}, {0x301a, 0xb4},
 		{0x301f, 0x45}, {0x320c, 0x02}, {0x320d, 0xee},
@@ -339,6 +386,35 @@ static int sc132gs_verify_mode(struct sc132gs *sensor)
 	unsigned int value;
 	unsigned int i;
 	int ret;
+
+	if (hdr) {
+		for (i = 0; i < ARRAY_SIZE(hdr_expected); ++i) {
+			unsigned int expected = hdr_expected[i].value;
+			if (sensor->external_trigger && hdr_expected[i].address == 0x3222)
+				expected = 0x32;
+			ret = regmap_read(sensor->regmap, hdr_expected[i].address, &value);
+			if (ret)
+				return ret;
+			if (value != expected)
+				return dev_err_probe(sensor->dev, -EIO,
+					"HDR verify reg 0x%04x expected 0x%02x got 0x%02x\n",
+					hdr_expected[i].address, expected, value);
+		}
+		dev_info(sensor->dev, "HDR mode read-back verified (%zu registers)\n",
+			 ARRAY_SIZE(hdr_expected));
+		if (sensor->external_trigger) {
+			for (i = 0; i < ARRAY_SIZE(sc132gs_hdr_fsync_regs); ++i) {
+				unsigned int mask = sc132gs_hdr_fsync_regs[i].address == 0x300a ? ~0x08U : ~0U;
+				ret = regmap_read(sensor->regmap, sc132gs_hdr_fsync_regs[i].address, &value);
+				if (ret)
+					return ret;
+				if ((value ^ sc132gs_hdr_fsync_regs[i].value) & mask)
+					return -EIO;
+			}
+			dev_info(sensor->dev, "HDR FSYNC pad configuration read-back verified\n");
+		}
+		return 0;
+	}
 
 	for (i = 0; i < ARRAY_SIZE(common_expected); ++i) {
 		ret = regmap_read(sensor->regmap, common_expected[i].address, &value);
@@ -409,11 +485,12 @@ static int sc132gs_s_stream(struct v4l2_subdev *sd, int enable)
 		ret = sc132gs_write_mode(sensor);
 		if (!ret) {
 			dev_info(sensor->dev, "mode table written (%zu registers, %s)\n",
+				 hdr ? ARRAY_SIZE(sc132gs_hdr_1088x1280_regs) +
+				 (sensor->external_trigger ? ARRAY_SIZE(sc132gs_hdr_fsync_regs) : 0) :
 				 ARRAY_SIZE(sc132gs_1088x1280_regs) +
-				 (sensor->external_trigger ?
-				  ARRAY_SIZE(sc132gs_external_trigger_regs) : 0),
-				 sensor->external_trigger ?
-				 "external-trigger slave" : "free-run");
+				 (sensor->external_trigger ? ARRAY_SIZE(sc132gs_external_trigger_regs) : 0),
+				 hdr ? "single-frame HDR" :
+				 (sensor->external_trigger ? "external-trigger slave" : "free-run"));
 			ret = sc132gs_verify_mode(sensor);
 		}
 		if (!ret)
@@ -556,6 +633,18 @@ static int sc132gs_probe(struct i2c_client *client)
 	struct v4l2_ctrl *ctrl;
 	int ret;
 
+	if (hdr) {
+		struct device_node *endpoint = of_graph_get_next_endpoint(dev->of_node, NULL);
+		int lanes;
+
+		if (!endpoint)
+			return dev_err_probe(dev, -EINVAL, "HDR requires CSI endpoint\n");
+		lanes = of_property_count_u32_elems(endpoint, "data-lanes");
+		of_node_put(endpoint);
+		if (lanes != 2)
+			return dev_err_probe(dev, -EINVAL, "HDR requires two data lanes, got %d\n", lanes);
+	}
+
 	sensor = devm_kzalloc(dev, sizeof(*sensor), GFP_KERNEL);
 	if (!sensor)
 		return -ENOMEM;
@@ -600,7 +689,7 @@ static int sc132gs_probe(struct i2c_client *client)
 		return ret;
 
 	sc132gs_link_freq_menu[0] = link_freq_hz;
-	v4l2_ctrl_handler_init(&sensor->ctrls, 4);
+	v4l2_ctrl_handler_init(&sensor->ctrls, 5);
 	sensor->ctrls.lock = &sensor->lock;
 	ctrl = v4l2_ctrl_new_int_menu(&sensor->ctrls, NULL,
 				      V4L2_CID_LINK_FREQ,
@@ -611,7 +700,7 @@ static int sc132gs_probe(struct i2c_client *client)
 	sensor->exposure = v4l2_ctrl_new_std(&sensor->ctrls,
 					     &sc132gs_ctrl_ops,
 					     V4L2_CID_EXPOSURE, 8,
-					     SC132GS_EXPOSURE_MAX, 1,
+					     hdr ? 2176 : SC132GS_EXPOSURE_MAX, 1,
 					     SC132GS_EXPOSURE_DEFAULT);
 	sensor->analogue_gain = v4l2_ctrl_new_std(&sensor->ctrls,
 						  &sc132gs_ctrl_ops,
@@ -619,9 +708,19 @@ static int sc132gs_probe(struct i2c_client *client)
 						  0,
 						  ARRAY_SIZE(sc132gs_again_lut) - 1,
 						  1, SC132GS_GAIN_DEFAULT);
-	ctrl = v4l2_ctrl_new_std(&sensor->ctrls, NULL, V4L2_CID_PIXEL_RATE,
-				 SC132GS_PIXEL_RATE, SC132GS_PIXEL_RATE, 1,
-				 SC132GS_PIXEL_RATE);
+	/* The HDR table changes PLL and timing. Do not report the linear-only
+	 * 63MHz pixel rate until HDR timing is characterized. CSI receivers use
+	 * the separately reported link frequency for this mode.
+	 */
+	if (!hdr) {
+		ctrl = v4l2_ctrl_new_std(&sensor->ctrls, NULL, V4L2_CID_PIXEL_RATE,
+					 SC132GS_PIXEL_RATE, SC132GS_PIXEL_RATE, 1,
+					 SC132GS_PIXEL_RATE);
+		if (ctrl)
+			ctrl->flags |= V4L2_CTRL_FLAG_READ_ONLY;
+	}
+	ctrl = v4l2_ctrl_new_std(&sensor->ctrls, NULL, V4L2_CID_WIDE_DYNAMIC_RANGE,
+				 0, 1, 1, hdr);
 	if (ctrl)
 		ctrl->flags |= V4L2_CTRL_FLAG_READ_ONLY;
 	if (sensor->ctrls.error) {
@@ -645,7 +744,8 @@ static int sc132gs_probe(struct i2c_client *client)
 	}
 
 	dev_info(dev,
-		 "registered fixed 1088x1280 RAW10 mode, link frequency %lu Hz, %s\n",
+		 "registered fixed 1088x1280 RAW10 mode (%s), link frequency %lu Hz, %s\n",
+		 hdr ? "single-frame HDR 30fps 2lane" : "linear",
 		 link_freq_hz,
 		 sensor->external_trigger ? "external-trigger slave" : "free-run");
 	return 0;

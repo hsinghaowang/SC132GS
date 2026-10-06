@@ -1,0 +1,374 @@
+{
+  "cam0-exposure200": [
+    {
+      "row": 0,
+      "mean": 340.0,
+      "temporal_noise": 7.505553499465135,
+      "spatial_residual": 6.166666666666686
+    },
+    {
+      "row": 128,
+      "mean": 146.66666666666666,
+      "temporal_noise": 5.507570547286102,
+      "spatial_residual": 4.0
+    },
+    {
+      "row": 256,
+      "mean": 245.0,
+      "temporal_noise": 6.6583281184793925,
+      "spatial_residual": 5.083333333333314
+    },
+    {
+      "row": 384,
+      "mean": 334.0,
+      "temporal_noise": 7.571877794400365,
+      "spatial_residual": 6.416666666666629
+    },
+    {
+      "row": 512,
+      "mean": 398.6666666666667,
+      "temporal_noise": 8.32666399786453,
+      "spatial_residual": 6.916666666666657
+    },
+    {
+      "row": 640,
+      "mean": 414.3333333333333,
+      "temporal_noise": 8.504900548115383,
+      "spatial_residual": 7.25
+    },
+    {
+      "row": 768,
+      "mean": 437.3333333333333,
+      "temporal_noise": 8.736894948054106,
+      "spatial_residual": 7.666666666666686
+    },
+    {
+      "row": 896,
+      "mean": 333.0,
+      "temporal_noise": 7.371114795831994,
+      "spatial_residual": 7.0
+    },
+    {
+      "row": 1024,
+      "mean": 352.6666666666667,
+      "temporal_noise": 7.571877794400365,
+      "spatial_residual": 17.333333333333314
+    },
+    {
+      "row": 1152,
+      "mean": 409.3333333333333,
+      "temporal_noise": 7.810249675906654,
+      "spatial_residual": 23.0
+    }
+  ],
+  "cam0-exposure808": [
+    {
+      "row": 0,
+      "mean": 339.6666666666667,
+      "temporal_noise": 7.505553499465135,
+      "spatial_residual": 6.166666666666686
+    },
+    {
+      "row": 128,
+      "mean": 146.33333333333334,
+      "temporal_noise": 5.507570547286101,
+      "spatial_residual": 4.0
+    },
+    {
+      "row": 256,
+      "mean": 244.66666666666666,
+      "temporal_noise": 6.658328118479393,
+      "spatial_residual": 5.166666666666629
+    },
+    {
+      "row": 384,
+      "mean": 333.3333333333333,
+      "temporal_noise": 7.571877794400365,
+      "spatial_residual": 6.333333333333371
+    },
+    {
+      "row": 512,
+      "mean": 397.3333333333333,
+      "temporal_noise": 8.32666399786453,
+      "spatial_residual": 6.916666666666671
+    },
+    {
+      "row": 640,
+      "mean": 414.6666666666667,
+      "temporal_noise": 8.54400374531753,
+      "spatial_residual": 7.249999999999943
+    },
+    {
+      "row": 768,
+      "mean": 437.0,
+      "temporal_noise": 8.736894948054106,
+      "spatial_residual": 7.6666666666667425
+    },
+    {
+      "row": 896,
+      "mean": 333.0,
+      "temporal_noise": 7.505553499465135,
+      "spatial_residual": 6.916666666666686
+    },
+    {
+      "row": 1024,
+      "mean": 352.3333333333333,
+      "temporal_noise": 7.54983443527075,
+      "spatial_residual": 17.33333333333333
+    },
+    {
+      "row": 1152,
+      "mean": 409.0,
+      "temporal_noise": 7.76745346515403,
+      "spatial_residual": 22.916666666666686
+    }
+  ],
+  "cam0-exposure2176": [
+    {
+      "row": 0,
+      "mean": 339.6666666666667,
+      "temporal_noise": 7.3711147958319945,
+      "spatial_residual": 6.249999999999886
+    },
+    {
+      "row": 128,
+      "mean": 146.33333333333334,
+      "temporal_noise": 5.507570547286101,
+      "spatial_residual": 4.0
+    },
+    {
+      "row": 256,
+      "mean": 244.33333333333334,
+      "temporal_noise": 6.658328118479393,
+      "spatial_residual": 5.083333333333314
+    },
+    {
+      "row": 384,
+      "mean": 333.3333333333333,
+      "temporal_noise": 7.571877794400365,
+      "spatial_residual": 6.416666666666657
+    },
+    {
+      "row": 512,
+      "mean": 396.6666666666667,
+      "temporal_noise": 8.18535277187245,
+      "spatial_residual": 6.833333333333314
+    },
+    {
+      "row": 640,
+      "mean": 413.3333333333333,
+      "temporal_noise": 8.54400374531753,
+      "spatial_residual": 7.25
+    },
+    {
+      "row": 768,
+      "mean": 436.0,
+      "temporal_noise": 8.888194417315589,
+      "spatial_residual": 7.583333333333314
+    },
+    {
+      "row": 896,
+      "mean": 332.3333333333333,
+      "temporal_noise": 7.505553499465135,
+      "spatial_residual": 6.916666666666671
+    },
+    {
+      "row": 1024,
+      "mean": 351.6666666666667,
+      "temporal_noise": 7.54983443527075,
+      "spatial_residual": 17.41666666666663
+    },
+    {
+      "row": 1152,
+      "mean": 408.6666666666667,
+      "temporal_noise": 7.810249675906654,
+      "spatial_residual": 23.083333333333258
+    }
+  ],
+  "cam1-exposure200": [
+    {
+      "row": 0,
+      "mean": 256.0,
+      "temporal_noise": 6.6583281184793925,
+      "spatial_residual": 4.416666666666671
+    },
+    {
+      "row": 128,
+      "mean": 271.0,
+      "temporal_noise": 6.658328118479393,
+      "spatial_residual": 4.416666666666671
+    },
+    {
+      "row": 256,
+      "mean": 284.6666666666667,
+      "temporal_noise": 7.371114795831994,
+      "spatial_residual": 4.833333333333314
+    },
+    {
+      "row": 384,
+      "mean": 337.0,
+      "temporal_noise": 7.937253933193772,
+      "spatial_residual": 6.0
+    },
+    {
+      "row": 512,
+      "mean": 402.3333333333333,
+      "temporal_noise": 8.888194417315589,
+      "spatial_residual": 7.416666666666629
+    },
+    {
+      "row": 640,
+      "mean": 437.6666666666667,
+      "temporal_noise": 9.237604307034013,
+      "spatial_residual": 7.75
+    },
+    {
+      "row": 768,
+      "mean": 456.6666666666667,
+      "temporal_noise": 9.50438495292217,
+      "spatial_residual": 8.083333333333371
+    },
+    {
+      "row": 896,
+      "mean": 440.3333333333333,
+      "temporal_noise": 9.237604307034013,
+      "spatial_residual": 9.333333333333314
+    },
+    {
+      "row": 1024,
+      "mean": 469.0,
+      "temporal_noise": 9.073771725877465,
+      "spatial_residual": 20.916666666666515
+    },
+    {
+      "row": 1152,
+      "mean": 487.0,
+      "temporal_noise": 8.504900548115382,
+      "spatial_residual": 27.500000000000057
+    }
+  ],
+  "cam1-exposure808": [
+    {
+      "row": 0,
+      "mean": 256.0,
+      "temporal_noise": 6.6583281184793925,
+      "spatial_residual": 4.333333333333371
+    },
+    {
+      "row": 128,
+      "mean": 271.3333333333333,
+      "temporal_noise": 6.658328118479393,
+      "spatial_residual": 4.416666666666686
+    },
+    {
+      "row": 256,
+      "mean": 285.0,
+      "temporal_noise": 7.371114795831994,
+      "spatial_residual": 4.833333333333343
+    },
+    {
+      "row": 384,
+      "mean": 338.3333333333333,
+      "temporal_noise": 8.020806277010642,
+      "spatial_residual": 6.083333333333314
+    },
+    {
+      "row": 512,
+      "mean": 404.3333333333333,
+      "temporal_noise": 8.888194417315589,
+      "spatial_residual": 7.416666666666657
+    },
+    {
+      "row": 640,
+      "mean": 438.6666666666667,
+      "temporal_noise": 9.29157324317757,
+      "spatial_residual": 7.833333333333314
+    },
+    {
+      "row": 768,
+      "mean": 457.3333333333333,
+      "temporal_noise": 9.50438495292217,
+      "spatial_residual": 8.166666666666657
+    },
+    {
+      "row": 896,
+      "mean": 441.0,
+      "temporal_noise": 9.16515138991168,
+      "spatial_residual": 9.416666666666686
+    },
+    {
+      "row": 1024,
+      "mean": 469.0,
+      "temporal_noise": 9.073771725877467,
+      "spatial_residual": 20.83333333333337
+    },
+    {
+      "row": 1152,
+      "mean": 487.6666666666667,
+      "temporal_noise": 8.504900548115382,
+      "spatial_residual": 27.5
+    }
+  ],
+  "cam1-exposure2176": [
+    {
+      "row": 0,
+      "mean": 256.0,
+      "temporal_noise": 6.557438524302,
+      "spatial_residual": 4.416666666666572
+    },
+    {
+      "row": 128,
+      "mean": 271.6666666666667,
+      "temporal_noise": 6.658328118479393,
+      "spatial_residual": 4.416666666666657
+    },
+    {
+      "row": 256,
+      "mean": 284.3333333333333,
+      "temporal_noise": 7.505553499465135,
+      "spatial_residual": 4.833333333333314
+    },
+    {
+      "row": 384,
+      "mean": 337.3333333333333,
+      "temporal_noise": 8.010403138505321,
+      "spatial_residual": 6.083333333333314
+    },
+    {
+      "row": 512,
+      "mean": 402.6666666666667,
+      "temporal_noise": 8.888194417315589,
+      "spatial_residual": 7.416666666666629
+    },
+    {
+      "row": 640,
+      "mean": 437.3333333333333,
+      "temporal_noise": 9.29157324317757,
+      "spatial_residual": 7.833333333333314
+    },
+    {
+      "row": 768,
+      "mean": 456.3333333333333,
+      "temporal_noise": 9.539392014169456,
+      "spatial_residual": 8.166666666666629
+    },
+    {
+      "row": 896,
+      "mean": 440.3333333333333,
+      "temporal_noise": 9.237604307034013,
+      "spatial_residual": 9.333333333333371
+    },
+    {
+      "row": 1024,
+      "mean": 469.0,
+      "temporal_noise": 9.073771725877465,
+      "spatial_residual": 20.833333333333314
+    },
+    {
+      "row": 1152,
+      "mean": 487.3333333333333,
+      "temporal_noise": 8.504900548115383,
+      "spatial_residual": 27.583333333333314
+    }
+  ]
+}

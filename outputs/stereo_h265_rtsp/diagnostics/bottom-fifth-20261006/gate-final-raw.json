@@ -1,0 +1,86 @@
+{
+  "cam0": [
+    {
+      "row": 0,
+      "spatial_residual": 6.083333333333343
+    },
+    {
+      "row": 128,
+      "spatial_residual": 3.916666666666657
+    },
+    {
+      "row": 256,
+      "spatial_residual": 4.916666666666686
+    },
+    {
+      "row": 384,
+      "spatial_residual": 6.250000000000057
+    },
+    {
+      "row": 512,
+      "spatial_residual": 6.583333333333343
+    },
+    {
+      "row": 640,
+      "spatial_residual": 7.0
+    },
+    {
+      "row": 768,
+      "spatial_residual": 7.416666666666686
+    },
+    {
+      "row": 896,
+      "spatial_residual": 6.166666666666629
+    },
+    {
+      "row": 1024,
+      "spatial_residual": 6.25
+    },
+    {
+      "row": 1152,
+      "spatial_residual": 5.9166666666667425
+    }
+  ],
+  "cam1": [
+    {
+      "row": 0,
+      "spatial_residual": 4.333333333333314
+    },
+    {
+      "row": 128,
+      "spatial_residual": 4.25
+    },
+    {
+      "row": 256,
+      "spatial_residual": 5.083333333333329
+    },
+    {
+      "row": 384,
+      "spatial_residual": 6.0
+    },
+    {
+      "row": 512,
+      "spatial_residual": 7.25
+    },
+    {
+      "row": 640,
+      "spatial_residual": 7.5
+    },
+    {
+      "row": 768,
+      "spatial_residual": 7.333333333333371
+    },
+    {
+      "row": 896,
+      "spatial_residual": 6.583333333333314
+    },
+    {
+      "row": 1024,
+      "spatial_residual": 5.916666666666686
+    },
+    {
+      "row": 1152,
+      "spatial_residual": 5.5
+    }
+  ]
+}

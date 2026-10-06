@@ -1,0 +1,1 @@
+pairs=180 elapsed_s=5.92229 fps=30.2248 max_timestamp_delta_us=305 cam0_sequence=8..187 cam1_sequence=2..181 luma_checksum=37553

@@ -33,6 +33,7 @@ public:
         int fps_x10{};
         int max_exposure_lines{};
         int last_error{};
+        bool hdr_enabled{};
     };
 
     AutoExposure();

@@ -1,0 +1,198 @@
+{
+  "cam0-csid9.raw": [
+    {
+      "row": 0,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 128,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 256,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 384,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 512,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 640,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 768,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 896,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 1024,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 1152,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    }
+  ],
+  "cam1-csid9.raw": [
+    {
+      "row": 0,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 128,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 256,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 384,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 512,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 640,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 768,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 896,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 1024,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    },
+    {
+      "row": 1152,
+      "mean": 510.0,
+      "unique": 2,
+      "adjacent_row_difference": 1020
+    }
+  ],
+  "encoder-solid": [
+    {
+      "row": 0,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "row": 128,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "row": 256,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "row": 384,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "row": 512,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "row": 640,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "row": 768,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "row": 896,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "row": 1024,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "row": 1152,
+      "mean": 128.0,
+      "std": 0.0,
+      "min": 128,
+      "max": 128
+    }
+  ]
+}

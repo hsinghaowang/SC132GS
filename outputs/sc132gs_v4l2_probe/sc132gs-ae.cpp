@@ -121,6 +121,15 @@ public:
         return control.value;
     }
 
+    bool hdr_enabled() const {
+        v4l2_control control{};
+        control.id = V4L2_CID_WIDE_DYNAMIC_RANGE;
+        if (xioctl(fd_, VIDIOC_G_CTRL, &control) == 0)
+            return control.value != 0;
+        if (errno == EINVAL) return false; // Older linear-only driver.
+        throw AeError(AeErrorCode::control, "get HDR mode " + path_, errno);
+    }
+
     void set(std::uint32_t id, int value) const {
         v4l2_control control{};
         control.id = id;
@@ -184,6 +193,7 @@ struct AutoExposure::Impl {
     int minimum_gain;
     int maximum_gain;
     int max_exposure_us{};
+    bool hdr_mode{};
     int update_counter{};
     bool priming{};
     std::optional<std::uint32_t> previous_sequence;
@@ -199,6 +209,10 @@ struct AutoExposure::Impl {
                                 cam1.limits(V4L2_CID_ANALOGUE_GAIN).minimum)),
           maximum_gain(std::min(cam0.limits(V4L2_CID_ANALOGUE_GAIN).maximum,
                                 cam1.limits(V4L2_CID_ANALOGUE_GAIN).maximum)) {
+        hdr_mode = cam0.hdr_enabled();
+        state.hdr_enabled = hdr_mode;
+        if (hdr_mode != cam1.hdr_enabled())
+            throw AeError(AeErrorCode::control, "stereo HDR modes differ");
         state.exposure_lines = cam0.get(V4L2_CID_EXPOSURE);
         state.analogue_gain_index = cam0.get(V4L2_CID_ANALOGUE_GAIN);
         state.max_exposure_lines = fps_exposure_ceiling();
@@ -214,6 +228,9 @@ struct AutoExposure::Impl {
     }
 
     int fps_exposure_ceiling() const {
+        // HDR exposure uses vendor-specific units at 0x3e31/32. Respect the
+        // driver's validated bound rather than reuse linear-mode line timing.
+        if (hdr_mode) return maximum_exposure;
         // The trigger rate is an integer FPS. Quantize the measured interval
         // before deriving its exposure ceiling so timestamp jitter does not
         // make the limit (and exposure register) oscillate every few frames.
@@ -402,6 +419,9 @@ void AutoExposure::set_max_exposure_us(int microseconds) {
                       "max exposure must be 0..40000 us");
     }
     std::lock_guard lock(impl_->mutex);
+    if (impl_->hdr_mode && microseconds > 0)
+        throw AeError(AeErrorCode::control,
+                      "HDR exposure time conversion is not characterized", EOPNOTSUPP);
     impl_->max_exposure_us = microseconds;
     impl_->state.max_exposure_lines = impl_->fps_exposure_ceiling();
 }

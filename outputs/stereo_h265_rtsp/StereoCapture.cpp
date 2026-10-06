@@ -1,5 +1,5 @@
 #include "StereoCapture.hpp"
-#include "Raw10Luma.hpp"
+#include "BayerLuma.hpp"
 
 #include <linux/videodev2.h>
 
@@ -138,8 +138,8 @@ public:
             frame.luma.resize(output_width * output_height);
             const auto* raw = static_cast<const std::uint8_t*>(
                 mappings_[buffer.index].first);
-            detail::raw10_luma_accelerated(raw, kStride, frame.luma.data(),
-                                           output_width, output_height, scale_);
+            converter_.convert(std::span<const std::uint8_t>(raw, plane.bytesused),
+                               kStride, frame.luma, scale_);
         } catch (...) {
             requeue(buffer.index);
             throw;
@@ -161,6 +161,7 @@ private:
             format.fmt.pix_mp.height != kHeight ||
             format.fmt.pix_mp.pixelformat != kPixelFormat ||
             format.fmt.pix_mp.num_planes != 1 ||
+            format.fmt.pix_mp.plane_fmt[0].bytesperline != kStride ||
             format.fmt.pix_mp.plane_fmt[0].sizeimage < kRawBytes) {
             throw std::runtime_error(path_ + " rejected 1088x1280 pRAA");
         }
@@ -201,6 +202,7 @@ private:
 
     std::string path_;
     int scale_;
+    detail::BayerLuma converter_{kWidth, kHeight};
     int fd_{-1};
     bool streaming_{};
     std::vector<std::pair<void*, std::size_t>> mappings_;

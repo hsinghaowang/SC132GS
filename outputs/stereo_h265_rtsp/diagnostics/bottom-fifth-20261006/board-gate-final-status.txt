@@ -1,0 +1,11 @@
+DA7B3C0F0D0C59EB9501BA3
+Y
+active
+ok mode=auto hdr_enabled=1 target_percent=40 cam0_percent=37 cam1_percent=41 exposure_lines=2176 gain_index=54 fps_x10=300 max_exposure_lines=2176 brightness_limited=0 error_errno=0
+0xc3 0x00 0x32 0x48 0x00 0x00
+0xc3 0x00 0x32 0x48 0x00 0x00
+Oct 06 13:44:42 ubuntu bash[4390]: input_fps=30.0055 submitted_fps=0 dropped_fps=0 pairs=2257
+Oct 06 13:44:47 ubuntu bash[4390]: input_fps=29.9993 submitted_fps=0 dropped_fps=0 pairs=2407
+Oct 06 13:44:52 ubuntu bash[4390]: input_fps=30.0006 submitted_fps=0 dropped_fps=0 pairs=2558
+Oct 06 13:44:57 ubuntu bash[4390]: input_fps=29.9973 submitted_fps=0 dropped_fps=0 pairs=2708
+Oct 06 13:45:02 ubuntu bash[4390]: input_fps=30.0027 submitted_fps=0 dropped_fps=0 pairs=2859

@@ -19,6 +19,7 @@ namespace {
 std::string report(const AutoExposure::Snapshot& state) {
     std::ostringstream out;
     out << "ok mode=" << (state.enabled ? "auto" : "off")
+        << " hdr_enabled=" << (state.hdr_enabled ? 1 : 0)
         << " target_percent=" << state.target_percent
         << " cam0_percent=" << state.cam0_percent
         << " cam1_percent=" << state.cam1_percent

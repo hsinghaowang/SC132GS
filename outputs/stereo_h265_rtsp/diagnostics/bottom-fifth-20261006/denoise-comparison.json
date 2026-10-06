@@ -1,0 +1,8 @@
+{
+  "before": {
+    "median_cell_spread": 6.0
+  },
+  "after": {
+    "median_cell_spread": 3.0
+  }
+}

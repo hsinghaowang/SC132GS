@@ -1,0 +1,128 @@
+{
+  "cam0-rate20": [
+    {
+      "row": 0,
+      "spatial_residual": 6.249999999999943
+    },
+    {
+      "row": 128,
+      "spatial_residual": 4.0
+    },
+    {
+      "row": 256,
+      "spatial_residual": 5.083333333333329
+    },
+    {
+      "row": 384,
+      "spatial_residual": 6.333333333333343
+    },
+    {
+      "row": 512,
+      "spatial_residual": 6.75
+    },
+    {
+      "row": 640,
+      "spatial_residual": 7.083333333333371
+    },
+    {
+      "row": 768,
+      "spatial_residual": 7.5
+    },
+    {
+      "row": 896,
+      "spatial_residual": 6.75
+    },
+    {
+      "row": 1024,
+      "spatial_residual": 17.333333333333314
+    },
+    {
+      "row": 1152,
+      "spatial_residual": 22.91666666666663
+    }
+  ],
+  "cam0-rate25": [
+    {
+      "row": 0,
+      "spatial_residual": 6.166666666666686
+    },
+    {
+      "row": 128,
+      "spatial_residual": 4.0
+    },
+    {
+      "row": 256,
+      "spatial_residual": 4.916666666666686
+    },
+    {
+      "row": 384,
+      "spatial_residual": 6.333333333333329
+    },
+    {
+      "row": 512,
+      "spatial_residual": 6.75
+    },
+    {
+      "row": 640,
+      "spatial_residual": 7.083333333333314
+    },
+    {
+      "row": 768,
+      "spatial_residual": 7.500000000000014
+    },
+    {
+      "row": 896,
+      "spatial_residual": 6.75
+    },
+    {
+      "row": 1024,
+      "spatial_residual": 17.25
+    },
+    {
+      "row": 1152,
+      "spatial_residual": 22.916666666666686
+    }
+  ],
+  "cam0-rate30": [
+    {
+      "row": 0,
+      "spatial_residual": 6.166666666666657
+    },
+    {
+      "row": 128,
+      "spatial_residual": 4.0
+    },
+    {
+      "row": 256,
+      "spatial_residual": 5.083333333333314
+    },
+    {
+      "row": 384,
+      "spatial_residual": 6.416666666666657
+    },
+    {
+      "row": 512,
+      "spatial_residual": 6.75
+    },
+    {
+      "row": 640,
+      "spatial_residual": 7.083333333333371
+    },
+    {
+      "row": 768,
+      "spatial_residual": 7.583333333333314
+    },
+    {
+      "row": 896,
+      "spatial_residual": 6.833333333333314
+    },
+    {
+      "row": 1024,
+      "spatial_residual": 17.166666666666686
+    },
+    {
+      "row": 1152,
+      "spatial_residual": 22.999999999999986
+    }
+  ]
+}
