@@ -79,6 +79,24 @@ int main(int argc, char** argv) {
         try { converter.convert(raw, stride, gray, 3); }
         catch (const std::invalid_argument&) { rejected = true; }
         require(rejected);
+        // HDR tone mapping must use the RAW10 low bits before quantization:
+        // a one-code signal above the measured floor must remain visible.
+        BayerLuma hdr_converter(w, h, true);
+        unsigned previous = 0;
+        for (unsigned level = 0; level <= 1023; ++level) {
+            std::fill(pixels.begin(), pixels.end(), level);
+            raw = pack(pixels, w, h, stride);
+            hdr_converter.convert(raw, stride, gray, 1);
+            require(std::all_of(gray.begin(), gray.end(),
+                               [&](auto v) { return v == gray.front(); }));
+            require(gray.front() >= previous);
+            if (level == 0) require(gray.front() == 0);
+            if (level == 52) require(gray.front() == 0);
+            if (level == 53) require(gray.front() > 0);
+            if (level == 140) require(gray.front() == 102);
+            if (level == 1023) require(gray.front() == 255);
+            previous = gray.front();
+        }
         std::cout << "RGGB flat color, precision, borders, padded stride, scales and ramp passed\n";
     } catch (const std::exception& e) { std::cerr << e.what() << '\n'; return 1; }
 }

@@ -1,0 +1,366 @@
+{
+  "initial_status": {
+    "mode": "auto",
+    "camera_mode": "hdr",
+    "hdr_enabled": "1",
+    "hdr_ratio": "256",
+    "exposure_kind": "hdr_total_rows",
+    "display_gamma_x100": "45",
+    "target_percent": "40",
+    "cam0_percent": "38",
+    "cam1_percent": "38",
+    "exposure_lines": "1096",
+    "gain_index": "0",
+    "fps_x10": "300",
+    "max_exposure_lines": "1492",
+    "brightness_limited": "0",
+    "error_errno": "0"
+  },
+  "conditions": [
+    {
+      "label": "minimum",
+      "total_rows": 8,
+      "registers": [
+        {
+          "total": 128,
+          "second": 1,
+          "hdrc_ratio": 253,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 128,
+          "second": 1,
+          "hdrc_ratio": 253,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "sha256": [
+            "6463476c28510f998bf8707952db45409cc6b092a08bd347c17bd44e258f4642",
+            "879b0b2701e846ce77c3bb27e72185b21153d46cb0746d6ea115ae83ed626f8d",
+            "bc42ec5de3a2bcbe97d72f38dbad6f153642c3773c07b7fa1fb7d87d04dee838",
+            "192adff65a08752d2a0c0136b64bfe8a20592cbc861397ff98bb34e49f57d382",
+            "8471e2e7e08ca86b8799c798f56bd9bb755932d3c137c7dae9f4202f2dfe00f1",
+            "40d0198a1e0a209cacb010a7dba9a4021fe14b5a2159dd841b438c8e3b5912de",
+            "1268c6f67d595e7ae8a9e2fd4a4102d0f8300ea5ce0c47ee4cb7775249bbdda0",
+            "d9547dce2d35774e63bf341560d60612656b87f42798b740677aea56a8f22143",
+            "7048a3793d8dad1afa11ade3f1e82b61a179e3391abd36471012a0f62c630e30",
+            "037495272f52ededebe5b0253bc6f82a847b17a10e58aa80c16fd9738913923c",
+            "39a9815c938e362f95bfc113f3fda472317e211879a47780d1dc2cd3dcebd286",
+            "6f6aa992cc60a6181108e4aa63dfeb1a3d0212d7df0d2aeed7b31decd586a24e"
+          ]
+        },
+        {
+          "eye": 1,
+          "sha256": [
+            "0dfa2cb14fdf42730f327bfd489e3b3754be30d7151fb9b6c701a995e38d4d9e",
+            "c20631a59de22f919816625320e6bcda85b7282b1bb06cec962431e95a91da1e",
+            "8f0d5cf498991a31f21fcbb846c06eb008c7c43e00c937b9ef39d47e23b53a08",
+            "25ee09f5374b15bf579497662ee5ba333a32901dcf751f1e538892fbec4d8970",
+            "f251c553af60d1f12248a5d736098511f19e5998ddbfd2b0224cfc2d4661e071",
+            "a8498a5c21d63437f0feb3059ac15eb7652a8f84f8c1a4649714855978def996",
+            "7f852a4288e21c19dfb981632ff392502eb93d7c1a875b90c7bfc2960b217016",
+            "bf7f6219b6c1f04d330e43cc76fd8355ef4dec8723cf70c5de8457e51b53bcef",
+            "4d2426e41080ad6c55c8f04ef9d7c0be016a114646d40338948f6f683ddb1f51",
+            "f63ec9948726acc0c344f425892563c0e943064b0a95cd97ecfe1797ddc3db54",
+            "5e6f85545fbfaff632a34ad876076dacb7b7219a9583727ca3cf57b16a6523f5",
+            "5da626446d387ace7631ca18964e41abdfa6919fa2245dad12a489f97fc91c4b"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "medium",
+      "total_rows": 512,
+      "registers": [
+        {
+          "total": 8192,
+          "second": 32,
+          "hdrc_ratio": 254,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 8192,
+          "second": 32,
+          "hdrc_ratio": 254,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "sha256": [
+            "45a770f89e23d135df0d2a3003553f79eaeb12c8038ab87d0ef75e466ff454f9",
+            "9fdaad4dcd62a4c37a0bbb4d43b2cda53134caaec1828ce3078f329d611e9234",
+            "1109ceba9e9d735542a5cbbcd4465160cf0c96c6f2120ea460e5fae8caaff26a",
+            "ffa5200f6ede188715fef420e43aa4ee5c4468d26ce50f4a4d5c6c9db86ff9f4",
+            "1e6ff7e57bdc5358aedf8cd9c788ac5fa4089426f44c8c5b9ffcc71daee681a6",
+            "186dfddc3ef33794825965255f6ef49e7458a1e9e01e8c05f9432e884d461da1",
+            "e92a3e2a78ebb1398fc5b33d71023470efa1f820acac69ab02496a012c572545",
+            "7905c34fefd75a0b19a8738ae1bfcf132629aaa9cf0729e89f85ae3b05ea9c7b",
+            "b8063bcf874f0d43ec28473378f206591008bb401bcc13935661bea5d0664d50",
+            "f3c7c78a59d2b6846e791ff3bc6a4c554994b9d6d7dcff75b4d49db22f300e35",
+            "bc520e599877a355f43671b361dbef8015c5921a468d12eb51dc04070998649c",
+            "f2aa5a0b7f28f1784380d8eae3d25b1666ead59224774614cf5d1276f152b38d"
+          ]
+        },
+        {
+          "eye": 1,
+          "sha256": [
+            "1b6736e2af557188f7dfb41bd1292e229921fd1a9f63f70616c974b54e2ec5af",
+            "3b4697a3057f86012b851061aa4c71541a979e64d558a88bd19cc4d5009c506d",
+            "c267646cffe765cef597a45803bedcafdf26bfc963fd395b8240b2a093b2d81c",
+            "88b7da90103ba2fe85c3f03a052eebf2706eb726351fea024c9a53f825ab127f",
+            "2f533faf9fabcdaa3bae0217867629b97aa20dfceb435f28121b5d74a7a213b8",
+            "7153b9d21c9f60eee471dbc95c72bf8f483165738f078ad8dfbdb6ff1884c0cc",
+            "e28a9fff822ed1116241fe6057d2a7cd78ef2862e5b16e3b4097e8b605ee00e5",
+            "2ebf17d42ce69a3a241b5ef6cc6165f283753753f02fd4750852f32047d728d3",
+            "55e31d39bbb716168365573b0754f941e0af8483923586e4a81925b3aba59f5c",
+            "4d57009c1f191c8031e8cbb0b66cd0feb6a0add381d20112f40a93f6162c877b",
+            "081849da9d57ff8d0992eda44612d6ec650f5f7118a078e7953cf30a19cd39f8",
+            "3ed89d7d37e48cbad9c95200b3ec05580a94c7d3d15c02e38dff1f03b141719b"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "current",
+      "total_rows": 1096,
+      "registers": [
+        {
+          "total": 17536,
+          "second": 69,
+          "hdrc_ratio": 254,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 17536,
+          "second": 69,
+          "hdrc_ratio": 254,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "sha256": [
+            "d7eb1c03de8d4f60b62576931d29498a3543dfc52f9e01330697aef5483c6368",
+            "6da27a2045983c285106b6e3c44a5348b5e8c63a5c02fe7c629068fa90ed9084",
+            "ca40dbb9cedcde7fc1cd20075f69a91c5851fa61d8474d6cc4c707b6bf5d731b",
+            "24dc678c04110da11a163fe7e286b499344aa0c1dc6dcd8be619cf86d50cedab",
+            "1649622a49deefe7acabcff8d75d684ae2419484508dcd087c31f6d79d025228",
+            "d6917077c18d876ba7a79d8a10c4f784baa2b59e30819281efef4f81f6bf5953",
+            "333765070e1dc5e8eb7ba0f9e043ccb6703fcf1f389df8deb547c28aefcb2fc5",
+            "11cc472562612ef7f68eac5e6292333a64c39ac27049d59218f6a56556be6d1e",
+            "ebe954ee53c037e969ffd2ad85788366bdc8417fddeda3f97006fd74a2a34f9e",
+            "55655bfe9d1e723b42a9daab0a1cc9483ab594bb2287c01692042a3e94c2ef89",
+            "ff0faa9d970db843d98a27a3e9104018ce063ad9a14f9c261f0e6059d80c9500",
+            "4a88677f1a5bd60a2b0f3eb278b9c1119896655068677ed559cb26b9a4a2211f"
+          ]
+        },
+        {
+          "eye": 1,
+          "sha256": [
+            "8dc4fa07e26e0901ad6283c758c6e6a438f29a976cc2c4768f9cbb3bfe3e6e54",
+            "9850c5d40b47ccdfff2c0265d0b21178e754bf9e41c07d54919e84649c17d651",
+            "6e9eae69babcede160421c3afb91979c754fdaf502ef34eb9495f2563fcfd607",
+            "f58f0f11827110050a35383b4bdf7f2f8a99ea2818db78ca65839395cbe8c5dc",
+            "43af85066ed11252d85bb5c1de1c26be30a0537a8573e9e2dbefe2b28726a80a",
+            "a8f36b81c764978f136288a318a4ffb1ee070da46599b0dba636a45ac37b61cf",
+            "5291d34d31b916325e71e932feccf56aea3505cf10a4f7ad85ab7809d273f372",
+            "d7e772b2f46b29a9f7fb749bc59fcadc8fd293de20744c4493d46c5852f38c1c",
+            "051274f80e558e458740cd55a2acee33eb37f225e2d908150c25f7be853b720d",
+            "4d0c3be546bfc962baeedd237e5293c6ed95165fdfcf962e59f7808fb3786433",
+            "6afd8ada38fffa66abb3c28efe40dc574425ada86b10a926ad943633febc3c50",
+            "d4707636e1d5046c2c5d9b9bb368830167f88d90be2eb646d8e1aa46ca0c6f33"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "maximum",
+      "total_rows": 1492,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 93,
+          "hdrc_ratio": 254,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 93,
+          "hdrc_ratio": 254,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "sha256": [
+            "1edc6f68aa7c3c01963a18caeb47cb2824e6bbb7dbe2f97ddb153e409fcabfde",
+            "744981c0bdf344b9d738d2e4fec74c133b66f45f925563a13846d3a4c147e766",
+            "e0c1bf0187b5418128299b56c7cdf05eb7faa2264b1369af43f644ecb7f173ea",
+            "2f2cb7a78b93d4036289933b491ab72ce1f59399bb154582b029c220e286926b",
+            "3838dfc9eb0f151c4a2cdd1889513f40d141c01e18f1495d4b523b66d250a2e8",
+            "cf88b17d7886aca7cda187352e0a5a314545a0c99bc494e37bfa5bcd0adc0b36",
+            "f3161ec4e972aeaf5b3b4b993dd017d3ee8807f13b3323c38e0118a2a76937a3",
+            "a1035557173127e3998fb652991b92faddcd239f8535ae6ca0feb389cbdfe721",
+            "79ceb8c17bb74c0fac45ad10e29c0670a322a23e6ab5e3479d9c9f4a410cd89c",
+            "4ab9a9a32e33cd366117071821ff6f1f7c7792a4b3de26652e9697a68b5a37e6",
+            "8e1a6f45774d5f7e24a8874b7b1a3ddfd28ac0cfa6b77d0f210a5c2d26313acf",
+            "bd0f52b3dd81768aee8f7749d654f2fd889243008c94792dea056463d05e2c16"
+          ]
+        },
+        {
+          "eye": 1,
+          "sha256": [
+            "85b09bf310f45b12c835d1a9a361490830f8dd799a58a5274b5b83484e6246b0",
+            "9017fe7bcb897dc41a56c45f64fb4f03bee956f80febba27769dd62b3b64af1d",
+            "92717cf6ee72f7e411f9965b09b18bf596270e48f242b5a07362f550016e5900",
+            "b17956348fc90482384a65b533ed7ca25b5ba0eafb490ded2c817a8220a110ad",
+            "cada7b5f18f644ffa74060a39b3d1d6d6e251119fd231d763fda704ca7330ce1",
+            "0a429d6d2fdfc445148a0e931f36558086b01c3edf1f7537d45fc93b3ef61456",
+            "732d63dd40b6d99e38eaeeeaa74e6122d740051b72488e718db82db3b39182d6",
+            "ec24f25afc04811d9ff5fd339f16d84ba6957e89adaaad3c107be0a36a9eb9e1",
+            "bc02ceea59a4d8e70798985f1e217c9bb483aef0093cc87d3b86ff6cbba31995",
+            "4be3c13858e60cc6c3a54b6b8b4ccb08f3cc2f43d20d0d03f833319c2d1fb1b7",
+            "076d550305c551184e24f318c7463714728032eef6d335500d7baae10b7361b8",
+            "5b0bf102651168fada1e368986c365d6c7fdf8eb6ac7254f7e366af9b56e3576"
+          ]
+        }
+      ]
+    }
+  ],
+  "final_status": {
+    "mode": "auto",
+    "camera_mode": "hdr",
+    "hdr_enabled": "1",
+    "hdr_ratio": "256",
+    "exposure_kind": "hdr_total_rows",
+    "display_gamma_x100": "45",
+    "target_percent": "40",
+    "cam0_percent": "42",
+    "cam1_percent": "42",
+    "exposure_lines": "1492",
+    "gain_index": "0",
+    "fps_x10": "299",
+    "max_exposure_lines": "1492",
+    "brightness_limited": "0",
+    "error_errno": "0"
+  }
+}

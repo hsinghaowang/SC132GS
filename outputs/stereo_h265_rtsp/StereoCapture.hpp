@@ -21,7 +21,7 @@ struct FramePair {
 class StereoCapture final {
 public:
     StereoCapture(const std::string& cam0, const std::string& cam1, int scale,
-                  int frame_rate);
+                  int frame_rate, bool hdr_display = false);
     ~StereoCapture();
     StereoCapture(const StereoCapture&) = delete;
     StereoCapture& operator=(const StereoCapture&) = delete;

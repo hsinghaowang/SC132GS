@@ -1,0 +1,8 @@
+ok camera_mode=hdr fps=30 running=1
+ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 exposure_kind=hdr_total_rows display_gamma_x100=38 display_black_raw10=52 target_percent=40 cam0_percent=40 cam1_percent=40 exposure_lines=1366 gain_index=0 fps_x10=300 max_exposure_lines=1492 brightness_limited=0 error_errno=0
+1c3223613ca5c10e9e3ddafe7e462e6db73e4ad9f8ea4ab5afdf085a660298c9  /home/ubuntu/stereo-h265-rtsp/build/stereo-h265-rtsp
+3f3cfcf15e4a7d7d4dd44afdd0c80ed4e4640cf599c8ee4ab5b2a39f860ad81c  /lib/modules/6.8.0-1084-qcom/extra/sc132gs.ko
+C3FDD2D83D5E4E732D6D835
+BIND=192.168.137.226
+BRIGHTNESS=40
+AUTO_EXPOSURE=1

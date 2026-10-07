@@ -1,0 +1,56 @@
+[
+  {
+    "eye": 0,
+    "total_rows": 1366,
+    "registers": {
+      "total": 21856,
+      "second": 85,
+      "hdrc_ratio": 254,
+      "gain_mode": 11,
+      "long_gain": [
+        0,
+        128,
+        3,
+        32
+      ],
+      "short_gain": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hdr_mode": 195,
+      "hdrc_enable": 1
+    },
+    "lamp_saturated_percent": 0.0,
+    "full_saturated_percent": 0.0,
+    "central_median_raw10": 134.0
+  },
+  {
+    "eye": 1,
+    "total_rows": 1366,
+    "registers": {
+      "total": 21856,
+      "second": 85,
+      "hdrc_ratio": 254,
+      "gain_mode": 11,
+      "long_gain": [
+        0,
+        128,
+        3,
+        32
+      ],
+      "short_gain": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hdr_mode": 195,
+      "hdrc_enable": 1
+    },
+    "lamp_saturated_percent": 0.0,
+    "full_saturated_percent": 0.0,
+    "central_median_raw10": 135.0
+  }
+]

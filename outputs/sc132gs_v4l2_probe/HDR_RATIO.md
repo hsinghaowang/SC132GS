@@ -170,9 +170,229 @@ evidence directory. Original RAWs and the temporary capture script remain
 on the board under `sc132gs-hdrc-ratio-20261006/right-gain/` and
 `sc132gs-mode-switch-20261006/right-gain-check.py`, respectively.
 
+## Fixed-TOTAL HDR exposure-strength sweep
+
+The 2026-10-06 sweep tested TOTAL/SECOND ratios 2.74265, 4, 8 and 16,
+then repeated the first condition. TOTAL stayed at `5d40`, common analogue
+gain index stayed at 57 (`3e08/09=23/3d`), and AE was disabled. The driver
+updated SECOND and the matching `5400` through its group transaction.
+Both eyes had identical verified register values before and after each
+RTSP screenshot and during each RAW capture. Long digital gain and all four
+short-gain registers were held at their existing values; the short-gain
+registers were zero. This is a timing-ratio test of the existing profile,
+not a complete gain or HDR knee calibration.
+
+| TOTAL/SECOND | Exposure control | SECOND | 5400 |
+| --- | ---: | --- | --- |
+| 2.74265 | 2176 | 2200 | a2 |
+| 4 | 1492 | 1750 | bf |
+| 8 | 746 | 0ba8 | df |
+| 16 | 373 | 05d4 | ef |
+
+Five RTSP images were decoded at 2176x1280. A separate RAW phase collected
+12 complete, distinct 1,740,800-byte frames per eye and condition, after
+60 warm-up frames. All 120 RAW frame hashes were checked again after copying
+to the Windows host. The two phases used matching register states; they
+were not simultaneous captures. All previews use a common fixed display
+scale without exposure normalization. RAW previews average 12 frames.
+
+The fixed lamp region is x=650..1079, y=660..1059 in each horizontally
+mirrored 1088x1280 eye, matching the RTSP orientation. RAW10 saturation is
+defined as sample >=1020:
+
+| Ratio | CAM0 lamp saturated % | CAM1 lamp saturated % |
+| --- | ---: | ---: |
+| 2.74265 before | 9.234 | 9.852 |
+| 4 | 9.229 | 9.842 |
+| 8 | 9.236 | 9.846 |
+| 16 | 9.237 | 9.831 |
+| 2.74265 after | 9.239 | 9.863 |
+
+The lamp region and RTSP detail show no meaningful highlight recovery as
+the exposure ratio increases. The right-eye halo remains visible. A person
+moved at the frame edge, affecting whole-image saturation and some dark
+pixels; whole-image differences cannot be attributed entirely to the
+ratio. Temporal standard deviation includes illumination variation and
+motion, so it does not establish a sensor-noise improvement.
+
+This scene does not support "the ratio is merely too small" as a sufficient
+explanation of the similar Linear/HDR output. It also does not prove HDR is
+disabled: the light may exceed the recoverable range, and register readback
+alone does not prove the intended response curve under external trigger.
+The next investigations are second-stage exposure behavior in the FSYNC
+profile and the existing long/short gain and HDR calibration settings.
+The production exposure policy was not changed by this diagnostic.
+
+Evidence, statistics, and full/cropped previews are under
+`../stereo_h265_rtsp/diagnostics/hdr-strength-20261006/`; original RAW files
+remain on the board at `/home/ubuntu/sc132gs-hdr-strength-20261006/`.
+The capture finally block restored Linear 60 FPS, automatic brightness
+target 40%, and validated a freshly decoded frame from the restored stream.
+
 The previous mode-switch driver is backed up at
 `/home/ubuntu/sc132gs-hdrc-ratio-20261006/sc132gs-before.ko`. To revert,
 stop the RTSP service, install that file at
 `/lib/modules/$(uname -r)/extra/sc132gs.ko`, run `depmod -a`, then reboot.
 After reboot, `sudo sc132gs-ctl set-mode hdr` restores capture and RTSP.
 Do not unload CAMSS to replace the sensor driver while its graph owns it.
+
+## Low-gain HDR response and managed exposure profile
+
+The follow-up sweep on 2026-10-06 found a real gain/response interaction.
+With unity analogue gain (`3e08/09=03/20`) and fixed TOTAL `5d40`, increasing
+TOTAL/SECOND recovered lamp structure in both RAW and decoded RTSP. Central
+RAW medians stayed approximately 139–140 while the highlighted lamp changed.
+Repeating both the unity-gain baseline and the original gain-57 baseline
+reproduced the initial saturation. This separates the ratio effect from a
+simple reduction of the entire image's exposure or a scene-lighting change.
+
+| Profile | Gain index | TOTAL/SECOND | CAM0 lamp saturated % | CAM1 lamp saturated % |
+| --- | ---: | ---: | ---: | ---: |
+| Original before | 57 | 2.74265 | 9.202 | 9.867 |
+| Unity before | 0 | 2.74265 | 7.120 | 8.059 |
+| Unity, SECOND `00bc` | 0 | 126.97872 | 0.038 | 0.138 |
+| Unity, SECOND `005c` | 0 | 259.47826 | 0.000 | 0.000 |
+| Unity repeated | 0 | 2.74265 | 7.120 | 8.061 |
+| Original repeated | 57 | 2.74265 | 9.196 | 9.821 |
+
+The region and saturation threshold are the same as the earlier sweep.
+Each of the six conditions collected 12 complete, distinct RAW frames per
+eye after 60 warm-up frames; all 144 hashes were checked on Windows.
+Sensor settings matched between the separately captured RAW and RTSP phases.
+See `../stereo_h265_rtsp/diagnostics/hdr-low-gain-20261006/` for capture
+evidence, statistics and fixed-scale RAW/RTSP images. Original RAW files
+remain at `/home/ubuntu/sc132gs-hdr-low-gain-20261006/` on the board.
+The earlier negative high-gain sweep remains valid for that profile, but
+does not describe the low-gain response. These observations do not identify
+the precise internal clipping stage or establish an absolute DR in dB.
+
+Short-gain writes (`3e10..13`) were also tried through grouped and direct
+transactions and read back as zero. No such writes were added to production.
+The public D-Robotics `sc132gs_utility.c` single-frame 1088 HDR branch uses
+`NORMAL_M` with `extra_mode==1`; it does not take the separate `DOL2_M`
+short-gain write branch. A zero readback here does not establish that the
+second stage is disabled. The positive low-gain RAW test provides the
+response evidence.
+
+### Driver and AE contract
+
+Standard V4L2 `EXPOSURE` retains the old HDR meaning: SECOND=`control*4` in
+1/16 nominal-row register units. A new private managed profile lets AE
+adjust TOTAL independently of the requested compression ratio:
+
+| Control | ID | Values | Meaning |
+| --- | --- | --- | --- |
+| `hdr_total_nominal_rows` | `00982a00` | 8..1492, default 1492 | TOTAL=`value*16` |
+| `hdr_total_second_ratio` | `00982a01` | 0 or 2..256, default 0 | 0 selects legacy; nonzero selects managed |
+
+In managed mode, SECOND=`max(1,round(TOTAL/requested_ratio))` and
+`5400=round(255*(TOTAL-SECOND)/TOTAL)`. The driver stages all six register
+bytes (three TOTAL, two SECOND, one HDRC coefficient), closes the group,
+and launches it only after successful staging. Its existing mutex covers
+the transaction. A change to the legacy `EXPOSURE` control is rejected
+with `EBUSY` while managed mode is active. Setting ratio=0 restores the
+original TOTAL `5d40` and the cached legacy SECOND. Unchanged standard-control
+writes can be handled as a no-op by the V4L2 core.
+
+Mode changes still require stopped capture. They clear managed ratio to 0,
+reset TOTAL to 1492 and reset legacy exposure to 808. STREAMON reapplies the
+mode table, verifies critical mode registers and applies the cached active
+exposure profile. The HDR FSYNC `3225=00` fix is retained. Both modes use
+the same two-lane wiring and Device Tree.
+
+HDR AE activates requested ratio 256 and gain index 0 on both eyes. It
+adjusts TOTAL rather than legacy SECOND and never raises gain to reach an
+unattainable target. Its 1492-row ceiling is conservative for the validated
+30-FPS profile; physical HDR microseconds remain uncharacterized.
+Quantization means the actual TOTAL/SECOND ratio varies slightly. At TOTAL
+8 rows, SECOND is one register tick and the actual ratio is 128; the
+requested ratio field must not be interpreted as an exact readback.
+The existing two-sensor rollback on an individual control failure remains
+in use. This is not a simultaneous electrical update or exposure-sync proof.
+
+### HDR display and feedback
+
+Unity-gain HDR preserves highlights but has compressed midtones. Minimum
+TOTAL (8 rows), 512, 1096 and 1492-row RAW captures established a common
+output floor of 52. At 8 rows the central RAW medians were 52/53; at 1492
+rows they were 140/142. These four profiles also used 12 RAW frames per eye,
+verified on Windows, with evidence under
+`../stereo_h265_rtsp/diagnostics/hdr-managed-raw-20261006/` and original RAW
+at `/home/ubuntu/sc132gs-hdr-managed-raw-20261006/`.
+
+The HDR RTSP converter therefore uses this fixed, mode-specific display
+calibration on full 10-bit BT.709 grayscale, before final 8-bit quantization:
+
+`display = round(255 * clamp((raw10 - 52) / (1023 - 52), 0, 1)^0.38)`
+
+A 1024-entry LUT avoids per-pixel powers. Linear conversion remains unchanged.
+The calibration is empirical for this board/profile, not a universal sensor
+factory black-level specification. Original RAW is unchanged. Both sensor
+highlight recovery and display brightness are necessary for this preview:
+the curve cannot recover already-clipped RAW.
+
+`AutoExposure::LumaEncoding` explicitly states whether luma has this HDR
+display response. RTSP supplies `hdr_display`; the default raw-stream caller
+uses `sensor_linear`. The AE target is the mean of the two central sampled
+medians, with a tighter HDR deadband. When observing display-encoded HDR,
+its exposure EV step accounts for the exponent. Status reports
+`exposure_kind=hdr_total_rows`, `hdr_ratio=256`, `display_gamma_x100=38`,
+and `display_black_raw10=52`, making the active units and display response
+visible. Raw callers do not implicitly claim tone-mapped brightness.
+
+```mermaid
+sequenceDiagram
+    participant Capture as StereoCapture
+    participant Luma as BayerLuma
+    participant AE as AutoExposure
+    participant Driver as SC132GS driver
+    participant Sensors as CAM0 / CAM1
+    participant Encoder as H.265 / RTSP
+    Capture->>Luma: Convert packed RAW10, HDR display profile
+    Luma-->>Capture: 8-bit grayscale after RAW10 LUT
+    Capture->>AE: Measure both displayed medians
+    AE->>Driver: Update common TOTAL (ratio=256, gain=0)
+    Driver->>Sensors: Group TOTAL + SECOND + 5400 per eye
+    Capture->>Encoder: Compose mirrored stereo NV12
+```
+
+### Final hardware and playback verification
+
+The deployed module built against kernel `6.8.0-1084-qcom`, then was installed
+with `depmod` and one controlled reboot. The loaded module srcversion matched
+the installed file: `C3FDD2D83D5E4E732D6D835`;
+module SHA256 `3f3cfcf15e4a7d7d4dd44afdd0c80ed4e4640cf599c8ee4ab5b2a39f860ad81c`.
+The mode controller and one persistent VPU encoder remain in use.
+
+Live Linear → HDR → Linear → HDR transitions passed, with actual receiver
+rates about 59.9/30.0 FPS. Fresh RTSP sessions decoded 30 frames at 2176x1280
+for every comparison. The same-mode request, labelled `hdr-restart` in the
+recorded evidence, was a verified no-op, not a service restart. HDR target
+20% reached 20%/20% at TOTAL 203 rows; target 40% reached 40%/40% at 1366 rows.
+Target 60% reported `brightness_limited=1` at maximum TOTAL without raising
+gain. Both eyes rejected ratio=1, TOTAL=1493 and a conflicting legacy
+exposure change, with unchanged sensor register states.
+
+The final managed RAW capture at TOTAL `5560` (1366 rows), SECOND `0055`
+(85 ticks), and `5400=fe` collected another 12 distinct frames per eye.
+Both the fixed lamp region and full image had 0% samples >=1020 in this
+capture. Both sensors read `3220=c3`, `5001=01`, gain `03/20` and identical
+exposure/coefficient fields. Actual TOTAL/SECOND was approximately 257.13.
+This is highlight evidence for the tested scene, not a guarantee for every
+light source or moving object.
+
+Windows RTSP/TCP received 240 H.265 access units in eight seconds, 29.93 FPS.
+CTest passed all four existing checks, with the Bayer check extended to
+test the monotone HDR response, black/white endpoints, and preservation of
+RAW10 increments before display quantization. The service was left in HDR
+30 FPS with AE enabled and target 40%; prefs were persisted after restoration.
+
+Final screenshots, JSON evidence, RAW hashes, analysis, reproduction scripts
+and the Windows network result are under
+`../stereo_h265_rtsp/diagnostics/hdr-managed-live-v2-20261006/`.
+Original final RAW files remain at `/home/ubuntu/sc132gs-hdr-final-raw-20261006/`.
+The RTSP binary and module from before this managed-profile change are backed
+up at `/home/ubuntu/sc132gs-hdr-managed-20261006/rtsp-before` and
+`/home/ubuntu/sc132gs-hdr-managed-20261006/sc132gs-before.ko`, respectively.
+To revert, stop the stream, restore both files to their installed paths,
+run `depmod -a`, reboot, and use `sc132gs-ctl set-mode` to restart capture.

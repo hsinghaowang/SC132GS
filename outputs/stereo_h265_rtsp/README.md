@@ -136,11 +136,23 @@ VLC 視窗實際顯示率仍由播放器端決定。
 480 個 H.265 access units（約 59.76 FPS）。這證實 AE 不再來回寫入
 曝光與增益；VLC 畫面觀感仍需使用者確認。
 
-60 FPS 時 AE 的曝光上限約 1330 lines（15.8 ms），類比增益最高為
-128。若兩者到頂而場景仍偏暗，AE 會回報 `brightness_limited=1`；
-這表示 sensor 已無更多進光餘裕。曾在 RTSP 輸出套用顯示亮度曲線，
-但 VLC 畫面過白，現已移除；NV12 合成直接使用原始灰階，AE 也量測
-原始 luma。Windows VLC 的「影像調整」效果已關閉。
+Linear 60 FPS 時 AE 的曝光上限約 1330 lines（15.8 ms），類比增益最高為
+128。若兩者到頂而場景仍偏暗，AE 會回報 `brightness_limited=1`。
+Linear 使用原始灰階；Windows VLC 的「影像調整」效果已關閉。
+
+2026-10-06 的 HDR 改用 1× 類比增益與約 256:1 的 TOTAL/SECOND 比例。
+AE 調整 TOTAL，而驅動同時更新 TOTAL、SECOND 與 `5400`。較高增益下，
+單純增加比例仍無法恢復這個場景的高光；低增益下則能保留燈具橫條。
+HDR 總曝光上限保守維持 1492 nominal rows，曝光時間的微秒換算尚未量測。
+若亮度目標無法達成，控制器回報限制，不會提高增益而重新犧牲高光。
+
+HDR 的 RTSP 顯示在完整 RAW10 灰階上先扣除實測黑位 52，再套用 gamma
+0.38，最後量化為 8-bit。這個顯示校正只用於目前 HDR profile；RAW 擷取
+仍保留原始數值。AE 量測經此曲線轉換的顯示亮度，因此 `set-brightness 40`
+在 HDR／Linear 都代表顯示中間亮度目標。此目標是兩眼中央取樣區的中位數，
+的平均值，並非整幅平均值。HDR 狀態的 `exposure_kind=hdr_total_rows` 表示
+`exposure_lines` 現在回報 TOTAL nominal rows，並非舊 SECOND 控制單位。
+控制與 RAW／RTSP 證據見 [HDR_RATIO.md](../sc132gs_v4l2_probe/HDR_RATIO.md)。
 偶發單次 V4L2 sequence 前向跳號會記錄並繼續串流；sequence 倒退
 仍視為錯誤。
 

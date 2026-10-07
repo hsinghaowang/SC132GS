@@ -10,7 +10,7 @@ namespace stereo_rtsp::detail {
 // Each capture device owns its converter and scratch storage.
 class BayerLuma final {
 public:
-    BayerLuma(int width, int height);
+    BayerLuma(int width, int height, bool hdr_display = false);
     ~BayerLuma();
     BayerLuma(BayerLuma&&) noexcept;
     BayerLuma& operator=(BayerLuma&&) noexcept;

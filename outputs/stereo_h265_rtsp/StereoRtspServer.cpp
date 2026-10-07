@@ -283,12 +283,12 @@ struct StereoRtspServer::Impl {
     }
 
     void read_frames(std::stop_token stop, int eye_width, int eye_height) {
-        AutoExposure exposure;
+        AutoExposure exposure(AutoExposure::LumaEncoding::hdr_display);
         exposure.set_target(settings.target_brightness_percent);
         if (!settings.auto_exposure) exposure.disable();
         ControlServer control(exposure);
         StereoCapture capture(settings.cam0, settings.cam1, settings.downscale,
-                              settings.frame_rate);
+                              settings.frame_rate, exposure.snapshot().hdr_enabled);
         const std::size_t y_bytes = static_cast<std::size_t>(eye_width) * eye_height * 2;
         const std::size_t nv12_bytes = y_bytes * 3 / 2;
         auto interval_start = std::chrono::steady_clock::now();

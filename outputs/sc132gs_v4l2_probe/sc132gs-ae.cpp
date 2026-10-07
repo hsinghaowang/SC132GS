@@ -3,6 +3,9 @@
 
 #include <linux/videodev2.h>
 
+#include "sc132gs-controls.h"
+#include "sc132gs-hdr-profile.hpp"
+
 #include <algorithm>
 #include <array>
 #include <cerrno>
@@ -188,34 +191,54 @@ struct AutoExposure::Impl {
     SensorDevice cam1{sensor_node("-0030")};
     mutable std::mutex mutex;
     Snapshot state;
-    int minimum_exposure;
-    int maximum_exposure;
-    int minimum_gain;
-    int maximum_gain;
+    int minimum_exposure{};
+    int maximum_exposure{};
+    int minimum_gain{};
+    int maximum_gain{};
     int max_exposure_us{};
     bool hdr_mode{};
+    bool display_encoded{};
     int update_counter{};
     bool priming{};
     std::optional<std::uint32_t> previous_sequence;
     std::optional<std::int64_t> previous_timestamp_ns;
     std::deque<std::int64_t> periods_ns;
 
-    Impl()
-        : minimum_exposure(std::max(cam0.limits(V4L2_CID_EXPOSURE).minimum,
-                                    cam1.limits(V4L2_CID_EXPOSURE).minimum)),
-          maximum_exposure(std::min(cam0.limits(V4L2_CID_EXPOSURE).maximum,
-                                    cam1.limits(V4L2_CID_EXPOSURE).maximum)),
-          minimum_gain(std::max(cam0.limits(V4L2_CID_ANALOGUE_GAIN).minimum,
-                                cam1.limits(V4L2_CID_ANALOGUE_GAIN).minimum)),
-          maximum_gain(std::min(cam0.limits(V4L2_CID_ANALOGUE_GAIN).maximum,
-                                cam1.limits(V4L2_CID_ANALOGUE_GAIN).maximum)) {
+    explicit Impl(LumaEncoding encoding) {
         hdr_mode = cam0.hdr_enabled();
         state.hdr_enabled = hdr_mode;
         if (hdr_mode != cam1.hdr_enabled())
             throw AeError(AeErrorCode::control, "stereo HDR modes differ");
-        state.exposure_lines = cam0.get(V4L2_CID_EXPOSURE);
+        display_encoded = hdr_mode && encoding == LumaEncoding::hdr_display;
+        state.display_gamma_x100 = display_encoded ? static_cast<int>(std::lround(
+            sc132gs::hdr_profile::display_gamma * 100)) : 100;
+        state.display_black_raw10 = display_encoded ? sc132gs::hdr_profile::black_level_raw10 : 0;
+        minimum_exposure = std::max(cam0.limits(exposure_control()).minimum,
+                                    cam1.limits(exposure_control()).minimum);
+        maximum_exposure = std::min(cam0.limits(exposure_control()).maximum,
+                                    cam1.limits(exposure_control()).maximum);
+        minimum_gain = std::max(cam0.limits(V4L2_CID_ANALOGUE_GAIN).minimum,
+                                cam1.limits(V4L2_CID_ANALOGUE_GAIN).minimum);
+        maximum_gain = hdr_mode ? minimum_gain :
+            std::min(cam0.limits(V4L2_CID_ANALOGUE_GAIN).maximum,
+                     cam1.limits(V4L2_CID_ANALOGUE_GAIN).maximum);
+        configure_hdr();
+        state.exposure_lines = cam0.get(exposure_control());
         state.analogue_gain_index = cam0.get(V4L2_CID_ANALOGUE_GAIN);
         state.max_exposure_lines = fps_exposure_ceiling();
+    }
+
+    std::uint32_t exposure_control() const {
+        return hdr_mode ? V4L2_CID_SC132GS_HDR_TOTAL_ROWS : V4L2_CID_EXPOSURE;
+    }
+
+    void configure_hdr() {
+        if (!hdr_mode) return;
+        // Increasing SECOND alone cannot brighten the useful midtones while
+        // retaining the knee. Keep ratio/gain fixed; AE adjusts TOTAL instead.
+        set_pair(V4L2_CID_SC132GS_HDR_RATIO, SC132GS_HDR_RATIO_DEFAULT);
+        set_pair(V4L2_CID_ANALOGUE_GAIN, minimum_gain);
+        state.hdr_ratio = SC132GS_HDR_RATIO_DEFAULT;
     }
 
     std::int64_t frame_period_ns() const {
@@ -228,8 +251,8 @@ struct AutoExposure::Impl {
     }
 
     int fps_exposure_ceiling() const {
-        // HDR exposure uses vendor-specific units at 0x3e31/32. Respect the
-        // driver's validated bound rather than reuse linear-mode line timing.
+        // Managed HDR uses TOTAL nominal rows with a conservatively validated
+        // 1492-row ceiling. Its physical line time is not the Linear line time.
         if (hdr_mode) return maximum_exposure;
         // The trigger rate is an integer FPS. Quantize the measured interval
         // before deriving its exposure ceiling so timestamp jitter does not
@@ -285,7 +308,7 @@ struct AutoExposure::Impl {
     void update(int raw0, int raw1) {
         const int cap = state.max_exposure_lines;
         if (state.exposure_lines > cap) {
-            set_pair(V4L2_CID_EXPOSURE, cap);
+            set_pair(exposure_control(), cap);
             state.exposure_lines = cap;
             return;
         }
@@ -299,8 +322,10 @@ struct AutoExposure::Impl {
 
         const int measured = std::max(1, (raw0 + raw1) / 2);
         const int target = state.target_percent * 1023 / 100;
-        const double ev = std::log2(static_cast<double>(target) / measured);
-        if (std::abs(ev) < 0.075) {
+        const double display_ev = std::log2(static_cast<double>(target) / measured);
+        const double ev = display_encoded ?
+            display_ev / sc132gs::hdr_profile::display_gamma : display_ev;
+        if (std::abs(display_ev) < (hdr_mode ? 0.03 : 0.075)) {
             // Trade gain for exposure after a cap or target change. The vendor
             // gain LUT is approximately 32 indices per EV. Only trade when
             // enough exposure headroom compensates for the gain reduction.
@@ -315,7 +340,7 @@ struct AutoExposure::Impl {
                     --steps;
                 }
                 if (steps > 0) {
-                    set_pair(V4L2_CID_EXPOSURE, next_exposure);
+                    set_pair(exposure_control(), next_exposure);
                     state.exposure_lines = next_exposure;
                     set_pair(V4L2_CID_ANALOGUE_GAIN,
                              state.analogue_gain_index - steps);
@@ -333,7 +358,7 @@ struct AutoExposure::Impl {
                                   static_cast<int>(std::lround(
                                       state.exposure_lines *
                                       std::exp2(std::min(ev, 0.25))))));
-                set_pair(V4L2_CID_EXPOSURE, next);
+                set_pair(exposure_control(), next);
                 state.exposure_lines = next;
             } else if (state.analogue_gain_index < maximum_gain) {
                 const int step = std::clamp(
@@ -361,7 +386,7 @@ struct AutoExposure::Impl {
                              static_cast<int>(std::lround(
                                  state.exposure_lines *
                                  std::exp2(std::max(ev, -0.25))))));
-                set_pair(V4L2_CID_EXPOSURE, next);
+                set_pair(exposure_control(), next);
                 state.exposure_lines = next;
             } else {
                 state.brightness_limited = true;
@@ -391,7 +416,8 @@ struct AutoExposure::Impl {
     }
 };
 
-AutoExposure::AutoExposure() : impl_(std::make_unique<Impl>()) {}
+AutoExposure::AutoExposure(LumaEncoding encoding)
+    : impl_(std::make_unique<Impl>(encoding)) {}
 AutoExposure::~AutoExposure() = default;
 AutoExposure::AutoExposure(AutoExposure&&) noexcept = default;
 AutoExposure& AutoExposure::operator=(AutoExposure&&) noexcept = default;
@@ -402,7 +428,8 @@ void AutoExposure::set_target(int percent) {
     }
     std::lock_guard lock(impl_->mutex);
     if (!impl_->state.enabled) {
-        impl_->state.exposure_lines = impl_->cam0.get(V4L2_CID_EXPOSURE);
+        impl_->configure_hdr();
+        impl_->state.exposure_lines = impl_->cam0.get(impl_->exposure_control());
         impl_->state.analogue_gain_index =
             impl_->cam0.get(V4L2_CID_ANALOGUE_GAIN);
         impl_->priming = true;
@@ -435,9 +462,11 @@ AutoExposure::Snapshot AutoExposure::snapshot() const {
     std::lock_guard lock(impl_->mutex);
     auto state = impl_->state;
     if (!state.enabled) {
-        state.exposure_lines = impl_->cam0.get(V4L2_CID_EXPOSURE);
+        state.exposure_lines = impl_->cam0.get(impl_->exposure_control());
         state.analogue_gain_index = impl_->cam0.get(V4L2_CID_ANALOGUE_GAIN);
     }
+    if (impl_->hdr_mode)
+        state.hdr_ratio = impl_->cam0.get(V4L2_CID_SC132GS_HDR_RATIO);
     return state;
 }
 
@@ -445,8 +474,13 @@ void AutoExposure::process(std::span<const std::uint8_t> cam0,
                            std::span<const std::uint8_t> cam1,
                            std::uint32_t cam0_sequence,
                            std::int64_t cam0_timestamp_ns) {
-    const int raw0 = median_brightness(cam0);
-    const int raw1 = median_brightness(cam1);
+    const auto measure = [this](std::span<const std::uint8_t> raw) {
+        const int value = median_brightness(raw);
+        return impl_->display_encoded ? static_cast<int>(std::lround(
+            1023 * sc132gs::hdr_profile::display(value / 1023.0))) : value;
+    };
+    const int raw0 = measure(cam0);
+    const int raw1 = measure(cam1);
     impl_->process_measured(raw0, raw1, cam0_sequence, cam0_timestamp_ns);
 }
 

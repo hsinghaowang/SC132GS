@@ -4,9 +4,11 @@ Both modes use the existing two-lane Device Tree, 1088 x 1280 RGGB RAW10 per
 eye, and the same stereo RTSP URL. Default profiles are HDR 30 FPS and Linear
 60 FPS. A switch interrupts the RTSP session; a player may need to reconnect.
 
-HDR exposure updates now also update the sensor HDRC exposure ratio using a
-grouped register transaction. See [HDR ratio and RAW comparison](HDR_RATIO.md)
-for the control units, fixed-exposure evidence and validation limits.
+HDR now uses unity analogue gain and a managed TOTAL/SECOND ratio of 256.
+AE adjusts TOTAL; the driver updates TOTAL, SECOND and HDRC coefficient in
+one grouped transaction per sensor. RTSP restores midtones using a RAW10
+display curve calibrated for this profile. See [HDR ratio and RAW comparison](HDR_RATIO.md)
+for legacy/private control units, measured highlights and validation limits.
 
 ```sh
 sc132gs-ctl mode

@@ -21,6 +21,10 @@ std::string report(const AutoExposure::Snapshot& state) {
     out << "ok mode=" << (state.enabled ? "auto" : "off")
         << " camera_mode=" << (state.hdr_enabled ? "hdr" : "linear")
         << " hdr_enabled=" << (state.hdr_enabled ? 1 : 0)
+        << " hdr_ratio=" << state.hdr_ratio
+        << " exposure_kind=" << (state.hdr_enabled ? "hdr_total_rows" : "linear_rows")
+        << " display_gamma_x100=" << state.display_gamma_x100
+        << " display_black_raw10=" << state.display_black_raw10
         << " target_percent=" << state.target_percent
         << " cam0_percent=" << state.cam0_percent
         << " cam1_percent=" << state.cam1_percent

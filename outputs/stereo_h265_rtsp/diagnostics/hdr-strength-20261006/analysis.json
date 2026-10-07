@@ -1,0 +1,180 @@
+{
+  "method": "12 original RAW10 frames per eye/condition; saturation RAW10 >=1020. Temporal variation includes sensor noise, scene motion and illumination flicker. Fixed masks from baseline. RTSP screenshots are decoded 8-bit output.",
+  "frame_count_per_eye_condition": 12,
+  "gain_index": 57,
+  "conditions": [
+    {
+      "label": "baseline-before",
+      "eye": 0,
+      "total_over_second": 2.7426470588235294,
+      "mean_raw10": 391.09173583984375,
+      "central_median_raw10": 361.0,
+      "saturated_percent": 7.601126876531862,
+      "highlight_crop_saturated_percent": 9.234108527131783,
+      "fixed_dark_mask_mean_raw10": 118.24835968017578,
+      "fixed_dark_mask_temporal_std_median_raw10": 4.687453746795654
+    },
+    {
+      "label": "ratio-4",
+      "eye": 0,
+      "total_over_second": 4.0,
+      "mean_raw10": 387.4070739746094,
+      "central_median_raw10": 360.0,
+      "saturated_percent": 7.350577560125612,
+      "highlight_crop_saturated_percent": 9.228682170542637,
+      "fixed_dark_mask_mean_raw10": 118.16213989257812,
+      "fixed_dark_mask_temporal_std_median_raw10": 4.698551654815674
+    },
+    {
+      "label": "ratio-8",
+      "eye": 0,
+      "total_over_second": 8.0,
+      "mean_raw10": 387.35284423828125,
+      "central_median_raw10": 360.0,
+      "saturated_percent": 7.410763011259192,
+      "highlight_crop_saturated_percent": 9.236191860465116,
+      "fixed_dark_mask_mean_raw10": 117.16911315917969,
+      "fixed_dark_mask_temporal_std_median_raw10": 4.66071081161499
+    },
+    {
+      "label": "ratio-16",
+      "eye": 0,
+      "total_over_second": 16.0,
+      "mean_raw10": 387.3955993652344,
+      "central_median_raw10": 360.0,
+      "saturated_percent": 7.409691904105392,
+      "highlight_crop_saturated_percent": 9.236918604651164,
+      "fixed_dark_mask_mean_raw10": 117.2940902709961,
+      "fixed_dark_mask_temporal_std_median_raw10": 4.66294527053833
+    },
+    {
+      "label": "baseline-after",
+      "eye": 0,
+      "total_over_second": 2.7426470588235294,
+      "mean_raw10": 387.6477966308594,
+      "central_median_raw10": 360.0,
+      "saturated_percent": 7.45819091796875,
+      "highlight_crop_saturated_percent": 9.238565891472868,
+      "fixed_dark_mask_mean_raw10": 117.21934509277344,
+      "fixed_dark_mask_temporal_std_median_raw10": 4.663689613342285
+    },
+    {
+      "label": "baseline-before",
+      "eye": 1,
+      "total_over_second": 2.7426470588235294,
+      "mean_raw10": 419.4513854980469,
+      "central_median_raw10": 368.0,
+      "saturated_percent": 9.87429749731924,
+      "highlight_crop_saturated_percent": 9.851986434108527,
+      "fixed_dark_mask_mean_raw10": 139.90118408203125,
+      "fixed_dark_mask_temporal_std_median_raw10": 5.634713649749756
+    },
+    {
+      "label": "ratio-4",
+      "eye": 1,
+      "total_over_second": 4.0,
+      "mean_raw10": 417.1759338378906,
+      "central_median_raw10": 367.0,
+      "saturated_percent": 9.695183249080882,
+      "highlight_crop_saturated_percent": 9.841521317829457,
+      "fixed_dark_mask_mean_raw10": 146.78431701660156,
+      "fixed_dark_mask_temporal_std_median_raw10": 5.906682014465332
+    },
+    {
+      "label": "ratio-8",
+      "eye": 1,
+      "total_over_second": 8.0,
+      "mean_raw10": 415.3349304199219,
+      "central_median_raw10": 367.0,
+      "saturated_percent": 9.732049680223652,
+      "highlight_crop_saturated_percent": 9.846463178294574,
+      "fixed_dark_mask_mean_raw10": 141.9984588623047,
+      "fixed_dark_mask_temporal_std_median_raw10": 5.707572937011719
+    },
+    {
+      "label": "ratio-16",
+      "eye": 1,
+      "total_over_second": 16.0,
+      "mean_raw10": 415.2313537597656,
+      "central_median_raw10": 367.0,
+      "saturated_percent": 9.733342189414829,
+      "highlight_crop_saturated_percent": 9.831443798449612,
+      "fixed_dark_mask_mean_raw10": 142.24826049804688,
+      "fixed_dark_mask_temporal_std_median_raw10": 5.673402786254883
+    },
+    {
+      "label": "baseline-after",
+      "eye": 1,
+      "total_over_second": 2.7426470588235294,
+      "mean_raw10": 415.48553466796875,
+      "central_median_raw10": 367.0,
+      "saturated_percent": 9.764488070618873,
+      "highlight_crop_saturated_percent": 9.863468992248063,
+      "fixed_dark_mask_mean_raw10": 141.9832763671875,
+      "fixed_dark_mask_temporal_std_median_raw10": 5.708181381225586
+    }
+  ],
+  "comparison": [
+    {
+      "eye": 0,
+      "condition": "repeated-baseline",
+      "mean_absolute_difference_raw10": 6.41031551361084,
+      "stable_mask_fraction": 0.8511000689338235,
+      "stable_mask_mean_absolute_difference_raw10": 3.3502509593963623
+    },
+    {
+      "eye": 0,
+      "condition": "ratio-4",
+      "vs_baseline_mean_absolute_difference_raw10": 7.865553379058838,
+      "stable_mask_mean_absolute_difference_raw10": 5.8248467445373535,
+      "stable_mask_signed_mean_difference_raw10": -1.0070781707763672
+    },
+    {
+      "eye": 0,
+      "condition": "ratio-8",
+      "vs_baseline_mean_absolute_difference_raw10": 4.324005603790283,
+      "stable_mask_mean_absolute_difference_raw10": 2.9162940979003906,
+      "stable_mask_signed_mean_difference_raw10": -0.6823416948318481
+    },
+    {
+      "eye": 0,
+      "condition": "ratio-16",
+      "vs_baseline_mean_absolute_difference_raw10": 4.462777137756348,
+      "stable_mask_mean_absolute_difference_raw10": 2.936802864074707,
+      "stable_mask_signed_mean_difference_raw10": -0.48256340622901917
+    },
+    {
+      "eye": 1,
+      "condition": "repeated-baseline",
+      "mean_absolute_difference_raw10": 7.708326816558838,
+      "stable_mask_fraction": 0.8290541704963236,
+      "stable_mask_mean_absolute_difference_raw10": 3.4496400356292725
+    },
+    {
+      "eye": 1,
+      "condition": "ratio-4",
+      "vs_baseline_mean_absolute_difference_raw10": 7.862146854400635,
+      "stable_mask_mean_absolute_difference_raw10": 5.650091171264648,
+      "stable_mask_signed_mean_difference_raw10": -0.5816115140914917
+    },
+    {
+      "eye": 1,
+      "condition": "ratio-8",
+      "vs_baseline_mean_absolute_difference_raw10": 5.003751277923584,
+      "stable_mask_mean_absolute_difference_raw10": 3.064512014389038,
+      "stable_mask_signed_mean_difference_raw10": -0.6632313132286072
+    },
+    {
+      "eye": 1,
+      "condition": "ratio-16",
+      "vs_baseline_mean_absolute_difference_raw10": 5.25383996963501,
+      "stable_mask_mean_absolute_difference_raw10": 3.077819347381592,
+      "stable_mask_signed_mean_difference_raw10": -0.4008261263370514
+    }
+  ],
+  "artifacts": [
+    "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\diagnostics\\hdr-strength-20261006\\rtsp-comparison.png",
+    "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\diagnostics\\hdr-strength-20261006\\highlight-comparison.png",
+    "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\diagnostics\\hdr-strength-20261006\\raw-comparison.png"
+  ]
+}

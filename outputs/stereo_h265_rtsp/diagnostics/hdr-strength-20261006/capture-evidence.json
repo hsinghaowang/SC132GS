@@ -1,0 +1,986 @@
+{
+  "initial_mode": {
+    "camera_mode": "linear",
+    "fps": "60",
+    "running": "1"
+  },
+  "initial_status": {
+    "mode": "auto",
+    "camera_mode": "linear",
+    "hdr_enabled": "0",
+    "target_percent": "40",
+    "cam0_percent": "40",
+    "cam1_percent": "41",
+    "exposure_lines": "1330",
+    "gain_index": "46",
+    "fps_x10": "600",
+    "max_exposure_lines": "1330",
+    "brightness_limited": "0",
+    "error_errno": "0"
+  },
+  "original_controls": [
+    "exposure: 1330\nanalogue_gain: 46",
+    "exposure: 1330\nanalogue_gain: 46"
+  ],
+  "conditions": [
+    {
+      "label": "baseline-before",
+      "exposure_control": 2176,
+      "total_over_second": 2.7426470588235294,
+      "rtsp_registers_before": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp_registers_after": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T10:45:08.954208+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "94ee0ad3431ace38b3449fbd59826784d00c8e82132cb28095f8751bf200cf5a"
+      },
+      "raw_registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "dbbe8f2c93278a8cff50e10767ee82f4f809dcf9412558e58ba55479c269f22b",
+            "b0d1f0522f884adb501b28f27167125fde2f5c9f04cf3a9786256eb61642e1c9",
+            "d7a14274512b9a60651554515fe11b1f655291a398ed7d6e87ae2b47641b6ab2",
+            "ecb55e817ac167c91c1faf7371beae914f609ce2547b013b087356ab85974d0d",
+            "19abee9d38bb5dd7e6d9fafddc2d0bffc4f4b2c9a5409bed3ebefe8c15dd0aae",
+            "6772e4c6e8dfa9ae4e887071af16cf3fc5d2e874ef9a59e16b4e816b06dc678e",
+            "f2160bf1c7c9b6029026c33bb3392e3c952f31a4291541ffd824b4dd1d473dee",
+            "661e589616bc42b6a6a00818acae36b426e7c90af6434fdb350e580e21f8b824",
+            "8c19e2b516dd2e57921f3ef759d63bf9905bfd41fb47192b47c3e7fcb8974a6c",
+            "adc7f23623a33a8487b629e383f4fb913cd8f07ad303c32c2db1d9e3e1f7577b",
+            "7bb7474f765373e239b08e035495d4db0bdab11a04cf7099247b96b122cc5b32",
+            "6d13408b9be4b3a7cc52b779f9f11f6c210e58b8ad99639061effcc4f2be8feb"
+          ]
+        },
+        {
+          "eye": 1,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "4128b0cfe084186f69bb595539053e10010b5851e05ef5fafc29bcb955270be6",
+            "05b960ccfb06bcd3dfa76dc1f5100427a8e79cdfe34e4996f44d17148a0617db",
+            "bfed1ae9af37a35588693a254cfc8fa61a8ef39173645fad8cb34d3a4e1c5c31",
+            "6498e46872033f6b033dedf82e6d72ab93d3cc10e7da283479c6651d225470e9",
+            "460d05b5ef4eb8b615bd0bf0b8f1098ff503bb8b6ed45825d4fe921f1dd33e79",
+            "975249493314195db13edd983103d66c81b5da9462cc9a32abf684a3b7ae83b9",
+            "8fc5211ab083615ab62460434f672d6157ed0f4d2714b6e2949224a36218685d",
+            "5885b190a878c2368022ab443be069af6aafecc37f624e59d0119593e7bf7ca4",
+            "839ec29765c845c0daff956c598992aa2e4b0db58ead0ed282e227eede358f99",
+            "fabd68de7e35f504ae5bc349fb2e56c7c60d68494ab6eab781822c169ef84e35",
+            "2519780b495a8f733daacd50586052ef6375508d8b44f753277aaad698bea552",
+            "9b751667a994d0cc95c89f6087ffe6a214a0c7e3043a218973f276b6cf455b02"
+          ]
+        }
+      ],
+      "raw_timestamp_utc": "2026-10-06T10:45:25.678179+00:00"
+    },
+    {
+      "label": "ratio-4",
+      "exposure_control": 1492,
+      "total_over_second": 4.0,
+      "rtsp_registers_before": [
+        {
+          "total": 23872,
+          "second": 5968,
+          "hdrc_ratio": 191,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 5968,
+          "hdrc_ratio": 191,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp_registers_after": [
+        {
+          "total": 23872,
+          "second": 5968,
+          "hdrc_ratio": 191,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 5968,
+          "hdrc_ratio": 191,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T10:45:12.683134+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "284b95f2063ac40a9a355d24d1280037c27171a8ba688b41c4a34a51d59b4dad"
+      },
+      "raw_registers": [
+        {
+          "total": 23872,
+          "second": 5968,
+          "hdrc_ratio": 191,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 5968,
+          "hdrc_ratio": 191,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "d4b944b90d19523006fd5e5c34c0f58fae4b92026ab4a8b552e4cb508004d75e",
+            "b446f79646be8627b879a753d8e8f90f9aaab7f727e131aba1d0b5588f042a89",
+            "04ab79064ee56c922c1bd3934df012e2106647ff9fe6cd7aead4fd763241d5c6",
+            "d97534c22b9a82a2f76206b89e97d7072c4a82e470a6441ba8223ff1433d1937",
+            "72cb2210bbb7a94a13e8e4252e0a0339dafaa47aa0a39a8262be1abea721b5e2",
+            "2bd9984030e02d03890829b7ac0f55561199e22b9003e9fb5fd00eed2c0055a0",
+            "8b921854958acaef60e076996a32ad18be92bd926899a05761b216dea7b8e460",
+            "55a26481c748412e9728f814626c7b377b3ba2de7c10c96cc1b3d41c2ea6a40d",
+            "8d0dcad138d8378bbef5496e9bac15907a1a93bf244174bd4784e4e855420ad0",
+            "14d816c699746868ccfa152712dfb63ba26c142bc9f77d275897c238961707fa",
+            "2ff07fd91d5a1fad6128c6fd2ce8084bcf21494f6d79bd0e159c983bd591c04c",
+            "44aee85400cd90063ec70d4f3b86777243fb43e332ca6c046aca7988f2fea094"
+          ]
+        },
+        {
+          "eye": 1,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "f37e923e06dc041e8d975411c2c2919421fd0274b7f830c5925ba1438f531463",
+            "fbf38752e698ce31f0dc7d062b4b33cac137810f3dcace83d5b3595c469db5df",
+            "334cb3b93b03672d8591d0047fa5bf31f85378813c898331058034c338429cac",
+            "8f88f32cf9c3555655505b4b53bf4c2c694e91575d09e783586b59391bc84e97",
+            "d9b74700efc8489f6be680f1d5c253f6d69a76b858fca7dc7dbac3c5fe9a7beb",
+            "d45d88b79d352ec583420dc5f416a3b40d71e3b66300d3a729c17a9fc471ea22",
+            "0c0b5c0051c1837a8370f1eb15cfaab3f4383c25eb523bbead4f6a7e301a9c38",
+            "16991e3026be6b9e31515964b57a02fa77f385ba7f825bcd18c1db3cf1218f8b",
+            "85ce193b2019a41b37114c244e3de7feef779255ab21518e961c3d09611e7e25",
+            "87e2607221aaa33babca137e186d79607cac50b511cb573909bb0cea3201b581",
+            "1d51201577756378dd86e10e4b4a331caa6da9c89a72890797161ac7c5c9babd",
+            "c2805d585bc820051b779236220638e5fdabaaea509cb506211676e887a9a830"
+          ]
+        }
+      ],
+      "raw_timestamp_utc": "2026-10-06T10:45:28.548618+00:00"
+    },
+    {
+      "label": "ratio-8",
+      "exposure_control": 746,
+      "total_over_second": 8.0,
+      "rtsp_registers_before": [
+        {
+          "total": 23872,
+          "second": 2984,
+          "hdrc_ratio": 223,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 2984,
+          "hdrc_ratio": 223,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp_registers_after": [
+        {
+          "total": 23872,
+          "second": 2984,
+          "hdrc_ratio": 223,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 2984,
+          "hdrc_ratio": 223,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T10:45:16.448331+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "dff4a24866ea938e39181597e46a95f1d188516e8c88233bf9a020db1a170444"
+      },
+      "raw_registers": [
+        {
+          "total": 23872,
+          "second": 2984,
+          "hdrc_ratio": 223,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 2984,
+          "hdrc_ratio": 223,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "26ddd73bf12fdaf79cc4f857d9648ff7aa5a8d370ca7515d8e013ab7f30f7046",
+            "72d25eb58c66128c265737f878c5871528a50ca737ca42e463e3e73437c365c8",
+            "13019f91e29606a08526023b2e45873e27eab2a2566200edd76f14e387d0fa1b",
+            "d3290029fa0e7db78a88ceab33391f07c42b945610b7d68350fae94cc51de628",
+            "f473b5a5ba18849a15218601f189dcf8c6b38d85dc07141f28b1097acb418158",
+            "36fcb280074c9e3588d88c7a271f98e37561f0db02d4fd275b6ed3e0451ea837",
+            "c909bd7ac1bf22e8f5225f77e9539d8b882e16a37f8481b67ca001f7879806b2",
+            "859128d67555bd3e92769496e04d07f860c69f25e20c682d03985ff01be4915b",
+            "ca74cdbd0a0175352b6bef46e68e8d3adbf84f5d06668259cf8715c3dfa55e97",
+            "0200141d1eb1d200f2a49f0425f77f2720f5e0b9729c9d77f7bdd6c7c56a20e7",
+            "1c00154d14481f40b1e2ecff25e96013ec8e86e8fb2d5b3bd0ad3efb62b5301b",
+            "fab9f2fa6f0eba6a7e6b79d66a339b40fc9fd728ba445e02e16b01e2c4b0bc60"
+          ]
+        },
+        {
+          "eye": 1,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "ef279616755145502c0f7417124d048094a20717142b46c6be1534b57074674d",
+            "74ded0bf04e751329565d86b002f8eb8fec06a63995dccb494b7a051c197b0ce",
+            "3dab18f2a0def78464dd7db8904095486f5005c94848b844236858e850cb2943",
+            "85b37b56eba26da2638ce0db94b130e00aad2993ce6677e9038263eb0587849f",
+            "6eccd890e2242628a5e6464eddb91cefc642258a63cb9af49289062ad486235a",
+            "66b3127f0db4f701967a34f825434180573e255ff28e7ebfd9bd4430f70bbfd4",
+            "f765d4713b65df5cb60f0d55324af4856e77cc2235660789d95a36b20cc84353",
+            "a304173776f1a910f0a71fe2e276d08b99e9caafe83f0abd01f5c99f01c3679e",
+            "e472c02c2369cc8a76d5b9935c2142115d984dfedc6a1e8781d38f9ba0f8f903",
+            "30ddacc6b0a074228bb37fa88524eecaee58c137318819d20e2cb8397e5a3fee",
+            "4049835bbb4204c125eb645dae732df52b19aeffe0ceafaa828c91c6bdf15684",
+            "a02c2abc011a6a409e1e6a9381075cd2cf1b375450168ea487cdaf9973cfc5c1"
+          ]
+        }
+      ],
+      "raw_timestamp_utc": "2026-10-06T10:45:31.304879+00:00"
+    },
+    {
+      "label": "ratio-16",
+      "exposure_control": 373,
+      "total_over_second": 16.0,
+      "rtsp_registers_before": [
+        {
+          "total": 23872,
+          "second": 1492,
+          "hdrc_ratio": 239,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 1492,
+          "hdrc_ratio": 239,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp_registers_after": [
+        {
+          "total": 23872,
+          "second": 1492,
+          "hdrc_ratio": 239,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 1492,
+          "hdrc_ratio": 239,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T10:45:20.180825+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "41825dd42b568bc6b83aeff9b63cc7c0a049b923e233b8ed4a2f2a1ea3bf5ef7"
+      },
+      "raw_registers": [
+        {
+          "total": 23872,
+          "second": 1492,
+          "hdrc_ratio": 239,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 1492,
+          "hdrc_ratio": 239,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "a7f6bb1ddd0accd11b5eae0391b06bdd9459ad71e49dea306ff69bbff883aa20",
+            "858e4f4f94f6df163201209f62a6f030a4cbf624bc0b0a2a4cf7189ff173c53c",
+            "c3a6e2d4797271f7f4cc3678a5d503adffd389cdd7c18bd98c6b207ecc4f4bdc",
+            "d0425dbd5c1b0ec0c5bb981f7b86640c7d79206714a23596288598c6ce850d67",
+            "95e2d0483a17b46c06140771a9595fbaab8223d18fb1f77727026c15cb740750",
+            "2c528c9b6863e25213b1e71eb6d8b2def742849d405667a5be1563bf9a849fc7",
+            "56bd83f6a190c6ed36d42005dbc9acb022a7509365ddb06713921897ed91ee11",
+            "c0f4eb2906cf9d676fc2106563421ee951e0b8cfe7e30eb4b333e3b53cb129d7",
+            "08c6cac03985a36eb005768808b8991058b5d3752cdc692700a502114b17a6a2",
+            "e2797beec76abc02296bcd2fd939551dfc8033691a5e7efb6691a01618342503",
+            "39811182a779b7947b641eda0d9e6a3010f97d9e2c2265780bbc31d7abe0b18c",
+            "1c92978824520d36f401e81963afa5283db99a7a3577901cafe869383ea95892"
+          ]
+        },
+        {
+          "eye": 1,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "144347511cd5e2f09a64885d036dd6e4c1281a8515913b6e7df5bb16dcbe0f9d",
+            "13d86e4b2347e044565c7634df9851b0930e573e0f5fbe89b9d2710d9977f93d",
+            "71f1db9aad131e029b4b220bae71fc037feace29301d1bea5d5ee03b863d738a",
+            "c67a467879f39c6d081a5e3cac6818b04be4403ad2a44eb4865d64dca1349acc",
+            "310af22a7dd834677266d23446128af14ba6aed4b60232cbfba677988e25f577",
+            "d916a66224939c1f991e73abc331806d33d44f3f1ea176901a6e30a596eefaa8",
+            "ea5f386f8058969e20ea4d79d62fb630123bf73151bb4f7d0f38389f83626595",
+            "516d053ed4bf24913889e64a84153c275424a52795a7cc9244b8e47cb08c3f88",
+            "baebb59ceb06ae848d6512b0fe98570ae0e41bcf3cf9a1503c0d00e230af72fb",
+            "f902e345090c77fb6268060d982542a16a109e235842a41a876ab31e33f7591f",
+            "6c2c85766e5c9f7ae6ac1b264c1e50a572b955b60d4a8dab673132c3bf332365",
+            "9700b5fed9c628ed81f54164678f58bde9cc8116dd9cbc6ec737e2495fd4f061"
+          ]
+        }
+      ],
+      "raw_timestamp_utc": "2026-10-06T10:45:34.127572+00:00"
+    },
+    {
+      "label": "baseline-after",
+      "exposure_control": 2176,
+      "total_over_second": 2.7426470588235294,
+      "rtsp_registers_before": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp_registers_after": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T10:45:23.982301+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "876ff04ddcf346c9c98f925ceb43f1e60a14301c90c423654c0233788555ad56"
+      },
+      "raw_registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "raw": [
+        {
+          "eye": 0,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "ea09cf7ca753af7363978d80547396a73fc9363f50dc5475df73f2cf9e145146",
+            "7a34cf28618a90704462191b11a1b4988fe3dc0d08b132ea4314a5a2977d3f2c",
+            "4aa75998d5d45e72da984f659800fae68d9444445d7782fd9a62f99d16950712",
+            "831c9c65385238cba4fab899c4f78e1a3fbc00b66ec809263baa6212d1a82791",
+            "f2e820a8c8177552c9626eb2c8661e5bd6a1d8213bfcd5515a5ff244a88f8f17",
+            "08c6b8cb781b700568cb06b6d71d723ed555bf2821015005fc05c26f1ca4acc8",
+            "9b516e39e3579ae3422c78474b1e2b4d83cbaeb90c25a3fc9a74d6f68b6edf14",
+            "87cfa6c7a0e908596fbdc8e3f35dedf30542bb13424f321a1805608da8336fca",
+            "b9034d30d7a9246dc59933d8eb872730362e86dbf2c4866d94aa7dfcdf89458b",
+            "4b47d3b1c5c00ffbbb94f0614ac6530942953f72b6bb03c65a3a3395e006b6ee",
+            "23ac998cd97fdec34e0f8e5e0caa496cb07b4fcebe5c3c25415bb859dc22396c",
+            "463053f69efd266c84749d79f6e0991fa8c92cce1fc912b87731da5f76d6845a"
+          ]
+        },
+        {
+          "eye": 1,
+          "frames": 12,
+          "frame_bytes": 1740800,
+          "sha256": [
+            "ac7ffc11f9ec59a3f9ea72544968eadabc7c505c586d3bee804dfb4f55e96869",
+            "50b45d9af3d55d1bf91bd187370d710623e358edd57ac696c38c88d6ae11a039",
+            "a9af206e3d4b543c923b57a15ea75e805b2b94f270d1914d575c80e884b38eb2",
+            "2844444bc554fa8389dfd4ea906a0ebecb08028338bf646cc2a18c66486e2892",
+            "0eab74a318ab1360859c0081d46408e83ad5acda051147d2f1ba860a773a90a3",
+            "2b438254f3c5825a3916a8b7c165063aa77ae72209452255aec49446f0e7bf22",
+            "6e239de15f8fd01db009c0f3cbd89a415d7de840ecd4c3227f27e3a72eeb3273",
+            "2ebe00d998dd073163d65f31c57752ba629b1d440fad40ce52fdd1439a58bb04",
+            "1a510709a659c9bfbf4d4b0548f0f1ea46c231ba3204d88726ffbf1cee58b0ba",
+            "fd96b3c659e7b40e2a915a5a32ec54cd2c8686679aba4bee46d2ed14154676e2",
+            "cfa4eec4e6f46935c0eae25fee20b60dbc01d587fb41d8b76abaf5749d498047",
+            "0b4b0685b5cf8d8ace39c348e5c8198297001f11cfe48b758111533705b23649"
+          ]
+        }
+      ],
+      "raw_timestamp_utc": "2026-10-06T10:45:36.952791+00:00"
+    }
+  ],
+  "method": "Fixed TOTAL, identical long/short gains; RTSP and RAW sequential. RAW warmup 60 frames then 12 frames/eye. Repeated baseline controls scene drift.",
+  "fixed_gain_index": 57,
+  "frozen_status": {
+    "mode": "off",
+    "camera_mode": "hdr",
+    "hdr_enabled": "1",
+    "target_percent": "40",
+    "cam0_percent": "37",
+    "cam1_percent": "39",
+    "exposure_lines": "2176",
+    "gain_index": "57",
+    "fps_x10": "299",
+    "max_exposure_lines": "2176",
+    "brightness_limited": "0",
+    "error_errno": "0"
+  },
+  "reference_registers": {
+    "total": 23872,
+    "second": 8704,
+    "hdrc_ratio": 162,
+    "gain_mode": 11,
+    "long_gain": [
+      0,
+      128,
+      35,
+      61
+    ],
+    "short_gain": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "hdr_mode": 195,
+    "hdrc_enable": 1
+  },
+  "restore": "camera_mode phase=inspecting\ncamera_mode phase=stopping\ncamera_mode phase=configuring\ncamera_mode phase=starting\ncamera_mode phase=verifying\ncamera_mode phase=persisting\ncamera_mode phase=ready\nok camera_mode=linear fps=60 running=1",
+  "restore_preferences": "camera_mode phase=inspecting\ncamera_mode phase=verifying\ncamera_mode phase=persisting\ncamera_mode phase=ready\nok camera_mode=linear fps=60 running=1",
+  "final_mode": {
+    "camera_mode": "linear",
+    "fps": "60",
+    "running": "1"
+  },
+  "final_status": {
+    "mode": "auto",
+    "camera_mode": "linear",
+    "hdr_enabled": "0",
+    "target_percent": "40",
+    "cam0_percent": "38",
+    "cam1_percent": "39",
+    "exposure_lines": "1330",
+    "gain_index": "43",
+    "fps_x10": "599",
+    "max_exposure_lines": "1330",
+    "brightness_limited": "0",
+    "error_errno": "0"
+  },
+  "restored_rtsp": {
+    "timestamp_utc": "2026-10-06T10:45:46.285550+00:00",
+    "width": 2176,
+    "height": 1280,
+    "decoded_frames": 30,
+    "sha256": "bdea80d40a298a94f04d92dd2bd0b6518855fef3bbd9950aabacb837fcc3d615"
+  }
+}

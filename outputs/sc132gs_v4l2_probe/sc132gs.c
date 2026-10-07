@@ -19,6 +19,8 @@
 #include <media/v4l2-fwnode.h>
 #include <media/v4l2-subdev.h>
 
+#include "sc132gs-controls.h"
+
 #define SC132GS_REG_CHIP_ID       0x3107
 #define SC132GS_CHIP_ID           0x0132
 #define SC132GS_REG_CTRL_MODE     0x0100
@@ -158,6 +160,8 @@ struct sc132gs {
 	struct v4l2_ctrl *exposure;
 	struct v4l2_ctrl *analogue_gain;
 	struct v4l2_ctrl *pixel_rate;
+	struct v4l2_ctrl *hdr_total;
+	struct v4l2_ctrl *hdr_ratio;
 	bool hdr_mode;
 	unsigned int data_lanes;
 	struct mutex lock;
@@ -166,47 +170,31 @@ struct sc132gs {
 	bool hardware_initialized;
 };
 
-static int sc132gs_write_hdr_exposure(struct sc132gs *sensor,
-				     unsigned int control_value)
+static int sc132gs_write_hdr_pair(struct sc132gs *sensor,
+				 unsigned int total, unsigned int second)
 {
-	u8 total_bytes[3];
-	unsigned int total, second, ratio;
+	unsigned int ratio;
 	int ret, release_ret;
 
-	/* Preserve the existing vendor control scale. The datasheet defines
-	 * BOTH register encodings in 1/16-line units: control_value * 4 encodes
-	 * control_value / 4 lines, not control_value lines. Do not infer us from
-	 * the linear-mode pixel clock when using this HDR PLL/trigger profile.
-	 */
-	if (control_value > 0xffff / 4)
+	if (!total || total > 0xfffff || !second || second > 0xffff || second >= total)
 		return -ERANGE;
-	second = control_value * 4;
-	ret = regmap_bulk_read(sensor->regmap, SC132GS_REG_EXPOSURE_H,
-			       total_bytes, sizeof(total_bytes));
-	if (ret)
-		return ret;
-	total = ((total_bytes[0] & 0x0f) << 16) |
-		(total_bytes[1] << 8) | total_bytes[2];
-	if (!total || second >= total)
-		return -ERANGE;
-
-	/* SC132GS datasheet V2.6, table 2-3. Both operands use the same units.
-	 * Round to nearest integer; the 20-bit total fits this u32 arithmetic.
-	 */
+	/* Datasheet table 2-3: both exposures are encoded in 1/16 nominal rows. */
 	ratio = DIV_ROUND_CLOSEST(255U * (total - second), total);
-
-	/* Table 2-8: stage group 0, close it, then apply the complete group.
-	 * A failed staging write must not launch a partial exposure/ratio pair.
-	 * The caller holds sensor->lock across this whole transaction.
+	/* Table 2-8: stage all six bytes, close, then launch the complete group.
+	 * The caller holds sensor->lock; never launch a failed partial staging.
 	 */
 	ret = regmap_write(sensor->regmap, SC132GS_REG_GROUP_HOLD, 0x00);
 	if (ret)
 		return ret;
-	ret = regmap_write(sensor->regmap, SC132GS_REG_HDR_EXPOSURE,
-			   second >> 8);
+	ret = regmap_write(sensor->regmap, SC132GS_REG_EXPOSURE_H, (total >> 16) & 0x0f);
 	if (!ret)
-		ret = regmap_write(sensor->regmap, SC132GS_REG_HDR_EXPOSURE + 1,
-				   second & 0xff);
+		ret = regmap_write(sensor->regmap, SC132GS_REG_EXPOSURE_H + 1, (total >> 8) & 0xff);
+	if (!ret)
+		ret = regmap_write(sensor->regmap, SC132GS_REG_EXPOSURE_H + 2, total & 0xff);
+	if (!ret)
+		ret = regmap_write(sensor->regmap, SC132GS_REG_HDR_EXPOSURE, second >> 8);
+	if (!ret)
+		ret = regmap_write(sensor->regmap, SC132GS_REG_HDR_EXPOSURE + 1, second & 0xff);
 	if (!ret)
 		ret = regmap_write(sensor->regmap, SC132GS_REG_HDRC_RATIO, ratio);
 	release_ret = regmap_write(sensor->regmap, SC132GS_REG_GROUP_HOLD, 0x10);
@@ -215,6 +203,33 @@ static int sc132gs_write_hdr_exposure(struct sc132gs *sensor,
 	if (release_ret)
 		return release_ret;
 	return regmap_write(sensor->regmap, SC132GS_REG_GROUP_HOLD, 0x60);
+}
+
+static int sc132gs_write_hdr_exposure(struct sc132gs *sensor,
+				     unsigned int control_value)
+{
+	u8 bytes[3];
+	unsigned int total;
+	int ret;
+
+	/* Preserve the vendor control: SECOND = control * 4. Physical us for
+	 * the HDR PLL/FSYNC profile remain uncharacterized.
+	 */
+	if (control_value > 0xffff / 4)
+		return -ERANGE;
+	ret = regmap_bulk_read(sensor->regmap, SC132GS_REG_EXPOSURE_H, bytes, 3);
+	if (ret)
+		return ret;
+	total = ((bytes[0] & 0x0f) << 16) | (bytes[1] << 8) | bytes[2];
+	return sc132gs_write_hdr_pair(sensor, total, control_value * 4);
+}
+
+static int sc132gs_write_managed_hdr(struct sc132gs *sensor)
+{
+	unsigned int total = sensor->hdr_total->val * 16U;
+	unsigned int second = max(1U, DIV_ROUND_CLOSEST(total, sensor->hdr_ratio->val));
+
+	return sc132gs_write_hdr_pair(sensor, total, second);
 }
 
 static int sc132gs_write_exposure(struct sc132gs *sensor, unsigned int lines)
@@ -269,6 +284,13 @@ static int sc132gs_set_ctrl(struct v4l2_ctrl *ctrl)
 			return ret;
 		sensor->hdr_mode = ctrl->val;
 		v4l2_ctrl_activate(sensor->pixel_rate, !sensor->hdr_mode);
+		v4l2_ctrl_activate(sensor->hdr_total, sensor->hdr_mode);
+		v4l2_ctrl_activate(sensor->hdr_ratio, sensor->hdr_mode);
+		ret = __v4l2_ctrl_s_ctrl(sensor->hdr_ratio, 0);
+		if (!ret)
+			ret = __v4l2_ctrl_s_ctrl(sensor->hdr_total, SC132GS_HDR_TOTAL_DEFAULT);
+		if (ret)
+			return ret;
 		/* Reset control units when changing mode; AE is recreated by the
 		 * userspace coordinator. Registers are applied at next STREAMON.
 		 */
@@ -276,6 +298,10 @@ static int sc132gs_set_ctrl(struct v4l2_ctrl *ctrl)
 					SC132GS_EXPOSURE_DEFAULT);
 	}
 
+	if (ctrl->id == V4L2_CID_SC132GS_HDR_RATIO && ctrl->val == 1)
+		return -ERANGE;
+	if (ctrl->id == V4L2_CID_EXPOSURE && sensor->hdr_mode && sensor->hdr_ratio->val)
+		return -EBUSY;
 	/* The current mode table is restored before every stream-on. */
 	if (!sensor->streaming)
 		return 0;
@@ -284,6 +310,14 @@ static int sc132gs_set_ctrl(struct v4l2_ctrl *ctrl)
 		return sc132gs_write_exposure(sensor, ctrl->val);
 	case V4L2_CID_ANALOGUE_GAIN:
 		return sc132gs_write_analogue_gain(sensor, ctrl->val);
+	case V4L2_CID_SC132GS_HDR_TOTAL_ROWS:
+		return sensor->hdr_ratio->val ? sc132gs_write_managed_hdr(sensor) : 0;
+	case V4L2_CID_SC132GS_HDR_RATIO:
+		if (ctrl->val)
+			return sc132gs_write_managed_hdr(sensor);
+		/* Explicitly restore the fixed-TOTAL legacy profile. */
+		return sc132gs_write_hdr_pair(sensor, SC132GS_HDR_TOTAL_DEFAULT * 16U,
+					      sensor->exposure->val * 4U);
 	default:
 		return -EINVAL;
 	}
@@ -582,8 +616,9 @@ static int sc132gs_s_stream(struct v4l2_subdev *sd, int enable)
 			ret = sc132gs_verify_mode(sensor);
 		}
 		if (!ret)
-			ret = sc132gs_write_exposure(sensor,
-					     sensor->exposure->val);
+			ret = sensor->hdr_mode && sensor->hdr_ratio->val ?
+				sc132gs_write_managed_hdr(sensor) :
+				sc132gs_write_exposure(sensor, sensor->exposure->val);
 		if (!ret)
 			ret = sc132gs_write_analogue_gain(sensor,
 						  sensor->analogue_gain->val);
@@ -777,7 +812,7 @@ static int sc132gs_probe(struct i2c_client *client)
 		return ret;
 
 	sc132gs_link_freq_menu[0] = link_freq_hz;
-	v4l2_ctrl_handler_init(&sensor->ctrls, 5);
+	v4l2_ctrl_handler_init(&sensor->ctrls, 7);
 	sensor->ctrls.lock = &sensor->lock;
 	ctrl = v4l2_ctrl_new_int_menu(&sensor->ctrls, NULL,
 				      V4L2_CID_LINK_FREQ,
@@ -812,6 +847,29 @@ static int sc132gs_probe(struct i2c_client *client)
 	}
 	ctrl = v4l2_ctrl_new_std(&sensor->ctrls, &sc132gs_ctrl_ops, V4L2_CID_WIDE_DYNAMIC_RANGE,
 				 0, 1, 1, hdr);
+	{
+		const struct v4l2_ctrl_config total_config = {
+			.ops = &sc132gs_ctrl_ops,
+			.id = V4L2_CID_SC132GS_HDR_TOTAL_ROWS,
+			.name = "HDR Total Nominal Rows",
+			.type = V4L2_CTRL_TYPE_INTEGER,
+			.min = 8, .max = SC132GS_HDR_TOTAL_MAX, .step = 1,
+			.def = SC132GS_HDR_TOTAL_DEFAULT,
+		};
+		const struct v4l2_ctrl_config ratio_config = {
+			.ops = &sc132gs_ctrl_ops,
+			.id = V4L2_CID_SC132GS_HDR_RATIO,
+			.name = "HDR Total Second Ratio",
+			.type = V4L2_CTRL_TYPE_INTEGER,
+			.min = 0, .max = 256, .step = 1, .def = 0,
+		};
+		sensor->hdr_total = v4l2_ctrl_new_custom(&sensor->ctrls, &total_config, NULL);
+		sensor->hdr_ratio = v4l2_ctrl_new_custom(&sensor->ctrls, &ratio_config, NULL);
+		if (sensor->hdr_total)
+			v4l2_ctrl_activate(sensor->hdr_total, sensor->hdr_mode);
+		if (sensor->hdr_ratio)
+			v4l2_ctrl_activate(sensor->hdr_ratio, sensor->hdr_mode);
+	}
 	if (sensor->ctrls.error) {
 		ret = sensor->ctrls.error;
 		goto free_ctrls;

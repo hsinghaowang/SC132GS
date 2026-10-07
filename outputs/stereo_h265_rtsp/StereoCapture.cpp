@@ -70,7 +70,8 @@ struct Frame {
 
 class Device final {
 public:
-    Device(std::string path, int scale) : path_(std::move(path)), scale_(scale) {
+    Device(std::string path, int scale, bool hdr_display)
+        : path_(std::move(path)), scale_(scale), converter_(kWidth, kHeight, hdr_display) {
         fd_ = ::open(path_.c_str(), O_RDWR | O_NONBLOCK | O_CLOEXEC);
         if (fd_ < 0) throw std::runtime_error("open " + path_ + ": " + std::strerror(errno));
         try {
@@ -202,7 +203,7 @@ private:
 
     std::string path_;
     int scale_;
-    detail::BayerLuma converter_{kWidth, kHeight};
+    detail::BayerLuma converter_;
     int fd_{-1};
     bool streaming_{};
     std::vector<std::pair<void*, std::size_t>> mappings_;
@@ -212,8 +213,8 @@ private:
 
 struct StereoCapture::Impl {
     Impl(const std::string& cam0, const std::string& cam1, int scale,
-         int frame_rate)
-        : left(cam0, scale), right(cam1, scale) {
+         int frame_rate, bool hdr_display)
+        : left(cam0, scale, hdr_display), right(cam1, scale, hdr_display) {
         left.start();
         right.start();
         if (frame_rate == 60) {
@@ -312,8 +313,8 @@ struct StereoCapture::Impl {
 };
 
 StereoCapture::StereoCapture(const std::string& cam0, const std::string& cam1,
-                             int scale, int frame_rate)
-    : impl_(std::make_unique<Impl>(cam0, cam1, scale, frame_rate)) {}
+                             int scale, int frame_rate, bool hdr_display)
+    : impl_(std::make_unique<Impl>(cam0, cam1, scale, frame_rate, hdr_display)) {}
 StereoCapture::~StereoCapture() = default;
 StereoCapture::StereoCapture(StereoCapture&&) noexcept = default;
 StereoCapture& StereoCapture::operator=(StereoCapture&&) noexcept = default;

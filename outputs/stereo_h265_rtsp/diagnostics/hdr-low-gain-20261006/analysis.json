@@ -1,0 +1,98 @@
+[
+  {
+    "label": "original-before",
+    "eye": 0,
+    "gain_index": 57,
+    "ratio": 2.7426470588235294,
+    "lamp_saturated_percent": 9.201695736434107,
+    "central_median_raw10": 355.0
+  },
+  {
+    "label": "original-before",
+    "eye": 1,
+    "gain_index": 57,
+    "ratio": 2.7426470588235294,
+    "lamp_saturated_percent": 9.867441860465116,
+    "central_median_raw10": 363.0
+  },
+  {
+    "label": "unity-r2p74-before",
+    "eye": 0,
+    "gain_index": 0,
+    "ratio": 2.7426470588235294,
+    "lamp_saturated_percent": 7.119815891472868,
+    "central_median_raw10": 139.0
+  },
+  {
+    "label": "unity-r2p74-before",
+    "eye": 1,
+    "gain_index": 0,
+    "ratio": 2.7426470588235294,
+    "lamp_saturated_percent": 8.058963178294572,
+    "central_median_raw10": 140.0
+  },
+  {
+    "label": "unity-r128",
+    "eye": 0,
+    "gain_index": 0,
+    "ratio": 126.97872340425532,
+    "lamp_saturated_percent": 0.037645348837209304,
+    "central_median_raw10": 140.0
+  },
+  {
+    "label": "unity-r128",
+    "eye": 1,
+    "gain_index": 0,
+    "ratio": 126.97872340425532,
+    "lamp_saturated_percent": 0.1382751937984496,
+    "central_median_raw10": 140.0
+  },
+  {
+    "label": "unity-r256",
+    "eye": 0,
+    "gain_index": 0,
+    "ratio": 259.4782608695652,
+    "lamp_saturated_percent": 0.0,
+    "central_median_raw10": 140.0
+  },
+  {
+    "label": "unity-r256",
+    "eye": 1,
+    "gain_index": 0,
+    "ratio": 259.4782608695652,
+    "lamp_saturated_percent": 0.0,
+    "central_median_raw10": 140.0
+  },
+  {
+    "label": "unity-r2p74-after",
+    "eye": 0,
+    "gain_index": 0,
+    "ratio": 2.7426470588235294,
+    "lamp_saturated_percent": 7.119767441860465,
+    "central_median_raw10": 139.0
+  },
+  {
+    "label": "unity-r2p74-after",
+    "eye": 1,
+    "gain_index": 0,
+    "ratio": 2.7426470588235294,
+    "lamp_saturated_percent": 8.061482558139534,
+    "central_median_raw10": 140.0
+  },
+  {
+    "label": "original-after",
+    "eye": 0,
+    "gain_index": 57,
+    "ratio": 2.7426470588235294,
+    "lamp_saturated_percent": 9.196463178294573,
+    "central_median_raw10": 356.0
+  },
+  {
+    "label": "original-after",
+    "eye": 1,
+    "gain_index": 57,
+    "ratio": 2.7426470588235294,
+    "lamp_saturated_percent": 9.82059108527132,
+    "central_median_raw10": 363.0
+  }
+]

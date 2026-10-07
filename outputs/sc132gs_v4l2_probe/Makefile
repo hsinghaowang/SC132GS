@@ -19,7 +19,7 @@ sc132gs-sync-check: sc132gs-sync-check.cpp
 sc132gs-fsync-generator: sc132gs-fsync-generator.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
-sc132gs-paired-stream: sc132gs-paired-stream.cpp sc132gs-ae.cpp sc132gs-ae.hpp sc132gs-control-server.cpp sc132gs-control-server.hpp
+sc132gs-paired-stream: sc132gs-paired-stream.cpp sc132gs-ae.cpp sc132gs-ae.hpp sc132gs-control-server.cpp sc132gs-control-server.hpp sc132gs-controls.h sc132gs-hdr-profile.hpp
 	$(CXX) $(CXXFLAGS) -pthread -o $@ sc132gs-paired-stream.cpp sc132gs-ae.cpp sc132gs-control-server.cpp
 
 sc132gs-ctl: sc132gs-ctl.cpp sc132gs-mode.cpp sc132gs-mode-linux.cpp sc132gs-mode.hpp

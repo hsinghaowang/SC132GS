@@ -1,6 +1,9 @@
 #include "BayerLuma.hpp"
+#include "sc132gs-hdr-profile.hpp"
 
 #include <algorithm>
+#include <array>
+#include <cmath>
 #include <cstddef>
 #include <stdexcept>
 #include <vector>
@@ -11,11 +14,17 @@ struct BayerLuma::Impl {
     int width;
     int height;
     std::vector<std::uint16_t> pixels;
+    bool hdr_display;
+    std::array<std::uint8_t, 1024> display_lut{};
 
-    Impl(int w, int h) : width(w), height(h) {
+    Impl(int w, int h, bool hdr) : width(w), height(h), hdr_display(hdr) {
         if (w < 4 || w % 4 || h < 2 || h % 2)
             throw std::invalid_argument("RGGB dimensions must be width multiple of four, even height");
         pixels.resize(static_cast<std::size_t>(w) * h);
+        if (hdr_display)
+            for (unsigned i = 0; i < display_lut.size(); ++i)
+                display_lut[i] = static_cast<std::uint8_t>(std::lround(
+                    255 * sc132gs::hdr_profile::display(i / 1023.0)));
     }
 
     void unpack(std::span<const std::uint8_t> raw, int stride) {
@@ -60,13 +69,16 @@ struct BayerLuma::Impl {
                     r = (y & 1) ? vertical : horizontal;
                     b = (y & 1) ? horizontal : vertical;
                 }
-                output[ox] = static_cast<std::uint8_t>(std::min(255U, (54*r + 183*g + 19*b + 512) >> 10));
+                const unsigned weighted = 54*r + 183*g + 19*b;
+                output[ox] = hdr_display ? display_lut[(weighted + 128) >> 8] :
+                    static_cast<std::uint8_t>(std::min(255U, (weighted + 512) >> 10));
             }
         }
     }
 };
 
-BayerLuma::BayerLuma(int width, int height) : impl_(std::make_unique<Impl>(width, height)) {}
+BayerLuma::BayerLuma(int width, int height, bool hdr_display)
+    : impl_(std::make_unique<Impl>(width, height, hdr_display)) {}
 BayerLuma::~BayerLuma() = default;
 BayerLuma::BayerLuma(BayerLuma&&) noexcept = default;
 BayerLuma& BayerLuma::operator=(BayerLuma&&) noexcept = default;
