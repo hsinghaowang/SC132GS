@@ -1,0 +1,9 @@
+{
+  "stable_windows": 60,
+  "input_mean": 59.99970333333333,
+  "input_min": 59.9764,
+  "input_max": 60.0228,
+  "encoded_mean": 59.99971,
+  "dropped_fps_max": 0.0,
+  "capture_gap_messages": 0
+}

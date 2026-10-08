@@ -65,6 +65,10 @@ public:
                       std::uint32_t cam0_sequence,
                       std::int64_t cam0_timestamp_ns);
 
+    void process_luma10(std::span<const std::uint16_t> cam0,
+                        std::span<const std::uint16_t> cam1,
+                        int width, int height, std::uint32_t sequence,
+                        std::int64_t timestamp_ns);
 private:
     struct Impl;
     std::unique_ptr<Impl> impl_;

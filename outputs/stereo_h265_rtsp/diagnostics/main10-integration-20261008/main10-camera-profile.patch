@@ -1,0 +1,30 @@
+--- run-camera-profile.sh.before-main10
++++ run-camera-profile.sh
+@@ -2,7 +2,8 @@
+ # This owner never starts another camera service from an EXIT trap.
+ set -euo pipefail
+ ROOT=/home/ubuntu/stereo-h265-rtsp
+-BIN=$ROOT/build-exposure60/stereo-h265-rtsp
++BIN=${SERVER_BIN:-$ROOT/build-main10/stereo-h265-rtsp}
++HEVC_PROFILE=${HEVC_PROFILE:-main10}
+ LOG=/run/sc132gs-camera-server.log
+ READY=/run/sc132gs-camera-ready
+ if [[ -s $LOG ]]; then
+@@ -19,7 +20,7 @@
+     cam0=$(sc132gs-discover cam0); cam1=$(sc132gs-discover cam1)
+     "$BIN" --cam0 "$cam0" --cam1 "$cam1" --bind 192.168.137.226 --port 8554 \
+         --mount /stereo --downscale 1 --fps "$FPS" --auto-exposure off \
+-        --capture-mode linear-binning > "$LOG" 2>&1 &
++        --capture-mode linear-binning --hevc-profile "$HEVC_PROFILE" > "$LOG" 2>&1 &
+     child=$!
+     armed=0
+     for ((n=0;n<200;n++)); do
+@@ -54,7 +55,7 @@
+     bash /home/ubuntu/sc132gs-binning-20261007/set-binning-exposure.sh 1000
+     bash /home/ubuntu/sc132gs-binning-20261007/set-binning-gain.sh 0
+ else
+-    BIND=192.168.137.226 AUTO_EXPOSURE=0 SERVER_BIN="$BIN" \
++    BIND=192.168.137.226 AUTO_EXPOSURE=0 SERVER_BIN="$BIN" HEVC_PROFILE="$HEVC_PROFILE" \
+         bash "$ROOT/run-stereo-rtsp.sh" > "$LOG" 2>&1 &
+     child=$!
+     armed=0

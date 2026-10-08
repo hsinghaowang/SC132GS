@@ -15,13 +15,16 @@ struct FramePair {
     std::int64_t cam1_timestamp_ns{};
     std::vector<std::uint8_t> left_luma;
     std::vector<std::uint8_t> right_luma;
+    std::vector<std::uint16_t> left_luma10;
+    std::vector<std::uint16_t> right_luma10;
 };
 
 // Internal capture adapter. Only constructed on the capture thread.
 class StereoCapture final {
 public:
     StereoCapture(const std::string& cam0, const std::string& cam1, int scale,
-                  int frame_rate, bool hdr_display = false);
+                  int frame_rate, bool hdr_display = false,
+                  bool tenbit = false);
     ~StereoCapture();
     StereoCapture(const StereoCapture&) = delete;
     StereoCapture& operator=(const StereoCapture&) = delete;

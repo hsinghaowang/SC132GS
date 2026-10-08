@@ -24,9 +24,11 @@ struct Settings {
     int frame_rate{30};
     int target_brightness_percent{40};
     bool auto_exposure{true};
+    bool main10{false};
+    int bitrate{20000000};
 };
 
-// Captures synchronized V4L2 camera frames until SIGINT/SIGTERM.
+// Captures timestamp-paired V4L2 frames until SIGINT/SIGTERM.
 class StereoRtspServer final {
 public:
     explicit StereoRtspServer(Settings settings);

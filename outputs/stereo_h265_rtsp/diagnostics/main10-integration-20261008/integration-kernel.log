@@ -1,0 +1,553 @@
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:48:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:48:42 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:49:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:50:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:50:47 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:50:47 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 08 13:50:47 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 08 13:50:47 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 08 13:50:47 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 08 13:50:47 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 08 13:50:47 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 08 13:50:47 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 08 13:50:48 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 08 13:50:48 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 08 13:50:48 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 08 13:50:48 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 08 13:50:48 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 08 13:50:48 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:50:48 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:50:48 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:50:49 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:50:49 ubuntu kernel: msm_vidc: err : 5c6ef000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:CmdDec:265e:5c6ef000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:51:08 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:51:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:52:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:52:34 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:53:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:53:37 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:54:20 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:54:40 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:55:26 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:56:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:04 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:04 ubuntu kernel: msm_vidc:     fw: <VFW_E:WrkDec:265e:5c6ef000:00> venc_c2FillBufferDone(3371): Missing corresponding Output Buffer for FBD
+Oct 08 13:57:04 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 08 13:57:04 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 08 13:57:05 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 08 13:57:05 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 08 13:57:05 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 08 13:57:05 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 08 13:57:05 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 08 13:57:05 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 08 13:57:05 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 08 13:57:05 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 08 13:57:05 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 08 13:57:05 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 08 13:57:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:06 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:5c6ef000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 4ffa5000: hevcE: msm_vidc_check_max_sessions: total 1080p sessions 5, exceeded max limit 4
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 4ffa5000: hevcE: msm_vidc_check_session_supported: current session not supported
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : ffffffff: codec: Print all running instances
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : ffffffff: codec:  width | height |   fps | orate |  prop
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 78b21000: hevcE:    640 |    480 |    30 |    30 |   NRT
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 5cf1d000: hevcE:    640 |    480 |    30 |    30 |   NRT
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 5ca5d000: hevcE:   2176 |   1280 |    30 |    60 |   NRT
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 53a6f000: hevcE:   2176 |   1280 |    30 |    60 |   NRT
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 5c6d5000: hevcE:   2176 |   1280 |    60 |    60 |   NRT
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 5c6ef000: hevcE:   2176 |   1280 |    60 |    60 |   NRT
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 4ffa5000: hevcE:   2176 |   1280 |    60 |    60 |   NRT
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 4ffa5000: hevcE: msm_venc_streamon_input: failed
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 4ffa5000: hevcE: Streamon: INPUT failed
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 4ffa5000: hevcE: msm_vb2_start_streaming: state changed to ERROR from OUTPUT_STREAMING
+Oct 08 13:57:06 ubuntu kernel: msm_vidc: err : 4ffa5000: hevcE: msm_vidc_streamon: vb2_streamon(10) failed, -12
+Oct 08 13:57:06 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 08 13:57:06 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:4ffa5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : ffffffff: codec: msm_vidc_core_deinit_locked(): force deinit core
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : 78b21000: hevcE: msm_vidc_core_deinit_locked: MSM_VIDC_IGNORE state change CLOSE -> ERROR
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : 5cf1d000: hevcE: msm_vidc_core_deinit_locked: MSM_VIDC_IGNORE state change CLOSE -> ERROR
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : 5ca5d000: hevcE: msm_vidc_core_deinit_locked: MSM_VIDC_IGNORE state change CLOSE -> ERROR
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : 53a6f000: hevcE: msm_vidc_core_deinit_locked: MSM_VIDC_IGNORE state change CLOSE -> ERROR
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : 5c6d5000: hevcE: msm_vidc_core_deinit_locked: MSM_VIDC_IGNORE state change CLOSE -> ERROR
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : 5c6ef000: hevcE: msm_vidc_core_deinit_locked: MSM_VIDC_IGNORE state change CLOSE -> ERROR
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : ffffffff: codec: unmap called while refcount is zero already
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : ffffffff: codec: msm_vidc_release_video_device:
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : ffffffff: codec: msm_vidc_release_video_device:
+Oct 08 13:57:28 ubuntu kernel: msm_vidc: err : ffffffff: codec: __init_reset_clocks: invalid reset tbl 0x0000000000000000 or count 0
+Oct 08 13:57:28 ubuntu kernel: msm_vidc_v4l2 aa00000.video-codec:non-secure-cb: Adding to iommu group 11
+Oct 08 13:57:28 ubuntu kernel: msm_vidc_v4l2 aa00000.video-codec: bound aa00000.video-codec:non-secure-cb (ops msm_vidc_component_ops [iris_vpu])
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:28 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:45 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:46 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 08 13:57:46 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 08 13:57:46 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 08 13:57:46 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 08 13:57:46 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 08 13:57:46 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 08 13:57:46 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 08 13:57:46 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 08 13:57:46 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 08 13:57:46 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:57:46 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:57:47 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:unkn:--------:--> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:57:47 ubuntu kernel: msm_vidc: err : 546ed000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:CmdDec:265e:546ed000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:58:05 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:58:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 13:59:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:00:32 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:00:54 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:01:23 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:01:43 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:02:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 08 14:02:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:546ed000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd

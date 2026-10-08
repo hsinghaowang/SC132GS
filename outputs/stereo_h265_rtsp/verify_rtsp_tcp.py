@@ -80,7 +80,13 @@ def main() -> int:
         first_marker = None
         markers = 0
         packets = 0
+        next_keepalive = time.monotonic() + 20
         while time.monotonic() < deadline:
+            if time.monotonic() >= next_keepalive:
+                cseq += 1
+                sock.sendall((f"GET_PARAMETER {args.url} RTSP/1.0\r\n"
+                              f"CSeq: {cseq}\r\nSession: {session}\r\n\r\n").encode('ascii'))
+                next_keepalive = time.monotonic() + 20
             try:
                 prefix = stream.read(1)
             except TimeoutError:
@@ -88,6 +94,18 @@ def main() -> int:
             if prefix != b"$":
                 if prefix == b"":
                     raise RuntimeError("RTSP connection closed")
+                if prefix == b"R":
+                    status = (prefix + stream.readline()).decode('ascii', 'replace')
+                    headers = {}
+                    while line := stream.readline():
+                        if line == b'\r\n':
+                            break
+                        key, _, value = line.decode('ascii', 'replace').partition(':')
+                        headers[key.lower()] = value.strip()
+                    stream.read(int(headers.get('content-length', '0')))
+                    if ' 200 ' not in status:
+                        raise RuntimeError(f'keepalive: {status}')
+                    continue
                 raise RuntimeError(f"unexpected interleaved prefix {prefix!r}")
             channel, length = struct.unpack("!BH", stream.read(3))
             payload = stream.read(length)

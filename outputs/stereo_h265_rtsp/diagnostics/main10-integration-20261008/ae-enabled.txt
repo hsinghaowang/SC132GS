@@ -1,0 +1,1 @@
+ok mode=auto camera_mode=linear hdr_enabled=0 hdr_ratio=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 target_percent=40 cam0_percent=39 cam1_percent=40 exposure_lines=1330 gain_index=42 fps_x10=599 max_exposure_lines=1330 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128

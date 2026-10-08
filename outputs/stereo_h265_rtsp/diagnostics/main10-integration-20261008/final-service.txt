@@ -1,0 +1,15 @@
+● sc132gs-camera-rtsp.service - /bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh
+     Loaded: loaded (/run/systemd/transient/sc132gs-camera-rtsp.service; transient)
+  Transient: yes
+     Active: active (running) since Thu 2026-10-08 13:57:45 CST; 3min 58s ago
+   Main PID: 43550 (bash)
+      Tasks: 14 (limit: 8437)
+     Memory: 27.5M (peak: 36.7M)
+        CPU: 3min 55.942s
+     CGroup: /system.slice/sc132gs-camera-rtsp.service
+             ├─43550 /bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh
+             ├─43561 bash /home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh
+             ├─43664 /usr/local/bin/sc132gs-fsync-generator auto 18 19 60 100 active-low
+             └─43667 /home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp --cam0 /dev/video0 --cam1 /dev/video3 --bind 192.168.137.226 --port 8554 --mount /stereo --downscale 1 --fps 60 --brightness 40 --auto-exposure off --hevc-profile main10 --bitrate 20000000
+
+Oct 08 13:57:45 ubuntu systemd[1]: Started sc132gs-camera-rtsp.service - /bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh.

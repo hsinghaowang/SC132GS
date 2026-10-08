@@ -19,6 +19,8 @@ public:
 
     void convert(std::span<const std::uint8_t> packed, int stride,
                  std::span<std::uint8_t> gray, int scale);
+    void convert10(std::span<const std::uint8_t> packed, int stride,
+                   std::span<std::uint16_t> gray, int scale);
 
 private:
     struct Impl;

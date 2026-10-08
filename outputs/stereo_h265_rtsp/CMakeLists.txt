@@ -10,7 +10,7 @@ set(SC132GS_AE_SOURCE_DIR
     "${CMAKE_CURRENT_SOURCE_DIR}/../sc132gs_v4l2_probe"
     CACHE PATH "Directory containing SC132GS AE and control server sources")
 add_executable(stereo-h265-rtsp main.cpp StereoRtspServer.cpp StereoCapture.cpp
-    Raw10Luma.cpp BayerLuma.cpp StereoComposeNV12.cpp
+    Raw10Luma.cpp BayerLuma.cpp StereoComposeNV12.cpp Main10Encoder.cpp
     "${SC132GS_AE_SOURCE_DIR}/sc132gs-ae.cpp"
     "${SC132GS_AE_SOURCE_DIR}/sc132gs-control-server.cpp")
 target_compile_features(stereo-h265-rtsp PUBLIC cxx_std_20)

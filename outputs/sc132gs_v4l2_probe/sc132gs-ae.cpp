@@ -493,3 +493,28 @@ void AutoExposure::process_luma(std::span<const std::uint8_t> cam0,
     const int raw1 = median_luma(cam1, width, height);
     impl_->process_measured(raw0, raw1, cam0_sequence, cam0_timestamp_ns);
 }
+
+void AutoExposure::process_luma10(std::span<const std::uint16_t> cam0,
+                                  std::span<const std::uint16_t> cam1,
+                                  int width, int height, std::uint32_t sequence,
+                                  std::int64_t timestamp_ns) {
+    const auto median = [width, height](std::span<const std::uint16_t> pixels) {
+        if (width <= 0 || height <= 0 || pixels.size() != static_cast<std::size_t>(width)*height)
+            throw AeError(AeErrorCode::invalid_argument, "10-bit luma frame size");
+        std::array<int,1024> histogram{};
+        int count=0;
+        for(int y=height/10;y<height*9/10;y+=8)
+            for(int x=width/10;x<width*9/10;x+=8) {
+                const auto value=pixels[static_cast<std::size_t>(y)*width+x];
+                if(value>1023) throw AeError(AeErrorCode::invalid_argument,"10-bit luma range");
+                ++histogram[value];++count;
+            }
+        int cumulative=0;
+        for(int value=0;value<1024;++value) {
+            cumulative+=histogram[value];
+            if(cumulative>=(count+1)/2) return value;
+        }
+        return 1023;
+    };
+    impl_->process_measured(median(cam0),median(cam1),sequence,timestamp_ns);
+}

@@ -51,6 +51,9 @@ int main(int argc, char** argv) {
             for (int x = 0; x < w; ++x)
                 pixels[y*w+x] = (y%2 == x%2) ? (y%2 ? 160 : 960) : 320;
         auto raw = pack(pixels, w, h, stride);
+        std::vector<std::uint16_t> color10(w*h);
+        converter.convert10(raw,stride,color10,1);
+        for(auto v:color10) require(v==443);
         for (int scale : {1, 2, 4}) {
             std::vector<std::uint8_t> gray(w*h/(scale*scale));
             converter.convert(raw, stride, gray, scale);
@@ -62,6 +65,9 @@ int main(int argc, char** argv) {
             std::vector<std::uint8_t> gray(w*h);
             converter.convert(raw, stride, gray, 1);
             for (auto v : gray) require(v == std::min(255U, (level+2)/4));
+            std::vector<std::uint16_t> gray10(w*h);
+            converter.convert10(raw,stride,gray10,1);
+            for(auto v:gray10) require(v==level);
         }
         // An achromatic affine ramp must remain exact away from reflected borders.
         for (int y = 0; y < h; ++y)
@@ -69,8 +75,31 @@ int main(int argc, char** argv) {
         raw = pack(pixels, w, h, stride);
         std::vector<std::uint8_t> gray(w*h);
         converter.convert(raw, stride, gray, 1);
+        std::vector<std::uint16_t> ramp10(w*h);
+        converter.convert10(raw,stride,ramp10,1);
         for (int y = 1; y < h-1; ++y)
-            for (int x = 1; x < w-1; ++x) require(gray[y*w+x] == pixels[y*w+x]/4);
+            for (int x = 1; x < w-1; ++x) {
+                require(gray[y*w+x] == pixels[y*w+x]/4);
+                require(ramp10[y*w+x] == pixels[y*w+x]);
+            }
+        // Compare SIMD interiors, scalar tails and reflected borders with
+        // an independent bilinear reference on an irregular CFA pattern.
+        for (int i=0;i<w*h;++i) pixels[i]=(i*137+i*i*19+7)%1024;
+        raw=pack(pixels,w,h,stride);
+        converter.convert10(raw,stride,ramp10,1);
+        for(int y=0;y<h;++y) for(int x=0;x<w;++x) {
+            const int l=x?x-1:1, r=x==w-1?w-2:x+1;
+            const int u=y?y-1:1, d=y==h-1?h-2:y+1;
+            auto at=[&](int yy,int xx){return pixels[yy*w+xx];};
+            const auto horizontal=(at(y,l)+at(y,r)+1)/2;
+            const auto vertical=(at(u,x)+at(d,x)+1)/2;
+            const auto diagonal=(at(u,l)+at(u,r)+at(d,l)+at(d,r)+2)/4;
+            const auto cross=(at(y,l)+at(y,r)+at(u,x)+at(d,x)+2)/4;
+            unsigned rr,gg,bb;
+            if((y&1)==(x&1)) {gg=cross;rr=(y&1)?diagonal:at(y,x);bb=(y&1)?at(y,x):diagonal;}
+            else {gg=at(y,x);rr=(y&1)?vertical:horizontal;bb=(y&1)?horizontal:vertical;}
+            require(ramp10[y*w+x]==(54*rr+183*gg+19*bb+128)/256);
+        }
         bool rejected = false;
         try { converter.convert(std::span<const std::uint8_t>(raw).first(10), stride, gray, 1); }
         catch (const std::invalid_argument&) { rejected = true; }

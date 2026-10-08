@@ -31,6 +31,8 @@ else
 fi
 BRIGHTNESS=${BRIGHTNESS:-40}
 AUTO_EXPOSURE=${AUTO_EXPOSURE:-1}
+HEVC_PROFILE=${HEVC_PROFILE:-main}
+BITRATE=${BITRATE:-20000000}
 case "$AUTO_EXPOSURE" in
     1) AE_MODE=on ;;
     0) AE_MODE=off ;;
@@ -73,4 +75,4 @@ kill -USR1 "$generator_pid"
 "$SERVER_BIN" --cam0 "$CAM0" --cam1 "$CAM1" \
     --bind "$BIND" --port "$PORT" --mount /stereo \
     --downscale "$DOWNSCALE" --fps "$FPS" --brightness "$BRIGHTNESS" \
-    --auto-exposure "$AE_MODE"
+    --auto-exposure "$AE_MODE" --hevc-profile "$HEVC_PROFILE" --bitrate "$BITRATE"

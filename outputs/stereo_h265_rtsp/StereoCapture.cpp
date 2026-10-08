@@ -66,12 +66,13 @@ struct Frame {
     std::uint32_t sequence{};
     std::int64_t timestamp_ns{};
     std::vector<std::uint8_t> luma;
+    std::vector<std::uint16_t> luma10;
 };
 
 class Device final {
 public:
-    Device(std::string path, int scale, bool hdr_display)
-        : path_(std::move(path)), scale_(scale), converter_(kWidth, kHeight, hdr_display) {
+    Device(std::string path, int scale, bool hdr_display, bool tenbit)
+        : path_(std::move(path)), scale_(scale), converter_(kWidth, kHeight, hdr_display), tenbit_(tenbit) {
         fd_ = ::open(path_.c_str(), O_RDWR | O_NONBLOCK | O_CLOEXEC);
         if (fd_ < 0) throw std::runtime_error("open " + path_ + ": " + std::strerror(errno));
         try {
@@ -136,11 +137,17 @@ public:
                 static_cast<std::int64_t>(buffer.timestamp.tv_usec) * 1'000;
             const int output_width = kWidth / scale_;
             const int output_height = kHeight / scale_;
-            frame.luma.resize(output_width * output_height);
             const auto* raw = static_cast<const std::uint8_t*>(
                 mappings_[buffer.index].first);
-            converter_.convert(std::span<const std::uint8_t>(raw, plane.bytesused),
-                               kStride, frame.luma, scale_);
+            if (tenbit_) {
+                frame.luma10.resize(output_width * output_height);
+                converter_.convert10(std::span<const std::uint8_t>(raw, plane.bytesused),
+                                     kStride, frame.luma10, scale_);
+            } else {
+                frame.luma.resize(output_width * output_height);
+                converter_.convert(std::span<const std::uint8_t>(raw, plane.bytesused),
+                                   kStride, frame.luma, scale_);
+            }
         } catch (...) {
             requeue(buffer.index);
             throw;
@@ -204,6 +211,7 @@ private:
     std::string path_;
     int scale_;
     detail::BayerLuma converter_;
+    bool tenbit_;
     int fd_{-1};
     bool streaming_{};
     std::vector<std::pair<void*, std::size_t>> mappings_;
@@ -213,11 +221,14 @@ private:
 
 struct StereoCapture::Impl {
     Impl(const std::string& cam0, const std::string& cam1, int scale,
-         int frame_rate, bool hdr_display)
-        : left(cam0, scale, hdr_display), right(cam1, scale, hdr_display) {
+         int frame_rate, bool hdr_display, bool tenbit)
+        : left(cam0, scale, hdr_display, tenbit), right(cam1, scale, hdr_display, tenbit) {
         left.start();
         right.start();
         if (frame_rate == 60) {
+            // Presentation pairing tolerates receiver completion jitter.
+            // This does not establish physical exposure synchronization.
+            max_delta_ns = 1'000'000'000LL / frame_rate / 2 + 500'000;
             enable_trigger_60fps("/sys/bus/i2c/devices/18-0032/trigger_60fps");
             enable_trigger_60fps("/sys/bus/i2c/devices/16-0030/trigger_60fps");
             warmup_until = std::chrono::steady_clock::now() +
@@ -229,6 +240,7 @@ struct StereoCapture::Impl {
     Device right;
     std::deque<Frame> queue0;
     std::deque<Frame> queue1;
+    std::int64_t max_delta_ns{kMaxDeltaNs};
     bool have_pair{};
     std::uint32_t last0{}, last1{};
     std::chrono::steady_clock::time_point warmup_until{};
@@ -251,7 +263,7 @@ struct StereoCapture::Impl {
             while (!queue0.empty() && !queue1.empty()) {
                 const auto delta = queue1.front().timestamp_ns -
                                    queue0.front().timestamp_ns;
-                if (delta > kMaxDeltaNs || delta < -kMaxDeltaNs) {
+                if (delta > max_delta_ns || delta < -max_delta_ns) {
                     if (++unmatched > 300)
                         throw std::runtime_error(
                             "cannot pair camera timestamps; latest delta_ns=" +
@@ -286,7 +298,8 @@ struct StereoCapture::Impl {
                 last1 = two.sequence;
                 return FramePair{one.sequence, two.sequence,
                                  one.timestamp_ns, two.timestamp_ns,
-                                 std::move(one.luma), std::move(two.luma)};
+                                 std::move(one.luma), std::move(two.luma),
+                                 std::move(one.luma10), std::move(two.luma10)};
             }
             pollfd descriptors[2] = {{left.fd(), POLLIN, 0},
                                      {right.fd(), POLLIN, 0}};
@@ -313,8 +326,8 @@ struct StereoCapture::Impl {
 };
 
 StereoCapture::StereoCapture(const std::string& cam0, const std::string& cam1,
-                             int scale, int frame_rate, bool hdr_display)
-    : impl_(std::make_unique<Impl>(cam0, cam1, scale, frame_rate, hdr_display)) {}
+                             int scale, int frame_rate, bool hdr_display, bool tenbit)
+    : impl_(std::make_unique<Impl>(cam0, cam1, scale, frame_rate, hdr_display, tenbit)) {}
 StereoCapture::~StereoCapture() = default;
 StereoCapture::StereoCapture(StereoCapture&&) noexcept = default;
 StereoCapture& StereoCapture::operator=(StereoCapture&&) noexcept = default;

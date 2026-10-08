@@ -33,6 +33,13 @@ int main(int argc, char** argv) {
             else if (option == "--mount") settings.mount = value;
             else if (option == "--downscale") settings.downscale = positive_int(value);
             else if (option == "--fps") settings.frame_rate = positive_int(value);
+            else if (option == "--bitrate") settings.bitrate = positive_int(value);
+            else if (option == "--hevc-profile") {
+                const std::string profile(value);
+                if (profile != "main" && profile != "main10")
+                    throw std::invalid_argument("hevc-profile must be main or main10");
+                settings.main10 = profile == "main10";
+            }
             else if (option == "--brightness")
                 settings.target_brightness_percent = positive_int(value);
             else if (option == "--auto-exposure") {

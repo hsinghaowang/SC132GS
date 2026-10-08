@@ -1,0 +1,51 @@
+GPIO18/19 released for the common SC132GS FSYNC source
+RTSP ready: rtsp://192.168.137.226:8554/stereo (2176x1280@60, Main10 linear R16/P010)
+High-rate timestamp pairing; max_delta_ns=8833333; exposure synchronization unverified
+Capture ready: fps=60
+input_fps=48.8602 submitted_fps=48.8602 dropped_fps=0 encoded_fps=48.2619 rtsp_fps=0 pairs=245
+input_fps=59.9857 submitted_fps=59.9857 dropped_fps=0 encoded_fps=59.9857 rtsp_fps=15.7962 pairs=545
+input_fps=59.9998 submitted_fps=59.9998 dropped_fps=0 encoded_fps=59.9998 rtsp_fps=59.9998 pairs=845
+input_fps=59.7542 submitted_fps=59.7542 dropped_fps=0 encoded_fps=59.7542 rtsp_fps=59.7542 pairs=1144
+input_fps=60.2409 submitted_fps=60.2409 dropped_fps=0 encoded_fps=60.2409 rtsp_fps=60.2409 pairs=1446
+input_fps=60.0001 submitted_fps=60.0001 dropped_fps=0 encoded_fps=60.0001 rtsp_fps=60.0001 pairs=1747
+input_fps=59.9981 submitted_fps=59.9981 dropped_fps=0 encoded_fps=59.9981 rtsp_fps=59.9981 pairs=2047
+input_fps=60.0094 submitted_fps=60.0094 dropped_fps=0 encoded_fps=60.0094 rtsp_fps=60.0094 pairs=2348
+input_fps=59.4956 submitted_fps=59.4956 dropped_fps=0 encoded_fps=59.6952 rtsp_fps=59.6952 pairs=2646
+input_fps=60.4949 submitted_fps=60.4949 dropped_fps=0 encoded_fps=60.2952 rtsp_fps=60.2952 pairs=2949
+input_fps=60.0222 submitted_fps=60.0222 dropped_fps=0 encoded_fps=60.0222 rtsp_fps=60.0222 pairs=3250
+input_fps=59.9784 submitted_fps=59.9784 dropped_fps=0 encoded_fps=59.9784 rtsp_fps=59.9784 pairs=3550
+input_fps=60.0036 submitted_fps=60.0036 dropped_fps=0 encoded_fps=60.0036 rtsp_fps=60.0036 pairs=3851
+input_fps=59.9992 submitted_fps=59.9992 dropped_fps=0 encoded_fps=59.9992 rtsp_fps=59.9992 pairs=4152
+input_fps=60.001 submitted_fps=60.001 dropped_fps=0 encoded_fps=60.001 rtsp_fps=60.001 pairs=4453
+input_fps=59.9857 submitted_fps=59.9857 dropped_fps=0 encoded_fps=59.9857 rtsp_fps=59.9857 pairs=4753
+input_fps=59.9958 submitted_fps=59.9958 dropped_fps=0 encoded_fps=59.9958 rtsp_fps=59.9958 pairs=5053
+input_fps=60.0027 submitted_fps=60.0027 dropped_fps=0 encoded_fps=60.0027 rtsp_fps=60.0027 pairs=5354
+input_fps=60.0038 submitted_fps=60.0038 dropped_fps=0 encoded_fps=60.0038 rtsp_fps=60.0038 pairs=5655
+input_fps=59.997 submitted_fps=59.997 dropped_fps=0 encoded_fps=59.997 rtsp_fps=59.997 pairs=5955
+input_fps=59.8573 submitted_fps=59.8573 dropped_fps=0 encoded_fps=59.8573 rtsp_fps=59.8573 pairs=6255
+input_fps=60.153 submitted_fps=60.153 dropped_fps=0 encoded_fps=60.153 rtsp_fps=60.153 pairs=6556
+input_fps=59.9788 submitted_fps=59.9788 dropped_fps=0 encoded_fps=60.1781 rtsp_fps=60.1781 pairs=6857
+input_fps=60.0214 submitted_fps=60.0214 dropped_fps=0 encoded_fps=59.822 rtsp_fps=59.822 pairs=7158
+input_fps=59.9838 submitted_fps=59.9838 dropped_fps=0 encoded_fps=59.9838 rtsp_fps=59.9838 pairs=7458
+input_fps=60.0171 submitted_fps=60.0171 dropped_fps=0 encoded_fps=60.0171 rtsp_fps=60.0171 pairs=7759
+input_fps=59.9985 submitted_fps=59.9985 dropped_fps=0 encoded_fps=59.9985 rtsp_fps=59.9985 pairs=8059
+input_fps=60.0041 submitted_fps=60.0041 dropped_fps=0 encoded_fps=60.0041 rtsp_fps=60.0041 pairs=8360
+input_fps=59.9966 submitted_fps=59.9966 dropped_fps=0 encoded_fps=59.9966 rtsp_fps=59.9966 pairs=8660
+input_fps=59.9986 submitted_fps=59.9986 dropped_fps=0 encoded_fps=59.9986 rtsp_fps=59.9986 pairs=8960
+input_fps=60.001 submitted_fps=60.001 dropped_fps=0 encoded_fps=60.001 rtsp_fps=60.001 pairs=9261
+input_fps=59.9992 submitted_fps=59.9992 dropped_fps=0 encoded_fps=59.9992 rtsp_fps=59.9992 pairs=9561
+input_fps=59.9944 submitted_fps=59.9944 dropped_fps=0 encoded_fps=59.9944 rtsp_fps=59.9944 pairs=9861
+capture frame gap cam0=10142->10144 cam1=10140->10141; continuing
+input_fps=59.808 submitted_fps=59.808 dropped_fps=0 encoded_fps=59.808 rtsp_fps=59.808 pairs=10161
+input_fps=59.9959 submitted_fps=59.9959 dropped_fps=0 encoded_fps=59.9959 rtsp_fps=59.9959 pairs=10461
+input_fps=59.9947 submitted_fps=59.9947 dropped_fps=0 encoded_fps=59.9947 rtsp_fps=59.9947 pairs=10762
+input_fps=60.003 submitted_fps=60.003 dropped_fps=0 encoded_fps=60.003 rtsp_fps=60.003 pairs=11063
+input_fps=59.9994 submitted_fps=59.9994 dropped_fps=0 encoded_fps=59.9994 rtsp_fps=59.9994 pairs=11363
+input_fps=60.0054 submitted_fps=60.0054 dropped_fps=0 encoded_fps=60.0054 rtsp_fps=60.0054 pairs=11664
+input_fps=59.9965 submitted_fps=59.9965 dropped_fps=0 encoded_fps=59.9965 rtsp_fps=59.9965 pairs=11964
+input_fps=59.9978 submitted_fps=59.9978 dropped_fps=0 encoded_fps=59.9978 rtsp_fps=59.9978 pairs=12265
+input_fps=60.0006 submitted_fps=60.0006 dropped_fps=0 encoded_fps=60.0006 rtsp_fps=60.0006 pairs=12566
+input_fps=60.0055 submitted_fps=60.0055 dropped_fps=0 encoded_fps=60.0055 rtsp_fps=60.0055 pairs=12867
+input_fps=59.9993 submitted_fps=59.9993 dropped_fps=0 encoded_fps=59.9993 rtsp_fps=59.9993 pairs=13167
+input_fps=59.9933 submitted_fps=59.9933 dropped_fps=0 encoded_fps=59.9933 rtsp_fps=59.9933 pairs=13467
+input_fps=60.0046 submitted_fps=60.0046 dropped_fps=0 encoded_fps=60.0046 rtsp_fps=60.0046 pairs=13768

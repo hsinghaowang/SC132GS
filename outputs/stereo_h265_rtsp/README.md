@@ -1,5 +1,11 @@
 # 雙目 RAW10 → 各眼水平鏡像 → 左右並排 H.265 → RTSP 原型
 
+## Main10 整合（2026-10-08）
+
+已增加線性 R16 → P010 → 原生 V4L2 H.265 Main10 路徑與 10-bit AE 統計。
+板端相機服務已使用此版本；資料路徑、部署與精度界線見
+[Main10 整合說明](MAIN10.zh-TW.md)。
+
 ## HDR / Linear 切換（2026-10-06）
 
 板端 `sudo sc132gs-ctl set-mode linear` 選擇 2-lane Linear 60 FPS；

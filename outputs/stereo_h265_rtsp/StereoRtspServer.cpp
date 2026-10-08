@@ -1,6 +1,7 @@
 #include "StereoRtspServer.hpp"
 #include "StereoCapture.hpp"
 #include "StereoComposeNV12.hpp"
+#include "Main10Encoder.hpp"
 #include "sc132gs-ae.hpp"
 #include "sc132gs-control-server.hpp"
 
@@ -57,6 +58,7 @@ struct StereoRtspServer::Impl {
     std::int64_t last_timestamp_ns{};
     bool have_timestamp{};
     std::atomic<bool> reader_done{false};
+    std::atomic<bool> request_encoder_keyframe{false};
     std::chrono::steady_clock::time_point next_session_cleanup{};
 
     ~Impl() {
@@ -146,7 +148,8 @@ struct StereoRtspServer::Impl {
         }
         gst_object_unref(element);
         g_signal_connect(media, "unprepared", G_CALLBACK(media_unprepared), data);
-        gst_element_send_event(GST_ELEMENT(self.encoder_sink),
+        if (self.settings.main10) self.request_encoder_keyframe.store(true);
+        else gst_element_send_event(GST_ELEMENT(self.encoder_sink),
             gst_video_event_new_upstream_force_key_unit(GST_CLOCK_TIME_NONE, TRUE, 0));
     }
 
@@ -158,6 +161,7 @@ struct StereoRtspServer::Impl {
         if (error) {
             GError* detail{}; gchar* debug{};
             gst_message_parse_error(error, &detail, &debug);
+            if (debug) std::cerr << "encoder error detail: " << debug << '\n';
             {
                 std::lock_guard lock(self.mutex);
                 self.worker_error = Error{ErrorCode::pipeline, detail ? detail->message : "encoder failed"};
@@ -188,7 +192,8 @@ struct StereoRtspServer::Impl {
             settings.frame_rate > 60 || settings.mount.empty() ||
             settings.mount.front() != '/' ||
             settings.target_brightness_percent < 1 ||
-            settings.target_brightness_percent > 90) {
+            settings.target_brightness_percent > 90 || settings.bitrate < 100000 ||
+            settings.bitrate > 100000000) {
             return Error{ErrorCode::invalid_config,
                          "downscale must be 1, 2 or 4; fps 1..60; brightness 1..90; mount starts with /"};
         }
@@ -199,7 +204,13 @@ struct StereoRtspServer::Impl {
         const int eye_width = static_cast<int>(kInputWidth) / settings.downscale;
         const int eye_height = static_cast<int>(kInputEyeHeight) / settings.downscale;
         const int output_width = eye_width * 2;
-        const std::string encoder_description =
+        const std::string encoder_description = settings.main10 ?
+            "appsrc name=encoder_source is-live=true block=false format=time "
+            "max-buffers=32 max-bytes=0 max-time=0 "
+            "caps=video/x-h265,stream-format=byte-stream,alignment=au "
+            "! h265parse config-interval=-1 "
+            "! video/x-h265,stream-format=byte-stream,alignment=au,profile=main-10 "
+            "! appsink name=encoded_sink emit-signals=true sync=false max-buffers=3 drop=true" :
             "appsrc name=encoder_source is-live=true block=false format=time "
             "max-buffers=3 max-bytes=0 max-time=0 leaky-type=downstream "
             "caps=video/x-raw,format=NV12,width=" +
@@ -260,7 +271,8 @@ struct StereoRtspServer::Impl {
         timer_id = g_timeout_add(100, tick, this);
         std::cerr << "RTSP ready: rtsp://" << settings.bind_address << ':'
                   << settings.port << settings.mount << " (" << output_width << 'x'
-                  << eye_height << '@' << settings.frame_rate << ")\n";
+                  << eye_height << '@' << settings.frame_rate << ", "
+                  << (settings.main10 ? "Main10 linear R16/P010" : "Main NV12") << ")\n";
         std::jthread reader([this, eye_width, eye_height](std::stop_token stop) {
             try {
                 read_frames(stop, eye_width, eye_height);
@@ -283,12 +295,21 @@ struct StereoRtspServer::Impl {
     }
 
     void read_frames(std::stop_token stop, int eye_width, int eye_height) {
-        AutoExposure exposure(AutoExposure::LumaEncoding::hdr_display);
+        AutoExposure exposure(settings.main10 ? AutoExposure::LumaEncoding::sensor_linear :
+                              AutoExposure::LumaEncoding::hdr_display);
         exposure.set_target(settings.target_brightness_percent);
         if (!settings.auto_exposure) exposure.disable();
         ControlServer control(exposure);
         StereoCapture capture(settings.cam0, settings.cam1, settings.downscale,
-                              settings.frame_rate, exposure.snapshot().hdr_enabled);
+                              settings.frame_rate, !settings.main10 && exposure.snapshot().hdr_enabled,
+                              settings.main10);
+        std::unique_ptr<detail::Main10Encoder> main10;
+        std::vector<std::uint16_t> stereo10;
+        if (settings.main10) {
+            main10 = std::make_unique<detail::Main10Encoder>(eye_width*2,eye_height,
+                                                           settings.frame_rate,settings.bitrate);
+            stereo10.resize(static_cast<std::size_t>(eye_width)*2*eye_height);
+        }
         const std::size_t y_bytes = static_cast<std::size_t>(eye_width) * eye_height * 2;
         const std::size_t nv12_bytes = y_bytes * 3 / 2;
         auto interval_start = std::chrono::steady_clock::now();
@@ -304,7 +325,11 @@ struct StereoRtspServer::Impl {
             }
             have_timestamp = true;
             last_timestamp_ns = pair.cam0_timestamp_ns;
-            exposure.process_luma(pair.left_luma, pair.right_luma,
+            if (settings.main10)
+                exposure.process_luma10(pair.left_luma10, pair.right_luma10,
+                                       eye_width, eye_height, pair.cam0_sequence,
+                                       pair.cam0_timestamp_ns);
+            else exposure.process_luma(pair.left_luma, pair.right_luma,
                                   eye_width, eye_height, pair.cam0_sequence,
                                   pair.cam0_timestamp_ns);
             ++input_pairs;
@@ -314,7 +339,36 @@ struct StereoRtspServer::Impl {
                 first_input_timestamp_ns = pair.cam0_timestamp_ns;
             const auto pts = static_cast<GstClockTime>(
                 pair.cam0_timestamp_ns - first_input_timestamp_ns);
-            if (source) {
+            if (settings.main10) {
+                if (request_encoder_keyframe.exchange(false)) main10->request_keyframe();
+                for(int y=0;y<eye_height;++y) {
+                    auto* row=stereo10.data()+static_cast<std::size_t>(y)*eye_width*2;
+                    for(int x=0;x<eye_width;++x) {
+                        row[x]=pair.left_luma10[static_cast<std::size_t>(y)*eye_width+eye_width-1-x];
+                        row[eye_width+x]=pair.right_luma10[static_cast<std::size_t>(y)*eye_width+eye_width-1-x];
+                    }
+                }
+                // Drain the encoded queue every capture tick so downstream clients
+                // never own the encoder or its hardware buffer lifetimes.
+                auto push_encoded = [&](std::vector<detail::EncodedFrame> frames) {
+                    for(auto& frame:frames) {
+                        GstBuffer* b=gst_buffer_new_allocate(nullptr,frame.bytes.size(),nullptr);
+                        if(!b) throw std::runtime_error("cannot allocate HEVC access unit");
+                        gst_buffer_fill(b,0,frame.bytes.data(),frame.bytes.size());
+                        GST_BUFFER_PTS(b)=frame.timestamp_ns;
+                        GST_BUFFER_DTS(b)=GST_CLOCK_TIME_NONE;
+                        GST_BUFFER_DURATION(b)=GST_SECOND/settings.frame_rate;
+                        if(!frame.keyframe) GST_BUFFER_FLAG_SET(b,GST_BUFFER_FLAG_DELTA_UNIT);
+                        if(gst_app_src_push_buffer(source,b)!=GST_FLOW_OK)
+                            throw std::runtime_error("Main10 parser rejected access unit");
+                    }
+                };
+                push_encoded(main10->receive());
+                if(main10->submit(stereo10,pts)) {++submitted_pairs;++interval_submitted;}
+                else {++dropped_pairs;++interval_dropped;}
+                push_encoded(main10->receive());
+                gst_object_unref(source);
+            } else if (source) {
                 // Keep capture and auto exposure running when a client or encoder
                 // falls behind. The appsrc limit also handles a race after this check.
                 if (gst_app_src_get_current_level_buffers(source) >= 3) {
