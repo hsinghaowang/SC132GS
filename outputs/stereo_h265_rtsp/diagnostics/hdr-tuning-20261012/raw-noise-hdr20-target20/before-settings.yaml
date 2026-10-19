@@ -1,0 +1,14 @@
+# SC132GS camera settings; exposure rows are mode-specific.
+# AE on: rows/gain are startup seeds; AE adjusts them after start.
+mode: hdr
+binning: false
+max_fps: 30
+fps: 30
+ae: true
+brightness: 10
+rows: 1492
+gain: 0
+max_exposure_us: 0
+max_gain_index: 128
+revision: 162
+schema: 1

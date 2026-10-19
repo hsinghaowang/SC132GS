@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>OpenVINS ROS2 回放驗證</title><style>body{font:16px/1.65 system-ui,sans-serif;max-width:1100px;margin:40px auto;padding:0 24px;color:#16263b}h1{font-size:28px}table{border-collapse:collapse;width:100%;margin:22px 0}td,th{padding:10px;border-bottom:1px solid #dce3eb;text-align:right}td:first-child,th:first-child{text-align:left}th{background:#edf4fb}.note{background:#f3f6fa;padding:16px;border-radius:8px}a{color:#1753bb}</style><h1>RUBIK Pi 3：OpenVINS ROS2 回放驗證</h1><p><strong>完整輸入／輸出與退出驗證完成；MH 延遲尾端仍待改善。</strong></p>
+<div class="note">本頁保留先前未隔離背景負載的整合測試紀錄。最新三輪比較請看<a href="exclusive-report.html">暫停相機串流後的專用回放報告</a>。</div>
+<p>雙目 752×480／20 Hz、IMU 200 Hz；num_pts=100，分配為每眼目標 50 個。使用相同 EuRoC 設定與自然初始化，沒有真值初始化。</p>
+<table><tr><th>完整資料集</th><th>延遲 P95／P99／最大 ms</th><th>ATE cm</th><th>1秒 RPE cm／deg</th><th>初始化後位姿涵蓋率</th><th>漏收 IMU／雙目對</th></tr>
+<tr><td>MH_01_easy-paced-worker-1</td><td>174.1／373.2／440.6</td><td>12.00</td><td>3.62／0.294</td><td>100.0%</td><td>0／0</td></tr>
+<tr><td>V2_02_medium-paced-worker-1</td><td>78.6／90.0／107.1</td><td>5.53</td><td>2.54／0.284</td><td>100.0%</td><td>0／0</td></tr>
+</table><p>兩個最終回放共 6,030 對影像／60,310 筆 IMU，初始化後 5,050 個位姿。全段位姿涵蓋率 MH 75.6%、V2 96.5%；自然初始化等待 MH 44.9 秒、V2 4.1 秒，初始化後 100% 不代表全段 100%。</p><p>延遲從來源影格的回放排程量到 stock /poseimu 的 DDS 接收，包含 PNG 讀取、影像訊息建立、DDS、雙目配對、等待 IMU、估測、狀態／路徑發布與位姿接收。所有時間點使用同一台 Linux 主機的 CLOCK_MONOTONIC。位姿 stamp 為校正後 IMU 時間，與來源影格逐筆做最近鄰一對一關聯，容許 20 ms，實際偏移見 evaluation.json。ATE 以位姿本身的 IMU stamp 對真值，不使用影格近似 stamp。</p>
+<div class="note">驗證的是自訂 C++17／PIMPL 接收器：ROS2 executor 只接收與複製資料；有界 4096 筆工作佇列；唯一 owned worker 存取估測器與視覺化發布，退出先 join，再關閉 ROS。IMU DDS 接收 KeepLast 100，影像 reliable KeepLast 10，ApproximateTime 配對 10。高頻 IMU odometry／TF 關閉，仍保留逐影格 stock 位姿與路徑發布。原版 detached subscriber main、高頻 odometry、實體相機／IMU與曝光到位姿延遲不在此次驗證範圍。</div>
+<h2>持續輸入時退出</h2>
+<p>在 20 Hz 影像／200 Hz IMU 持續送出時送 SIGINT，接收器退出碼 0，觀察到退出約 240.2 ms；停止後發布器繼續送 60 對影像與 595 筆 IMU。停止前收到 1806 筆 IMU，已輸出 98 筆 stock 位姿。停止時主動放棄尚未處理量測 1 筆；此短測試的停止後輸入不列為正常運行漏收。</p>
+<h2>延遲取捨</h2><p>MH 的影像讀取／發布 P95 為 32.7 ms，雙目回呼進入到估測工作開始 P95 為 94.4 ms、最高 365.7 ms，估測與狀態發布 P95 為 51.5 ms。工作佇列曾累積到 95 筆量測；未丟棄資料，所以會把短暫服務超時轉成排隊。V2 對應三項 P95 為 30.9／8.3／45.6 ms。各項是不同分布的百分位數，不能直接相加。</p><p>下一步先針對 MH 尖峰對照 tracking／更新內部時間及排隊時間，並比較較低影像訊息建立成本的發布器。未取得執行核心／排程追蹤，因此不把尖峰直接歸因於降頻或排程器。</p>
+<h2>先前版本與限制</h2><p>舊版將估測直接放在循序 ROS 回呼中，完整 V2／MH 分別漏收 408／1382 筆 IMU，延遲 P95 約 519／532 ms；原始紀錄保留為失敗診斷，不與新版合併。早期 Python bytes 影像訊息建立過慢，改用 array.array 才能維持 20 Hz。每份完整資料目前只跑一次；本結果是整合驗證，不代表產品誤差驗收或每幀 50 ms 截止時間保證。</p>
+<p>原生候選回放：MH P95 42.9–43.1 ms、ATE 12.00 cm；V2 P95 49.6–49.8 ms、ATE 5.47 cm。原生延遲量到估測返回，ROS2 量到 DDS 位姿收到，兩者量測終點不同。</p>
+<p><a href="evaluation.json">逐次完整評估</a> · <a href="conditions.json">環境／實作範圍</a> · <a href="evidence-sha256.json">證據雜湊</a></p></html>

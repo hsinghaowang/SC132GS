@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "statistics": {
+    "windows": 720,
+    "duration_s": 3609.1335377095565,
+    "capture_average_fps": 29.999998301174884,
+    "encoder_average_fps": 29.999997703644183,
+    "encoder_instantaneous_range": [
+      29.6199,
+      30.3791
+    ],
+    "maximum_count_rounding_residual": 0.00047040768666306576,
+    "scope": "complete logged statistics, interval recovered from pairs/input_fps; reported-rate precision retained; no timestamps synthesized"
+  },
+  "scope": "independent replay of complete copied server log; original failed observer retained"
+}

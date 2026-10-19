@@ -1,0 +1,16 @@
+{
+  "reason": "duration_complete",
+  "error": null,
+  "elapsed_s": 12.102362805002485,
+  "trace_stats": {
+    "cpu7": "entries: 669\noverrun: 0\ncommit overrun: 0\nbytes: 46192\noldest event ts: 87768.814310\nnow ts: 87780.666369\ndropped events: 0\nread events: 0\n",
+    "cpu6": "entries: 1564\noverrun: 0\ncommit overrun: 0\nbytes: 42788\noldest event ts: 87768.647466\nnow ts: 87780.666588\ndropped events: 0\nread events: 0\n",
+    "cpu5": "entries: 336\noverrun: 0\ncommit overrun: 0\nbytes: 23252\noldest event ts: 87768.646909\nnow ts: 87780.666764\ndropped events: 0\nread events: 0\n",
+    "cpu4": "entries: 288\noverrun: 0\ncommit overrun: 0\nbytes: 20008\noldest event ts: 87769.314742\nnow ts: 87780.666943\ndropped events: 0\nread events: 0\n",
+    "cpu3": "entries: 0\noverrun: 0\ncommit overrun: 0\nbytes: 0\noldest event ts:     0.000000\nnow ts: 87780.667147\ndropped events: 0\nread events: 0\n",
+    "cpu2": "entries: 0\noverrun: 0\ncommit overrun: 0\nbytes: 0\noldest event ts:     0.000000\nnow ts: 87780.667315\ndropped events: 0\nread events: 0\n",
+    "cpu1": "entries: 12\noverrun: 0\ncommit overrun: 0\nbytes: 840\noldest event ts: 87770.197136\nnow ts: 87780.667475\ndropped events: 0\nread events: 0\n",
+    "cpu0": "entries: 2844\noverrun: 0\ncommit overrun: 0\nbytes: 91316\noldest event ts: 87768.646432\nnow ts: 87780.667627\ndropped events: 0\nread events: 0\n"
+  },
+  "scope": "bounded pre-fault event history; no camera repair"
+}

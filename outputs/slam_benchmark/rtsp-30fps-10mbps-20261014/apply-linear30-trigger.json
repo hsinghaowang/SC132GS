@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "ok sensor_mode=linear binning=0 max_fps=30 effective_fps=30 measured_fps_x10=299 eye_resolution=1088x1280 ae=1 brightness=30 ae_target_percent=30 exposure_rows=1377 gain_index=128 exposure_ceiling_rows=1377 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=182\n",
+  "stderr": ""
+}

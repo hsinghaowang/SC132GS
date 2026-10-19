@@ -1,0 +1,16 @@
+{
+  "appearance-matches.csv": "404b6ba0019eb2a38b2e8ebd0e1999b7a43016214944d60a769ad13023293dcc",
+  "board-after.json": "1c9ba16a103d889dd863e8a1c182403440d060d040efdda5d9c5423370161611",
+  "check-factory-stereo.py": "cd2b384a7894014ca71e00f3c43bfd4ada85629c2008f54fcfb018ebd82b28a6",
+  "check-stereo-pose-sign.py": "1ac11f3dc06e48a02e9f038ed32c2bc3bc7d35b07def7fcfc0b064dd1936be95",
+  "input-sha256.json": "a8e950cc166756a3512209055b6e474175a4a78c6b95de53c593757abcdcc932",
+  "pose-sign-check.json": "ce9496871e8009f0cbe10e58eba3dfc8653212ab2ed64bf07019bc3d9059498b",
+  "raw-pair.png": "7619c1e93924500f383e1427801af8ed1761572096f46c9dfb79c27e495b21da",
+  "rectification-matrices.npz": "55204cc6e90713187e47bc3ff81cad30bfa5a23134db48af751c3adae7ee133b",
+  "rectified-cam0.png": "dfd31cd3e9099a3aa286ae4d05caf349a65b28f5089eace20c276b477635817d",
+  "rectified-cam1.png": "49efc282bdab8d9c7a22012084cb3717db0e602743ad3a1b03655d96bedefc84",
+  "rectified-pair.png": "48b5042848d03a2bb2168a96bfd8ab05b27b80a59062c27c338d3aa761d85df8",
+  "report.html": "c679c1ae831feccdc1115ba7a5fbef43ba9cfeba36e32b8b59b5828bdfeb492a",
+  "report.json": "5f179ecaef46dfb1cd359c13a05601bd1f8472abd195b0cdbc6c7318f40dfeed",
+  "verification.json": "df4e07dc83a61035d34537eb11e856d666e31900ea3cbfd6d1c8e49e7a6c0631"
+}

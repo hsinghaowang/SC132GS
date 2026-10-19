@@ -1,0 +1,10 @@
+ok mode=off camera_mode=linear hdr_enabled=0 hdr_ratio=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 target_percent=18 cam0_percent=17 cam1_percent=18 exposure_lines=2560 gain_index=0 fps_x10=599 max_exposure_lines=2560 brightness_limited=0 error_errno=0
+sensor=18-0032 exposure_rows=300
+sensor=16-0030 exposure_rows=300
+sensor=18-0032 gain_index=0 gain_code=0x0320
+exposure: 300
+analogue_gain: 0
+sensor=16-0030 gain_index=0 gain_code=0x0320
+exposure: 300
+analogue_gain: 0
+ok mode=auto camera_mode=linear hdr_enabled=0 hdr_ratio=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 target_percent=18 cam0_percent=5 cam1_percent=5 exposure_lines=300 gain_index=0 fps_x10=599 max_exposure_lines=2560 brightness_limited=0 error_errno=0

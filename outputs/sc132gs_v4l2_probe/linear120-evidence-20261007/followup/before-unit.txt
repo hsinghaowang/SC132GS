@@ -1,0 +1,10 @@
+# /run/systemd/transient/sc132gs-hdr-rtsp.service
+# This is a transient unit file, created programmatically via the systemd API. Do not edit.
+[Unit]
+Description=/bin/bash /home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh
+
+[Service]
+Restart=on-failure
+Environment="BIND=192.168.137.226" "FPS=60" "BRIGHTNESS=40" "AUTO_EXPOSURE=1"
+ExecStart=
+ExecStart="/bin/bash" "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh"

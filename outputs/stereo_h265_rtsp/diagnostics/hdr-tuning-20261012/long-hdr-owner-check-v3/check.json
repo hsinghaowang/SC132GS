@@ -1,0 +1,73 @@
+{
+  "boundaries": [
+    {
+      "fps": 15,
+      "ceiling_rows": 4350,
+      "reject": {
+        "arguments": [
+          "sc132gs-camera",
+          "apply",
+          "--mode",
+          "hdr",
+          "--max-fps",
+          "15",
+          "--ae",
+          "off",
+          "--hdr-total-rows",
+          "4351",
+          "--gain-index",
+          "0"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "error code=unsupported_configuration errno=0 rollback_failed=0"
+      },
+      "accepted": {
+        "arguments": [
+          "sc132gs-camera",
+          "apply",
+          "--mode",
+          "hdr",
+          "--max-fps",
+          "15",
+          "--ae",
+          "off",
+          "--hdr-total-rows",
+          "4350",
+          "--gain-index",
+          "0"
+        ],
+        "returncode": 0,
+        "stdout": "ok sensor_mode=hdr binning=0 max_fps=15 effective_fps=15 measured_fps_x10=149 eye_resolution=1088x1280 ae=0 brightness=10 ae_target_percent=10 exposure_rows=4350 gain_index=0 exposure_ceiling_rows=4350 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=171",
+        "stderr": ""
+      },
+      "status": "ok mode=off camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=272 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=1000 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=81 cam1_saturation_bp=114 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=53 signal_target_luma10=102 target_kind=sensor_signal_percent hdr_target_raw10=150 cam0_shadow_raw10=330 cam1_shadow_raw10=338 target_percent=10 cam0_percent=29 cam1_percent=29 exposure_lines=4350 gain_index=0 fps_x10=149 max_exposure_lines=4350 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128"
+    }
+  ],
+  "gain_trade": {
+    "before": "ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=1 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=1500 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=52 cam1_saturation_bp=186 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=53 signal_target_luma10=153 target_kind=sensor_signal_percent hdr_target_raw10=199 cam0_shadow_raw10=191 cam1_shadow_raw10=193 target_percent=15 cam0_percent=14 cam1_percent=14 exposure_lines=1492 gain_index=16 fps_x10=299 max_exposure_lines=1492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+    "after": "ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=1 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=1500 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=53 signal_target_luma10=153 target_kind=sensor_signal_percent hdr_target_raw10=199 cam0_shadow_raw10=197 cam1_shadow_raw10=202 target_percent=15 cam0_percent=15 cam1_percent=15 exposure_lines=2135 gain_index=0 fps_x10=199 max_exposure_lines=3629 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128"
+  },
+  "restored": true,
+  "restore": {
+    "arguments": [
+      "sc132gs-camera",
+      "apply",
+      "--mode",
+      "hdr",
+      "--max-fps",
+      "15",
+      "--ae",
+      "off",
+      "--ae-target",
+      "10",
+      "--max-gain-index",
+      "128",
+      "--max-exposure-us",
+      "0"
+    ],
+    "returncode": 0,
+    "stdout": "ok sensor_mode=hdr binning=0 max_fps=15 effective_fps=15 measured_fps_x10=150 eye_resolution=1088x1280 ae=0 brightness=10 ae_target_percent=10 exposure_rows=2135 gain_index=0 exposure_ceiling_rows=4350 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=174",
+    "stderr": ""
+  }
+}

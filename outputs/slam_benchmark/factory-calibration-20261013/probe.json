@@ -1,0 +1,23 @@
+{
+  "address": "0x50",
+  "buses": [
+    {
+      "bus": 18,
+      "readable": true,
+      "header_hex": "554e494f4e00000011010102000400a4",
+      "header_checksum_valid": true,
+      "vendor": "UNION",
+      "model": "UNION_stereo_imu_fisheye_v1p2r0n4",
+      "bytes": 537,
+      "sha256": "f5c6b8293c652add02f869860079f75d196e0c2bd8fb62b8879928c1d7dceabb"
+    },
+    {
+      "bus": 16,
+      "readable": false
+    }
+  ],
+  "EEPROM_memory_writes": 0,
+  "protocol": "Two-byte pointer then <=8-byte combined read, per official GS130 EEPROM layouts; no force option",
+  "decoder_source_revision": "12bde1f530533a11eba1803c1de525cee928c88b",
+  "saved_camera_state_unchanged": true
+}

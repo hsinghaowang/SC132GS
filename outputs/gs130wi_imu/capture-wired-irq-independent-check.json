@@ -1,0 +1,18 @@
+{
+  "samples": 6072,
+  "all_valid": true,
+  "all_have_irq": true,
+  "irq_notifications": 686,
+  "irq_strictly_increasing": true,
+  "irq_to_read_begin_us": {
+    "min": 61.924,
+    "median": 636.1935,
+    "max": 4770.428
+  },
+  "sensor_delta_ns": {
+    "min": 4999467,
+    "max": 5000533
+  },
+  "host_sample_time_validated": false,
+  "note": "GPIO event time is a batch notification; repeated row values are not per-sample host timestamps."
+}

@@ -1,0 +1,8 @@
+sensor=18-0032 exposure: 2531
+analogue_gain: 2
+exposure_registers=0x00 0x9e 0x30
+gain_registers=0x03 0x21
+sensor=16-0030 exposure: 2531
+analogue_gain: 2
+exposure_registers=0x00 0x9e 0x30
+gain_registers=0x03 0x21

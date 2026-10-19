@@ -1,0 +1,34 @@
+[
+  {
+    "Hash": "83A9BD5CAF7BA255763E6A5A52A6B34C4959E425672E3220E00BBB3510BE5C06",
+    "Path": "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\configuration-evidence-20261014\\queue-root-cause\\sync30-20261014-1857\\hour-final\\baseline-provenance.json"
+  },
+  {
+    "Hash": "8FE381AE35BE1AF6F10603EDAB691A53D603E8D0155661C813889BDB3D5C6B93",
+    "Path": "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\configuration-evidence-20261014\\queue-root-cause\\sync30-20261014-1857\\hour-final\\dmesg-after.txt"
+  },
+  {
+    "Hash": "B821C9D1F23B31CEF056CDFB6C48AD303CBED8E64E0B9E8F22278CA631CD82F0",
+    "Path": "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\configuration-evidence-20261014\\queue-root-cause\\sync30-20261014-1857\\hour-final\\finish_sync30_regression.py"
+  },
+  {
+    "Hash": "524A74E8776C2BD702DEED3ED0AE341309BC15E5CE84CF2194DC9BF39536ACB8",
+    "Path": "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\configuration-evidence-20261014\\queue-root-cause\\sync30-20261014-1857\\hour-final\\monitor_sync30_regression.py"
+  },
+  {
+    "Hash": "C712641AB57BD92B1475689AA561F434720994C3808D95BAE27DB9F44A999400",
+    "Path": "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\configuration-evidence-20261014\\queue-root-cause\\sync30-20261014-1857\\hour-final\\result.json"
+  },
+  {
+    "Hash": "A5588655817D136E944F488E096FAFDD9EE1910CE9E47588E4B174060AED9D25",
+    "Path": "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\configuration-evidence-20261014\\queue-root-cause\\sync30-20261014-1857\\hour-final\\samples.jsonl"
+  },
+  {
+    "Hash": "9518C94280725ECDC87B2FC4DF854F2E0289BB82C713F5F4135560825DC35B7F",
+    "Path": "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\configuration-evidence-20261014\\queue-root-cause\\sync30-20261014-1857\\hour-final\\server-after.log"
+  },
+  {
+    "Hash": "D552FEB0E43D25C4A957949831D76E23A33A4FBEE6028033A8EBDB8099A11040",
+    "Path": "D:\\projects\\collision_avoid\\outputs\\stereo_h265_rtsp\\configuration-evidence-20261014\\queue-root-cause\\sync30-20261014-1857\\hour-final\\status-after.txt"
+  }
+]

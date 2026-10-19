@@ -1,0 +1,1 @@
+ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 exposure_kind=hdr_total_rows display_gamma_x100=38 display_black_raw10=52 target_percent=40 cam0_percent=40 cam1_percent=41 exposure_lines=1331 gain_index=0 fps_x10=299 max_exposure_lines=1492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=0

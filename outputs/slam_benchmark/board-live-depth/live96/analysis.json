@@ -1,0 +1,121 @@
+{
+  "runtime": {
+    "captured": 1793,
+    "processed": 1747,
+    "replaced": 46,
+    "capture_error": 15,
+    "capture_device_error": 0,
+    "processing_error": 0,
+    "capture_stop_error": 0,
+    "warmup_seconds": 2,
+    "requested_seconds": 300,
+    "first_api_ready_ns": 2201463366627,
+    "gray_encoded": 1747,
+    "depth_encoded": 1747,
+    "gray_max_queue": 0,
+    "depth_max_queue": 0,
+    "encoder_failed": false,
+    "interrupted": false,
+    "workers_joined": true
+  },
+  "capture_fps": 29.999996149554065,
+  "depth_fps": 29.244979138105826,
+  "depth_valid_fraction": {
+    "p50": 0.23786764705882352,
+    "p95": 0.2424322150735294,
+    "p99": 0.24418141084558823
+  },
+  "timing_ms": {
+    "gpu": {
+      "p50": 22.95,
+      "p95": 23.4006,
+      "p99": 24.195199999999986
+    },
+    "rectify_half": {
+      "p50": 0.799,
+      "p95": 0.891,
+      "p99": 1.014
+    },
+    "process": {
+      "p50": 28.371116,
+      "p95": 30.6525382,
+      "p99": 31.979915079999998
+    },
+    "capture_ready_from_driver_estimate": {
+      "p50": 48.232284,
+      "p95": 50.7458206,
+      "p99": 51.66981816
+    },
+    "queue": {
+      "p50": 6.759515,
+      "p95": 27.712823599999986,
+      "p99": 32.46499107999998
+    },
+    "depth_ready_from_driver_estimate": {
+      "p50": 83.423784,
+      "p95": 105.7401218,
+      "p99": 110.27567063999999
+    }
+  },
+  "windows_10s": [
+    {
+      "offset_s": 0.0,
+      "fps": 28.4,
+      "gaps": 16
+    },
+    {
+      "offset_s": 10.0,
+      "fps": 27.6,
+      "gaps": 24
+    },
+    {
+      "offset_s": 20.0,
+      "fps": 29.7,
+      "gaps": 3
+    },
+    {
+      "offset_s": 30.0,
+      "fps": 30.0,
+      "gaps": 1
+    },
+    {
+      "offset_s": 40.0,
+      "fps": 29.9,
+      "gaps": 0
+    }
+  ],
+  "gray_encoder_ms": {
+    "depth_to_encoded": {
+      "p50": 36.568977,
+      "p95": 43.494546199999995,
+      "p99": 45.55247076
+    },
+    "source_estimate_to_encoded": {
+      "p50": 120.759752,
+      "p95": 143.0076096,
+      "p99": 149.82653067999993
+    }
+  },
+  "depth_encoder_ms": {
+    "depth_to_encoded": {
+      "p50": 15.410867,
+      "p95": 42.8459844,
+      "p99": 45.085325239999996
+    },
+    "source_estimate_to_encoded": {
+      "p50": 99.911067,
+      "p95": 145.323542,
+      "p99": 150.66555295999999
+    }
+  },
+  "cpu_remap_exact": {
+    "full_gray": true,
+    "half_left": true
+  },
+  "cpu_depth_replay": {
+    "valid_mask_exact": true,
+    "valid_pixels": 82252,
+    "max_depth_error_m": 2.384185791015625e-07,
+    "all_positive": true
+  }
+}

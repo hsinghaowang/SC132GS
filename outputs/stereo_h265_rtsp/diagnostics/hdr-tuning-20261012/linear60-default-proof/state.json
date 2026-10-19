@@ -1,0 +1,52 @@
+{
+  "state": {
+    "sensor_mode": "linear",
+    "binning": 0,
+    "max_fps": 60,
+    "fps": 60,
+    "ae": 1,
+    "brightness": 30,
+    "width": 1088,
+    "height": 1280,
+    "measured_fps_x10": 599,
+    "exposure_rows": 1330,
+    "gain_index": 37,
+    "exposure_ceiling_rows": 1330,
+    "limited": 0,
+    "control_error": 0,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 178,
+    "native_target": 30
+  },
+  "artifacts": {
+    "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": "62e7e1fb7cef6903850c33b60ca027a5178d674dae84b61050c0259305fc94e8",
+    "/usr/local/bin/sc132gs-camera": "4b710be40c3d21d9e52fa5299c8ff9fe8ab01d163efcdfae6d0e871b80b7bde2",
+    "/usr/local/bin/sc132gs-ctl": "290852dced62aac55dc6162436fb818c9a820002ea01ee5601603cb439b8f4c6",
+    "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": "f860ed6f2be5dc94f81f0ae5645b97ae724c12252fb37d66fda189e1b8953629",
+    "/home/ubuntu/stereo-h265-rtsp/camera_platform.py": "da6d35547a68b2915d731a7a36c0489e9b192c0c327b12a86940377d3f6d9a0c",
+    "/home/ubuntu/stereo-h265-rtsp/verify_rtsp.py": "9b1377944b3d06b6119533bf218dc59034ea323b567dd48a76a70d08f19abfd2",
+    "/home/ubuntu/stereo-h265-rtsp/verify_decode_rate.py": "4c8a1f451bfd7c4f6acf981c567b48d17486983b29566d8288c527e154c2b18d"
+  },
+  "saved": {
+    "mode": "linear",
+    "binning": 0,
+    "max_fps": 60,
+    "fps": 60,
+    "ae": 1,
+    "brightness": 30,
+    "rows": 1330,
+    "gain": 35,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 178,
+    "schema": 1
+  },
+  "driver_hdr": "N",
+  "module_defaults": "options sc132gs external_trigger=1 hdr=0\n",
+  "restore_enabled": "enabled",
+  "verification_directory": "/home/ubuntu/sc132gs-camera-tests/apply-2ef505ad-2634-46ae-83a8-d74218fbe685",
+  "reset_verified": true,
+  "restore_entry_verified": true,
+  "cold_reboot_tested": false
+}

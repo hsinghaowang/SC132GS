@@ -1,0 +1,14 @@
+--- a/sys/v4l2/gstv4l2videoenc.c
++++ b/sys/v4l2/gstv4l2videoenc.c
+@@ -819,9 +819,9 @@
+           gst_object_unref (opool);
+         goto activate_failed;
+       }
+-      if (opool)
+-        gst_object_unref (opool);
+     }
++    if (opool)
++      gst_object_unref (opool);
+   }
+ 
+   if (task_state == GST_TASK_STOPPED || task_state == GST_TASK_PAUSED) {

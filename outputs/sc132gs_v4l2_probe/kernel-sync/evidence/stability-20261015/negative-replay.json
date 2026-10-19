@@ -1,0 +1,505 @@
+{
+  "original-failure": {
+    "errors": {
+      "protected_release_duration": 2,
+      "trace_error": 5,
+      "fault_or_skipped_pulse": 1
+    },
+    "examples": [
+      {
+        "check": "protected_release_duration",
+        "detail": 1801216
+      },
+      {
+        "check": "protected_release_duration",
+        "detail": 1805226
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1805228,
+          5,
+          4,
+          2,
+          6057640432445,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "check": "fault_or_skipped_pulse",
+        "detail": [
+          1805228,
+          5,
+          4,
+          2,
+          6057640432445,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1805229,
+          5,
+          2,
+          0,
+          6057640390051,
+          0,
+          116699161804,
+          160580,
+          160573,
+          1
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1805231,
+          5,
+          2,
+          1,
+          6057640391091,
+          0,
+          116699161824,
+          160580,
+          160569,
+          1
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1805233,
+          5,
+          3,
+          0,
+          6057655794728,
+          0,
+          116699161804,
+          6057640390051,
+          160572,
+          2
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1805235,
+          5,
+          3,
+          1,
+          6057656027277,
+          0,
+          116699161824,
+          6057640391091,
+          160568,
+          2
+        ]
+      }
+    ],
+    "ranges": {
+      "low_gpio_ns": {
+        "count": 818,
+        "minimum": 3907,
+        "maximum": 11770
+      },
+      "high_release_overrun_ns": {
+        "count": 818,
+        "minimum": 3800,
+        "maximum": 118591
+      },
+      "pulse_outer_ns": {
+        "count": 818,
+        "minimum": 107707,
+        "maximum": 225258
+      },
+      "low_spacing_ns": {
+        "count": 817,
+        "minimum": 33304739,
+        "maximum": 33339217
+      },
+      "high_spacing_ns": {
+        "count": 817,
+        "minimum": 33303644,
+        "maximum": 33447184
+      },
+      "sof_delay_ns": {
+        "count": 1634,
+        "minimum": 16740650,
+        "maximum": 16774659
+      },
+      "readout_ns": {
+        "count": 1636,
+        "minimum": 15384687,
+        "maximum": 15384739
+      },
+      "frame_budget_ns": {
+        "count": 1634,
+        "minimum": 32375389,
+        "maximum": 32409398
+      },
+      "dma_after_sof_ns": {
+        "count": 1636,
+        "minimum": 15398897,
+        "maximum": 15753736
+      }
+    }
+  },
+  "post-restore-failure": {
+    "errors": {
+      "trace_error": 4,
+      "fault_or_skipped_pulse": 2,
+      "no_skipped_slots": 1,
+      "pulse_id_contiguous": 1,
+      "high_id_contiguous": 1,
+      "per_eye_frame_contiguous": 2
+    },
+    "examples": [
+      {
+        "check": "trace_error",
+        "detail": [
+          1925342,
+          16,
+          10,
+          2,
+          6731335946623,
+          2999,
+          6731335946623,
+          6731335708020,
+          0,
+          10
+        ]
+      },
+      {
+        "check": "fault_or_skipped_pulse",
+        "detail": [
+          1925342,
+          16,
+          10,
+          2,
+          6731335946623,
+          2999,
+          6731335946623,
+          6731335708020,
+          0,
+          10
+        ]
+      },
+      {
+        "check": "no_skipped_slots",
+        "detail": 1925343
+      },
+      {
+        "check": "pulse_id_contiguous",
+        "detail": 1925343
+      },
+      {
+        "check": "high_id_contiguous",
+        "detail": 1925344
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1925346,
+          16,
+          4,
+          2,
+          6731385814254,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      },
+      {
+        "check": "fault_or_skipped_pulse",
+        "detail": [
+          1925346,
+          16,
+          4,
+          2,
+          6731385814254,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1925351,
+          16,
+          3,
+          0,
+          6731401184709,
+          3000,
+          129637283135,
+          6731385786599,
+          2991,
+          10
+        ]
+      },
+      {
+        "check": "per_eye_frame_contiguous",
+        "detail": 1925351
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1925353,
+          16,
+          3,
+          1,
+          6731401291418,
+          3000,
+          129637283156,
+          6731385787637,
+          2986,
+          10
+        ]
+      },
+      {
+        "check": "per_eye_frame_contiguous",
+        "detail": 1925353
+      }
+    ],
+    "ranges": {
+      "low_gpio_ns": {
+        "count": 818,
+        "minimum": 1926,
+        "maximum": 8228
+      },
+      "high_release_overrun_ns": {
+        "count": 818,
+        "minimum": 3532,
+        "maximum": 9521
+      },
+      "pulse_outer_ns": {
+        "count": 818,
+        "minimum": 106240,
+        "maximum": 113896
+      },
+      "low_spacing_ns": {
+        "count": 817,
+        "minimum": 33322338,
+        "maximum": 66660298
+      },
+      "high_spacing_ns": {
+        "count": 817,
+        "minimum": 33326607,
+        "maximum": 66663995
+      },
+      "sof_delay_ns": {
+        "count": 1636,
+        "minimum": 16737811,
+        "maximum": 16746570
+      },
+      "readout_ns": {
+        "count": 1638,
+        "minimum": 15384687,
+        "maximum": 15384791
+      },
+      "frame_budget_ns": {
+        "count": 1636,
+        "minimum": 32372550,
+        "maximum": 32381309
+      },
+      "dma_after_sof_ns": {
+        "count": 1638,
+        "minimum": 15398110,
+        "maximum": 15780648
+      }
+    }
+  },
+  "third-failure": {
+    "errors": {
+      "protected_release_duration": 1,
+      "trace_error": 6,
+      "fault_or_skipped_pulse": 2
+    },
+    "examples": [
+      {
+        "check": "protected_release_duration",
+        "detail": 1958357
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1958359,
+          17,
+          4,
+          2,
+          7059582144836,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "check": "fault_or_skipped_pulse",
+        "detail": [
+          1958359,
+          17,
+          4,
+          2,
+          7059582144836,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1958360,
+          17,
+          2,
+          0,
+          7059582119213,
+          0,
+          135939146680,
+          3307,
+          3301,
+          1
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1958362,
+          17,
+          2,
+          1,
+          7059582120303,
+          0,
+          135939146700,
+          3307,
+          3297,
+          1
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1958364,
+          17,
+          3,
+          0,
+          7059597521481,
+          0,
+          135939146680,
+          7059582119213,
+          3300,
+          2
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1958366,
+          17,
+          3,
+          1,
+          7059597661471,
+          0,
+          135939146700,
+          7059582120303,
+          3296,
+          2
+        ]
+      },
+      {
+        "check": "trace_error",
+        "detail": [
+          1958367,
+          17,
+          10,
+          2,
+          7059598481987,
+          3308,
+          7059598481987,
+          7059598479383,
+          0,
+          10
+        ]
+      },
+      {
+        "check": "fault_or_skipped_pulse",
+        "detail": [
+          1958367,
+          17,
+          10,
+          2,
+          7059598481987,
+          3308,
+          7059598481987,
+          7059598479383,
+          0,
+          10
+        ]
+      }
+    ],
+    "ranges": {
+      "low_gpio_ns": {
+        "count": 818,
+        "minimum": 1874,
+        "maximum": 9323
+      },
+      "high_release_overrun_ns": {
+        "count": 818,
+        "minimum": 4003,
+        "maximum": 228154
+      },
+      "pulse_outer_ns": {
+        "count": 818,
+        "minimum": 106398,
+        "maximum": 337477
+      },
+      "low_spacing_ns": {
+        "count": 817,
+        "minimum": 33320599,
+        "maximum": 33337681
+      },
+      "high_spacing_ns": {
+        "count": 817,
+        "minimum": 33320912,
+        "maximum": 33553824
+      },
+      "sof_delay_ns": {
+        "count": 1634,
+        "minimum": 16738473,
+        "maximum": 16750872
+      },
+      "readout_ns": {
+        "count": 1636,
+        "minimum": 15384739,
+        "maximum": 15384791
+      },
+      "frame_budget_ns": {
+        "count": 1634,
+        "minimum": 32373212,
+        "maximum": 32385611
+      },
+      "dma_after_sof_ns": {
+        "count": 1636,
+        "minimum": 15395957,
+        "maximum": 15710573
+      }
+    }
+  }
+}

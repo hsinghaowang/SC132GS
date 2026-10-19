@@ -1,0 +1,22 @@
+{
+  "scope": "offline Linux x86_64 build and pure component tests; not ARM deployment or hardware acceptance",
+  "compiler": "GNU 13.3.0",
+  "build_type": "Release",
+  "gstreamer": "1.24.2",
+  "server_source_sha256": "d96bf9476c5547947f6c7b78451ff27b40c2908e01e43e3a7eff3e7de4391080",
+  "build_pass": true,
+  "tests": {
+    "stereo-pending-frames-check": "pass",
+    "fsync-schedule-check": "pass"
+  },
+  "shared_source_drift_after_snapshot": [],
+  "arm_binary_deployed": false,
+  "runtime_verified": false,
+  "environment_restored": {
+    "libc++-20-dev": "1:20.1.2-0ubuntu1~24.04.3",
+    "libunwind-20-dev": "1:20.1.2-0ubuntu1~24.04.3",
+    "dpkg_audit": "no output"
+  },
+  "dependency_note": "libunwind-dev was unpacked to the private evidence directory; existing LLVM packages restored after apt package replacement",
+  "created_local": "2026-10-14T16:20:31+0800"
+}

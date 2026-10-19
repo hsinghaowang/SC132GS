@@ -1,0 +1,16 @@
+{
+  "camera_service": {
+    "returncode": 0,
+    "stdout": "MainPID=0\nActiveState=failed\nSubState=failed\n",
+    "stderr": ""
+  },
+  "camera_status": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "error code=device errno=2 rollback_failed=0\n"
+  },
+  "camera_processes": [],
+  "durable_sha256": "9658bad46876f87d7ae7970f936ed8eb17bdf8da4b065a4e514b92ad62ac3299",
+  "runtime_state_sha256": "c68c55a604fafc9a529faed0da1244486cde7544801f8225097492c40e882739",
+  "unix_ns": 1791860393740135740
+}

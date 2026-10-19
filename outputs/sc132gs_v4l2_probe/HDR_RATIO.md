@@ -1,5 +1,84 @@
 # HDR exposure and HDRC ratio
 
+Lower-FPS extension (2026-10-12, deployed after reboot): keep TOTAL<=1492 at
+30 FPS. At lower FPS add 95% of the extra frame time using the existing
+135000 nominal-row/s profile. The loaded driver's register range is 4492,
+but a manual 15-FPS test at that VTS-8 boundary stalled capture. The owner
+therefore caps at the measured 4350: 3629 at 20 FPS, 2560 at 24 FPS and 4350
+at 15 FPS. Representative ceilings decode at their requested cadence.
+At target30, HDR15 uses TOTAL4350/SECOND1/gain0; Linear30 uses rows1377/gain30.
+Decoded medians differ by about -2.0%/-1.4%, with clipping reduced from
+4.48%/4.20% to zero. Four fixed pre-encoder patches improve contrast/residual
+noise by 34-38%, with decoded improvements of 27-38%. This compares different
+FPS by user choice. Global ROI mean remains 23-27% lower as HDR compresses
+highlights; the identical target denotes P50, not an equal global mean.
+When target luma already matches, the new sensor AE can trade up to two gain
+indices per control interval for longer TOTAL if headroom and highlights allow.
+These are nominal rows; physical HDR microseconds remain uncalibrated.
+
+Latest sensor-profile target update: `sc132gs-camera apply --ae on --ae-target N`
+sets and persists effective linear-signal P50 percentage, 0..100, in either mode.
+Unbinned Main10 sensor profiles subtract measured pre-encoder black levels
+(Linear 37, HDR 53) and normalize using
+`round(1023*clamp((gray10-B)/(1023-B),0,1))`; gamma remains 1.
+Target is `round(1023*N/100)`, equivalent to an uncalibrated target of
+`B+round((1023-B)*N/100)`. The old 80% target scaling and Linear display inverse
+are removed. Mode switches retain the target. Both modes meter the same central
+80% ROI P50; original RAW buffers and RAW clipping remain unchanged. Black levels
+were measured at gain indices 0, 11 and 21; binning and the opt-in B path retain
+their earlier semantics. Status reports `target_kind=sensor_signal_percent`,
+`signal_black_raw10`, `signal_target_luma10` and HDR's `hdr_target_raw10`.
+The opt-in B profile retains darker-80% metering. Status distinguishes the target from
+highlight/brightness limits; a high accepted target may still be unreachable.
+
+2026-10-12 later user request: Main10 defaults to sensor-gray display, without
+the B curve or its AE target mapping. B is now explicit opt-in via
+`--hdr-display b`. Earlier manual inspection held AE off, TOTAL=1200, SECOND=1,
+gain=21. The B-profile notes below describe the earlier tuning stage.
+
+2026-10-12 Main10 B follow-up: the user-selected fixed display curve is
+`round(1023*sqrt(clamp((gray10-52)/971,0,1)))`, applied after original RAW10
+metering and before encoding. Manual TOTAL=1492, SECOND=1, gain=21 maps to
+about 30% displayed shadow; this scene therefore uses brightness target 30.
+Main10 B interprets that percentage directly, with inverse RAW target 139,
+and does not multiply it by 80%. The darker-80% sampling group remains.
+Original RAW clipping continues to constrain SECOND/gain; tone mapping
+does not enter the clipping feedback. Enabling AE preserves the live SECOND
+control instead of restoring an obsolete cached manual value.
+The older target/gamma conventions documented below are historical profiles.
+
+Dual-target follow-up (2026-10-08): the formal HDR AE sorts RAW10 samples into
+fixed darker 80% and brighter 20% groups. Shadow measurement is the median of
+the darker group (whole-area P40); the effective brightness target is the
+configured brightness times 80%. Saturation (samples >=1020) is measured
+within each eye's brighter group, not the whole metering area. Bright-group
+size rounds up to whole samples, with the remainder in the shadow group.
+Defaults are base brightness 40% (effective target 32%) and bright-group
+saturation ceiling 5% (approximately 1% of all samples). Highlights take
+priority when these cannot both be achieved. `hdr_second_exposure_ticks`
+(private ID 00982a02, 0..65535) enables an independent SECOND setting. Zero
+retains the ratio-derived compatibility profile. Nonzero requires managed
+ratio mode and SECOND<TOTAL; TOTAL, ratio and SECOND are clustered so a
+VIDIOC_S_EXT_CTRLS tuple is validated and committed together. The reported
+`hdr_ratio` remains the compatibility seed, not the actual ratio while an
+independent SECOND is active. `hdr_second_ticks` reports the effective value.
+The group transaction recalculates 5400 for every exposure tuple.
+Short-exposure analogue/digital gain registers are unchanged. Current AE
+enabled / target / maximum gain are persisted through the existing camera
+controller; runtime `sc132gs-ctl hdr-overexposure PERCENT` defaults to 5 after
+restart. See `../stereo_h265_rtsp/diagnostics/hdr-dual-target-20261008/`.
+
+Current Main10 follow-up (2026-10-08): HDR gain is no longer locked to unity.
+The controller exposes the same device gain range as Linear and enforces the
+configured maximum. Automatic exposure increases TOTAL to its validated
+1492-row ceiling before increasing analogue gain. The current manual preview
+uses TOTAL=1492, requested ratio=256, AE off, gain index=16 and maximum gain
+index=16 (both sensors read 3e08/09=03/2d, or 1.40625x).
+Main10 AE now measures sensor-linear gray without the historical display
+curve below; the following display calibration records describe the earlier
+8-bit / display-statistics profile. Original RAW and the Main10 encoder input
+are not changed by that display calibration.
+
 SC132GS Datasheet V2.6, page 21, table 2-3 specifies:
 
 ```

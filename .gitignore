@@ -1,5 +1,8 @@
-# Local scratch and downloaded dependencies
+# Local scratch, downloaded dependencies, and external checkouts
 /tmp/
+/vlc-help.txt
+/outputs/linux-qcom-1084/
+/outputs/01a0a426-77c4-7df0-b2f0-80d22f6588a5/
 **/node_modules/
 **/platform-tools/
 **/usb_driver/
@@ -21,10 +24,6 @@
 *.pdb
 *.log
 *.pid
-/outputs/sc132gs_v4l2_probe/sc132gs-sync-check
-/outputs/sc132gs_v4l2_probe/sc132gs-fsync-generator
-/outputs/sc132gs_v4l2_probe/sc132gs-paired-stream
-/outputs/sc132gs_v4l2_probe/sc132gs-ctl
 
 # Captures, device images, and downloaded archives
 **/captures/
@@ -37,3 +36,90 @@
 *.tgz
 /outputs/sc132gs_v4l2_probe/recovery-tools/canonical-x03/dtb.bin
 /outputs/stereo_h265_rtsp/diagnostics/*.png
+
+# Keep the rollback record, exclude its snapshots and extracted history
+/outputs/ae-restore-20261005/*
+!/outputs/ae-restore-20261005/README.md
+
+# Local benchmark runtimes and downloaded toolchains
+**/.venv/
+/outputs/slam_benchmark/depth-preview-venv/
+/outputs/slam_benchmark/viewer-deps/
+/outputs/slam_benchmark/calibration-research/gs130_camera_sdk/
+**/toolchain-unwind/
+*.pyd
+*.whl
+*.a
+*.tar
+*.xz
+
+# Raw/derived capture arrays (selected versioned calibration assets stay tracked)
+*.raw10
+*.u16
+*.u16le
+*.i32
+*.u8
+*.f32
+*.nv12
+*.gray
+*.yuv
+*.pgm
+*.npy
+/outputs/**/*.csv
+/outputs/**/*.jsonl
+/outputs/**/*events*.txt
+/outputs/**/trace*.txt
+/outputs/**/dmesg*.txt
+/outputs/**/gpioinfo.txt
+/outputs/**/fixture
+/outputs/**/timer-fixture
+/outputs/**/isr-fixture
+/outputs/**/linear-rate-check
+
+# Generated camera previews and immutable capture-session image sets
+/outputs/slam_benchmark/**/*.png
+/outputs/slam_benchmark/**/*.jpg
+/outputs/sc132gs_hdr/*.png
+/outputs/sc132gs_v4l2_probe/*-evidence-*/**/*.png
+/outputs/sc132gs_v4l2_probe/kernel-sync/evidence/**/*.png
+/outputs/stereo_h265_rtsp/configuration-evidence-*/**/*.png
+/outputs/stereo_h265_rtsp/diagnostics/**/*.png
+/outputs/stereo_h265_rtsp/diagnostics/**/*.npz
+/outputs/stereo_h265_rtsp/rectification-evidence-*/**/*.png
+
+# Copied board source trees and per-frame/per-client data; canonical source is elsewhere
+/outputs/sc132gs_v4l2_probe/kernel-sync/evidence/**/source/
+/outputs/sc132gs_v4l2_probe/kernel-sync/evidence/**/userspace/
+/outputs/stereo_h265_rtsp/configuration-evidence-*/**/source/
+/outputs/stereo_h265_rtsp/configuration-evidence-*/**/deployed-source/
+/outputs/slam_benchmark/**/deployed-source/
+/outputs/slam_benchmark/**/reference-source/
+/outputs/stereo_h265_rtsp/rectification-evidence-20261016/overlay/
+/outputs/stereo_h265_rtsp/rectification-evidence-20261016/fixtures/
+/outputs/slam_benchmark/board-live-depth/*/client.json
+/outputs/stereo_h265_rtsp/rectification-evidence-*/*/client.json
+/outputs/slam_benchmark/live-calibration-*/**/frames/
+/outputs/slam_benchmark/live-calibration-*/**/images/
+
+# Local preview process state
+/outputs/slam_benchmark/live-depth/STOP
+/outputs/slam_benchmark/live-depth/last-run.json
+/outputs/slam_benchmark/board-live-depth/STOP-VIEWER
+/outputs/slam_benchmark/board-live-depth/*/pid
+/outputs/slam_benchmark/board-live-depth/verified-live-status.json
+
+# Remaining raw diagnostic logs and video (summaries are versioned separately)
+*.mkv
+*.mp4
+*.hevc
+/outputs/**/*dmesg*.txt
+/outputs/**/*trace*.txt
+/outputs/**/*journal*.txt
+/outputs/gs130wi_capture/evidence-*/**/*.png
+/outputs/gs130wi_imu/*evidence-*/**/*.png
+/outputs/sc132gs_v4l2_probe/*-evidence-*/**/*.jpg
+/outputs/stereo_h265_rtsp/diagnostics/**/*.jpg
+/outputs/stereo_h265_rtsp/diagnostics/**/*.bin
+/outputs/stereo_h265_rtsp/configuration-evidence-*/**/eye*-trace.json
+/outputs/sc132gs_v4l2_probe/binning-evidence-20261007/motion60-20261007-02/ready
+/outputs/slam_benchmark/openvins-evidence/simulation.txt

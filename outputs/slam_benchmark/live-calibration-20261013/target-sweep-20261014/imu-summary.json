@@ -1,0 +1,1 @@
+{"status":"ok","mode":"gpio_irq","samples":18834,"valid":18834,"wraps":1347,"min_sensor_delta_ns":4999466,"max_sensor_delta_ns":5000534,"sensor_rate_hz":200,"host_observed_rate_hz":202.541,"max_fifo_bytes":752,"restored":true,"host_sample_time_validated":false}

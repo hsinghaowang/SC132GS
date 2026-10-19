@@ -1,5 +1,5 @@
 #include "BayerLuma.hpp"
-#if defined(__ARM_NEON)
+#if defined(__ARM_NEON) && !defined(STEREO_FORCE_SCALAR)
 #include <arm_neon.h>
 #endif
 #include "sc132gs-hdr-profile.hpp"
@@ -18,6 +18,8 @@ struct BayerLuma::Impl {
     int height;
     std::vector<std::uint16_t> pixels;
     bool hdr_display;
+    bool unpacked{};
+    std::uint64_t near_saturated{};
     std::array<std::uint8_t, 1024> display_lut{};
     std::array<std::uint16_t, 1024> display_lut10{};
 
@@ -35,17 +37,42 @@ struct BayerLuma::Impl {
     }
 
     void unpack(std::span<const std::uint8_t> raw, int stride) {
+        near_saturated = 0;
         for (int y = 0; y < height; ++y) {
             const auto* source = raw.data() + static_cast<std::size_t>(y) * stride;
             auto* row = pixels.data() + static_cast<std::size_t>(y) * width;
-            for (int x = 0; x < width; x += 4, source += 5) {
+            int x = 0;
+#if defined(__aarch64__) && defined(__ARM_NEON) && !defined(STEREO_FORCE_SCALAR)
+            // Overlapping loads cover exactly 20 bytes: safe even at the row tail.
+            const std::uint8_t high_indices[16] = {0,1,2,3,5,6,7,8,10,11,12,13,27,28,29,30};
+            const std::uint8_t low_indices[16] = {4,4,4,4,9,9,9,9,14,14,14,14,31,31,31,31};
+            const std::int8_t shifts[16] = {0,-2,-4,-6,0,-2,-4,-6,0,-2,-4,-6,0,-2,-4,-6};
+            for (; x + 16 <= width; x += 16, source += 20) {
+                uint8x16x2_t table;
+                table.val[0] = vld1q_u8(source);
+                table.val[1] = vld1q_u8(source + 4);
+                const auto high = vqtbl2q_u8(table, vld1q_u8(high_indices));
+                const auto low = vandq_u8(vshlq_u8(vqtbl2q_u8(table, vld1q_u8(low_indices)),
+                                                   vld1q_s8(shifts)), vdupq_n_u8(3));
+                const auto a = vorrq_u16(vshll_n_u8(vget_low_u8(high), 2), vmovl_u8(vget_low_u8(low)));
+                const auto b = vorrq_u16(vshll_n_u8(vget_high_u8(high), 2), vmovl_u8(vget_high_u8(low)));
+                vst1q_u16(row + x, a);
+                vst1q_u16(row + x + 8, b);
+                near_saturated += vaddvq_u16(vshrq_n_u16(vcgeq_u16(a, vdupq_n_u16(1008)), 15));
+                near_saturated += vaddvq_u16(vshrq_n_u16(vcgeq_u16(b, vdupq_n_u16(1008)), 15));
+            }
+#endif
+            for (; x < width; x += 4, source += 5) {
                 const auto low = source[4];
                 row[x] = (source[0] << 2) | (low & 3);
                 row[x + 1] = (source[1] << 2) | ((low >> 2) & 3);
                 row[x + 2] = (source[2] << 2) | ((low >> 4) & 3);
                 row[x + 3] = (source[3] << 2) | ((low >> 6) & 3);
+                for (int lane = 0; lane < 4; ++lane)
+                    near_saturated += row[x + lane] >= 1008;
             }
         }
+        unpacked = true;
     }
 
     template<class Pixel>
@@ -62,7 +89,7 @@ struct BayerLuma::Impl {
             auto* output = gray.data() + static_cast<std::size_t>(oy) * out_width;
             for (int ox = 0; ox < out_width; ++ox) {
                 const int x = ox * scale;
-#if defined(__ARM_NEON)
+#if defined(__ARM_NEON) && !defined(STEREO_FORCE_SCALAR)
                 if constexpr (sizeof(Pixel) == 2) {
                     if (scale == 1 && !hdr_display && x > 0 && x + 8 < width) {
                         const auto center = vld1q_u16(row+x);
@@ -125,25 +152,52 @@ BayerLuma& BayerLuma::operator=(BayerLuma&&) noexcept = default;
 
 void BayerLuma::convert(std::span<const std::uint8_t> packed, int stride,
                         std::span<std::uint8_t> gray, int scale) {
-    if ((scale != 1 && scale != 2 && scale != 4) ||
-        impl_->width % scale || impl_->height % scale ||
-        stride < impl_->width * 5 / 4 ||
-        packed.size() < static_cast<std::size_t>(stride) * impl_->height ||
-        gray.size() != static_cast<std::size_t>(impl_->width / scale) * (impl_->height / scale))
-        throw std::invalid_argument("RGGB RAW10 buffer, stride or scale");
-    impl_->unpack(packed, stride);
-    impl_->grayscale(gray, scale);
+    unpack(packed, stride);
+    render(gray, scale);
 }
 
 void BayerLuma::convert10(std::span<const std::uint8_t> packed, int stride,
                           std::span<std::uint16_t> gray, int scale) {
-    if ((scale != 1 && scale != 2 && scale != 4) ||
-        impl_->width % scale || impl_->height % scale ||
-        stride < impl_->width * 5 / 4 ||
-        packed.size() < static_cast<std::size_t>(stride) * impl_->height ||
-        gray.size() != static_cast<std::size_t>(impl_->width / scale) * (impl_->height / scale))
-        throw std::invalid_argument("RGGB RAW10 buffer, stride or scale");
+    unpack(packed, stride);
+    render10(gray, scale);
+}
+
+void BayerLuma::unpack(std::span<const std::uint8_t> packed, int stride) {
+    impl_->unpacked = false;
+    if (stride < impl_->width * 5 / 4 ||
+        packed.size() < static_cast<std::size_t>(stride) * impl_->height)
+        throw std::invalid_argument("RGGB RAW10 buffer or stride");
     impl_->unpack(packed, stride);
+}
+
+BayerLuma::RawStatistics BayerLuma::statistics() const {
+    if (!impl_->unpacked) throw std::logic_error("RAW10 has not been unpacked");
+    RawStatistics result;
+    result.sample_count = static_cast<std::uint64_t>(impl_->width) * impl_->height;
+    result.near_saturated_count = impl_->near_saturated;
+    const int width = impl_->width, height = impl_->height;
+    // Read only the owned decoded scratch, never the mapping after QBUF.
+    for (int y = height / 10; y + 1 < height * 9 / 10; y += 8)
+        for (int x = width / 10; x + 1 < width * 9 / 10; x += 8)
+            for (int dy = 0; dy < 2; ++dy)
+                for (int dx = 0; dx < 2; ++dx)
+                    ++result.histogram[impl_->pixels[static_cast<std::size_t>(y + dy) * width + x + dx]];
+    return result;
+}
+
+void BayerLuma::render(std::span<std::uint8_t> gray, int scale) const {
+    if (!impl_->unpacked || (scale != 1 && scale != 2 && scale != 4) ||
+        impl_->width % scale || impl_->height % scale ||
+        gray.size() != static_cast<std::size_t>(impl_->width / scale) * (impl_->height / scale))
+        throw std::invalid_argument("RGGB output or scale");
+    impl_->grayscale(gray, scale);
+}
+
+void BayerLuma::render10(std::span<std::uint16_t> gray, int scale) const {
+    if (!impl_->unpacked || (scale != 1 && scale != 2 && scale != 4) ||
+        impl_->width % scale || impl_->height % scale ||
+        gray.size() != static_cast<std::size_t>(impl_->width / scale) * (impl_->height / scale))
+        throw std::invalid_argument("RGGB output or scale");
     impl_->grayscale(gray, scale);
 }
 } // namespace stereo_rtsp::detail

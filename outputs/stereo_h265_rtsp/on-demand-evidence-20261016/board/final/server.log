@@ -1,0 +1,601 @@
+RTSP ready: rtsp://192.168.137.226:8554/stereo (2176x1280@30, Main NV12)
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.661899 held_mean_ms1=0.385927 held_max_ms0=0.911224 held_max_ms1=0.716178 handoff_max_ms=0.012916
+rtsp_session phase=created timeout_seconds=30
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14143214353665.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+capture_lifecycle phase=starting stereo=0 depth=1
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.650971 held_mean_ms1=0.38314 held_max_ms0=0.891433 held_max_ms1=0.697428 handoff_max_ms=0.011249
+rtsp_session phase=created timeout_seconds=30
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14150868061865.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.659981 held_mean_ms1=0.43181 held_max_ms0=0.899662 held_max_ms1=0.804872 handoff_max_ms=0.012135
+rtsp_session phase=created timeout_seconds=30
+rtsp_client phase=connected
+rtsp_session phase=created timeout_seconds=30
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+input_fps=29.6244 submitted_fps=29.4255 dropped_fps=0 encoded_fps=29.0279 rtsp_fps=22.4668 pairs=438
+processing_timing calibration_mean_ms=5.96306 calibration_max_ms=8.67137 ae_mean_ms=0.243718 ae_max_ms=0.747582 tone_mean_ms=8.84694 tone_max_ms=15.159 depth_submit_mean_ms=0.787853 depth_submit_max_ms=2.24124 encoder_mean_ms=0.0148105 encoder_max_ms=0.16838
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=148 mean_gpu_ms=2.62944 depth_encoded=434 ae=1 target=10 exposure_rows=888 gain_index=0 ae_error=0
+depth_pipeline submitted=149 processed=148 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=83 fallback=0 video_range=limited
+depth_mono8 submitted=149 processed=148 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.42964 held_mean_ms1=1.45398 held_max_ms0=3.96478 held_max_ms1=5.13126 handoff_max_ms=0.056666
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14157690093913.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+capture_lifecycle phase=starting stereo=0 depth=1
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.661726 held_mean_ms1=0.436159 held_max_ms0=0.917995 held_max_ms1=0.81404 handoff_max_ms=0.011979
+rtsp_session phase=created timeout_seconds=30
+rtsp_client phase=connected
+rtsp_media phase=configured
+rtsp_session phase=created timeout_seconds=30
+rtsp_client phase=closed
+input_fps=29.652 submitted_fps=29.254 dropped_fps=0 encoded_fps=29.055 rtsp_fps=28.259 pairs=696
+processing_timing calibration_mean_ms=5.90781 calibration_max_ms=9.24687 ae_mean_ms=0.244486 ae_max_ms=0.817477 tone_mean_ms=8.72195 tone_max_ms=15.159 depth_submit_mean_ms=0.809761 depth_submit_max_ms=2.46384 encoder_mean_ms=0.0149952 encoder_max_ms=0.16838
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=148 mean_gpu_ms=2.64888 depth_encoded=691 ae=1 target=10 exposure_rows=888 gain_index=0 ae_error=0
+depth_pipeline submitted=149 processed=148 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=107 fallback=0 video_range=limited
+depth_mono8 submitted=149 processed=148 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.31669 held_mean_ms1=1.44239 held_max_ms0=2.52331 held_max_ms1=3.2772 handoff_max_ms=0.043957
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14168729995489.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.652585 held_mean_ms1=0.421758 held_max_ms0=0.898568 held_max_ms1=0.790185 handoff_max_ms=0.013489
+rtsp_session phase=created timeout_seconds=30
+rtsp_client phase=connected
+rtsp_session phase=created timeout_seconds=30
+rtsp_client phase=closed
+input_fps=29.6818 submitted_fps=29.4825 dropped_fps=0 encoded_fps=29.2833 rtsp_fps=29.0841 pairs=952
+processing_timing calibration_mean_ms=5.87994 calibration_max_ms=9.52874 ae_mean_ms=0.249912 ae_max_ms=1.22715 tone_mean_ms=8.58685 tone_max_ms=15.159 depth_submit_mean_ms=0.802511 depth_submit_max_ms=2.46384 encoder_mean_ms=0.0145802 encoder_max_ms=0.16838
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=148 mean_gpu_ms=2.60451 depth_encoded=945 ae=1 target=10 exposure_rows=888 gain_index=0 ae_error=0
+depth_pipeline submitted=149 processed=148 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=61 fallback=0 video_range=limited
+depth_mono8 submitted=149 processed=148 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.32987 held_mean_ms1=1.402 held_max_ms0=2.32342 held_max_ms1=2.97637 handoff_max_ms=0.066091
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14179686997962.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+capture_lifecycle phase=starting stereo=0 depth=1
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.67492 held_mean_ms1=0.421498 held_max_ms0=0.891797 held_max_ms1=0.788571 handoff_max_ms=0.015104
+rtsp_session phase=created timeout_seconds=30
+rtsp_client phase=connected
+rtsp_session phase=created timeout_seconds=30
+rtsp_client phase=closed
+input_fps=29.6148 submitted_fps=29.416 dropped_fps=0 encoded_fps=29.0185 rtsp_fps=0 pairs=1207
+processing_timing calibration_mean_ms=5.91914 calibration_max_ms=9.52874 ae_mean_ms=0.247053 ae_max_ms=1.22715 tone_mean_ms=8.6421 tone_max_ms=15.159 depth_submit_mean_ms=0.789799 depth_submit_max_ms=2.46384 encoder_mean_ms=0.0148316 encoder_max_ms=0.16838
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=148 mean_gpu_ms=2.59835 depth_encoded=1199 ae=1 target=10 exposure_rows=888 gain_index=0 ae_error=0
+depth_pipeline submitted=149 processed=148 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=74 fallback=0 video_range=limited
+depth_mono8 submitted=149 processed=148 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.38865 held_mean_ms1=1.44817 held_max_ms0=2.26707 held_max_ms1=4.03968 handoff_max_ms=0.141767
+rtsp_sessions expired=1
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14190512284197.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_sessions expired=1
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.692185 held_mean_ms1=0.430821 held_max_ms0=0.892943 held_max_ms1=0.805342 handoff_max_ms=0.012396
+rtsp_session phase=created timeout_seconds=30
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+input_fps=29.6683 submitted_fps=29.4692 dropped_fps=0 encoded_fps=29.2701 rtsp_fps=26.6816 pairs=1465
+processing_timing calibration_mean_ms=5.90587 calibration_max_ms=9.58978 ae_mean_ms=0.250008 ae_max_ms=1.22715 tone_mean_ms=8.58647 tone_max_ms=15.159 depth_submit_mean_ms=0.773609 depth_submit_max_ms=3.8901 encoder_mean_ms=0.0216312 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=148 mean_gpu_ms=2.69089 depth_encoded=1457 ae=1 target=10 exposure_rows=888 gain_index=0 ae_error=0
+depth_pipeline submitted=149 processed=148 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=123 fallback=0 video_range=limited
+depth_mono8 submitted=149 processed=148 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.35768 held_mean_ms1=1.28801 held_max_ms0=3.00226 held_max_ms1=3.45105 handoff_max_ms=0.081404
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14201860104895.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_sessions expired=1
+rtsp_client phase=connected
+capture_lifecycle phase=starting stereo=0 depth=1
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.699589 held_mean_ms1=0.435872 held_max_ms0=0.904713 held_max_ms1=0.814039 handoff_max_ms=0.014219
+rtsp_session phase=created timeout_seconds=30
+rtsp_sessions expired=1
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14209785552186.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.706681 held_mean_ms1=0.432306 held_max_ms0=0.895808 held_max_ms1=0.808206 handoff_max_ms=0.014999
+rtsp_session phase=created timeout_seconds=30
+rtsp_sessions expired=1
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14217517828276.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_sessions expired=1
+rtsp_client phase=connected
+capture_lifecycle phase=starting stereo=0 depth=1
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.655728 held_mean_ms1=0.429129 held_max_ms0=0.877892 held_max_ms1=0.799769 handoff_max_ms=0.011874
+rtsp_session phase=created timeout_seconds=30
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14224648036752.jsonl
+rtsp_sessions expired=1
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.706681 held_mean_ms1=0.435509 held_max_ms0=0.908984 held_max_ms1=0.814352 handoff_max_ms=0.013125
+rtsp_session phase=created timeout_seconds=30
+rtsp_sessions expired=1
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14232382676162.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+capture_lifecycle phase=starting stereo=0 depth=1
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.67321 held_mean_ms1=0.434988 held_max_ms0=0.891485 held_max_ms1=0.810133 handoff_max_ms=0.014166
+rtsp_session phase=created timeout_seconds=30
+rtsp_sessions expired=1
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14239615373633.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.693027 held_mean_ms1=0.444987 held_max_ms0=0.905599 held_max_ms1=0.830966 handoff_max_ms=0.022551
+rtsp_session phase=created timeout_seconds=30
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14247356150321.jsonl
+capture_lifecycle phase=idle resources_released=1
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.652481 held_mean_ms1=0.424623 held_max_ms0=0.848777 held_max_ms1=0.786696 handoff_max_ms=0.011666
+rtsp_sessions expired=1
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14254518215520.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.758242 held_mean_ms1=0.459205 held_max_ms0=1.10132 held_max_ms1=0.79555 handoff_max_ms=0.012083
+input_fps=29.6673 submitted_fps=29.4682 dropped_fps=0 encoded_fps=29.07 rtsp_fps=29.07 pairs=2616
+processing_timing calibration_mean_ms=5.86061 calibration_max_ms=9.93878 ae_mean_ms=0.262595 ae_max_ms=5.01569 tone_mean_ms=8.39846 tone_max_ms=16.2174 depth_submit_mean_ms=0.778813 depth_submit_max_ms=4.05285 encoder_mean_ms=0.020116 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=148 mean_gpu_ms=2.70731 depth_encoded=2584 ae=1 target=10 exposure_rows=1069 gain_index=0 ae_error=0
+depth_pipeline submitted=149 processed=148 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=105 fallback=0 video_range=limited
+depth_mono8 submitted=149 processed=148 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.22752 held_mean_ms1=1.23287 held_max_ms0=3.32365 held_max_ms1=2.94367 handoff_max_ms=0.034635
+input_fps=29.9685 submitted_fps=29.9685 dropped_fps=0 encoded_fps=29.9685 rtsp_fps=24.9737 pairs=2766
+processing_timing calibration_mean_ms=5.82351 calibration_max_ms=9.93878 ae_mean_ms=0.26399 ae_max_ms=5.01569 tone_mean_ms=8.33933 tone_max_ms=16.2174 depth_submit_mean_ms=0.780921 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0220063 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=298 mean_gpu_ms=2.71432 depth_encoded=2734 ae=1 target=10 exposure_rows=1069 gain_index=0 ae_error=0
+depth_pipeline submitted=299 processed=298 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=185 fallback=0 video_range=limited
+depth_mono8 submitted=299 processed=298 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.23539 held_mean_ms1=1.26626 held_max_ms0=3.32365 held_max_ms1=3.16158 handoff_max_ms=0.060779
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14260615034508.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_sessions expired=1
+rtsp_client phase=closed
+rtsp_client phase=connected
+rtsp_media phase=unprepared
+capture_lifecycle phase=starting stereo=0 depth=1
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.685579 held_mean_ms1=0.430795 held_max_ms0=0.918619 held_max_ms1=0.80055 handoff_max_ms=0.015312
+rtsp_session phase=created timeout_seconds=30
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14273268142338.jsonl
+capture_lifecycle phase=idle resources_released=1
+capture_lifecycle phase=starting stereo=0 depth=1
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.719381 held_mean_ms1=0.477773 held_max_ms0=0.919557 held_max_ms1=0.894402 handoff_max_ms=0.016667
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14280531953284.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+capture_lifecycle phase=starting stereo=0 depth=1
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.70689 held_mean_ms1=0.431446 held_max_ms0=0.913203 held_max_ms1=0.808935 handoff_max_ms=0.013333
+input_fps=29.6551 submitted_fps=29.4561 dropped_fps=0 encoded_fps=29.2571 rtsp_fps=0 pairs=3180
+processing_timing calibration_mean_ms=5.79777 calibration_max_ms=9.93878 ae_mean_ms=0.267539 ae_max_ms=5.0234 tone_mean_ms=8.28568 tone_max_ms=16.2174 depth_submit_mean_ms=0.781027 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0211366 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=148 mean_gpu_ms=2.6767 depth_encoded=3132 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=141 processed=140 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=132 fallback=0 video_range=limited
+depth_mono8 submitted=141 processed=140 withheld_transition=8 failed=0
+capture_timing held_mean_ms0=1.22531 held_mean_ms1=1.29646 held_max_ms0=3.11538 held_max_ms1=3.59063 handoff_max_ms=0.050363
+input_fps=29.9601 submitted_fps=29.9601 dropped_fps=0 encoded_fps=29.7604 rtsp_fps=0 pairs=3330
+processing_timing calibration_mean_ms=5.77579 calibration_max_ms=9.93878 ae_mean_ms=0.267998 ae_max_ms=5.0234 tone_mean_ms=8.24106 tone_max_ms=16.2174 depth_submit_mean_ms=0.785261 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0207984 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=298 mean_gpu_ms=2.67341 depth_encoded=3282 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=291 processed=289 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=210 fallback=0 video_range=limited
+depth_mono8 submitted=291 processed=289 withheld_transition=8 failed=0
+capture_timing held_mean_ms0=1.2722 held_mean_ms1=1.28867 held_max_ms0=3.43954 held_max_ms1=3.91306 handoff_max_ms=0.050363
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14287231797664.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=closed
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.682558 held_mean_ms1=0.435951 held_max_ms0=0.909036 held_max_ms1=0.812789 handoff_max_ms=0.01078
+rtsp_session phase=created timeout_seconds=30
+input_fps=29.629 submitted_fps=29.4302 dropped_fps=0 encoded_fps=29.0325 rtsp_fps=28.8336 pairs=3484
+processing_timing calibration_mean_ms=5.79819 calibration_max_ms=9.93878 ae_mean_ms=0.26588 ae_max_ms=5.0234 tone_mean_ms=8.26838 tone_max_ms=16.2174 depth_submit_mean_ms=0.787603 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0206111 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=148 mean_gpu_ms=2.60397 depth_encoded=3435 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=149 processed=148 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=79 fallback=0 video_range=limited
+depth_mono8 submitted=149 processed=148 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.44695 held_mean_ms1=1.38964 held_max_ms0=2.78508 held_max_ms1=3.92286 handoff_max_ms=0.257284
+input_fps=30.0032 submitted_fps=30.0032 dropped_fps=0 encoded_fps=30.0032 rtsp_fps=30.0032 pairs=3635
+processing_timing calibration_mean_ms=5.84906 calibration_max_ms=9.93878 ae_mean_ms=0.263782 ae_max_ms=5.0234 tone_mean_ms=8.33429 tone_max_ms=16.2174 depth_submit_mean_ms=0.786193 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0205806 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=299 mean_gpu_ms=2.57418 depth_encoded=3586 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=300 processed=299 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=220 fallback=0 video_range=limited
+depth_mono8 submitted=300 processed=299 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.48168 held_mean_ms1=1.45716 held_max_ms0=2.78508 held_max_ms1=3.92286 handoff_max_ms=0.257284
+capture_timing held_mean_ms0=1.50771 held_mean_ms1=1.51791 held_max_ms0=3.38959 held_max_ms1=3.92286 handoff_max_ms=0.257284
+input_fps=29.9855 submitted_fps=29.9855 dropped_fps=0 encoded_fps=30.1841 rtsp_fps=30.1841 pairs=3786
+processing_timing calibration_mean_ms=5.87755 calibration_max_ms=9.93878 ae_mean_ms=0.261643 ae_max_ms=5.0234 tone_mean_ms=8.38659 tone_max_ms=16.2174 depth_submit_mean_ms=0.782403 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0203889 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=450 mean_gpu_ms=2.57995 depth_encoded=3737 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=451 processed=450 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=364 fallback=0 video_range=limited
+depth_mono8 submitted=451 processed=450 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.51147 held_mean_ms1=1.58225 held_max_ms0=3.52761 held_max_ms1=4.47497 handoff_max_ms=0.257284
+input_fps=30.0186 submitted_fps=29.8198 dropped_fps=0 encoded_fps=29.8198 rtsp_fps=29.8198 pairs=3937
+processing_timing calibration_mean_ms=5.89355 calibration_max_ms=9.93878 ae_mean_ms=0.259611 ae_max_ms=5.0234 tone_mean_ms=8.42893 tone_max_ms=16.2174 depth_submit_mean_ms=0.784969 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0202908 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=600 mean_gpu_ms=2.59201 depth_encoded=3888 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=602 processed=600 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=504 fallback=0 video_range=limited
+depth_mono8 submitted=602 processed=600 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.51321 held_mean_ms1=1.56753 held_max_ms0=3.52761 held_max_ms1=4.47497 handoff_max_ms=0.257284
+input_fps=29.9946 submitted_fps=29.9946 dropped_fps=0 encoded_fps=29.9946 rtsp_fps=29.9946 pairs=4087
+processing_timing calibration_mean_ms=5.92199 calibration_max_ms=9.93878 ae_mean_ms=0.257796 ae_max_ms=5.0234 tone_mean_ms=8.47451 tone_max_ms=16.2174 depth_submit_mean_ms=0.78611 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0200612 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=750 mean_gpu_ms=2.59915 depth_encoded=4038 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=752 processed=751 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=621 fallback=0 video_range=limited
+depth_mono8 submitted=752 processed=751 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.52951 held_mean_ms1=1.56096 held_max_ms0=3.52761 held_max_ms1=4.47497 handoff_max_ms=0.257284
+input_fps=29.9941 submitted_fps=30.1941 dropped_fps=0 encoded_fps=29.9941 rtsp_fps=29.9941 pairs=4237
+processing_timing calibration_mean_ms=5.94639 calibration_max_ms=9.93878 ae_mean_ms=0.256229 ae_max_ms=5.0234 tone_mean_ms=8.52068 tone_max_ms=16.2174 depth_submit_mean_ms=0.786033 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0198262 encoder_max_ms=3.70172
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=901 mean_gpu_ms=2.60084 depth_encoded=4188 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=902 processed=901 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=716 fallback=0 video_range=limited
+depth_mono8 submitted=902 processed=901 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.51995 held_mean_ms1=1.55013 held_max_ms0=3.69104 held_max_ms1=5.54145 handoff_max_ms=0.257284
+input_fps=30.0595 submitted_fps=29.8604 dropped_fps=0.199069 encoded_fps=30.0595 rtsp_fps=30.0595 pairs=4388
+processing_timing calibration_mean_ms=5.94488 calibration_max_ms=9.93878 ae_mean_ms=0.256859 ae_max_ms=5.0234 tone_mean_ms=8.52245 tone_max_ms=16.2174 depth_submit_mean_ms=0.787076 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0206006 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=1051 mean_gpu_ms=2.60994 depth_encoded=4338 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=1053 processed=1051 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=834 fallback=0 video_range=limited
+depth_mono8 submitted=1053 processed=1051 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.50847 held_mean_ms1=1.54676 held_max_ms0=3.69104 held_max_ms1=5.54145 handoff_max_ms=0.257284
+input_fps=29.9755 submitted_fps=29.9755 dropped_fps=0 encoded_fps=29.7757 rtsp_fps=29.7757 pairs=4538
+processing_timing calibration_mean_ms=5.93628 calibration_max_ms=9.93878 ae_mean_ms=0.255297 ae_max_ms=5.0234 tone_mean_ms=8.53217 tone_max_ms=16.2174 depth_submit_mean_ms=0.790338 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0204403 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=1201 mean_gpu_ms=2.61853 depth_encoded=4487 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=1203 processed=1201 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=960 fallback=0 video_range=limited
+depth_mono8 submitted=1203 processed=1201 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.47892 held_mean_ms1=1.52006 held_max_ms0=3.69104 held_max_ms1=5.54145 handoff_max_ms=0.257284
+input_fps=30.0323 submitted_fps=30.0323 dropped_fps=0 encoded_fps=30.0323 rtsp_fps=30.0323 pairs=4689
+processing_timing calibration_mean_ms=5.90649 calibration_max_ms=9.93878 ae_mean_ms=0.255282 ae_max_ms=5.0234 tone_mean_ms=8.49847 tone_max_ms=16.2174 depth_submit_mean_ms=0.790885 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0202881 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=1352 mean_gpu_ms=2.62418 depth_encoded=4639 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=1354 processed=1352 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=1081 fallback=0 video_range=limited
+depth_mono8 submitted=1354 processed=1352 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.4636 held_mean_ms1=1.49776 held_max_ms0=3.69104 held_max_ms1=5.83233 handoff_max_ms=0.829872
+input_fps=29.9346 submitted_fps=29.9346 dropped_fps=0 encoded_fps=30.1341 rtsp_fps=30.1341 pairs=4839
+processing_timing calibration_mean_ms=5.88733 calibration_max_ms=9.93878 ae_mean_ms=0.255491 ae_max_ms=5.0234 tone_mean_ms=8.46519 tone_max_ms=16.2174 depth_submit_mean_ms=0.789466 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0202283 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=1502 mean_gpu_ms=2.62894 depth_encoded=4788 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=1504 processed=1502 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=1157 fallback=0 video_range=limited
+depth_mono8 submitted=1504 processed=1502 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.43777 held_mean_ms1=1.47123 held_max_ms0=3.69104 held_max_ms1=5.83233 handoff_max_ms=0.829872
+input_fps=30.082 submitted_fps=29.8828 dropped_fps=0 encoded_fps=29.8828 rtsp_fps=29.8828 pairs=4990
+processing_timing calibration_mean_ms=5.85969 calibration_max_ms=9.93878 ae_mean_ms=0.256282 ae_max_ms=5.0234 tone_mean_ms=8.42039 tone_max_ms=16.2174 depth_submit_mean_ms=0.788638 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0200276 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=1652 mean_gpu_ms=2.63373 depth_encoded=4940 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=1655 processed=1652 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=1229 fallback=0 video_range=limited
+depth_mono8 submitted=1655 processed=1652 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.42113 held_mean_ms1=1.45094 held_max_ms0=3.69104 held_max_ms1=5.83233 handoff_max_ms=0.899801
+input_fps=29.998 submitted_fps=29.998 dropped_fps=0 encoded_fps=29.998 rtsp_fps=29.998 pairs=5140
+processing_timing calibration_mean_ms=5.83653 calibration_max_ms=9.93878 ae_mean_ms=0.257008 ae_max_ms=5.0234 tone_mean_ms=8.38653 tone_max_ms=16.2174 depth_submit_mean_ms=0.789436 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0204596 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=1802 mean_gpu_ms=2.64053 depth_encoded=5089 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=1805 processed=1802 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=1313 fallback=0 video_range=limited
+depth_mono8 submitted=1805 processed=1802 withheld_transition=0 failed=0
+input_fps=29.9824 submitted_fps=29.9824 dropped_fps=0 encoded_fps=29.9824 rtsp_fps=29.9824 pairs=5290
+processing_timing calibration_mean_ms=5.82607 calibration_max_ms=9.93878 ae_mean_ms=0.256991 ae_max_ms=5.0234 tone_mean_ms=8.36378 tone_max_ms=16.2174 depth_submit_mean_ms=0.789865 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0202819 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=1952 mean_gpu_ms=2.6438 depth_encoded=5240 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=1955 processed=1952 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=1419 fallback=0 video_range=limited
+depth_mono8 submitted=1955 processed=1952 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.41028 held_mean_ms1=1.43809 held_max_ms0=3.69104 held_max_ms1=5.83233 handoff_max_ms=0.899801
+input_fps=29.9417 submitted_fps=30.1414 dropped_fps=0 encoded_fps=30.1414 rtsp_fps=30.1414 pairs=5440
+processing_timing calibration_mean_ms=5.8129 calibration_max_ms=9.93878 ae_mean_ms=0.257208 ae_max_ms=5.0234 tone_mean_ms=8.34116 tone_max_ms=16.2174 depth_submit_mean_ms=0.789826 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0210168 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=2103 mean_gpu_ms=2.64511 depth_encoded=5390 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=2105 processed=2103 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=1535 fallback=0 video_range=limited
+depth_mono8 submitted=2105 processed=2103 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.40324 held_mean_ms1=1.42516 held_max_ms0=3.69104 held_max_ms1=5.83233 handoff_max_ms=0.899801
+input_fps=30.0738 submitted_fps=29.8747 dropped_fps=0 encoded_fps=29.8747 rtsp_fps=29.8747 pairs=5591
+processing_timing calibration_mean_ms=5.80534 calibration_max_ms=9.93878 ae_mean_ms=0.25748 ae_max_ms=5.0234 tone_mean_ms=8.32825 tone_max_ms=16.2174 depth_submit_mean_ms=0.791014 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0208303 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=2253 mean_gpu_ms=2.64784 depth_encoded=5541 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=2256 processed=2253 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=1634 fallback=0 video_range=limited
+depth_mono8 submitted=2256 processed=2253 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.39844 held_mean_ms1=1.41729 held_max_ms0=3.69104 held_max_ms1=5.83233 handoff_max_ms=0.899801
+rtsp_client phase=expired transport_silence_seconds=35
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+input_fps=29.9708 submitted_fps=30.1706 dropped_fps=0 encoded_fps=29.9708 rtsp_fps=26.3743 pairs=5741
+processing_timing calibration_mean_ms=5.79789 calibration_max_ms=9.93878 ae_mean_ms=0.257863 ae_max_ms=5.0234 tone_mean_ms=8.31102 tone_max_ms=16.2174 depth_submit_mean_ms=0.791361 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0206083 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=2404 mean_gpu_ms=2.64896 depth_encoded=5691 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=2406 processed=2404 replaced=1 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=1736 fallback=0 video_range=limited
+depth_mono8 submitted=2406 processed=2404 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.39329 held_mean_ms1=1.40877 held_max_ms0=3.69104 held_max_ms1=5.83233 handoff_max_ms=0.899801
+rtsp_sessions expired=1
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14299894178211.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.690073 held_mean_ms1=0.430944 held_max_ms0=0.876731 held_max_ms1=0.806891 handoff_max_ms=0.011666
+rtsp_session phase=created timeout_seconds=30
+input_fps=29.7493 submitted_fps=29.3499 dropped_fps=0 encoded_fps=29.1503 rtsp_fps=28.9506 pairs=5901
+processing_timing calibration_mean_ms=5.79258 calibration_max_ms=9.93878 ae_mean_ms=0.25793 ae_max_ms=5.0234 tone_mean_ms=8.30344 tone_max_ms=16.2174 depth_submit_mean_ms=0.790309 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0204146 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=147 mean_gpu_ms=2.64055 depth_encoded=5850 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=149 processed=147 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=80 fallback=0 video_range=limited
+depth_mono8 submitted=149 processed=147 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.26049 held_mean_ms1=1.25855 held_max_ms0=3.29938 held_max_ms1=2.81633 handoff_max_ms=0.15817
+input_fps=29.9125 submitted_fps=30.1119 dropped_fps=0 encoded_fps=29.9125 rtsp_fps=29.9125 pairs=6051
+processing_timing calibration_mean_ms=5.77827 calibration_max_ms=9.93878 ae_mean_ms=0.259063 ae_max_ms=5.0234 tone_mean_ms=8.27635 tone_max_ms=16.2174 depth_submit_mean_ms=0.787637 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0206145 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=298 mean_gpu_ms=2.68585 depth_encoded=6001 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=299 processed=298 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=187 fallback=0 video_range=limited
+depth_mono8 submitted=299 processed=298 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.26307 held_mean_ms1=1.23364 held_max_ms0=3.29938 held_max_ms1=2.81633 handoff_max_ms=0.15817
+input_fps=30.0393 submitted_fps=30.0393 dropped_fps=0 encoded_fps=30.2383 rtsp_fps=30.2383 pairs=6202
+processing_timing calibration_mean_ms=5.75676 calibration_max_ms=9.93878 ae_mean_ms=0.259879 ae_max_ms=5.0234 tone_mean_ms=8.24015 tone_max_ms=16.2174 depth_submit_mean_ms=0.787289 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0214834 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=449 mean_gpu_ms=2.71397 depth_encoded=6152 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=450 processed=449 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=277 fallback=0 video_range=limited
+depth_mono8 submitted=450 processed=449 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.22896 held_mean_ms1=1.21766 held_max_ms0=3.29938 held_max_ms1=3.18361 handoff_max_ms=0.831004
+input_fps=30.0572 submitted_fps=29.8581 dropped_fps=0 encoded_fps=29.8581 rtsp_fps=29.8581 pairs=6353
+processing_timing calibration_mean_ms=5.74037 calibration_max_ms=9.93878 ae_mean_ms=0.260329 ae_max_ms=5.0234 tone_mean_ms=8.21455 tone_max_ms=16.2174 depth_submit_mean_ms=0.787124 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0212884 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=599 mean_gpu_ms=2.71858 depth_encoded=6303 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=601 processed=599 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=343 fallback=0 video_range=limited
+depth_mono8 submitted=601 processed=599 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.22734 held_mean_ms1=1.22444 held_max_ms0=3.29938 held_max_ms1=3.18361 handoff_max_ms=0.831004
+input_fps=29.9168 submitted_fps=30.1162 dropped_fps=0 encoded_fps=30.1162 rtsp_fps=30.1162 pairs=6503
+processing_timing calibration_mean_ms=5.73335 calibration_max_ms=9.93878 ae_mean_ms=0.260506 ae_max_ms=5.0234 tone_mean_ms=8.19763 tone_max_ms=16.2174 depth_submit_mean_ms=0.786839 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0211213 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=750 mean_gpu_ms=2.71439 depth_encoded=6452 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=751 processed=750 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=396 fallback=0 video_range=limited
+depth_mono8 submitted=751 processed=750 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.24058 held_mean_ms1=1.2334 held_max_ms0=3.29938 held_max_ms1=5.77823 handoff_max_ms=0.831004
+input_fps=30.0751 submitted_fps=29.8759 dropped_fps=0 encoded_fps=29.8759 rtsp_fps=29.8759 pairs=6654
+processing_timing calibration_mean_ms=5.71628 calibration_max_ms=9.93878 ae_mean_ms=0.261105 ae_max_ms=5.0234 tone_mean_ms=8.17245 tone_max_ms=16.2174 depth_submit_mean_ms=0.785976 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0212177 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=901 mean_gpu_ms=2.71375 depth_encoded=6603 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=902 processed=900 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=476 fallback=0 video_range=limited
+depth_mono8 submitted=902 processed=900 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.23676 held_mean_ms1=1.23233 held_max_ms0=3.29938 held_max_ms1=5.77823 handoff_max_ms=0.831004
+input_fps=29.9907 submitted_fps=29.9907 dropped_fps=0 encoded_fps=29.9907 rtsp_fps=29.9907 pairs=6804
+processing_timing calibration_mean_ms=5.7019 calibration_max_ms=9.93878 ae_mean_ms=0.261629 ae_max_ms=5.0234 tone_mean_ms=8.15046 tone_max_ms=16.2174 depth_submit_mean_ms=0.785511 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0210558 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=1050 mean_gpu_ms=2.71485 depth_encoded=6754 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=1052 processed=1050 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=571 fallback=0 video_range=limited
+depth_mono8 submitted=1052 processed=1050 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.2359 held_mean_ms1=1.22798 held_max_ms0=3.29938 held_max_ms1=5.77823 handoff_max_ms=0.831004
+rtsp_client phase=expired transport_silence_seconds=35
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+input_fps=29.922 submitted_fps=30.1215 dropped_fps=0 encoded_fps=29.922 rtsp_fps=28.7251 pairs=6954
+processing_timing calibration_mean_ms=5.6916 calibration_max_ms=9.93878 ae_mean_ms=0.26216 ae_max_ms=5.0234 tone_mean_ms=8.13114 tone_max_ms=16.2174 depth_submit_mean_ms=0.784075 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0208801 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=1201 mean_gpu_ms=2.71859 depth_encoded=6904 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=1202 processed=1201 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=689 fallback=0 video_range=limited
+depth_mono8 submitted=1202 processed=1201 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.23527 held_mean_ms1=1.22721 held_max_ms0=3.29938 held_max_ms1=5.77823 handoff_max_ms=0.831004
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14448339846801.jsonl
+capture_lifecycle phase=idle resources_released=1
+rtsp_sessions expired=1
+rtsp_client phase=connected
+rtsp_client phase=connected
+rtsp_media phase=configured
+capture_lifecycle phase=starting stereo=1 depth=0
+sensor_signal black_raw10=37 gamma=1
+gpu_rectification device=QUALCOMM Adreno(TM) 635 width=2176 height=1280 supported_bits=8,10 order=cam1_cam0 map=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map
+capture_buffers eye=0 requested=8 actual=8
+capture_buffers eye=1 requested=8 actual=8
+Kernel FSYNC exact pairing: timestamp_offset_ns=344903 source=exposure_start_estimate
+Capture ready: fps=30
+capture_timing held_mean_ms0=0.712764 held_mean_ms1=0.480864 held_max_ms0=0.928866 held_max_ms1=0.873191 handoff_max_ms=0.012499
+rtsp_session phase=created timeout_seconds=30
+rtsp_session phase=created timeout_seconds=30
+input_fps=29.5902 submitted_fps=29.3903 dropped_fps=0 encoded_fps=28.9904 rtsp_fps=28.7905 pairs=7125
+processing_timing calibration_mean_ms=5.70001 calibration_max_ms=9.93878 ae_mean_ms=0.261952 ae_max_ms=5.0234 tone_mean_ms=8.14672 tone_max_ms=16.2174 depth_submit_mean_ms=0.784661 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0207885 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=147 mean_gpu_ms=2.62869 depth_encoded=7074 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=148 processed=147 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=117 fallback=0 video_range=limited
+depth_mono8 submitted=148 processed=147 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.44131 held_mean_ms1=1.44802 held_max_ms0=3.76296 held_max_ms1=3.2546 handoff_max_ms=0.042758
+input_fps=29.9944 submitted_fps=29.9944 dropped_fps=0 encoded_fps=30.193 rtsp_fps=30.193 pairs=7276
+processing_timing calibration_mean_ms=5.70166 calibration_max_ms=9.93878 ae_mean_ms=0.261483 ae_max_ms=5.0234 tone_mean_ms=8.15273 tone_max_ms=16.2174 depth_submit_mean_ms=0.785754 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0207274 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=298 mean_gpu_ms=2.641 depth_encoded=7225 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=299 processed=298 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=215 fallback=0 video_range=limited
+depth_mono8 submitted=299 processed=298 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.3868 held_mean_ms1=1.4436 held_max_ms0=3.76296 held_max_ms1=3.54427 handoff_max_ms=0.042758
+input_fps=30.0165 submitted_fps=30.0165 dropped_fps=0 encoded_fps=29.8177 rtsp_fps=29.8177 pairs=7427
+processing_timing calibration_mean_ms=5.70738 calibration_max_ms=9.93878 ae_mean_ms=0.260749 ae_max_ms=5.0234 tone_mean_ms=8.17697 tone_max_ms=16.2174 depth_submit_mean_ms=0.787708 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0207966 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=449 mean_gpu_ms=2.63855 depth_encoded=7376 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=450 processed=449 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=279 fallback=0 video_range=limited
+depth_mono8 submitted=450 processed=449 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.3737 held_mean_ms1=1.48858 held_max_ms0=3.76296 held_max_ms1=3.74812 handoff_max_ms=0.042758
+input_fps=29.9917 submitted_fps=29.9917 dropped_fps=0 encoded_fps=29.9917 rtsp_fps=29.9917 pairs=7577
+processing_timing calibration_mean_ms=5.7155 calibration_max_ms=9.93878 ae_mean_ms=0.259961 ae_max_ms=5.0234 tone_mean_ms=8.19756 tone_max_ms=16.2174 depth_submit_mean_ms=0.788443 depth_submit_max_ms=4.05285 encoder_mean_ms=0.0207738 encoder_max_ms=4.36659
+gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=8 frames=599 mean_gpu_ms=2.63969 depth_encoded=7526 ae=1 target=10 exposure_rows=871 gain_index=0 ae_error=0
+depth_pipeline submitted=600 processed=599 replaced=0 busy=0 failed=0
+detail_tone active=1 bits=8 range=full source_bits=10 strength=1 clip_limit=4 shared_lut=1 lut=355 fallback=0 video_range=limited
+depth_mono8 submitted=600 processed=599 withheld_transition=0 failed=0
+capture_timing held_mean_ms0=1.40848 held_mean_ms1=1.52723 held_max_ms0=3.76296 held_max_ms1=4.93515 handoff_max_ms=0.047862
+rtsp_client phase=closed
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+capture_lifecycle phase=stopping reason=no_media
+capture_trace reason=stop path=/home/ubuntu/rtsp-demand-20261016/traces/sc132gs-capture-101106-14510299897904.jsonl
+capture_lifecycle phase=idle resources_released=1

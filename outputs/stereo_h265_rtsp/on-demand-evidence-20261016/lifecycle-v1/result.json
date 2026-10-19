@@ -1,0 +1,103 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "name": "initial_idle",
+      "result": {
+        "process": [
+          {
+            "pid": 62533,
+            "video_fds": [],
+            "fd_count": 14,
+            "threads": 3,
+            "rss_kb": 16288
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "0",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "29",
+          "pulses": "1",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 0.4370000000053551
+      }
+    },
+    {
+      "name": "/stereo_alone",
+      "result": {
+        "fps": [
+          30.333333333333332
+        ],
+        "board": {
+          "process": [
+            {
+              "pid": 62533,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 214668
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "30",
+            "pulses": "135",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    }
+  ],
+  "error": "AssertionError(('resources not released', {'process': [{'pid': 62533, 'video_fds': ['/dev/video33', '/dev/video33'], 'fd_count': 26, 'threads': 3, 'rss_kb': 131200}], 'sync': {'abi': '4', 'timestamp_offset_ns': '344903', 'trigger_hz': '30', 'frame_step': '1', 'locked_mask': '0', 'startup_dropped': '2', 'startup_end0': '0', 'startup_end1': '0', 'node0': '4294967295', 'node1': '4294967295', 'mode': '2', 'running': '0', 'session': '30', 'pulses': '166', 'skipped': '0', 'cpu': '7', 'worker_cpu': '0', 'error': '0', 'error_count': '0', 'source': 'exposure_start_estimate'}, 'power': ['suspended', 'suspended']}))"
+}

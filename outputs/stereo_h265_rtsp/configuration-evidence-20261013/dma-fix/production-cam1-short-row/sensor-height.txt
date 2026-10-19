@@ -1,0 +1,2 @@
+dimension=height original=1280 injected=1279
+readback=1279

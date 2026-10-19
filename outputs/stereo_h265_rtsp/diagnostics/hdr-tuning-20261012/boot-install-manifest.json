@@ -1,0 +1,18 @@
+{
+  "/lib/modules/6.8.0-1084-qcom/extra/sc132gs.ko": {
+    "before": "27d4234ceadc6ae8f08b9c93f281fabcdd9cad0a10683bb0f168ef6fde67ea9e",
+    "after": "d6d243fcd70653cd3a7293cd549dd39e2ea13b12ce96d22ef3f88edaf8fc27f6"
+  },
+  "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": {
+    "before": "64511ed78fd41315535869c27cd025b9eea122f2d102106b6cd558c68d682c2f",
+    "after": "14fc808e463ae19a3b2904649879814daddfc3bb3f39053a1f4a74f39183d0fc"
+  },
+  "/usr/local/bin/sc132gs-camera": {
+    "before": "b2591840d09376d7699f5879e5c043405815e919af2a468354c74ec29dce7f67",
+    "after": "d891440c13a909403c3ecfa5aeca8765e7baa15d3f743f310db9f07c0ff4d047"
+  },
+  "/home/ubuntu/stereo-h265-rtsp/camera_platform.py": {
+    "before": "1b2fd6d5fa16b7f2c37476c1a83127e923a45185c57aced8ba33a79bdf2212af",
+    "after": "8de4c1bf880bd25ebf1ae5303d2695eb55e86b04ddcbc6f90d9bfabb8e01d842"
+  }
+}

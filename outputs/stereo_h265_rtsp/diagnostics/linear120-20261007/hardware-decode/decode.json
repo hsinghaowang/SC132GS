@@ -1,0 +1,10 @@
+{
+  "decoder": "hardware",
+  "decoded_frames": 1169,
+  "unique_rgb_hashes": 2,
+  "width": 1088,
+  "height": 640,
+  "wall_seconds": 9.712969929998508,
+  "wall_fps": 120.2515819999228,
+  "pts_fps": 119.99739730987585
+}

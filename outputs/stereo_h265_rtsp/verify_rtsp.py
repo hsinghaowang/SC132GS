@@ -2,6 +2,8 @@
 """Count loopback RTSP access units or decoded frames without saving pixels."""
 
 import argparse
+import json
+import pathlib
 import time
 
 import gi
@@ -16,12 +18,14 @@ def main() -> int:
     parser.add_argument("--url", default="rtsp://127.0.0.1:8554/stereo")
     parser.add_argument("--seconds", type=float, default=10.0)
     parser.add_argument("--decode", action="store_true")
+    parser.add_argument("--expected-fps", type=int)
+    parser.add_argument("--output", type=pathlib.Path)
     args = parser.parse_args()
     Gst.init(None)
     decode = "v4l2h265dec ! " if args.decode else ""
     pipeline = Gst.parse_launch(
         f'rtspsrc location="{args.url}" protocols=tcp latency=100 ! '
-        "rtph265depay ! h265parse ! " + decode +
+        "rtph265depay ! h265parse ! video/x-h265,alignment=au ! " + decode +
         "appsink name=counter sync=false max-buffers=4 drop=false"
     )
     sink = pipeline.get_by_name("counter")
@@ -48,12 +52,22 @@ def main() -> int:
             last_pts = pts
             count += 1
         elapsed = time.monotonic() - first_wall if first_wall else 0.0
+        pts_span = (last_pts-first_pts)/Gst.SECOND if count > 1 else 0.0
+        pts_fps = (count-1)/pts_span if pts_span > 0 else 0.0
+        proof = dict(mode='decoded' if args.decode else 'H265_AU', frames=count,
+                     wall_seconds=elapsed, wall_fps=(count-1)/elapsed if elapsed > 0 else 0,
+                     pts_span_seconds=pts_span, pts_fps=pts_fps)
+        if args.output:
+            args.output.write_text(json.dumps(proof, indent=2)+'\n')
         print(
             f"mode={'decoded' if args.decode else 'H265_AU'} "
             f"frames={count} wall_s={elapsed:.3f} "
             f"fps={((count - 1) / elapsed if elapsed > 0 else 0):.2f} "
             f"pts_span_s={((last_pts - first_pts) / Gst.SECOND if count > 1 else 0):.3f}"
         )
+        if args.expected_fps is not None:
+            return 0 if (count >= max(3, (args.seconds-2)*args.expected_fps*.9)
+                         and abs(pts_fps-args.expected_fps) <= args.expected_fps*.025) else 1
         return 0 if count >= max(1, (args.seconds - 2) * 28) else 1
     finally:
         pipeline.set_state(Gst.State.NULL)

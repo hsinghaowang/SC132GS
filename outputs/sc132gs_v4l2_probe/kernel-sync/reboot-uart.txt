@@ -1,0 +1,13 @@
+[  662.756253] systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+[  662.803283] systemd-shutdown[1]: Sending SIGKILL to PID 2060 (modprobe).
+[  662.810952] systemd-shutdown[1]: Sending SIGKILL to PID 2085 (v4l_id).
+[  662.818236] systemd-shutdown[1]: Sending SIGKILL to PID 2088 (v4l_id).
+[  662.825434] systemd-shutdown[1]: Sending SIGKILL to PID 2101 (v4l_id).
+[  662.833418] systemd-shutdown[1]: Sending SIGKILL to PID 2102 (v4l_id).
+[  662.840462] systemd-shutdown[1]: Sending SIGKILL to PID 2107 (v4l_id).
+[  662.847420] systemd-shutdown[1]: Sending SIGKILL to PID 2384 (wireplumber).
+[  662.854817] systemd-shutdown[1]: Sending SIGKILL to PID 2644 (gst-plugin-scan).
+[  662.862509] systemd-shutdown[1]: Sending SIGKILL to PID 2974 (wireplumber).
+[  662.869812] systemd-shutdown[1]: Sending SIGKILL to PID 3262 (wireplumber).
+[  662.877154] systemd-shutdown[1]: Sending SIGKILL to PID 10035 (wireplumber).
+[  662.884679] systemd-shutdown[1]: Sending SIGKILL to PID 10353 (wireplumber).

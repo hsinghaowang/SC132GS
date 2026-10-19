@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "failure": null,
+  "statistics": {
+    "windows": 720,
+    "duration_s": 3609.1335377095565,
+    "capture_average_fps": 29.999998301174884,
+    "encoder_average_fps": 29.999997703644183,
+    "encoder_instantaneous_range": [
+      29.6199,
+      30.3791
+    ],
+    "maximum_count_rounding_residual": 0.00047040768666306576,
+    "scope": "complete logged statistics, interval recovered from pairs/input_fps; reported-rate precision retained; no timestamps synthesized"
+  },
+  "new_samples": 33,
+  "new_observer_seconds": 323.54281158399954,
+  "baseline": "/home/ubuntu/sc132gs-goal-verification-20261014/sync30-one-hour-20261014-1948",
+  "original_sampler_ended_after_s": 1712.174706879,
+  "scope": "full original-hour server logs plus two sampler intervals; sampling gap explicitly retained; sticky driver errors/session and unchanged process identity checked; no camera restart"
+}

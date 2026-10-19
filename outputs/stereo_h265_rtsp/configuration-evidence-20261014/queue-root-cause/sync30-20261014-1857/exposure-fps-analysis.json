@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "requested_fps": 30.0,
+  "session": 2,
+  "profiles": [
+    {
+      "rows": 8,
+      "eyes": {
+        "0": {
+          "samples": 513,
+          "hardware_fps": 30.00059537924729,
+          "host_fps": 30.000001133203167,
+          "median_hardware_interval_ns": 33332526.041666664,
+          "within_requested_fps": true
+        },
+        "1": {
+          "samples": 513,
+          "hardware_fps": 30.00059547080366,
+          "host_fps": 30.00000104355472,
+          "median_hardware_interval_ns": 33332552.083333332,
+          "within_requested_fps": true
+        }
+      }
+    },
+    {
+      "rows": 32,
+      "eyes": {
+        "0": {
+          "samples": 512,
+          "hardware_fps": 30.000165760455996,
+          "host_fps": 30.000003318787062,
+          "median_hardware_interval_ns": 33333125.0,
+          "within_requested_fps": true
+        },
+        "1": {
+          "samples": 512,
+          "hardware_fps": 30.00016566872308,
+          "host_fps": 30.00000313737802,
+          "median_hardware_interval_ns": 33333177.083333332,
+          "within_requested_fps": true
+        }
+      }
+    },
+    {
+      "rows": 808,
+      "eyes": {
+        "0": {
+          "samples": 513,
+          "hardware_fps": 30.000031402620763,
+          "host_fps": 29.999986870318246,
+          "median_hardware_interval_ns": 33333281.25,
+          "within_requested_fps": true
+        },
+        "1": {
+          "samples": 513,
+          "hardware_fps": 30.000031585726617,
+          "host_fps": 29.99998714629457,
+          "median_hardware_interval_ns": 33333281.25,
+          "within_requested_fps": true
+        }
+      }
+    },
+    {
+      "rows": 1330,
+      "eyes": {
+        "0": {
+          "samples": 512,
+          "hardware_fps": 30.00582069248579,
+          "host_fps": 30.00003725464509,
+          "median_hardware_interval_ns": 33327395.833333332,
+          "within_requested_fps": true
+        },
+        "1": {
+          "samples": 512,
+          "hardware_fps": 30.005820325415797,
+          "host_fps": 30.000036430376923,
+          "median_hardware_interval_ns": 33327395.833333332,
+          "within_requested_fps": true
+        }
+      }
+    },
+    {
+      "rows": 1360,
+      "eyes": {
+        "0": {
+          "samples": 513,
+          "hardware_fps": 30.003460909471,
+          "host_fps": 30.000005009180526,
+          "median_hardware_interval_ns": 33329557.291666664,
+          "within_requested_fps": true
+        },
+        "1": {
+          "samples": 513,
+          "hardware_fps": 30.00346081789714,
+          "host_fps": 30.000005833594887,
+          "median_hardware_interval_ns": 33329531.25,
+          "within_requested_fps": true
+        }
+      }
+    },
+    {
+      "rows": 1377,
+      "eyes": {
+        "0": {
+          "samples": 513,
+          "hardware_fps": 30.002223706076506,
+          "host_fps": 30.000000648046885,
+          "median_hardware_interval_ns": 33330833.333333332,
+          "within_requested_fps": true
+        },
+        "1": {
+          "samples": 513,
+          "hardware_fps": 30.002223522943893,
+          "host_fps": 30.00000037558594,
+          "median_hardware_interval_ns": 33330833.333333332,
+          "within_requested_fps": true
+        }
+      }
+    },
+    {
+      "rows": 8,
+      "eyes": {
+        "0": {
+          "samples": 513,
+          "hardware_fps": 30.001571676572873,
+          "host_fps": 29.999999973046872,
+          "median_hardware_interval_ns": 33331562.5,
+          "within_requested_fps": true
+        },
+        "1": {
+          "samples": 513,
+          "hardware_fps": 30.00157185969753,
+          "host_fps": 29.999999329687515,
+          "median_hardware_interval_ns": 33331562.5,
+          "within_requested_fps": true
+        }
+      }
+    },
+    {
+      "rows": 1377,
+      "eyes": {
+        "0": {
+          "samples": 858,
+          "hardware_fps": 30.001166724194547,
+          "host_fps": 29.999995053326373,
+          "median_hardware_interval_ns": 33332083.333333332,
+          "within_requested_fps": true
+        },
+        "1": {
+          "samples": 858,
+          "hardware_fps": 30.001166614792808,
+          "host_fps": 29.999994946208552,
+          "median_hardware_interval_ns": 33332083.333333332,
+          "within_requested_fps": true
+        }
+      }
+    }
+  ],
+  "events_sha256": "344b14ae93c061aa688dc62f8f7c28583b3a736107a26e455b136ca9b845f146",
+  "controls_sha256": "58fac60a68ee9158c0fca394fdc180325b02de60b724c62058b807c18ceaa869",
+  "scope": "recorded CSID hardware SOF rate; no trigger/exposure-start inference"
+}

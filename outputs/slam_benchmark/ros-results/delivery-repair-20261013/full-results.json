@@ -1,0 +1,70 @@
+[
+  {
+    "run": "MH_01_easy-paced-delivery-shm4m-1",
+    "profile": "fastdds-shm-4m.xml",
+    "frames": 0,
+    "start_monotonic_ns": 4772400941880,
+    "end_monotonic_ns": 4963533871289,
+    "returncode": 0,
+    "input_missing": {
+      "imu": 0,
+      "left": 0,
+      "right": 0,
+      "pairs": 0
+    },
+    "receiver_error": 0,
+    "receiver_exit_code": 0,
+    "publisher_exit_code": 0
+  },
+  {
+    "run": "V2_02_medium-paced-delivery-shm4m-1",
+    "profile": "fastdds-shm-4m.xml",
+    "frames": 0,
+    "start_monotonic_ns": 4963697661033,
+    "end_monotonic_ns": 5088259945475,
+    "returncode": 0,
+    "input_missing": {
+      "imu": 0,
+      "left": 0,
+      "right": 0,
+      "pairs": 0
+    },
+    "receiver_error": 0,
+    "receiver_exit_code": 0,
+    "publisher_exit_code": 0
+  },
+  {
+    "run": "V2_02_medium-paced-delivery-shm4m-2",
+    "profile": "fastdds-shm-4m.xml",
+    "frames": 0,
+    "start_monotonic_ns": 5088411215770,
+    "end_monotonic_ns": 5212981254752,
+    "returncode": 0,
+    "input_missing": {
+      "imu": 0,
+      "left": 0,
+      "right": 0,
+      "pairs": 0
+    },
+    "receiver_error": 0,
+    "receiver_exit_code": 0,
+    "publisher_exit_code": 0
+  },
+  {
+    "run": "MH_01_easy-paced-delivery-shm4m-2",
+    "profile": "fastdds-shm-4m.xml",
+    "frames": 0,
+    "start_monotonic_ns": 5213133243952,
+    "end_monotonic_ns": 5404449228271,
+    "returncode": 0,
+    "input_missing": {
+      "imu": 0,
+      "left": 0,
+      "right": 0,
+      "pairs": 0
+    },
+    "receiver_error": 0,
+    "receiver_exit_code": 0,
+    "publisher_exit_code": 0
+  }
+]

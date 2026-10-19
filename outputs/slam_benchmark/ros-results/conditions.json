@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-12",
+  "platform": "RUBIK Pi 3 QCS6490 ARM64",
+  "container": "ros2-humble Jammy /opt/ros/humble",
+  "estimator_revision": "69488123ed9362dd44b6f28e7f4680abbff1442b",
+  "receiver_binary_sha256": "792c66116e2edddcb8877ec7fe488e29047dd38db28ea476306bc7722585b85f",
+  "candidate_yaml_sha256": "92b82dce6932b3289c0cd7152068219b87e21c585419908f7ee3558e2b66ec10",
+  "num_pts": 100,
+  "target_per_eye": 50,
+  "DDS": "Fast DDS rmw_fastrtps_cpp, localhost, ROS_DOMAIN_ID 73",
+  "receiver": "custom C++17 PIMPL wrapper using pinned OpenVINS core and ROS2Visualizer; stock run_subscribe_msckf main is not tested by this harness",
+  "concurrency": "one executor ingests immutable owned image/IMU measurements; bounded queue 4096; one owned worker serializes all VioManager and ROS2Visualizer access; joined before ROS shutdown",
+  "receiver_imu_qos": "best effort KeepLast 100",
+  "image_qos": "reliable KeepLast 10, ApproximateTime pair queue 10",
+  "high_rate_imu_odometry_and_TF": false,
+  "camera_rate_hz": 20,
+  "imu_rate_hz": 200,
+  "publisher": "Python rclpy, cv2 PNG decode threads=1, array.array mono8 serialization, separate process from receiver",
+  "opencv_estimator_threads": 4,
+  "ground_truth_initialization": false,
+  "physical_sensors": false,
+  "native_comparison_scope": "native estimator return includes PNG load; ROS measurement includes publisher, DDS, image clones, estimator, headless state/path publication, pose DDS and probe",
+  "background_work": "No dataset download, extraction or concurrent compilation during full sequences; small transfers of completed logs may overlap next run; other board processes not isolated",
+  "failed_prototypes": "*-paced-1 serialized callbacks with 100-sample IMU DDS queue; retain as diagnostic failures with observed IMU loss, do not combine with paced-worker-1 final variant",
+  "limits": [
+    "one earlier non-isolated full run plus three camera-paused full runs per dataset",
+    "physical exposure-to-pose latency and camera-IMU synchronization untested",
+    "default detached stock subscriber mode and high-rate IMU odometry remain untested"
+  ],
+  "source_sha256": {
+    "ros2-runner\\Receiver.hpp": "0c58505e6bf8ce0185d96d2a92692f5819e63e8170afc24a532cd33c763064f1",
+    "ros2-runner\\Receiver.cpp": "25868c1fe77f392c6fb75e8f68a0748fb19595b95a4b5c7cf7a7c4f24e35940b",
+    "ros2-runner\\CMakeLists.txt": "c1d0c52574e11d41866fbeffa396115ead4b74cc3bd604b6ce9aa3df51b15d8b",
+    "ros-replay.py": "284927ae4e5e033005b417ce023d55ba4a62d013407828f77f72a82a4f21e489",
+    "analyze-ros-replay.py": "35aac79cc1846d9b09f55764427bc4cbb880293ac09159214a02e714c1fb93fb",
+    "run-ros-full.sh": "dcc92a31d5bd1440eb7e6ccef9c005e578d11fbbbc13eb690bbf23eb6e7b3a19"
+  },
+  "final_result": "zero input loss; complete post-init poses; camera-paused P95 about 79 ms, maxima 110-140 ms; physical sensor timing untested",
+  "exclusive_test": {
+    "full_runs": 6,
+    "repeats_per_dataset": 3,
+    "camera_and_FSYNC_gracefully_stopped": true,
+    "restored_original_camera_configuration": true,
+    "binary_and_yaml_unchanged": true,
+    "order": [
+      "MH1",
+      "V2_1",
+      "V2_2",
+      "MH2",
+      "MH3",
+      "V2_3"
+    ],
+    "monitoring": "read-only /proc and sysfs, once per second; monitor has CPU overhead",
+    "monitor_log": "exclusive-platform-load.jsonl",
+    "report": "exclusive-report.html",
+    "summary": "exclusive-summary.json",
+    "raw_manifest": "exclusive-raw-sha256.json",
+    "causal_limit": "Earlier runs lack matching background process trace; differences cannot be attributed solely to camera stream"
+  },
+  "exclusive_source_sha256": {
+    "run-exclusive-replay.sh": "3955e994f48476aabd462ce11b21a0f2fa70c9687962f80415f6bfd893bcc2ab",
+    "run-exclusive-host.py": "13ea58c1c42a4d5ef0239300f3a96e23051adf561afa0dab3789c374d331b298",
+    "sample-board-load.py": "4390fbb4f018a8a7c468ee9a637ac47c9a06002a24d6b8ad97104b94ec9fdc43",
+    "run-exclusive-with-camera-restore.py": "ae3acfe530ba4691ee52e1a1f6e636475bca5c2f4f05d7970ae558a0aa5c82ee",
+    "collect-exclusive-evidence.py": "b78cd319126c6cb1737f0783fb098fd0e60480c6610d8aca8745a170177e1661",
+    "analyze-exclusive.py": "eb5f677991e566a0046bc0202fd76c3f92299c244fd98872fefdb0f0e478cf3c",
+    "analyze-ros-replay.py": "3720ea0d01385e16102b21da2800a9e341b23c1c467502e93c3e8139e054c045",
+    "finalize-exclusive.py": "42a6303a9bb8473f213b6a9e9e68c9639edd75663b87f48103a0e6610b46f492"
+  },
+  "latest_publisher_audit_date": "2026-10-13",
+  "publisher_optimization": {
+    "date": "2026-10-13",
+    "native_full_runs": 6,
+    "native_input_loss": 0,
+    "native_report": "ros-results/publisher-comparison-20261013/report.html",
+    "prefetch_full_runs": 4,
+    "prefetch_candidate_status": "rejected_imu_input_loss",
+    "prefetch_camera_off_sampled_runs": 3,
+    "prefetch_overlap_runs": [
+      "MH_01_easy-paced-prefetch-2"
+    ],
+    "prefetch_valid_performance_runs": 0,
+    "prefetch_report": "ros-results/prefetch-comparison-20261013/report.html",
+    "receiver_binary_and_yaml_unchanged": true,
+    "baseline": "Original Python publisher plus owned-worker receiver: loss-free; about 78 ms P95 source-schedule-to-stock-pose receive",
+    "prefetch_measurement_scope": "PNG decode moved before schedule; lower diagnostic latency with lost IMU is not an accepted improvement",
+    "other_long_duration_job_running_user_confirmed": true,
+    "board_work_deferred": true,
+    "camera_recovery_attempt": "Failed capture timeout at 10:49; SMMU fault contemporaneous, causality unproven",
+    "camera_after_batch": "Another job restarted stream at 11:09:42; active Linear60 AEoff gain27 in saved snapshot; no fresh live verification",
+    "historical_camera_restored_flag_scope": "2026-10-12 original exclusive-test restoration only"
+  },
+  "final_result_scope": "Existing final_result and exclusive_test describe historical loss-free worker/camera-paused runs. Decode-ahead is rejected, not part of that result.",
+  "delivery_repair": {
+    "status": "passed_delivery_and_accuracy",
+    "report": "ros-results/delivery-repair-20261013/report.html",
+    "summary": "ros-results/delivery-repair-20261013/comparison.json",
+    "full_runs": 4,
+    "input_loss": 0,
+    "post_init_pose_coverage": 1.0,
+    "receiver_binary_and_yaml_unchanged": true,
+    "topic_qos_unchanged": true,
+    "repair": "Fast DDS process-local SHM segment_size=4194304",
+    "negative_control": "512KiB lost IMU again after fixed full runs; checked runner exit4",
+    "entrypoint": "run-frame-ready-replay.sh",
+    "input_gate": "ros-replay-native-checked.py; exit4 on count loss, exit5 on incomplete receiver; evidence saved before failure",
+    "datasets": {
+      "MH_01_easy": {
+        "repeats": 2,
+        "control_p95_ms": 78.50253225,
+        "repaired_frame_ready_p95_range_ms": [
+          48.77044245,
+          49.52152505
+        ],
+        "repaired_max_range_ms": [
+          86.40659,
+          97.656207
+        ],
+        "control_ate_rmse_m": 0.12003840360346094,
+        "repaired_ate_rmse_m": [
+          0.12003840360346094,
+          0.12003840360346094
+        ],
+        "receiver_cpu_percent_one_core": [
+          129.8442997208317,
+          117.46025382862275
+        ],
+        "publisher_and_probe_cpu_percent_one_core": [
+          67.1785800626563,
+          56.46953574809856
+        ],
+        "max_absolute_ate_delta_m": 0.0
+      },
+      "V2_02_medium": {
+        "repeats": 2,
+        "control_p95_ms": 77.949026,
+        "repaired_frame_ready_p95_range_ms": [
+          56.45264075,
+          57.23297275
+        ],
+        "repaired_max_range_ms": [
+          77.577227,
+          82.218541
+        ],
+        "control_ate_rmse_m": 0.055259442266562965,
+        "repaired_ate_rmse_m": [
+          0.055259442266562965,
+          0.055259442266562965
+        ],
+        "receiver_cpu_percent_one_core": [
+          142.62581624119932,
+          139.54440408193088
+        ],
+        "publisher_and_probe_cpu_percent_one_core": [
+          56.29624206553968,
+          52.19781868961476
+        ],
+        "max_absolute_ate_delta_m": 0.0
+      }
+    },
+    "physical_sensor_input": false,
+    "camera_initially_inactive_and_preserved": true,
+    "latency_scope": "Prepared-image schedule to stock-pose DDS receive; PNG decode happens before schedule",
+    "historical_failure": "Earlier prefetch-comparison-20261013 remains rejected, preserved without rewriting raw evidence"
+  },
+  "latest_verified_replay_report": "delivery-repair-20261013/report.html"
+}

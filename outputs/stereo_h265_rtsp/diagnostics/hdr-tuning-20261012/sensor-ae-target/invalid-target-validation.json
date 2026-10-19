@@ -1,0 +1,17 @@
+[
+  {
+    "value": "-1",
+    "returncode": 1,
+    "error": "error code=invalid_argument errno=0 rollback_failed=0"
+  },
+  {
+    "value": "101",
+    "returncode": 1,
+    "error": "error code=invalid_argument errno=0 rollback_failed=0"
+  },
+  {
+    "value": "abc",
+    "returncode": 2,
+    "error": "error code=invalid_argument errno=22 rollback_failed=0"
+  }
+]

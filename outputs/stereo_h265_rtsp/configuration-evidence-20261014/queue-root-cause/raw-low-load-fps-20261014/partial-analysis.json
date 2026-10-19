@@ -1,0 +1,43 @@
+{
+  "scope": "partial live RAW capture; not final acceptance",
+  "boot_id": "39b1215e-ce28-48d9-8231-d31822359140",
+  "driver_srcversion": "A63EF0A1BF89BCABF0D7BF9",
+  "capture_pid": 5459,
+  "capture_starttime_ticks": 78075,
+  "session": 6,
+  "kernel_error": 0,
+  "minimum_fps": 29.7,
+  "eyes": {
+    "0": {
+      "frames": 9083,
+      "span_s": 316.173532,
+      "fps": 28.724732087947196,
+      "first600_fps": 28.710180980065886,
+      "last600_fps": 28.712929283458543
+    },
+    "1": {
+      "frames": 9075,
+      "span_s": 315.89552,
+      "fps": 28.72468720037562,
+      "first600_fps": 28.707182805518947,
+      "last600_fps": 28.712450322427873
+    }
+  },
+  "last600_assert_intervals_ms": {
+    "minimum": 16.679721,
+    "median": 17.383074,
+    "mean": 17.382369826377296,
+    "maximum": 17.778525
+  },
+  "last600_deassert_callback_lateness_us": {
+    "median": 6.091,
+    "mean": 6.167795,
+    "maximum": 11.819
+  },
+  "last600_assert_to_deassert_before_us": {
+    "median": 112.913,
+    "mean": 112.94396166666667
+  },
+  "fps_gate_currently_satisfied": false,
+  "measurement_note": "CSV incomplete final line excluded; GPIO values are host API brackets, not measured electrical edges"
+}

@@ -1,0 +1,19 @@
+# Actual module UNION V1.2 EEPROM RAW intrinsics; unrotated 1088x1280.
+# Intrinsics-only export: not a complete OpenVINS/Kalibr camera-IMU config.
+# cam0=right sensor0x32/bus18/video0; cam1=left sensor0x30/bus16/video3.
+# Fisheye/equidistant coefficients: k1,k2,k3,k4; do not use radtan.
+# Factory numeric decoding verified; reprojection/extrinsics/time validation pending.
+cam0:
+  camera_model: pinhole
+  distortion_model: equidistant
+  resolution: [1088, 1280]
+  intrinsics: [657.8239450517727, 658.2150920608404, 524.0026141065277, 640.7191886623792]
+  distortion_coeffs: [-0.02178480406769214, -5.9635367621555255e-05, -0.0014060047059429044, -0.0012274502728586922]
+  rostopic: /cam0/image_raw
+cam1:
+  camera_model: pinhole
+  distortion_model: equidistant
+  resolution: [1088, 1280]
+  intrinsics: [655.758106055711, 655.8953912485096, 522.6808527771126, 628.2127111310857]
+  distortion_coeffs: [-0.014722095589258003, -0.014398333960392052, 0.010330564415067026, -0.004621151172464282]
+  rostopic: /cam1/image_raw

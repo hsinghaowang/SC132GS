@@ -1,0 +1,31 @@
+{
+  "boot_id": "b0220435-decf-4c94-b1ac-e41ba7bea41a",
+  "module_srcversion": "E06BFE4497044149C75C90A",
+  "service": {
+    "MainPID": "6389",
+    "ExecMainStartTimestampMonotonic": "796667483",
+    "ActiveState": "active"
+  },
+  "initial_control": {
+    "abi": "2",
+    "trigger_hz": "30",
+    "frame_step": "1",
+    "locked_mask": "3",
+    "startup_dropped": "2",
+    "startup_end0": "1",
+    "startup_end1": "1",
+    "node0": "0",
+    "node1": "3",
+    "mode": "2",
+    "running": "1",
+    "session": "7",
+    "pulses": "29775",
+    "skipped": "0",
+    "cpu": "7",
+    "worker_cpu": "0",
+    "error": "0",
+    "error_count": "0",
+    "source": "fsync_host_reference"
+  },
+  "binary_sha256": "ed8ed3e9c5739274d0959c58e41b0aa044761060193900c28ef628f09b190412"
+}

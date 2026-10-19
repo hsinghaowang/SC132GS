@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "source_sha256": "eefca6876e83038f81484986d0806185ec2343cc70c9d617854453a1b60ea35f",
+  "callback_sha256": "7e228831dee794aaf07c2702a21144c463f0e9ed556c35f7759d20dc41bc0643",
+  "full_pulses": 26000,
+  "configuration_ns": {
+    "PERIOD_NS": 33333333,
+    "PULSE_NS": 100000,
+    "LATE_BUDGET_NS": 500000,
+    "PULSE_OVERRUN_NS": 25000
+  },
+  "pulse_envelope_limit_ns": 150000,
+  "scope": "actual callback with virtual time/GPIO/IRQ; no electrical or platform latency proof"
+}

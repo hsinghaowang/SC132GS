@@ -1,0 +1,20 @@
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278167 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278176 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278179 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278182 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278185 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278188 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278197 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278200 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278203 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278206 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278209 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278212 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278215 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278218 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278224 in context 1.
+Oct 15 20:17:20 ubuntu board-live-depth[20183]: Adreno-GSL (20184) <gsl_msm_drm_lookup_ts_map:766>: Looking for unsubmitted timestamp 278227 in context 1.
+Oct 15 20:17:22 ubuntu python3[20171]: ORIGINAL_RESTORED True
+Oct 15 20:17:22 ubuntu systemd[1]: stereo-gpu-live.service: Main process exited, code=exited, status=1/FAILURE
+Oct 15 20:17:22 ubuntu systemd[1]: stereo-gpu-live.service: Failed with result 'exit-code'.
+Oct 15 20:17:22 ubuntu systemd[1]: stereo-gpu-live.service: Consumed 46min 57.098s CPU time, 235.3M memory peak, 0B memory swap peak.

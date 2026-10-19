@@ -1,0 +1,18 @@
+{
+  "verify-shifted-reference": {
+    "whole_image_disparity_equal_to_previous": true,
+    "known_12px_shift_passed": true
+  },
+  "verify-shifted-wide": {
+    "whole_image_disparity_equal_to_previous": true,
+    "known_12px_shift_passed": true
+  },
+  "verify-textureless-reference": {
+    "whole_image_disparity_equal_to_previous": true,
+    "textureless_all_invalid_passed": true
+  },
+  "verify-textureless-wide": {
+    "whole_image_disparity_equal_to_previous": true,
+    "textureless_all_invalid_passed": true
+  }
+}

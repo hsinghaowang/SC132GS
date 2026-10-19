@@ -1,0 +1,8 @@
+{
+  "module_sha256": "aca51a31dac8dea9987e8fe746cbbd1734deafabddfaa7fc38a3f81cde44d5da",
+  "source_sha256": "d82813a3dcfdeea47637435ca0d99a8e8dd807ee04ec6e4cee56e31d8ab48b33",
+  "module_srcversion": "E966374A47464C038D0632F",
+  "initrd_sha256": "9485e887823bd5c846b097785c6032f1d065788a0af8db54fb19bcd19dbc600c",
+  "envelope_ns": 200000,
+  "release_overrun_ns": 25000
+}

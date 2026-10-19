@@ -1,0 +1,1 @@
+{"imu_received":1777,"left_received":180,"right_received":180,"pairs_received":180,"poses":96,"first_initialized_camera_ns":1413393890105760512,"imu_queue_depth":100,"error_code":0,"subscriber_threading":false,"publisher_threading":false,"executor":"SingleThreadedExecutor","stock_subscriber_main":false}

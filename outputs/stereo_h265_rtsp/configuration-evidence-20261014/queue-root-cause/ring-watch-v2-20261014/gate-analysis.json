@@ -1,0 +1,6 @@
+{
+  "irq_samples": 23847,
+  "would_drop_completed_buffers": 0,
+  "events": [],
+  "scope": "retained instrumented hardware window only; no evidence of the overnight trigger"
+}

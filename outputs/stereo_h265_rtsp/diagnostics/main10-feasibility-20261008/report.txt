@@ -1,0 +1,15 @@
+SC132GS Main10 feasibility check — 2026-10-08 (Asia/Taipei)
+Board: ubuntu@192.168.137.226; kernel 6.8.0-1084-qcom.
+Encoder: /dev/video33, msm_vidc_encoder; GStreamer 1.24.2.
+
+Findings:
+1. Default encoder session is H.264 and enumerates only Q08C/NV12/NV21.
+2. Setting HEVC capture format reveals Q10C and P010 inputs and Main 10 profile menu.
+3. GStreamer v4l2h265enc factory sink template lists only NV12_Q08C/NV12/NV21 and rejects P010_10LE before streaming. Default-session probing is a suspected cause, not yet established by source inspection.
+4. Direct v4l2-ctl P010 S_FMT succeeds. Two streaming probes fail at DQBUF with EINVAL; output files are empty. No hardware Main10 bitstream was proven. v4l2-ctl reports exit 0 despite the ioctl failures.
+5. Software x265enc: 8 synthetic 320x240 I420_10LE frames encode as main-10, parser reports luma/chroma depth 10, avdec_h265 outputs I420_10LE and reaches EOS. This is a component test, not camera/VLC or full-resolution throughput proof.
+6. Existing RTSP service exited during checks. Relationship to concurrent encoder tests has not been established. Restarted sc132gs-camera-rtsp.service; final original 60 FPS, downscale=1, brightness=40, auto-exposure=off process observed. RTSP/TCP software decode produced existing-stream.png (1342222 bytes). Camera profile was not edited.
+
+Conclusion:
+10-bit hardware input and Main10 profile are exposed by current HEVC driver mode, but actual hardware Main10 encoding remains unverified. Do not declare the SoC incapable or claim end-to-end 10-bit VLC output. Further work should isolate encoder tests from the camera service, select HEVC before probing raw formats, configure matching layouts/profile, and inspect the resulting bitstream and decoded pixel values.
+

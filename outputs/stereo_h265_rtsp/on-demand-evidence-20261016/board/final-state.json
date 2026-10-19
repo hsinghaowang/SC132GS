@@ -1,0 +1,179 @@
+{
+  "passed": true,
+  "idle_cpu_core_percent": 0.1,
+  "checks": {
+    "system_plugin_package_unchanged": true,
+    "no_video_mappings": true,
+    "firewall_restored": true,
+    "service_active": true,
+    "single_owner": true,
+    "no_video_fds": true,
+    "vpu_instances_zero": true,
+    "sensor_suspend": true,
+    "fsync_stopped": true,
+    "fsync_healthy": true,
+    "idle_no_pulses": true,
+    "private_plugin": true,
+    "protected_files": true,
+    "ae_preferences": true,
+    "ae_healthy": true,
+    "same_process_across_lifecycle": true,
+    "pc_decode": true,
+    "lifecycle": true
+  },
+  "state": {
+    "processes": [
+      {
+        "pid": 101106,
+        "binary_sha256": "894901567e576737347466619f7a469b2c45b1354929af3e02493b1c3d13c77e",
+        "video_fds": [],
+        "fd_count": 10,
+        "video_maps": [],
+        "cpu_ticks": 35442,
+        "rss_kb": 428276,
+        "private_plugin_loaded": true
+      }
+    ],
+    "sync": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "0",
+      "startup_dropped": "2",
+      "startup_end0": "0",
+      "startup_end1": "0",
+      "node0": "4294967295",
+      "node1": "4294967295",
+      "mode": "2",
+      "running": "0",
+      "session": "115",
+      "pulses": "724",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "vpu_instances": [],
+    "power": [
+      "suspended",
+      "suspended"
+    ]
+  },
+  "idle_before": {
+    "processes": [
+      {
+        "pid": 101106,
+        "binary_sha256": "894901567e576737347466619f7a469b2c45b1354929af3e02493b1c3d13c77e",
+        "video_fds": [],
+        "fd_count": 10,
+        "video_maps": [],
+        "cpu_ticks": 35441,
+        "rss_kb": 428276,
+        "private_plugin_loaded": true
+      }
+    ],
+    "sync": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "0",
+      "startup_dropped": "2",
+      "startup_end0": "0",
+      "startup_end1": "0",
+      "node0": "4294967295",
+      "node1": "4294967295",
+      "mode": "2",
+      "running": "0",
+      "session": "115",
+      "pulses": "724",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "vpu_instances": [],
+    "power": [
+      "suspended",
+      "suspended"
+    ]
+  },
+  "idle_duration_seconds": 10,
+  "ae": {
+    "mode": "auto",
+    "camera_mode": "linear",
+    "hdr_enabled": "0",
+    "hdr_ratio": "0",
+    "hdr_second_ticks": "0",
+    "shadow_metric": "sensor_signal_median",
+    "shadow_sample_percent": "100",
+    "effective_target_bp": "1000",
+    "saturation_scope": "full_raw_frame",
+    "highlight_sample_percent": "100",
+    "near_saturation_raw10": "1008",
+    "cam0_saturation_bp": "169",
+    "cam1_saturation_bp": "210",
+    "saturation_limit_bp": "50",
+    "highlight_limited": "1",
+    "linear_constraint": "highlight_tradeoff",
+    "command_generation": "6",
+    "last_command_input_sequence": "22",
+    "command_sequence_valid": "1",
+    "control_effect_frame_validated": "0",
+    "remaining_holdoff_pairs": "0",
+    "linear_effective_target_luma10": "99",
+    "linear_highlight_darkening_ev_x100": "4",
+    "linear_small_highlight_limit_bp": "1000",
+    "linear_max_small_highlight_ev_x100": "25",
+    "linear_max_large_highlight_ev_x100": "200",
+    "exposure_kind": "linear_rows",
+    "display_gamma_x100": "100",
+    "display_black_raw10": "0",
+    "signal_black_raw10": "37",
+    "signal_target_luma10": "102",
+    "target_kind": "sensor_signal_percent",
+    "hdr_target_raw10": "0",
+    "cam0_shadow_raw10": "0",
+    "cam1_shadow_raw10": "0",
+    "target_percent": "10",
+    "cam0_percent": "9",
+    "cam1_percent": "10",
+    "exposure_lines": "871",
+    "gain_index": "0",
+    "fps_x10": "299",
+    "max_exposure_lines": "1377",
+    "brightness_limited": "1",
+    "error_errno": "0",
+    "max_exposure_us": "0",
+    "max_gain_index": "128"
+  },
+  "protected": {
+    "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh": true,
+    "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": true,
+    "/var/lib/sc132gs-camera/settings.yaml": true,
+    "/var/lib/sc132gs-camera/settings.json": true
+  },
+  "source_sha256": {
+    "StereoRtspServer.cpp": "474326243cb40cdf0cf12b1a860772496d46fdc7c39cf29903cc719bc35676c4",
+    "DepthRtspEndpoint.hpp": "7302c7fcb96ea3c2c367ae68446086ecfefa3d085cf568aae97f74c5722fafe5",
+    "DepthPipeline.cpp": "5d72c10b6cc9a3bcf88783018ecec4efc1342583bb0f474bb0bdc23eb6bc4520",
+    "CMakeLists.txt": "2a6ad0de80e3947f14fa201e208eaf9f55175050feb7d422e0bae604bd39fa14"
+  },
+  "deployment": {
+    "drop_sha256": "6674db59514db3cd3bebbd2eeb620ceba380f2038082f200e9aca26681f0e6b5",
+    "binary_sha256": "894901567e576737347466619f7a469b2c45b1354929af3e02493b1c3d13c77e",
+    "plugin": {
+      "plugin": "/home/ubuntu/rtsp-demand-20261016/plugin-build/sys/v4l2/libgstvideo4linux2.so",
+      "sha256": "198728c1276a3382734bd65f457042b3f25a6af96251667cdc29f90b3465d07c",
+      "patch_sha256": "136cacfc69451e718c21e1c9a0a1c6fec24fcb2eb32d8a74252117e1ae7b81ce"
+    },
+    "profile_sha256": "9158dc17d42e9bddcf40bc730610209fcf82c737babac795d7a1b487c8ede5dc"
+  },
+  "lifecycle_case_count": 43,
+  "rollback_timer_disarmed": true
+}

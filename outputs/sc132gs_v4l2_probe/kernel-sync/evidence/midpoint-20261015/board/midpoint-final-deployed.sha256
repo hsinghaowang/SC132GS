@@ -1,0 +1,6 @@
+37b0ccdf0ce580c78ddac4ec78b8d6df6e3430801a603932162b2e9abb8e5ca9  /lib/modules/6.8.0-1084-qcom/updates/sc132gs-csid-monitor/qcom-camss.ko
+b398e0b2444ba17e884c4a98085f638dc87f10ac03ba942e805fb62d82d96c3e  /boot/initrd.img-6.8.0-1084-qcom
+00f815f9c774ae6f6c390067f4c11802624a8847baaefeb760e2d19c7c84bc7a  /etc/modprobe.d/sc132gs-csid-monitor.conf
+4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd  /var/lib/sc132gs-camera/settings.yaml
+0ac5ba25cde49543a3a15db24325963f27182fbb32952edf710157d1517f2279  /home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp
+d22a1f17d9e97cbb22b1a1428bea74e8b22c5c81d43962c5a486dbc96da1808f  /home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh

@@ -1,5 +1,9 @@
 #pragma once
 
+#include "CaptureMode.hpp"
+#include "sc132gs-ae-statistics.hpp"
+#include "sc132gs-linear-ae-policy.hpp"
+
 #include <cstdint>
 #include <memory>
 #include <stop_token>
@@ -17,13 +21,20 @@ struct FramePair {
     std::vector<std::uint8_t> right_luma;
     std::vector<std::uint16_t> left_luma10;
     std::vector<std::uint16_t> right_luma10;
+    sc132gs::hdr_ae::Statistics left_hdr;
+    sc132gs::hdr_ae::Statistics right_hdr;
+    sc132gs::linear_ae::HighlightStatistics left_highlights;
+    sc132gs::linear_ae::HighlightStatistics right_highlights;
 };
 
-// Internal capture adapter. Only constructed on the capture thread.
+// Internal adapter: one producer owns both device queues and moves owning
+// frames through a single-slot handoff. next() has one consumer; destruction
+// cancels/wakes/joins the producer before either V4L2 device is released.
 class StereoCapture final {
 public:
     StereoCapture(const std::string& cam0, const std::string& cam1, int scale,
                   int frame_rate, bool hdr_display = false,
+                  CaptureMode mode = CaptureMode::external_trigger,
                   bool tenbit = false);
     ~StereoCapture();
     StereoCapture(const StereoCapture&) = delete;

@@ -1,0 +1,27 @@
+{
+  "exit_code": 0,
+  "elapsed_wrapper_s": 91.09910207099983,
+  "cpu_user_s": 107.295034,
+  "cpu_system_s": 53.384633,
+  "average_cpu_percent": 176.37897997586322,
+  "peak_rss_mib": 83.76171875,
+  "affinity_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "command": [
+    "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+    "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+    "/ws/slam_benchmark/datasets/V2_02_medium/mav0",
+    "/ws/slam_benchmark/results/V2_02_medium-unpaced-1",
+    "0",
+    "0"
+  ],
+  "thermal_units": "raw sysfs values; platform units vary by zone"
+}

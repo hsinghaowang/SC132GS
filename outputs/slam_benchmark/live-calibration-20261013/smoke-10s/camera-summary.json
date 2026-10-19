@@ -1,0 +1,1 @@
+{"error_code":0,"errno":0,"captured":[305,297],"saved":[51,50],"driver_sequence_gaps":[0,0],"maximum_storage_queue":1,"select_every_frames":6,"timestamp_scope":"V4L2 receiver and dequeue CLOCK_MONOTONIC; not exposure start"}

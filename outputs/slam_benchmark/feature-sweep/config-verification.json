@@ -1,0 +1,17 @@
+[
+  {
+    "config": "outputs\\slam_benchmark\\feature-sweep\\configs\\100",
+    "num_pts": 100,
+    "only_num_pts_changed": true
+  },
+  {
+    "config": "outputs\\slam_benchmark\\feature-sweep\\configs\\150",
+    "num_pts": 150,
+    "only_num_pts_changed": true
+  },
+  {
+    "config": "outputs\\slam_benchmark\\feature-sweep\\configs\\200",
+    "num_pts": 200,
+    "only_num_pts_changed": true
+  }
+]

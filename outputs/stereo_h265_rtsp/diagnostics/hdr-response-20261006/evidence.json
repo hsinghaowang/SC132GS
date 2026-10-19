@@ -1,0 +1,596 @@
+{
+  "initial_mode": {
+    "camera_mode": "linear",
+    "fps": "60",
+    "running": "1"
+  },
+  "initial_status": {
+    "mode": "auto",
+    "camera_mode": "linear",
+    "hdr_enabled": "0",
+    "target_percent": "40",
+    "cam0_percent": "40",
+    "cam1_percent": "42",
+    "exposure_lines": "1330",
+    "gain_index": "46",
+    "fps_x10": "599",
+    "max_exposure_lines": "1330",
+    "brightness_limited": "0",
+    "error_errno": "0"
+  },
+  "conditions": [
+    {
+      "label": "gain57-r2p74",
+      "total": 23872,
+      "second": 8704,
+      "gain_index": 57,
+      "hdr_bit": true,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            35,
+            61
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T11:00:02.642095+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "d18602b6db0a3ad28f337cd96a5c98fadb94c98b25ea060f15314661663fa2bb"
+      },
+      "status": {
+        "mode": "off",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "38",
+        "cam1_percent": "39",
+        "exposure_lines": "373",
+        "gain_index": "57",
+        "fps_x10": "300",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      }
+    },
+    {
+      "label": "gain0-r2p74",
+      "total": 23872,
+      "second": 8704,
+      "gain_index": 0,
+      "hdr_bit": true,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 8704,
+          "hdrc_ratio": 162,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T11:00:06.388333+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "9e2e1b8f7ce0a65e9348a75585a5796e8df70452375344bbd6077afd7ccd4fcc"
+      },
+      "status": {
+        "mode": "off",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "14",
+        "cam1_percent": "14",
+        "exposure_lines": "373",
+        "gain_index": "0",
+        "fps_x10": "300",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      }
+    },
+    {
+      "label": "gain0-r4",
+      "total": 23872,
+      "second": 5968,
+      "gain_index": 0,
+      "hdr_bit": true,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 5968,
+          "hdrc_ratio": 191,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 5968,
+          "hdrc_ratio": 191,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T11:00:10.114118+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "70a256b660047f5d9588f2037092797d7a64e626a78fc2d0252606a864b32db2"
+      },
+      "status": {
+        "mode": "off",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "14",
+        "cam1_percent": "14",
+        "exposure_lines": "373",
+        "gain_index": "0",
+        "fps_x10": "300",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      }
+    },
+    {
+      "label": "gain0-r8",
+      "total": 23872,
+      "second": 2984,
+      "gain_index": 0,
+      "hdr_bit": true,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 2984,
+          "hdrc_ratio": 223,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 2984,
+          "hdrc_ratio": 223,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T11:00:13.854606+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "f8128c7600529812df636ba2a5cc8c4bc224dc9c1424ab80f7dbb1d4242dd7aa"
+      },
+      "status": {
+        "mode": "off",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "14",
+        "cam1_percent": "14",
+        "exposure_lines": "373",
+        "gain_index": "0",
+        "fps_x10": "300",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      }
+    },
+    {
+      "label": "gain0-r16",
+      "total": 23872,
+      "second": 1492,
+      "gain_index": 0,
+      "hdr_bit": true,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 1492,
+          "hdrc_ratio": 239,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 1492,
+          "hdrc_ratio": 239,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T11:00:17.581657+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "a75941b897e872fb558c08bfe3799aec8210d8aef685c527a190c325d8b82b6b"
+      },
+      "status": {
+        "mode": "off",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "14",
+        "cam1_percent": "14",
+        "exposure_lines": "373",
+        "gain_index": "0",
+        "fps_x10": "300",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      }
+    },
+    {
+      "label": "gain0-r64",
+      "total": 23872,
+      "second": 373,
+      "gain_index": 0,
+      "hdr_bit": true,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 373,
+          "hdrc_ratio": 251,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 373,
+          "hdrc_ratio": 251,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T11:00:21.319811+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "bf102e5263fd40d6e1724c661a025ea530aaaa32c2b482763cbdac9dc72ac8af"
+      },
+      "status": {
+        "mode": "off",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "14",
+        "cam1_percent": "14",
+        "exposure_lines": "373",
+        "gain_index": "0",
+        "fps_x10": "300",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      }
+    },
+    {
+      "label": "gain0-r256",
+      "total": 23872,
+      "second": 93,
+      "gain_index": 0,
+      "hdr_bit": true,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 93,
+          "hdrc_ratio": 254,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        },
+        {
+          "total": 23872,
+          "second": 93,
+          "hdrc_ratio": 254,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 195,
+          "hdrc_enable": 1
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T11:00:25.081335+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "665600a06c701a11888d84d0757fe6213734d3e24543fbed5f902356f13cc277"
+      },
+      "status": {
+        "mode": "off",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "14",
+        "cam1_percent": "14",
+        "exposure_lines": "373",
+        "gain_index": "0",
+        "fps_x10": "299",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      }
+    },
+    {
+      "label": "gain0-hdr-off",
+      "total": 23872,
+      "second": 373,
+      "gain_index": 0,
+      "hdr_bit": false,
+      "registers": [
+        {
+          "total": 23872,
+          "second": 373,
+          "hdrc_ratio": 251,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 131,
+          "hdrc_enable": 0
+        },
+        {
+          "total": 23872,
+          "second": 373,
+          "hdrc_ratio": 251,
+          "gain_mode": 11,
+          "long_gain": [
+            0,
+            128,
+            3,
+            32
+          ],
+          "short_gain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hdr_mode": 131,
+          "hdrc_enable": 0
+        }
+      ],
+      "rtsp": {
+        "timestamp_utc": "2026-10-06T11:00:28.776957+00:00",
+        "width": 2176,
+        "height": 1280,
+        "decoded_frames": 30,
+        "sha256": "03e757f9e74f51073dfdc754f7002285d0fa57da70a7699bb01a2ab71434eefe"
+      },
+      "status": {
+        "mode": "off",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "13",
+        "cam1_percent": "13",
+        "exposure_lines": "373",
+        "gain_index": "0",
+        "fps_x10": "299",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      }
+    }
+  ],
+  "restore": "camera_mode phase=inspecting\ncamera_mode phase=stopping\ncamera_mode phase=configuring\ncamera_mode phase=starting\ncamera_mode phase=verifying\ncamera_mode phase=persisting\ncamera_mode phase=ready\nok camera_mode=linear fps=60 running=1",
+  "final_mode": {
+    "camera_mode": "linear",
+    "fps": "60",
+    "running": "1"
+  },
+  "restored_rtsp": {
+    "timestamp_utc": "2026-10-06T11:00:40.577762+00:00",
+    "width": 2176,
+    "height": 1280,
+    "decoded_frames": 30,
+    "sha256": "f69a6a43c8ddc54f9e8745697a4e62e669098dcbd59e366f700012a4426f05a8"
+  }
+}

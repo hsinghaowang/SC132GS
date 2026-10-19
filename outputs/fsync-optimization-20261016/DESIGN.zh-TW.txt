@@ -1,0 +1,38 @@
+RAW/FSYNC 擷取優化與診斷
+
+責任與 ownership
+- BayerLuma 保留原 PIMPL 與原有 unpack scratch，不新增整張 RAW 備份。
+- unpack() 對 packed RAW10 單次解包，同時計算完整原生解析度的 highlight count。
+- Device 在 unpack 完成後立即 QBUF；statistics/render/median 改讀自己的 scratch。
+- BufferLease 的例外路徑嘗試歸還一次；顯式 QBUF 失敗記錄 errno，不重複歸還。
+- StereoCapture 的 producer 擁有 V4L2 操作，經單一有界 slot 將 FramePair 的 vector ownership move 給 consumer。
+- handoff 不覆蓋/靜默丟棄同步幀；consumer 慢時會有 backpressure，記錄 handoff_wait。
+- 取消會同時喚醒 producer/consumer，先 join producer，再銷毀 Device/映射。
+- V4L2 request.count 維持 8，記錄實際分配數量。
+
+分層
+RAW 解包/SIMD 不依賴 AE、RTSP、V4L2。
+Linux Device/同步擷取仍位於共用 gs130wi_capture library 的實作來源；公開 C++17 Capture API 不變。
+RTSP 只增加後處理階段計時，透過同一 library 取得影像。ROS/其他原生 consumer 重建連結該 library 後可取得同樣的底層改動；本次 runtime 驗證是 RTSP，不宣稱 ROS runtime 已驗證。
+
+SIMD
+AArch64 NEON TBL 每次解出 16 個 RAW10 pixels；兩次 overlapping load 僅讀 20 bytes。
+解包同時計算 >=1008 的 highlight count，保留 scalar tail 與非 ARM fallback。
+原有 10-bit NEON grayscale 保留；STEREO_FORCE_SCALAR 可離線驗證。
+HDR CFA grid 與 full RAW highlight denominator 不變。
+
+診斷
+SC132GS_CAPTURE_TRACE_DIR 指定存在且可寫入的目錄，預設 /tmp。
+API 保存最近 4096 筆事件與整段執行的 count/total/max；hot path 不逐幀寫檔。
+每 5 秒 capture_timing 輸出 buffer 持有時間與 handoff wait。
+RTSP processing_timing 輸出校正、AE、tone、depth submit、encoder submit 的累計 mean/max。
+錯誤時先 QUERYBUF 保存兩眼每個 buffer 的旗標，dump trace 及 fsync_control，再把 exception 傳回 consumer。
+正常銷毀也保存 trace；不要把 application_held 當成 driver DONE queue 數量。
+buffer_snapshot 是非原子的瞬間讀值，不可單靠它還原故障前的所有 queue 狀態。
+analyze_capture_trace.py 可計算保留窗口的 DQBUF->QBUF、階段 p95/max，並列出 syscall errors 與 flags。
+
+限制
+這次不用更大的 V4L2 queue，不改 kernel 同步/時間戳/相機模式。
+未移除原有必要的格式轉換、stereo composition 或 depth submit 的既有複製。
+平均處理速度持續低於輸入時，單槽 handoff 仍會阻塞；此改動不能消除算力不足。
+新版本短時不再發生 error=9 只代表 bounded runtime 結果，不足以證明所有舊故障的唯一原因或長期可靠性。

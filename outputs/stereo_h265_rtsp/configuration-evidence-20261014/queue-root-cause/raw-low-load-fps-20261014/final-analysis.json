@@ -1,0 +1,29 @@
+{
+  "eyes": {
+    "0": {
+      "frames": 17374,
+      "duration_s": 604.743292,
+      "fps": 28.72789203257504,
+      "gaps": 0,
+      "monotonic": true,
+      "invalid": 0
+    },
+    "1": {
+      "frames": 17366,
+      "duration_s": 604.464954,
+      "fps": 28.72788552105206,
+      "gaps": 0,
+      "monotonic": true,
+      "invalid": 0
+    }
+  },
+  "passed": false,
+  "identity_errors": 0,
+  "exact_pairs": 17366,
+  "unpaired": [
+    8,
+    0
+  ],
+  "maximum_pair_delta_ns": 0,
+  "internal_unpaired": 0
+}

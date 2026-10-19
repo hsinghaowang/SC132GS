@@ -1,0 +1,11 @@
+{
+  "start_unix_ns": 1791859781926130185,
+  "finish_unix_ns": 1791859795213034176,
+  "returncode": 1,
+  "durable_sha256_before": "9658bad46876f87d7ae7970f936ed8eb17bdf8da4b065a4e514b92ad62ac3299",
+  "durable_sha256_after": "9658bad46876f87d7ae7970f936ed8eb17bdf8da4b065a4e514b92ad62ac3299",
+  "platform_sha256": "da6d35547a68b2915d731a7a36c0489e9b192c0c327b12a86940377d3f6d9a0c",
+  "status_returncode": 1,
+  "service_state": "failed",
+  "durable_unchanged": true
+}

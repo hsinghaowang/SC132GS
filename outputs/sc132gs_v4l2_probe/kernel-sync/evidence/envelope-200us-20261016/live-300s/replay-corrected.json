@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "partial_trace_only": true,
+  "errors": {},
+  "pulse_envelope_ns": 200000,
+  "release_overrun_ns": 25000,
+  "examples": [],
+  "trace": {
+    "events": 98182,
+    "kinds": {
+      "1": 9819,
+      "9": 9819,
+      "8": 19636,
+      "2": 19636,
+      "7": 19636,
+      "3": 19636
+    },
+    "first_serial": 3409,
+    "last_serial": 101590,
+    "eyes": {
+      "0": {
+        "frames": 9818,
+        "first_trigger": 369,
+        "last_trigger": 10186,
+        "duration_s": 327.233329174,
+        "fps": 30.000000381318127
+      },
+      "1": {
+        "frames": 9818,
+        "first_trigger": 369,
+        "last_trigger": 10186,
+        "duration_s": 327.233328132,
+        "fps": 30.000000476846296
+      }
+    },
+    "common_trigger_interval_frames": 9818,
+    "leading_boundary_records": {},
+    "ranges": {
+      "low_gpio_ns": {
+        "count": 9819,
+        "minimum": 1875,
+        "maximum": 51719
+      },
+      "high_release_overrun_ns": {
+        "count": 9819,
+        "minimum": 1769,
+        "maximum": 8744
+      },
+      "pulse_outer_ns": {
+        "count": 9819,
+        "minimum": 103801,
+        "maximum": 155105
+      },
+      "low_spacing_ns": {
+        "count": 9818,
+        "minimum": 33238877,
+        "maximum": 33379183
+      },
+      "high_spacing_ns": {
+        "count": 9818,
+        "minimum": 33251325,
+        "maximum": 33403021
+      },
+      "sof_delay_ns": {
+        "count": 19636,
+        "minimum": 16735616,
+        "maximum": 16790001
+      },
+      "readout_ns": {
+        "count": 19636,
+        "minimum": 15384635,
+        "maximum": 15384739
+      },
+      "frame_budget_ns": {
+        "count": 19636,
+        "minimum": 32370303,
+        "maximum": 32424740
+      },
+      "dma_after_sof_ns": {
+        "count": 19636,
+        "minimum": 15397279,
+        "maximum": 16450208
+      }
+    },
+    "possible_epoch_interval_ns": [
+      32624474458,
+      32624885325
+    ]
+  },
+  "monitor": null,
+  "event_sha256": "540191bec8a00ce8159236da3f3fff5dc419c06ca3bcf63e0449ba31c9060366",
+  "scope": "Host GPIO brackets, hardware SOF/DMA identity, continuous process and complete log windows. No electrical edge, exposure-start, raw DQBUF, or frame-to-IMU association proof."
+}

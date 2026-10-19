@@ -1,0 +1,8 @@
+libopencv-dev
+libceres-dev
+libboost-system-dev
+libboost-filesystem-dev
+libboost-thread-dev
+libboost-date-time-dev
+ros-humble-cv-bridge
+ros-humble-image-transport

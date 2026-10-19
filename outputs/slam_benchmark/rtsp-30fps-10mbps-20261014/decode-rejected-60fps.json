@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "decoded_frames": 482,
+  "pts_fps": 60.00141375472464,
+  "width": 2176,
+  "height": 1280,
+  "format": "yuv420p10le",
+  "observation_pts_seconds": 8.016477777777778,
+  "wall_seconds": 8.561999999976251,
+  "configured_target_bitrate_bits_per_second": 10000000
+}

@@ -1,0 +1,37 @@
+{
+  "loaded_srcversion": "C243ABE8CAC3FA872B2A08C",
+  "expected_srcversion": "C243ABE8CAC3FA872B2A08C",
+  "persistent_files": {
+    "/etc/modprobe.d/sc132gs-csid-monitor.conf": {
+      "expected": "d0592b112d775bd8078d4cb243e802d82f60ff263ff38e2f5e7ccf4a520c65bc",
+      "actual": "d0592b112d775bd8078d4cb243e802d82f60ff263ff38e2f5e7ccf4a520c65bc",
+      "match": true
+    },
+    "/var/lib/sc132gs-camera/settings.json": {
+      "expected": "9daf563ddd04efeef09807561775d060b83a3cc032bf821ea18362399be661a7",
+      "actual": "9daf563ddd04efeef09807561775d060b83a3cc032bf821ea18362399be661a7",
+      "match": true
+    },
+    "/var/lib/sc132gs-camera/settings.yaml": {
+      "expected": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd",
+      "actual": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd",
+      "match": true
+    },
+    "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": {
+      "expected": "bce3ba5017f04f27a10a791a4b66f22e49774110ea376ee40ed8a22c16b16ea8",
+      "actual": "bce3ba5017f04f27a10a791a4b66f22e49774110ea376ee40ed8a22c16b16ea8",
+      "match": true
+    },
+    "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh": {
+      "expected": "25e2d7d6ec17ef05e8b315fb7ac2ea4227d225566e462cf3f070a89c0563f247",
+      "actual": "25e2d7d6ec17ef05e8b315fb7ac2ea4227d225566e462cf3f070a89c0563f247",
+      "match": true
+    },
+    "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": {
+      "expected": "d22a1f17d9e97cbb22b1a1428bea74e8b22c5c81d43962c5a486dbc96da1808f",
+      "actual": "d22a1f17d9e97cbb22b1a1428bea74e8b22c5c81d43962c5a486dbc96da1808f",
+      "match": true
+    }
+  },
+  "passed": true
+}

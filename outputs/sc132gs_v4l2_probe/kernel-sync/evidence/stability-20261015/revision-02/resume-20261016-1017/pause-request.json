@@ -1,0 +1,69 @@
+{
+  "before": {
+    "sc132gs-stability-long-20261015.service": {
+      "MainPID": "25219",
+      "Id": "sc132gs-stability-long-20261015.service",
+      "ActiveState": "active",
+      "InvocationID": "b5c57f1376fe4892b0f7f238e2864f5a"
+    },
+    "sc132gs-stability-resources-20261015.service": {
+      "MainPID": "25251",
+      "Id": "sc132gs-stability-resources-20261015.service",
+      "ActiveState": "active",
+      "InvocationID": "139962de60f34136b3ef3efecf4b74b8"
+    }
+  },
+  "after": {
+    "sc132gs-stability-long-20261015.service": {
+      "MainPID": "0",
+      "Id": "sc132gs-stability-long-20261015.service",
+      "ActiveState": "failed",
+      "InvocationID": "b5c57f1376fe4892b0f7f238e2864f5a"
+    },
+    "sc132gs-stability-resources-20261015.service": {
+      "MainPID": "0",
+      "Id": "sc132gs-stability-resources-20261015.service",
+      "ActiveState": "inactive",
+      "InvocationID": ""
+    }
+  },
+  "normal_rtsp": {
+    "MainPID": "22467",
+    "Id": "sc132gs-camera-rtsp.service",
+    "ActiveState": "active",
+    "InvocationID": "1bb26e29852e4e5694291c27d9723115"
+  },
+  "result": {
+    "passed": false,
+    "failure": "monitor interrupted",
+    "elapsed_s": 232.07845791,
+    "requested_seconds": 7200,
+    "samples": 44,
+    "first_pairs": 1512985,
+    "last_pairs": 1519762,
+    "events_lost": 0,
+    "imu": {
+      "status": "ok",
+      "mode": "gpio_irq",
+      "samples": 46690,
+      "valid": 46690,
+      "wraps": 3340,
+      "min_sensor_delta_ns": 4999466,
+      "max_sensor_delta_ns": 5000534,
+      "sensor_rate_hz": 200,
+      "host_observed_rate_hz": 202.517,
+      "max_fifo_bytes": 224,
+      "fsync_enabled": true,
+      "fsync_samples": 7080,
+      "fsync_offset_min_ns": 3200,
+      "fsync_offset_max_ns": 5002666,
+      "restored": true,
+      "host_sample_time_validated": false,
+      "frame_association_validated": false
+    },
+    "scope": "bounded original RTSP + IMU continuous run; independent event/CSV replay still required"
+  },
+  "register_snapshots_equal": true,
+  "control": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=23 pulses=1520031 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+  "remaining_imu_clients": ""
+}

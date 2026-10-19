@@ -1,0 +1,11 @@
+{
+  "installed": "/lib/modules/6.8.0-1084-qcom/kernel/drivers/media/platform/qcom/camss/qcom-camss.ko.zst",
+  "disk_srcversion": "6836E35C0AA1F2FCD21FCBD",
+  "loaded_srcversion": "6836E35C0AA1F2FCD21FCBD",
+  "functions": {
+    "vfe_isr_wm_done": [
+      "23a50:\t94000000 \tbl\t0 <ktime_get>",
+      "23a50: R_AARCH64_CALL26\tktime_get"
+    ]
+  }
+}

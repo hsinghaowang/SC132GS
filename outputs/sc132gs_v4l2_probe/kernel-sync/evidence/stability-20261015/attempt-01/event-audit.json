@@ -1,0 +1,233 @@
+{
+  "passed": false,
+  "partial_trace_only": false,
+  "errors": {
+    "low_gpio_duration": 1,
+    "trace_error": 4,
+    "fault_or_skipped_pulse": 1,
+    "completed_monitor_duration": 1,
+    "same_camera_process": 1,
+    "healthy_sample": 1,
+    "camera_progress_every_sample": 1,
+    "continuous_sample_coverage": 1,
+    "healthy_final_control": 1,
+    "whole_log_coverage": 1,
+    "trace_duration": 1
+  },
+  "examples": [
+    {
+      "check": "low_gpio_duration",
+      "detail": 2187011
+    },
+    {
+      "check": "trace_error",
+      "detail": [
+        2187012,
+        1,
+        9,
+        2,
+        7322783003699,
+        218712,
+        7322783006355,
+        7322783003600,
+        0,
+        14
+      ]
+    },
+    {
+      "check": "trace_error",
+      "detail": [
+        2187013,
+        1,
+        4,
+        2,
+        7322783161918,
+        0,
+        0,
+        0,
+        0,
+        14
+      ]
+    },
+    {
+      "check": "fault_or_skipped_pulse",
+      "detail": [
+        2187013,
+        1,
+        4,
+        2,
+        7322783161918,
+        0,
+        0,
+        0,
+        0,
+        14
+      ]
+    },
+    {
+      "check": "trace_error",
+      "detail": [
+        2187019,
+        1,
+        3,
+        0,
+        7322815045530,
+        218712,
+        140999507170,
+        7322799639415,
+        218700,
+        14
+      ]
+    },
+    {
+      "check": "trace_error",
+      "detail": [
+        2187021,
+        1,
+        3,
+        1,
+        7322815280100,
+        218712,
+        140999507192,
+        7322799639717,
+        218696,
+        14
+      ]
+    },
+    {
+      "check": "completed_monitor_duration",
+      "detail": "camera owner stopped or restarted"
+    },
+    {
+      "check": "same_camera_process",
+      "detail": 1336
+    },
+    {
+      "check": "healthy_sample",
+      "detail": 1336
+    },
+    {
+      "check": "camera_progress_every_sample",
+      "detail": 1336
+    },
+    {
+      "check": "continuous_sample_coverage",
+      "detail": 7071.073502847999
+    },
+    {
+      "check": "healthy_final_control",
+      "detail": null
+    },
+    {
+      "check": "whole_log_coverage",
+      "detail": 7066.133366877609
+    },
+    {
+      "check": "trace_duration",
+      "detail": null
+    }
+  ],
+  "trace": {
+    "events": 2128639,
+    "kinds": {
+      "8": 425727,
+      "2": 425727,
+      "7": 425728,
+      "3": 425728,
+      "1": 212863,
+      "9": 212863,
+      "4": 1,
+      "6": 2
+    },
+    "first_serial": 58385,
+    "last_serial": 2187023,
+    "eyes": {
+      "0": {
+        "frames": 212864,
+        "first_trigger": 5849,
+        "last_trigger": 218712,
+        "duration_s": 7095.433305952,
+        "fps": 30.000000115770234
+      },
+      "1": {
+        "frames": 212864,
+        "first_trigger": 5849,
+        "last_trigger": 218712,
+        "duration_s": 7095.433305264,
+        "fps": 30.00000011867915
+      }
+    },
+    "common_trigger_interval_frames": 212864,
+    "leading_boundary_records": {
+      "dma_before_first_sof": 1,
+      "before_first_pulse": 3
+    },
+    "ranges": {
+      "low_gpio_ns": {
+        "count": 212863,
+        "minimum": 1667,
+        "maximum": 33227
+      },
+      "high_release_overrun_ns": {
+        "count": 212863,
+        "minimum": 1719,
+        "maximum": 16297
+      },
+      "pulse_outer_ns": {
+        "count": 212863,
+        "minimum": 103539,
+        "maximum": 135982
+      },
+      "low_spacing_ns": {
+        "count": 212862,
+        "minimum": 32974219,
+        "maximum": 33681410
+      },
+      "high_spacing_ns": {
+        "count": 212862,
+        "minimum": 32980313,
+        "maximum": 33685056
+      },
+      "sof_delay_ns": {
+        "count": 425726,
+        "minimum": 16726552,
+        "maximum": 16769344
+      },
+      "readout_ns": {
+        "count": 425728,
+        "minimum": 15384687,
+        "maximum": 15384791
+      },
+      "frame_budget_ns": {
+        "count": 425726,
+        "minimum": 32361291,
+        "maximum": 32404083
+      },
+      "dma_after_sof_ns": {
+        "count": 425728,
+        "minimum": 15388879,
+        "maximum": 16168369
+      }
+    },
+    "possible_epoch_interval_ns": [
+      32416117196,
+      32416261122
+    ]
+  },
+  "monitor": {
+    "samples": 1336,
+    "duration_s": 7071.073502847999,
+    "service": {
+      "MainPID": "2752",
+      "ExecMainStartTimestampMonotonic": "31895372",
+      "ActiveState": "active"
+    },
+    "complete_log_windows": 1408,
+    "log_duration_s": 7066.133366877609,
+    "capture_fps": 29.99999985758431,
+    "submitted_fps": 29.99999985758431,
+    "encoded_fps": 29.99999953070237
+  },
+  "event_sha256": "30fc6d88d4fdcaceec5fedc7b7766434f7d894a0a258c6de1a84016fd9d79a86",
+  "scope": "Host GPIO brackets, hardware SOF/DMA identity, continuous process and complete log windows. No electrical edge, exposure-start, raw DQBUF, or frame-to-IMU association proof."
+}

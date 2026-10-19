@@ -1,0 +1,383 @@
+{
+  "run": "V2_02_medium-paced-2",
+  "initialized_frames": 2266,
+  "service_initialized_ms": {
+    "mean": 42.83745928420124,
+    "p50": 42.7955415,
+    "p95": 53.2135475,
+    "p99": 58.56907224999998,
+    "max": 80.411839
+  },
+  "lag_initialized_ms": {
+    "mean": 48.75119906231199,
+    "p50": 48.179718025570764,
+    "p95": 61.12013117092647,
+    "p99": 73.2104869913906,
+    "max": 91.8073459999996
+  },
+  "stage_ms": {
+    "tracking": {
+      "mean": 27.925741394527805,
+      "p50": 27.89,
+      "p95": 35.94,
+      "p99": 42.5335,
+      "max": 67.26
+    },
+    "propagation": {
+      "mean": 0.27371138570167697,
+      "p50": 0.25999999999999995,
+      "p95": 0.4375,
+      "p99": 0.62,
+      "max": 0.88
+    },
+    "msckf_update": {
+      "mean": 1.635873786407767,
+      "p50": 1.01,
+      "p95": 5.17,
+      "p99": 8.595499999999989,
+      "max": 17.52
+    },
+    "slam_update": {
+      "mean": 3.4850441306266546,
+      "p50": 3.59,
+      "p95": 5.9175,
+      "p99": 6.5234999999999985,
+      "max": 7.779999999999999
+    },
+    "slam_init": {
+      "mean": 2.0615887025595763,
+      "p50": 1.11,
+      "p95": 7.4375,
+      "p99": 11.900999999999994,
+      "max": 22.58
+    },
+    "retriangulation_marginalization": {
+      "mean": 3.6810767872903796,
+      "p50": 3.52,
+      "p95": 4.6925,
+      "p99": 5.323499999999999,
+      "max": 6.289999999999999
+    }
+  },
+  "stage_share_of_recorded_total_percent": {
+    "tracking": 71.48891668523187,
+    "propagation": 0.7006915294310101,
+    "msckf_update": 4.187779410109986,
+    "slam_update": 8.92159051317241,
+    "slam_init": 5.277594636229671,
+    "retriangulation_marginalization": 9.423427225825053
+  },
+  "read_initialized_ms": {
+    "mean": 3.568532927184466,
+    "p50": 3.570751,
+    "p95": 3.969947,
+    "p99": 5.722858249999997,
+    "max": 9.958199
+  },
+  "estimator_initialized_ms": {
+    "mean": 39.25858269505737,
+    "p50": 39.249771499999994,
+    "p95": 49.61383325,
+    "p99": 54.525118250000006,
+    "max": 77.768491
+  },
+  "outside_internal_timing_ms": {
+    "mean": 0.1934547162400708,
+    "p50": 0.1818445000000004,
+    "p95": 0.27682400000000307,
+    "p99": 0.40740785000000124,
+    "max": 1.6976820000000004
+  },
+  "timing_match_max_offset_ms": 1.9707679748535156,
+  "internal_rows": 2266,
+  "pose_frames_without_internal_timing": 0,
+  "over_50ms_service_frames": 245,
+  "over_50ms_service_percent": 10.812003530450133,
+  "over_100ms_lag_frames": 0,
+  "unaccounted_start_delay_ms": {
+    "mean": 3.7091369922804174,
+    "p50": 5.069886025570032,
+    "p95": 5.352195670934234,
+    "p99": 5.763237868578186,
+    "max": 6.218181051147468
+  },
+  "peak": {
+    "frame": 280,
+    "dataset_time_s": 14.0,
+    "completion_lag_ms": 91.8073459999996,
+    "service_ms": 58.187821,
+    "start_lag_ms": 33.6195249999996,
+    "read_ms": 3.216755,
+    "estimator_ms": 54.961275,
+    "stages_ms": {
+      "tracking": 49.94,
+      "propagation": 0.18000000000000002,
+      "msckf_update": 0.88,
+      "slam_update": 0.16,
+      "slam_init": 0.22,
+      "retriangulation_marginalization": 3.3899999999999997
+    }
+  },
+  "peak_episode": {
+    "first_frame": 276,
+    "peak_frame": 280,
+    "recovered_through_frame": 284,
+    "frames_before_and_at_peak": 5,
+    "service_sum_before_peak_ms": 284.911302,
+    "interframe_budget_before_peak_ms": 200.00004768371582,
+    "stage_sum_before_peak_ms": {
+      "tracking": 237.79000000000002,
+      "propagation": 0.9600000000000001,
+      "msckf_update": 8.66,
+      "slam_update": 0.8300000000000001,
+      "slam_init": 4.14,
+      "retriangulation_marginalization": 17.14
+    },
+    "rows": [
+      {
+        "frame": 276,
+        "dataset_time_s": 13.799999952316284,
+        "read_ms": 2.821307,
+        "imu_ms": 0.008541,
+        "estimator_ms": 45.477825,
+        "service_ms": 48.307673,
+        "start_lag_ms": 5.067543683716643,
+        "completion_lag_ms": 53.375216683716644,
+        "tracking_ms": 38.57,
+        "propagation_ms": 0.18000000000000002,
+        "msckf_update_ms": 1.3699999999999999,
+        "slam_update_ms": 0.25,
+        "slam_init_ms": 1.73,
+        "retriangulation_marginalization_ms": 3.22
+      },
+      {
+        "frame": 277,
+        "dataset_time_s": 13.849999904632568,
+        "read_ms": 2.63413,
+        "imu_ms": 0.009218,
+        "estimator_ms": 77.768491,
+        "service_ms": 80.411839,
+        "start_lag_ms": 5.070329367430858,
+        "completion_lag_ms": 85.48216836743086,
+        "tracking_ms": 67.26,
+        "propagation_ms": 0.19,
+        "msckf_update_ms": 5.31,
+        "slam_update_ms": 0.17,
+        "slam_init_ms": 1.38,
+        "retriangulation_marginalization_ms": 3.18
+      },
+      {
+        "frame": 278,
+        "dataset_time_s": 13.899999856948853,
+        "read_ms": 2.68496,
+        "imu_ms": 0.008437,
+        "estimator_ms": 49.068986,
+        "service_ms": 51.762383,
+        "start_lag_ms": 35.52591205114663,
+        "completion_lag_ms": 87.28829505114663,
+        "tracking_ms": 44.650000000000006,
+        "propagation_ms": 0.19,
+        "msckf_update_ms": 0.37,
+        "slam_update_ms": 0.13999999999999999,
+        "slam_init_ms": 0.43,
+        "retriangulation_marginalization_ms": 3.14
+      },
+      {
+        "frame": 279,
+        "dataset_time_s": 13.949999809265137,
+        "read_ms": 2.847712,
+        "imu_ms": 0.008958,
+        "estimator_ms": 43.384916,
+        "service_ms": 46.241586,
+        "start_lag_ms": 37.313549734863145,
+        "completion_lag_ms": 83.55513573486314,
+        "tracking_ms": 37.37,
+        "propagation_ms": 0.22,
+        "msckf_update_ms": 0.73,
+        "slam_update_ms": 0.11,
+        "slam_init_ms": 0.38,
+        "retriangulation_marginalization_ms": 4.21
+      },
+      {
+        "frame": 280,
+        "dataset_time_s": 14.0,
+        "read_ms": 3.216755,
+        "imu_ms": 0.009791,
+        "estimator_ms": 54.961275,
+        "service_ms": 58.187821,
+        "start_lag_ms": 33.6195249999996,
+        "completion_lag_ms": 91.8073459999996,
+        "tracking_ms": 49.94,
+        "propagation_ms": 0.18000000000000002,
+        "msckf_update_ms": 0.88,
+        "slam_update_ms": 0.16,
+        "slam_init_ms": 0.22,
+        "retriangulation_marginalization_ms": 3.3899999999999997
+      },
+      {
+        "frame": 281,
+        "dataset_time_s": 14.049999713897705,
+        "read_ms": 3.348259,
+        "imu_ms": 0.014634,
+        "estimator_ms": 42.682766,
+        "service_ms": 46.045659,
+        "start_lag_ms": 41.84351510229442,
+        "completion_lag_ms": 87.88917410229442,
+        "tracking_ms": 38.059999999999995,
+        "propagation_ms": 0.19,
+        "msckf_update_ms": 0.61,
+        "slam_update_ms": 0.12999999999999998,
+        "slam_init_ms": 0.43,
+        "retriangulation_marginalization_ms": 3.12
+      },
+      {
+        "frame": 282,
+        "dataset_time_s": 14.099999904632568,
+        "read_ms": 3.397265,
+        "imu_ms": 0.007656,
+        "estimator_ms": 34.355504,
+        "service_ms": 37.760425000000005,
+        "start_lag_ms": 37.91700336743127,
+        "completion_lag_ms": 75.67742836743128,
+        "tracking_ms": 29.91,
+        "propagation_ms": 0.2,
+        "msckf_update_ms": 0.71,
+        "slam_update_ms": 0.12000000000000001,
+        "slam_init_ms": 0.16,
+        "retriangulation_marginalization_ms": 3.12
+      },
+      {
+        "frame": 283,
+        "dataset_time_s": 14.149999856948853,
+        "read_ms": 3.483303,
+        "imu_ms": 0.007968,
+        "estimator_ms": 36.659755,
+        "service_ms": 40.151025999999995,
+        "start_lag_ms": 25.705860051147745,
+        "completion_lag_ms": 65.85688605114774,
+        "tracking_ms": 32.480000000000004,
+        "propagation_ms": 0.18000000000000002,
+        "msckf_update_ms": 0.66,
+        "slam_update_ms": 0.1,
+        "slam_init_ms": 0.0,
+        "retriangulation_marginalization_ms": 3.11
+      },
+      {
+        "frame": 284,
+        "dataset_time_s": 14.200000047683716,
+        "read_ms": 3.600901,
+        "imu_ms": 0.008697,
+        "estimator_ms": 29.080682,
+        "service_ms": 32.69028,
+        "start_lag_ms": 15.880444316283302,
+        "completion_lag_ms": 48.570724316283304,
+        "tracking_ms": 25.080000000000002,
+        "propagation_ms": 0.18000000000000002,
+        "msckf_update_ms": 0.34,
+        "slam_update_ms": 0.09000000000000001,
+        "slam_init_ms": 0.0,
+        "retriangulation_marginalization_ms": 3.28
+      }
+    ]
+  },
+  "platform_near_peak": {
+    "runner_to_wrapper_offset_bound_s": [
+      0,
+      0.4586385999995457
+    ],
+    "sampling_interval_s": 1,
+    "association": "approximate window only; no execution-core trace or per-frame clock timestamp",
+    "frequencies_khz_range": {
+      "cpu7": [
+        2707200,
+        2707200
+      ],
+      "cpu5": [
+        691200,
+        1516800
+      ],
+      "cpu3": [
+        691200,
+        806400
+      ],
+      "cpu1": [
+        691200,
+        806400
+      ],
+      "cpu6": [
+        691200,
+        1516800
+      ],
+      "cpu4": [
+        691200,
+        1516800
+      ],
+      "cpu2": [
+        691200,
+        806400
+      ],
+      "cpu0": [
+        691200,
+        806400
+      ]
+    },
+    "cpu_thermal_raw_range": {
+      "cpu4-thermal": [
+        73200,
+        77100
+      ],
+      "cpuss0-thermal": [
+        77100,
+        78300
+      ],
+      "cpu10-thermal": [
+        79800,
+        81800
+      ],
+      "cpu2-thermal": [
+        74800,
+        75500
+      ],
+      "cpu8-thermal": [
+        76300,
+        77100
+      ],
+      "cpu0-thermal": [
+        75500,
+        75500
+      ],
+      "cpu7-thermal": [
+        73200,
+        73200
+      ],
+      "cpu5-thermal": [
+        72000,
+        72800
+      ],
+      "cpuss1-thermal": [
+        75200,
+        75500
+      ],
+      "cpu11-thermal": [
+        78700,
+        79000
+      ],
+      "cpu3-thermal": [
+        72800,
+        75500
+      ],
+      "cpu9-thermal": [
+        74800,
+        75500
+      ],
+      "cpu1-thermal": [
+        75200,
+        75200
+      ],
+      "cpu6-thermal": [
+        73600,
+        74400
+      ]
+    }
+  }
+}

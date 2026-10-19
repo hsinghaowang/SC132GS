@@ -1,0 +1,157 @@
+{
+  "status": "independent_RTSP_validation_completed_full_field_not_accepted",
+  "session": "target-rtsp-wide-20261014",
+  "input_source": "RTSP_HEVC_Main10_decoded_mirror_undone",
+  "source_processing": "HEVC Main10 -> RGB -> mono8 -> split eyes -> undo horizontal mirror per eye",
+  "source_eye_order": "cam0/right sensor0x32 in displayed left half; cam1/left sensor0x30 in displayed right half",
+  "source_geometry_verified_from_deployed_CPP": true,
+  "saved_pairs": 296,
+  "verified_PNG_images": 592,
+  "complete_sampled_pairs": 57,
+  "sampled_pairs": 60,
+  "frozen_candidate_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "refit_performed": false,
+  "full_field_diagnostic_gate_passed": false,
+  "RAW_sensor_calibration_accepted": false,
+  "camera_IMU_calibration_complete": false,
+  "RTSP_continued_during_capture": true,
+  "RTSP_active_after_evaluation": true,
+  "saved_settings_unchanged": true,
+  "previous_attempts": {
+    "RAW_session": "target-validation-20261014, retained on board; inspection superseded at user redo request",
+    "first_RTSP_session": "target-rtsp-redo-20261014, 297 pairs retained; 4/60 complete"
+  },
+  "metrics": {
+    "factory": {
+      "vertical_error": {
+        "count": 3078,
+        "median_px": 0.48094746172989744,
+        "p95_px": 1.4931316559961805,
+        "rms_px": 0.7818861176947796,
+        "max_px": 5.620695271103159
+      },
+      "vertical_error_at_common_650px_focal": {
+        "count": 3078,
+        "median_px": 0.6432448276986718,
+        "p95_px": 1.9969940403429944,
+        "rms_px": 1.045736262434041,
+        "max_px": 7.5174181150746255
+      },
+      "virtual_focal_px": 485.99823374075896,
+      "cam0_pose_to_cam1_prediction": {
+        "count": 3078,
+        "median_px": 3.5462263068943454,
+        "p95_px": 4.934912597536699,
+        "rms_px": 3.674298887199306,
+        "max_px": 6.819258221662453
+      }
+    },
+    "frozen_candidate": {
+      "vertical_error": {
+        "count": 3078,
+        "median_px": 0.20639917289298637,
+        "p95_px": 1.0317188748582444,
+        "rms_px": 0.46536631457094824,
+        "max_px": 2.6074447022028835
+      },
+      "vertical_error_at_common_650px_focal": {
+        "count": 3078,
+        "median_px": 0.27511033220868686,
+        "p95_px": 1.3751824604228793,
+        "rms_px": 0.6202887327786202,
+        "max_px": 3.4754740931580135
+      },
+      "virtual_focal_px": 487.6569385939076,
+      "cam0_pose_to_cam1_prediction": {
+        "count": 3078,
+        "median_px": 0.7760255213590295,
+        "p95_px": 2.0642373888049703,
+        "rms_px": 1.0766424244790596,
+        "max_px": 4.908632147146816
+      }
+    }
+  },
+  "coverage": [
+    {
+      "eye": 0,
+      "corner_hull_image_fraction": 0.4265373989911377,
+      "center_min": [
+        0.1988819599930757,
+        0.42877331353999953
+      ],
+      "center_max": [
+        0.6280038964514639,
+        0.8229289514047128
+      ],
+      "center_span": [
+        0.42912193645838825,
+        0.39415563786471325
+      ],
+      "center_grid_3x3": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          15,
+          19,
+          0
+        ],
+        [
+          5,
+          18,
+          0
+        ]
+      ],
+      "mono_pose_reprojection": {
+        "count": 3078,
+        "median_px": 0.44856332779653874,
+        "p95_px": 0.966263845519802,
+        "rms_px": 0.5564282261021782,
+        "max_px": 1.9686865098472128
+      }
+    },
+    {
+      "eye": 1,
+      "corner_hull_image_fraction": 0.4239262883750284,
+      "center_min": [
+        0.3337421780837647,
+        0.4177782425174007
+      ],
+      "center_max": [
+        0.7921860618009546,
+        0.8107082587701303
+      ],
+      "center_span": [
+        0.4584438837171899,
+        0.3929300162527296
+      ],
+      "center_grid_3x3": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          34,
+          4
+        ],
+        [
+          0,
+          8,
+          11
+        ]
+      ],
+      "mono_pose_reprojection": {
+        "count": 3078,
+        "median_px": 0.4809740885190604,
+        "p95_px": 1.1125453407611738,
+        "rms_px": 0.6237383304790854,
+        "max_px": 2.2488025896072346
+      }
+    }
+  ],
+  "next_step": "Keep preview available; obtain original-image export from the camera owner for a RAW comparison, then resolve remaining upper-field coverage and error before accepting camera geometry."
+}

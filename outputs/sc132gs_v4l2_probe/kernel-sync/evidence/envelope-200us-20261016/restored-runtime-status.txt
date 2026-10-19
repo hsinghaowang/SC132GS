@@ -1,0 +1,1 @@
+{'sensor_mode': 'linear', 'binning': 0, 'max_fps': 30, 'fps': 30, 'ae': 1, 'brightness': 30, 'width': 1088, 'height': 1280, 'measured_fps_x10': 299, 'exposure_rows': 1377, 'gain_index': 107, 'exposure_ceiling_rows': 1377, 'limited': 0, 'control_error': 0, 'max_exposure_us': 0, 'max_gain_index': 128, 'revision': 191, 'native_target': 30}

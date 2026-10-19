@@ -1,5 +1,25 @@
 # 雙目 RAW10 → 各眼水平鏡像 → 左右並排 H.265 → RTSP 原型
 
+## RAW10 AE 與共用 8-bit 映射（本機第一版）
+
+`--tone-map shared --hevc-profile main` 保留 10-bit 擷取與 AE，加入完整 RAW
+高光保護，將共用 LUT 的最終 8-bit 亮度同時送往 H.265 和 depth。
+使用限制、UML 與本機測試見 [RAW10 共用映射](RAW10_TONE_MAPPING.zh-TW.md)。
+
+## GPU 雙目校正與同一 server 的 depth（2026-10-16）
+
+完整解析度 Main10 可啟用 GPU 魚眼校正／雙目對齊，改以 cam1｜cam0 輸出；
+depth 使用同一程序、同一 RTSP server 的獨立工作支線。責任與錯誤邊界、
+來源 overlay、有限測試及部署方式見 [GPU 校正整合說明](GPU_RECTIFICATION.zh-TW.md)。
+
+## 共用 Capture API（2026-10-15）
+
+新增 `--capture-api on`，讓 Linear/Main10/30-Hz 路徑使用共用的
+[GS130WI 擷取 library](../gs130wi_capture/README.zh-TW.md)，同時取得影像與原始 IMU；RTSP 網路仍只傳影像。
+預設為 off。本次沒有替換正式服務 binary；獨立 ROS publisher 也使用相同 library，但兩個程序不可同時占用硬體。
+建置現在需要相鄰的 `gs130wi_capture`、`gs130wi_imu` 與 `sc132gs_v4l2_probe` source 目錄。
+frame-IMU 事件配對尚未完成，不能把 IMU 觀測計數當作有效的影像區間資料。
+
 ## Main10 整合（2026-10-08）
 
 已增加線性 R16 → P010 → 原生 V4L2 H.265 Main10 路徑與 10-bit AE 統計。

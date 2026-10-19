@@ -1,0 +1,32 @@
+[
+  {
+    "file": "eye0-1.json",
+    "raw10_tile_means_match": true,
+    "saturation_counts_match": true
+  },
+  {
+    "file": "eye0-45.json",
+    "raw10_tile_means_match": true,
+    "saturation_counts_match": true
+  },
+  {
+    "file": "eye0-90.json",
+    "raw10_tile_means_match": true,
+    "saturation_counts_match": true
+  },
+  {
+    "file": "eye1-1.json",
+    "raw10_tile_means_match": true,
+    "saturation_counts_match": true
+  },
+  {
+    "file": "eye1-45.json",
+    "raw10_tile_means_match": true,
+    "saturation_counts_match": true
+  },
+  {
+    "file": "eye1-90.json",
+    "raw10_tile_means_match": true,
+    "saturation_counts_match": true
+  }
+]

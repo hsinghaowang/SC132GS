@@ -1,0 +1,641 @@
+[
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 0,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x55 0x4e 0x49 0x4f 0x4e 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 8,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x11 0x01 0x01 0x02 0x00 0x04 0x00 0xa4\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 0,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x55 0x4e 0x49 0x4f 0x4e 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 8,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x11 0x01 0x01 0x02 0x00 0x04 0x00 0xa4\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 16,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x40 0x04 0x00 0x00 0x00 0x05 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 24,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x6d 0x61 0xe8 0x99 0x10 0x7e 0x84 0x40\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 32,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xc9 0x0b 0xe3 0xc2 0x29 0x7f 0x84 0x40\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 40,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xb7 0xd8 0xf0 0x62 0x72 0x55 0x80 0x40\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 48,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x11 0xbc 0xe4 0xa1 0xb3 0xa1 0x83 0x40\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 56,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x95 0xf3 0xac 0x38 0x9e 0x26 0x8e 0xbf\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 64,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xcd 0x6c 0xd0 0xab 0xdf 0x7c 0x8d 0xbf\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 72,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x62 0xd7 0x7e 0xe2 0x30 0x28 0x85 0x3f\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 80,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xdf 0x5c 0x7d 0xd2 0xa0 0xed 0x72 0xbf\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 88,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 96,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 104,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 112,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 120,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x13 0xb5 0x34 0xb7 0x42 0x58 0xd1 0x3f\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 128,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xb0 0x85 0xd8 0x80 0x70 0x97 0x8e 0x84\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 136,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x40 0x83 0xb7 0x2f 0x82 0xb8 0x91 0x84\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 144,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x40 0x5c 0x70 0x8b 0x5a 0x05 0x60 0x80\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 152,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x40 0x95 0x44 0xfc 0xe5 0xc0 0x05 0x84\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 160,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x40 0x66 0xff 0x14 0x74 0xc1 0x4e 0x96\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 168,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xbf 0xf7 0x44 0x03 0xa1 0x1f 0x44 0x0f\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 176,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xbf 0x83 0x16 0xb9 0x0e 0x36 0x09 0x57\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 184,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xbf 0xe1 0x98 0xe1 0xb1 0x4c 0x1c 0x54\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 192,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xbf 0x00 0x00 0x00 0x00 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 200,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 208,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 216,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 224,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0xf2 0x7a 0x30 0x29 0x3e 0x3e 0xcd\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 232,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x3f 0x52 0x44 0xae 0xed 0x50 0xc1 0xff\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 240,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xef 0x3f 0x76 0xf8 0xad 0xce 0x18 0x83\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 248,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x7a 0x3f 0x17 0x3b 0x2b 0xb3 0x52 0x52\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 256,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x71 0xbf 0x2d 0x23 0x16 0xad 0xb3 0x8c\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 264,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x7a 0xbf 0x2b 0x37 0xcd 0x12 0xcf 0xff\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 272,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xef 0x3f 0xb5 0x19 0x65 0x05 0xd8 0xaa\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 280,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x61 0xbf 0x43 0x72 0x53 0x7f 0x94 0x43\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 288,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x71 0x3f 0xe0 0xba 0xc5 0x70 0x33 0xe4\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 296,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x61 0x3f 0x8f 0xfe 0x76 0x5d 0xe8 0xff\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 304,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xef 0x3f 0x93 0x7e 0xee 0x83 0xb1 0x18\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 312,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xb2 0xbf 0x8d 0x1d 0xd7 0x49 0x56 0xe4\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 320,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x21 0xbf 0x48 0x16 0x6b 0x47 0x39 0x22\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 328,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x56 0x3f 0x52 0x34 0x87 0x46 0x8c 0x19\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 336,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xb2 0x3f 0xc5 0x00 0x00 0x80 0x3f 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 344,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0x00 0x00 0x00 0x00 0xd2\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 352,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xdb 0x14 0xbb 0x00 0x00 0x80 0x3f 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 360,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0xe4 0xcb 0x4f 0xbb 0x9f\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 368,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x75 0x5f 0xbc 0x00 0x00 0x80 0x3f 0x99\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 376,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x8e 0x7e 0x3f 0x1c 0x22 0x80 0x3f 0x16\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 384,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x1c 0x7f 0x3f 0x81 0x97 0x64 0xba 0x34\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 392,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xb2 0x48 0xbb 0xc2 0x16 0xd0 0x3b 0xc9\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 400,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xa3 0xb6 0x3c 0x61 0x37 0x3b 0x39 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 408,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x80 0x3f 0x00 0x00 0x00 0x00 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 416,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x00 0x00 0xb6 0x8b 0x12 0xbb 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 424,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x80 0x3f 0x00 0x00 0x00 0x00 0x59\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 432,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x32 0x77 0x3b 0x29 0xc6 0x40 0xba 0x00\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 440,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x00 0x80 0x3f 0x06 0x02 0x7e 0x3f 0xa7\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 448,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xea 0x7d 0x3f 0x90 0xdf 0x7e 0x3f 0x22\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 456,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x6e 0x14 0xbc 0xb8 0xcc 0x34 0xbc 0x97\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 464,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xf8 0x3b 0x3c 0xef 0x34 0x96 0x3a 0xd9\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 472,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x90 0x50 0x37 0xcd 0xcc 0x1c 0x41 0x70\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 480,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x4f 0xfd 0x7f 0xbf 0xc7 0x71 0x16 0x3a\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 488,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x66 0x2b 0x14 0xbc 0x2f 0x1f 0x03 0x3a\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 496,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xd1 0xfd 0x7f 0x3f 0xcd 0x89 0x05 0x3c\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 504,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xc5 0x3d 0x14 0x3c 0x6b 0x75 0x05 0x3c\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 512,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x25 0xfb 0x7f 0xbf 0xd2 0x5c 0x89 0x3d\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 520,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0xce 0xbd 0x30 0x3b 0x8d 0x83 0x85 0xbb\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 528,
+    "read_bytes": 8,
+    "returncode": 0,
+    "stdout": "0x34 0xfe 0x2e 0xbd 0x2a 0xbb 0x2f 0x3f\n",
+    "stderr": ""
+  },
+  {
+    "bus": 18,
+    "address": "0x50",
+    "offset": 536,
+    "read_bytes": 1,
+    "returncode": 0,
+    "stdout": "0xb5\n",
+    "stderr": ""
+  },
+  {
+    "bus": 16,
+    "address": "0x50",
+    "offset": 0,
+    "read_bytes": 8,
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Error: Sending messages failed: No such device or address\n"
+  }
+]

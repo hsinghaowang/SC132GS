@@ -1,0 +1,11 @@
+{
+  "module_sha256": "27a726f96a74daace3b9a705e5264dc0d239063dac72405967f4881c3415e3e0",
+  "instance": "sc132gs_dma_ring",
+  "attach": true,
+  "function": "camss-vfe-17x.c:vfe_isr",
+  "site_offsets": {
+    "irq_flags": 116,
+    "irq_bus": 308
+  },
+  "scope": "cached IRQ snapshots only; no extra hardware register access"
+}

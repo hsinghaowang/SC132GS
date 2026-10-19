@@ -1,0 +1,1194 @@
+[13684.445354] sc132gs 18-0032: stream request: off (current=on)
+[13685.929817] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13685.929834] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13685.929838] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13685.930033] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13685.930056] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13685.930073] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13685.930089] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13685.930793] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13685.931003] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13685.931073] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13686.314406] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13686.314424] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13686.314427] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13686.314553] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13686.314569] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13686.314579] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13686.314588] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13686.315918] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13686.316151] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13686.316242] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13686.409408] sc132gs 18-0032: stream request: on (current=off)
+[13686.523672] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13686.545645] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13686.551324] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13686.552226] sc132gs 16-0030: stream request: on (current=off)
+[13686.666595] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13686.688697] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13686.694356] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13686.866152] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13686.868711] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13695.377266] sc132gs 16-0030: stream request: off (current=on)
+[13695.389227] sc132gs 18-0032: stream request: off (current=on)
+[13696.979120] msm_vidc: err : 7c7a3000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13696.979139] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13696.979143] msm_vidc: err : 7c7a3000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13696.979332] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13696.979359] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13696.979374] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13696.979388] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13696.980902] msm_vidc: err : 7c7a3000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13696.981312] msm_vidc: err : 7c7a3000: hevcE: msm_venc_g_selection: invalid type 1
+[13696.981487] msm_vidc: err : 7c7a3000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13697.360322] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13697.360338] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13697.360342] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13697.360483] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13697.360511] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13697.360528] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13697.360544] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13697.361697] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13697.361911] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13697.362004] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13697.457470] sc132gs 18-0032: stream request: on (current=off)
+[13697.571409] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13697.593296] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13697.598941] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13697.599889] sc132gs 16-0030: stream request: on (current=off)
+[13697.714138] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13697.736011] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13697.741789] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13697.916125] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13697.918447] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a3000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13706.426983] sc132gs 16-0030: stream request: off (current=on)
+[13706.438038] sc132gs 18-0032: stream request: off (current=on)
+[13707.925415] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13707.925435] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13707.925439] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13707.925637] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13707.925665] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13707.925683] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13707.925699] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13707.926977] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13707.927273] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[13707.927439] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13708.301211] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13708.301228] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13708.301231] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13708.301389] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13708.301412] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13708.301428] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13708.301444] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13708.302882] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13708.303105] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[13708.303197] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13708.397292] sc132gs 18-0032: stream request: on (current=off)
+[13708.510519] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13708.532509] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13708.538159] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13708.539092] sc132gs 16-0030: stream request: on (current=off)
+[13708.653421] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13708.675364] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13708.681014] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13708.851994] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13708.853753] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13717.472061] sc132gs 16-0030: stream request: off (current=on)
+[13717.482705] sc132gs 18-0032: stream request: off (current=on)
+[13719.172825] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13719.172848] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13719.172852] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13719.172926] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13719.172940] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13719.172950] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13719.172959] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13719.174431] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13719.174760] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13719.175116] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13719.549416] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13719.549433] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13719.549437] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13719.549592] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13719.549619] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13719.549636] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13719.549652] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13719.550853] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13719.551048] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13719.551127] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13719.645459] sc132gs 18-0032: stream request: on (current=off)
+[13719.759423] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13719.781408] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13719.786997] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13719.787608] sc132gs 16-0030: stream request: on (current=off)
+[13719.901485] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13719.923470] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13719.929157] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13720.098459] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13720.100052] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13725.106339] sc132gs 16-0030: stream request: off (current=on)
+[13725.117097] sc132gs 18-0032: stream request: off (current=on)
+[13727.408038] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13727.408058] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13727.408063] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13727.408227] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13727.408254] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13727.408272] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13727.408288] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13727.409563] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13727.409873] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13727.409980] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13727.782888] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13727.782905] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13727.782909] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13727.783084] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13727.783107] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13727.783125] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13727.783142] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13727.784466] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13727.784706] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13727.784797] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13727.880299] sc132gs 18-0032: stream request: on (current=off)
+[13727.994512] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13728.016453] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13728.022138] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13728.023009] sc132gs 16-0030: stream request: on (current=off)
+[13728.137636] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13728.159586] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13728.165256] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13728.306958] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13728.313110] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13733.035431] sc132gs 16-0030: stream request: off (current=on)
+[13733.043948] sc132gs 18-0032: stream request: off (current=on)
+[13735.137779] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13735.137800] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13735.137808] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13735.137827] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13735.137841] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13735.137851] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13735.137860] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13735.139545] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13735.139936] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13735.140052] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13735.509482] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13735.509499] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13735.509503] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13735.509650] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13735.509676] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13735.509693] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13735.509709] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13735.510971] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13735.511201] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[13735.511323] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13735.607409] sc132gs 18-0032: stream request: on (current=off)
+[13735.721260] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13735.743301] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13735.748962] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13735.749837] sc132gs 16-0030: stream request: on (current=off)
+[13735.864490] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13735.886410] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13735.892064] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13736.060327] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13736.062435] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13740.767747] sc132gs 16-0030: stream request: off (current=on)
+[13740.777495] sc132gs 18-0032: stream request: off (current=on)
+[13742.365259] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13742.365277] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13742.365280] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13742.365461] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13742.365482] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13742.365495] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13742.365506] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13742.366913] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13742.367205] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13742.367307] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13742.740833] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13742.740851] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13742.740855] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13742.740988] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13742.741014] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13742.741032] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13742.741049] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13742.742363] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13742.742661] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13742.742757] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13742.839578] sc132gs 18-0032: stream request: on (current=off)
+[13742.953575] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13742.975477] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13742.981114] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13742.982044] sc132gs 16-0030: stream request: on (current=off)
+[13743.096567] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13743.118469] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13743.124099] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13743.291906] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13743.293354] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13747.995883] sc132gs 16-0030: stream request: off (current=on)
+[13748.005980] sc132gs 18-0032: stream request: off (current=on)
+[13750.107768] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13750.107787] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13750.107792] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13750.107904] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13750.107924] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13750.107939] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13750.107953] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13750.108967] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13750.109150] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[13750.109207] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13750.493124] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13750.493139] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13750.493143] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13750.493305] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13750.493329] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13750.493345] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13750.493361] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13750.494597] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13750.494878] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13750.494973] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13750.589967] sc132gs 18-0032: stream request: on (current=off)
+[13750.703362] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13750.725263] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13750.730902] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13750.731768] sc132gs 16-0030: stream request: on (current=off)
+[13750.846260] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13750.868168] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13750.873825] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13751.026850] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13751.035302] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13755.738499] sc132gs 16-0030: stream request: off (current=on)
+[13755.748613] sc132gs 18-0032: stream request: off (current=on)
+[13757.334641] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13757.334658] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13757.334662] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13757.334773] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13757.334790] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13757.334801] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13757.334812] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13757.335893] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13757.336054] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13757.336105] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13757.716532] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13757.716549] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13757.716553] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13757.716692] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13757.716709] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13757.716720] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13757.716731] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13757.718070] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13757.718273] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13757.718351] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13757.815152] sc132gs 18-0032: stream request: on (current=off)
+[13757.929433] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13757.951451] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13757.957110] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13757.958011] sc132gs 16-0030: stream request: on (current=off)
+[13758.072350] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13758.094230] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13758.099887] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13758.267468] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13758.270832] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13762.965025] sc132gs 16-0030: stream request: off (current=on)
+[13762.973293] sc132gs 18-0032: stream request: off (current=on)
+[13765.166944] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13765.166963] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13765.166967] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13765.167078] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13765.167092] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13765.167102] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13765.167111] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13765.168731] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13765.169201] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13765.169401] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13765.561341] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13765.561359] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13765.561362] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13765.561493] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13765.561511] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13765.561521] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13765.561531] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13765.562822] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13765.563040] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[13765.563165] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13765.659722] sc132gs 18-0032: stream request: on (current=off)
+[13765.772295] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13765.794229] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13765.799888] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13765.800775] sc132gs 16-0030: stream request: on (current=off)
+[13765.914994] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13765.937095] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13765.942727] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13766.131478] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13766.131543] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13770.897638] sc132gs 16-0030: stream request: off (current=on)
+[13770.908079] sc132gs 18-0032: stream request: off (current=on)
+[13770.945507] msm_vidc:     fw: <VFW_E:WrkDec:265e:79d7f000:01> venc_c2FillBufferDone(3371): Missing corresponding Output Buffer for FBD
+[13772.598110] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13772.598133] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13772.598138] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13772.598219] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13772.598239] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13772.598254] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13772.598307] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13772.599264] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13772.599482] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13772.599546] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13772.983064] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13772.983080] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13772.983084] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13772.983225] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13772.983241] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13772.983251] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13772.983262] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13772.984715] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13772.984948] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13772.985048] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13773.081638] sc132gs 18-0032: stream request: on (current=off)
+[13773.195363] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13773.217296] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13773.222951] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13773.223821] sc132gs 16-0030: stream request: on (current=off)
+[13773.338451] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13773.360303] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13773.365957] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13773.517413] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13773.518726] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13777.227892] sc132gs 16-0030: stream request: off (current=on)
+[13777.239342] sc132gs 18-0032: stream request: off (current=on)
+[13779.429818] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13779.429839] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13779.429843] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13779.429967] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13779.429993] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13779.430011] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13779.430026] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13779.431017] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13779.431186] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13779.431245] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13779.813827] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13779.813844] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13779.813848] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13779.813941] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13779.813956] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13779.813969] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13779.813979] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13779.815220] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13779.815434] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[13779.815555] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13779.909799] sc132gs 18-0032: stream request: on (current=off)
+[13780.023865] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13780.045891] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13780.051548] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13780.052373] sc132gs 16-0030: stream request: on (current=off)
+[13780.166679] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13780.188587] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13780.194257] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13780.352181] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13780.353724] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13790.376489] sc132gs 16-0030: stream request: off (current=on)
+[13790.390237] sc132gs 18-0032: stream request: off (current=on)
+[13792.081258] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13792.081282] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13792.081287] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13792.081318] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13792.081342] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13792.081359] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13792.081375] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13792.082949] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13792.083354] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[13792.083550] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13792.468878] msm_vidc: err : 79d35000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13792.468896] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13792.468901] msm_vidc: err : 79d35000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13792.469014] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13792.469033] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13792.469044] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13792.469054] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13792.469911] msm_vidc: err : 79d35000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13792.470074] msm_vidc: err : 79d35000: hevcE: msm_venc_g_selection: invalid type 1
+[13792.470141] msm_vidc: err : 79d35000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13792.569538] sc132gs 18-0032: stream request: on (current=off)
+[13792.683615] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13792.705517] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13792.711170] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13792.712059] sc132gs 16-0030: stream request: on (current=off)
+[13792.826625] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13792.848848] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13792.854492] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13793.009404] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13793.012064] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d35000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13797.812704] sc132gs 16-0030: stream request: off (current=on)
+[13797.822422] sc132gs 18-0032: stream request: off (current=on)
+[13799.513267] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13799.513290] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13799.513296] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13799.513295] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13799.513317] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13799.513332] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13799.513346] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13799.514790] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13799.515278] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[13799.515493] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13799.889104] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13799.889122] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13799.889126] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13799.889250] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13799.889268] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13799.889278] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13799.889289] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13799.890522] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13799.890734] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13799.890802] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13799.985692] sc132gs 18-0032: stream request: on (current=off)
+[13800.099917] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13800.121948] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13800.127634] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13800.128543] sc132gs 16-0030: stream request: on (current=off)
+[13800.242884] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13800.264786] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13800.270448] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13800.444432] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13800.447038] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13804.142742] sc132gs 16-0030: stream request: off (current=on)
+[13804.150683] sc132gs 18-0032: stream request: off (current=on)
+[13805.246211] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13805.246232] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13805.246237] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13805.246309] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13805.246321] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13805.246330] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13805.246338] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13805.247944] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13805.248349] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13805.248567] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13805.624127] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13805.624144] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13805.624147] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13805.624299] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13805.624314] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13805.624325] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13805.624334] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13805.625666] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13805.625917] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[13805.626012] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13805.720134] sc132gs 18-0032: stream request: on (current=off)
+[13805.834460] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13805.856419] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13805.862117] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13805.863011] sc132gs 16-0030: stream request: on (current=off)
+[13805.977334] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13805.999219] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13806.005058] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13806.168022] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13806.168895] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13816.315864] sc132gs 16-0030: stream request: off (current=on)
+[13816.328280] sc132gs 18-0032: stream request: off (current=on)
+[13818.404636] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13818.404658] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13818.404664] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13818.404704] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13818.404719] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13818.404729] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13818.404739] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13818.406023] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13818.406230] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[13818.406289] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13818.801461] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[13818.801478] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[13818.801482] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[13818.801602] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[13818.801616] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[13818.801628] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[13818.801637] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[13818.802598] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[13818.802783] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[13818.802857] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[13818.900380] sc132gs 18-0032: stream request: on (current=off)
+[13819.014552] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[13819.036576] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[13819.042227] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[13819.043126] sc132gs 16-0030: stream request: on (current=off)
+[13819.157462] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[13819.179408] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[13819.185059] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[13819.358564] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13819.371838] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[13870.104685] sc132gs 16-0030: stream request: off (current=on)
+[13870.113541] sc132gs 18-0032: stream request: off (current=on)
+[14143.386791] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14143.386817] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14143.386827] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14143.386836] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14143.389251] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14143.389280] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14143.389293] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14143.389305] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14143.417244] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14143.417265] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14143.417268] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14143.417382] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14143.417394] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14143.417403] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14143.417410] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14143.418963] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14143.419163] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14143.419221] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14143.829226] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14143.829242] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14143.829246] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14143.829380] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14143.829395] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14143.829405] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14143.829415] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14143.830345] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14143.830511] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[14143.830558] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14143.931689] sc132gs 18-0032: stream request: on (current=off)
+[14144.046421] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14144.068367] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14144.074112] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14144.075007] sc132gs 16-0030: stream request: on (current=off)
+[14144.189606] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14144.211511] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14144.217161] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14144.378238] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14144.379531] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14149.114046] sc132gs 16-0030: stream request: off (current=on)
+[14149.124609] sc132gs 18-0032: stream request: off (current=on)
+[14151.102872] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14151.102892] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14151.102896] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14151.102957] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14151.102991] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14151.103001] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14151.103011] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14151.104163] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14151.104320] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[14151.104374] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14151.490080] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14151.490096] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14151.490100] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14151.490190] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14151.490204] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14151.490216] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14151.490227] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14151.491314] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14151.491514] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14151.491650] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14151.585625] sc132gs 18-0032: stream request: on (current=off)
+[14151.699775] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14151.721711] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14151.727398] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14151.728288] sc132gs 16-0030: stream request: on (current=off)
+[14151.842774] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14151.864694] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14151.870352] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14152.023909] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14152.025230] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14156.732832] sc132gs 16-0030: stream request: off (current=on)
+[14156.741321] sc132gs 18-0032: stream request: off (current=on)
+[14157.932837] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14157.932856] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14157.932860] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14157.933020] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14157.933045] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14157.933062] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14157.933078] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14157.934743] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14157.935070] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14157.935297] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14158.311458] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14158.311474] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14158.311477] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14158.311583] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14158.311599] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14158.311610] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14158.311620] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14158.312921] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14158.313145] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14158.313255] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14158.407812] sc132gs 18-0032: stream request: on (current=off)
+[14158.522095] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14158.544044] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14158.549714] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14158.550601] sc132gs 16-0030: stream request: on (current=off)
+[14158.664885] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14158.686847] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14158.692567] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14158.860779] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14158.864405] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14167.368326] sc132gs 16-0030: stream request: off (current=on)
+[14167.378040] sc132gs 18-0032: stream request: off (current=on)
+[14168.969562] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14168.969583] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14168.969588] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14168.969588] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14168.969603] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14168.969613] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14168.969622] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14168.971532] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14168.972049] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[14168.972275] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14169.351358] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14169.351375] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14169.351380] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14169.351546] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14169.351565] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14169.351575] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14169.351586] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14169.352932] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14169.353177] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14169.353272] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14169.448094] sc132gs 18-0032: stream request: on (current=off)
+[14169.561760] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14169.583663] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14169.589313] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14169.590263] sc132gs 16-0030: stream request: on (current=off)
+[14169.704576] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14169.726600] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14169.732286] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14169.894546] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14169.895508] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14178.338808] sc132gs 16-0030: stream request: off (current=on)
+[14178.348105] sc132gs 18-0032: stream request: off (current=on)
+[14179.921136] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14179.921157] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14179.921161] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14179.921240] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14179.921253] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14179.921262] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14179.921271] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14179.922269] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14179.922431] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[14179.922477] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14180.307855] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14180.307873] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14180.307877] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14180.307974] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14180.307988] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14180.308000] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14180.308010] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14180.309303] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14180.309500] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14180.309563] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14180.405397] sc132gs 18-0032: stream request: on (current=off)
+[14180.519570] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14180.541481] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14180.547126] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14180.548083] sc132gs 16-0030: stream request: on (current=off)
+[14180.662263] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14180.684219] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14180.689866] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14180.842182] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14180.843135] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14189.256306] sc132gs 16-0030: stream request: off (current=on)
+[14189.266057] sc132gs 18-0032: stream request: off (current=on)
+[14190.758232] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14190.758252] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14190.758257] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14190.758381] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14190.758397] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14190.758407] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14190.758418] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14190.759948] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14190.760542] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14190.760783] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14191.135489] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14191.135505] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14191.135508] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14191.135618] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14191.135636] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14191.135646] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14191.135656] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14191.136928] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14191.137176] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14191.137248] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14191.230943] sc132gs 18-0032: stream request: on (current=off)
+[14191.344197] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14191.366134] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14191.371770] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14191.372727] sc132gs 16-0030: stream request: on (current=off)
+[14191.487023] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14191.508896] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14191.514543] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14191.683210] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14191.684408] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14200.206371] sc132gs 16-0030: stream request: off (current=on)
+[14200.218011] sc132gs 18-0032: stream request: off (current=on)
+[14202.106964] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14202.106985] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14202.106990] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14202.107042] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14202.107065] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14202.107082] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14202.107097] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14202.108787] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14202.109207] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14202.109386] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14202.482906] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14202.482922] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14202.482925] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14202.483059] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14202.483077] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14202.483088] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14202.483098] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14202.484363] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14202.484602] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14202.484678] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14202.579141] sc132gs 18-0032: stream request: on (current=off)
+[14202.692587] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14202.714506] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14202.720140] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14202.720870] sc132gs 16-0030: stream request: on (current=off)
+[14202.835817] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14202.857786] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14202.863460] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14203.031831] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14203.033269] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14208.538364] sc132gs 16-0030: stream request: off (current=on)
+[14208.548986] sc132gs 18-0032: stream request: off (current=on)
+[14210.030611] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14210.030630] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14210.030634] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14210.030781] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14210.030799] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14210.030808] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14210.030817] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14210.032200] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14210.032604] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[14210.032984] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14210.408094] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14210.408111] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14210.408114] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14210.408242] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14210.408257] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14210.408268] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14210.408278] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14210.409621] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14210.409913] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14210.410012] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14210.504845] sc132gs 18-0032: stream request: on (current=off)
+[14210.618888] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14210.640829] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14210.646482] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14210.647369] sc132gs 16-0030: stream request: on (current=off)
+[14210.761826] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14210.783756] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14210.789535] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14210.965263] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14210.968344] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14215.659234] sc132gs 16-0030: stream request: off (current=on)
+[14215.668119] sc132gs 18-0032: stream request: off (current=on)
+[14217.765518] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14217.765537] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14217.765541] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14217.765725] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14217.765748] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14217.765759] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14217.765767] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14217.767862] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14217.768248] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[14217.768430] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14218.140608] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14218.140625] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14218.140630] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14218.140763] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14218.140779] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14218.140790] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14218.140800] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14218.142212] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14218.142442] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14218.142529] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14218.237282] sc132gs 18-0032: stream request: on (current=off)
+[14218.351550] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14218.373518] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14218.379194] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14218.380056] sc132gs 16-0030: stream request: on (current=off)
+[14218.494370] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14218.516320] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14218.521965] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14218.688122] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14218.689133] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14223.396949] sc132gs 16-0030: stream request: off (current=on)
+[14223.406780] sc132gs 18-0032: stream request: off (current=on)
+[14224.895200] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14224.895221] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14224.895226] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14224.895342] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14224.895368] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14224.895385] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14224.895400] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14224.896831] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14224.897302] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14224.897518] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14225.270964] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14225.270982] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14225.270985] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14225.271155] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14225.271181] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14225.271199] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14225.271215] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14225.272531] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14225.272761] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14225.272852] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14225.367578] sc132gs 18-0032: stream request: on (current=off)
+[14225.481041] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14225.502934] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14225.508573] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14225.509473] sc132gs 16-0030: stream request: on (current=off)
+[14225.624005] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14225.645901] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14225.651546] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14225.822014] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14225.823622] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14230.524269] sc132gs 16-0030: stream request: off (current=on)
+[14230.532214] sc132gs 18-0032: stream request: off (current=on)
+[14232.631233] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14232.631250] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14232.631254] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14232.631407] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14232.631429] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14232.631442] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14232.631454] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14232.633929] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14232.634208] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[14232.634336] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14233.006262] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14233.006278] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14233.006282] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14233.006460] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14233.006485] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14233.006502] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14233.006518] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14233.007771] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14233.007997] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14233.008084] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14233.102575] sc132gs 18-0032: stream request: on (current=off)
+[14233.216678] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14233.238645] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14233.244343] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14233.245159] sc132gs 16-0030: stream request: on (current=off)
+[14233.359439] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14233.381354] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14233.387000] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14233.551225] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14233.552167] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14238.262836] sc132gs 16-0030: stream request: off (current=on)
+[14238.272810] sc132gs 18-0032: stream request: off (current=on)
+[14239.862477] msm_vidc: err : 7c65f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14239.862499] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14239.862504] msm_vidc: err : 7c65f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14239.862610] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14239.862624] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14239.862632] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14239.862640] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14239.864211] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14239.864699] msm_vidc: err : 7c65f000: hevcE: msm_venc_g_selection: invalid type 1
+[14239.864961] msm_vidc: err : 7c65f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14240.236467] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14240.236483] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14240.236487] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14240.236619] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14240.236638] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14240.236648] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14240.236658] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14240.237997] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14240.238203] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14240.238282] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14240.335475] sc132gs 18-0032: stream request: on (current=off)
+[14240.449738] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14240.471733] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14240.477407] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14240.478322] sc132gs 16-0030: stream request: on (current=off)
+[14240.592791] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14240.614755] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14240.620462] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14240.797733] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14240.799600] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14245.493492] sc132gs 16-0030: stream request: off (current=on)
+[14245.501857] sc132gs 18-0032: stream request: off (current=on)
+[14247.602755] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14247.602775] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14247.602778] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14247.602961] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14247.602988] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14247.603004] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14247.603019] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14247.604250] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14247.604563] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[14247.604776] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14247.979897] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14247.979914] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14247.979918] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14247.980001] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14247.980014] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14247.980026] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14247.980037] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14247.981395] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14247.981631] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14247.981716] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14248.076464] sc132gs 18-0032: stream request: on (current=off)
+[14248.190818] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14248.212809] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14248.218414] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14248.219067] sc132gs 16-0030: stream request: on (current=off)
+[14248.333213] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14248.355098] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14248.360729] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14248.531067] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14248.534091] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14253.235464] sc132gs 16-0030: stream request: off (current=on)
+[14253.245990] sc132gs 18-0032: stream request: off (current=on)
+[14254.730542] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14254.730562] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14254.730565] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14254.730711] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14254.730731] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14254.730739] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14254.730746] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14254.732879] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14254.733295] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14254.733386] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14255.140858] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14255.140875] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14255.140879] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14255.141007] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14255.141019] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14255.141029] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14255.141037] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14255.142480] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14255.142732] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14255.142812] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14255.238637] sc132gs 18-0032: stream request: on (current=off)
+[14255.350833] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14255.372309] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14255.377886] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14255.378626] sc132gs 16-0030: stream request: on (current=off)
+[14255.491076] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14255.512543] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14255.518102] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14255.693913] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14255.695578] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14259.562415] sc132gs 16-0030: stream request: off (current=on)
+[14259.572342] sc132gs 18-0032: stream request: off (current=on)
+[14260.857022] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14260.857042] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14260.857045] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14260.857161] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14260.857208] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14260.857228] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14260.857245] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14260.858154] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14260.858328] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[14260.858382] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14261.237339] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14261.237355] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14261.237359] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14261.237472] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14261.237488] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14261.237499] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14261.237509] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14261.238810] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14261.239045] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14261.239164] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14261.335725] sc132gs 18-0032: stream request: on (current=off)
+[14261.449860] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14261.471769] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14261.477421] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14261.478343] sc132gs 16-0030: stream request: on (current=off)
+[14261.592725] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14261.614666] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14261.620325] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14261.781515] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14261.782767] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14271.924802] sc132gs 16-0030: stream request: off (current=on)
+[14271.932591] sc132gs 18-0032: stream request: off (current=on)
+[14273.516571] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14273.516592] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14273.516596] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14273.516723] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14273.516748] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14273.516765] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14273.516781] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14273.517846] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14273.518208] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14273.518405] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14273.890955] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14273.890972] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14273.890976] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14273.891117] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14273.891132] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14273.891143] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14273.891153] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14273.892879] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14273.893104] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14273.893193] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14273.989187] sc132gs 18-0032: stream request: on (current=off)
+[14274.103375] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14274.125333] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14274.130986] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14274.131935] sc132gs 16-0030: stream request: on (current=off)
+[14274.246166] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14274.268048] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14274.273695] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14274.449270] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14274.450346] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14279.150443] sc132gs 16-0030: stream request: off (current=on)
+[14279.161485] sc132gs 18-0032: stream request: off (current=on)
+[14280.750966] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14280.750990] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14280.750995] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14280.750996] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14280.751020] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14280.751037] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14280.751053] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14280.752738] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14280.752984] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[14280.753075] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14281.152912] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14281.152929] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14281.152933] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14281.153062] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14281.153080] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14281.153091] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14281.153101] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14281.153960] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14281.154131] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14281.154196] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14281.253272] sc132gs 18-0032: stream request: on (current=off)
+[14281.366850] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14281.388853] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14281.394543] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14281.395452] sc132gs 16-0030: stream request: on (current=off)
+[14281.509891] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14281.531844] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14281.537515] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14281.694917] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14281.826777] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14285.380043] sc132gs 16-0030: stream request: off (current=on)
+[14285.387256] sc132gs 18-0032: stream request: off (current=on)
+[14287.481659] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14287.481679] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14287.481683] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14287.481788] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14287.481810] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14287.481828] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14287.481844] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14287.483487] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14287.483789] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14287.483952] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14287.856326] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14287.856343] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14287.856348] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14287.856467] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14287.856485] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14287.856496] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14287.856505] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14287.857817] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14287.858061] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14287.858145] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14287.953261] sc132gs 18-0032: stream request: on (current=off)
+[14288.067358] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14288.089354] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14288.095032] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14288.095967] sc132gs 16-0030: stream request: on (current=off)
+[14288.210231] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14288.232150] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14288.237842] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14288.409249] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14288.411079] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14298.443865] sc132gs 16-0030: stream request: off (current=on)
+[14298.451281] sc132gs 18-0032: stream request: off (current=on)
+[14300.142500] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14300.142518] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14300.142523] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14300.142614] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14300.142628] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14300.142639] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14300.142649] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14300.143888] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14300.144367] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14300.144609] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14300.517974] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14300.517989] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14300.517993] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14300.518132] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14300.518148] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14300.518158] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14300.518168] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14300.519473] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14300.519704] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14300.519770] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14300.616017] sc132gs 18-0032: stream request: on (current=off)
+[14300.730183] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14300.752140] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14300.757824] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14300.758727] sc132gs 16-0030: stream request: on (current=off)
+[14300.873100] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14300.894998] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14300.900792] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14301.063928] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14301.065267] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14381.558684] sc132gs 16-0030: stream request: off (current=on)
+[14381.568248] sc132gs 18-0032: stream request: off (current=on)
+[14448.585425] msm_vidc: err : 7c7a3000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14448.585443] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14448.585446] msm_vidc: err : 7c7a3000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14448.585646] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14448.585673] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14448.585689] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14448.585705] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14448.586629] msm_vidc: err : 7c7a3000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14448.586823] msm_vidc: err : 7c7a3000: hevcE: msm_venc_g_selection: invalid type 1
+[14448.586892] msm_vidc: err : 7c7a3000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14448.970537] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14448.970554] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14448.970558] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14448.970717] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14448.970742] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14448.970759] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14448.970775] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14448.972072] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14448.972332] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[14448.972404] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14449.067525] sc132gs 18-0032: stream request: on (current=off)
+[14449.179886] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14449.201773] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14449.207415] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14449.208344] sc132gs 16-0030: stream request: on (current=off)
+[14449.322512] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14449.344559] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14449.350204] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14449.501909] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14449.508141] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a3000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14490.249558] sc132gs 16-0030: stream request: off (current=on)
+[14490.258088] sc132gs 18-0032: stream request: off (current=on)
+[14510.562190] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14510.562207] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14510.562210] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14510.562393] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14510.562417] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14510.562431] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14510.562443] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14510.563561] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14510.564087] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[14510.564348] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14510.935310] msm_vidc: err : 79d35000:  avcE_0: msm_venc_g_selection: invalid type 1
+[14510.935327] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[14510.935331] msm_vidc: err : 79d35000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[14510.935468] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[14510.935485] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[14510.935496] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[14510.935506] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a3000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[14510.936726] msm_vidc: err : 79d35000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[14510.936991] msm_vidc: err : 79d35000: hevcE: msm_venc_g_selection: invalid type 1
+[14510.937083] msm_vidc: err : 79d35000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[14511.030315] sc132gs 18-0032: stream request: on (current=off)
+[14511.143333] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[14511.165328] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[14511.171014] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[14511.171950] sc132gs 16-0030: stream request: on (current=off)
+[14511.286336] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[14511.308261] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[14511.313936] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[14511.480438] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d35000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14511.487791] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[14534.764711] sc132gs 16-0030: stream request: off (current=on)
+[14534.773881] sc132gs 18-0032: stream request: off (current=on)

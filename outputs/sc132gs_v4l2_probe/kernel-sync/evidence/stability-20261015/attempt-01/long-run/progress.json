@@ -1,0 +1,10 @@
+{
+  "state": "failed",
+  "elapsed_s": 7071.271158703,
+  "requested_seconds": 7200,
+  "pairs": 218606,
+  "pulses": 218712,
+  "failure": "camera owner stopped or restarted",
+  "sample_count": 1336,
+  "imu_pid": 4442
+}

@@ -1,0 +1,117 @@
+{
+  "scope": "observed hardware SOF and host GPIO-write brackets; not electrical pulse or exposure measurement",
+  "session": 7,
+  "first_error": [
+    958,
+    7,
+    4,
+    2,
+    208563804027,
+    0,
+    0,
+    0,
+    0,
+    10
+  ],
+  "source_sha256": "5b7fa9593c881c6e9cd6c0617ec8c8569d31ee1e213d00881d043b05b3ac3641",
+  "last_pulses": [
+    {
+      "trigger": 112,
+      "write_before_ns": 208463881610,
+      "write_after_ns": 208463889423,
+      "interval_us": 16675.237,
+      "skipped": 0
+    },
+    {
+      "trigger": 113,
+      "write_before_ns": 208480545650,
+      "write_after_ns": 208480551743,
+      "interval_us": 16664.04,
+      "skipped": 0
+    },
+    {
+      "trigger": 114,
+      "write_before_ns": 208497218543,
+      "write_after_ns": 208497225366,
+      "interval_us": 16672.893,
+      "skipped": 0
+    },
+    {
+      "trigger": 115,
+      "write_before_ns": 208513952112,
+      "write_after_ns": 208513958778,
+      "interval_us": 16733.569,
+      "skipped": 0
+    },
+    {
+      "trigger": 116,
+      "write_before_ns": 208530545581,
+      "write_after_ns": 208530552039,
+      "interval_us": 16593.469,
+      "skipped": 0
+    },
+    {
+      "trigger": 117,
+      "write_before_ns": 208546529853,
+      "write_after_ns": 208546536728,
+      "interval_us": 15984.272,
+      "skipped": 0
+    }
+  ],
+  "last_sof_intervals": [
+    {
+      "eye": 0,
+      "from_trigger": 110,
+      "to_trigger": 112,
+      "mapped_sof_interval_ms": 33.335363,
+      "hardware_ticks_delta": 640069,
+      "hardware_interval_ms": 33.336927083333336,
+      "sequence": 46
+    },
+    {
+      "eye": 0,
+      "from_trigger": 112,
+      "to_trigger": 114,
+      "mapped_sof_interval_ms": 33.335886,
+      "hardware_ticks_delta": 640072,
+      "hardware_interval_ms": 33.33708333333333,
+      "sequence": 47
+    },
+    {
+      "eye": 0,
+      "from_trigger": 114,
+      "to_trigger": 117,
+      "mapped_sof_interval_ms": 49.309205,
+      "hardware_ticks_delta": 946772,
+      "hardware_interval_ms": 49.31104166666667,
+      "sequence": 48
+    },
+    {
+      "eye": 1,
+      "from_trigger": 110,
+      "to_trigger": 112,
+      "mapped_sof_interval_ms": 33.335728,
+      "hardware_ticks_delta": 640069,
+      "hardware_interval_ms": 33.336927083333336,
+      "sequence": 38
+    },
+    {
+      "eye": 1,
+      "from_trigger": 112,
+      "to_trigger": 114,
+      "mapped_sof_interval_ms": 33.335938,
+      "hardware_ticks_delta": 640073,
+      "hardware_interval_ms": 33.33713541666667,
+      "sequence": 39
+    },
+    {
+      "eye": 1,
+      "from_trigger": 114,
+      "to_trigger": 117,
+      "mapped_sof_interval_ms": 49.309256,
+      "hardware_ticks_delta": 946772,
+      "hardware_interval_ms": 49.31104166666667,
+      "sequence": 40
+    }
+  ]
+}

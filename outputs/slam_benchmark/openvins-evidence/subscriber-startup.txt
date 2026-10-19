@@ -1,0 +1,32 @@
+[32moverriding node [1m[32mverbosity[0m[32m with value from ROS!
+[0mSetting printing level to: INFO
+[32moverriding node [1m[32mmulti_threading_pubs[0m[32m with value from ROS!
+[0msubscribing to IMU: /imu0
+subscribing to cam (stereo): /cam0/image_raw
+subscribing to cam (stereo): /cam1/image_raw
+[INFO] [1791791576.998047363] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[95mcamera-imu timeoffset = 0.00000
+
+[0m[95mcam0 intrinsics:
+[0m[95m458.654,457.296,367.215,248.375
+[0m[95m-0.28341,0.07396,0.00019,0.00002
+
+[0m[95mcam1 intrinsics:
+[0m[95m457.587,456.134,379.999,255.238
+[0m[95m-0.28368,0.07451,-0.00010,-0.00004
+
+[0m[95mT_C0toI:
+[0m[95m0.015,-1.000,0.004,-0.022,
+[0m[95m1.000,0.015,0.026,-0.065,
+[0m[95m-0.026,0.004,1.000,0.010,
+[0m[95m0.000,0.000,0.000,1.000
+
+[0m[95mT_C1toI:
+[0m[95m0.013,-1.000,0.018,-0.020,
+[0m[95m1.000,0.013,0.025,0.045,
+[0m[95m-0.025,0.018,1.000,0.008,
+[0m[95m0.000,0.000,0.000,1.000
+
+[0m[95mTIME: 9223372036854.775 seconds
+
+[0m

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-08",
+  "status": "investigated_not_fixed",
+  "confirmed": {
+    "fault_stream_id": "0x8a0",
+    "fault_context_bank": 28,
+    "camera_iommu_stream_id": "0x800",
+    "camera_iommu_mask": "0x4e0",
+    "fault_matches_camera_stream_mask": true,
+    "encoder_iommu_stream_id": "0x2180",
+    "encoder_iommu_mask": "0x20",
+    "fault_matches_encoder_stream_mask": false,
+    "capture_width": 1088,
+    "capture_height": 1280,
+    "capture_bytes_per_line": 1360,
+    "capture_sizeimage": 1740800,
+    "capture_sizeimage_hex": "0x1a9000",
+    "reported_fault_addresses": ["0xfe1a9000", "0xfefa9000"],
+    "both_fault_offsets_modulo_2MiB": "0x1a9000",
+    "live_profile": "Linear full resolution, 60 FPS, AE on, revision 43"
+  },
+  "hypotheses": [
+    "DMA access at or beyond the end of a RAW10 allocation",
+    "Frame-address increment or buffer-switch timing when a next buffer is unavailable or late",
+    "Mapped size, hardware write extent, or DMA mapping lifetime mismatch"
+  ],
+  "unverified": [
+    "Actual allocation base and mapped extent of the faulting buffer",
+    "Which eye/VFE write master issued the access",
+    "Buffer availability, IRQ timing, and hardware frame address at the fault",
+    "Whether the later encoder timeout is a consequence or a separate fault"
+  ],
+  "upstream_reference": {
+    "url": "https://raw.githubusercontent.com/torvalds/linux/v6.8/drivers/media/platform/qcom/camss/camss-vfe-480.c",
+    "observation": "VFE_BUS_WM_FRAME_INCR is configured as bytesperline multiplied by height.",
+    "limit": "Upstream code is a reference; the installed Ubuntu receiver binary must be checked before choosing a kernel fix."
+  },
+  "safety": "Read-only investigation; no receiver unload, hot reload, IOMMU disable, or buffer-padding workaround applied."
+}

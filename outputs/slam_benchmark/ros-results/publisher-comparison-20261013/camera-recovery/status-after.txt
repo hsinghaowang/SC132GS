@@ -1,0 +1,1 @@
+error code=device errno=2 rollback_failed=0

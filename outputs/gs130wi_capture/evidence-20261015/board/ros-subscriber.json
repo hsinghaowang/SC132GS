@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "errors": [],
+  "image_counts": [
+    350,
+    360
+  ],
+  "matching_stereo_and_metadata_stamps": 350,
+  "imu_samples_received": 2579,
+  "fsync_packets_received": 390,
+  "imu_sample_index_gaps": 0,
+  "timestamp_sources_and_offsets": [
+    [
+      2,
+      344903
+    ]
+  ],
+  "first_images": [
+    {
+      "width": 544,
+      "height": 640,
+      "encoding": "mono8",
+      "frame_id": "left_camera_optical_frame",
+      "pixel_min": 11,
+      "pixel_max": 255
+    },
+    {
+      "width": 544,
+      "height": 640,
+      "encoding": "mono8",
+      "frame_id": "right_camera_optical_frame",
+      "pixel_min": 13,
+      "pixel_max": 255
+    }
+  ],
+  "frame_association_validated": false,
+  "host_sample_time_validated": false,
+  "scope": "real ROS/DDS image + raw IMU delivery, not frame-interval association or VIO readiness"
+}

@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "checks": {
+    "loaded_srcversion_matches": true,
+    "installed_srcversion_matches": true,
+    "installed_module_hash_matches": true,
+    "built_module_hash_matches": true,
+    "source_hash_matches": true,
+    "reboot_confirmed": true,
+    "persistent_configuration_unchanged": true,
+    "stream_active": true,
+    "healthy_sync": true
+  },
+  "module_srcversion": "E966374A47464C038D0632F",
+  "module_sha256": "aca51a31dac8dea9987e8fe746cbbd1734deafabddfaa7fc38a3f81cde44d5da",
+  "source_sha256": "d82813a3dcfdeea47637435ca0d99a8e8dd807ee04ec6e4cee56e31d8ab48b33",
+  "boot_id": "d3eaf26b-6373-4010-a47b-ee89c6fb2d94",
+  "envelope_ns": 200000,
+  "release_overrun_ns": 25000,
+  "unchanged": {
+    "/etc/modprobe.d/sc132gs-csid-monitor.conf": true,
+    "/var/lib/sc132gs-camera/settings.yaml": true,
+    "/var/lib/sc132gs-camera/settings.json": true,
+    "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": true,
+    "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh": true,
+    "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": true
+  },
+  "control": {
+    "abi": "4",
+    "timestamp_offset_ns": "344903",
+    "trigger_hz": "30",
+    "frame_step": "1",
+    "locked_mask": "3",
+    "startup_dropped": "2",
+    "startup_end0": "1",
+    "startup_end1": "1",
+    "node0": "0",
+    "node1": "3",
+    "mode": "2",
+    "running": "1",
+    "session": "1",
+    "pulses": "11741",
+    "skipped": "0",
+    "cpu": "7",
+    "worker_cpu": "0",
+    "error": "0",
+    "error_count": "0",
+    "source": "exposure_start_estimate"
+  },
+  "service": "MainPID=2799\nNRestarts=0\nActiveState=active",
+  "camera_status": "ok sensor_mode=linear binning=0 max_fps=30 fps=30 ae=1 brightness=30 width=1088 height=1280 measured_fps_x10=299 exposure_rows=1377 gain_index=46 exposure_ceiling_rows=1377 limited=0 control_error=0 max_exposure_us=0 max_gain_index=128 revision=191 native_target=30"
+}

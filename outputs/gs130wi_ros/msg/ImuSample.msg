@@ -1,0 +1,10 @@
+uint64 sample_index
+bool valid
+uint8 fifo_header
+uint16 timestamp_raw
+bool sensor_time_valid
+uint64 sensor_elapsed_ns
+bool fsync_valid
+uint64 fsync_offset_ns
+geometry_msgs/Vector3 linear_acceleration
+geometry_msgs/Vector3 angular_velocity

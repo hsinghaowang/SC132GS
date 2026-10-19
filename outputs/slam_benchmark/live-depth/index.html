@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SC132GS 即時深度</title>
+<style>body{background:#14181c;color:#e5edf4;font:16px/1.6 system-ui;margin:24px auto;max-width:1120px;padding:0 16px}h1{font-size:24px}img{width:100%;background:#000}#status{padding:12px;background:#24313c;border-radius:8px}small{color:#adb9c4}a{color:#75c8ff}</style>
+<h1>SC132GS 即時雙目深度</h1>
+<p>左：校正後實體左眼　右：深度；暖色近、冷色遠，黑色為無效區域。</p>
+<p id="status">正在連線…</p><img id="view" alt="即時深度預覽" hidden>
+<p><small>544×640／眼 · 色尺 0.2–3.0 m · 候選校正尺度假設 20 mm 方格。疑似錯配仍可能通過檢查；測距準確度尚未驗證。</small></p>
+<p><a href="/snapshot.jpg" target="_blank">當前預覽</a> · <a href="/depth.npy">公尺深度 NPY</a> · <a href="/mask.png" target="_blank">有效遮罩</a> · <a href="/status.json" target="_blank">狀態 JSON</a></p>
+<p><small>影格年齡從本機解碼輸出時計算，不是曝光至顯示延遲。下載端點各自取最新結果，跨端點下載不保證同一影格。</small></p>
+<script>
+const view=document.querySelector('#view'), status=document.querySelector('#status');
+let live=false;
+async function poll(){
+ const abort=new AbortController(), timer=setTimeout(()=>abort.abort(),1500);
+ try{const r=await fetch('/status.json',{cache:'no-store',signal:abort.signal});if(!r.ok)throw Error(r.status);const s=await r.json();
+  if(s.state==='live'){
+   status.textContent=`處理 ${s.processing_fps.toFixed(1)} FPS ｜ 運算 ${s.processing_ms.toFixed(0)} ms ｜ 影格年齡 ${s.frame_age_ms.toFixed(0)} ms ｜ 有效 ${(s.valid_fraction*100).toFixed(1)}% ｜ 略過 ${s.skipped} 張`;
+   if(!live){view.src='/stream.mjpg';view.hidden=false;live=true;}
+  }else{view.hidden=true;view.removeAttribute('src');live=false;status.textContent='影像暫停或無法取得，等待重新連線。'+(s.error?' '+s.error.code:'');}
+ }catch(e){view.hidden=true;view.removeAttribute('src');live=false;status.textContent='深度服務無法連線。';}
+ finally{clearTimeout(timer);setTimeout(poll,500);}
+}
+view.onerror=()=>{view.hidden=true;live=false;};poll();
+</script></html>

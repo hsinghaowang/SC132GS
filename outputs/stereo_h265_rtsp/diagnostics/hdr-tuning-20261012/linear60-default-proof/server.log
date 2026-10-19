@@ -1,0 +1,64 @@
+GPIO18/19 released for the common SC132GS FSYNC source
+RTSP ready: rtsp://192.168.137.226:8554/stereo (2176x1280@60, Main10 linear R16/P010)
+sensor_signal black_raw10=37 gamma=1
+High-rate timestamp pairing; max_delta_ns=8833333; exposure synchronization unverified
+Capture ready: fps=60
+encoder_session phase=opened fd=12
+rtsp_client phase=connected
+rtsp_media phase=configured
+rtsp_session phase=created timeout_seconds=30
+input_fps=48.5404 submitted_fps=48.5404 dropped_fps=0 encoded_fps=47.9411 rtsp_fps=43.147 pairs=243
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+rtsp_client phase=connected
+rtsp_media phase=configured
+rtsp_session phase=created timeout_seconds=30
+input_fps=58.3288 submitted_fps=58.3288 dropped_fps=0 encoded_fps=58.5285 rtsp_fps=55.5322 pairs=535
+capture frame gap cam0=605->609 cam1=600->604; continuing
+capture frame gap cam0=609->611 cam1=604->606; continuing
+capture frame gap cam0=611->614 cam1=606->610; continuing
+capture frame gap cam0=628->630 cam1=624->626; continuing
+capture frame gap cam0=630->632 cam1=626->628; continuing
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+capture frame gap cam0=632->634 cam1=628->630; continuing
+capture frame gap cam0=634->636 cam1=630->632; continuing
+capture frame gap cam0=636->638 cam1=632->634; continuing
+capture frame gap cam0=638->641 cam1=634->638; continuing
+input_fps=50.686 submitted_fps=50.686 dropped_fps=0 encoded_fps=50.4865 rtsp_fps=5.58744 pairs=789
+input_fps=59.9899 submitted_fps=59.9899 dropped_fps=0 encoded_fps=59.9899 rtsp_fps=0 pairs=1089
+input_fps=59.9896 submitted_fps=59.9896 dropped_fps=0 encoded_fps=59.9896 rtsp_fps=0 pairs=1389
+input_fps=60.0045 submitted_fps=60.0045 dropped_fps=0 encoded_fps=60.2038 rtsp_fps=0 pairs=1690
+input_fps=59.999 submitted_fps=59.999 dropped_fps=0 encoded_fps=59.799 rtsp_fps=0 pairs=1990
+input_fps=59.9992 submitted_fps=59.9992 dropped_fps=0 encoded_fps=59.7992 rtsp_fps=0 pairs=2290
+rtsp_client phase=connected
+rtsp_media phase=configured
+rtsp_session phase=created timeout_seconds=30
+input_fps=60.0027 submitted_fps=60.0027 dropped_fps=0 encoded_fps=60.2021 rtsp_fps=7.17641 pairs=2591
+input_fps=60.0005 submitted_fps=60.0005 dropped_fps=0 encoded_fps=60.0005 rtsp_fps=60.0005 pairs=2892
+rtsp_media phase=unprepared
+rtsp_client phase=closed
+input_fps=59.997 submitted_fps=59.997 dropped_fps=0 encoded_fps=59.997 rtsp_fps=32.1984 pairs=3192
+input_fps=59.9901 submitted_fps=59.9901 dropped_fps=0 encoded_fps=59.9901 rtsp_fps=0 pairs=3492
+input_fps=60.0064 submitted_fps=60.0064 dropped_fps=0 encoded_fps=60.0064 rtsp_fps=0 pairs=3793
+input_fps=60.0268 submitted_fps=60.0268 dropped_fps=0 encoded_fps=60.0268 rtsp_fps=0 pairs=4094
+input_fps=59.9741 submitted_fps=59.9741 dropped_fps=0 encoded_fps=59.9741 rtsp_fps=0 pairs=4394
+input_fps=59.9981 submitted_fps=59.9981 dropped_fps=0 encoded_fps=59.9981 rtsp_fps=0 pairs=4694
+input_fps=59.9956 submitted_fps=59.9956 dropped_fps=0 encoded_fps=59.9956 rtsp_fps=0 pairs=4994
+input_fps=60.0045 submitted_fps=60.0045 dropped_fps=0 encoded_fps=60.0045 rtsp_fps=0 pairs=5295
+input_fps=59.9729 submitted_fps=59.9729 dropped_fps=0 encoded_fps=60.1728 rtsp_fps=0 pairs=5595
+input_fps=60.0518 submitted_fps=60.0518 dropped_fps=0 encoded_fps=59.8523 rtsp_fps=0 pairs=5896
+input_fps=59.9784 submitted_fps=59.9784 dropped_fps=0 encoded_fps=59.9784 rtsp_fps=0 pairs=6196
+input_fps=60.004 submitted_fps=60.004 dropped_fps=0 encoded_fps=60.004 rtsp_fps=0 pairs=6497
+input_fps=59.9829 submitted_fps=59.9829 dropped_fps=0 encoded_fps=59.9829 rtsp_fps=0 pairs=6797
+input_fps=60.0401 submitted_fps=60.0401 dropped_fps=0 encoded_fps=60.0401 rtsp_fps=0 pairs=7098
+rtsp_client phase=connected
+rtsp_media phase=configured
+rtsp_session phase=created timeout_seconds=30
+rtsp_session phase=created timeout_seconds=30
+input_fps=59.9957 submitted_fps=59.9957 dropped_fps=0 encoded_fps=59.9957 rtsp_fps=42.597 pairs=7398
+input_fps=59.9632 submitted_fps=59.9632 dropped_fps=0 encoded_fps=59.9632 rtsp_fps=59.9632 pairs=7699
+input_fps=59.9875 submitted_fps=59.9875 dropped_fps=0 encoded_fps=59.9875 rtsp_fps=59.9875 pairs=8000
+input_fps=59.9794 submitted_fps=59.9794 dropped_fps=0 encoded_fps=59.9794 rtsp_fps=59.9794 pairs=8300
+capture frame gap cam0=8581->8583 cam1=8578->8580; continuing
+capture frame gap cam0=8583->8586 cam1=8580->8583; continuing

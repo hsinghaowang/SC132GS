@@ -1,0 +1,12 @@
+GPIO18/19 released for the common SC132GS FSYNC source
+RTSP ready: rtsp://192.168.137.226:8554/stereo (2176x1280@15, Main10 linear R16/P010)
+hdr_display_profile=sensor
+sensor_signal black_raw10=53 gamma=1
+Capture ready: fps=15
+encoder_session phase=opened fd=12
+rtsp_client phase=connected
+rtsp_media phase=configured
+encoder_session phase=closing fd=12
+encoder_session phase=closed fd=12
+input_pairs=15 submitted_pairs=15 dropped_pairs=0
+stereo-h265-rtsp: camera capture timed out waiting for frames

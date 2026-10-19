@@ -1,0 +1,130 @@
+{
+  "status": "factory_intrinsics_read_and_decoded_not_geometrically_validated",
+  "vendor": "UNION",
+  "version": "1.2",
+  "EEPROM_bus": 18,
+  "EEPROM_address": "0x50",
+  "raw_sha256": "f5c6b8293c652add02f869860079f75d196e0c2bd8fb62b8879928c1d7dceabb",
+  "header_checksum_passed": true,
+  "repeat_reads_identical": true,
+  "saved_camera_state_unchanged": true,
+  "official_decoder_revision": "12bde1f530533a11eba1803c1de525cee928c88b",
+  "cameras": {
+    "cam0": {
+      "factory_eye": "right",
+      "sensor_I2C_address": "0x32",
+      "rostopic": "/cam0/image_raw",
+      "camera_model": "pinhole",
+      "distortion_model": "equidistant",
+      "intrinsics": [
+        657.8239450517727,
+        658.2150920608404,
+        524.0026141065277,
+        640.7191886623792
+      ],
+      "K": [
+        [
+          657.8239450517727,
+          0.0,
+          524.0026141065277
+        ],
+        [
+          0.0,
+          658.2150920608404,
+          640.7191886623792
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_coeffs": [
+        -0.02178480406769214,
+        -5.9635367621555255e-05,
+        -0.0014060047059429044,
+        -0.0012274502728586922
+      ],
+      "resolution": [
+        1088,
+        1280
+      ],
+      "resolution_source": "official SDK raw sensor preset and current captured geometry, not inferred from K",
+      "factory_rotation_degrees": 0,
+      "pixel_data_rotated_or_rectified": false
+    },
+    "cam1": {
+      "factory_eye": "left",
+      "sensor_I2C_address": "0x30",
+      "rostopic": "/cam1/image_raw",
+      "camera_model": "pinhole",
+      "distortion_model": "equidistant",
+      "intrinsics": [
+        655.758106055711,
+        655.8953912485096,
+        522.6808527771126,
+        628.2127111310857
+      ],
+      "K": [
+        [
+          655.758106055711,
+          0.0,
+          522.6808527771126
+        ],
+        [
+          0.0,
+          655.8953912485096,
+          628.2127111310857
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_coeffs": [
+        -0.014722095589258003,
+        -0.014398333960392052,
+        0.010330564415067026,
+        -0.004621151172464282
+      ],
+      "resolution": [
+        1088,
+        1280
+      ],
+      "resolution_source": "official SDK raw sensor preset and current captured geometry, not inferred from K",
+      "factory_rotation_degrees": 0,
+      "pixel_data_rotated_or_rectified": false
+    }
+  },
+  "stereo_factory_raw": {
+    "rotation_left_to_right": [
+      [
+        0.99997011,
+        0.00647268,
+        -0.0042289
+      ],
+      [
+        -0.00648184,
+        0.99997667,
+        -0.00215666
+      ],
+      [
+        0.00421484,
+        0.00218401,
+        0.99998873
+      ]
+    ],
+    "translation_left_to_right": [
+      -0.07068929167734898,
+      -0.00013650468183200003,
+      0.0013509330143944998
+    ],
+    "translation_units": "Not independently verified; preserved raw, not exported for live VIO yet"
+  },
+  "geometric_validation_performed": false,
+  "physical_camera_IMU_time_synchronization_validated": false,
+  "note": "Header checksum does not validate every calibration payload byte; repeated read plus finite/plausible values and rotation sanity are integrity checks, not reprojection validation.",
+  "official_CPP_parser_crosscheck_passed": true,
+  "official_CPP_parser_crosscheck_scope": "Unmodified official layout parser; file-backed transport; all 16 intrinsic/distortion doubles exactly match Python decoding"
+}

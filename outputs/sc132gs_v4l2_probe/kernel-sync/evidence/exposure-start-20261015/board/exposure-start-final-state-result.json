@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "abi": 4,
+  "source": "exposure_start_estimate",
+  "timestamp_offset_ns": 344903,
+  "session": 5,
+  "smmu_or_oops_errors": 0,
+  "queue_errors": 0,
+  "server_dropped_fps": 0,
+  "last_pairs": 4209,
+  "service_restarts": 0
+}

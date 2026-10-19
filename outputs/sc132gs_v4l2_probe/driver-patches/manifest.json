@@ -1,0 +1,18 @@
+{
+  "kernel": "6.8.0-1084-qcom",
+  "ubuntu_source_version": "6.8.0-1084.89",
+  "stock_camss_srcversion": "6836E35C0AA1F2FCD21FCBD",
+  "deployed_camss_srcversion": "93BFD442CB057A0FAFA8C97",
+  "deployed_module_sha256": "27a726f96a74daace3b9a705e5264dc0d239063dac72405967f4881c3415e3e0",
+  "patch_sha256": "d4f6de9ef6022db94837e92174c233251a0a9c11c9ff7bf86422da25a70e9458",
+  "source_orig_sha256": "26512115972bdf017a4ac826cc7d3e9b0ba397d4f85cd330e4e4ff54c78061c8",
+  "source_diff_sha256": "a9654afb1345e35236146a8afc7adf851868910fd4b890c313b6d9bdb1672960",
+  "verified_mode": {
+    "eye_width": 1088,
+    "height": 1280,
+    "format": "packed RAW10",
+    "sensor_mode": "linear",
+    "fps": 60
+  },
+  "stock_module_preserved": true
+}

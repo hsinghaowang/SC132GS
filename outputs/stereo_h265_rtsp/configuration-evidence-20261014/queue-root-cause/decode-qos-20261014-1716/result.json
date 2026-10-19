@@ -1,0 +1,11 @@
+{
+  "scope": "bounded RTSP TCP decode of relative-scheduler QoS build; not absolute-scheduler acceptance or one-hour stability proof",
+  "codec": "hevc",
+  "decoded_frames": 121,
+  "stream_duration_s": 0,
+  "media_fps": 0,
+  "timestamps_monotonic": false,
+  "geometry_and_format_valid": true,
+  "wall_elapsed_s": 4.328792333602905,
+  "passed": false
+}

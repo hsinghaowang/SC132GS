@@ -1,0 +1,195 @@
+[
+  {
+    "target": 30,
+    "eyes": [
+      {
+        "eye": 0,
+        "common_spatial_bands": [
+          {
+            "linear_percentiles": [
+              0,
+              10
+            ],
+            "pixels": 89173,
+            "linear_mean": 41.5445024465552,
+            "hdr_mean": 41.25796205129355
+          },
+          {
+            "linear_percentiles": [
+              10,
+              25
+            ],
+            "pixels": 133755,
+            "linear_mean": 156.59275478798298,
+            "hdr_mean": 155.6192852603641
+          },
+          {
+            "linear_percentiles": [
+              25,
+              50
+            ],
+            "pixels": 222568,
+            "linear_mean": 276.45468613337647,
+            "hdr_mean": 274.26727412146704
+          },
+          {
+            "linear_percentiles": [
+              50,
+              75
+            ],
+            "pixels": 223421,
+            "linear_mean": 353.2983179736909,
+            "hdr_mean": 320.82381617365127
+          },
+          {
+            "linear_percentiles": [
+              75,
+              90
+            ],
+            "pixels": 133774,
+            "linear_mean": 763.1839015802772,
+            "hdr_mean": 424.8741023417605
+          },
+          {
+            "linear_percentiles": [
+              90,
+              100
+            ],
+            "pixels": 89213,
+            "linear_mean": 972.2829529702324,
+            "hdr_mean": 506.91046708439353
+          }
+        ],
+        "median_linear": 299.4166666666667,
+        "median_hdr": 293.4166666666667,
+        "global_mean_linear": 396.8458312217458,
+        "global_mean_hdr": 290.6994047752522,
+        "non_highlight_mean_linear": 332.9294972969898,
+        "non_highlight_mean_hdr": 266.68153010849,
+        "non_highlight_change_percent": -19.89849734744389,
+        "clipped_linear_percent": 4.478396778128587,
+        "clipped_hdr_percent": 0.0
+      },
+      {
+        "eye": 1,
+        "common_spatial_bands": [
+          {
+            "linear_percentiles": [
+              0,
+              10
+            ],
+            "pixels": 89090,
+            "linear_mean": 76.71702117708683,
+            "hdr_mean": 77.11111516444045
+          },
+          {
+            "linear_percentiles": [
+              10,
+              25
+            ],
+            "pixels": 133698,
+            "linear_mean": 201.21535226156462,
+            "hdr_mean": 203.7238995098406
+          },
+          {
+            "linear_percentiles": [
+              25,
+              50
+            ],
+            "pixels": 222826,
+            "linear_mean": 288.3908894533552,
+            "hdr_mean": 286.59776537148565
+          },
+          {
+            "linear_percentiles": [
+              50,
+              75
+            ],
+            "pixels": 223310,
+            "linear_mean": 338.8553520517069,
+            "hdr_mean": 319.3512613258101
+          },
+          {
+            "linear_percentiles": [
+              75,
+              90
+            ],
+            "pixels": 133752,
+            "linear_mean": 750.862509221046,
+            "hdr_mean": 449.91165739577724
+          },
+          {
+            "linear_percentiles": [
+              90,
+              100
+            ],
+            "pixels": 89228,
+            "linear_mean": 981.4137116899029,
+            "hdr_mean": 542.6071459257931
+          }
+        ],
+        "median_linear": 306.4166666666667,
+        "median_hdr": 302.0,
+        "global_mean_linear": 405.49939408650863,
+        "global_mean_hdr": 311.553043171313,
+        "non_highlight_mean_linear": 341.51156118390514,
+        "non_highlight_mean_hdr": 285.8794595140036,
+        "non_highlight_change_percent": -16.289961451683755,
+        "clipped_linear_percent": 4.197649074339839,
+        "clipped_hdr_percent": 0.0
+      }
+    ],
+    "decoded_dark_patches": [
+      {
+        "eye": 0,
+        "box": [
+          30,
+          80,
+          160,
+          220
+        ],
+        "linear_cnr": 71.32219420130279,
+        "hdr_cnr": 91.20435647463108,
+        "cnr_change_percent": 27.876543193850758
+      },
+      {
+        "eye": 0,
+        "box": [
+          500,
+          470,
+          660,
+          620
+        ],
+        "linear_cnr": 14.412859915285427,
+        "hdr_cnr": 19.960110557570495,
+        "cnr_change_percent": 38.48820202853691
+      },
+      {
+        "eye": 1,
+        "box": [
+          30,
+          80,
+          160,
+          220
+        ],
+        "linear_cnr": 130.28089112533544,
+        "hdr_cnr": 165.76972352320198,
+        "cnr_change_percent": 27.240243823420627
+      },
+      {
+        "eye": 1,
+        "box": [
+          500,
+          470,
+          660,
+          620
+        ],
+        "linear_cnr": 13.335876982078936,
+        "hdr_cnr": 17.942850220059157,
+        "cnr_change_percent": 34.545708873673476
+      }
+    ],
+    "linear_status": "ok mode=auto camera_mode=linear hdr_enabled=0 hdr_ratio=0 hdr_second_ticks=0 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=3000 saturation_scope=unused highlight_sample_percent=0 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=37 signal_target_luma10=307 target_kind=sensor_signal_percent hdr_target_raw10=0 cam0_shadow_raw10=0 cam1_shadow_raw10=0 target_percent=30 cam0_percent=29 cam1_percent=30 exposure_lines=1377 gain_index=30 fps_x10=299 max_exposure_lines=1377 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+    "hdr_status": "ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=1 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=3000 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=53 signal_target_luma10=307 target_kind=sensor_signal_percent hdr_target_raw10=344 cam0_shadow_raw10=331 cam1_shadow_raw10=339 target_percent=30 cam0_percent=29 cam1_percent=30 exposure_lines=4350 gain_index=0 fps_x10=149 max_exposure_lines=4492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128"
+  }
+]

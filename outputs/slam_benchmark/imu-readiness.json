@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "evidence_type": "historical_imu_capture_integrity",
+  "csv": "D:\\projects\\collision_avoid\\outputs\\gs130wi_imu\\capture-wired-irq-30s.csv",
+  "summary": "D:\\projects\\collision_avoid\\outputs\\gs130wi_imu\\capture-wired-irq-30s-summary.json",
+  "samples": 6072,
+  "invalid_samples": 0,
+  "capture_integrity_passed": true,
+  "errors": [],
+  "sensor_elapsed_duration_s": 30.355000533,
+  "host_read_duration_s": 29.996552249,
+  "sensor_counter_rate_hz": 199.99999648822276,
+  "host_read_observed_rate_hz": 202.38992633569714,
+  "sensor_delta_min_ns": 4999467,
+  "sensor_delta_max_ns": 5000533,
+  "repeated_batch_irq_rows": 5386,
+  "configuration_restored": true,
+  "live_vio_time_ready": false,
+  "time_readiness_source": "capture summary claim; no independent clock validation performed by this audit",
+  "unit_conversion_required": {
+    "g_to_m_s2": 9.80665,
+    "deg_s_to_rad_s": 0.017453292519943295
+  },
+  "limitations": [
+    "sensor_elapsed_ns is a relative sensor counter timeline",
+    "host_interrupt_ns is a batch notification, not each sample time",
+    "sensor and host rates do not establish offset or drift calibration",
+    "camera exposure synchronization and SLAM performance are not evaluated"
+  ]
+}

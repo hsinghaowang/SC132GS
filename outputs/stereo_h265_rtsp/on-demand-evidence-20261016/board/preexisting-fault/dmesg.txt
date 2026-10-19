@@ -1,0 +1,1023 @@
+[ 3263.463538] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 3263.485154] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 3263.490674] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 3263.491097] sc132gs 16-0030: stream request: on (current=off)
+[ 3263.604637] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 3263.626336] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 3263.631915] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 3263.802478] msm_vidc: err : 7c4fd000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+[ 3263.804253] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+[ 3263.809198] msm_vidc:     fw: <VFW_E:CmdDec:265e:7811d000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 3278.373637] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3278.373670] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3278.373679] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3278.373687] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3278.374657] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3278.374686] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3278.374695] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3278.374703] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3278.382965] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3278.383099] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3278.383121] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3278.383139] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3278.385258] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3278.385344] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3278.385365] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3278.385384] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3294.878596] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3294.878640] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3294.878649] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3294.878660] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3294.879699] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3294.879731] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3294.879742] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3294.879752] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3294.892804] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3294.892873] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3294.892890] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3294.892904] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3294.896661] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3294.896739] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3294.896756] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3294.896771] msm_vidc:     fw: <VFW_E:HostDr:265e:7811d000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3297.092675] sc132gs 16-0030: stream request: off (current=on)
+[ 3297.102734] sc132gs 18-0032: stream request: off (current=on)
+[ 3297.837509] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3297.837534] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3297.837544] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3297.837551] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3298.266427] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3298.266455] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3298.266463] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3298.266471] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3298.268489] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3298.268513] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3298.268522] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3298.268531] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3298.292112] msm_vidc: err : 79d7f000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 3298.292129] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 3298.292132] msm_vidc: err : 79d7f000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 3298.292302] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3298.292320] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3298.292329] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3298.292339] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3298.293461] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 3298.293667] msm_vidc: err : 79d7f000: hevcE: msm_venc_g_selection: invalid type 1
+[ 3298.293735] msm_vidc: err : 79d7f000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 3298.389008] sc132gs 18-0032: stream request: on (current=off)
+[ 3298.500185] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 3298.521567] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 3298.527195] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 3298.527895] sc132gs 16-0030: stream request: on (current=off)
+[ 3298.640837] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 3298.662420] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 3298.667939] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 3298.805923] msm_vidc: err : 7c65f000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+[ 3298.807769] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c65f000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+[ 3298.816992] msm_vidc:     fw: <VFW_E:CmdDec:265e:79d7f000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 3325.818871] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3325.818921] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3325.818975] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3325.818991] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3325.820064] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3325.820114] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3325.820124] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3325.820138] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3325.839338] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3325.839396] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3325.839404] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3325.839414] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3325.840156] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3325.840190] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3325.840200] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3325.840209] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3344.673125] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3344.673177] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3344.673187] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3344.673196] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3344.674111] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3344.674145] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3344.674155] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3344.674165] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3344.702522] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3344.702588] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3344.702601] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3344.702615] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3344.704255] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3344.704350] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3344.704369] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3344.704388] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3361.207980] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3361.208020] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3361.208028] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3361.208038] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3361.208978] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3361.209007] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3361.209016] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3361.209024] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3361.220905] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3361.220958] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3361.220968] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3361.220978] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3361.222335] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3361.222395] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3361.222408] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3361.222422] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3415.199653] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3415.199738] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3415.199753] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3415.199768] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3415.204782] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3415.204824] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3415.204835] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3415.204845] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3415.212026] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3415.212064] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3415.212073] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3415.212082] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3415.214087] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3415.214132] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3415.214147] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3415.214162] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3455.874692] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3455.874734] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3455.874743] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3455.874754] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3455.875583] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3455.875613] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3455.875623] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3455.875633] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3455.884022] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3455.884070] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3455.884080] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3455.884088] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3455.887350] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3455.887424] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3455.887437] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3455.887451] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3472.590641] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3472.590736] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3472.590753] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3472.590765] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3472.591861] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3472.591888] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3472.591896] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3472.591905] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3472.607475] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3472.607506] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3472.607515] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3472.607524] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3472.608329] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3472.608350] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3472.608357] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3472.608365] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3491.069399] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3491.069500] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3491.069514] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3491.069532] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3491.072243] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3491.072328] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3491.072342] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3491.072353] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3491.085770] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3491.085814] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3491.085823] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3491.085832] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3491.087009] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3491.087044] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3491.087054] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3491.087064] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3534.933609] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3534.933665] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3534.933676] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3534.933689] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3534.937389] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3534.937504] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3534.937554] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3534.937604] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3534.947753] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3534.947796] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3534.947807] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3534.947815] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3534.948946] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3534.948979] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3534.948988] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3534.948998] msm_vidc:     fw: <VFW_E:HostDr:265e:79d7f000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3535.931404] sc132gs 16-0030: stream request: off (current=on)
+[ 3535.943655] sc132gs 18-0032: stream request: off (current=on)
+[ 3535.962028] msm_vidc:     fw: <VFW_E:WrkDec:265e:79d7f000:01> venc_c2FillBufferDone(3371): Missing corresponding Output Buffer for FBD
+[ 3536.681456] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3536.681497] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3536.681514] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3536.681529] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3537.153385] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3537.153423] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3537.153438] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3537.153469] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3537.154922] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3537.154949] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3537.154965] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3537.154980] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3537.180178] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 3537.180197] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 3537.180200] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 3537.180343] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3537.180362] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3537.180372] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3537.180382] msm_vidc:     fw: <VFW_E:HostDr:265e:7c65f000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3537.181541] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 3537.181726] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 3537.181780] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 3537.278448] sc132gs 18-0032: stream request: on (current=off)
+[ 3537.391395] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 3537.413777] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 3537.419336] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 3537.419774] sc132gs 16-0030: stream request: on (current=off)
+[ 3537.533752] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 3537.556830] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 3537.562404] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 3537.671306] msm_vidc: err : 780d5000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+[ 3537.672530] msm_vidc:     fw: <VFW_E:CmdDec:265e:780d5000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+[ 3537.700396] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 3558.065078] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3558.065149] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3558.065164] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3558.065177] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3558.069268] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3558.069325] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3558.069337] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3558.069351] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3558.088584] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3558.088682] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3558.088697] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3558.088711] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3558.089868] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3558.089898] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3558.089907] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3558.089915] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3588.553391] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3588.553421] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3588.553428] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3588.553435] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3588.556267] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3588.556342] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3588.556357] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3588.556368] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3588.602596] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3588.602715] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3588.602736] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3588.602754] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3588.605513] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3588.605697] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3588.605721] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3588.605733] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3622.133409] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3622.133447] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3622.133456] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3622.133464] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3622.134744] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3622.134775] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3622.134784] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3622.134793] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3622.154328] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3622.154440] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3622.154456] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3622.154645] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3622.157664] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3622.157754] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3622.157771] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3622.157785] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3697.176665] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3697.176708] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3697.176717] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3697.176727] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3697.177874] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3697.178322] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3697.178350] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3697.178403] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3697.199992] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3697.200070] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3697.200084] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3697.200096] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3697.207695] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3697.207755] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3697.207770] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3697.207785] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3700.617704] sc132gs 16-0030: stream request: off (current=on)
+[ 3700.626152] sc132gs 18-0032: stream request: off (current=on)
+[ 3701.365316] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3701.365351] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3701.365369] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3701.365385] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3701.367081] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3701.367108] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3701.367124] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3701.367139] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3701.393604] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 3701.393624] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 3701.393630] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 3701.393666] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3701.393680] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3701.393690] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3701.393699] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3701.395150] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 3701.395332] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 3701.395387] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 3701.868940] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 3701.868957] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 3701.868962] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 3701.869064] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3701.869079] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3701.869091] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3701.869101] msm_vidc:     fw: <VFW_E:HostDr:265e:780d5000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3701.870121] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 3701.870289] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[ 3701.870336] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 3701.965590] sc132gs 18-0032: stream request: on (current=off)
+[ 3702.079333] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 3702.100994] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 3702.106612] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 3702.107247] sc132gs 16-0030: stream request: on (current=off)
+[ 3702.220152] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 3702.241796] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 3702.247435] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 3702.404455] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 3702.414575] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 3767.692912] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3767.692970] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3767.692978] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3767.692986] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3767.694539] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3767.694564] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3767.694572] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3767.694581] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3767.712334] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3767.712405] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3767.712418] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3767.712431] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3767.717042] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3767.717093] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3767.717106] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3767.717119] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3838.103876] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3838.103942] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3838.103951] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3838.103958] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3838.106932] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3838.106970] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3838.106978] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3838.106988] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3838.125218] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3838.125254] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3838.125262] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3838.125269] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3838.126370] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3838.126397] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3838.126405] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3838.126414] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3864.115002] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3864.115047] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3864.115057] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3864.115066] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3864.115975] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3864.116014] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3864.116024] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3864.116037] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3864.137226] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3864.137268] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3864.137282] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3864.137291] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3864.139031] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3864.139085] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3864.139100] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3864.139116] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3959.424893] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3959.424928] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3959.424969] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3959.424979] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3959.426179] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3959.426208] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3959.426216] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3959.426225] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3959.446074] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3959.446132] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3959.446142] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3959.446150] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 3959.452904] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 3959.453002] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 3959.453016] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 3959.453026] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 4102.801171] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 4102.801206] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 4102.801214] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 4102.801223] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 4102.802489] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 4102.802553] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 4102.802565] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 4102.802576] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 4102.842635] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 4102.842702] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 4102.842750] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 4102.842781] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 4102.843863] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 4102.843892] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 4102.843902] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 4102.843911] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 4208.369578] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 4208.369634] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 4208.369646] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 4208.369658] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 4208.371321] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 4208.371376] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 4208.371388] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 4208.371401] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 4208.383332] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 4208.383389] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 4208.383400] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 4208.383411] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 4208.386435] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 4208.386501] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 4208.386513] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 4208.386629] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a5000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5013.763584] sc132gs 16-0030: stream request: off (current=on)
+[ 5013.775836] sc132gs 18-0032: stream request: off (current=on)
+[ 5013.802695] msm_vidc:     fw: <VFW_E:WrkDec:265e:7c7a5000:01> venc_c2FillBufferDone(3371): Missing corresponding Output Buffer for FBD
+[ 5015.576822] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5015.576860] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5015.576877] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5015.576892] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5015.578327] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5015.578355] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5015.578370] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5015.578386] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5015.606709] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5015.606729] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5015.606735] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5015.606771] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5015.606785] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5015.606795] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5015.606804] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5015.608198] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5015.608364] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5015.608413] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5015.968439] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5015.968455] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5015.968459] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5015.968709] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5015.968734] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5015.968750] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5015.968767] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5015.969545] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5015.969759] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5015.969831] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5016.064425] sc132gs 18-0032: stream request: on (current=off)
+[ 5016.177437] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 5016.198914] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5016.204471] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 5016.205109] sc132gs 16-0030: stream request: on (current=off)
+[ 5016.318243] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 5016.339850] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5016.345453] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 5016.483048] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5016.498199] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5022.956988] sc132gs 16-0030: stream request: off (current=on)
+[ 5022.967199] sc132gs 18-0032: stream request: off (current=on)
+[ 5024.857519] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5024.857545] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5024.857556] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5024.857566] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5024.859195] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5024.859226] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5024.859241] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5024.859257] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5024.888038] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5024.888057] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5024.888061] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5024.888317] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5024.888338] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5024.888353] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5024.888366] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5024.889662] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5024.889875] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5024.889938] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5025.239295] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5025.239312] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5025.239315] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5025.239441] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5025.239457] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5025.239467] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5025.239477] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5025.240520] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5025.240691] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5025.240742] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5025.335317] sc132gs 18-0032: stream request: on (current=off)
+[ 5025.448026] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 5025.469742] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5025.475336] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 5025.475989] sc132gs 16-0030: stream request: on (current=off)
+[ 5025.588853] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 5025.610540] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5025.616138] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 5025.768686] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5025.785176] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5032.133512] sc132gs 16-0030: stream request: off (current=on)
+[ 5032.143335] sc132gs 18-0032: stream request: off (current=on)
+[ 5032.159926] msm_vidc:     fw: <VFW_E:WrkDec:265e:7c7a5000:01> venc_c2FillBufferDone(3371): Missing corresponding Output Buffer for FBD
+[ 5107.326540] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5107.326569] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5107.326578] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5107.326588] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5107.328355] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5107.328376] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5107.328386] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5107.328445] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5107.356464] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5107.356470] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5107.356489] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5107.356491] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5107.356495] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5107.356503] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5107.356514] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5107.358351] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5107.358582] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5107.358647] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5107.713811] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5107.713830] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5107.713833] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5107.713990] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5107.714019] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5107.714036] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5107.714052] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5107.714925] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5107.715122] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5107.715190] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5107.808697] sc132gs 18-0032: stream request: on (current=off)
+[ 5107.921456] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 5107.942981] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5107.948606] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 5107.949081] sc132gs 16-0030: stream request: on (current=off)
+[ 5108.060455] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 5108.082102] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5108.087711] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 5108.234373] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5108.249566] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5130.449257] sc132gs 16-0030: stream request: off (current=on)
+[ 5130.459088] sc132gs 18-0032: stream request: off (current=on)
+[ 5130.857931] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5130.857960] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5130.857970] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5130.857980] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5131.267786] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5131.267814] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5131.267823] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5131.267833] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5131.269478] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5131.269508] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5131.269524] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5131.269539] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5131.293097] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5131.293114] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5131.293117] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5131.293257] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5131.293276] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5131.293287] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5131.293297] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5131.298304] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5131.298526] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5131.298575] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5131.371143] sc132gs 18-0032: stream request: on (current=off)
+[ 5131.472652] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 5131.494582] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5131.500231] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 5131.501139] sc132gs 16-0030: stream request: on (current=off)
+[ 5131.603287] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 5131.625264] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5131.630903] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 5131.794938] msm_vidc: err : 7610d000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+[ 5131.796542] msm_vidc:     fw: <VFW_E:CmdDec:265e:7610d000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+[ 5131.801978] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5211.860096] sc132gs 16-0030: stream request: off (current=on)
+[ 5211.871873] sc132gs 18-0032: stream request: off (current=on)
+[ 5212.375181] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5212.375211] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5212.375223] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5212.375233] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5212.819604] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5212.819631] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5212.819638] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5212.819644] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5212.821188] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5212.821218] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5212.821233] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5212.821248] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5212.847150] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5212.847170] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5212.847173] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5212.847330] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5212.847356] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5212.847370] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5212.847382] msm_vidc:     fw: <VFW_E:HostDr:265e:7610d000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5212.852655] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5212.852980] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5212.853103] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5212.948663] sc132gs 18-0032: stream request: on (current=off)
+[ 5213.050406] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 5213.072318] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5213.077952] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 5213.078845] sc132gs 16-0030: stream request: on (current=off)
+[ 5213.193146] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 5213.215000] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5213.220647] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 5213.334827] msm_vidc: err : 781c1000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+[ 5213.336063] msm_vidc:     fw: <VFW_E:CmdDec:265e:781c1000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+[ 5213.360331] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5293.576751] sc132gs 16-0030: stream request: off (current=on)
+[ 5293.589062] sc132gs 18-0032: stream request: off (current=on)
+[ 5294.183628] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5294.183651] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5294.183659] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5294.183666] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5294.185140] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5294.185158] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5294.185165] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5294.185173] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5294.209978] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5294.209997] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5294.210002] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5294.210065] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5294.210075] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5294.210083] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5294.210130] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5294.212049] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5294.212250] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5294.212304] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5294.606830] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5294.606847] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5294.606851] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5294.606960] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5294.606977] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5294.606988] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5294.606997] msm_vidc:     fw: <VFW_E:HostDr:265e:781c1000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5294.607979] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5294.608185] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5294.608241] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5294.706264] sc132gs 18-0032: stream request: on (current=off)
+[ 5294.820683] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 5294.842598] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5294.848251] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 5294.849205] sc132gs 16-0030: stream request: on (current=off)
+[ 5294.963528] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 5294.985474] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5294.991195] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 5295.140238] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5295.151995] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5375.749085] sc132gs 16-0030: stream request: off (current=on)
+[ 5375.762085] sc132gs 18-0032: stream request: off (current=on)
+[ 5376.102740] sc132gs 18-0032: stream request: on (current=off)
+[ 5376.208922] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 5376.232266] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5376.238263] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 5376.256819] sc132gs 16-0030: stream request: on (current=off)
+[ 5376.363416] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 5376.386354] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5376.392218] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 5381.110833] sc132gs 16-0030: stream request: off (current=on)
+[ 5381.127956] sc132gs 18-0032: stream request: off (current=on)
+[ 5382.001052] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5382.001085] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5382.001105] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5382.001120] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5382.002592] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5382.002618] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5382.002634] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5382.002648] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5382.029357] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5382.029379] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5382.029385] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5382.029400] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5382.029415] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5382.029425] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5382.029434] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5382.031147] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5382.031310] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5382.031362] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5382.382745] msm_vidc: err : 7c7a5000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 5382.382763] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 5382.382767] msm_vidc: err : 7c7a5000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 5382.382920] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 5382.382941] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 5382.382952] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 5382.382961] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 5382.383851] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 5382.384080] msm_vidc: err : 7c7a5000: hevcE: msm_venc_g_selection: invalid type 1
+[ 5382.384145] msm_vidc: err : 7c7a5000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 5382.479390] sc132gs 18-0032: stream request: on (current=off)
+[ 5382.591679] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 5382.613147] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5382.618749] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 5382.619323] sc132gs 16-0030: stream request: on (current=off)
+[ 5382.732430] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 5382.754262] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 5382.759844] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 5382.901752] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 5382.918245] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a5000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 7000.688142] sc132gs 16-0030: stream request: off (current=on)
+[ 7000.696797] sc132gs 18-0032: stream request: off (current=on)
+[ 7001.385898] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 7001.385926] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 7001.385937] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 7001.385947] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 7001.387671] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 7001.387706] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 7001.387748] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 7001.387765] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 7001.417214] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 7001.417248] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 7001.417257] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 7001.417267] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 7001.417309] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 7001.417331] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 7001.417338] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 7001.420291] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 7001.420528] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 7001.420591] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 7002.003616] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 7002.003635] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 7002.003640] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 7002.003674] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 7002.003688] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 7002.003698] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 7002.003707] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 7002.004837] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 7002.005020] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[ 7002.005084] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 7002.108674] sc132gs 18-0032: stream request: on (current=off)
+[ 7002.221115] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 7002.242705] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 7002.248291] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 7002.248743] sc132gs 16-0030: stream request: on (current=off)
+[ 7002.362059] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 7002.383592] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 7002.389283] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 7002.537221] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 7002.544397] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 8494.705680] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 8494.705713] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 8494.705723] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 8494.705733] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 8494.761640] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 8494.761690] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 8494.761701] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 8494.761712] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 8494.766457] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 8494.766503] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 8494.766514] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 8494.766526] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 8494.893057] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 8494.893103] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 8494.893115] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 8494.893125] msm_vidc:     fw: <VFW_E:HostDr:265e:7c7a1000:01> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 8494.896721] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 8494.896757] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 8494.896782] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 8494.896794] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9006.177064] sc132gs 16-0030: stream request: off (current=on)
+[ 9006.189189] sc132gs 18-0032: stream request: off (current=on)
+[ 9006.879135] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9006.879159] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9006.879168] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9006.879175] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9006.881878] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9006.881903] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9006.881910] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9006.881918] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9006.916199] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9006.916201] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9006.916215] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9006.916222] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9006.916225] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9006.916230] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9006.916233] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9006.992278] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9006.992310] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9006.992320] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9006.992329] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9006.994972] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9006.994998] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9006.995006] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9006.995013] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9007.024098] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9007.024128] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9007.024135] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9007.024143] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9007.024370] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9007.024397] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9007.024405] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9007.026822] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9007.027061] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9007.027133] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9007.032285] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 9007.872773] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9007.872800] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9007.872807] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9007.872814] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9007.875139] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9007.875163] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9007.875170] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9007.875177] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9007.906797] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9007.906827] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9007.906836] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9007.906844] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9007.907721] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9007.907759] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9007.907768] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9007.912634] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9007.913057] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9007.913178] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9008.729913] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9008.729937] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9008.729946] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9008.729953] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9008.730209] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9008.730227] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9008.730232] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9008.731814] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9008.732053] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9008.732138] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9008.840671] sc132gs 18-0032: stream request: on (current=off)
+[ 9008.952002] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 9008.973350] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9008.978908] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 9008.979572] sc132gs 16-0030: stream request: on (current=off)
+[ 9009.091333] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 9009.112845] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9009.118376] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 9009.327038] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 9009.328130] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 9172.379917] sc132gs 16-0030: stream request: off (current=on)
+[ 9172.392626] sc132gs 18-0032: stream request: off (current=on)
+[ 9173.035166] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9173.035190] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9173.035199] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9173.035206] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9173.038094] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9173.038118] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9173.038125] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9173.038132] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9173.073539] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9173.073556] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9173.073567] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9173.073572] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9173.073574] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9173.073577] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9173.073584] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9173.148355] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9173.148383] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9173.148391] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9173.148398] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9173.151250] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9173.151276] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9173.151284] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9173.151292] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9173.176266] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9173.176285] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9173.176289] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9173.176377] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9173.176388] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9173.176396] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9173.176403] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9173.177926] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9173.178114] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9173.178175] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9173.183283] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 9174.037419] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9174.037446] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9174.037453] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9174.037461] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9174.040236] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9174.040257] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9174.040264] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9174.040271] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9174.070953] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9174.070978] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9174.070986] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9174.070993] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9174.071349] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9174.071371] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9174.071377] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9174.074984] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9174.075487] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9174.075630] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9174.888859] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9174.888882] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9174.888891] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9174.888898] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9174.889210] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9174.889228] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9174.889233] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9174.890753] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9174.891010] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9174.891088] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9175.001352] sc132gs 18-0032: stream request: on (current=off)
+[ 9175.112944] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 9175.134291] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9175.139777] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 9175.140252] sc132gs 16-0030: stream request: on (current=off)
+[ 9175.252579] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 9175.273937] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9175.279461] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 9175.443219] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 9175.444304] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 9524.243300] sc132gs 16-0030: stream request: off (current=on)
+[ 9524.251489] sc132gs 18-0032: stream request: off (current=on)
+[ 9524.837949] sc132gs 18-0032: stream request: on (current=off)
+[ 9524.940371] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 9524.962307] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9524.967956] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 9524.980609] sc132gs 16-0030: stream request: on (current=off)
+[ 9525.083107] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 9525.105049] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9525.110708] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 9529.850251] sc132gs 16-0030: stream request: off (current=on)
+[ 9529.860164] sc132gs 18-0032: stream request: off (current=on)
+[ 9530.714705] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9530.714747] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9530.714759] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9530.714769] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9530.716092] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9530.716114] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9530.716126] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9530.716138] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9530.741862] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9530.741882] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9530.741887] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9530.741917] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9530.741930] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9530.741938] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9530.741946] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9530.743643] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9530.743888] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9530.743956] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9531.162416] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9531.162434] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9531.162437] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9531.162597] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9531.162619] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9531.162630] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9531.162640] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9531.163604] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9531.163856] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9531.163939] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9531.261714] sc132gs 18-0032: stream request: on (current=off)
+[ 9531.374144] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 9531.395673] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9531.401242] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 9531.401672] sc132gs 16-0030: stream request: on (current=off)
+[ 9531.514435] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 9531.535992] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9531.541576] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 9531.733408] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 9531.734815] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 9668.603873] sc132gs 16-0030: stream request: off (current=on)
+[ 9668.613068] sc132gs 18-0032: stream request: off (current=on)
+[ 9669.437474] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9669.437499] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9669.437510] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9669.437519] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9669.439114] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9669.439148] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9669.439163] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9669.439179] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9669.465609] msm_vidc: err : 7c4fd000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9669.465630] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9669.465634] msm_vidc: err : 7c4fd000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9669.465685] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9669.465700] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9669.465709] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9669.465718] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9669.467275] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9669.467474] msm_vidc: err : 7c4fd000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9669.467524] msm_vidc: err : 7c4fd000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9670.075864] msm_vidc: err : 7c7a1000:  avcE_0: msm_venc_g_selection: invalid type 1
+[ 9670.075882] msm_vidc: err : ffffffff: codec: msm_vidc_enum_frameintervals: invalid v4l2 color format 0x43564548
+[ 9670.075886] msm_vidc: err : 7c7a1000:  avcE_0: msm_vidc_enum_frameintervals: unsupported pix fmt 0x43564548
+[ 9670.075970] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[ 9670.075983] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[ 9670.075993] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[ 9670.076003] msm_vidc:     fw: <VFW_E:HostDr:265e:7c4fd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[ 9670.077078] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(10) failed, -22
+[ 9670.077288] msm_vidc: err : 7c7a1000: hevcE: msm_venc_g_selection: invalid type 1
+[ 9670.077362] msm_vidc: err : 7c7a1000: hevcE: msm_vidc_reqbufs: vb2_reqbufs(9) failed, -22
+[ 9670.181508] sc132gs 18-0032: stream request: on (current=off)
+[ 9670.294073] sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+[ 9670.315652] sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9670.321234] sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+[ 9670.321710] sc132gs 16-0030: stream request: on (current=off)
+[ 9670.434559] sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+[ 9670.456119] sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+[ 9670.461704] sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+[ 9670.644214] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c7a1000:01> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[ 9670.670628] msm_vidc:     fw: <VFW_E:CmdDec:265e:7c4fd000:00> VenusVencFWSessionLoadConfig(6003): Adaptive/Fixed Chroma QP Offset is NOT supported for non-8K 8 bit HEVC encoding 
+[12344.517899] sc132gs 16-0030: stream request: off (current=on)
+[12344.546674] sc132gs 18-0032: stream request: off (current=on)

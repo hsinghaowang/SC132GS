@@ -1,0 +1,102 @@
+[
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9cf3f7e9206204529d22b67865d3440f7d10bcda",
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/trees/9cf3f7e9206204529d22b67865d3440f7d10bcda"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/Kconfig.sc132gs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ac093bafe22286e555cdf1980ee1fd83ce35b2a",
+    "size": 4871,
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/blobs/3ac093bafe22286e555cdf1980ee1fd83ce35b2a"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/cfg",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5163a200ae2d1977c2f77900c1f91a7863730424",
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/trees/5163a200ae2d1977c2f77900c1f91a7863730424"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/cfg/sc132gs_default.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5f7853dd79c08e9f4dcacf6d8d2d41d9a1d4bf32",
+    "size": 14246,
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/blobs/5f7853dd79c08e9f4dcacf6d8d2d41d9a1d4bf32"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/include",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6e6d9e70b0717df5c54743a088bc589dacfe5bc8",
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/trees/6e6d9e70b0717df5c54743a088bc589dacfe5bc8"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/include/sc132gs.h",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "97ee4b5a9e1935a8dfc2808b88fbe0523a309f7e",
+    "size": 965,
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/blobs/97ee4b5a9e1935a8dfc2808b88fbe0523a309f7e"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/include/sc132gs_types.h",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bdf17c21747083bee7d4fe415a15c0d35ac27667",
+    "size": 353,
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/blobs/bdf17c21747083bee7d4fe415a15c0d35ac27667"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/private_include",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cc51c37a1a6c7786f3044702113d17b51acd5682",
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/trees/cc51c37a1a6c7786f3044702113d17b51acd5682"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/private_include/sc132gs_mipi_2lane_24Minput_1080x1280_raw10_60fps.h",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1cbe20c0e15bacc0f26bd6e8ba9f715f51fa86d3",
+    "size": 2741,
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/blobs/1cbe20c0e15bacc0f26bd6e8ba9f715f51fa86d3"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/private_include/sc132gs_mipi_2lane_24Minput_544x640_raw10_60fps.h",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "21b2a384f13519848762a7ce017227a11ba9e6bc",
+    "size": 3678,
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/blobs/21b2a384f13519848762a7ce017227a11ba9e6bc"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/private_include/sc132gs_regs.h",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4c0fa40cd84f12cf94872e6be46f6dba831b08d7",
+    "size": 1648,
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/blobs/4c0fa40cd84f12cf94872e6be46f6dba831b08d7"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/private_include/sc132gs_settings.h",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ec4b83dad06be7d8f680a25a6452957a599cc9ac",
+    "size": 441,
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/blobs/ec4b83dad06be7d8f680a25a6452957a599cc9ac"
+  },
+  {
+    "path": "esp_cam_sensor/sensors/sc132gs/sc132gs.c",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7d6db8204b02fa8f7f988fb08f80c9f060b96282",
+    "size": 28981,
+    "url": "https://api.github.com/repos/espressif/esp-video-components/git/blobs/7d6db8204b02fa8f7f988fb08f80c9f060b96282"
+  }
+]

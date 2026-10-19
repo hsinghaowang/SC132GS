@@ -1,0 +1,46 @@
+{
+  "parameter": "num_pts",
+  "implementation_semantics": "total tracking target divided by num_cameras=2",
+  "runs_per_setting_initial_screen": 1,
+  "paced_hz": 20,
+  "settings": [
+    {
+      "num_pts": 200,
+      "target_per_camera": 100,
+      "config_sha256": "91dd7d2fe6e4427cd18a517fa82630d7107edf7aed8326b6404f0efb49e2cda4"
+    },
+    {
+      "num_pts": 150,
+      "target_per_camera": 75,
+      "config_sha256": "5bb5c264b08c4d06d2d1ad0252f82755d4142d79abbfcc8934d5469c4cdb1296"
+    },
+    {
+      "num_pts": 100,
+      "target_per_camera": 50,
+      "config_sha256": "92b82dce6932b3289c0cd7152068219b87e21c585419908f7ee3558e2b66ec10"
+    }
+  ],
+  "background_work": "No dataset download, extraction or compilation; brief SSH/scp copies of completed runs may overlap subsequent runs; existing host processes not isolated",
+  "run_order": [
+    "MH_01_easy-pts200-paced-1",
+    "V2_02_medium-pts200-paced-1",
+    "V2_02_medium-pts150-paced-1",
+    "MH_01_easy-pts150-paced-1",
+    "MH_01_easy-pts100-paced-1",
+    "V2_02_medium-pts100-paced-1",
+    "MH_01_easy-pts100-paced-2",
+    "V2_02_medium-pts100-paced-2",
+    "V2_02_medium-pts100-paced-3",
+    "MH_01_easy-pts100-paced-3"
+  ],
+  "estimator_revision": "69488123ed9362dd44b6f28e7f4680abbff1442b",
+  "scope": "native sequential replay, no ROS DDS or physical sensor capture",
+  "confirmation": {
+    "num_pts": 100,
+    "target_per_eye": 50,
+    "completed_repeats_per_dataset": 3,
+    "added_runs": 4,
+    "report": "confirmation.json",
+    "hardware_test": false
+  }
+}

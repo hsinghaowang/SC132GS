@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "scope": "actual SOF/DMA functions with mocked hardware; board negative starvation separately measured",
+  "source_sha256": "f871d36c4f4f1ba90f243647cc69c825f467d10f2e12128e10b3ceac4777878e",
+  "sof_sha256": "25bad6680b7310ae3ddaeb6238c23d8ef678e7c41a0a8d476cb15e5d74728c3f",
+  "done_sha256": "066325ac4d17d4ddf4276dbf39ca0f883d3bdc3a3ee030a78bd017348c674597"
+}

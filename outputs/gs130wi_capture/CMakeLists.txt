@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.20)
+project(gs130wi_capture LANGUAGES CXX)
+find_package(Threads REQUIRED)
+set(GS130WI_OUTPUTS "${CMAKE_CURRENT_SOURCE_DIR}/.." CACHE PATH "Sibling backend source directories")
+set(camera "${GS130WI_OUTPUTS}/stereo_h265_rtsp")
+set(imu "${GS130WI_OUTPUTS}/gs130wi_imu")
+add_library(gs130wi_capture
+    src/Capture.cpp
+    "${camera}/StereoCapture.cpp" "${camera}/BayerLuma.cpp" "${camera}/KernelSyncStatus.cpp"
+    "${imu}/icm42688.cpp" "${imu}/LinuxImuCapture.cpp")
+target_compile_features(gs130wi_capture PUBLIC cxx_std_17 PRIVATE cxx_std_20)
+target_include_directories(gs130wi_capture PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    PRIVATE "${camera}" "${imu}" "${GS130WI_OUTPUTS}/sc132gs_v4l2_probe")
+target_link_libraries(gs130wi_capture PRIVATE Threads::Threads)
+target_compile_options(gs130wi_capture PRIVATE -Wall -Wextra -Wpedantic -Werror)
+install(TARGETS gs130wi_capture DESTINATION lib)
+install(DIRECTORY include/ DESTINATION include)
+add_executable(gs130wi-capture-probe tools/CaptureProbe.cpp)
+target_compile_features(gs130wi-capture-probe PRIVATE cxx_std_17)
+target_link_libraries(gs130wi-capture-probe PRIVATE gs130wi_capture)
+include(CTest)
+if(BUILD_TESTING)
+    add_executable(gs130wi-api-check tests/ApiCheck.cpp)
+    target_compile_features(gs130wi-api-check PRIVATE cxx_std_17)
+    set_target_properties(gs130wi-api-check PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED ON)
+    target_link_libraries(gs130wi-api-check PRIVATE gs130wi_capture)
+    add_test(NAME gs130wi-api-contract COMMAND gs130wi-api-check)
+endif()

@@ -34,11 +34,50 @@ int main(int argc, char** argv) {
             else if (option == "--downscale") settings.downscale = positive_int(value);
             else if (option == "--fps") settings.frame_rate = positive_int(value);
             else if (option == "--bitrate") settings.bitrate = positive_int(value);
+            else if (option == "--gpu-rectification-map") settings.gpu_rectification_map=value;
+            else if (option == "--depth-calibration") settings.depth_calibration=value;
+            else if (option == "--tone-map") {
+                const std::string mode(value);
+                if(mode!="shared" && mode!="shared-detail" && mode!="off")
+                    throw std::invalid_argument("tone-map must be shared, shared-detail or off");
+                settings.shared_tone_map=mode!="off";
+                settings.detail_tone_map=mode=="shared-detail";
+            }
+            else if(option=="--display-range") {
+                const std::string range(value);
+                if(range!="limited"&&range!="full")throw std::invalid_argument("display-range must be limited or full");
+                settings.display_range=range=="full"?stereo_rtsp::VideoRange::full:stereo_rtsp::VideoRange::limited;
+            }
+            else if (option == "--capture-api") {
+                const std::string mode(value);
+                if(mode!="on" && mode!="off")throw std::invalid_argument("capture-api must be on or off");
+                settings.capture_api=mode=="on";
+            }
+            else if (option == "--hdr-display") {
+                const std::string profile(value);
+                if(profile!="sensor" && profile!="b")
+                    throw std::invalid_argument("hdr-display must be sensor or b");
+                settings.hdr_display_b=profile=="b";
+            }
             else if (option == "--hevc-profile") {
                 const std::string profile(value);
                 if (profile != "main" && profile != "main10")
                     throw std::invalid_argument("hevc-profile must be main or main10");
                 settings.main10 = profile == "main10";
+            }
+            else if (option == "--capture-mode") {
+                const std::string mode(value);
+                if (mode == "external-trigger")
+                    settings.capture_mode = stereo_rtsp::CaptureMode::external_trigger;
+                else if (mode == "experimental-linear120-free-running")
+                    settings.capture_mode = stereo_rtsp::CaptureMode::experimental_linear120_free_running;
+                else if (mode == "experimental-linear120-binning")
+                    settings.capture_mode = stereo_rtsp::CaptureMode::experimental_linear120_binning;
+                else if (mode == "experimental-linear60-binning")
+                    settings.capture_mode = stereo_rtsp::CaptureMode::experimental_linear60_binning;
+                else if (mode == "linear-binning")
+                    settings.capture_mode = stereo_rtsp::CaptureMode::linear_binning;
+                else throw std::invalid_argument("unknown capture mode: " + mode);
             }
             else if (option == "--brightness")
                 settings.target_brightness_percent = positive_int(value);

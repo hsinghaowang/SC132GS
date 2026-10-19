@@ -1,0 +1,5 @@
+{
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "command failed: ['/usr/bin/python3', '/home/ubuntu/stereo-h265-rtsp/verify_rtsp.py', '--url', 'rtsp://192.168.137.226:8554/stereo', '--seconds', '8', '--expected-fps', '30', '--output', '/home/ubuntu/sc132gs-camera-tests/apply-d0fd5026-03b3-4dc6-a8a6-50529118d370/encoded.json'] \ncommand failed: ['/usr/bin/python3', '/home/ubuntu/stereo-h265-rtsp/verify_rtsp.py', '--url', 'rtsp://192.168.137.226:8554/stereo', '--seconds', '8', '--expected-fps', '30', '--output', '/home/ubuntu/sc132gs-camera-tests/apply-dc91bea9-283e-4937-b30f-582caa897a79/encoded.json'] \ncommand failed: ['/usr/bin/python3', '/home/ubuntu/stereo-h265-rtsp/verify_rtsp.py', '--url', 'rtsp://192.168.137.226:8554/stereo', '--seconds', '8', '--expected-fps', '30', '--output', '/home/ubuntu/sc132gs-camera-tests/apply-08ce2b58-23d6-49a3-87fd-9da3681dfcc8/encoded.json'] \nerror code=device errno=5 rollback_failed=0\n"
+}

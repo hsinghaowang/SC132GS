@@ -1,0 +1,9 @@
+{
+  "saved_camera_settings_unchanged": true,
+  "final_stream_state": "active_at_explicit_user_request",
+  "initial_service_state": "failed_unowned",
+  "failure_logs_saved": true,
+  "short_capture_and_90s_capture_driver_controls_restored": true,
+  "EEPROM_writes": 0,
+  "calibrated_candidate_deployed": false
+}

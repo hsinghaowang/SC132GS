@@ -1,0 +1,23 @@
+{
+  "decoded_frames": 330,
+  "steady_media_fps": 30.00003344485334,
+  "steady_pts_monotonic": true,
+  "unique_sample_hashes": 11,
+  "snapshot": {
+    "min": 0,
+    "max": 966,
+    "low_bits_present": true,
+    "eyes": [
+      {
+        "range": 951,
+        "mean": 100.70348331227022
+      },
+      {
+        "range": 966,
+        "mean": 115.10523609834559
+      }
+    ]
+  },
+  "codec_profile": "Main 10",
+  "passed": true
+}

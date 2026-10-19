@@ -8,4 +8,6 @@
 *.md text eol=lf
 Makefile* text eol=lf
 CMakeLists.txt text eol=lf
+*.pdf binary
+*.npz binary
 *.ps1 text eol=crlf

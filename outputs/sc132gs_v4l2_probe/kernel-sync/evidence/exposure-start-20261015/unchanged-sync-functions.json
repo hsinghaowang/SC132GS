@@ -1,0 +1,6 @@
+{
+  "static enum hrtimer_restart tick(": true,
+  "void camss_sync_sof(": true,
+  "void camss_sync_stream_started(": true,
+  "static void fail(": true
+}

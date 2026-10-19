@@ -1,0 +1,383 @@
+{
+  "status": "independent_validation_completed_no_refit",
+  "capture_session": "target-rtsp-redo-20261014",
+  "input_source": "RTSP_HEVC_Main10_decoded_mirror_undone",
+  "source_training_session": "target-sweep-20261014",
+  "frozen_candidate_sha256_before_capture": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "frozen_candidate_sha256_after_evaluation": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "candidate_unchanged": true,
+  "parameter_optimization_or_refit_performed": false,
+  "sampled_pairs": 60,
+  "complete_target_pairs": 4,
+  "corner_count": 216,
+  "metrics": {
+    "factory": {
+      "vertical_error": {
+        "count": 216,
+        "median_px": 1.3702879025503307,
+        "p95_px": 3.4675922521430493,
+        "rms_px": 1.9635511639091718,
+        "max_px": 7.84552310029801
+      },
+      "vertical_error_at_common_650px_focal": {
+        "count": 216,
+        "median_px": 1.8326962421283717,
+        "p95_px": 4.637743118003337,
+        "rms_px": 2.6261582201999722,
+        "max_px": 10.49302170491823
+      },
+      "virtual_focal_px": 485.99823374075896,
+      "cam0_pose_to_cam1_prediction": {
+        "count": 216,
+        "median_px": 4.656964011003632,
+        "p95_px": 8.548059797611838,
+        "rms_px": 5.417034515108684,
+        "max_px": 10.117835852872354
+      }
+    },
+    "frozen_candidate": {
+      "vertical_error": {
+        "count": 216,
+        "median_px": 1.4416736841096167,
+        "p95_px": 2.557922252821612,
+        "rms_px": 1.6629605905896063,
+        "max_px": 4.924415934005538
+      },
+      "vertical_error_at_common_650px_focal": {
+        "count": 216,
+        "median_px": 1.921612962943204,
+        "p95_px": 3.409465410515989,
+        "rms_px": 2.2165672183398892,
+        "max_px": 6.563774866677532
+      },
+      "virtual_focal_px": 487.6569385939076,
+      "cam0_pose_to_cam1_prediction": {
+        "count": 216,
+        "median_px": 2.4165136950286965,
+        "p95_px": 4.472092558488198,
+        "rms_px": 2.7285560418251666,
+        "max_px": 5.997286572251201
+      }
+    }
+  },
+  "coverage": [
+    {
+      "eye": 0,
+      "corner_hull_image_fraction": 0.2328896480834763,
+      "center_min": [
+        0.2717051310606772,
+        0.5079771682068154
+      ],
+      "center_max": [
+        0.3575079369648869,
+        0.6212369671574345
+      ],
+      "center_span": [
+        0.08580280590420974,
+        0.1132597989506191
+      ],
+      "center_grid_3x3": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "mono_pose_reprojection": {
+        "count": 216,
+        "median_px": 0.5831794544023945,
+        "p95_px": 1.359184610576799,
+        "rms_px": 0.7407201414106082,
+        "max_px": 1.7654093675169453
+      }
+    },
+    {
+      "eye": 1,
+      "corner_hull_image_fraction": 0.24291423337848528,
+      "center_min": [
+        0.4768518640584676,
+        0.5020727038383483
+      ],
+      "center_max": [
+        0.5983741002924302,
+        0.6127790707129019
+      ],
+      "center_span": [
+        0.12152223623396263,
+        0.1107063668745536
+      ],
+      "center_grid_3x3": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "mono_pose_reprojection": {
+        "count": 216,
+        "median_px": 0.6495106784064257,
+        "p95_px": 1.4996932279222108,
+        "rms_px": 0.837480468335929,
+        "max_px": 2.0064556760302605
+      }
+    }
+  ],
+  "project_specific_diagnostic_criteria": {
+    "minimum_complete_pairs": 15,
+    "required_corner_hull_fraction_per_eye": 0.6,
+    "required_center_span_each_axis": 0.45,
+    "maximum_median_at_650px_focal": 0.5,
+    "maximum_p95_at_650px_focal": 1.0
+  },
+  "coverage_gate_passed": false,
+  "epipolar_error_gate_passed": false,
+  "full_field_diagnostic_gate_passed": false,
+  "live_VIO_accepted": false,
+  "camera_IMU_calibration_complete": false,
+  "RAW_sensor_calibration_acceptance": false,
+  "observations": [
+    {
+      "pair_id": 1260,
+      "reversed_left_labels": false,
+      "mono_pose_reprojection": [
+        {
+          "count": 54,
+          "median_px": 0.85962259928221,
+          "p95_px": 1.450933129170776,
+          "rms_px": 0.9240626726978334,
+          "max_px": 1.662322294696499
+        },
+        {
+          "count": 54,
+          "median_px": 0.7001996119139209,
+          "p95_px": 1.8116916213154524,
+          "rms_px": 0.9617061386263257,
+          "max_px": 2.0064556760302605
+        }
+      ],
+      "models": {
+        "factory": {
+          "vertical_error": {
+            "count": 54,
+            "median_px": 1.0419685899335605,
+            "p95_px": 5.740659716428446,
+            "rms_px": 2.6221831201722186,
+            "max_px": 7.84552310029801
+          },
+          "cam0_pose_to_cam1_prediction": {
+            "count": 54,
+            "median_px": 6.605007886940756,
+            "p95_px": 9.402859385950757,
+            "rms_px": 7.043423722912805,
+            "max_px": 10.117835852872354
+          }
+        },
+        "frozen_candidate": {
+          "vertical_error": {
+            "count": 54,
+            "median_px": 0.6902950308550544,
+            "p95_px": 3.707012330308515,
+            "rms_px": 1.665832931834808,
+            "max_px": 4.924415934005538
+          },
+          "cam0_pose_to_cam1_prediction": {
+            "count": 54,
+            "median_px": 2.7245269074896434,
+            "p95_px": 4.940374115444744,
+            "rms_px": 3.16599846089952,
+            "max_px": 5.493531746762608
+          }
+        }
+      }
+    },
+    {
+      "pair_id": 1920,
+      "reversed_left_labels": false,
+      "mono_pose_reprojection": [
+        {
+          "count": 54,
+          "median_px": 0.643244558962248,
+          "p95_px": 1.399797569673439,
+          "rms_px": 0.8022355042116515,
+          "max_px": 1.7654093675169453
+        },
+        {
+          "count": 54,
+          "median_px": 0.8400248849716424,
+          "p95_px": 1.4851447696701472,
+          "rms_px": 0.9096071663465715,
+          "max_px": 1.9412236137230037
+        }
+      ],
+      "models": {
+        "factory": {
+          "vertical_error": {
+            "count": 54,
+            "median_px": 1.2884140025319084,
+            "p95_px": 2.3821004183053485,
+            "rms_px": 1.4978962803710898,
+            "max_px": 2.831391828258802
+          },
+          "cam0_pose_to_cam1_prediction": {
+            "count": 54,
+            "median_px": 4.815353613356337,
+            "p95_px": 6.260842825152845,
+            "rms_px": 5.084565500859254,
+            "max_px": 6.6409035424261535
+          }
+        },
+        "frozen_candidate": {
+          "vertical_error": {
+            "count": 54,
+            "median_px": 1.9177037590951613,
+            "p95_px": 2.3638367529711273,
+            "rms_px": 1.9423215914507428,
+            "max_px": 2.4695727087944306
+          },
+          "cam0_pose_to_cam1_prediction": {
+            "count": 54,
+            "median_px": 2.6930947337077438,
+            "p95_px": 3.9831610482528297,
+            "rms_px": 2.865606665063824,
+            "max_px": 4.167380972593053
+          }
+        }
+      }
+    },
+    {
+      "pair_id": 1980,
+      "reversed_left_labels": false,
+      "mono_pose_reprojection": [
+        {
+          "count": 54,
+          "median_px": 0.4455911879269582,
+          "p95_px": 0.9278049901887521,
+          "rms_px": 0.5429006918142714,
+          "max_px": 1.3266215177030531
+        },
+        {
+          "count": 54,
+          "median_px": 0.49747247217497237,
+          "p95_px": 1.073274724960106,
+          "rms_px": 0.6343343219931585,
+          "max_px": 1.155447054152143
+        }
+      ],
+      "models": {
+        "factory": {
+          "vertical_error": {
+            "count": 54,
+            "median_px": 1.7675918380816142,
+            "p95_px": 2.7566970343756734,
+            "rms_px": 1.8997542938664111,
+            "max_px": 3.2041037825894136
+          },
+          "cam0_pose_to_cam1_prediction": {
+            "count": 54,
+            "median_px": 3.584908047490294,
+            "p95_px": 4.54575602294251,
+            "rms_px": 3.6294991370945366,
+            "max_px": 4.928884475568846
+          }
+        },
+        "frozen_candidate": {
+          "vertical_error": {
+            "count": 54,
+            "median_px": 1.3175679091711174,
+            "p95_px": 2.200473704232859,
+            "rms_px": 1.4396976010845706,
+            "max_px": 2.6248736398090387
+          },
+          "cam0_pose_to_cam1_prediction": {
+            "count": 54,
+            "median_px": 2.092994996434979,
+            "p95_px": 3.054217543722551,
+            "rms_px": 2.218308059352042,
+            "max_px": 3.710047439956853
+          }
+        }
+      }
+    },
+    {
+      "pair_id": 2940,
+      "reversed_left_labels": false,
+      "mono_pose_reprojection": [
+        {
+          "count": 54,
+          "median_px": 0.5214787242294261,
+          "p95_px": 1.1638479121001062,
+          "rms_px": 0.634389882565765,
+          "max_px": 1.4450976580008337
+        },
+        {
+          "count": 54,
+          "median_px": 0.6393320920054691,
+          "p95_px": 1.3920105448236535,
+          "rms_px": 0.8067528823484617,
+          "max_px": 1.7940787654283705
+        }
+      ],
+      "models": {
+        "factory": {
+          "vertical_error": {
+            "count": 54,
+            "median_px": 0.9510807141351734,
+            "p95_px": 2.9604360447481213,
+            "rms_px": 1.641197347556572,
+            "max_px": 4.963645297270546
+          },
+          "cam0_pose_to_cam1_prediction": {
+            "count": 54,
+            "median_px": 5.098883284099886,
+            "p95_px": 7.685042715125212,
+            "rms_px": 5.36107859411948,
+            "max_px": 8.42332831182815
+          }
+        },
+        "frozen_candidate": {
+          "vertical_error": {
+            "count": 54,
+            "median_px": 0.8748432373234891,
+            "p95_px": 2.692908130320916,
+            "rms_px": 1.5625011998225022,
+            "max_px": 4.779715979037178
+          },
+          "cam0_pose_to_cam1_prediction": {
+            "count": 54,
+            "median_px": 1.9911577590194849,
+            "p95_px": 4.44096798754186,
+            "rms_px": 2.573700416532569,
+            "max_px": 5.997286572251201
+          }
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Checkerboard physical size/flatness relies on the user-confirmed 20mm flat target.",
+    "Mono board poses are fitted for diagnostics; K/D and stereo R/T are frozen.",
+    "Every complete detected target is included; no residual-based rejection is used.",
+    "Motion blur, missed corners and exposure skew can affect error; no common exposure/IMU time is certified.",
+    "Spatial hull and center span are coverage diagnostics; they do not alone prove dense field accuracy."
+  ]
+}

@@ -1,5 +1,8 @@
 #pragma once
 
+#include "CaptureMode.hpp"
+#include "VideoRange.hpp"
+
 #include <cstdint>
 #include <memory>
 #include <string>
@@ -22,10 +25,18 @@ struct Settings {
     std::string mount{"/stereo"};
     int downscale{1};
     int frame_rate{30};
-    int target_brightness_percent{40};
+    int target_brightness_percent{30};
     bool auto_exposure{true};
     bool main10{false};
+    bool shared_tone_map{false}; // Linear mono10 capture/AE -> shared final 8-bit Y'.
+    bool detail_tone_map{false}; // Matching-oriented full-range shared quantizer.
+    VideoRange display_range{VideoRange::limited}; // Matching remains unchanged.
+    bool hdr_display_b{false}; // Main10 HDR display and matching AE target encoding.
+    bool capture_api{false}; // Common library, Linear/mono10/30 Hz only.
+    std::string gpu_rectification_map; // Empty explicitly selects legacy output.
+    std::string depth_calibration; // Empty disables the independent /depth pipeline.
     int bitrate{20000000};
+    CaptureMode capture_mode{CaptureMode::external_trigger};
 };
 
 // Captures timestamp-paired V4L2 frames until SIGINT/SIGTERM.

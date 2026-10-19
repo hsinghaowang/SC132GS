@@ -1,0 +1,363 @@
+    PID    PPID                  STARTED COMMAND
+      1       0 Thu Oct 15 18:27:56 2026 /sbin/init
+      2       0 Thu Oct 15 18:27:56 2026 [kthreadd]
+      3       2 Thu Oct 15 18:27:56 2026 [pool_workqueue_release]
+      4       2 Thu Oct 15 18:27:56 2026 [kworker/R-rcu_g]
+      5       2 Thu Oct 15 18:27:56 2026 [kworker/R-rcu_p]
+      6       2 Thu Oct 15 18:27:56 2026 [kworker/R-slub_]
+      7       2 Thu Oct 15 18:27:56 2026 [kworker/R-netns]
+      9       2 Thu Oct 15 18:27:56 2026 [kworker/0:0H-events_highpri]
+     12       2 Thu Oct 15 18:27:56 2026 [kworker/R-mm_pe]
+     13       2 Thu Oct 15 18:27:56 2026 [rcu_tasks_kthread]
+     14       2 Thu Oct 15 18:27:56 2026 [rcu_tasks_rude_kthread]
+     15       2 Thu Oct 15 18:27:56 2026 [rcu_tasks_trace_kthread]
+     16       2 Thu Oct 15 18:27:56 2026 [ksoftirqd/0]
+     17       2 Thu Oct 15 18:27:56 2026 [rcu_preempt]
+     18       2 Thu Oct 15 18:27:56 2026 [migration/0]
+     19       2 Thu Oct 15 18:27:56 2026 [idle_inject/0]
+     20       2 Thu Oct 15 18:27:56 2026 [cpuhp/0]
+     21       2 Thu Oct 15 18:27:56 2026 [cpuhp/1]
+     22       2 Thu Oct 15 18:27:56 2026 [idle_inject/1]
+     23       2 Thu Oct 15 18:27:56 2026 [migration/1]
+     24       2 Thu Oct 15 18:27:56 2026 [ksoftirqd/1]
+     26       2 Thu Oct 15 18:27:56 2026 [kworker/1:0H-kblockd]
+     27       2 Thu Oct 15 18:27:56 2026 [cpuhp/2]
+     28       2 Thu Oct 15 18:27:56 2026 [idle_inject/2]
+     29       2 Thu Oct 15 18:27:56 2026 [migration/2]
+     30       2 Thu Oct 15 18:27:56 2026 [ksoftirqd/2]
+     32       2 Thu Oct 15 18:27:56 2026 [kworker/2:0H-kblockd]
+     33       2 Thu Oct 15 18:27:56 2026 [cpuhp/3]
+     34       2 Thu Oct 15 18:27:56 2026 [idle_inject/3]
+     35       2 Thu Oct 15 18:27:56 2026 [migration/3]
+     36       2 Thu Oct 15 18:27:56 2026 [ksoftirqd/3]
+     39       2 Thu Oct 15 18:27:56 2026 [cpuhp/4]
+     40       2 Thu Oct 15 18:27:56 2026 [idle_inject/4]
+     41       2 Thu Oct 15 18:27:56 2026 [migration/4]
+     42       2 Thu Oct 15 18:27:56 2026 [ksoftirqd/4]
+     44       2 Thu Oct 15 18:27:56 2026 [kworker/4:0H-kblockd]
+     45       2 Thu Oct 15 18:27:56 2026 [cpuhp/5]
+     46       2 Thu Oct 15 18:27:56 2026 [idle_inject/5]
+     47       2 Thu Oct 15 18:27:56 2026 [migration/5]
+     48       2 Thu Oct 15 18:27:56 2026 [ksoftirqd/5]
+     50       2 Thu Oct 15 18:27:56 2026 [kworker/5:0H-kblockd]
+     51       2 Thu Oct 15 18:27:56 2026 [cpuhp/6]
+     52       2 Thu Oct 15 18:27:56 2026 [idle_inject/6]
+     53       2 Thu Oct 15 18:27:56 2026 [migration/6]
+     54       2 Thu Oct 15 18:27:56 2026 [ksoftirqd/6]
+     56       2 Thu Oct 15 18:27:56 2026 [kworker/6:0H-events_highpri]
+     57       2 Thu Oct 15 18:27:56 2026 [cpuhp/7]
+     58       2 Thu Oct 15 18:27:56 2026 [idle_inject/7]
+     59       2 Thu Oct 15 18:27:56 2026 [migration/7]
+     60       2 Thu Oct 15 18:27:56 2026 [ksoftirqd/7]
+     62       2 Thu Oct 15 18:27:56 2026 [kworker/7:0H-events_highpri]
+     63       2 Thu Oct 15 18:27:56 2026 [kdevtmpfs]
+     64       2 Thu Oct 15 18:27:56 2026 [kworker/R-inet_]
+     67       2 Thu Oct 15 18:27:56 2026 [kauditd]
+     71       2 Thu Oct 15 18:27:59 2026 [gh-watchdog]
+     72       2 Thu Oct 15 18:27:59 2026 [khungtaskd]
+     73       2 Thu Oct 15 18:27:59 2026 [oom_reaper]
+     74       2 Thu Oct 15 18:27:59 2026 [kworker/R-write]
+     75       2 Thu Oct 15 18:27:59 2026 [kcompactd0]
+     76       2 Thu Oct 15 18:27:59 2026 [ksmd]
+     77       2 Thu Oct 15 18:27:59 2026 [khugepaged]
+     78       2 Thu Oct 15 18:27:59 2026 [kworker/R-kinte]
+     79       2 Thu Oct 15 18:27:59 2026 [kworker/R-kbloc]
+     80       2 Thu Oct 15 18:27:59 2026 [kworker/R-blkcg]
+     83       2 Thu Oct 15 18:27:59 2026 [kworker/R-tpm_d]
+     84       2 Thu Oct 15 18:27:59 2026 [kworker/R-ata_s]
+     85       2 Thu Oct 15 18:27:59 2026 [kworker/R-md]
+     86       2 Thu Oct 15 18:27:59 2026 [kworker/R-md_bi]
+     87       2 Thu Oct 15 18:27:59 2026 [kworker/R-edac-]
+     88       2 Thu Oct 15 18:27:59 2026 [kworker/R-devfr]
+     89       2 Thu Oct 15 18:27:59 2026 [watchdogd]
+     90       2 Thu Oct 15 18:27:59 2026 [kworker/R-quota]
+     91       2 Thu Oct 15 18:28:00 2026 [kworker/7:1H-events_highpri]
+     92       2 Thu Oct 15 18:28:00 2026 [kswapd0]
+     93       2 Thu Oct 15 18:28:00 2026 [ecryptfs-kthread]
+     94       2 Thu Oct 15 18:28:00 2026 [kworker/R-kthro]
+    105       2 Thu Oct 15 18:28:00 2026 [irq/104-bcl-lvl0]
+    106       2 Thu Oct 15 18:28:00 2026 [irq/105-bcl-lvl1]
+    107       2 Thu Oct 15 18:28:00 2026 [irq/106-bcl-lvl2]
+    108       2 Thu Oct 15 18:28:00 2026 [irq/107-bcl-lvl0]
+    109       2 Thu Oct 15 18:28:00 2026 [irq/108-bcl-lvl1]
+    110       2 Thu Oct 15 18:28:00 2026 [irq/109-bcl-lvl2]
+    111       2 Thu Oct 15 18:28:00 2026 [irq/111-gh_msgq_rx]
+    112       2 Thu Oct 15 18:28:00 2026 [kworker/R-mld]
+    113       2 Thu Oct 15 18:28:00 2026 [kworker/R-ipv6_]
+    120       2 Thu Oct 15 18:28:00 2026 [kworker/R-kstrp]
+    136       2 Thu Oct 15 18:28:01 2026 [irq/23-arm-smmu-context-fault]
+    137       2 Thu Oct 15 18:28:01 2026 [irq/24-arm-smmu-context-fault]
+    138       2 Thu Oct 15 18:28:01 2026 [irq/25-arm-smmu-context-fault]
+    139       2 Thu Oct 15 18:28:01 2026 [irq/18-smp2p-adsp]
+    142       2 Thu Oct 15 18:28:01 2026 [irq/19-smp2p-cdsp]
+    148       2 Thu Oct 15 18:28:01 2026 [irq/20-smp2p-mpss]
+    149       2 Thu Oct 15 18:28:01 2026 [irq/21-smp2p-wpss]
+    150       2 Thu Oct 15 18:28:01 2026 [irq/133-99c000.serial:wakeup]
+    151       2 Thu Oct 15 18:28:01 2026 [irq/26-arm-smmu-context-fault]
+    154       2 Thu Oct 15 18:28:01 2026 [irq/27-arm-smmu-context-fault]
+    155       2 Thu Oct 15 18:28:01 2026 [irq/137-8804000.mmc]
+    156       2 Thu Oct 15 18:28:01 2026 [kworker/R-sdhci]
+    157       2 Thu Oct 15 18:28:01 2026 [irq/136-mmc1]
+    158       2 Thu Oct 15 18:28:01 2026 [scsi_eh_0]
+    159       2 Thu Oct 15 18:28:01 2026 [kworker/R-scsi_]
+    160       2 Thu Oct 15 18:28:01 2026 [kworker/R-ufs_e]
+    161       2 Thu Oct 15 18:28:01 2026 [kworker/R-ufs_c]
+    162       2 Thu Oct 15 18:28:01 2026 [kworker/R-ufs_c]
+    163       2 Thu Oct 15 18:28:01 2026 [kworker/R-charg]
+    164       2 Thu Oct 15 18:28:01 2026 [kworker/4:1H-events_highpri]
+    165       2 Thu Oct 15 18:28:01 2026 [kworker/5:1H-kblockd]
+    166       2 Thu Oct 15 18:28:01 2026 [kworker/3:1H-kblockd]
+    171       2 Thu Oct 15 18:28:02 2026 [irq/28-arm-smmu-context-fault]
+    172       2 Thu Oct 15 18:28:02 2026 [irq/147-aerdrv]
+    173       2 Thu Oct 15 18:28:02 2026 [irq/147-pciehp]
+    174       2 Thu Oct 15 18:28:02 2026 [irq/29-arm-smmu-context-fault]
+    175       2 Thu Oct 15 18:28:02 2026 [irq/148-aerdrv]
+    176       2 Thu Oct 15 18:28:02 2026 [irq/148-pciehp]
+    202       2 Thu Oct 15 18:28:03 2026 [kworker/0:1H-kblockd]
+    205       2 Thu Oct 15 18:28:03 2026 [kworker/6:1H-kblockd]
+    235       2 Thu Oct 15 18:28:03 2026 [hwrng]
+    294       2 Thu Oct 15 18:28:04 2026 [irq/150-9091000.pmu]
+    300       2 Thu Oct 15 18:28:04 2026 [irq/151-90b6400.pmu]
+    369       2 Thu Oct 15 18:28:04 2026 [irq/30-arm-smmu-context-fault]
+    387       2 Thu Oct 15 18:28:04 2026 [irq/159-qcom_dwc3 DP_HS]
+    388       2 Thu Oct 15 18:28:04 2026 [irq/160-qcom_dwc3 DM_HS]
+    425       2 Thu Oct 15 18:28:04 2026 [irq/31-arm-smmu-context-fault]
+    446       2 Thu Oct 15 18:28:04 2026 [irq/177-qcom_dwc3 DP_HS]
+    455       2 Thu Oct 15 18:28:04 2026 [irq/182-qcom_dwc3 DM_HS]
+    459       2 Thu Oct 15 18:28:04 2026 [irq/184-qcom_dwc3 SS]
+    460       2 Thu Oct 15 18:28:04 2026 [spi12]
+    558       2 Thu Oct 15 18:28:07 2026 [kworker/R-raid5]
+    601       2 Thu Oct 15 18:28:07 2026 [jbd2/sda3-8]
+    602       2 Thu Oct 15 18:28:07 2026 [kworker/R-ext4-]
+    681       1 Thu Oct 15 18:28:09 2026 /usr/lib/systemd/systemd-journald
+    704       2 Thu Oct 15 18:28:09 2026 [kworker/R-kmpat]
+    705       2 Thu Oct 15 18:28:09 2026 [kworker/R-kmpat]
+    734       1 Thu Oct 15 18:28:10 2026 /sbin/multipathd -d -s
+    748       1 Thu Oct 15 18:28:10 2026 /usr/lib/systemd/systemd-udevd
+    766       2 Thu Oct 15 18:28:10 2026 [psimon]
+   1122       2 Thu Oct 15 18:28:11 2026 [irq/169-q6v5 wdog]
+   1132       2 Thu Oct 15 18:28:11 2026 [irq/153-q6v5 wdog]
+   1133       2 Thu Oct 15 18:28:11 2026 [kworker/R-pdr_n]
+   1135       2 Thu Oct 15 18:28:11 2026 [irq/197-dcvsh-irq-0]
+   1136       2 Thu Oct 15 18:28:11 2026 [irq/198-dcvsh-irq-4]
+   1137       2 Thu Oct 15 18:28:11 2026 [irq/32-arm-smmu-context-fault]
+   1138       2 Thu Oct 15 18:28:11 2026 [irq/206-dcvsh-irq-7]
+   1139       2 Thu Oct 15 18:28:12 2026 [irq/189-q6v5 wdog]
+   1141       2 Thu Oct 15 18:28:12 2026 [irq/161-q6v5 wdog]
+   1142       2 Thu Oct 15 18:28:12 2026 [irq/33-arm-smmu-context-fault]
+   1149       2 Thu Oct 15 18:28:12 2026 [kworker/R-cfg80]
+   1151       2 Thu Oct 15 18:28:12 2026 [kworker/R-pm_wo]
+   1156       2 Thu Oct 15 18:28:12 2026 [kworker/R-batch]
+   1157       2 Thu Oct 15 18:28:12 2026 [irq/212-msm-vidc]
+   1164       2 Thu Oct 15 18:28:12 2026 [irq/34-arm-smmu-context-fault]
+   1167       2 Thu Oct 15 18:28:12 2026 [kworker/R-brcmf]
+   1170       2 Thu Oct 15 18:28:12 2026 [brcmf_wdog/mmc1:0001:1]
+   1171       2 Thu Oct 15 18:28:12 2026 [kworker/R-qcom_]
+   1172       2 Thu Oct 15 18:28:12 2026 [kworker/R-pdr_n]
+   1179       2 Thu Oct 15 18:28:12 2026 [irq/214-temp-alarm]
+   1194       2 Thu Oct 15 18:28:12 2026 [irq/218-pmic_pwrkey]
+   1195       2 Thu Oct 15 18:28:12 2026 [irq/217-pm-adc-tm5-gen2]
+   1197       2 Thu Oct 15 18:28:12 2026 [irq/220-pmic_resin]
+   1198       2 Thu Oct 15 18:28:12 2026 [irq/221-c263000.thermal-sensor]
+   1199       2 Thu Oct 15 18:28:12 2026 [irq/222-c263000.thermal-sensor]
+   1209       2 Thu Oct 15 18:28:12 2026 [irq/224-temp-alarm]
+   1212       2 Thu Oct 15 18:28:12 2026 [kworker/u17:2-ufs_clk_gating_0]
+   1226       2 Thu Oct 15 18:28:12 2026 [irq/226-temp-alarm]
+   1255       2 Thu Oct 15 18:28:12 2026 [irq/228-c265000.thermal-sensor]
+   1256       2 Thu Oct 15 18:28:12 2026 [irq/229-c265000.thermal-sensor]
+   1258       2 Thu Oct 15 18:28:12 2026 [irq/35-arm-smmu-context-fault]
+   1265       2 Thu Oct 15 18:28:12 2026 [irq/36-arm-smmu-context-fault]
+   1267       2 Thu Oct 15 18:28:12 2026 [irq/37-arm-smmu-context-fault]
+   1268       2 Thu Oct 15 18:28:12 2026 [irq/230-es8316]
+   1271       2 Thu Oct 15 18:28:12 2026 [irq/38-arm-smmu-context-fault]
+   1272       2 Thu Oct 15 18:28:12 2026 [irq/39-arm-smmu-context-fault]
+   1273       2 Thu Oct 15 18:28:12 2026 [irq/40-arm-smmu-context-fault]
+   1274       2 Thu Oct 15 18:28:12 2026 [irq/41-arm-smmu-context-fault]
+   1275       2 Thu Oct 15 18:28:12 2026 [irq/42-arm-smmu-context-fault]
+   1282       2 Thu Oct 15 18:28:12 2026 [irq/43-arm-smmu-context-fault]
+   1283       2 Thu Oct 15 18:28:12 2026 [irq/44-arm-smmu-context-fault]
+   1284       2 Thu Oct 15 18:28:12 2026 [irq/45-arm-smmu-context-fault]
+   1285       2 Thu Oct 15 18:28:12 2026 [kworker/R-pdr_n]
+   1286       2 Thu Oct 15 18:28:12 2026 [kworker/R-pdr_n]
+   1287       2 Thu Oct 15 18:28:12 2026 [irq/46-arm-smmu-context-fault]
+   1288       2 Thu Oct 15 18:28:12 2026 [irq/47-arm-smmu-context-fault]
+   1289       2 Thu Oct 15 18:28:12 2026 [irq/48-arm-smmu-context-fault]
+   1290       2 Thu Oct 15 18:28:12 2026 [irq/49-arm-smmu-context-fault]
+   1291       2 Thu Oct 15 18:28:13 2026 [irq/207-lt9611]
+   1292       2 Thu Oct 15 18:28:13 2026 [dp_hpd_handler]
+   1293       2 Thu Oct 15 18:28:13 2026 [gpu-worker]
+   1294       2 Thu Oct 15 18:28:13 2026 [irq/118-arm-smmu-context-fault]
+   1295       2 Thu Oct 15 18:28:13 2026 [irq/119-arm-smmu-context-fault]
+   1296       2 Thu Oct 15 18:28:13 2026 [disp_snapshot]
+   1297       2 Thu Oct 15 18:28:13 2026 [atomic-worker-0]
+   1298       2 Thu Oct 15 18:28:13 2026 [atomic-worker-1]
+   1299       2 Thu Oct 15 18:28:13 2026 [atomic-worker-2]
+   1300       2 Thu Oct 15 18:28:13 2026 [atomic-worker-3]
+   1301       2 Thu Oct 15 18:28:13 2026 [atomic-worker-4]
+   1302       2 Thu Oct 15 18:28:13 2026 [atomic-worker-5]
+   1303       2 Thu Oct 15 18:28:13 2026 [atomic-worker-6]
+   1304       2 Thu Oct 15 18:28:13 2026 [atomic-worker-7]
+   1305       2 Thu Oct 15 18:28:13 2026 [irq/50-arm-smmu-context-fault]
+   1306       2 Thu Oct 15 18:28:13 2026 [crtc_event:66]
+   1307       2 Thu Oct 15 18:28:13 2026 [crtc_event:67]
+   1308       2 Thu Oct 15 18:28:13 2026 [card0-crtc0]
+   1309       2 Thu Oct 15 18:28:13 2026 [card0-crtc1]
+   1381       2 Thu Oct 15 18:28:13 2026 [jbd2/sda2-8]
+   1382       2 Thu Oct 15 18:28:13 2026 [kworker/R-ext4-]
+   1529       1 Thu Oct 15 18:28:13 2026 /usr/lib/systemd/systemd-oomd
+   1530       1 Thu Oct 15 18:28:13 2026 /usr/lib/systemd/systemd-resolved
+   1531       1 Thu Oct 15 18:28:13 2026 /usr/lib/systemd/systemd-timesyncd
+   1635       1 Thu Oct 15 18:28:17 2026 /usr/bin/property-vault
+   1637       1 Thu Oct 15 18:28:17 2026 avahi-daemon: running [ubuntu.local]
+   1638       1 Thu Oct 15 18:28:17 2026 /usr/libexec/bluetooth/bluetoothd
+   1641       1 Thu Oct 15 18:28:17 2026 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   1645       1 Thu Oct 15 18:28:17 2026 /usr/libexec/gnome-remote-desktop-daemon --system
+   1650       1 Thu Oct 15 18:28:17 2026 /usr/bin/rubikpi-thermal
+   1652       1 Thu Oct 15 18:28:17 2026 /usr/lib/polkit-1/polkitd --no-debug
+   1655       2 Thu Oct 15 18:28:17 2026 [sugov:0]
+   1656       2 Thu Oct 15 18:28:17 2026 [sugov:4]
+   1657       1 Thu Oct 15 18:28:17 2026 /usr/libexec/power-profiles-daemon
+   1658       2 Thu Oct 15 18:28:17 2026 [sugov:7]
+   1660       1 Thu Oct 15 18:28:17 2026 /usr/bin/qrtr-ns -f 1
+   1661       1 Thu Oct 15 18:28:17 2026 /usr/bin/pd-mapper
+   1677       1 Thu Oct 15 18:28:17 2026 /snap/snapd/current/usr/lib/snapd/snapd
+   1689       1 Thu Oct 15 18:28:17 2026 /usr/libexec/accounts-daemon
+   1693       1 Thu Oct 15 18:28:17 2026 /usr/libexec/switcheroo-control
+   1705       1 Thu Oct 15 18:28:17 2026 /usr/lib/systemd/systemd-logind
+   1706       1 Thu Oct 15 18:28:17 2026 /usr/libexec/udisks2/udisksd
+   1727       1 Thu Oct 15 18:28:18 2026 /usr/sbin/rsyslogd -n -iNONE
+   1737    1637 Thu Oct 15 18:28:18 2026 avahi-daemon: chroot helper
+   1804       1 Thu Oct 15 18:28:18 2026 /usr/sbin/adsprpcd
+   1805       1 Thu Oct 15 18:28:18 2026 /usr/sbin/cdsprpcd
+   1810       1 Thu Oct 15 18:28:18 2026 /usr/sbin/ModemManager
+   1814       1 Thu Oct 15 18:28:18 2026 /usr/sbin/NetworkManager --no-daemon
+   1818       1 Thu Oct 15 18:28:18 2026 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   1837       1 Thu Oct 15 18:28:18 2026 /usr/bin/sscrpcd sensorspd
+   1980       2 Thu Oct 15 18:28:19 2026 [psimon]
+   1989       1 Thu Oct 15 18:28:20 2026 /usr/sbin/cupsd -l
+   1994       1 Thu Oct 15 18:28:20 2026 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+   1995       1 Thu Oct 15 18:28:20 2026 /usr/bin/containerd
+   2004    1989 Thu Oct 15 18:28:20 2026 /usr/lib/cups/notifier/dbus dbus://
+   2034       2 Thu Oct 15 18:28:22 2026 [kworker/R-pmic_]
+   2058       1 Thu Oct 15 18:28:26 2026 /usr/sbin/cups-browsed
+   2059       1 Thu Oct 15 18:28:26 2026 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+   2061       1 Thu Oct 15 18:28:26 2026 /usr/sbin/cron -f -P
+   2074       1 Thu Oct 15 18:28:26 2026 /usr/sbin/kerneloops --test
+   2088       1 Thu Oct 15 18:28:26 2026 /usr/sbin/kerneloops
+   2098       1 Thu Oct 15 18:28:26 2026 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 - vt220
+   2099       2 Thu Oct 15 18:28:26 2026 [irq/51-arm-smmu-context-fault]
+   2305       1 Thu Oct 15 18:28:26 2026 /usr/sbin/gdm3
+   2334    2305 Thu Oct 15 18:28:26 2026 gdm-session-worker [pam/gdm-launch-environment]
+   2384       1 Thu Oct 15 18:28:27 2026 /usr/lib/systemd/systemd --user
+   2395    2384 Thu Oct 15 18:28:27 2026 (sd-pam)
+   2482       1 Thu Oct 15 18:28:27 2026 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 82f16ef45cf39f1fa60ea666f12d97df5b07894823ceb9e0e7874a20a9164345 -address /run/containerd/containerd.sock
+   2509    2482 Thu Oct 15 18:28:27 2026 sleep infinity
+   2567    2384 Thu Oct 15 18:28:27 2026 /usr/bin/pipewire
+   2568    2384 Thu Oct 15 18:28:27 2026 /usr/bin/pipewire -c filter-chain.conf
+   2573    2384 Thu Oct 15 18:28:27 2026 /usr/bin/wireplumber
+   2574    2384 Thu Oct 15 18:28:27 2026 /usr/bin/pipewire-pulse
+   2577    2334 Thu Oct 15 18:28:27 2026 /usr/libexec/gdm-wayland-session dbus-run-session -- gnome-session --autostart /usr/share/gdm/greeter/autostart
+   2585    2384 Thu Oct 15 18:28:27 2026 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   2600       1 Thu Oct 15 18:28:27 2026 /usr/libexec/rtkit-daemon
+   2602    2577 Thu Oct 15 18:28:27 2026 dbus-run-session -- gnome-session --autostart /usr/share/gdm/greeter/autostart
+   2604    2602 Thu Oct 15 18:28:27 2026 dbus-daemon --nofork --print-address 4 --session
+   2608    2602 Thu Oct 15 18:28:27 2026 /usr/libexec/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+   2635    2384 Thu Oct 15 18:28:27 2026 /usr/libexec/xdg-document-portal
+   2640    2384 Thu Oct 15 18:28:27 2026 /usr/libexec/xdg-permission-store
+   2655    2635 Thu Oct 15 18:28:27 2026 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/123/doc
+   2687    2608 Thu Oct 15 18:28:28 2026 /usr/bin/gnome-shell
+   2699       2 Thu Oct 15 18:28:28 2026 [krfcommd]
+   2837       1 Thu Oct 15 18:28:28 2026 /usr/libexec/at-spi-bus-launcher
+   2843    2837 Thu Oct 15 18:28:28 2026 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/123/at-spi/bus
+   2846    2687 Thu Oct 15 18:28:28 2026 /usr/bin/Xwayland :1024 -rootless -noreset -accessx -core -auth /run/user/123/.mutter-Xwaylandauth.CMNMX3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+   2860       1 Thu Oct 15 18:28:29 2026 /usr/libexec/at-spi2-registryd --use-gnome-session
+   2870       1 Thu Oct 15 18:28:29 2026 /usr/libexec/colord
+   2912       1 Thu Oct 15 18:28:29 2026 /usr/libexec/xdg-permission-store
+   2925       1 Thu Oct 15 18:28:29 2026 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   2934    2608 Thu Oct 15 18:28:29 2026 /usr/libexec/gsd-sharing
+   2938       1 Thu Oct 15 18:28:29 2026 /usr/libexec/upowerd
+   2940    2608 Thu Oct 15 18:28:29 2026 /usr/libexec/gsd-wacom
+   2947    2608 Thu Oct 15 18:28:29 2026 /usr/libexec/gsd-color
+   2949    2608 Thu Oct 15 18:28:29 2026 /usr/libexec/gsd-keyboard
+   2957    2608 Thu Oct 15 18:28:29 2026 /usr/libexec/gsd-print-notifications
+   2961    2608 Thu Oct 15 18:28:29 2026 /usr/libexec/gsd-rfkill
+   2973    2608 Thu Oct 15 18:28:29 2026 /usr/libexec/gsd-smartcard
+   2975    2608 Thu Oct 15 18:28:29 2026 /usr/libexec/gsd-datetime
+   2983    2608 Thu Oct 15 18:28:29 2026 /usr/libexec/gsd-media-keys
+   2998    2608 Thu Oct 15 18:28:30 2026 /usr/libexec/gsd-screensaver-proxy
+   3002    2608 Thu Oct 15 18:28:30 2026 /usr/libexec/gsd-sound
+   3023    2608 Thu Oct 15 18:28:30 2026 /usr/libexec/gsd-a11y-settings
+   3036    2608 Thu Oct 15 18:28:30 2026 /usr/libexec/gsd-housekeeping
+   3044    2608 Thu Oct 15 18:28:30 2026 /usr/libexec/gsd-power
+   3113       1 Thu Oct 15 18:28:30 2026 /usr/libexec/gsd-printer
+   3169    2687 Thu Oct 15 18:28:30 2026 /usr/libexec/mutter-x11-frames
+   3170    2687 Thu Oct 15 18:28:30 2026 ibus-daemon --panel disable -r --xim
+   3178    3170 Thu Oct 15 18:28:30 2026 /usr/libexec/ibus-dconf
+   3180       1 Thu Oct 15 18:28:30 2026 /usr/libexec/ibus-x11 --kill-daemon
+   3189       1 Thu Oct 15 18:28:30 2026 /usr/libexec/ibus-portal
+   3213    3170 Thu Oct 15 18:28:30 2026 /usr/libexec/ibus-engine-simple
+   3225       1 Thu Oct 15 18:28:30 2026 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+   3277       1 Thu Oct 15 18:28:55 2026 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+  11271       2 Thu Oct 15 18:53:28 2026 [kworker/7:2-events]
+  11358       2 Thu Oct 15 18:53:38 2026 [kworker/4:0-events]
+  11401       2 Thu Oct 15 19:00:06 2026 [kworker/u16:3-ext4-rsv-conversion]
+  11402       2 Thu Oct 15 19:00:06 2026 [kworker/u16:4-ufs_clkscaling_0]
+  12022       2 Thu Oct 15 19:01:21 2026 [kworker/2:2H]
+  15392       2 Thu Oct 15 19:11:10 2026 [kworker/u16:5-ext4-rsv-conversion]
+  16973       2 Thu Oct 15 19:15:42 2026 [kworker/5:2-events]
+  18663       2 Thu Oct 15 19:22:21 2026 [kworker/2:0-cgroup_release]
+  18677       2 Thu Oct 15 19:22:21 2026 [kworker/7:0-events]
+  18801       2 Thu Oct 15 19:22:25 2026 [kworker/6:1-cgroup_release]
+  18968       2 Thu Oct 15 19:22:27 2026 [kworker/1:2H-kblockd]
+  18980       2 Thu Oct 15 19:22:27 2026 [kworker/6:3-cgroup_bpf_destroy]
+  19353       2 Thu Oct 15 19:23:00 2026 [kworker/5:1-cgroup_release]
+  19407       2 Thu Oct 15 19:23:10 2026 [kworker/1:4-rcu_gp]
+  19950       2 Thu Oct 15 19:24:54 2026 [kworker/3:3-cgroup_release]
+  19957       2 Thu Oct 15 19:24:54 2026 [kworker/7:3-events]
+  20171       1 Thu Oct 15 19:25:04 2026 /usr/bin/python3 -u /home/ubuntu/board-live-depth-20261015/board_owner.py
+  20183   20171 Thu Oct 15 19:25:05 2026 /home/ubuntu/board-live-depth-20261015/board-live-depth 0
+  20191       2 Thu Oct 15 19:25:05 2026 [kworker/R-workq]
+  20196       2 Thu Oct 15 19:25:05 2026 [kworker/R-workq]
+  20822       2 Thu Oct 15 19:30:00 2026 [kworker/2:2-rcu_gp]
+  20826       2 Thu Oct 15 19:32:40 2026 [kworker/3:2H]
+  20835       1 Thu Oct 15 19:32:57 2026 /usr/libexec/fwupd/fwupd
+  20836       2 Thu Oct 15 19:32:57 2026 [kworker/1:0-events]
+  20987       2 Thu Oct 15 19:33:09 2026 [kworker/4:1-rcu_gp]
+  20989       2 Thu Oct 15 19:34:39 2026 [kworker/u17:0-brcmf_wq/mmc1:0001:1]
+  20994       2 Thu Oct 15 19:36:17 2026 [kworker/0:1-events]
+  21014       2 Thu Oct 15 19:50:00 2026 [kworker/3:0-cgroup_free]
+  21017       2 Thu Oct 15 19:51:38 2026 [kworker/u16:1-ring0]
+  21018       2 Thu Oct 15 19:52:40 2026 [kworker/0:2-events]
+  21023       2 Thu Oct 15 19:56:30 2026 [kworker/u17:1-ufs_clk_gating_0]
+  21024       2 Thu Oct 15 19:58:08 2026 [kworker/0:0-events]
+  21026       2 Thu Oct 15 19:58:48 2026 [kworker/u16:0-ufs_clkscaling_0]
+  21029       2 Thu Oct 15 20:00:00 2026 [kworker/3:1-cgroup_offline]
+  21041       2 Thu Oct 15 20:00:16 2026 [kworker/2:1-events]
+  21140       2 Thu Oct 15 20:00:19 2026 [kworker/1:1-events]
+  21315       2 Thu Oct 15 20:00:31 2026 [kworker/5:0]
+  21316       2 Thu Oct 15 20:00:31 2026 [kworker/5:3]
+  21322       2 Thu Oct 15 20:00:31 2026 [kworker/3:2-events]
+  21338       2 Thu Oct 15 20:00:38 2026 [kworker/1:2-events]
+  21462       2 Thu Oct 15 20:00:39 2026 [kworker/4:2]
+  21566       2 Thu Oct 15 20:00:51 2026 [kworker/3:4]
+  21580       2 Thu Oct 15 20:01:01 2026 [kworker/0:2H]
+  21589       2 Thu Oct 15 20:01:12 2026 [kworker/6:0-cgroup_free]
+  21590       2 Thu Oct 15 20:01:12 2026 [kworker/6:2-events]
+  21807       2 Thu Oct 15 20:01:25 2026 [kworker/7:1-rcu_gp]
+  21817    3277 Thu Oct 15 20:01:40 2026 sshd: ubuntu [priv]
+  21825       1 Thu Oct 15 20:01:41 2026 /usr/lib/systemd/systemd --user
+  21828   21825 Thu Oct 15 20:01:41 2026 (sd-pam)
+  21841   21825 Thu Oct 15 20:01:42 2026 /usr/bin/pipewire
+  21843   21825 Thu Oct 15 20:01:42 2026 /usr/bin/pipewire -c filter-chain.conf
+  21844   21825 Thu Oct 15 20:01:42 2026 /snap/snapd-desktop-integration/396/usr/bin/user-session-helper /snap/snapd-desktop-integration/396/usr/bin/snapd-desktop-integration
+  21845   21825 Thu Oct 15 20:01:42 2026 /usr/bin/wireplumber
+  21846   21825 Thu Oct 15 20:01:42 2026 /usr/bin/pipewire-pulse
+  21869   21825 Thu Oct 15 20:01:42 2026 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  21907     748 Thu Oct 15 20:01:42 2026 (udev-worker)
+  21921   21825 Thu Oct 15 20:01:42 2026 /usr/libexec/xdg-document-portal
+  21925   21825 Thu Oct 15 20:01:42 2026 /usr/libexec/xdg-permission-store
+  21932   21921 Thu Oct 15 20:01:42 2026 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+  22020   21817 Thu Oct 15 20:01:44 2026 sshd: ubuntu@notty
+  22021   22020 Thu Oct 15 20:01:44 2026 sudo -n python3 -
+  22022   22021 Thu Oct 15 20:01:44 2026 python3 -
+  22024   22022 Thu Oct 15 20:01:44 2026 ps -eo pid,ppid,lstart,args

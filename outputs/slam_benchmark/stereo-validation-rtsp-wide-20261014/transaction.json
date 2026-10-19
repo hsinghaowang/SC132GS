@@ -1,0 +1,20 @@
+{
+  "session": "target-rtsp-wide-20261014",
+  "seconds": 60,
+  "candidate_frozen_before_new_capture": true,
+  "frozen_candidate_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "fit_or_update_candidate_allowed": false,
+  "input_source": "RTSP/TCP HEVC Main10 decoded on Windows; NOT sensor RAW",
+  "geometry": "Displayed left half=cam0/right 0x32; right half=cam1/left 0x30. Undo horizontal mirror independently per eye.",
+  "timestamps": "Encoded stream PTS and Windows receive clock; not V4L2 receiver or exposure time",
+  "RTSP_server_paused": false,
+  "sensor_controls_modified": false,
+  "status": "completed",
+  "error": null,
+  "storage_error": [],
+  "decoded_frames": 3544,
+  "saved_pairs": 296,
+  "pts_duration_seconds": 60.016277778,
+  "wall_seconds": 60.03099999995902,
+  "candidate_unchanged": true
+}

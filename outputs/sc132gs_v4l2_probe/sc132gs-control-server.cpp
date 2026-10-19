@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #include "sc132gs-control-server.hpp"
 #include "sc132gs-ae.hpp"
+#include "sc132gs-hdr-display.hpp"
+#include "sc132gs-sensor-signal.hpp"
 
 #include <cerrno>
 #include <cstring>
@@ -16,15 +18,67 @@
 
 namespace {
 
+const char* saturation_scope(AutoExposure::SaturationBasis basis) noexcept {
+    switch (basis) {
+    case AutoExposure::SaturationBasis::hdr_brightest_twenty_percent: return "brightest_20_percent";
+    case AutoExposure::SaturationBasis::linear_full_raw_frame: return "full_raw_frame";
+    case AutoExposure::SaturationBasis::unavailable: return "unavailable";
+    }
+    return "unavailable";
+}
+
+const char* linear_constraint(sc132gs::linear_ae::Constraint constraint) noexcept {
+    switch (constraint) {
+    case sc132gs::linear_ae::Constraint::none: return "none";
+    case sc132gs::linear_ae::Constraint::highlights: return "highlights";
+    case sc132gs::linear_ae::Constraint::exposure_and_gain: return "exposure_and_gain";
+    case sc132gs::linear_ae::Constraint::minimum_exposure: return "minimum_exposure";
+    case sc132gs::linear_ae::Constraint::invalid_statistics: return "invalid_statistics";
+    case sc132gs::linear_ae::Constraint::highlight_tradeoff: return "highlight_tradeoff";
+    }
+    return "invalid_statistics";
+}
+
 std::string report(const AutoExposure::Snapshot& state) {
     std::ostringstream out;
     out << "ok mode=" << (state.enabled ? "auto" : "off")
         << " camera_mode=" << (state.hdr_enabled ? "hdr" : "linear")
         << " hdr_enabled=" << (state.hdr_enabled ? 1 : 0)
         << " hdr_ratio=" << state.hdr_ratio
+        << " hdr_second_ticks=" << state.hdr_second_ticks
+        << " shadow_metric=" << (state.signal_black_raw10 ? "sensor_signal_median" : state.hdr_enabled ? (state.display_gamma_x100!=100 ? "raw_shadow_median" : "sensor_luma_median") : "median")
+        << " shadow_sample_percent=" << (state.hdr_enabled && state.display_gamma_x100!=100 ? 80 : 100)
+        << " effective_target_bp=" << state.target_percent*100
+        << " saturation_scope=" << saturation_scope(state.saturation_basis)
+        << " highlight_sample_percent=" << (state.saturation_basis == AutoExposure::SaturationBasis::linear_full_raw_frame ? 100 :
+            state.saturation_basis == AutoExposure::SaturationBasis::hdr_brightest_twenty_percent ? 20 : 0)
+        << " near_saturation_raw10=" << state.near_saturation_raw10
+        << " cam0_saturation_bp=" << state.cam0_saturation_bp
+        << " cam1_saturation_bp=" << state.cam1_saturation_bp
+        << " saturation_limit_bp=" << state.saturation_limit_bp
+        << " highlight_limited=" << state.highlight_limited
+        << " linear_constraint=" << (state.hdr_enabled ? "not_applicable" : linear_constraint(state.linear_constraint))
+        << " command_generation=" << state.command_generation
+        << " last_command_input_sequence=" << state.last_command_input_sequence
+        << " command_sequence_valid=" << (state.command_sequence_valid ? 1 : 0)
+        << " control_effect_frame_validated=" << (state.control_effect_frame_validated ? 1 : 0)
+        << " remaining_holdoff_pairs=" << state.remaining_holdoff_pairs
+        << " linear_effective_target_luma10=" << state.linear_effective_target_luma10
+        << " linear_highlight_darkening_ev_x100=" << state.linear_highlight_darkening_ev_x100
+        << " linear_small_highlight_limit_bp=" << sc132gs::linear_ae::Settings{}.small_highlight_limit_bp
+        << " linear_max_small_highlight_ev_x100=" << static_cast<int>(sc132gs::linear_ae::Settings{}.max_small_highlight_darkening_ev * 100)
+        << " linear_max_large_highlight_ev_x100=" << static_cast<int>(sc132gs::linear_ae::Settings{}.max_large_highlight_darkening_ev * 100)
         << " exposure_kind=" << (state.hdr_enabled ? "hdr_total_rows" : "linear_rows")
         << " display_gamma_x100=" << state.display_gamma_x100
         << " display_black_raw10=" << state.display_black_raw10
+        << " signal_black_raw10=" << state.signal_black_raw10
+        << " signal_target_luma10=" << (state.target_percent*1023+50)/100
+        << " target_kind=" << (state.signal_black_raw10 ? "sensor_signal_percent" : state.display_gamma_x100==50 ? "hdr_display_percent" : state.hdr_enabled ? "hdr_sensor_percent" : "brightness_percent")
+        << " hdr_target_raw10=" << (state.hdr_enabled ? (state.signal_black_raw10 ?
+            sc132gs::sensor_signal::raw_target(state.target_percent,state.signal_black_raw10) : state.display_gamma_x100==50 ?
+            sc132gs::HdrDisplay::raw_target(state.target_percent) : (state.target_percent*1023+50)/100) : 0)
+        << " cam0_shadow_raw10=" << state.cam0_shadow_raw10
+        << " cam1_shadow_raw10=" << state.cam1_shadow_raw10
         << " target_percent=" << state.target_percent
         << " cam0_percent=" << state.cam0_percent
         << " cam1_percent=" << state.cam1_percent
@@ -33,7 +87,9 @@ std::string report(const AutoExposure::Snapshot& state) {
         << " fps_x10=" << state.fps_x10
         << " max_exposure_lines=" << state.max_exposure_lines
         << " brightness_limited=" << (state.brightness_limited ? 1 : 0)
-        << " error_errno=" << state.last_error << '\n';
+        << " error_errno=" << state.last_error
+        << " max_exposure_us=" << state.max_exposure_us
+        << " max_gain_index=" << state.max_gain_index << '\n';
     return out.str();
 }
 
@@ -52,12 +108,26 @@ std::string handle(AutoExposure& exposure, std::string_view request) {
             if (input >> trailing) {
                 return "error code=invalid_argument\n";
             }
+        } else if (command == "configure-exposure") {
+            AutoExposure::Configuration config;
+            int enabled{};
+            std::string trailing;
+            if (!(input >> enabled >> config.exposure_rows >> config.gain_index >>
+                  config.target_percent >> config.max_exposure_us >> config.max_gain_index) ||
+                (enabled != 0 && enabled != 1) || (input >> trailing))
+                return "error code=invalid_argument\n";
+            config.enabled = enabled != 0;
+            exposure.configure(config);
         } else if (command == "set-brightness") {
             int target;
             if (!read_single_number(input, target)) {
                 return "error code=invalid_argument\n";
             }
             exposure.set_target(target);
+        } else if (command == "hdr-overexposure") {
+            int percent;
+            if(!read_single_number(input,percent)) return "error code=invalid_argument\n";
+            exposure.set_hdr_saturation_limit(percent);
         } else if (command == "auto-off") {
             std::string trailing;
             if (input >> trailing) {

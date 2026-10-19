@@ -1,0 +1,63 @@
+{
+  "flicker-before": [
+    {
+      "settings": [
+        "20",
+        "500"
+      ],
+      "seconds": 22.49,
+      "gain_min": 20,
+      "gain_max": 22,
+      "changes": 96,
+      "direction_reversals": 76
+    }
+  ],
+  "flicker-after": [
+    {
+      "settings": [
+        "20",
+        "500"
+      ],
+      "seconds": 40.67,
+      "gain_min": 4,
+      "gain_max": 36,
+      "changes": 37,
+      "direction_reversals": 3
+    },
+    {
+      "settings": [
+        "40",
+        "500"
+      ],
+      "seconds": 5.22,
+      "gain_min": 33,
+      "gain_max": 36,
+      "changes": 4,
+      "direction_reversals": 1
+    }
+  ],
+  "flicker-settled": [
+    {
+      "settings": [
+        "40",
+        "5000"
+      ],
+      "seconds": 4.8,
+      "gain_min": 77,
+      "gain_max": 89,
+      "changes": 12,
+      "direction_reversals": 0
+    },
+    {
+      "settings": [
+        "40",
+        "3000"
+      ],
+      "seconds": 17.53,
+      "gain_min": 90,
+      "gain_max": 95,
+      "changes": 10,
+      "direction_reversals": 1
+    }
+  ]
+}

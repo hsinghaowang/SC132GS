@@ -1,0 +1,1 @@
+PASS: rigid alignment, no-scale policy, Hamilton body-to-world RPE

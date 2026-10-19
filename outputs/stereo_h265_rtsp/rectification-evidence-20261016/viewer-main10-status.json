@@ -1,0 +1,18 @@
+{
+  "gray": {
+    "width": 2176,
+    "height": 1280,
+    "pixel_format": "yuv420p10le",
+    "decode_fps": 28.896450090612852,
+    "frames": 2779,
+    "live": true
+  },
+  "depth": {
+    "width": 544,
+    "height": 640,
+    "pixel_format": "yuv420p",
+    "decode_fps": 23.308573430230147,
+    "frames": 2277,
+    "live": true
+  }
+}

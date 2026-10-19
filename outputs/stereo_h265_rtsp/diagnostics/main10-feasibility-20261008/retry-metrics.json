@@ -1,0 +1,152 @@
+{
+  "width": 2176,
+  "height": 1280,
+  "decoded_frames": 8,
+  "input": "synthetic linear P010 gradient; no camera frames",
+  "frames": [
+    {
+      "frame": 0,
+      "min": 64,
+      "max": 939,
+      "unique_luma_levels": 876,
+      "low_two_bit_histogram": [
+        705280,
+        689920,
+        707840,
+        682240
+      ],
+      "mae": 0.29963235294117646,
+      "rmse": 0.5473868403069044,
+      "p99_abs_error": 1.0,
+      "max_abs_error": 1,
+      "chroma_min": 512,
+      "chroma_max": 512
+    },
+    {
+      "frame": 1,
+      "min": 65,
+      "max": 943,
+      "unique_luma_levels": 878,
+      "low_two_bit_histogram": [
+        677120,
+        715552,
+        695040,
+        697568
+      ],
+      "mae": 0.3670955882352941,
+      "rmse": 0.6942516072128656,
+      "p99_abs_error": 1.0,
+      "max_abs_error": 13,
+      "chroma_min": 512,
+      "chroma_max": 512
+    },
+    {
+      "frame": 2,
+      "min": 66,
+      "max": 943,
+      "unique_luma_levels": 871,
+      "low_two_bit_histogram": [
+        694878,
+        690787,
+        702975,
+        696640
+      ],
+      "mae": 0.37880177217371325,
+      "rmse": 0.7818814084498976,
+      "p99_abs_error": 1.0,
+      "max_abs_error": 13,
+      "chroma_min": 512,
+      "chroma_max": 512
+    },
+    {
+      "frame": 3,
+      "min": 63,
+      "max": 942,
+      "unique_luma_levels": 877,
+      "low_two_bit_histogram": [
+        680872,
+        722910,
+        693120,
+        688378
+      ],
+      "mae": 0.3234468347886029,
+      "rmse": 0.6307336951959319,
+      "p99_abs_error": 1.0,
+      "max_abs_error": 7,
+      "chroma_min": 512,
+      "chroma_max": 512
+    },
+    {
+      "frame": 4,
+      "min": 63,
+      "max": 942,
+      "unique_luma_levels": 875,
+      "low_two_bit_histogram": [
+        684311,
+        716284,
+        689854,
+        694831
+      ],
+      "mae": 0.2992564481847427,
+      "rmse": 0.6006011345070368,
+      "p99_abs_error": 1.0,
+      "max_abs_error": 7,
+      "chroma_min": 512,
+      "chroma_max": 512
+    },
+    {
+      "frame": 5,
+      "min": 61,
+      "max": 942,
+      "unique_luma_levels": 878,
+      "low_two_bit_histogram": [
+        724674,
+        697879,
+        695670,
+        667057
+      ],
+      "mae": 0.25646470013786765,
+      "rmse": 0.5429785031392343,
+      "p99_abs_error": 1.0,
+      "max_abs_error": 7,
+      "chroma_min": 512,
+      "chroma_max": 512
+    },
+    {
+      "frame": 6,
+      "min": 64,
+      "max": 942,
+      "unique_luma_levels": 871,
+      "low_two_bit_histogram": [
+        686006,
+        718385,
+        694387,
+        686502
+      ],
+      "mae": 0.23780984317555148,
+      "rmse": 0.5255509763091003,
+      "p99_abs_error": 1.0,
+      "max_abs_error": 7,
+      "chroma_min": 512,
+      "chroma_max": 512
+    },
+    {
+      "frame": 7,
+      "min": 64,
+      "max": 942,
+      "unique_luma_levels": 871,
+      "low_two_bit_histogram": [
+        683343,
+        692023,
+        715568,
+        694346
+      ],
+      "mae": 0.2097494686351103,
+      "rmse": 0.49644987073199665,
+      "p99_abs_error": 1.0,
+      "max_abs_error": 6,
+      "chroma_min": 512,
+      "chroma_max": 512
+    }
+  ]
+}

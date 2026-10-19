@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /home/ubuntu/camss-dma-fix-20261013/userspace-build
+Test project /home/ubuntu/camss-dma-fix-20261013/userspace-build
+    Start 1: fsync-schedule-check
+1/1 Test #1: fsync-schedule-check .............   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.02 sec

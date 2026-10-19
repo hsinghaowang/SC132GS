@@ -1,0 +1,584 @@
+{
+  "cases": [
+    {
+      "decoded_directory": "calibrated-hdr20-target20",
+      "raw_directory": "raw-noise-hdr20-target20",
+      "decoded": [
+        {
+          "target": 20,
+          "eyes": [
+            {
+              "eye": 0,
+              "common_spatial_bands": [
+                {
+                  "linear_percentiles": [
+                    0,
+                    10
+                  ],
+                  "pixels": 89108,
+                  "linear_mean": 25.70789285660846,
+                  "hdr_mean": 25.64277431132259
+                },
+                {
+                  "linear_percentiles": [
+                    10,
+                    25
+                  ],
+                  "pixels": 133835,
+                  "linear_mean": 99.10146013125615,
+                  "hdr_mean": 100.78295226709507
+                },
+                {
+                  "linear_percentiles": [
+                    25,
+                    50
+                  ],
+                  "pixels": 222773,
+                  "linear_mean": 181.7618465134165,
+                  "hdr_mean": 183.62551865202096
+                },
+                {
+                  "linear_percentiles": [
+                    50,
+                    75
+                  ],
+                  "pixels": 223199,
+                  "linear_mean": 231.48517093117204,
+                  "hdr_mean": 229.21462723100612
+                },
+                {
+                  "linear_percentiles": [
+                    75,
+                    90
+                  ],
+                  "pixels": 133788,
+                  "linear_mean": 498.0279110732402,
+                  "hdr_mean": 392.8126924686818
+                },
+                {
+                  "linear_percentiles": [
+                    90,
+                    100
+                  ],
+                  "pixels": 89201,
+                  "linear_mean": 869.6566079229307,
+                  "hdr_mean": 501.1670618416087
+                }
+              ],
+              "median_linear": 196.75,
+              "median_hdr": 197.58333333333334,
+              "global_mean_linear": 282.4489077112932,
+              "global_mean_hdr": 229.95610915898263,
+              "non_highlight_mean_linear": 217.20293257457882,
+              "non_highlight_mean_hdr": 199.82198097964542,
+              "non_highlight_change_percent": -8.002171696722138,
+              "clipped_linear_percent": 3.9173498493111367,
+              "clipped_hdr_percent": 0.0
+            },
+            {
+              "eye": 1,
+              "common_spatial_bands": [
+                {
+                  "linear_percentiles": [
+                    0,
+                    10
+                  ],
+                  "pixels": 89045,
+                  "linear_mean": 47.15404009208827,
+                  "hdr_mean": 51.43222808692234
+                },
+                {
+                  "linear_percentiles": [
+                    10,
+                    25
+                  ],
+                  "pixels": 133922,
+                  "linear_mean": 123.00291276514191,
+                  "hdr_mean": 126.00725982288198
+                },
+                {
+                  "linear_percentiles": [
+                    25,
+                    50
+                  ],
+                  "pixels": 222333,
+                  "linear_mean": 187.96098007643187,
+                  "hdr_mean": 189.574930397197
+                },
+                {
+                  "linear_percentiles": [
+                    50,
+                    75
+                  ],
+                  "pixels": 223617,
+                  "linear_mean": 221.58128295254832,
+                  "hdr_mean": 221.28277702500256
+                },
+                {
+                  "linear_percentiles": [
+                    75,
+                    90
+                  ],
+                  "pixels": 133794,
+                  "linear_mean": 496.4390723799273,
+                  "hdr_mean": 407.7917358028013
+                },
+                {
+                  "linear_percentiles": [
+                    90,
+                    100
+                  ],
+                  "pixels": 89193,
+                  "linear_mean": 902.0403264082757,
+                  "hdr_mean": 537.9421479264067
+                }
+              ],
+              "median_linear": 199.75,
+              "median_hdr": 201.08333333333334,
+              "global_mean_linear": 290.263470059558,
+              "global_mean_hdr": 241.76037135162522,
+              "non_highlight_mean_linear": 222.29114811723477,
+              "non_highlight_mean_hdr": 208.85304444056874,
+              "non_highlight_change_percent": -6.045271613595194,
+              "clipped_linear_percent": 3.7534308625143518,
+              "clipped_hdr_percent": 0.0
+            }
+          ],
+          "decoded_dark_patches": [
+            {
+              "eye": 0,
+              "box": [
+                30,
+                80,
+                160,
+                220
+              ],
+              "linear_cnr": 72.56667331058117,
+              "hdr_cnr": 69.18378075431482,
+              "cnr_change_percent": -4.661771584578167
+            },
+            {
+              "eye": 0,
+              "box": [
+                500,
+                470,
+                660,
+                620
+              ],
+              "linear_cnr": 13.780436615104591,
+              "hdr_cnr": 12.323880437732056,
+              "cnr_change_percent": -10.569738957153351
+            },
+            {
+              "eye": 1,
+              "box": [
+                30,
+                80,
+                160,
+                220
+              ],
+              "linear_cnr": 120.02393850198577,
+              "hdr_cnr": 100.11126330992354,
+              "cnr_change_percent": -16.590586378510462
+            },
+            {
+              "eye": 1,
+              "box": [
+                500,
+                470,
+                660,
+                620
+              ],
+              "linear_cnr": 13.05485509107494,
+              "hdr_cnr": 12.033111306142404,
+              "cnr_change_percent": -7.8265425223376095
+            }
+          ],
+          "linear_status": "ok mode=auto camera_mode=linear hdr_enabled=0 hdr_ratio=0 hdr_second_ticks=0 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=2000 saturation_scope=unused highlight_sample_percent=0 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=37 signal_target_luma10=205 target_kind=sensor_signal_percent hdr_target_raw10=0 cam0_shadow_raw10=0 cam1_shadow_raw10=0 target_percent=20 cam0_percent=19 cam1_percent=20 exposure_lines=1377 gain_index=11 fps_x10=300 max_exposure_lines=1377 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+          "hdr_status": "ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=1 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=2000 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=53 signal_target_luma10=205 target_kind=sensor_signal_percent hdr_target_raw10=247 cam0_shadow_raw10=240 cam1_shadow_raw10=244 target_percent=20 cam0_percent=19 cam1_percent=20 exposure_lines=2830 gain_index=0 fps_x10=199 max_exposure_lines=3629 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128"
+        }
+      ],
+      "raw_dark_patches": [
+        {
+          "eye": 0,
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "linear_cnr": 34.260628077849745,
+          "hdr_cnr": 37.857488977313906,
+          "cnr_change_percent": 10.498525862663953,
+          "linear_temporal_noise": 2.0237219459866678,
+          "hdr_temporal_noise": 2.021732635094888,
+          "temporal_noise_change_percent": -0.09829961550424926,
+          "linear_residual_noise": 1.9298147867117639,
+          "hdr_residual_noise": 1.695833551941911
+        },
+        {
+          "eye": 0,
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "linear_cnr": 8.010841577878733,
+          "hdr_cnr": 8.850630568818435,
+          "cnr_change_percent": 10.483155643206189,
+          "linear_temporal_noise": 3.2709536371372705,
+          "hdr_temporal_noise": 2.92423015739165,
+          "temporal_noise_change_percent": -10.600073196056425,
+          "linear_residual_noise": 3.260165166514547,
+          "hdr_residual_noise": 2.919001058638582
+        },
+        {
+          "eye": 1,
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "linear_cnr": 44.34960018601189,
+          "hdr_cnr": 45.61664930976891,
+          "cnr_change_percent": 2.856957263296045,
+          "linear_temporal_noise": 1.9664287878075086,
+          "hdr_temporal_noise": 2.0345199872492357,
+          "temporal_noise_change_percent": 3.462683208459638,
+          "linear_residual_noise": 1.9637907211800096,
+          "hdr_residual_noise": 1.8418348257626325
+        },
+        {
+          "eye": 1,
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "linear_cnr": 8.004609538386639,
+          "hdr_cnr": 8.548967168922937,
+          "cnr_change_percent": 6.800551956042278,
+          "linear_temporal_noise": 3.2832323444979727,
+          "hdr_temporal_noise": 3.061050334871834,
+          "temporal_noise_change_percent": -6.7671729050327585,
+          "linear_residual_noise": 3.275612617237639,
+          "hdr_residual_noise": 3.0081606536227516
+        }
+      ],
+      "raw_frames_per_eye": {
+        "linear": [
+          60,
+          60
+        ],
+        "hdr": [
+          60,
+          60
+        ]
+      },
+      "raw_receiver_fps": {
+        "linear": [
+          30.003686893728467,
+          30.000666116484958
+        ],
+        "hdr": [
+          20.007175454790225,
+          19.99997966103763
+        ]
+      },
+      "raw_policy_restored": true
+    },
+    {
+      "decoded_directory": "calibrated-hdr15-target30",
+      "raw_directory": "raw-noise-hdr15-target30",
+      "decoded": [
+        {
+          "target": 30,
+          "eyes": [
+            {
+              "eye": 0,
+              "common_spatial_bands": [
+                {
+                  "linear_percentiles": [
+                    0,
+                    10
+                  ],
+                  "pixels": 89173,
+                  "linear_mean": 41.5445024465552,
+                  "hdr_mean": 41.25796205129355
+                },
+                {
+                  "linear_percentiles": [
+                    10,
+                    25
+                  ],
+                  "pixels": 133755,
+                  "linear_mean": 156.59275478798298,
+                  "hdr_mean": 155.6192852603641
+                },
+                {
+                  "linear_percentiles": [
+                    25,
+                    50
+                  ],
+                  "pixels": 222568,
+                  "linear_mean": 276.45468613337647,
+                  "hdr_mean": 274.26727412146704
+                },
+                {
+                  "linear_percentiles": [
+                    50,
+                    75
+                  ],
+                  "pixels": 223421,
+                  "linear_mean": 353.2983179736909,
+                  "hdr_mean": 320.82381617365127
+                },
+                {
+                  "linear_percentiles": [
+                    75,
+                    90
+                  ],
+                  "pixels": 133774,
+                  "linear_mean": 763.1839015802772,
+                  "hdr_mean": 424.8741023417605
+                },
+                {
+                  "linear_percentiles": [
+                    90,
+                    100
+                  ],
+                  "pixels": 89213,
+                  "linear_mean": 972.2829529702324,
+                  "hdr_mean": 506.91046708439353
+                }
+              ],
+              "median_linear": 299.4166666666667,
+              "median_hdr": 293.4166666666667,
+              "global_mean_linear": 396.8458312217458,
+              "global_mean_hdr": 290.6994047752522,
+              "non_highlight_mean_linear": 332.9294972969898,
+              "non_highlight_mean_hdr": 266.68153010849,
+              "non_highlight_change_percent": -19.89849734744389,
+              "clipped_linear_percent": 4.478396778128587,
+              "clipped_hdr_percent": 0.0
+            },
+            {
+              "eye": 1,
+              "common_spatial_bands": [
+                {
+                  "linear_percentiles": [
+                    0,
+                    10
+                  ],
+                  "pixels": 89090,
+                  "linear_mean": 76.71702117708683,
+                  "hdr_mean": 77.11111516444045
+                },
+                {
+                  "linear_percentiles": [
+                    10,
+                    25
+                  ],
+                  "pixels": 133698,
+                  "linear_mean": 201.21535226156462,
+                  "hdr_mean": 203.7238995098406
+                },
+                {
+                  "linear_percentiles": [
+                    25,
+                    50
+                  ],
+                  "pixels": 222826,
+                  "linear_mean": 288.3908894533552,
+                  "hdr_mean": 286.59776537148565
+                },
+                {
+                  "linear_percentiles": [
+                    50,
+                    75
+                  ],
+                  "pixels": 223310,
+                  "linear_mean": 338.8553520517069,
+                  "hdr_mean": 319.3512613258101
+                },
+                {
+                  "linear_percentiles": [
+                    75,
+                    90
+                  ],
+                  "pixels": 133752,
+                  "linear_mean": 750.862509221046,
+                  "hdr_mean": 449.91165739577724
+                },
+                {
+                  "linear_percentiles": [
+                    90,
+                    100
+                  ],
+                  "pixels": 89228,
+                  "linear_mean": 981.4137116899029,
+                  "hdr_mean": 542.6071459257931
+                }
+              ],
+              "median_linear": 306.4166666666667,
+              "median_hdr": 302.0,
+              "global_mean_linear": 405.49939408650863,
+              "global_mean_hdr": 311.553043171313,
+              "non_highlight_mean_linear": 341.51156118390514,
+              "non_highlight_mean_hdr": 285.8794595140036,
+              "non_highlight_change_percent": -16.289961451683755,
+              "clipped_linear_percent": 4.197649074339839,
+              "clipped_hdr_percent": 0.0
+            }
+          ],
+          "decoded_dark_patches": [
+            {
+              "eye": 0,
+              "box": [
+                30,
+                80,
+                160,
+                220
+              ],
+              "linear_cnr": 71.32219420130279,
+              "hdr_cnr": 91.20435647463108,
+              "cnr_change_percent": 27.876543193850758
+            },
+            {
+              "eye": 0,
+              "box": [
+                500,
+                470,
+                660,
+                620
+              ],
+              "linear_cnr": 14.412859915285427,
+              "hdr_cnr": 19.960110557570495,
+              "cnr_change_percent": 38.48820202853691
+            },
+            {
+              "eye": 1,
+              "box": [
+                30,
+                80,
+                160,
+                220
+              ],
+              "linear_cnr": 130.28089112533544,
+              "hdr_cnr": 165.76972352320198,
+              "cnr_change_percent": 27.240243823420627
+            },
+            {
+              "eye": 1,
+              "box": [
+                500,
+                470,
+                660,
+                620
+              ],
+              "linear_cnr": 13.335876982078936,
+              "hdr_cnr": 17.942850220059157,
+              "cnr_change_percent": 34.545708873673476
+            }
+          ],
+          "linear_status": "ok mode=auto camera_mode=linear hdr_enabled=0 hdr_ratio=0 hdr_second_ticks=0 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=3000 saturation_scope=unused highlight_sample_percent=0 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=37 signal_target_luma10=307 target_kind=sensor_signal_percent hdr_target_raw10=0 cam0_shadow_raw10=0 cam1_shadow_raw10=0 target_percent=30 cam0_percent=29 cam1_percent=30 exposure_lines=1377 gain_index=30 fps_x10=299 max_exposure_lines=1377 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+          "hdr_status": "ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=1 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=3000 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=53 signal_target_luma10=307 target_kind=sensor_signal_percent hdr_target_raw10=344 cam0_shadow_raw10=331 cam1_shadow_raw10=339 target_percent=30 cam0_percent=29 cam1_percent=30 exposure_lines=4350 gain_index=0 fps_x10=149 max_exposure_lines=4492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128"
+        }
+      ],
+      "raw_dark_patches": [
+        {
+          "eye": 0,
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "linear_cnr": 39.14826034911856,
+          "hdr_cnr": 52.336049442517684,
+          "cnr_change_percent": 33.686781930518286,
+          "linear_temporal_noise": 2.554502560845733,
+          "hdr_temporal_noise": 1.920299906727981,
+          "temporal_noise_change_percent": -24.826855288326,
+          "linear_residual_noise": 2.5539661901115482,
+          "hdr_residual_noise": 1.919645592986768
+        },
+        {
+          "eye": 0,
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "linear_cnr": 9.137255894666401,
+          "hdr_cnr": 12.569559717603058,
+          "cnr_change_percent": 37.563836041192204,
+          "linear_temporal_noise": 4.426013697871809,
+          "hdr_temporal_noise": 2.8835488801333393,
+          "temporal_noise_change_percent": -34.849978401109425,
+          "linear_residual_noise": 4.42528921879081,
+          "hdr_residual_noise": 2.8614102223721543
+        },
+        {
+          "eye": 1,
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "linear_cnr": 50.29512732605206,
+          "hdr_cnr": 68.7123437782068,
+          "cnr_change_percent": 36.61829173382949,
+          "linear_temporal_noise": 2.6437753831289785,
+          "hdr_temporal_noise": 1.9132305253390822,
+          "temporal_noise_change_percent": -27.63263711629227,
+          "linear_residual_noise": 2.642502506026213,
+          "hdr_residual_noise": 1.9118350421970567
+        },
+        {
+          "eye": 1,
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "linear_cnr": 8.854767756447705,
+          "hdr_cnr": 12.038568935136318,
+          "cnr_change_percent": 35.95578411833884,
+          "linear_temporal_noise": 4.603261815177311,
+          "hdr_temporal_noise": 3.0828687016945233,
+          "temporal_noise_change_percent": -33.028603944923006,
+          "linear_residual_noise": 4.602040518829802,
+          "hdr_residual_noise": 3.0623794958772828
+        }
+      ],
+      "raw_frames_per_eye": {
+        "linear": [
+          60,
+          60
+        ],
+        "hdr": [
+          60,
+          60
+        ]
+      },
+      "raw_receiver_fps": {
+        "linear": [
+          30.000193221583462,
+          30.007975000813776
+        ],
+        "hdr": [
+          15.008514152011319,
+          14.997408498650106
+        ]
+      },
+      "raw_policy_restored": true
+    }
+  ]
+}

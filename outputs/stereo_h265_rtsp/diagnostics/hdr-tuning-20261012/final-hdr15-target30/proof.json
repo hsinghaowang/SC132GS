@@ -1,0 +1,69 @@
+{
+  "camera_status": "ok sensor_mode=hdr binning=0 max_fps=15 effective_fps=15 measured_fps_x10=150 eye_resolution=1088x1280 ae=1 brightness=30 ae_target_percent=30 exposure_rows=4350 gain_index=0 exposure_ceiling_rows=4350 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=176",
+  "ae_status": "ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=1 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=3000 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=53 signal_target_luma10=307 target_kind=sensor_signal_percent hdr_target_raw10=344 cam0_shadow_raw10=332 cam1_shadow_raw10=340 target_percent=30 cam0_percent=29 cam1_percent=30 exposure_lines=4350 gain_index=0 fps_x10=150 max_exposure_lines=4350 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+  "boot_id": "148a91e6-a33b-48f0-b20d-742f3651b1f0",
+  "kernel": "6.8.0-1084-qcom",
+  "decoded": {
+    "decoder": "software",
+    "decoded_frames": 177,
+    "unique_rgb_hashes": 177,
+    "snapshot_channel_ranges": [
+      202,
+      203,
+      203
+    ],
+    "snapshot_luma_statistics": {
+      "sampled_pixels": 111616,
+      "mean": 75.64126110951835,
+      "median": 74,
+      "p10": 27,
+      "p90": 117,
+      "dark_fraction": 0.00540245126146789,
+      "bright_fraction": 0.0
+    },
+    "snapshot_has_spatial_detail": true,
+    "width": 2176,
+    "height": 1280,
+    "wall_seconds": 11.791142345000026,
+    "wall_fps": 14.926458764585426,
+    "pts_fps": 14.99980113885801
+  },
+  "durable": {
+    "mode": "hdr",
+    "binning": 0,
+    "max_fps": 15,
+    "fps": 15,
+    "ae": 1,
+    "brightness": 30,
+    "rows": 4350,
+    "gain": 0,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 176,
+    "schema": 1
+  },
+  "runtime": {
+    "mode": "hdr",
+    "binning": 0,
+    "max_fps": 15,
+    "fps": 15,
+    "ae": 1,
+    "brightness": 30,
+    "rows": 4350,
+    "gain": 0,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 176,
+    "schema": 1
+  },
+  "control_readbacks": {
+    "/dev/v4l-subdev27": "hdr_total_nominal_rows: 4350\nhdr_second_exposure_ticks: 1\nwide_dynamic_range: 1\nanalogue_gain: 0",
+    "/dev/v4l-subdev28": "hdr_total_nominal_rows: 4350\nhdr_second_exposure_ticks: 1\nwide_dynamic_range: 1\nanalogue_gain: 0"
+  },
+  "artifact_hashes": {
+    "/lib/modules/6.8.0-1084-qcom/extra/sc132gs.ko": "d6d243fcd70653cd3a7293cd549dd39e2ea13b12ce96d22ef3f88edaf8fc27f6",
+    "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": "53f9fda54e6f7859bab9f78c39b62a3bc070aaa156dce612125057957221cb7e",
+    "/usr/local/bin/sc132gs-camera": "db61e2c4b4ed52766b73398c8949a49f73aaed881fbe314650108239cd69ae81",
+    "/home/ubuntu/stereo-h265-rtsp/camera_platform.py": "e95d67ec56e12b131744736830e47c4ca42699066b5dcff850f255c28054c31f"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "samples": 3516,
+  "p50_ms": 167.97220223046875,
+  "p95_ms": 194.15131928173827,
+  "p99_ms": 212.26926338691405,
+  "min_rtt_uncertainty_ms": 0.0,
+  "offset_drift_ms": 3.964866,
+  "start": "driver exposure_start_estimate",
+  "end": "PC decoder-ready"
+}

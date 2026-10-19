@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "role": "cam0",
+      "pattern": 0,
+      "guard": 0,
+      "bytes": 1740800,
+      "stable_three_frames": false,
+      "identical_to_reference": true,
+      "sha256": [
+        "0c3d51726ceeab5c72dce8e66bac377763d8d6d54650ac5175bfd62d37a0b7dc",
+        "b48f1b88157929d28cd52a9291ad0855cea440b1ac1b27aa00e87fa1d82c1e71",
+        "f87c2f71757c45af7e927b380998d02e234614f2161611ab87fdf01507c39584"
+      ]
+    },
+    {
+      "role": "cam0",
+      "pattern": 0,
+      "guard": 1,
+      "bytes": 1740800,
+      "stable_three_frames": false,
+      "identical_to_reference": true,
+      "sha256": [
+        "0c3d51726ceeab5c72dce8e66bac377763d8d6d54650ac5175bfd62d37a0b7dc",
+        "b48f1b88157929d28cd52a9291ad0855cea440b1ac1b27aa00e87fa1d82c1e71",
+        "f87c2f71757c45af7e927b380998d02e234614f2161611ab87fdf01507c39584"
+      ]
+    },
+    {
+      "role": "cam1",
+      "pattern": 0,
+      "guard": 0,
+      "bytes": 1740800,
+      "stable_three_frames": false,
+      "identical_to_reference": true,
+      "sha256": [
+        "0c3d51726ceeab5c72dce8e66bac377763d8d6d54650ac5175bfd62d37a0b7dc",
+        "b48f1b88157929d28cd52a9291ad0855cea440b1ac1b27aa00e87fa1d82c1e71",
+        "f87c2f71757c45af7e927b380998d02e234614f2161611ab87fdf01507c39584"
+      ]
+    },
+    {
+      "role": "cam1",
+      "pattern": 0,
+      "guard": 1,
+      "bytes": 1740800,
+      "stable_three_frames": false,
+      "identical_to_reference": true,
+      "sha256": [
+        "0c3d51726ceeab5c72dce8e66bac377763d8d6d54650ac5175bfd62d37a0b7dc",
+        "b48f1b88157929d28cd52a9291ad0855cea440b1ac1b27aa00e87fa1d82c1e71",
+        "f87c2f71757c45af7e927b380998d02e234614f2161611ab87fdf01507c39584"
+      ]
+    }
+  ]
+}

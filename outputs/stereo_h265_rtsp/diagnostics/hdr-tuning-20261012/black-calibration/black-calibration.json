@@ -1,0 +1,452 @@
+[
+  {
+    "mode": "linear",
+    "gain": 0,
+    "reply": "ok sensor_mode=linear binning=0 max_fps=30 effective_fps=30 measured_fps_x10=299 eye_resolution=1088x1280 ae=0 brightness=10 ae_target_percent=10 exposure_rows=672 gain_index=0 exposure_ceiling_rows=2560 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=129",
+    "status": "ok mode=off camera_mode=linear hdr_enabled=0 hdr_ratio=0 hdr_second_ticks=0 shadow_metric=median shadow_sample_percent=100 effective_target_bp=1000 saturation_scope=unused highlight_sample_percent=0 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 target_kind=brightness_percent hdr_target_raw10=0 cam0_shadow_raw10=0 cam1_shadow_raw10=0 target_percent=10 cam0_percent=4 cam1_percent=4 exposure_lines=672 gain_index=0 fps_x10=300 max_exposure_lines=2560 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+    "black": [
+      {
+        "median": 37.0,
+        "p1": 36.5,
+        "p99": 38.0
+      },
+      {
+        "median": 37.0,
+        "p1": 36.416666666666664,
+        "p99": 37.916666666666664
+      }
+    ],
+    "covered_check": true,
+    "decoded": {
+      "caps": "video/x-raw, format=(string)I420_10LE, width=(int)2176, height=(int)1280, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)1:3:0:1, framerate=(fraction)30/1",
+      "eyes": [
+        {
+          "mean": 37.07113545852469,
+          "percentiles": {
+            "1": 36.583333333333336,
+            "10": 36.916666666666664,
+            "40": 37.0,
+            "50": 37.0,
+            "90": 37.416666666666664,
+            "99": 38.0
+          },
+          "clipped_percent": 0.0
+        },
+        {
+          "mean": 36.97945705666379,
+          "percentiles": {
+            "1": 36.5,
+            "10": 36.833333333333336,
+            "40": 37.0,
+            "50": 37.0,
+            "90": 37.083333333333336,
+            "99": 37.416666666666664
+          },
+          "clipped_percent": 0.0
+        }
+      ],
+      "frames": 12,
+      "dark_patches": [
+        {
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "mean": 36.82934065934066,
+          "contrast_p90_p10": 0.5,
+          "temporal_noise": 0.2560970574478184,
+          "contrast_to_noise": 1.9523847910742924
+        },
+        {
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "mean": 36.99132638888889,
+          "contrast_p90_p10": 0.0,
+          "temporal_noise": 0.036015375553942006,
+          "contrast_to_noise": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "mode": "linear",
+    "gain": 11,
+    "reply": "ok sensor_mode=linear binning=0 max_fps=30 effective_fps=30 measured_fps_x10=299 eye_resolution=1088x1280 ae=0 brightness=10 ae_target_percent=10 exposure_rows=672 gain_index=11 exposure_ceiling_rows=2560 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=130",
+    "status": "ok mode=off camera_mode=linear hdr_enabled=0 hdr_ratio=0 hdr_second_ticks=0 shadow_metric=median shadow_sample_percent=100 effective_target_bp=1000 saturation_scope=unused highlight_sample_percent=0 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 target_kind=brightness_percent hdr_target_raw10=0 cam0_shadow_raw10=0 cam1_shadow_raw10=0 target_percent=10 cam0_percent=4 cam1_percent=4 exposure_lines=672 gain_index=11 fps_x10=300 max_exposure_lines=2560 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+    "black": [
+      {
+        "median": 37.0,
+        "p1": 36.416666666666664,
+        "p99": 38.25
+      },
+      {
+        "median": 37.0,
+        "p1": 36.416666666666664,
+        "p99": 38.166666666666664
+      }
+    ],
+    "covered_check": true,
+    "decoded": {
+      "caps": "video/x-raw, format=(string)I420_10LE, width=(int)2176, height=(int)1280, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)1:3:0:1, framerate=(fraction)30/1",
+      "eyes": [
+        {
+          "mean": 37.13894413898056,
+          "percentiles": {
+            "1": 36.5,
+            "10": 36.833333333333336,
+            "40": 37.0,
+            "50": 37.0,
+            "90": 37.75,
+            "99": 38.083333333333336
+          },
+          "clipped_percent": 0.0
+        },
+        {
+          "mean": 37.093438867860215,
+          "percentiles": {
+            "1": 36.416666666666664,
+            "10": 36.75,
+            "40": 37.0,
+            "50": 37.0,
+            "90": 37.583333333333336,
+            "99": 38.0
+          },
+          "clipped_percent": 0.0
+        }
+      ],
+      "frames": 12,
+      "dark_patches": [
+        {
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "mean": 36.7750641025641,
+          "contrast_p90_p10": 0.5833333333333357,
+          "temporal_noise": 0.3354673326598737,
+          "contrast_to_noise": 1.7388677720366004
+        },
+        {
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "mean": 37.01861805555556,
+          "contrast_p90_p10": 0.25,
+          "temporal_noise": 0.13786704379935857,
+          "contrast_to_noise": 1.8133412678655196
+        }
+      ]
+    }
+  },
+  {
+    "mode": "linear",
+    "gain": 21,
+    "reply": "ok sensor_mode=linear binning=0 max_fps=30 effective_fps=30 measured_fps_x10=300 eye_resolution=1088x1280 ae=0 brightness=10 ae_target_percent=10 exposure_rows=672 gain_index=21 exposure_ceiling_rows=2560 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=131",
+    "status": "ok mode=off camera_mode=linear hdr_enabled=0 hdr_ratio=0 hdr_second_ticks=0 shadow_metric=median shadow_sample_percent=100 effective_target_bp=1000 saturation_scope=unused highlight_sample_percent=0 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 target_kind=brightness_percent hdr_target_raw10=0 cam0_shadow_raw10=0 cam1_shadow_raw10=0 target_percent=10 cam0_percent=4 cam1_percent=4 exposure_lines=672 gain_index=21 fps_x10=301 max_exposure_lines=2560 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+    "black": [
+      {
+        "median": 37.083333333333336,
+        "p1": 36.083333333333336,
+        "p99": 38.416666666666664
+      },
+      {
+        "median": 37.25,
+        "p1": 36.416666666666664,
+        "p99": 38.916666666666664
+      }
+    ],
+    "covered_check": true,
+    "decoded": {
+      "caps": "video/x-raw, format=(string)I420_10LE, width=(int)2176, height=(int)1280, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)1:3:0:1, framerate=(fraction)30/1",
+      "eyes": [
+        {
+          "mean": 37.11397947536955,
+          "percentiles": {
+            "1": 36.25,
+            "10": 36.666666666666664,
+            "40": 37.0,
+            "50": 37.083333333333336,
+            "90": 37.666666666666664,
+            "99": 38.166666666666664
+          },
+          "clipped_percent": 0.0
+        },
+        {
+          "mean": 37.35219859237467,
+          "percentiles": {
+            "1": 36.416666666666664,
+            "10": 36.833333333333336,
+            "40": 37.083333333333336,
+            "50": 37.25,
+            "90": 38.0,
+            "99": 38.5
+          },
+          "clipped_percent": 0.0
+        }
+      ],
+      "frames": 12,
+      "dark_patches": [
+        {
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "mean": 36.55440018315018,
+          "contrast_p90_p10": 0.9166666666666643,
+          "temporal_noise": 0.4897993426124176,
+          "contrast_to_noise": 1.8715146937059703
+        },
+        {
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "mean": 37.078864583333335,
+          "contrast_p90_p10": 0.6666666666666643,
+          "temporal_noise": 0.3632523628722361,
+          "contrast_to_noise": 1.8352713837711379
+        }
+      ]
+    }
+  },
+  {
+    "mode": "hdr",
+    "gain": 0,
+    "reply": "ok sensor_mode=hdr binning=0 max_fps=30 effective_fps=30 measured_fps_x10=300 eye_resolution=1088x1280 ae=0 brightness=10 ae_target_percent=10 exposure_rows=1492 gain_index=0 exposure_ceiling_rows=1492 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=132",
+    "status": "ok mode=off camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=1 shadow_metric=sensor_luma_median shadow_sample_percent=100 effective_target_bp=1000 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 target_kind=hdr_sensor_percent hdr_target_raw10=102 cam0_shadow_raw10=53 cam1_shadow_raw10=53 target_percent=10 cam0_percent=5 cam1_percent=5 exposure_lines=1492 gain_index=0 fps_x10=300 max_exposure_lines=1492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+    "black": [
+      {
+        "median": 53.0,
+        "p1": 52.916666666666664,
+        "p99": 54.166666666666664
+      },
+      {
+        "median": 52.916666666666664,
+        "p1": 52.0,
+        "p99": 53.166666666666664
+      }
+    ],
+    "covered_check": true,
+    "decoded": {
+      "caps": "video/x-raw, format=(string)I420_10LE, width=(int)2176, height=(int)1280, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)1:3:0:1, framerate=(fraction)30/1",
+      "eyes": [
+        {
+          "mean": 53.11826282126029,
+          "percentiles": {
+            "1": 52.916666666666664,
+            "10": 53.0,
+            "40": 53.0,
+            "50": 53.0,
+            "90": 53.666666666666664,
+            "99": 54.0
+          },
+          "clipped_percent": 0.0
+        },
+        {
+          "mean": 52.6111673266779,
+          "percentiles": {
+            "1": 52.0,
+            "10": 52.0,
+            "40": 52.5,
+            "50": 52.75,
+            "90": 53.0,
+            "99": 53.0
+          },
+          "clipped_percent": 0.0
+        }
+      ],
+      "frames": 12,
+      "dark_patches": [
+        {
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "mean": 52.995224358974355,
+          "contrast_p90_p10": 0.0,
+          "temporal_noise": 0.017857159088263568,
+          "contrast_to_noise": 0.0
+        },
+        {
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "mean": 52.99661458333333,
+          "contrast_p90_p10": 0.0,
+          "temporal_noise": 0.024287607241735287,
+          "contrast_to_noise": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "mode": "hdr",
+    "gain": 11,
+    "reply": "ok sensor_mode=hdr binning=0 max_fps=30 effective_fps=30 measured_fps_x10=298 eye_resolution=1088x1280 ae=0 brightness=10 ae_target_percent=10 exposure_rows=1492 gain_index=11 exposure_ceiling_rows=1492 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=133",
+    "status": "ok mode=off camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=1 shadow_metric=sensor_luma_median shadow_sample_percent=100 effective_target_bp=1000 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 target_kind=hdr_sensor_percent hdr_target_raw10=102 cam0_shadow_raw10=53 cam1_shadow_raw10=53 target_percent=10 cam0_percent=5 cam1_percent=5 exposure_lines=1492 gain_index=11 fps_x10=300 max_exposure_lines=1492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+    "black": [
+      {
+        "median": 53.333333333333336,
+        "p1": 52.75,
+        "p99": 55.0
+      },
+      {
+        "median": 53.416666666666664,
+        "p1": 52.75,
+        "p99": 54.666666666666664
+      }
+    ],
+    "covered_check": true,
+    "decoded": {
+      "caps": "video/x-raw, format=(string)I420_10LE, width=(int)2176, height=(int)1280, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)1:3:0:1, framerate=(fraction)30/1",
+      "eyes": [
+        {
+          "mean": 53.37195725847923,
+          "percentiles": {
+            "1": 52.75,
+            "10": 53.0,
+            "40": 53.0,
+            "50": 53.166666666666664,
+            "90": 54.0,
+            "99": 54.5
+          },
+          "clipped_percent": 0.0
+        },
+        {
+          "mean": 53.38565987296091,
+          "percentiles": {
+            "1": 52.75,
+            "10": 53.0,
+            "40": 53.083333333333336,
+            "50": 53.25,
+            "90": 54.0,
+            "99": 54.333333333333336
+          },
+          "clipped_percent": 0.0
+        }
+      ],
+      "frames": 12,
+      "dark_patches": [
+        {
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "mean": 53.0328663003663,
+          "contrast_p90_p10": 0.1666666666666643,
+          "temporal_noise": 0.10346696804926911,
+          "contrast_to_noise": 1.6108200501951564
+        },
+        {
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "mean": 53.07150694444445,
+          "contrast_p90_p10": 0.3333333333333357,
+          "temporal_noise": 0.13173903919837102,
+          "contrast_to_noise": 2.5302547776396525
+        }
+      ]
+    }
+  },
+  {
+    "mode": "hdr",
+    "gain": 21,
+    "reply": "ok sensor_mode=hdr binning=0 max_fps=30 effective_fps=30 measured_fps_x10=300 eye_resolution=1088x1280 ae=0 brightness=10 ae_target_percent=10 exposure_rows=1492 gain_index=21 exposure_ceiling_rows=1492 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=134",
+    "status": "ok mode=off camera_mode=hdr hdr_enabled=1 hdr_ratio=256 hdr_second_ticks=1 shadow_metric=sensor_luma_median shadow_sample_percent=100 effective_target_bp=1000 saturation_scope=brightest_20_percent highlight_sample_percent=20 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=hdr_total_rows display_gamma_x100=100 display_black_raw10=0 target_kind=hdr_sensor_percent hdr_target_raw10=102 cam0_shadow_raw10=54 cam1_shadow_raw10=54 target_percent=10 cam0_percent=5 cam1_percent=5 exposure_lines=1492 gain_index=21 fps_x10=299 max_exposure_lines=1492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+    "black": [
+      {
+        "median": 53.916666666666664,
+        "p1": 52.916666666666664,
+        "p99": 56.25
+      },
+      {
+        "median": 53.666666666666664,
+        "p1": 52.916666666666664,
+        "p99": 55.166666666666664
+      }
+    ],
+    "covered_check": true,
+    "decoded": {
+      "caps": "video/x-raw, format=(string)I420_10LE, width=(int)2176, height=(int)1280, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)1:3:0:1, framerate=(fraction)30/1",
+      "eyes": [
+        {
+          "mean": 53.803896682453114,
+          "percentiles": {
+            "1": 52.916666666666664,
+            "10": 53.0,
+            "40": 53.583333333333336,
+            "50": 53.75,
+            "90": 54.75,
+            "99": 55.333333333333336
+          },
+          "clipped_percent": 0.0
+        },
+        {
+          "mean": 53.525956268836076,
+          "percentiles": {
+            "1": 52.833333333333336,
+            "10": 53.0,
+            "40": 53.25,
+            "50": 53.5,
+            "90": 54.083333333333336,
+            "99": 54.583333333333336
+          },
+          "clipped_percent": 0.0
+        }
+      ],
+      "frames": 12,
+      "dark_patches": [
+        {
+          "box": [
+            30,
+            80,
+            160,
+            220
+          ],
+          "mean": 53.222756410256416,
+          "contrast_p90_p10": 0.5833333333333357,
+          "temporal_noise": 0.3146687791227656,
+          "contrast_to_noise": 1.8538011141733026
+        },
+        {
+          "box": [
+            500,
+            470,
+            660,
+            620
+          ],
+          "mean": 53.41894097222222,
+          "contrast_p90_p10": 0.9166666666666643,
+          "temporal_noise": 0.3854787478629897,
+          "contrast_to_noise": 2.3779953415031696
+        }
+      ]
+    }
+  }
+]

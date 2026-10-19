@@ -1,0 +1,2 @@
+  irq_flags                                              65212               0
+  irq_bus                                                65212               0

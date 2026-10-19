@@ -1,0 +1,1 @@
+ok sensor_mode=linear binning=0 max_fps=60 effective_fps=60 measured_fps_x10=599 eye_resolution=1088x1280 ae=1 brightness=40 exposure_rows=1200 gain_index=0 exposure_ceiling_rows=1330 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=43

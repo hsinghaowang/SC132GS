@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "unit": {
+    "MainPID": "4405",
+    "ActiveState": "active",
+    "SubState": "running"
+  },
+  "control": {
+    "abi": "4",
+    "timestamp_offset_ns": "344903",
+    "trigger_hz": "30",
+    "frame_step": "1",
+    "locked_mask": "3",
+    "startup_dropped": "2",
+    "startup_end0": "1",
+    "startup_end1": "1",
+    "node0": "0",
+    "node1": "3",
+    "mode": "2",
+    "running": "1",
+    "session": "1",
+    "pulses": "92495",
+    "skipped": "0",
+    "cpu": "7",
+    "worker_cpu": "0",
+    "error": "0",
+    "error_count": "0",
+    "source": "exposure_start_estimate"
+  },
+  "processes": {
+    "2928": {
+      "name": "stereo-h265-rts",
+      "start_ticks": 3238
+    },
+    "4442": {
+      "name": "gs130wi-imu",
+      "start_ticks": 25467
+    }
+  },
+  "progress": {
+    "state": "running",
+    "elapsed_s": 2856.1218412659996,
+    "requested_seconds": 7200,
+    "pairs": 92284,
+    "pulses": 92348,
+    "failure": null,
+    "sample_count": 540,
+    "imu_pid": 4442
+  }
+}

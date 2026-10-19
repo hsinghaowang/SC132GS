@@ -1,0 +1,509 @@
+{
+  "status": "conditional_estimate",
+  "nominal_exposure_us": 2000.0,
+  "valid_joint_events": 23,
+  "rejected_events": 489,
+  "eyes": [
+    {
+      "eye": 0,
+      "frames": 1807,
+      "sequence_gaps": 0,
+      "measured_receive_fps": 29.98131894894062,
+      "source_peak_tile": 13498,
+      "excluded_clipped_tiles": 9,
+      "roi_tiles": [
+        13359,
+        13360,
+        13496
+      ],
+      "roi_pixel_bounds": [
+        232,
+        768,
+        272,
+        808
+      ],
+      "dark_raw10": 42.0,
+      "light_raw10": 107.0,
+      "amplitude_raw10": 65.0,
+      "noise_raw10": 0.4985706402861006,
+      "saturation_fraction": 0.0,
+      "dark_drift_fraction": 0.0,
+      "failures": []
+    },
+    {
+      "eye": 1,
+      "frames": 1800,
+      "sequence_gaps": 0,
+      "measured_receive_fps": 29.996731373401264,
+      "source_peak_tile": 13545,
+      "excluded_clipped_tiles": 10,
+      "roi_tiles": [
+        13407,
+        13543,
+        13680,
+        13681,
+        13682,
+        13683
+      ],
+      "roi_pixel_bounds": [
+        632,
+        784,
+        672,
+        824
+      ],
+      "dark_raw10": 40.833333333333336,
+      "light_raw10": 86.16666666666667,
+      "amplitude_raw10": 45.333333333333336,
+      "noise_raw10": 0.21499558267770716,
+      "saturation_fraction": 0.0,
+      "dark_drift_fraction": 0.0036764705882353986,
+      "failures": []
+    }
+  ],
+  "failed_checks": [],
+  "candidates": [
+    {
+      "event": 13,
+      "rising": true,
+      "eye0": {
+        "sequence": 152,
+        "receiver_ns": 2337182658000,
+        "dequeue_ns": 2337183151663,
+        "fraction": 0.6512820512820512
+      },
+      "eye1": {
+        "sequence": 145,
+        "receiver_ns": 2337182835000,
+        "dequeue_ns": 2337193285998,
+        "fraction": 0.6838235294117645
+      },
+      "estimated_start_skew_us": 65.08295625942662,
+      "receiver_delta_us": 177.0
+    },
+    {
+      "event": 16,
+      "rising": false,
+      "eye0": {
+        "sequence": 161,
+        "receiver_ns": 2337481839000,
+        "dequeue_ns": 2337482163151,
+        "fraction": 0.3641025641025642
+      },
+      "eye1": {
+        "sequence": 154,
+        "receiver_ns": 2337482000000,
+        "dequeue_ns": 2337492273319,
+        "fraction": 0.38235294117647045
+      },
+      "estimated_start_skew_us": -36.50075414781251,
+      "receiver_delta_us": 161.0
+    },
+    {
+      "event": 26,
+      "rising": false,
+      "eye0": {
+        "sequence": 197,
+        "receiver_ns": 2338681799000,
+        "dequeue_ns": 2338682160286,
+        "fraction": 0.43589743589743585
+      },
+      "eye1": {
+        "sequence": 190,
+        "receiver_ns": 2338681968000,
+        "dequeue_ns": 2338692469305,
+        "fraction": 0.4522058823529412
+      },
+      "estimated_start_skew_us": -32.616892911010666,
+      "receiver_delta_us": 169.0
+    },
+    {
+      "event": 32,
+      "rising": false,
+      "eye0": {
+        "sequence": 218,
+        "receiver_ns": 2339382697000,
+        "dequeue_ns": 2339383148000,
+        "fraction": 0.7435897435897435
+      },
+      "eye1": {
+        "sequence": 211,
+        "receiver_ns": 2339382886000,
+        "dequeue_ns": 2339392082670,
+        "fraction": 0.7647058823529411
+      },
+      "estimated_start_skew_us": -42.232277526395244,
+      "receiver_delta_us": 189.0
+    },
+    {
+      "event": 42,
+      "rising": false,
+      "eye0": {
+        "sequence": 251,
+        "receiver_ns": 2340482623000,
+        "dequeue_ns": 2340483115756,
+        "fraction": 0.35384615384615387
+      },
+      "eye1": {
+        "sequence": 244,
+        "receiver_ns": 2340482829000,
+        "dequeue_ns": 2340493202227,
+        "fraction": 0.3676470588235293
+      },
+      "estimated_start_skew_us": -27.601809954750923,
+      "receiver_delta_us": 206.0
+    },
+    {
+      "event": 95,
+      "rising": true,
+      "eye0": {
+        "sequence": 423,
+        "receiver_ns": 2346216007000,
+        "dequeue_ns": 2346216438303,
+        "fraction": 0.6923076923076923
+      },
+      "eye1": {
+        "sequence": 416,
+        "receiver_ns": 2346216215000,
+        "dequeue_ns": 2346226552170,
+        "fraction": 0.6985294117647058
+      },
+      "estimated_start_skew_us": 12.443438914027105,
+      "receiver_delta_us": 208.0
+    },
+    {
+      "event": 131,
+      "rising": true,
+      "eye0": {
+        "sequence": 543,
+        "receiver_ns": 2350216004000,
+        "dequeue_ns": 2350216508136,
+        "fraction": 0.682051282051282
+      },
+      "eye1": {
+        "sequence": 536,
+        "receiver_ns": 2350216179000,
+        "dequeue_ns": 2350226608411,
+        "fraction": 0.7095588235294117
+      },
+      "estimated_start_skew_us": 55.015082956259455,
+      "receiver_delta_us": 175.0
+    },
+    {
+      "event": 138,
+      "rising": false,
+      "eye0": {
+        "sequence": 565,
+        "receiver_ns": 2350948494000,
+        "dequeue_ns": 2350948970690,
+        "fraction": 0.5384615384615384
+      },
+      "eye1": {
+        "sequence": 558,
+        "receiver_ns": 2350948687000,
+        "dequeue_ns": 2350959133307,
+        "fraction": 0.5624999999999998
+      },
+      "estimated_start_skew_us": -48.07692307692268,
+      "receiver_delta_us": 193.0
+    },
+    {
+      "event": 147,
+      "rising": true,
+      "eye0": {
+        "sequence": 593,
+        "receiver_ns": 2351881824000,
+        "dequeue_ns": 2351882259194,
+        "fraction": 0.15897435897435902
+      },
+      "eye1": {
+        "sequence": 586,
+        "receiver_ns": 2351881995000,
+        "dequeue_ns": 2351892374208,
+        "fraction": 0.1727941176470587
+      },
+      "estimated_start_skew_us": 27.639517345399376,
+      "receiver_delta_us": 171.0
+    },
+    {
+      "event": 148,
+      "rising": false,
+      "eye0": {
+        "sequence": 597,
+        "receiver_ns": 2352015112000,
+        "dequeue_ns": 2352015502107,
+        "fraction": 0.4051282051282051
+      },
+      "eye1": {
+        "sequence": 590,
+        "receiver_ns": 2352015264000,
+        "dequeue_ns": 2352025633840,
+        "fraction": 0.4154411764705881
+      },
+      "estimated_start_skew_us": -20.62594268476603,
+      "receiver_delta_us": 152.0
+    },
+    {
+      "event": 171,
+      "rising": true,
+      "eye0": {
+        "sequence": 673,
+        "receiver_ns": 2354549272000,
+        "dequeue_ns": 2354549763416,
+        "fraction": 0.7076923076923077
+      },
+      "eye1": {
+        "sequence": 666,
+        "receiver_ns": 2354549451000,
+        "dequeue_ns": 2354559880098,
+        "fraction": 0.7169117647058821
+      },
+      "estimated_start_skew_us": 18.43891402714881,
+      "receiver_delta_us": 179.0
+    },
+    {
+      "event": 225,
+      "rising": true,
+      "eye0": {
+        "sequence": 849,
+        "receiver_ns": 2360415952000,
+        "dequeue_ns": 2360416450203,
+        "fraction": 0.3384615384615385
+      },
+      "eye1": {
+        "sequence": 842,
+        "receiver_ns": 2360416128000,
+        "dequeue_ns": 2360426566677,
+        "fraction": 0.34191176470588236
+      },
+      "estimated_start_skew_us": 6.900452488687758,
+      "receiver_delta_us": 176.0
+    },
+    {
+      "event": 234,
+      "rising": false,
+      "eye0": {
+        "sequence": 875,
+        "receiver_ns": 2361281900000,
+        "dequeue_ns": 2361282263101,
+        "fraction": 0.41025641025641035
+      },
+      "eye1": {
+        "sequence": 868,
+        "receiver_ns": 2361282046000,
+        "dequeue_ns": 2361292353794,
+        "fraction": 0.426470588235294
+      },
+      "estimated_start_skew_us": -32.42835595776727,
+      "receiver_delta_us": 146.0
+    },
+    {
+      "event": 242,
+      "rising": false,
+      "eye0": {
+        "sequence": 902,
+        "receiver_ns": 2362182598000,
+        "dequeue_ns": 2362183153364,
+        "fraction": 0.6051282051282051
+      },
+      "eye1": {
+        "sequence": 895,
+        "receiver_ns": 2362182773000,
+        "dequeue_ns": 2362193235829,
+        "fraction": 0.6176470588235292
+      },
+      "estimated_start_skew_us": -25.037707390648258,
+      "receiver_delta_us": 175.0
+    },
+    {
+      "event": 267,
+      "rising": true,
+      "eye0": {
+        "sequence": 982,
+        "receiver_ns": 2364848498000,
+        "dequeue_ns": 2364848876549,
+        "fraction": 0.6871794871794873
+      },
+      "eye1": {
+        "sequence": 975,
+        "receiver_ns": 2364848651000,
+        "dequeue_ns": 2364858998232,
+        "fraction": 0.7095588235294117
+      },
+      "estimated_start_skew_us": 44.75867269984879,
+      "receiver_delta_us": 153.0
+    },
+    {
+      "event": 269,
+      "rising": true,
+      "eye0": {
+        "sequence": 990,
+        "receiver_ns": 2365115107000,
+        "dequeue_ns": 2365115480398,
+        "fraction": 0.23076923076923078
+      },
+      "eye1": {
+        "sequence": 983,
+        "receiver_ns": 2365115257000,
+        "dequeue_ns": 2365125503281,
+        "fraction": 0.24632352941176464
+      },
+      "estimated_start_skew_us": 31.108597285067706,
+      "receiver_delta_us": 150.0
+    },
+    {
+      "event": 270,
+      "rising": false,
+      "eye0": {
+        "sequence": 994,
+        "receiver_ns": 2365249267000,
+        "dequeue_ns": 2365249770561,
+        "fraction": 0.3897435897435897
+      },
+      "eye1": {
+        "sequence": 987,
+        "receiver_ns": 2365249442000,
+        "dequeue_ns": 2365259888285,
+        "fraction": 0.41176470588235287
+      },
+      "estimated_start_skew_us": -44.04223227752635,
+      "receiver_delta_us": 175.0
+    },
+    {
+      "event": 338,
+      "rising": false,
+      "eye0": {
+        "sequence": 1214,
+        "receiver_ns": 2372581843000,
+        "dequeue_ns": 2372582159505,
+        "fraction": 0.7435897435897435
+      },
+      "eye1": {
+        "sequence": 1207,
+        "receiver_ns": 2372581997000,
+        "dequeue_ns": 2372592313636,
+        "fraction": 0.7573529411764706
+      },
+      "estimated_start_skew_us": -27.52639517345412,
+      "receiver_delta_us": 154.0
+    },
+    {
+      "event": 355,
+      "rising": true,
+      "eye0": {
+        "sequence": 1271,
+        "receiver_ns": 2374482638000,
+        "dequeue_ns": 2374483129436,
+        "fraction": 0.21025641025641023
+      },
+      "eye1": {
+        "sequence": 1264,
+        "receiver_ns": 2374482816000,
+        "dequeue_ns": 2374493366274,
+        "fraction": 0.22426470588235287
+      },
+      "estimated_start_skew_us": 28.01659125188527,
+      "receiver_delta_us": 178.0
+    },
+    {
+      "event": 390,
+      "rising": false,
+      "eye0": {
+        "sequence": 1379,
+        "receiver_ns": 2378081863000,
+        "dequeue_ns": 2378082238217,
+        "fraction": 0.3641025641025642
+      },
+      "eye1": {
+        "sequence": 1372,
+        "receiver_ns": 2378082013000,
+        "dequeue_ns": 2378092343183,
+        "fraction": 0.3786764705882352
+      },
+      "estimated_start_skew_us": -29.147812971342056,
+      "receiver_delta_us": 150.0
+    },
+    {
+      "event": 404,
+      "rising": false,
+      "eye0": {
+        "sequence": 1424,
+        "receiver_ns": 2379581774000,
+        "dequeue_ns": 2379582145720,
+        "fraction": 0.3794871794871796
+      },
+      "eye1": {
+        "sequence": 1417,
+        "receiver_ns": 2379581925000,
+        "dequeue_ns": 2379592243500,
+        "fraction": 0.39338235294117635
+      },
+      "estimated_start_skew_us": -27.790346907993534,
+      "receiver_delta_us": 151.0
+    },
+    {
+      "event": 434,
+      "rising": false,
+      "eye0": {
+        "sequence": 1519,
+        "receiver_ns": 2382748460000,
+        "dequeue_ns": 2382748835677,
+        "fraction": 0.6564102564102565
+      },
+      "eye1": {
+        "sequence": 1512,
+        "receiver_ns": 2382748611000,
+        "dequeue_ns": 2382758981894,
+        "fraction": 0.6727941176470587
+      },
+      "estimated_start_skew_us": -32.767722473604266,
+      "receiver_delta_us": 151.0
+    },
+    {
+      "event": 471,
+      "rising": true,
+      "eye0": {
+        "sequence": 1639,
+        "receiver_ns": 2386749332000,
+        "dequeue_ns": 2386749826802,
+        "fraction": 0.6871794871794873
+      },
+      "eye1": {
+        "sequence": 1632,
+        "receiver_ns": 2386749506000,
+        "dequeue_ns": 2386759942082,
+        "fraction": 0.7205882352941175
+      },
+      "estimated_start_skew_us": 66.81749622926047,
+      "receiver_delta_us": 174.0
+    }
+  ],
+  "estimate": {
+    "median_start_skew_us": -25.037707390648258,
+    "mad_us": 19.004524886878094,
+    "p10_us": -41.085972850678694,
+    "p90_us": 52.963800904977326,
+    "normalized_noise_scale_us": 24.825734321507372,
+    "rising_count": 10,
+    "falling_count": 13,
+    "rising_median_us": 29.562594268476488,
+    "falling_median_us": -32.42835595776727,
+    "sign": "positive means second eye exposure starts later",
+    "assumptions": "equal fixed exposure, linear unsaturated RAW, common fast optical step; LED edge speed is not independently measured"
+  },
+  "raw_candidate_statistics": {
+    "median_start_skew_us": -25.037707390648258,
+    "mad_us": 19.004524886878094,
+    "p10_us": -41.085972850678694,
+    "p90_us": 52.963800904977326,
+    "normalized_noise_scale_us": 24.825734321507372,
+    "rising_count": 10,
+    "falling_count": 13,
+    "rising_median_us": 29.562594268476488,
+    "falling_median_us": -32.42835595776727,
+    "sign": "positive means second eye exposure starts later",
+    "assumptions": "equal fixed exposure, linear unsaturated RAW, common fast optical step; LED edge speed is not independently measured"
+  },
+  "calibrated_accuracy_us": null,
+  "exposure_sync_verified": false,
+  "note": "This estimates relative optical exposure timing, not GPIO edge timing or absolute exposure timestamp."
+}

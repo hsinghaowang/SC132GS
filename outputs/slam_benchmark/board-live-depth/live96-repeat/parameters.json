@@ -1,0 +1,48 @@
+{
+  "calibration_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "cam0": "physical_right_native_unmirrored",
+  "cam1": "physical_left_native_unmirrored",
+  "binning": false,
+  "depth_size": [
+    544,
+    640
+  ],
+  "gray_size": [
+    2176,
+    1280
+  ],
+  "disparity_search_count": 96,
+  "depth_units": "meter_optical_axis_Z",
+  "color_range_m": [
+    0.2,
+    3.0
+  ],
+  "checker_square_assumption_mm": 20,
+  "focal_times_baseline_m_px": 17.120450080081827,
+  "Q": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -260.09801024813476
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -314.7232040834531
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      243.8284692969544
+    ],
+    [
+      0.0,
+      0.0,
+      14.241942715082466,
+      -0.0
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rows": 6066,
+  "all_valid": true,
+  "headers": [
+    "104"
+  ],
+  "sensor_delta_min_ns": 4999467,
+  "sensor_delta_max_ns": 5000533,
+  "wraps": 434,
+  "irq_fields_blank": true,
+  "host_read_ranges_valid": true
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "path": "src/big/mpp/kernel/sensor/src/sc132gs_drv.c",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "962dab1f22ccfa56bba2e895a46ea9a56d94b6e5",
+    "size": 32194,
+    "url": "https://api.github.com/repos/kendryte/k230_sdk/git/blobs/962dab1f22ccfa56bba2e895a46ea9a56d94b6e5"
+  },
+  {
+    "path": "src/big/mpp/userapps/src/sensor/config/sc132gs-1080x1280.xml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0b445d439a7bd4338110752a736fd50b7c65e584",
+    "size": 187159,
+    "url": "https://api.github.com/repos/kendryte/k230_sdk/git/blobs/0b445d439a7bd4338110752a736fd50b7c65e584"
+  },
+  {
+    "path": "src/big/mpp/userapps/src/sensor/config/sc132gs-1080x1280_auto.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "625a80b62bd73280490a4f707de3a519495965c2",
+    "size": 41670,
+    "url": "https://api.github.com/repos/kendryte/k230_sdk/git/blobs/625a80b62bd73280490a4f707de3a519495965c2"
+  },
+  {
+    "path": "src/big/mpp/userapps/src/sensor/config/sc132gs-1080x1280_manual.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3dc50b72e4e7114e86c71189ac7cf5f8f90f29c3",
+    "size": 38469,
+    "url": "https://api.github.com/repos/kendryte/k230_sdk/git/blobs/3dc50b72e4e7114e86c71189ac7cf5f8f90f29c3"
+  },
+  {
+    "path": "src/big/mpp/userapps/src/sensor/config/sc132gs-640x480.xml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c69ab152abee9514e7f448744ac3fa388fe2c916",
+    "size": 187067,
+    "url": "https://api.github.com/repos/kendryte/k230_sdk/git/blobs/c69ab152abee9514e7f448744ac3fa388fe2c916"
+  },
+  {
+    "path": "src/big/mpp/userapps/src/sensor/config/sc132gs-640x480_auto.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "024a84e08b04ab0cb97da5bc4f2b8138ca2ec6c7",
+    "size": 41573,
+    "url": "https://api.github.com/repos/kendryte/k230_sdk/git/blobs/024a84e08b04ab0cb97da5bc4f2b8138ca2ec6c7"
+  },
+  {
+    "path": "src/big/mpp/userapps/src/sensor/config/sc132gs-640x480_manual.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c587e978faae3d04c5eca0812118d1b30fd91b2a",
+    "size": 39685,
+    "url": "https://api.github.com/repos/kendryte/k230_sdk/git/blobs/c587e978faae3d04c5eca0812118d1b30fd91b2a"
+  }
+]

@@ -1,0 +1,1 @@
+{"sent":{"imu":241,"left":24,"right":24},"dataset_stereo_pairs":24,"dataset_imu_samples":241,"origin_camera_timestamp_ns":1413393886005760512,"start_monotonic_ns":69079635084304,"prefetch_pairs":4,"maximum_prepared_queue":4,"error_code":0,"cpu_seconds":0.73243799999999992,"peak_rss_mib":127.546875,"elapsed_s":3.9768342660000005}

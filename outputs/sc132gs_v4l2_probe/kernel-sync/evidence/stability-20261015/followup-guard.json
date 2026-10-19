@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "scope": "read-only refusal while the specific long-run unit is live; no acquisition attempted",
+  "response": {
+    "passed": false,
+    "failure": "the long-run process is still active; no hardware changes allowed"
+  },
+  "before": {
+    "unit": {
+      "MainPID": "4405",
+      "ActiveState": "active"
+    },
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "45375",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    }
+  },
+  "after": {
+    "unit": {
+      "MainPID": "4405",
+      "ActiveState": "active"
+    },
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "45379",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    }
+  }
+}

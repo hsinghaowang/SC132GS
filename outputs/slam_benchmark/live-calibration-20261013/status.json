@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Taipei",
+  "status": "acquisition_prepared_waiting_for_physical_target",
+  "physical_camera_imu_acquisition": true,
+  "physical_openvins_vio_performed": false,
+  "stereo_pairs": 50,
+  "camera_resolution": [
+    1088,
+    1280
+  ],
+  "png_images": 100,
+  "imu_samples": 2628,
+  "paired_driver_timestamp_delta_ms": {
+    "p50": 0.274,
+    "p95": 0.29919999999999997,
+    "max": 0.317
+  },
+  "driver_timestamp_not_exposure_proof": true,
+  "imu_host_sample_time_validated": false,
+  "camera_driver_sequence_gaps": [
+    0,
+    0
+  ],
+  "camera_saved_controls_and_inactive_state_preserved": true,
+  "capture_api": "C++17 public API/PIMPL/move-only; C++23 private implementation; joined owned storage worker; nested optional Observer",
+  "cpp17_header_compile_check_passed": true,
+  "cpp23_board_build_passed": true,
+  "nominal_sensor_counter_rate_hz": 199.99999188427898,
+  "host_read_observed_rate_hz": 202.44522254469092,
+  "PDF": {
+    "path": "D:\\projects\\collision_avoid\\output\\pdf\\sc132gs-checkerboard-a4-20mm.pdf",
+    "sha256": "50e0ca13dc1d334b8eb2fd67ea22bb68e54e4b2c8d885df3d21dcc89e86a1ab7",
+    "print_size": "Landscape A4; 9x6 inner corners; 20mm squares; 50mm ruler",
+    "rendered_visual_inspection_passed": true,
+    "rendered_detector_corners": 54
+  },
+  "raw_files_verified": 237,
+  "guide": "calibration-capture/採集說明.md",
+  "camera_intrinsic_and_stereo_calibration_solved": false,
+  "camera_imu_calibration_solved": false,
+  "combined_camera_imu_bag_export_allowed": false,
+  "next_step": "Print target at actual size, verify 20mm squares/50mm ruler, mount flat and capture varied stationary board poses in both cameras.",
+  "remaining": [
+    "Physical target data and geometric solution",
+    "Validated IMU sensor-to-host clock mapping and sample latency",
+    "IMU noise/bias random-walk model",
+    "Physical camera-IMU extrinsics/time offset and live VIO validation"
+  ]
+}

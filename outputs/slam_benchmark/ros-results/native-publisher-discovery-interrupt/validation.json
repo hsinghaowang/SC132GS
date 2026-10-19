@@ -1,0 +1,6 @@
+{
+  "refuses_evidence_overwrite": true,
+  "discovery_SIGINT_exit_code": 1,
+  "discovery_SIGINT_error_code": 3,
+  "observed_stop_ms": 370.282391
+}

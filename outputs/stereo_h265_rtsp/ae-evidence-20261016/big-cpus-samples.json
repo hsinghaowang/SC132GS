@@ -1,0 +1,177 @@
+[
+  {
+    "second": 0,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=0 startup_dropped=0 startup_end0=0 startup_end1=0 node0=0 node1=4294967295 mode=2 running=1 session=40 pulses=18 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40854   40854   1  500 ps\n  40794   40794   5 74.2 stereo-h265-rts\n  40749   40749   0  6.7 bash\n  40426   40426   3  3.7 systemd\n  28687   28687   2  3.6 kworker/u17:1-brcmf_wq/mmc1:0001:1\n  40448   40448   2  3.4 user-session-he\n  40451   40451   1  2.5 wireplumber\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40608   40608   3  0.8 python3\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   3  0.6 gnome-shell"
+  },
+  {
+    "second": 1,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=50 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40874   40874   1  600 ps\n  40794   40794   6 76.3 stereo-h265-rts\n  40749   40749   0  3.8 bash\n  28687   28687   2  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  3.4 systemd\n  40448   40448   2  3.2 user-session-he\n  40451   40451   1  2.4 wireplumber\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40608   40608   2  0.7 python3\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   3  0.6 gnome-shell"
+  },
+  {
+    "second": 2,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=83 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40877   40877   3  600 ps\n  40794   40794   5 79.4 stereo-h265-rts\n  28687   28687   2  3.6 kworker/u17:1-brcmf_wq/mmc1:0001:1\n  40426   40426   3  3.2 systemd\n  40448   40448   2  3.0 user-session-he\n  40749   40749   0  2.5 bash\n  40451   40451   1  2.2 wireplumber\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40608   40608   2  0.7 python3\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell"
+  },
+  {
+    "second": 3,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=115 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40880   40880   3  700 ps\n  40794   40794   4 80.7 stereo-h265-rts\n  28687   28687   2  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  3.0 systemd\n  40448   40448   2  2.8 user-session-he\n  40451   40451   1  2.1 wireplumber\n  40749   40749   0  1.8 bash\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40608   40608   2  0.7 python3\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell"
+  },
+  {
+    "second": 4,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=148 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40883   40883   1  300 ps\n  40794   40794   4 81.3 stereo-h265-rts\n  28687   28687   2  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  2.9 systemd\n  40448   40448   2  2.6 user-session-he\n  40451   40451   1  2.0 wireplumber\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40749   40749   0  1.4 bash\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n  40608   40608   2  0.7 python3\n   2687    2687   2  0.6 gnome-shell"
+  },
+  {
+    "second": 5,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=180 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40886   40886   1  600 ps\n  40794   40794   4 81.8 stereo-h265-rts\n  28687   28687   6  3.6 kworker/u17:1-brcmf_wq/mmc1:0001:1\n  40426   40426   3  2.7 systemd\n  40448   40448   2  2.5 user-session-he\n  40451   40451   1  1.8 wireplumber\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40749   40749   0  1.2 bash\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  40608   40608   4  0.6 python3"
+  },
+  {
+    "second": 6,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=213 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40889   40889   2  700 ps\n  40794   40794   4 82.6 stereo-h265-rts\n  28687   28687   7  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  2.6 systemd\n  40448   40448   2  2.4 user-session-he\n  40451   40451   1  1.8 wireplumber\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40749   40749   0  1.0 bash\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n  40608   40608   3  0.6 python3\n   2687    2687   2  0.6 gnome-shell"
+  },
+  {
+    "second": 7,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=245 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40892   40892   2  600 ps\n  40794   40794   4 82.6 stereo-h265-rts\n  28687   28687   7  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  2.4 systemd\n  40448   40448   2  2.2 user-session-he\n  40451   40451   1  1.7 wireplumber\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n  40749   40749   0  0.9 bash\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   3  0.6 gnome-shell\n  40608   40608   4  0.6 python3"
+  },
+  {
+    "second": 8,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=278 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40895   40895   3  600 ps\n  40794   40794   4 82.8 stereo-h265-rts\n  28687   28687   7  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  2.3 systemd\n  40448   40448   2  2.1 user-session-he\n    294     294   0  1.6 irq/150-9091000.pmu\n  40451   40451   1  1.6 wireplumber\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40749   40749   0  0.8 bash\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   3  0.6 gnome-shell\n  40608   40608   4  0.6 python3"
+  },
+  {
+    "second": 9,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=310 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40898   40898   2  700 ps\n  40794   40794   6 82.9 stereo-h265-rts\n  28687   28687   7  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  2.2 systemd\n  40448   40448   2  2.0 user-session-he\n    294     294   0  1.6 irq/150-9091000.pmu\n  40451   40451   1  1.5 wireplumber\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40749   40749   0  0.7 bash\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   3  0.6 gnome-shell\n  40608   40608   4  0.5 python3"
+  },
+  {
+    "second": 10,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=343 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40901   40901   2  600 ps\n  40794   40794   4 83.1 stereo-h265-rts\n  28687   28687   0  3.6 kworker/u17:1-brcmf_wq/mmc1:0001:1\n  40426   40426   3  2.1 systemd\n  40448   40448   2  2.0 user-session-he\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40451   40451   1  1.4 wireplumber\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   3  0.6 gnome-shell\n  40749   40749   0  0.6 bash\n  40608   40608   4  0.5 python3"
+  },
+  {
+    "second": 11,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=375 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40904   40904   2  600 ps\n  40794   40794   4 83.2 stereo-h265-rts\n  28687   28687   0  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  2.0 systemd\n  40448   40448   2  1.9 user-session-he\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40451   40451   1  1.4 wireplumber\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  40749   40749   0  0.6 bash\n  35718   35718   6  0.5 kworker/u16:2-events_power_efficient"
+  },
+  {
+    "second": 12,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=408 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40907   40907   3  300 ps\n  40794   40794   6 83.3 stereo-h265-rts\n  28687   28687   0  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  2.0 systemd\n  40448   40448   2  1.8 user-session-he\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40451   40451   1  1.3 wireplumber\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  40608   40608   1  0.5 python3\n  40749   40749   0  0.5 bash"
+  },
+  {
+    "second": 13,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=440 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40910   40910   2  600 ps\n  40794   40794   4 83.2 stereo-h265-rts\n  28687   28687   1  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  1.9 systemd\n  40448   40448   2  1.7 user-session-he\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40451   40451   1  1.3 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  40608   40608   4  0.5 python3\n  35718   35718   1  0.5 kworker/u16:2-ring0"
+  },
+  {
+    "second": 14,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=473 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40913   40913   2  700 ps\n  40794   40794   6 83.4 stereo-h265-rts\n  28687   28687   1  3.6 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  1.8 systemd\n  40448   40448   2  1.7 user-session-he\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40451   40451   1  1.2 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   1  0.5 kworker/u16:2-flush-8:0\n  40608   40608   3  0.5 python3"
+  },
+  {
+    "second": 15,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=506 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40919   40919   3  600 ps\n  40794   40794   6 83.4 stereo-h265-rts\n  28687   28687   6  3.6 kworker/u17:1-brcmf_wq/mmc1:0001:1\n  40426   40426   3  1.8 systemd\n  40448   40448   2  1.6 user-session-he\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40451   40451   1  1.2 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   1  0.5 kworker/u16:2-flush-8:0\n  40608   40608   6  0.5 python3"
+  },
+  {
+    "second": 16,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=538 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40922   40922   2  350 ps\n  40794   40794   6 83.4 stereo-h265-rts\n  28687   28687   1  3.5 kworker/u17:1-brcmf_wq/mmc1:0001:1\n  40426   40426   3  1.7 systemd\n    294     294   0  1.6 irq/150-9091000.pmu\n  40448   40448   2  1.5 user-session-he\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40451   40451   1  1.1 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   1  0.5 kworker/u16:2-flush-8:0\n  40608   40608   3  0.5 python3"
+  },
+  {
+    "second": 17,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=571 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40925   40925   3  600 ps\n  40794   40794   6 83.4 stereo-h265-rts\n  28687   28687   1  3.5 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  1.6 systemd\n    294     294   0  1.6 irq/150-9091000.pmu\n  40448   40448   2  1.5 user-session-he\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40451   40451   1  1.1 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   6  0.4 python3"
+  },
+  {
+    "second": 18,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=603 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40928   40928   1  600 ps\n  40794   40794   4 83.4 stereo-h265-rts\n  28687   28687   1  3.5 kworker/u17:1-ufs_clk_gating_0\n  40426   40426   3  1.6 systemd\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40448   40448   2  1.4 user-session-he\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40451   40451   1  1.1 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   3  0.4 python3"
+  },
+  {
+    "second": 19,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=636 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40931   40931   2  600 ps\n  40794   40794   4 83.4 stereo-h265-rts\n  28687   28687   6  3.5 kworker/u17:1-brcmf_wq/mmc1:0001:1\n    294     294   0  1.6 irq/150-9091000.pmu\n  40426   40426   3  1.5 systemd\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40448   40448   2  1.4 user-session-he\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40451   40451   1  1.0 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   6  0.4 python3"
+  },
+  {
+    "second": 20,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=668 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40934   40934   2  700 ps\n  40794   40794   4 83.4 stereo-h265-rts\n  28687   28687   1  3.5 kworker/u17:1-brcmf_wq/mmc1:0001:1\n    294     294   0  1.6 irq/150-9091000.pmu\n  40426   40426   3  1.5 systemd\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40448   40448   2  1.4 user-session-he\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40451   40451   1  1.0 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   6  0.4 python3"
+  },
+  {
+    "second": 21,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=701 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40937   40937   1  600 ps\n  40794   40794   4 83.5 stereo-h265-rts\n  28687   28687   1  3.5 kworker/u17:1-brcmf_wq/mmc1:0001:1\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40426   40426   3  1.5 systemd\n  40448   40448   2  1.3 user-session-he\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40451   40451   1  1.0 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   3  0.4 python3"
+  },
+  {
+    "second": 22,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=733 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40940   40940   1  700 ps\n  40794   40794   5 83.5 stereo-h265-rts\n  28687   28687   0  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40426   40426   3  1.4 systemd\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40448   40448   2  1.3 user-session-he\n  40451   40451   1  0.9 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   6  0.4 python3"
+  },
+  {
+    "second": 23,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=766 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40943   40943   2  300 ps\n  40794   40794   5 83.5 stereo-h265-rts\n  28687   28687   0  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40426   40426   3  1.4 systemd\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40448   40448   2  1.2 user-session-he\n  40451   40451   1  0.9 wireplumber\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   6  0.4 python3"
+  },
+  {
+    "second": 24,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=798 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40946   40946   2  600 ps\n  40794   40794   5 83.5 stereo-h265-rts\n  28687   28687   6  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40426   40426   3  1.3 systemd\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40448   40448   2  1.2 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n  40451   40451   1  0.9 wireplumber\n   1157    1157   0  0.9 irq/212-msm-vidc\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   6  0.4 python3"
+  },
+  {
+    "second": 25,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=831 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40949   40949   3  700 ps\n  40794   40794   4 83.6 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-brcmf_wq/mmc1:0001:1\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  40426   40426   3  1.3 systemd\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40448   40448   2  1.2 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.9 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   6  0.4 python3"
+  },
+  {
+    "second": 26,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=863 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40952   40952   1  600 ps\n  40794   40794   4 83.7 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-brcmf_wq/mmc1:0001:1\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40426   40426   3  1.3 systemd\n  40448   40448   2  1.1 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.8 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   6  0.4 python3"
+  },
+  {
+    "second": 27,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=896 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40794   40794   4 83.7 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40426   40426   3  1.2 systemd\n  40448   40448   2  1.1 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.8 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   1  0.4 python3\n   1995    1995   1  0.4 containerd"
+  },
+  {
+    "second": 28,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=929 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40958   40958   3  700 ps\n  40794   40794   6 83.7 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40426   40426   3  1.2 systemd\n  40448   40448   2  1.1 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.8 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   1  0.4 python3"
+  },
+  {
+    "second": 29,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=961 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40961   40961   3  700 ps\n  40794   40794   6 83.7 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40426   40426   3  1.2 systemd\n  40448   40448   2  1.1 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.8 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   1  0.4 python3"
+  },
+  {
+    "second": 30,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=994 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40964   40964   1  300 ps\n  40794   40794   4 83.7 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-brcmf_wq/mmc1:0001:1\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40426   40426   3  1.1 systemd\n  40448   40448   2  1.0 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.8 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   2  0.4 python3"
+  },
+  {
+    "second": 31,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=1026 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40969   40969   3  700 ps\n  40794   40794   5 83.7 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40426   40426   3  1.1 systemd\n  40448   40448   2  1.0 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.7 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   2  0.4 python3"
+  },
+  {
+    "second": 32,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=1059 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40972   40972   2  700 ps\n  40794   40794   5 83.8 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40426   40426   3  1.1 systemd\n  40448   40448   2  1.0 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.7 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n  40608   40608   4  0.4 python3"
+  },
+  {
+    "second": 33,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=1091 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40975   40975   3  700 ps\n  40794   40794   5 83.8 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40426   40426   3  1.1 systemd\n  40448   40448   2  1.0 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.7 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n   1995    1995   1  0.4 containerd"
+  },
+  {
+    "second": 34,
+    "sync": "abi=4 timestamp_offset_ns=344903 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=40 pulses=1124 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_start_estimate",
+    "threads": "    PID     TID PSR %CPU COMMAND\n  40978   40978   3  700 ps\n  40794   40794   6 83.8 stereo-h265-rts\n  28687   28687   2  3.5 kworker/u17:1-ufs_clk_gating_0\n    294     294   0  1.6 irq/150-9091000.pmu\n    300     300   0  1.5 irq/151-90b6400.pmu\n  35696   35696   0  1.3 kworker/0:3-cgwb_release\n  40426   40426   3  1.0 systemd\n  40448   40448   2  0.9 user-session-he\n  35732   35732   0  0.9 kworker/0:0-events\n   1157    1157   0  0.9 irq/212-msm-vidc\n  40451   40451   1  0.7 wireplumber\n    157     157   0  0.7 irq/136-mmc1\n   2687    2687   2  0.6 gnome-shell\n  35718   35718   7  0.5 kworker/u16:2-flush-8:0\n   1995    1995   1  0.4 containerd"
+  }
+]

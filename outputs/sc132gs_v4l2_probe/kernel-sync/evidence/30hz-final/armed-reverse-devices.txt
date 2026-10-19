@@ -1,0 +1,1 @@
+first=/dev/video3 second=/dev/video0

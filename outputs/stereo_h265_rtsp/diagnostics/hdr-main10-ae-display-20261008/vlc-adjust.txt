@@ -1,0 +1,153 @@
+Window: "rtsp://192.168.137.226:8554/stereo - VLC media player", App: vlc.exe.
+	0 視窗 rtsp://192.168.137.226:8554/stereo - VLC media player Secondary Actions: Raise
+		32637 視窗 Advanced Preferences Secondary Actions: Raise
+			32638 標題列 (settable, string) Value: Advanced Preferences
+				32639 功能表列 系統 ID: MenuBar
+					32640 功能表項目 系統
+				32641 按鈕 最小化
+				32642 按鈕 最大化
+				32643 按鈕 關閉
+			33347 窗格
+				33348 分割按鈕
+					33349 窗格
+						33350 custom
+							33351 文字
+							33352 文字 Image properties filter
+							33353 custom
+							33354 custom
+								33355 custom
+									33356 custom
+										33357 文字 Image contrast (0-2)
+										33358 微調按鈕 (settable, string) Image contrast (0-2) Value: 1.05
+										33359 文字 Image brightness (0-2)
+										33360 微調按鈕 (settable, string) Image brightness (0-2) Value: 0.96999999999999997
+										33361 文字 Image hue (-180..180)
+										33362 微調按鈕 (settable, string) Image hue (-180..180) Value: 0
+										33363 文字 Image saturation (0-3)
+										33364 微調按鈕 (settable, string) Image saturation (0-3) Value: 1
+										33365 文字 Image gamma (0-10)
+										33366 微調按鈕 (settable, string) Image gamma (0-10) Value: 2.6299999999999999
+										33367 核取方塊 Brightness threshold
+					33368 custom
+						33369 編輯 (settable, string) Value: gamma
+							33370 按鈕
+						33371 核取方塊 Only show current
+						33372 樹狀目錄
+							33373 樹狀目錄項目 (selectable) Video
+							33374 樹狀目錄項目 (selectable) Filters
+							33375 樹狀目錄項目 (selectable) d3d11_filters
+							33376 樹狀目錄項目 (selectable) d3d9_filters
+							33377 樹狀目錄項目 (selectable) Image adjust
+							33378 樹狀目錄項目 (selectable) Output modules
+							33379 樹狀目錄項目 (selectable) OpenGL
+							33380 樹狀目錄項目 (selectable) OpenGL
+							33381 樹狀目錄項目 (selectable) Splitters
+							33382 樹狀目錄項目 (selectable) Panoramix
+					33383 捲動方塊
+			33384 群組 Show settings
+				33385 選項按鈕 (selectable) Simple
+				33386 選項按鈕 (selectable) All
+			33387 群組
+				33388 按鈕 Save Enter
+				33389 按鈕 Cancel Alt+C
+				33390 按鈕 Reset Preferences Alt+R
+		20745 窗格
+			20746 窗格
+				33391 custom
+				33392 custom
+					33393 影像
+					33394 滑桿 (settable, string) Value: 100
+				33395 捲動方塊
+				33396 按鈕
+				33397 按鈕
+				33398 按鈕
+				33399 按鈕
+				33400 按鈕
+				33401 按鈕
+				33402 按鈕
+				33403 核取方塊
+				33404 核取方塊
+			20761 窗格
+				33405 文字 03:19
+				33406 滑桿 (settable, string) Value: 0
+				33407 文字 00:00
+			20765 窗格
+				20766 窗格
+					20767 窗格
+						20795 窗格 VLC (Direct3D11 output)
+							20821 窗格
+		20769 功能表列
+			33408 功能表項目 Media Alt+M
+			33409 功能表項目 Playback Alt+l
+			33410 功能表項目 Audio Alt+A
+			33411 功能表項目 Video Alt+V
+			33412 功能表項目 Subtitle Alt+t
+			33413 功能表項目 Tools Alt+s
+			33414 功能表項目 View Alt+i
+			33415 功能表項目 Help Alt+H
+		1 標題列 (settable, string) Value: rtsp://192.168.137.226:8554/stereo - VLC media player
+			2 功能表列 系統 ID: MenuBar
+				3 功能表項目 系統
+			4 按鈕 最小化
+			5 按鈕 最大化
+			6 按鈕 關閉
+		32637 視窗 Advanced Preferences Secondary Actions: Raise
+			32638 標題列 (settable, string) Value: Advanced Preferences
+				32639 功能表列 系統 ID: MenuBar
+					32640 功能表項目 系統
+				32641 按鈕 最小化
+				32642 按鈕 最大化
+				32643 按鈕 關閉
+			33416 窗格
+				33417 分割按鈕
+					33418 窗格
+						33419 custom
+							33420 文字
+							33421 文字 Image properties filter
+							33422 custom
+							33423 custom
+								33424 custom
+									33425 custom
+										33426 文字 Image contrast (0-2)
+										33427 微調按鈕 (settable, string) Image contrast (0-2) Value: 1.05
+										33428 文字 Image brightness (0-2)
+										33429 微調按鈕 (settable, string) Image brightness (0-2) Value: 0.96999999999999997
+										33430 文字 Image hue (-180..180)
+										33431 微調按鈕 (settable, string) Image hue (-180..180) Value: 0
+										33432 文字 Image saturation (0-3)
+										33433 微調按鈕 (settable, string) Image saturation (0-3) Value: 1
+										33434 文字 Image gamma (0-10)
+										33435 微調按鈕 (settable, string) Image gamma (0-10) Value: 2.6299999999999999
+										33436 核取方塊 Brightness threshold
+					33437 custom
+						33438 編輯 (settable, string) Value: gamma
+							33439 按鈕
+						33440 核取方塊 Only show current
+						33441 樹狀目錄
+							33442 樹狀目錄項目 (selectable) Video
+							33443 樹狀目錄項目 (selectable) Filters
+							33444 樹狀目錄項目 (selectable) d3d11_filters
+							33445 樹狀目錄項目 (selectable) d3d9_filters
+							33446 樹狀目錄項目 (selectable) Image adjust
+							33447 樹狀目錄項目 (selectable) Output modules
+							33448 樹狀目錄項目 (selectable) OpenGL
+							33449 樹狀目錄項目 (selectable) OpenGL
+							33450 樹狀目錄項目 (selectable) Splitters
+							33451 樹狀目錄項目 (selectable) Panoramix
+					33452 捲動方塊
+			33453 群組 Show settings
+				33454 選項按鈕 (selectable) Simple
+				33455 選項按鈕 (selectable) All
+			33456 群組
+				33457 按鈕 Save Enter
+				33458 按鈕 Cancel Alt+C
+				33459 按鈕 Reset Preferences Alt+R
+
+Document text: ```
+Image properties filter
+Image contrast (0-2)
+Image brightness (0-2)
+Image hue (-180..180)
+Image saturation (0-3)
+Image gamma (0-10)
+```

@@ -1,0 +1,14 @@
+{
+  "started_unix_ns": 1791803909163734788,
+  "finished_unix_ns": 1791803909197787956,
+  "arguments": [
+    "systemctl",
+    "show",
+    "sc132gs-camera-rtsp",
+    "-p",
+    "ActiveState",
+    "-p",
+    "MainPID"
+  ],
+  "returncode": 0
+}

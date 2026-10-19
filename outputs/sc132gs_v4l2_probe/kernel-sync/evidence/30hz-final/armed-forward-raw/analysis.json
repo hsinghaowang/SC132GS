@@ -1,0 +1,31 @@
+{
+  "eyes": {
+    "0": {
+      "frames": 594,
+      "duration_s": 19.766671,
+      "fps": 29.999993423272944,
+      "gaps": 0,
+      "monotonic": true,
+      "invalid": 0
+    },
+    "1": {
+      "frames": 589,
+      "duration_s": 19.600007,
+      "fps": 29.99998928571811,
+      "gaps": 0,
+      "monotonic": true,
+      "invalid": 0
+    }
+  },
+  "passed": true,
+  "identity_errors": 0,
+  "provenance_ok": true,
+  "startup_invalid_buffers": 2,
+  "exact_pairs": 589,
+  "unpaired": [
+    5,
+    0
+  ],
+  "maximum_pair_delta_ns": 0,
+  "internal_unpaired": 0
+}

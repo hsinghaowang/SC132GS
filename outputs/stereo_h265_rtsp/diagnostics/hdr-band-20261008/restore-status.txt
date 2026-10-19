@@ -1,0 +1,4 @@
+ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 exposure_kind=hdr_total_rows display_gamma_x100=38 display_black_raw10=52 target_percent=40 cam0_percent=39 cam1_percent=40 exposure_lines=1259 gain_index=0 fps_x10=299 max_exposure_lines=1492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=0
+ok sensor_mode=hdr binning=0 max_fps=30 effective_fps=30 measured_fps_x10=299 eye_resolution=1088x1280 ae=1 brightness=40 exposure_rows=1259 gain_index=0 exposure_ceiling_rows=1492 max_exposure_us=0 max_gain_index=0 limited=0 control_error=0 revision=44
+0x32 0x48 0x00 0x00
+0x32 0x48 0x00 0x00

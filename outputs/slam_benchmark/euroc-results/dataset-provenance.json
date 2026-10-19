@@ -1,0 +1,31 @@
+{
+  "official_description": "https://projects.asl.ethz.ch/datasets/euroc-mav/",
+  "official_repository_doi": "10.3929/ethz-b-000690084",
+  "official_download_attempt": "legacy robotics.ethz.ch timed out; Research Collection returned HTTP 429 locally and 403 via web",
+  "datasets": [
+    {
+      "name": "MH_01_easy",
+      "mirror_repository": "https://huggingface.co/datasets/kavehsgh/EuRoC_MAV_Dataset_Machine_Hall_Easy_01",
+      "mirror_revision": "19434bff2188ded1943d3a01d5b5e6672afb117e",
+      "file": "MH_01_easy.bag",
+      "bytes": 2673818914,
+      "sha256": "57f440ccd68ec8dc8f9461269f5909656b86198bac3adfd677b1fcc7a1428fa9",
+      "hash_status": "verified against mirror LFS metadata; official archive equivalence not independently verified",
+      "exported_camera_pairs": 3682,
+      "exported_imu_samples": 36820,
+      "export_policy": "lossless PNG, original mono8 752x480, exact header nanosecond timestamps; IMU rad/s and m/s^2"
+    },
+    {
+      "name": "V2_02_medium",
+      "mirror_repository": "https://huggingface.co/datasets/GlowBond/EuRoC_MAV_Dataset",
+      "mirror_revision": "29d08aeb1c8d9dc5c30497cc538d9cc61f872bb7",
+      "file": "vicon_room2.zip",
+      "bytes": 6013384949,
+      "sha256": "6daf2cbc2de9a6bc4e02866c99ed01c29a5c7c164756f06c4f72656192977cfc",
+      "hash_status": "verified against mirror LFS metadata; official archive equivalence not independently verified",
+      "extraction_policy": "only nested V2_02_medium.zip extracted; original mav0 CSV and PNG files preserved"
+    }
+  ],
+  "ground_truth": "ov_data/euroc_mav CSV from OpenVINS revision 69488123ed9362dd44b6f28e7f4680abbff1442b; never used to initialize estimator",
+  "bag_export_tool": "rosbags 0.10.11 in isolated bag-tools virtual environment using container OpenCV 4.5.4 / NumPy 1.21.5"
+}

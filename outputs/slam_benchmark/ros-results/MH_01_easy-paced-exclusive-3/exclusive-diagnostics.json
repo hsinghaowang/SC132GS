@@ -1,0 +1,3615 @@
+{
+  "run": "MH_01_easy-paced-exclusive-3",
+  "sample_count": 170,
+  "pose_count": 2784,
+  "latency_ms": {
+    "min": 28.265108,
+    "p50": 59.362179,
+    "p95": 78.4297141,
+    "p99": 89.38899935000002,
+    "max": 110.296736
+  },
+  "frames_over_50_ms": 2359,
+  "fraction_over_50_ms": 0.8473419540229885,
+  "frames_over_100_ms": 8,
+  "fraction_over_100_ms": 0.0028735632183908046,
+  "maximum_measurement_queue": 21,
+  "background_camera_or_compiler_samples": [],
+  "cpu_thermal_c": {
+    "cpu4-thermal": {
+      "min": 48.3,
+      "p50": 51.8,
+      "p95": 54.71999999999999,
+      "p99": 55.824000000000005,
+      "max": 56.4
+    },
+    "cpuss0-thermal": {
+      "min": 50.6,
+      "p50": 55.3,
+      "p95": 56.61999999999999,
+      "p99": 57.324000000000005,
+      "max": 58.8
+    },
+    "cpu10-thermal": {
+      "min": 51.8,
+      "p50": 56.1,
+      "p95": 58.0,
+      "p99": 58.524,
+      "max": 60.0
+    },
+    "cpu2-thermal": {
+      "min": 49.4,
+      "p50": 54.1,
+      "p95": 55.3,
+      "p99": 56.896,
+      "max": 58.4
+    },
+    "cpu8-thermal": {
+      "min": 50.2,
+      "p50": 54.5,
+      "p95": 56.26499999999999,
+      "p99": 57.6,
+      "max": 59.6
+    },
+    "cpu0-thermal": {
+      "min": 50.2,
+      "p50": 54.5,
+      "p95": 55.7,
+      "p99": 56.193,
+      "max": 57.2
+    },
+    "cpu7-thermal": {
+      "min": 47.9,
+      "p50": 51.4,
+      "p95": 52.9,
+      "p99": 54.348,
+      "max": 54.9
+    },
+    "cpu5-thermal": {
+      "min": 47.5,
+      "p50": 51.4,
+      "p95": 53.11999999999999,
+      "p99": 54.1,
+      "max": 54.9
+    },
+    "cpuss1-thermal": {
+      "min": 49.4,
+      "p50": 54.1,
+      "p95": 55.3,
+      "p99": 56.648,
+      "max": 57.6
+    },
+    "cpu11-thermal": {
+      "min": 50.2,
+      "p50": 54.1,
+      "p95": 56.8,
+      "p99": 58.124,
+      "max": 59.6
+    },
+    "cpu3-thermal": {
+      "min": 49.0,
+      "p50": 53.3,
+      "p95": 55.3,
+      "p99": 56.041000000000004,
+      "max": 57.6
+    },
+    "cpu9-thermal": {
+      "min": 48.7,
+      "p50": 52.6,
+      "p95": 53.919999999999995,
+      "p99": 54.9,
+      "max": 56.1
+    },
+    "cpu1-thermal": {
+      "min": 49.8,
+      "p50": 54.1,
+      "p95": 55.7,
+      "p99": 56.193,
+      "max": 57.2
+    },
+    "cpu6-thermal": {
+      "min": 48.7,
+      "p50": 52.6,
+      "p95": 54.5,
+      "p99": 55.7,
+      "max": 56.8
+    }
+  },
+  "reported_scaling_frequency_mhz": {
+    "cpu7": {
+      "min": 2035.2,
+      "p50": 2208.0,
+      "p95": 2707.2,
+      "p99": 2707.2,
+      "max": 2707.2
+    },
+    "cpu5": {
+      "min": 691.2,
+      "p50": 691.2,
+      "p95": 1344.0,
+      "p99": 1558.4640000000004,
+      "max": 2400.0
+    },
+    "cpu3": {
+      "min": 806.4,
+      "p50": 1958.4,
+      "p95": 1958.4,
+      "p99": 1958.4,
+      "max": 1958.4
+    },
+    "cpu1": {
+      "min": 806.4,
+      "p50": 1958.4,
+      "p95": 1958.4,
+      "p99": 1958.4,
+      "max": 1958.4
+    },
+    "cpu6": {
+      "min": 691.2,
+      "p50": 691.2,
+      "p95": 1344.0,
+      "p99": 1558.4640000000004,
+      "max": 2400.0
+    },
+    "cpu4": {
+      "min": 691.2,
+      "p50": 691.2,
+      "p95": 1344.0,
+      "p99": 1516.8,
+      "max": 1651.2
+    },
+    "cpu2": {
+      "min": 806.4,
+      "p50": 1958.4,
+      "p95": 1958.4,
+      "p99": 1958.4,
+      "max": 1958.4
+    },
+    "cpu0": {
+      "min": 806.4,
+      "p50": 1958.4,
+      "p95": 1958.4,
+      "p99": 1958.4,
+      "max": 1958.4
+    }
+  },
+  "total_cpu_busy_percent": {
+    "min": 12.456344586728754,
+    "p50": 26.288666557323275,
+    "p95": 27.707438709857264,
+    "p99": 28.828951106800172,
+    "max": 34.367816091954026
+  },
+  "slowest_frames": [
+    {
+      "frame_index": 2781,
+      "sensor_camera_ns": 1403636718813555500,
+      "scheduled_monotonic_ns": 12579588207390,
+      "arrival_monotonic_ns": 12579698504126,
+      "lag_ms": 110.296736,
+      "publish_complete_ms": 25.785908,
+      "callback_entry_to_worker_begin_ms": 0.647277,
+      "worker_ms": 81.009916,
+      "internal_stages_ms": {
+        "tracking": 15.16,
+        "propagation": 0.45,
+        "msckf_update": 3.12,
+        "slam_update": 4.09,
+        "slam_delayed": 54.07,
+        "retriangulation_marginalization": 3.33,
+        "total": 80.22
+      },
+      "nearest_load_sample_distance_ms": 372.791181,
+      "nearest_load_sample": {
+        "monotonic_ns": 12580071295307,
+        "utc": "2026-10-12T11:15:25Z",
+        "interval_s": 1.0704219679992093,
+        "cpu_busy_percent": {
+          "cpu": 27.209302325581394,
+          "cpu0": 30.8411214953271,
+          "cpu1": 47.22222222222222,
+          "cpu2": 51.886792452830186,
+          "cpu3": 32.71028037383178,
+          "cpu4": 3.7037037037037037,
+          "cpu5": 0.0,
+          "cpu6": 4.62962962962963,
+          "cpu7": 48.148148148148145
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "S",
+            "ticks": 15805,
+            "start_ticks": 1243983,
+            "rss_kib": 90900.0,
+            "cpu_percent_one_core": 125.18427686089771
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 9600,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 73.80267068664865
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 5242,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 5.605266128099897
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7394,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 2.8026330640499486
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21234,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9342110213499829
+          },
+          {
+            "pid": 279,
+            "comm": "irq/152-90b6400.pmu",
+            "state": "S",
+            "ticks": 14326,
+            "start_ticks": 892,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9342110213499829
+          },
+          {
+            "pid": 1635,
+            "comm": "sugov:4",
+            "state": "S",
+            "ticks": 5032,
+            "start_ticks": 2197,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9342110213499829
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2209,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9342110213499829
+          },
+          {
+            "pid": 1977,
+            "comm": "containerd",
+            "state": "S",
+            "ticks": 4905,
+            "start_ticks": 2463,
+            "rss_kib": 25096.0,
+            "cpu_percent_one_core": 0.9342110213499829
+          },
+          {
+            "pid": 140410,
+            "comm": "kworker/0:2-events",
+            "state": "I",
+            "ticks": 11,
+            "start_ticks": 1234173,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9342110213499829
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2707200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "49000"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "625"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4035"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "56400"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "58400"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "56100"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "46740"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "46573"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "52600"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "47145"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "52900"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "43316"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "625"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "56100"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "56100"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "52600"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "46299"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "56100"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "54100"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6277640 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    },
+    {
+      "frame_index": 1803,
+      "sensor_camera_ns": 1403636669913555500,
+      "scheduled_monotonic_ns": 12530688207390,
+      "arrival_monotonic_ns": 12530797800009,
+      "lag_ms": 109.592619,
+      "publish_complete_ms": 27.756613,
+      "callback_entry_to_worker_begin_ms": 1.199557,
+      "worker_ms": 77.423653,
+      "internal_stages_ms": {
+        "tracking": 15.83,
+        "propagation": 1.15,
+        "msckf_update": 4.47,
+        "slam_update": 6.119999999999999,
+        "slam_delayed": 44.83,
+        "retriangulation_marginalization": 4.28,
+        "total": 76.67999999999999
+      },
+      "nearest_load_sample_distance_ms": 389.245776,
+      "nearest_load_sample": {
+        "monotonic_ns": 12530408554233,
+        "utc": "2026-10-12T11:14:35Z",
+        "interval_s": 1.0673057450003398,
+        "cpu_busy_percent": {
+          "cpu": 26.046511627906977,
+          "cpu0": 36.111111111111114,
+          "cpu1": 38.53211009174312,
+          "cpu2": 37.38317757009346,
+          "cpu3": 50.467289719626166,
+          "cpu4": 5.555555555555555,
+          "cpu5": 0.0,
+          "cpu6": 0.9345794392523364,
+          "cpu7": 37.03703703703704
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "S",
+            "ticks": 9759,
+            "start_ticks": 1243983,
+            "rss_kib": 90456.0,
+            "cpu_percent_one_core": 118.99120809094826
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 6028,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 70.27039847890646
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 4919,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 5.621631878312517
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7274,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 1.873877292770839
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21182,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9369386463854195
+          },
+          {
+            "pid": 279,
+            "comm": "irq/152-90b6400.pmu",
+            "state": "S",
+            "ticks": 14281,
+            "start_ticks": 892,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9369386463854195
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2165,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9369386463854195
+          },
+          {
+            "pid": 1977,
+            "comm": "containerd",
+            "state": "S",
+            "ticks": 4887,
+            "start_ticks": 2463,
+            "rss_kib": 25096.0,
+            "cpu_percent_one_core": 0.9369386463854195
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2707200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "48700"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "546"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4085"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "52900"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "56800"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "49400"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "46384"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "46183"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "46769"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "43069"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "52900"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "390"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "45896"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "52600"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "49000"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "52200"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6272264 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    },
+    {
+      "frame_index": 2208,
+      "sensor_camera_ns": 1403636690163555500,
+      "scheduled_monotonic_ns": 12550938207390,
+      "arrival_monotonic_ns": 12551044537470,
+      "lag_ms": 106.33008,
+      "publish_complete_ms": 33.101883,
+      "callback_entry_to_worker_begin_ms": 0.739828,
+      "worker_ms": 69.799729,
+      "internal_stages_ms": {
+        "tracking": 17.47,
+        "propagation": 0.99,
+        "msckf_update": 0.35,
+        "slam_update": 8.13,
+        "slam_delayed": 37.589999999999996,
+        "retriangulation_marginalization": 4.39,
+        "total": 68.91
+      },
+      "nearest_load_sample_distance_ms": 175.42795,
+      "nearest_load_sample": {
+        "monotonic_ns": 12550869109520,
+        "utc": "2026-10-12T11:14:56Z",
+        "interval_s": 1.0686738250005874,
+        "cpu_busy_percent": {
+          "cpu": 27.167630057803468,
+          "cpu0": 46.2962962962963,
+          "cpu1": 44.95412844036697,
+          "cpu2": 30.275229357798164,
+          "cpu3": 47.706422018348626,
+          "cpu4": 4.545454545454546,
+          "cpu5": 1.8518518518518519,
+          "cpu6": 0.9259259259259259,
+          "cpu7": 42.20183486238532
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "S",
+            "ticks": 12262,
+            "start_ticks": 1243983,
+            "rss_kib": 86356.0,
+            "cpu_percent_one_core": 124.45331483619607
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 7510,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 73.92339753428188
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 5046,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 5.614435255768243
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7325,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 2.8072176278841217
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21204,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9357392092947072
+          },
+          {
+            "pid": 279,
+            "comm": "irq/152-90b6400.pmu",
+            "state": "S",
+            "ticks": 14300,
+            "start_ticks": 892,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9357392092947072
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2184,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9357392092947072
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2208000",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "49000"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "625"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4035"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "55700"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "56100"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "46624"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "46378"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "46993"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "43296"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "546"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "45795"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "49400"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "53700"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6275232 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    },
+    {
+      "frame_index": 2696,
+      "sensor_camera_ns": 1403636714563555500,
+      "scheduled_monotonic_ns": 12575338207390,
+      "arrival_monotonic_ns": 12575443456417,
+      "lag_ms": 105.249027,
+      "publish_complete_ms": 32.582565,
+      "callback_entry_to_worker_begin_ms": 0.699932,
+      "worker_ms": 69.014564,
+      "internal_stages_ms": {
+        "tracking": 14.75,
+        "propagation": 1.09,
+        "msckf_update": 14.57,
+        "slam_update": 5.79,
+        "slam_delayed": 27.82,
+        "retriangulation_marginalization": 4.08,
+        "total": 68.1
+      },
+      "nearest_load_sample_distance_ms": 298.802226,
+      "nearest_load_sample": {
+        "monotonic_ns": 12575742258643,
+        "utc": "2026-10-12T11:15:21Z",
+        "interval_s": 1.087336773000061,
+        "cpu_busy_percent": {
+          "cpu": 27.408256880733944,
+          "cpu0": 31.818181818181817,
+          "cpu1": 55.96330275229358,
+          "cpu2": 44.03669724770642,
+          "cpu3": 31.192660550458715,
+          "cpu4": 1.8181818181818181,
+          "cpu5": 2.7522935779816513,
+          "cpu6": 0.0,
+          "cpu7": 51.851851851851855
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "S",
+            "ticks": 15276,
+            "start_ticks": 1243983,
+            "rss_kib": 90632.0,
+            "cpu_percent_one_core": 125.0762444323148
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 9282,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 75.41361796654274
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 5213,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 7.35742614307734
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7383,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 1.839356535769335
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21229,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9196782678846676
+          },
+          {
+            "pid": 279,
+            "comm": "irq/152-90b6400.pmu",
+            "state": "S",
+            "ticks": 14322,
+            "start_ticks": 892,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9196782678846676
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2205,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9196782678846676
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2208000",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "48700"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "703"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4035"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "55700"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "56400"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "46725"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "46508"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "47123"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "43289"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "781"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "46098"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "49400"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "53300"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6267900 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    },
+    {
+      "frame_index": 3138,
+      "sensor_camera_ns": 1403636736663555500,
+      "scheduled_monotonic_ns": 12597438207390,
+      "arrival_monotonic_ns": 12597541931705,
+      "lag_ms": 103.724315,
+      "publish_complete_ms": 28.052582,
+      "callback_entry_to_worker_begin_ms": 0.746702,
+      "worker_ms": 72.139156,
+      "internal_stages_ms": {
+        "tracking": 16.91,
+        "propagation": 1.13,
+        "msckf_update": 0.88,
+        "slam_update": 4.0,
+        "slam_delayed": 43.93,
+        "retriangulation_marginalization": 4.26,
+        "total": 71.1
+      },
+      "nearest_load_sample_distance_ms": 218.061026,
+      "nearest_load_sample": {
+        "monotonic_ns": 12597323870679,
+        "utc": "2026-10-12T11:15:42Z",
+        "interval_s": 1.0887145449996751,
+        "cpu_busy_percent": {
+          "cpu": 26.071842410196986,
+          "cpu0": 57.00934579439252,
+          "cpu1": 33.333333333333336,
+          "cpu2": 37.38317757009346,
+          "cpu3": 51.401869158878505,
+          "cpu4": 5.454545454545454,
+          "cpu5": 0.9433962264150944,
+          "cpu6": 2.7777777777777777,
+          "cpu7": 20.18348623853211
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "S",
+            "ticks": 17816,
+            "start_ticks": 1243983,
+            "rss_kib": 90532.0,
+            "cpu_percent_one_core": 117.56984471998415
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 10852,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 67.97006647874083
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 5353,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 5.511086471249257
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7437,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 2.7555432356246286
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21251,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9185144118748761
+          },
+          {
+            "pid": 279,
+            "comm": "irq/152-90b6400.pmu",
+            "state": "S",
+            "ticks": 14341,
+            "start_ticks": 892,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9185144118748761
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2224,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9185144118748761
+          },
+          {
+            "pid": 1977,
+            "comm": "containerd",
+            "state": "S",
+            "ticks": 4909,
+            "start_ticks": 2463,
+            "rss_kib": 25096.0,
+            "cpu_percent_one_core": 0.9185144118748761
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2707200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1804800",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1804800",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1804800",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1804800",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "48700"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "468"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4085"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "55700"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "56800"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "46617"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "46508"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "47071"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "43336"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "52900"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "468"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "52900"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "46064"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "49000"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "52900"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6278260 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    },
+    {
+      "frame_index": 1935,
+      "sensor_camera_ns": 1403636676513555500,
+      "scheduled_monotonic_ns": 12537288207390,
+      "arrival_monotonic_ns": 12537391803135,
+      "lag_ms": 103.595745,
+      "publish_complete_ms": 23.900065,
+      "callback_entry_to_worker_begin_ms": 1.195808,
+      "worker_ms": 76.154297,
+      "internal_stages_ms": {
+        "tracking": 14.34,
+        "propagation": 1.02,
+        "msckf_update": 0.21000000000000002,
+        "slam_update": 4.7299999999999995,
+        "slam_delayed": 51.22,
+        "retriangulation_marginalization": 3.92,
+        "total": 75.44
+      },
+      "nearest_load_sample_distance_ms": 518.89658,
+      "nearest_load_sample": {
+        "monotonic_ns": 12537910699715,
+        "utc": "2026-10-12T11:14:43Z",
+        "interval_s": 1.0718347760011966,
+        "cpu_busy_percent": {
+          "cpu": 26.767091541135574,
+          "cpu0": 33.944954128440365,
+          "cpu1": 40.90909090909091,
+          "cpu2": 46.728971962616825,
+          "cpu3": 45.794392523364486,
+          "cpu4": 3.7037037037037037,
+          "cpu5": 2.803738317757009,
+          "cpu6": 0.9345794392523364,
+          "cpu7": 39.44954128440367
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "S",
+            "ticks": 10668,
+            "start_ticks": 1243983,
+            "rss_kib": 90924.0,
+            "cpu_percent_one_core": 121.28735035543843
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 6570,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 69.04049174078803
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 4963,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 5.597877708712543
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7292,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 1.8659592362375144
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21190,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9329796181187572
+          },
+          {
+            "pid": 279,
+            "comm": "irq/152-90b6400.pmu",
+            "state": "S",
+            "ticks": 14289,
+            "start_ticks": 892,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9329796181187572
+          },
+          {
+            "pid": 1506,
+            "comm": "systemd-resolve",
+            "state": "S",
+            "ticks": 90,
+            "start_ticks": 1901,
+            "rss_kib": 11264.0,
+            "cpu_percent_one_core": 0.9329796181187572
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2172,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9329796181187572
+          },
+          {
+            "pid": 1795,
+            "comm": "NetworkManager",
+            "state": "S",
+            "ticks": 660,
+            "start_ticks": 2266,
+            "rss_kib": 14456.0,
+            "cpu_percent_one_core": 0.9329796181187572
+          },
+          {
+            "pid": 140410,
+            "comm": "kworker/0:2-mm_percpu_wq",
+            "state": "I",
+            "ticks": 9,
+            "start_ticks": 1234173,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9329796181187572
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2707200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "48700"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "625"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4035"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "55700"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "57200"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "46487"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "46281"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "46877"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "43124"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "546"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "45963"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "52900"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "49000"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "53300"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6271980 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    },
+    {
+      "frame_index": 1364,
+      "sensor_camera_ns": 1403636647963555500,
+      "scheduled_monotonic_ns": 12508738207390,
+      "arrival_monotonic_ns": 12508840723010,
+      "lag_ms": 102.51562,
+      "publish_complete_ms": 18.707487,
+      "callback_entry_to_worker_begin_ms": 6.675641,
+      "worker_ms": 75.103368,
+      "internal_stages_ms": {
+        "tracking": 13.07,
+        "propagation": 1.02,
+        "msckf_update": 0.08,
+        "slam_update": 10.71,
+        "slam_delayed": 46.61,
+        "retriangulation_marginalization": 3.14,
+        "total": 74.63
+      },
+      "nearest_load_sample_distance_ms": 5.681443,
+      "nearest_load_sample": {
+        "monotonic_ns": 12508846404453,
+        "utc": "2026-10-12T11:14:14Z",
+        "interval_s": 1.0729998429997067,
+        "cpu_busy_percent": {
+          "cpu": 26.152073732718893,
+          "cpu0": 63.888888888888886,
+          "cpu1": 38.18181818181818,
+          "cpu2": 35.45454545454545,
+          "cpu3": 28.97196261682243,
+          "cpu4": 2.727272727272727,
+          "cpu5": 3.6363636363636362,
+          "cpu6": 0.9259259259259259,
+          "cpu7": 36.93693693693694
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "R",
+            "ticks": 7146,
+            "start_ticks": 1243983,
+            "rss_kib": 89888.0,
+            "cpu_percent_one_core": 117.42778978210386
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 4494,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 72.69339367463571
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 4778,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 6.523766099005769
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7221,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 1.8639331711445055
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21159,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9319665855722528
+          },
+          {
+            "pid": 279,
+            "comm": "irq/152-90b6400.pmu",
+            "state": "S",
+            "ticks": 14262,
+            "start_ticks": 892,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9319665855722528
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2145,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9319665855722528
+          },
+          {
+            "pid": 41526,
+            "comm": "kworker/7:3-events",
+            "state": "I",
+            "ticks": 489,
+            "start_ticks": 536664,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9319665855722528
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2208000",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "47900"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "468"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4035"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "49400"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "48700"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "46049"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "45956"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "46523"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "42903"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "703"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "52900"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "57200"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "45526"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "48700"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "53700"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6271548 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    },
+    {
+      "frame_index": 1554,
+      "sensor_camera_ns": 1403636657463555500,
+      "scheduled_monotonic_ns": 12518238207390,
+      "arrival_monotonic_ns": 12518338882131,
+      "lag_ms": 100.674741,
+      "publish_complete_ms": 30.097175,
+      "callback_entry_to_worker_begin_ms": 0.465771,
+      "worker_ms": 66.642754,
+      "internal_stages_ms": {
+        "tracking": 16.400000000000002,
+        "propagation": 1.0399999999999998,
+        "msckf_update": 5.33,
+        "slam_update": 4.08,
+        "slam_delayed": 35.14,
+        "retriangulation_marginalization": 4.04,
+        "total": 66.03
+      },
+      "nearest_load_sample_distance_ms": 212.900487,
+      "nearest_load_sample": {
+        "monotonic_ns": 12518551782618,
+        "utc": "2026-10-12T11:14:23Z",
+        "interval_s": 1.0705188720003207,
+        "cpu_busy_percent": {
+          "cpu": 27.124563445867288,
+          "cpu0": 35.51401869158879,
+          "cpu1": 58.87850467289719,
+          "cpu2": 40.56603773584906,
+          "cpu3": 31.48148148148148,
+          "cpu4": 2.7777777777777777,
+          "cpu5": 0.9345794392523364,
+          "cpu6": 2.7522935779816513,
+          "cpu7": 45.87155963302752
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "S",
+            "ticks": 8326,
+            "start_ticks": 1243983,
+            "rss_kib": 90548.0,
+            "cpu_percent_one_core": 125.17294510615582
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 5195,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 71.92773711323879
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 4841,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 5.60475873609653
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7246,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 2.802379368048265
+          },
+          {
+            "pid": 18,
+            "comm": "migration/0",
+            "state": "S",
+            "ticks": 39,
+            "start_ticks": 1,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9341264560160882
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21170,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9341264560160882
+          },
+          {
+            "pid": 279,
+            "comm": "irq/152-90b6400.pmu",
+            "state": "S",
+            "ticks": 14271,
+            "start_ticks": 892,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9341264560160882
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2153,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9341264560160882
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2707200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "48700"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "781"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "52600"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4035"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "55700"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "57200"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "49400"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "55700"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "46297"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "46086"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "46653"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "52900"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "43022"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "703"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "56100"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "45963"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "49000"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "53300"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6276988 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    },
+    {
+      "frame_index": 1207,
+      "sensor_camera_ns": 1403636640113555500,
+      "scheduled_monotonic_ns": 12500888207390,
+      "arrival_monotonic_ns": 12500987819401,
+      "lag_ms": 99.612011,
+      "publish_complete_ms": 29.823572,
+      "callback_entry_to_worker_begin_ms": 1.194142,
+      "worker_ms": 65.484674,
+      "internal_stages_ms": {
+        "tracking": 16.94,
+        "propagation": 1.14,
+        "msckf_update": 1.31,
+        "slam_update": 5.57,
+        "slam_delayed": 35.44,
+        "retriangulation_marginalization": 4.53,
+        "total": 64.94
+      },
+      "nearest_load_sample_distance_ms": 307.952734,
+      "nearest_load_sample": {
+        "monotonic_ns": 12501295772135,
+        "utc": "2026-10-12T11:14:06Z",
+        "interval_s": 1.0692045529995085,
+        "cpu_busy_percent": {
+          "cpu": 25.700934579439252,
+          "cpu0": 36.79245283018868,
+          "cpu1": 34.905660377358494,
+          "cpu2": 54.205607476635514,
+          "cpu3": 48.113207547169814,
+          "cpu4": 4.545454545454546,
+          "cpu5": 0.9345794392523364,
+          "cpu6": 0.0,
+          "cpu7": 27.102803738317757
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "S",
+            "ticks": 6259,
+            "start_ticks": 1243983,
+            "rss_kib": 90452.0,
+            "cpu_percent_one_core": 116.90934129426351
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 3966,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 70.14560477655812
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 4730,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 4.6763736517705405
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7203,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 1.8705494607082163
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21152,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9352747303541081
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2137,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9352747303541081
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2707200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "47900"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "50200"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "546"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4035"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "56100"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "49400"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "48700"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "45881"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "45762"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "46406"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "42857"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "52600"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "468"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "52600"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "45526"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "51800"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "48300"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "49400"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "51400"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6263516 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    },
+    {
+      "frame_index": 2044,
+      "sensor_camera_ns": 1403636681963555500,
+      "scheduled_monotonic_ns": 12542738207390,
+      "arrival_monotonic_ns": 12542837661085,
+      "lag_ms": 99.453695,
+      "publish_complete_ms": 28.617207,
+      "callback_entry_to_worker_begin_ms": 1.160131,
+      "worker_ms": 65.849044,
+      "internal_stages_ms": {
+        "tracking": 12.11,
+        "propagation": 1.0,
+        "msckf_update": 0.06999999999999999,
+        "slam_update": 9.5,
+        "slam_delayed": 38.449999999999996,
+        "retriangulation_marginalization": 3.95,
+        "total": 65.08999999999999
+      },
+      "nearest_load_sample_distance_ms": 492.275492,
+      "nearest_load_sample": {
+        "monotonic_ns": 12543329936577,
+        "utc": "2026-10-12T11:14:48Z",
+        "interval_s": 1.1007746229988697,
+        "cpu_busy_percent": {
+          "cpu": 27.167630057803468,
+          "cpu0": 57.00934579439252,
+          "cpu1": 41.666666666666664,
+          "cpu2": 32.71028037383178,
+          "cpu3": 30.275229357798164,
+          "cpu4": 5.504587155963303,
+          "cpu5": 1.834862385321101,
+          "cpu6": 0.0,
+          "cpu7": 49.074074074074076
+        },
+        "processes": [
+          {
+            "pid": 140425,
+            "comm": "ros_replay_rece",
+            "state": "S",
+            "ticks": 11333,
+            "start_ticks": 1243983,
+            "rss_kib": 91168.0,
+            "cpu_percent_one_core": 119.0071039638552
+          },
+          {
+            "pid": 140413,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 6965,
+            "start_ticks": 1243892,
+            "rss_kib": 170364.0,
+            "cpu_percent_one_core": 71.76764284843176
+          },
+          {
+            "pid": 138147,
+            "comm": "python3",
+            "state": "R",
+            "ticks": 4998,
+            "start_ticks": 1181509,
+            "rss_kib": 13056.0,
+            "cpu_percent_one_core": 5.450707051779627
+          },
+          {
+            "pid": 1633,
+            "comm": "sugov:0",
+            "state": "S",
+            "ticks": 7306,
+            "start_ticks": 2196,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 2.7253535258898136
+          },
+          {
+            "pid": 276,
+            "comm": "irq/150-9091000.pmu",
+            "state": "S",
+            "ticks": 21196,
+            "start_ticks": 891,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9084511752966046
+          },
+          {
+            "pid": 279,
+            "comm": "irq/152-90b6400.pmu",
+            "state": "S",
+            "ticks": 14293,
+            "start_ticks": 892,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9084511752966046
+          },
+          {
+            "pid": 1635,
+            "comm": "sugov:4",
+            "state": "S",
+            "ticks": 5029,
+            "start_ticks": 2197,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9084511752966046
+          },
+          {
+            "pid": 1636,
+            "comm": "sugov:7",
+            "state": "S",
+            "ticks": 2177,
+            "start_ticks": 2198,
+            "rss_kib": 0.0,
+            "cpu_percent_one_core": 0.9084511752966046
+          },
+          {
+            "pid": 138135,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 6,
+            "start_ticks": 1181433,
+            "rss_kib": 15364.0,
+            "cpu_percent_one_core": 0.0
+          },
+          {
+            "pid": 138146,
+            "comm": "python3",
+            "state": "S",
+            "ticks": 8,
+            "start_ticks": 1181500,
+            "rss_kib": 11520.0,
+            "cpu_percent_one_core": 0.0
+          }
+        ],
+        "reported_cpu_clocks": {
+          "cpu7": {
+            "scaling_cur_freq": "2707200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu5": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu3": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu1": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu6": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu4": {
+            "scaling_cur_freq": "691200",
+            "scaling_governor": "schedutil"
+          },
+          "cpu2": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          },
+          "cpu0": {
+            "scaling_cur_freq": "1958400",
+            "scaling_governor": "schedutil"
+          }
+        },
+        "thermal": {
+          "thermal_zone36": {
+            "type": "mdmss1-thermal",
+            "temperature_raw": "49000"
+          },
+          "thermal_zone26": {
+            "type": "gpuss0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone2": {
+            "type": "pm7250b-ibat-lvl1",
+            "temperature_raw": "781"
+          },
+          "thermal_zone16": {
+            "type": "cpu4-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone34": {
+            "type": "mdmss0-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone24": {
+            "type": "pm8350c-thermal",
+            "temperature_raw": "37000"
+          },
+          "thermal_zone0": {
+            "type": "vbat",
+            "temperature_raw": "4035"
+          },
+          "thermal_zone14": {
+            "type": "cpuss0-thermal",
+            "temperature_raw": "56100"
+          },
+          "thermal_zone42": {
+            "type": "qcom-battmgr-bat",
+            "temperature_raw": "25000"
+          },
+          "thermal_zone32": {
+            "type": "video-thermal",
+            "temperature_raw": "51400"
+          },
+          "thermal_zone9": {
+            "type": "aoss0-thermal",
+            "temperature_raw": "53700"
+          },
+          "thermal_zone22": {
+            "type": "cpu10-thermal",
+            "temperature_raw": "57200"
+          },
+          "thermal_zone12": {
+            "type": "cpu2-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone40": {
+            "type": "mdmss3-thermal",
+            "temperature_raw": "50600"
+          },
+          "thermal_zone30": {
+            "type": "nspss1-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone7": {
+            "type": "pm8350c-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone20": {
+            "type": "cpu8-thermal",
+            "temperature_raw": "54900"
+          },
+          "thermal_zone10": {
+            "type": "cpu0-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone39": {
+            "type": "sdm-skin-thermal",
+            "temperature_raw": "46552"
+          },
+          "thermal_zone29": {
+            "type": "pm7250b-thermal",
+            "temperature_raw": "46313"
+          },
+          "thermal_zone5": {
+            "type": "pm7250b-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone19": {
+            "type": "cpu7-thermal",
+            "temperature_raw": "52600"
+          },
+          "thermal_zone37": {
+            "type": "quiet-thermal",
+            "temperature_raw": "46942"
+          },
+          "thermal_zone27": {
+            "type": "gpuss1-thermal",
+            "temperature_raw": "51000"
+          },
+          "thermal_zone3": {
+            "type": "pm7250b-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone17": {
+            "type": "cpu5-thermal",
+            "temperature_raw": "52600"
+          },
+          "thermal_zone35": {
+            "type": "xo-thermal",
+            "temperature_raw": "43186"
+          },
+          "thermal_zone25": {
+            "type": "aoss1-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone1": {
+            "type": "pm7250b-ibat-lvl0",
+            "temperature_raw": "390"
+          },
+          "thermal_zone15": {
+            "type": "cpuss1-thermal",
+            "temperature_raw": "54500"
+          },
+          "thermal_zone33": {
+            "type": "ddr-thermal",
+            "temperature_raw": "54100"
+          },
+          "thermal_zone23": {
+            "type": "cpu11-thermal",
+            "temperature_raw": "56800"
+          },
+          "thermal_zone13": {
+            "type": "cpu3-thermal",
+            "temperature_raw": "53300"
+          },
+          "thermal_zone41": {
+            "type": "camera0-thermal",
+            "temperature_raw": "52200"
+          },
+          "thermal_zone31": {
+            "type": "pm7325-thermal",
+            "temperature_raw": "45863"
+          },
+          "thermal_zone8": {
+            "type": "pm8350c-bcl-lvl2",
+            "temperature_raw": "0"
+          },
+          "thermal_zone21": {
+            "type": "cpu9-thermal",
+            "temperature_raw": "52900"
+          },
+          "thermal_zone11": {
+            "type": "cpu1-thermal",
+            "temperature_raw": "55300"
+          },
+          "thermal_zone6": {
+            "type": "pm8350c-bcl-lvl0",
+            "temperature_raw": "0"
+          },
+          "thermal_zone38": {
+            "type": "mdmss2-thermal",
+            "temperature_raw": "49000"
+          },
+          "thermal_zone28": {
+            "type": "nspss0-thermal",
+            "temperature_raw": "49800"
+          },
+          "thermal_zone4": {
+            "type": "pm7250b-bcl-lvl1",
+            "temperature_raw": "0"
+          },
+          "thermal_zone18": {
+            "type": "cpu6-thermal",
+            "temperature_raw": "53300"
+          }
+        },
+        "memory": {
+          "MemTotal": "7458896 kB",
+          "MemAvailable": "6278972 kB",
+          "SwapTotal": "0 kB",
+          "SwapFree": "0 kB"
+        },
+        "cpu_units": "100 percent process CPU is one logical core; global cpu utilization is percentage across all cores"
+      }
+    }
+  ]
+}

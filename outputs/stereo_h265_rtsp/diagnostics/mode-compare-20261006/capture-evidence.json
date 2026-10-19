@@ -1,0 +1,143 @@
+{
+  "initial_mode": {
+    "camera_mode": "linear",
+    "fps": "60",
+    "running": "1"
+  },
+  "initial_status": {
+    "mode": "auto",
+    "camera_mode": "linear",
+    "hdr_enabled": "0",
+    "target_percent": "40",
+    "cam0_percent": "41",
+    "cam1_percent": "42",
+    "exposure_lines": "1330",
+    "gain_index": "47",
+    "fps_x10": "599",
+    "max_exposure_lines": "1330",
+    "brightness_limited": "0",
+    "error_errno": "0"
+  },
+  "captures": [
+    {
+      "label": "linear-before",
+      "status_before": {
+        "mode": "auto",
+        "camera_mode": "linear",
+        "hdr_enabled": "0",
+        "target_percent": "40",
+        "cam0_percent": "41",
+        "cam1_percent": "42",
+        "exposure_lines": "1330",
+        "gain_index": "47",
+        "fps_x10": "600",
+        "max_exposure_lines": "1330",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      },
+      "status_after": {
+        "mode": "auto",
+        "camera_mode": "linear",
+        "hdr_enabled": "0",
+        "target_percent": "40",
+        "cam0_percent": "41",
+        "cam1_percent": "42",
+        "exposure_lines": "1330",
+        "gain_index": "47",
+        "fps_x10": "597",
+        "max_exposure_lines": "1330",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      },
+      "timestamp_utc": "2026-10-06T10:30:47.895158+00:00",
+      "width": 2176,
+      "height": 1280,
+      "decoded_frames_before_capture": 30
+    },
+    {
+      "label": "hdr",
+      "status_before": {
+        "mode": "auto",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "38",
+        "cam1_percent": "39",
+        "exposure_lines": "2176",
+        "gain_index": "57",
+        "fps_x10": "299",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      },
+      "status_after": {
+        "mode": "auto",
+        "camera_mode": "hdr",
+        "hdr_enabled": "1",
+        "target_percent": "40",
+        "cam0_percent": "38",
+        "cam1_percent": "39",
+        "exposure_lines": "2176",
+        "gain_index": "57",
+        "fps_x10": "299",
+        "max_exposure_lines": "2176",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      },
+      "timestamp_utc": "2026-10-06T10:30:57.065006+00:00",
+      "width": 2176,
+      "height": 1280,
+      "decoded_frames_before_capture": 30
+    },
+    {
+      "label": "linear-after",
+      "status_before": {
+        "mode": "auto",
+        "camera_mode": "linear",
+        "hdr_enabled": "0",
+        "target_percent": "40",
+        "cam0_percent": "38",
+        "cam1_percent": "39",
+        "exposure_lines": "1330",
+        "gain_index": "43",
+        "fps_x10": "599",
+        "max_exposure_lines": "1330",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      },
+      "status_after": {
+        "mode": "auto",
+        "camera_mode": "linear",
+        "hdr_enabled": "0",
+        "target_percent": "40",
+        "cam0_percent": "38",
+        "cam1_percent": "39",
+        "exposure_lines": "1330",
+        "gain_index": "43",
+        "fps_x10": "599",
+        "max_exposure_lines": "1330",
+        "brightness_limited": "0",
+        "error_errno": "0"
+      },
+      "timestamp_utc": "2026-10-06T10:31:04.979155+00:00",
+      "width": 2176,
+      "height": 1280,
+      "decoded_frames_before_capture": 30
+    }
+  ],
+  "restore": "camera_mode phase=inspecting\ncamera_mode phase=verifying\ncamera_mode phase=persisting\ncamera_mode phase=ready\nok camera_mode=linear fps=60 running=1",
+  "final_status": {
+    "mode": "auto",
+    "camera_mode": "linear",
+    "hdr_enabled": "0",
+    "target_percent": "40",
+    "cam0_percent": "38",
+    "cam1_percent": "39",
+    "exposure_lines": "1330",
+    "gain_index": "43",
+    "fps_x10": "600",
+    "max_exposure_lines": "1330",
+    "brightness_limited": "0",
+    "error_errno": "0"
+  }
+}

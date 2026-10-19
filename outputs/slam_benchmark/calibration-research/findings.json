@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-13",
+  "status": "official_source_found_and_actual_module_factory_intrinsics_obtained",
+  "repository": "https://github.com/D-Robotics/gs130_camera_sdk",
+  "revision": "12bde1f530533a11eba1803c1de525cee928c88b",
+  "platform_support": [
+    "RDK X5",
+    "RDK S100",
+    "RDK S600"
+  ],
+  "QCS6490_backend_present": false,
+  "raw_sensor_resolution": [
+    1088,
+    1280
+  ],
+  "EEPROM_address": "0x50",
+  "calibration_fields": [
+    "fx",
+    "fy",
+    "cx",
+    "cy",
+    "distortion",
+    "stereo_extrinsics",
+    "IMU_parameters",
+    "camera_IMU_extrinsics"
+  ],
+  "registered_layouts": [
+    "UNION stereo-IMU fisheye v1.2 rotation0 coefficients4",
+    "SZYGSJKJ stereo-IMU fisheye v1.2 rotation0 coefficients4",
+    "SZYGSJKJ stereo pinhole v1.1 rotation1 coefficients8"
+  ],
+  "export_command_on_supported_RDK": "gs130 shell ... then calib-export DIRECTORY",
+  "export_files": [
+    "camchain.yaml",
+    "imu.yaml"
+  ],
+  "raw_mode_required_for_current_RAW_capture_intrinsics": true,
+  "rectified_resized_exports_are_virtual_camera_intrinsics": true,
+  "actual_RUBIK_module_EEPROM_read_in_this_search": false,
+  "actual_module_calibration_values_obtained": true,
+  "next_step": "Validate factory fisheye intrinsics/stereo geometry with target images, then validate IMU-to-host clock mapping, noise model and camera-IMU extrinsics/time offset before live OpenVINS input.",
+  "sources": {
+    "overview": "https://github.com/D-Robotics/gs130_camera_sdk/blob/12bde1f530533a11eba1803c1de525cee928c88b/README.md",
+    "sensor_resolution_and_address": "https://github.com/D-Robotics/gs130_camera_sdk/blob/12bde1f530533a11eba1803c1de525cee928c88b/core/include/gs130_define.h",
+    "export_semantics": "https://github.com/D-Robotics/gs130_camera_sdk/blob/12bde1f530533a11eba1803c1de525cee928c88b/core/samples/gs130-calib-export.c",
+    "UNION_layout": "https://github.com/D-Robotics/gs130_camera_sdk/blob/12bde1f530533a11eba1803c1de525cee928c88b/core/src/devices/eeprom/union_stereo_imu_fisheye_v1p2r0n4.cpp",
+    "SZYGSJKJ_layout": "https://github.com/D-Robotics/gs130_camera_sdk/blob/12bde1f530533a11eba1803c1de525cee928c88b/core/src/devices/eeprom/szygsjkj_stereo_imu_fisheye_v1p2r0n4.cpp"
+  },
+  "followup_actual_RUBIK_module_EEPROM_read": true,
+  "factory_intrinsics_export": "../factory-calibration-20261013/raw-intrinsics.yaml"
+}

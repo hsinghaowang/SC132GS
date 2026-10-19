@@ -1,0 +1,19 @@
+{
+  "status": "verified",
+  "requested_fps": 30,
+  "measured_decoded_fps": 29.87429463471001,
+  "decoded_frames": 240,
+  "observation_seconds": 8.00018888888889,
+  "target_bitrate_bits_per_second": 10000000,
+  "bitrate_verified_from_running_encoder_arguments": true,
+  "width": 2176,
+  "height": 1280,
+  "RTSP_url": "rtsp://192.168.137.226:8554/stereo",
+  "persistent_camera_settings_revision": 182,
+  "persistent_bitrate_owner_profile": true,
+  "camera_mode": "linear",
+  "binning": false,
+  "auto_exposure": true,
+  "ae_target_percent": 30,
+  "physical_exposure_sync_proven": false
+}

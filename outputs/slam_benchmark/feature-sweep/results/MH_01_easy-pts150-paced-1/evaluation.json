@@ -1,0 +1,75 @@
+{
+  "run": "MH_01_easy-pts150-paced-1",
+  "dataset": "MH_01_easy",
+  "num_pts": 150,
+  "target_per_eye": 75,
+  "resources": {
+    "exit_code": 0,
+    "elapsed_wrapper_s": 185.02050300899919,
+    "cpu_user_s": 183.279312,
+    "cpu_system_s": 84.069602,
+    "average_cpu_percent": 144.49691231625098,
+    "peak_rss_mib": 80.8828125,
+    "affinity_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "command": [
+      "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+      "/ws/slam_benchmark/feature-sweep/configs/150/estimator_config.yaml",
+      "/ws/slam_benchmark/datasets/MH_01_easy/mav0",
+      "/ws/slam_benchmark/feature-sweep/results/MH_01_easy-pts150-paced-1",
+      "1",
+      "0"
+    ],
+    "thermal_units": "raw sysfs values; platform units vary by zone"
+  },
+  "frames": 3682,
+  "input_frames": 3682,
+  "poses": 2784,
+  "elapsed_s": 184.091513636,
+  "paced": true,
+  "opencv_threads": 4,
+  "gt_initialization": false,
+  "ros_transport": false,
+  "status": "completed",
+  "all_frame_lag_ms": {
+    "p50": 42.41521841858048,
+    "p95": 54.77497838229683,
+    "p99": 63.69734247086803,
+    "max": 93.159701786004
+  },
+  "initialized_lag_ms": {
+    "p50": 43.584162893013854,
+    "p95": 56.351332380892565,
+    "p99": 64.07760750863457,
+    "max": 93.159701786004
+  },
+  "initialized_service_ms": {
+    "p50": 38.364063,
+    "p95": 48.8589457,
+    "p99": 56.89075224000001,
+    "max": 87.921193
+  },
+  "service_over_50ms_fraction": 0.04274425287356322,
+  "pose_frame_coverage": 0.7561108093427485,
+  "post_init_pose_coverage": 1.0,
+  "nonadvancing_initialized_frames": 0,
+  "initialization_delay_s": 44.89999985694885,
+  "ate_rmse_m": 0.09344811037068246,
+  "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+  "rpe_interval_s": 1,
+  "rpe_pairs": 2741,
+  "rpe_translation_rmse_m": 0.04431560854190024,
+  "rpe_rotation_rmse_deg": 0.3295667785166802,
+  "ground_truth_matched_poses": 2762,
+  "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+  "matched_start_timestamp": 1403636624.6584153,
+  "matched_end_timestamp": 1403636762.7135787
+}

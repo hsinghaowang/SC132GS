@@ -1,0 +1,69 @@
+{
+  "status": "offline_direction_diagnostic",
+  "metric_baseline_verified": false,
+  "factory_extrinsics_modified": false,
+  "live_configuration_created": false,
+  "scope": "Triangulation sign and scale-normalized epipolar distance; same saved scene, no ground-truth target",
+  "runs": {
+    "factory-geometry-20261013": {
+      "documented_factory_inverse": {
+        "all_appearance_matches": {
+          "count": 637,
+          "positive_depth_fraction": 0.9827315541601256,
+          "median_sampson_at_650px_focal": 2.7046117383581847,
+          "p95_sampson_at_650px_focal": 20.939557499054192
+        },
+        "independently_fitted_F_subset": {
+          "count": 442,
+          "positive_depth_fraction": 1.0,
+          "median_sampson_at_650px_focal": 2.534998395912667,
+          "p95_sampson_at_650px_focal": 9.283783777741645
+        }
+      },
+      "alternative_direction_control": {
+        "all_appearance_matches": {
+          "count": 637,
+          "positive_depth_fraction": 0.03924646781789639,
+          "median_sampson_at_650px_focal": 1.6688329805533186,
+          "p95_sampson_at_650px_focal": 21.005324362537518
+        },
+        "independently_fitted_F_subset": {
+          "count": 442,
+          "positive_depth_fraction": 0.0022624434389140274,
+          "median_sampson_at_650px_focal": 1.4287382668613595,
+          "p95_sampson_at_650px_focal": 5.4018462385520944
+        }
+      }
+    },
+    "factory-geometry-full-20261013": {
+      "documented_factory_inverse": {
+        "all_appearance_matches": {
+          "count": 223,
+          "positive_depth_fraction": 0.9865470852017937,
+          "median_sampson_at_650px_focal": 1.9915696904757725,
+          "p95_sampson_at_650px_focal": 10.694872950479482
+        },
+        "independently_fitted_F_subset": {
+          "count": 178,
+          "positive_depth_fraction": 1.0,
+          "median_sampson_at_650px_focal": 1.986142670098954,
+          "p95_sampson_at_650px_focal": 4.095330096223351
+        }
+      },
+      "alternative_direction_control": {
+        "all_appearance_matches": {
+          "count": 223,
+          "positive_depth_fraction": 0.02242152466367713,
+          "median_sampson_at_650px_focal": 1.6784447591966736,
+          "p95_sampson_at_650px_focal": 6.879933401943896
+        },
+        "independently_fitted_F_subset": {
+          "count": 178,
+          "positive_depth_fraction": 0.0056179775280898875,
+          "median_sampson_at_650px_focal": 1.4844330847417664,
+          "p95_sampson_at_650px_focal": 3.9353483891788112
+        }
+      }
+    }
+  }
+}

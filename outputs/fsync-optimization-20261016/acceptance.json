@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "monitor_duration_s": 600.4179484000001,
+  "session": 11,
+  "trace_records": 181532,
+  "samples": 1037,
+  "eyes_independent_replay": {
+    "0": {
+      "actual_dma_records": 18149,
+      "first_trigger": 25,
+      "last_trigger": 18173,
+      "fps": 30.00056628298899
+    },
+    "1": {
+      "actual_dma_records": 18144,
+      "first_trigger": 29,
+      "last_trigger": 18172,
+      "fps": 30.00057407554455
+    }
+  },
+  "capture_timing": {
+    "held_mean_ms0": 1.65323,
+    "held_mean_ms1": 1.77555,
+    "held_max_ms0": 4.49572,
+    "held_max_ms1": 5.81735,
+    "handoff_max_ms": 4.135
+  },
+  "processing_timing": {
+    "calibration_mean_ms": 7.15735,
+    "calibration_max_ms": 11.0585,
+    "ae_mean_ms": 0.271247,
+    "ae_max_ms": 5.09693,
+    "tone_mean_ms": 9.55239,
+    "tone_max_ms": 18.0566,
+    "depth_submit_mean_ms": 0.578353,
+    "depth_submit_max_ms": 5.44641,
+    "encoder_mean_ms": 1.40326,
+    "encoder_max_ms": 8.08516
+  },
+  "clients": {
+    "stereo": {
+      "frame_count": 18002,
+      "decode_fps": 30.001666666666665,
+      "observed_seconds": 600.0,
+      "completed_duration": true,
+      "error": null,
+      "codec": {
+        "name": "hevc",
+        "profile": "Main",
+        "width": 2176,
+        "height": 1280,
+        "pix_fmt": "yuv420p",
+        "format": "<av.VideoFormat yuv420p, 2176x1280>",
+        "color_range": 1,
+        "colorspace": 1,
+        "color_primaries": 1,
+        "color_trc": 1
+      },
+      "pixel_formats": null,
+      "stream": {
+        "index": 0,
+        "time_base": "1/90000",
+        "average_rate": "30/1",
+        "base_rate": "30/1",
+        "guessed_rate": "30/1",
+        "start_time": 3000,
+        "duration": null,
+        "frames": 0
+      }
+    },
+    "depth": {
+      "frame_count": 16699,
+      "decode_fps": 27.829257886456364,
+      "observed_seconds": 600.016,
+      "completed_duration": true,
+      "error": null,
+      "codec": {
+        "name": "hevc",
+        "profile": "Main",
+        "width": 544,
+        "height": 640,
+        "pix_fmt": "yuv420p",
+        "format": "<av.VideoFormat yuv420p, 544x640>",
+        "color_range": 1,
+        "colorspace": 1,
+        "color_primaries": 1,
+        "color_trc": 1
+      },
+      "pixel_formats": null,
+      "stream": {
+        "index": 0,
+        "time_base": "1/90000",
+        "average_rate": "30/1",
+        "base_rate": "30/1",
+        "guessed_rate": "30/1",
+        "start_time": 2999,
+        "duration": null,
+        "frames": 0
+      }
+    }
+  },
+  "server_binary_sha256": "a1699264c088fd2edb570cc76697ef892f168587f23e0531a7aa14cacdce7936",
+  "api_library_sha256": "a3014e92da17a3c707e415d3932de247794cc7f988ef05c67539ac3f8de977e4",
+  "limits": [
+    "Bounded 600-second Shared8 live test; not long-run reliability or unique retrospective cause proof.",
+    "Shared8 stereo is unrectified cam0|cam1; depth uses its existing calibration.",
+    "Runtime service override; original binary/settings/scripts preserved."
+  ]
+}

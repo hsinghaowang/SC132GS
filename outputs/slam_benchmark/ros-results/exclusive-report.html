@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>OpenVINS 專用回放測試</title>
+<style>body{font:16px/1.65 system-ui,sans-serif;max-width:1180px;margin:32px auto;padding:0 24px;color:#16263b}table{border-collapse:collapse;width:100%;margin:18px 0}td,th{padding:9px;border-bottom:1px solid #dce3eb;text-align:right}td:first-child,th:first-child{text-align:left}th{background:#edf4fb}.note{background:#f3f6fa;padding:16px;border-radius:8px}a{color:#1753bb}</style>
+<h1>RUBIK Pi 3：暫停相機串流後的 ROS2 回放</h1>
+<p><strong>MH 大尖峰明顯縮小；兩份資料 P95 都約 79 ms，仍有 110–140 ms 尖峰。六次均無漏收，初始化後位姿完整，ATE 與先前相同。</strong></p>
+<p>相同 OpenVINS binary／YAML、雙目 752×480／20 Hz、IMU 200 Hz、num_pts=100（每眼目標 50）；兩份 EuRoC 資料各重複三次，第二輪反轉順序。相機串流與 FSYNC 已正常停止，測試期間以每秒一次的 /proc／sysfs 記錄負載。</p>
+<table><tr><th>資料集</th><th>先前 P95 ms</th><th>專用三輪 P95 ms</th><th>先前最大 ms</th><th>專用三輪最大 ms</th><th>ATE cm</th></tr>
+<tr><td>MH_01_easy</td><td>174.1</td><td>77.9–78.7</td><td>440.6</td><td>110.3–133.6</td><td>12.004–12.004</td></tr>
+<tr><td>V2_02_medium</td><td>78.6</td><td>78.7–79.1</td><td>107.1</td><td>112.8–140.2</td><td>5.526–5.526</td></tr>
+</table><h2>逐次結果</h2><table><tr><th>回放</th><th>P95／P99／最大 ms</th><th>超過 50／100 ms</th><th>配對等待 P95 ms</th><th>工作 P95 ms</th><th>最大佇列</th><th>漏收／涵蓋率</th></tr>
+<tr><td><a href="MH_01_easy-paced-exclusive-1/exclusive-diagnostics.json">MH_01_easy-paced-exclusive-1</a></td><td>78.7／88.6／133.6</td><td>86.3%／0.4%</td><td>7.2</td><td>44.5</td><td>28</td><td>0／100.0%</td></tr>
+<tr><td><a href="MH_01_easy-paced-exclusive-2/exclusive-diagnostics.json">MH_01_easy-paced-exclusive-2</a></td><td>77.9／85.9／117.3</td><td>86.9%／0.1%</td><td>6.9</td><td>43.9</td><td>21</td><td>0／100.0%</td></tr>
+<tr><td><a href="MH_01_easy-paced-exclusive-3/exclusive-diagnostics.json">MH_01_easy-paced-exclusive-3</a></td><td>78.4／89.4／110.3</td><td>84.7%／0.3%</td><td>7.1</td><td>44.7</td><td>21</td><td>0／100.0%</td></tr>
+<tr><td><a href="V2_02_medium-paced-exclusive-1/exclusive-diagnostics.json">V2_02_medium-paced-exclusive-1</a></td><td>78.7／89.0／116.9</td><td>81.8%／0.2%</td><td>11.4</td><td>46.5</td><td>21</td><td>0／100.0%</td></tr>
+<tr><td><a href="V2_02_medium-paced-exclusive-2/exclusive-diagnostics.json">V2_02_medium-paced-exclusive-2</a></td><td>79.0／88.7／112.8</td><td>81.2%／0.1%</td><td>11.0</td><td>46.4</td><td>21</td><td>0／100.0%</td></tr>
+<tr><td><a href="V2_02_medium-paced-exclusive-3/exclusive-diagnostics.json">V2_02_medium-paced-exclusive-3</a></td><td>79.1／92.0／140.2</td><td>80.6%／0.3%</td><td>11.1</td><td>46.3</td><td>28</td><td>0／100.0%</td></tr>
+</table>
+<p>六次共接收 18,090 對影像與 180,930 筆 IMU，輸出 15,150 個初始化後位姿，退出碼全部為 0。CPU／程序記錄中未觀察到相機、FSYNC 或編譯程序。MH 最大量測佇列由先前 95 降到 21–28；回呼進入到工作開始 P95 由 94.4 ms 降到 6.9–7.2 ms。</p>
+<h2>剩餘延遲來自哪裡</h2><p>影像讀取／訊息建立／發布 P95：MH 33.2–33.4 ms、V2 31.7–32.0 ms；估測與狀態發布 P95：MH 43.9–44.7 ms、V2 46.3–46.5 ms。六次有 80.6–86.9% 的初始化後位姿在來源排程 50 ms 之後到達；可接收 20 Hz 完整序列不等於每幀延遲低於 50 ms。</p>
+<p>最慢的 V2 第三輪影格總延遲 140.2 ms，其中影像發布完成在 26.0 ms，回呼到工作開始 1.1 ms，估測／發布工作 110.6 ms；內部 SLAM delayed initialization 本身占 83.4 ms。這個影格的主要成本在估測工作，而非長時間排隊。其餘五輪最大延遲影格的延後地標初始化也占 30.7–66.6 ms，詳細逐幀分解保存在 exclusive-diagnostics.json。</p>
+<p>下一步優先降低回放發布器的影像建立成本，並檢查延後地標初始化的每幀工作量；任何估測參數變更都應重新比對完整輸入、ATE 與延遲。實體相機整合仍需要正確標定與時間基準。</p>
+<p>「涵蓋率」只計自然初始化後。全段初始等待仍存在：MH 約 44.9 秒，V2 約 4.1 秒。延遲從來源影格的排程時間量到 stock /poseimu 的 DDS 接收，包含 PNG 讀取、建立影像訊息、DDS、等待、估測與狀態／路徑發布。各段的百分位數不能相加。</p>
+<div class="note">舊結果每份資料只有一次，且沒有同步負載紀錄。因此此比較能描述暫停後的結果與重現性，無法把差異全部歸因於相機串流。監測程式本身也有負載。每秒一次的 CPU 頻率與溫度只適合觀察平台狀態，無法證明毫秒尖峰由降頻或排程造成。</div>
+<h2>證據範圍</h2><p>自訂 C++17／PIMPL ROS2 接收器、單一 owned worker、有界量測佇列；估測核心不變。高頻 IMU odometry／TF 關閉，逐影格 stock 位姿／路徑保留。未量測實體相機與 IMU、曝光到位姿延遲，或原版 detached subscriber main。</p>
+<p>相機恢復：{&#x27;benchmark_returncode&#x27;: 0, &#x27;restored&#x27;: True, &#x27;durable_unchanged&#x27;: True}。恢復流程包含 RTSP 編碼速率與實際解碼驗證；設定檔雜湊保持不變，詳見<a href="camera-pause-restore/restore-camera.txt">恢復結果</a>與<a href="camera-pause-restore/provenance.json">設定／執行檔雜湊</a>。</p>
+<p><a href="exclusive-summary.json">完整比較與平台／尖峰證據</a> · <a href="evaluation.json">逐次評估</a> · <a href="report.html">先前整合回放報告</a> · <a href="evidence-sha256.json">證據雜湊</a></p></html>

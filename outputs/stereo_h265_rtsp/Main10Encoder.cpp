@@ -8,6 +8,7 @@
 #include <cstring>
 #include <deque>
 #include <string>
+#include <iostream>
 
 namespace stereo_rtsp::detail {
 EncoderError::EncoderError(EncoderErrorCode value, const char* operation, int error)
@@ -24,6 +25,7 @@ struct Main10Encoder::Impl {
         try {
             fd=::open("/dev/video33",O_RDWR|O_NONBLOCK|O_CLOEXEC);
             if(fd<0) fail(EncoderErrorCode::device,"open encoder");
+            std::cerr << "encoder_session phase=opened fd=" << fd << '\n';
             format(V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE,V4L2_PIX_FMT_HEVC);
             auto raw=format(V4L2_BUF_TYPE_VIDEO_OUTPUT_MPLANE,V4L2_PIX_FMT_P010);
             stride=raw.fmt.pix_mp.plane_fmt[0].bytesperline;
@@ -58,13 +60,33 @@ struct Main10Encoder::Impl {
     }
     ~Impl(){release();}
     void release() noexcept {
+        if(fd<0) return;
+        std::cerr << "encoder_session phase=closing fd=" << fd << '\n';
         auto in=V4L2_BUF_TYPE_VIDEO_OUTPUT_MPLANE,out=V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
-        if(input_started) ::ioctl(fd,VIDIOC_STREAMOFF,&in);
-        if(capture_started) ::ioctl(fd,VIDIOC_STREAMOFF,&out);
-        for(auto b:input) ::munmap(b.memory,b.length);
-        for(auto b:output) ::munmap(b.memory,b.length);
+        if(input_started && ioctl_retry(VIDIOC_STREAMOFF,&in)<0)
+            std::cerr << "encoder_release operation=input_streamoff errno=" << errno << '\n';
+        if(capture_started && ioctl_retry(VIDIOC_STREAMOFF,&out)<0)
+            std::cerr << "encoder_release operation=capture_streamoff errno=" << errno << '\n';
+        input_started=false; capture_started=false;
+        for(auto b:input) if(::munmap(b.memory,b.length)<0)
+            std::cerr << "encoder_release operation=input_munmap errno=" << errno << '\n';
+        for(auto b:output) if(::munmap(b.memory,b.length)<0)
+            std::cerr << "encoder_release operation=capture_munmap errno=" << errno << '\n';
         input.clear();output.clear();
-        if(fd>=0) ::close(fd);
+        // Explicitly return both MMAP buffer pools before closing the device.
+        // STREAMOFF returns queued buffers but does not deallocate the pools.
+        for(auto type : {in,out}) {
+            v4l2_requestbuffers buffers{};
+            buffers.type=type; buffers.memory=V4L2_MEMORY_MMAP; buffers.count=0;
+            if(ioctl_retry(VIDIOC_REQBUFS,&buffers)<0)
+                std::cerr << "encoder_release operation=reqbufs_zero type="
+                          << type << " errno=" << errno << '\n';
+        }
+        // close must not be retried on EINTR: the descriptor may already have
+        // been released and reused by another thread.
+        if(::close(fd)<0)
+            std::cerr << "encoder_release operation=close errno=" << errno << '\n';
+        else std::cerr << "encoder_session phase=closed fd=" << fd << '\n';
         fd=-1;
     }
     [[noreturn]] void fail(EncoderErrorCode code,const char* operation){throw EncoderError(code,operation,errno);}

@@ -1,0 +1,13 @@
+# Default SC132GS profile. AE updates the startup exposure and gain seeds.
+schema: 1
+mode: linear
+binning: false
+max_fps: 60
+fps: 60
+ae: true
+brightness: 30
+rows: 672
+gain: 0
+max_exposure_us: 0
+max_gain_index: 128
+revision: 0

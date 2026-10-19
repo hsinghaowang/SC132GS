@@ -1,0 +1,52 @@
+[
+  {
+    "condition": "max16",
+    "eye": 0,
+    "median_raw": 152.0
+  },
+  {
+    "condition": "max16",
+    "eye": 1,
+    "median_raw": 145.0
+  },
+  {
+    "condition": "max2",
+    "eye": 0,
+    "median_raw": 153.0
+  },
+  {
+    "condition": "max2",
+    "eye": 1,
+    "median_raw": 147.0
+  },
+  {
+    "condition": "max256",
+    "eye": 0,
+    "median_raw": 154.0
+  },
+  {
+    "condition": "max256",
+    "eye": 1,
+    "median_raw": 147.0
+  },
+  {
+    "condition": "mid256",
+    "eye": 0,
+    "median_raw": 87.0
+  },
+  {
+    "condition": "mid256",
+    "eye": 1,
+    "median_raw": 84.0
+  },
+  {
+    "condition": "min256",
+    "eye": 0,
+    "median_raw": 52.0
+  },
+  {
+    "condition": "min256",
+    "eye": 1,
+    "median_raw": 53.0
+  }
+]

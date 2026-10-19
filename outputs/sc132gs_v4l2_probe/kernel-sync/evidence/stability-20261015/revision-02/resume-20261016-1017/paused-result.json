@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "failure": "monitor interrupted",
+  "elapsed_s": 232.07845791,
+  "requested_seconds": 7200,
+  "samples": 44,
+  "first_pairs": 1512985,
+  "last_pairs": 1519762,
+  "events_lost": 0,
+  "imu": {
+    "status": "ok",
+    "mode": "gpio_irq",
+    "samples": 46690,
+    "valid": 46690,
+    "wraps": 3340,
+    "min_sensor_delta_ns": 4999466,
+    "max_sensor_delta_ns": 5000534,
+    "sensor_rate_hz": 200,
+    "host_observed_rate_hz": 202.517,
+    "max_fifo_bytes": 224,
+    "fsync_enabled": true,
+    "fsync_samples": 7080,
+    "fsync_offset_min_ns": 3200,
+    "fsync_offset_max_ns": 5002666,
+    "restored": true,
+    "host_sample_time_validated": false,
+    "frame_association_validated": false
+  },
+  "scope": "bounded original RTSP + IMU continuous run; independent event/CSV replay still required"
+}

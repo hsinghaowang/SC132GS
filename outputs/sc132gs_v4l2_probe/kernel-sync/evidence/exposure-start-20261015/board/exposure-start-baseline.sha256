@@ -1,0 +1,11 @@
+583c86bb88ed633cbcd14ace1f282e2365dde21a9206488311fe90c3c16355a4  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/control.txt
+bdf2cc242e9a72b103db3d6f454252d8c1790abb9df82971e06b696691b50554  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/dmesg.txt
+b398e0b2444ba17e884c4a98085f638dc87f10ac03ba942e805fb62d82d96c3e  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/initrd.img
+7f2f8c9e7cc19f9974a62ef56c591cab9a9bb23867d0466b1eb1af658d465b60  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/kernel-fsync.conf
+00f815f9c774ae6f6c390067f4c11802624a8847baaefeb760e2d19c7c84bc7a  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/options.conf
+37b0ccdf0ce580c78ddac4ec78b8d6df6e3430801a603932162b2e9abb8e5ca9  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/qcom-camss.ko
+d22a1f17d9e97cbb22b1a1428bea74e8b22c5c81d43962c5a486dbc96da1808f  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/run-stereo-rtsp.sh
+bd5c6601b3a4ade8754f823d545d7b66a9beed0a114b094614b6fcdcac57a274  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/server.log
+b657a3ee72c864c772a8b6c93be10d6ea4fed4b7d6c62d27c3a0db65cf206935  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/services.txt
+4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/settings.yaml
+0ac5ba25cde49543a3a15db24325963f27182fbb32952edf710157d1517f2279  /home/ubuntu/sc132gs-kernel-sync-20261014/exposure-start-baseline-20261015/stereo-h265-rtsp

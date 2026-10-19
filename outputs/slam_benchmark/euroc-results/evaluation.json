@@ -1,0 +1,1176 @@
+{
+  "platform": "RUBIK Pi 3 QCS6490",
+  "scope": "native sequential image/IMU replay; ROS DDS and physical sensors excluded",
+  "runs": [
+    {
+      "frames": 3682,
+      "input_frames": 3682,
+      "poses": 2784,
+      "elapsed_s": 184.098815793,
+      "paced": true,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "MH_01_easy",
+      "ate_rmse_m": 0.10354513513256108,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2741,
+      "rpe_translation_rmse_m": 0.026179667447117055,
+      "rpe_rotation_rmse_deg": 0.21725229332057722,
+      "ground_truth_matched_poses": 2762,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1403636624.6626308,
+      "matched_end_timestamp": 1403636762.713583,
+      "run": "MH_01_easy-paced-1",
+      "pose_frame_coverage": 0.7561108093427485,
+      "initialization_delay_dataset_s": 44.89999985694885,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 23.16358378098204,
+      "all_frame_processing_ms": {
+        "p50": 29.198125500000003,
+        "p95": 50.014697,
+        "p99": 60.40007076,
+        "max": 93.347155
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 33.7949305,
+        "p95": 51.987196999999995,
+        "p99": 63.53718498,
+        "max": 93.347155
+      },
+      "image_read_ms": {
+        "p50": 9.411047499999999,
+        "p95": 19.543059899999996,
+        "p99": 22.54295062000001,
+        "max": 29.229645
+      },
+      "frontend_tracking_ms": {
+        "p50": 20.884999999999998,
+        "p95": 32.427,
+        "p99": 37.3134,
+        "max": 44.900000000000006
+      },
+      "internal_total_ms": {
+        "p50": 33.6,
+        "p95": 51.69649999999999,
+        "p99": 63.2317,
+        "max": 92.91000000000001
+      },
+      "playback_completion_lag_ms": {
+        "p50": 46.06964307672024,
+        "p95": 281.6397677006792,
+        "p99": 411.2308124893482,
+        "max": 440.09093068371294
+      },
+      "input_pairs_per_wall_second": 20.00012864906218,
+      "pose_updates_per_wall_second": 15.122313459801495,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 185,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 42.833804,
+        "p95": 62.46368749999999,
+        "p99": 73.89848641000003,
+        "max": 107.021354
+      },
+      "playback_lag_first_100_median_ms": 42.6048691022952,
+      "playback_lag_last_100_median_ms": 52.85149907671439,
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 184.66706059399985,
+        "cpu_user_s": 170.208196,
+        "cpu_system_s": 69.091026,
+        "average_cpu_percent": 129.5841398191266,
+        "peak_rss_mib": 84.20703125,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/MH_01_easy/mav0",
+          "/ws/slam_benchmark/results/MH_01_easy-paced-1",
+          "1",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 3682,
+      "input_frames": 3682,
+      "poses": 2784,
+      "elapsed_s": 184.093501265,
+      "paced": true,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "MH_01_easy",
+      "ate_rmse_m": 0.10354513513256108,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2741,
+      "rpe_translation_rmse_m": 0.026179667447117055,
+      "rpe_rotation_rmse_deg": 0.21725229332057722,
+      "ground_truth_matched_poses": 2762,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1403636624.6626308,
+      "matched_end_timestamp": 1403636762.713583,
+      "run": "MH_01_easy-paced-2",
+      "pose_frame_coverage": 0.7561108093427485,
+      "initialization_delay_dataset_s": 44.89999985694885,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 21.051139281608364,
+      "all_frame_processing_ms": {
+        "p50": 32.8493535,
+        "p95": 61.65881629999991,
+        "p99": 85.6278054700001,
+        "max": 264.698659
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 37.225214,
+        "p95": 66.71081814999998,
+        "p99": 90.49419805000001,
+        "max": 264.698659
+      },
+      "image_read_ms": {
+        "p50": 9.3665225,
+        "p95": 20.24750754999999,
+        "p99": 25.50063063,
+        "max": 31.807572
+      },
+      "frontend_tracking_ms": {
+        "p50": 24.685000000000002,
+        "p95": 33.2555,
+        "p99": 38.870000000000005,
+        "max": 59.44
+      },
+      "internal_total_ms": {
+        "p50": 37.04,
+        "p95": 66.23349999999999,
+        "p99": 89.7955,
+        "max": 263.88
+      },
+      "playback_completion_lag_ms": {
+        "p50": 71.80399089300681,
+        "p95": 4145.797036538355,
+        "p99": 4236.858417029998,
+        "max": 4273.717627418577
+      },
+      "input_pairs_per_wall_second": 20.000706025465902,
+      "pose_updates_per_wall_second": 15.12275002034141,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 400,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 45.874337499999996,
+        "p95": 81.30856274999998,
+        "p99": 104.33745227000014,
+        "max": 278.46614700000003
+      },
+      "playback_lag_first_100_median_ms": 47.2373618674319,
+      "playback_lag_last_100_median_ms": 52.30123755114619,
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 185.201409711,
+        "cpu_user_s": 191.257054,
+        "cpu_system_s": 73.902215,
+        "average_cpu_percent": 143.17346148378206,
+        "peak_rss_mib": 84.69140625,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/MH_01_easy/mav0",
+          "/ws/slam_benchmark/results/MH_01_easy-paced-2",
+          "1",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 3682,
+      "input_frames": 3682,
+      "poses": 2784,
+      "elapsed_s": 184.089304539,
+      "paced": true,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "MH_01_easy",
+      "ate_rmse_m": 0.10354513513256108,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2741,
+      "rpe_translation_rmse_m": 0.026179667447117055,
+      "rpe_rotation_rmse_deg": 0.21725229332057722,
+      "ground_truth_matched_poses": 2762,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1403636624.6626308,
+      "matched_end_timestamp": 1403636762.713583,
+      "run": "MH_01_easy-paced-3",
+      "pose_frame_coverage": 0.7561108093427485,
+      "initialization_delay_dataset_s": 44.89999985694885,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 22.36404309872919,
+      "all_frame_processing_ms": {
+        "p50": 36.1060135,
+        "p95": 47.49493935,
+        "p99": 54.71364680000001,
+        "max": 76.119909
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 37.9146385,
+        "p95": 48.97013685,
+        "p99": 55.882859410000016,
+        "max": 76.119909
+      },
+      "image_read_ms": {
+        "p50": 6.5373745,
+        "p95": 20.22060745,
+        "p99": 22.47189452,
+        "max": 26.864944
+      },
+      "frontend_tracking_ms": {
+        "p50": 26.57,
+        "p95": 34.020999999999994,
+        "p99": 38.473800000000004,
+        "max": 61.519999999999996
+      },
+      "internal_total_ms": {
+        "p50": 37.735,
+        "p95": 48.7585,
+        "p99": 55.5834,
+        "max": 75.77000000000001
+      },
+      "playback_completion_lag_ms": {
+        "p50": 47.86530070928711,
+        "p95": 71.49959328324694,
+        "p99": 125.95459571715976,
+        "max": 190.25880105115357
+      },
+      "input_pairs_per_wall_second": 20.001161986137845,
+      "pose_updates_per_wall_second": 15.123094777134101,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 109,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 44.453762499999996,
+        "p95": 55.59819215,
+        "p99": 62.4983031,
+        "max": 83.03126
+      },
+      "playback_lag_first_100_median_ms": 52.94311470929097,
+      "playback_lag_last_100_median_ms": 48.91353257672745,
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 185.09268115999976,
+        "cpu_user_s": 200.499279,
+        "cpu_system_s": 91.392421,
+        "average_cpu_percent": 157.7002927239894,
+        "peak_rss_mib": 87.35546875,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/MH_01_easy/mav0",
+          "/ws/slam_benchmark/results/MH_01_easy-paced-3",
+          "1",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 3682,
+      "input_frames": 3682,
+      "poses": 2784,
+      "elapsed_s": 120.211345845,
+      "paced": false,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "MH_01_easy",
+      "ate_rmse_m": 0.10354513513256108,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2741,
+      "rpe_translation_rmse_m": 0.026179667447117055,
+      "rpe_rotation_rmse_deg": 0.21725229332057722,
+      "ground_truth_matched_poses": 2762,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1403636624.6626308,
+      "matched_end_timestamp": 1403636762.713583,
+      "run": "MH_01_easy-unpaced-1",
+      "pose_frame_coverage": 0.7561108093427485,
+      "initialization_delay_dataset_s": 44.89999985694885,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 27.26686321859914,
+      "all_frame_processing_ms": {
+        "p50": 21.711863,
+        "p95": 45.27691119999999,
+        "p99": 51.883986140000005,
+        "max": 70.88551
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 32.440166,
+        "p95": 46.32492644999999,
+        "p99": 52.60651825000002,
+        "max": 70.88551
+      },
+      "image_read_ms": {
+        "p50": 6.4848495,
+        "p95": 8.7132325,
+        "p99": 9.63190163,
+        "max": 11.121102
+      },
+      "frontend_tracking_ms": {
+        "p50": 22.02,
+        "p95": 32.346999999999994,
+        "p99": 37.6385,
+        "max": 60.87
+      },
+      "internal_total_ms": {
+        "p50": 32.26,
+        "p95": 46.02799999999999,
+        "p99": 52.332500000000024,
+        "max": 70.47
+      },
+      "playback_completion_lag_ms": null,
+      "input_pairs_per_wall_second": 30.62938838358532,
+      "pose_updates_per_wall_second": 23.159211640386072,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 66,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 38.9380405,
+        "p95": 52.84672384999999,
+        "p99": 58.912810210000046,
+        "max": 77.39117
+      },
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 121.17471566800032,
+        "cpu_user_s": 145.21969,
+        "cpu_system_s": 61.520403,
+        "average_cpu_percent": 170.61322723994286,
+        "peak_rss_mib": 84.62890625,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/MH_01_easy/mav0",
+          "/ws/slam_benchmark/results/MH_01_easy-unpaced-1",
+          "0",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 3682,
+      "input_frames": 3682,
+      "poses": 2784,
+      "elapsed_s": 120.926319964,
+      "paced": false,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "MH_01_easy",
+      "ate_rmse_m": 0.10354513513256108,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2741,
+      "rpe_translation_rmse_m": 0.026179667447117055,
+      "rpe_rotation_rmse_deg": 0.21725229332057722,
+      "ground_truth_matched_poses": 2762,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1403636624.6626308,
+      "matched_end_timestamp": 1403636762.713583,
+      "run": "MH_01_easy-unpaced-2",
+      "pose_frame_coverage": 0.7561108093427485,
+      "initialization_delay_dataset_s": 44.89999985694885,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 26.65275305008473,
+      "all_frame_processing_ms": {
+        "p50": 22.025315,
+        "p95": 45.94689404999999,
+        "p99": 53.49033817,
+        "max": 72.506989
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 31.0243335,
+        "p95": 47.298759049999994,
+        "p99": 55.31674292,
+        "max": 72.506989
+      },
+      "image_read_ms": {
+        "p50": 6.5232174999999994,
+        "p95": 9.10551125,
+        "p99": 11.074851070000005,
+        "max": 14.961484
+      },
+      "frontend_tracking_ms": {
+        "p50": 13.325,
+        "p95": 32.34049999999999,
+        "p99": 37.8534,
+        "max": 43.69
+      },
+      "internal_total_ms": {
+        "p50": 30.795,
+        "p95": 47.079499999999996,
+        "p99": 55.048500000000004,
+        "max": 72.14
+      },
+      "playback_completion_lag_ms": null,
+      "input_pairs_per_wall_second": 30.448292820753483,
+      "pose_updates_per_wall_second": 23.022283327804917,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 82,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 38.3616515,
+        "p95": 54.66141979999999,
+        "p99": 62.290583410000025,
+        "max": 79.38738500000001
+      },
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 122.07703544200012,
+        "cpu_user_s": 145.304277,
+        "cpu_system_s": 60.425452,
+        "average_cpu_percent": 168.52451262034785,
+        "peak_rss_mib": 84.3203125,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/MH_01_easy/mav0",
+          "/ws/slam_benchmark/results/MH_01_easy-unpaced-2",
+          "0",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 3682,
+      "input_frames": 3682,
+      "poses": 2784,
+      "elapsed_s": 137.598757477,
+      "paced": false,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "MH_01_easy",
+      "ate_rmse_m": 0.10354513513256108,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2741,
+      "rpe_translation_rmse_m": 0.026179667447117055,
+      "rpe_rotation_rmse_deg": 0.21725229332057722,
+      "ground_truth_matched_poses": 2762,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1403636624.6626308,
+      "matched_end_timestamp": 1403636762.713583,
+      "run": "MH_01_easy-unpaced-3",
+      "pose_frame_coverage": 0.7561108093427485,
+      "initialization_delay_dataset_s": 44.89999985694885,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 22.837988832788014,
+      "all_frame_processing_ms": {
+        "p50": 27.848364500000002,
+        "p95": 52.16768609999999,
+        "p99": 63.46998043000001,
+        "max": 85.392222
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 35.273304499999995,
+        "p95": 54.2929507,
+        "p99": 65.17722404000001,
+        "max": 85.392222
+      },
+      "image_read_ms": {
+        "p50": 7.847224499999999,
+        "p95": 13.53515475,
+        "p99": 15.871887540000005,
+        "max": 21.143226
+      },
+      "frontend_tracking_ms": {
+        "p50": 17.74,
+        "p95": 31.515499999999996,
+        "p99": 35.8934,
+        "max": 43.95
+      },
+      "internal_total_ms": {
+        "p50": 34.995000000000005,
+        "p95": 54.055499999999995,
+        "p99": 64.84080000000002,
+        "max": 84.98
+      },
+      "playback_completion_lag_ms": null,
+      "input_pairs_per_wall_second": 26.758962562692155,
+      "pose_updates_per_wall_second": 20.232740840449473,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 236,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 44.2818055,
+        "p95": 64.41072919999999,
+        "p99": 75.86911531000001,
+        "max": 97.224789
+      },
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 138.16196086799982,
+        "cpu_user_s": 162.670377,
+        "cpu_system_s": 59.036698,
+        "average_cpu_percent": 160.46896961155562,
+        "peak_rss_mib": 87.38671875,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/MH_01_easy/mav0",
+          "/ws/slam_benchmark/results/MH_01_easy-unpaced-3",
+          "0",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 2348,
+      "input_frames": 2348,
+      "poses": 2266,
+      "elapsed_s": 117.37815673499999,
+      "paced": true,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "V2_02_medium",
+      "ate_rmse_m": 0.050773397123977076,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2232,
+      "rpe_translation_rmse_m": 0.026980625804003202,
+      "rpe_rotation_rmse_deg": 0.32843067614395993,
+      "ground_truth_matched_poses": 2252,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1413393890.1040225,
+      "matched_end_timestamp": 1413394002.655818,
+      "run": "V2_02_medium-paced-1",
+      "pose_frame_coverage": 0.965076660988075,
+      "initialization_delay_dataset_s": 4.099999904632568,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 23.318815901671584,
+      "all_frame_processing_ms": {
+        "p50": 39.2638225,
+        "p95": 49.25394445,
+        "p99": 54.99637955,
+        "max": 76.33577
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 39.464774500000004,
+        "p95": 49.3703035,
+        "p99": 55.016423749999994,
+        "max": 76.33577
+      },
+      "image_read_ms": {
+        "p50": 3.5663195,
+        "p95": 4.170477150000001,
+        "p99": 14.272273150000006,
+        "max": 16.749985
+      },
+      "frontend_tracking_ms": {
+        "p50": 27.900000000000002,
+        "p95": 36.447500000000005,
+        "p99": 42.637,
+        "max": 63.64
+      },
+      "internal_total_ms": {
+        "p50": 39.295,
+        "p95": 49.1375,
+        "p99": 54.850500000000004,
+        "max": 76.13000000000001
+      },
+      "playback_completion_lag_ms": {
+        "p50": 48.17228555114343,
+        "p95": 61.17646068371323,
+        "p99": 76.38171492301217,
+        "max": 102.43371010229566
+      },
+      "input_pairs_per_wall_second": 20.00372186198993,
+      "pose_updates_per_wall_second": 19.3051251019034,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 100,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 43.006947,
+        "p95": 52.91475125,
+        "p99": 58.66466464999999,
+        "max": 79.445334
+      },
+      "playback_lag_first_100_median_ms": 47.76549323486324,
+      "playback_lag_last_100_median_ms": 47.04450573486247,
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 117.82986925200021,
+        "cpu_user_s": 132.539002,
+        "cpu_system_s": 71.541874,
+        "average_cpu_percent": 173.19961169059488,
+        "peak_rss_mib": 83.48828125,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/V2_02_medium/mav0",
+          "/ws/slam_benchmark/results/V2_02_medium-paced-1",
+          "1",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 2348,
+      "input_frames": 2348,
+      "poses": 2266,
+      "elapsed_s": 117.397054484,
+      "paced": true,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "V2_02_medium",
+      "ate_rmse_m": 0.050773397123977076,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2232,
+      "rpe_translation_rmse_m": 0.026980625804003202,
+      "rpe_rotation_rmse_deg": 0.32843067614395993,
+      "ground_truth_matched_poses": 2252,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1413393890.1040225,
+      "matched_end_timestamp": 1413394002.655818,
+      "run": "V2_02_medium-paced-2",
+      "pose_frame_coverage": 0.965076660988075,
+      "initialization_delay_dataset_s": 4.099999904632568,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 23.34405486949146,
+      "all_frame_processing_ms": {
+        "p50": 39.0692705,
+        "p95": 49.573732,
+        "p99": 54.517544470000004,
+        "max": 77.768491
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 39.249771499999994,
+        "p95": 49.61383325,
+        "p99": 54.525118250000006,
+        "max": 77.768491
+      },
+      "image_read_ms": {
+        "p50": 3.578384,
+        "p95": 5.101891250000002,
+        "p99": 12.794525010000033,
+        "max": 16.823515
+      },
+      "frontend_tracking_ms": {
+        "p50": 27.89,
+        "p95": 35.94,
+        "p99": 42.5335,
+        "max": 67.26
+      },
+      "internal_total_ms": {
+        "p50": 39.05,
+        "p95": 49.417500000000004,
+        "p99": 54.327,
+        "max": 77.5
+      },
+      "playback_completion_lag_ms": {
+        "p50": 47.98864107672125,
+        "p95": 60.950429762993565,
+        "p99": 72.55239368898043,
+        "max": 91.8073459999996
+      },
+      "input_pairs_per_wall_second": 20.000501804072165,
+      "pose_updates_per_wall_second": 19.302017499159934,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 105,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 42.7955415,
+        "p95": 53.2135475,
+        "p99": 58.56907224999998,
+        "max": 80.411839
+      },
+      "playback_lag_first_100_median_ms": 47.65727834185782,
+      "playback_lag_last_100_median_ms": 46.80806905114878,
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 117.85569308399954,
+        "cpu_user_s": 133.193491,
+        "cpu_system_s": 71.69542,
+        "average_cpu_percent": 173.84727511972554,
+        "peak_rss_mib": 88.453125,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/V2_02_medium/mav0",
+          "/ws/slam_benchmark/results/V2_02_medium-paced-2",
+          "1",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 2348,
+      "input_frames": 2348,
+      "poses": 2266,
+      "elapsed_s": 117.396974003,
+      "paced": true,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "V2_02_medium",
+      "ate_rmse_m": 0.050773397123977076,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2232,
+      "rpe_translation_rmse_m": 0.026980625804003202,
+      "rpe_rotation_rmse_deg": 0.32843067614395993,
+      "ground_truth_matched_poses": 2252,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1413393890.1040225,
+      "matched_end_timestamp": 1413394002.655818,
+      "run": "V2_02_medium-paced-3",
+      "pose_frame_coverage": 0.965076660988075,
+      "initialization_delay_dataset_s": 4.099999904632568,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 23.429106599863857,
+      "all_frame_processing_ms": {
+        "p50": 39.010552000000004,
+        "p95": 49.3380802,
+        "p99": 54.936245400000004,
+        "max": 74.732615
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 39.234745000000004,
+        "p95": 49.4536725,
+        "p99": 55.197533849999935,
+        "max": 74.732615
+      },
+      "image_read_ms": {
+        "p50": 3.5690805,
+        "p95": 4.0592327500000005,
+        "p99": 14.22622143,
+        "max": 17.727319
+      },
+      "frontend_tracking_ms": {
+        "p50": 27.75,
+        "p95": 36.1575,
+        "p99": 42.754,
+        "max": 64.31
+      },
+      "internal_total_ms": {
+        "p50": 39.035,
+        "p95": 49.24,
+        "p99": 55.01299999999993,
+        "max": 74.53
+      },
+      "playback_completion_lag_ms": {
+        "p50": 47.92250060229344,
+        "p95": 61.35967177974672,
+        "p99": 73.15113974102208,
+        "max": 95.09501473486307
+      },
+      "input_pairs_per_wall_second": 20.000515515331752,
+      "pose_updates_per_wall_second": 19.302030731576558,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 94,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 42.7558085,
+        "p95": 52.93056275,
+        "p99": 58.94586754999998,
+        "max": 77.373947
+      },
+      "playback_lag_first_100_median_ms": 46.94570818371585,
+      "playback_lag_last_100_median_ms": 45.908704551140545,
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 118.4956743849998,
+        "cpu_user_s": 132.97515,
+        "cpu_system_s": 70.950869,
+        "average_cpu_percent": 172.09574953549082,
+        "peak_rss_mib": 83.984375,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/V2_02_medium/mav0",
+          "/ws/slam_benchmark/results/V2_02_medium-paced-3",
+          "1",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 2348,
+      "input_frames": 2348,
+      "poses": 2266,
+      "elapsed_s": 90.03843202399999,
+      "paced": false,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "V2_02_medium",
+      "ate_rmse_m": 0.050773397123977076,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2232,
+      "rpe_translation_rmse_m": 0.026980625804003202,
+      "rpe_rotation_rmse_deg": 0.32843067614395993,
+      "ground_truth_matched_poses": 2252,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1413393890.1040225,
+      "matched_end_timestamp": 1413394002.655818,
+      "run": "V2_02_medium-unpaced-1",
+      "pose_frame_coverage": 0.965076660988075,
+      "initialization_delay_dataset_s": 4.099999904632568,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 25.639125460491343,
+      "all_frame_processing_ms": {
+        "p50": 36.5147355,
+        "p95": 47.92483155,
+        "p99": 53.51215882000009,
+        "max": 80.693822
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 36.78785499999999,
+        "p95": 48.143715,
+        "p99": 53.7310715,
+        "max": 80.693822
+      },
+      "image_read_ms": {
+        "p50": 5.060430500000001,
+        "p95": 6.19349125,
+        "p99": 6.787182950000011,
+        "max": 9.13979
+      },
+      "frontend_tracking_ms": {
+        "p50": 26.009999999999998,
+        "p95": 34.847500000000004,
+        "p99": 41.39999999999996,
+        "max": 65.97
+      },
+      "internal_total_ms": {
+        "p50": 36.595,
+        "p95": 47.865,
+        "p99": 53.400999999999996,
+        "max": 80.22999999999999
+      },
+      "playback_completion_lag_ms": null,
+      "input_pairs_per_wall_second": 26.077753101854707,
+      "pose_updates_per_wall_second": 25.167030889609357,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 62,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 41.982942,
+        "p95": 53.3282685,
+        "p99": 58.803428499999995,
+        "max": 85.549492
+      },
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 91.09910207099983,
+        "cpu_user_s": 107.295034,
+        "cpu_system_s": 53.384633,
+        "average_cpu_percent": 176.37897997586322,
+        "peak_rss_mib": 83.76171875,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/V2_02_medium/mav0",
+          "/ws/slam_benchmark/results/V2_02_medium-unpaced-1",
+          "0",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 2348,
+      "input_frames": 2348,
+      "poses": 2266,
+      "elapsed_s": 81.85444165,
+      "paced": false,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "V2_02_medium",
+      "ate_rmse_m": 0.050773397123977076,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2232,
+      "rpe_translation_rmse_m": 0.026980625804003202,
+      "rpe_rotation_rmse_deg": 0.32843067614395993,
+      "ground_truth_matched_poses": 2252,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1413393890.1040225,
+      "matched_end_timestamp": 1413394002.655818,
+      "run": "V2_02_medium-unpaced-2",
+      "pose_frame_coverage": 0.965076660988075,
+      "initialization_delay_dataset_s": 4.099999904632568,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 28.18488855281242,
+      "all_frame_processing_ms": {
+        "p50": 34.2842165,
+        "p95": 46.87111145,
+        "p99": 52.299991630000044,
+        "max": 79.754843
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 34.862277500000005,
+        "p95": 47.04793675,
+        "p99": 52.43458844999999,
+        "max": 79.754843
+      },
+      "image_read_ms": {
+        "p50": 3.543565,
+        "p95": 3.8619484000000006,
+        "p99": 4.133550660000001,
+        "max": 6.459331
+      },
+      "frontend_tracking_ms": {
+        "p50": 24.935000000000002,
+        "p95": 34.9075,
+        "p99": 41.4935,
+        "max": 65.11999999999999
+      },
+      "internal_total_ms": {
+        "p50": 34.68,
+        "p95": 46.8275,
+        "p99": 52.17099999999997,
+        "max": 79.55
+      },
+      "playback_completion_lag_ms": null,
+      "input_pairs_per_wall_second": 28.68506525326717,
+      "pose_updates_per_wall_second": 27.683286994848128,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 47,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 38.3526665,
+        "p95": 50.564107,
+        "p99": 55.83716954999996,
+        "max": 82.80482599999999
+      },
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 82.9498420570003,
+        "cpu_user_s": 100.681855,
+        "cpu_system_s": 46.862333,
+        "average_cpu_percent": 177.8715719538232,
+        "peak_rss_mib": 88.66796875,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/V2_02_medium/mav0",
+          "/ws/slam_benchmark/results/V2_02_medium-unpaced-2",
+          "0",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    },
+    {
+      "frames": 2348,
+      "input_frames": 2348,
+      "poses": 2266,
+      "elapsed_s": 83.416502178,
+      "paced": false,
+      "opencv_threads": 4,
+      "gt_initialization": false,
+      "ros_transport": false,
+      "dataset": "V2_02_medium",
+      "ate_rmse_m": 0.050773397123977076,
+      "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+      "rpe_interval_s": 1,
+      "rpe_pairs": 2232,
+      "rpe_translation_rmse_m": 0.026980625804003202,
+      "rpe_rotation_rmse_deg": 0.32843067614395993,
+      "ground_truth_matched_poses": 2252,
+      "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+      "matched_start_timestamp": 1413393890.1040225,
+      "matched_end_timestamp": 1413394002.655818,
+      "run": "V2_02_medium-unpaced-3",
+      "pose_frame_coverage": 0.965076660988075,
+      "initialization_delay_dataset_s": 4.099999904632568,
+      "post_initialization_pose_frame_coverage": 1.0,
+      "initialized_processing_pair_rate_hz": 27.620193501868307,
+      "all_frame_processing_ms": {
+        "p50": 35.070452,
+        "p95": 47.20466495,
+        "p99": 52.715561380000004,
+        "max": 78.530921
+      },
+      "initialized_frame_processing_ms": {
+        "p50": 35.441304,
+        "p95": 47.34812925,
+        "p99": 52.77969904999999,
+        "max": 78.530921
+      },
+      "image_read_ms": {
+        "p50": 3.5488774999999997,
+        "p95": 3.8826668,
+        "p99": 4.270110100000005,
+        "max": 6.619589
+      },
+      "frontend_tracking_ms": {
+        "p50": 25.62,
+        "p95": 34.4075,
+        "p99": 41.41199999999997,
+        "max": 64.07000000000001
+      },
+      "internal_total_ms": {
+        "p50": 35.25,
+        "p95": 47.162499999999994,
+        "p99": 52.46649999999998,
+        "max": 78.3
+      },
+      "playback_completion_lag_ms": null,
+      "input_pairs_per_wall_second": 28.1479076524891,
+      "pose_updates_per_wall_second": 27.164888731064863,
+      "initialized_nonadvancing_frames": 0,
+      "over_50ms_initialized_frames": 56,
+      "initialized_read_plus_estimate_ms": {
+        "p50": 38.914975,
+        "p95": 50.99699125,
+        "p99": 56.42411324999999,
+        "max": 81.39939700000001
+      },
+      "resources": {
+        "exit_code": 0,
+        "elapsed_wrapper_s": 84.2470683749998,
+        "cpu_user_s": 102.25763,
+        "cpu_system_s": 48.444488,
+        "average_cpu_percent": 178.88114198727496,
+        "peak_rss_mib": 88.0703125,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "command": [
+          "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+          "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+          "/ws/slam_benchmark/datasets/V2_02_medium/mav0",
+          "/ws/slam_benchmark/results/V2_02_medium-unpaced-3",
+          "0",
+          "0"
+        ],
+        "thermal_units": "raw sysfs values; platform units vary by zone"
+      }
+    }
+  ]
+}

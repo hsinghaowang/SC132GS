@@ -1,0 +1,51 @@
+{
+  "hashes": {
+    "/var/lib/sc132gs-camera/settings.json": "9daf563ddd04efeef09807561775d060b83a3cc032bf821ea18362399be661a7",
+    "/var/lib/sc132gs-camera/settings.yaml": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd",
+    "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": "bce3ba5017f04f27a10a791a4b66f22e49774110ea376ee40ed8a22c16b16ea8",
+    "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh": "25e2d7d6ec17ef05e8b315fb7ac2ea4227d225566e462cf3f070a89c0563f247",
+    "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": "d22a1f17d9e97cbb22b1a1428bea74e8b22c5c81d43962c5a486dbc96da1808f"
+  },
+  "ae": {
+    "mode": "off",
+    "camera_mode": "linear",
+    "hdr_enabled": "0",
+    "hdr_ratio": "0",
+    "hdr_second_ticks": "0",
+    "shadow_metric": "sensor_signal_median",
+    "shadow_sample_percent": "100",
+    "effective_target_bp": "3000",
+    "saturation_scope": "unused",
+    "highlight_sample_percent": "0",
+    "cam0_saturation_bp": "0",
+    "cam1_saturation_bp": "0",
+    "saturation_limit_bp": "500",
+    "highlight_limited": "0",
+    "exposure_kind": "linear_rows",
+    "display_gamma_x100": "100",
+    "display_black_raw10": "0",
+    "signal_black_raw10": "37",
+    "signal_target_luma10": "307",
+    "target_kind": "sensor_signal_percent",
+    "hdr_target_raw10": "0",
+    "cam0_shadow_raw10": "0",
+    "cam1_shadow_raw10": "0",
+    "target_percent": "30",
+    "cam0_percent": "28",
+    "cam1_percent": "32",
+    "exposure_lines": "1377",
+    "gain_index": "34",
+    "fps_x10": "299",
+    "max_exposure_lines": "1377",
+    "brightness_limited": "0",
+    "error_errno": "0",
+    "max_exposure_us": "0",
+    "max_gain_index": "128"
+  },
+  "environment": [
+    "BINNING=0",
+    "FPS=30",
+    "SENSOR_MODE=linear",
+    "TOKEN=bd71b542-7126-4e3c-8119-585e4184b927"
+  ]
+}

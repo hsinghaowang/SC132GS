@@ -1,0 +1,91 @@
+{
+  "partial_observation": true,
+  "samples": 32,
+  "elapsed_range_s": [
+    2019.000338259,
+    4005.452065286
+  ],
+  "processes": {
+    "2752": {
+      "name": "bash",
+      "rss_kib": [
+        3300,
+        3300
+      ],
+      "fds": [
+        4
+      ],
+      "threads": [
+        1
+      ],
+      "start_ticks": [
+        3188
+      ]
+    },
+    "2756": {
+      "name": "bash",
+      "rss_kib": [
+        3292,
+        3292
+      ],
+      "fds": [
+        4
+      ],
+      "threads": [
+        1
+      ],
+      "start_ticks": [
+        3191
+      ]
+    },
+    "2928": {
+      "name": "stereo-h265-rts",
+      "rss_kib": [
+        147432,
+        153248
+      ],
+      "fds": [
+        18
+      ],
+      "threads": [
+        11
+      ],
+      "start_ticks": [
+        3238
+      ]
+    },
+    "4405": {
+      "name": "python3",
+      "rss_kib": [
+        19292,
+        20932
+      ],
+      "fds": [
+        7,
+        8
+      ],
+      "threads": [
+        1
+      ],
+      "start_ticks": [
+        25443
+      ]
+    },
+    "4442": {
+      "name": "gs130wi-imu",
+      "rss_kib": [
+        3384,
+        3384
+      ],
+      "fds": [
+        6
+      ],
+      "threads": [
+        1
+      ],
+      "start_ticks": [
+        25467
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+format type=9 size=320x256 stride=0 bytes=307200 planes=1
+format type=10 size=640x480 stride=640 bytes=462848 planes=1
+format type=9 size=640x480 stride=0 bytes=290816 planes=1
+profile=0
+encoded index=0 bytes=753 flags=4008
+encoded index=1 bytes=164 flags=4010
+encoded index=2 bytes=168 flags=4010
+encoded index=3 bytes=168 flags=4010
+encoded index=4 bytes=212 flags=4010
+encoded index=5 bytes=216 flags=4010
+encoded index=6 bytes=268 flags=4010
+encoded index=7 bytes=239 flags=4010
+Setting pipeline to PAUSED ...
+Pipeline is PREROLLING ...
+/GstPipeline:pipeline0/GstH265Parse:h265parse0.GstPad:src: caps = video/x-h265, width=(int)640, height=(int)480, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, colorimetry=(string)bt709, parsed=(boolean)true, stream-format=(string)hvc1, alignment=(string)au, profile=(string)main, tier=(string)high, level=(string)4, codec_data=(buffer)012160000000b0000000000078f000fcfdf8f800000f03200001001740010c01ffff216000000300b00000030000030078ac092100010025420101216000000300b00000030000030078a0050201e165aee4c92ea6a02020205da1425022000100084401c0e30f03b084
+Redistribute latency...
+/GstPipeline:pipeline0/avdec_h265:avdec_h265-0.GstPad:sink: caps = video/x-h265, width=(int)640, height=(int)480, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, colorimetry=(string)bt709, parsed=(boolean)true, stream-format=(string)hvc1, alignment=(string)au, profile=(string)main, tier=(string)high, level=(string)4, codec_data=(buffer)012160000000b0000000000078f000fcfdf8f800000f03200001001740010c01ffff216000000300b00000030000030078ac092100010025420101216000000300b00000030000030078a0050201e165aee4c92ea6a02020205da1425022000100084401c0e30f03b084
+/GstPipeline:pipeline0/avdec_h265:avdec_h265-0.GstPad:src: caps = video/x-raw, format=(string)I420, width=(int)640, height=(int)480, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)bt709, framerate=(fraction)25/1
+/GstPipeline:pipeline0/GstFakeSink:fakesink0.GstPad:sink: caps = video/x-raw, format=(string)I420, width=(int)640, height=(int)480, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)bt709, framerate=(fraction)25/1
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+Redistribute latency...
+New clock: GstSystemClock
+Got EOS from element "pipeline0".
+Execution ended after 0:00:00.013978906
+Setting pipeline to NULL ...
+Freeing pipeline ...
+
+
+format type=9 size=320x256 stride=0 bytes=307200 planes=1
+format type=10 size=640x480 stride=1280 bytes=921600 planes=1
+format type=9 size=640x480 stride=0 bytes=290816 planes=1
+profile=2
+encoded index=0 bytes=1251 flags=4008
+encoded index=1 bytes=336 flags=4010
+encoded index=2 bytes=390 flags=4010
+encoded index=3 bytes=393 flags=4010
+encoded index=4 bytes=447 flags=4010
+encoded index=5 bytes=433 flags=4010
+encoded index=6 bytes=515 flags=4010
+encoded index=7 bytes=517 flags=4010
+[68256.566849] msm_vidc:     fw: <VFW_E:HostDr:265e:78b21000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[68256.566876] msm_vidc:     fw: <VFW_E:HostDr:265e:78b21000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[68256.566884] msm_vidc:     fw: <VFW_E:HostDr:265e:78b21000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[68256.566891] msm_vidc:     fw: <VFW_E:HostDr:265e:78b21000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[68256.567609] msm_vidc:     fw: <VFW_E:HostDr:265e:78b21000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[68256.567630] msm_vidc:     fw: <VFW_E:HostDr:265e:78b21000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[68256.567637] msm_vidc:     fw: <VFW_E:HostDr:265e:78b21000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[68256.567645] msm_vidc:     fw: <VFW_E:HostDr:265e:78b21000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[68256.577803] msm_vidc:     fw: <VFW_E:CmdDec:265e:5cf1d000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+[68256.601865] msm_vidc:     fw: <VFW_E:HostDr:265e:5cf1d000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[68256.601895] msm_vidc:     fw: <VFW_E:HostDr:265e:5cf1d000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[68256.601903] msm_vidc:     fw: <VFW_E:HostDr:265e:5cf1d000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+[68256.601911] msm_vidc:     fw: <VFW_E:HostDr:265e:5cf1d000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+[68256.602648] msm_vidc:     fw: <VFW_E:HostDr:265e:5cf1d000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+[68256.602671] msm_vidc:     fw: <VFW_E:HostDr:265e:5cf1d000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+[68256.602680] msm_vidc:     fw: <VFW_E:HostDr:265e:5cf1d000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+
+
+Setting pipeline to PAUSED ...
+Pipeline is PREROLLING ...
+/GstPipeline:pipeline0/GstH265Parse:h265parse0.GstPad:src: caps = video/x-h265, width=(int)640, height=(int)480, chroma-format=(string)4:2:0, bit-depth-luma=(uint)10, bit-depth-chroma=(uint)10, colorimetry=(string)bt709, parsed=(boolean)true, stream-format=(string)hvc1, alignment=(string)au, profile=(string)main-10, tier=(string)high, level=(string)4, codec_data=(buffer)012220000000b0000000000078f000fcfdfafa00000f03200001001740010c01ffff222000000300b00000030000030078ac092100010025420101222000000300b00000030000030078a0050201e1365aee4c92ea6a02020205da142522000100084401c0e30f03b084
+Redistribute latency...
+/GstPipeline:pipeline0/avdec_h265:avdec_h265-0.GstPad:sink: caps = video/x-h265, width=(int)640, height=(int)480, chroma-format=(string)4:2:0, bit-depth-luma=(uint)10, bit-depth-chroma=(uint)10, colorimetry=(string)bt709, parsed=(boolean)true, stream-format=(string)hvc1, alignment=(string)au, profile=(string)main-10, tier=(string)high, level=(string)4, codec_data=(buffer)012220000000b0000000000078f000fcfdfafa00000f03200001001740010c01ffff222000000300b00000030000030078ac092100010025420101222000000300b00000030000030078a0050201e1365aee4c92ea6a02020205da142522000100084401c0e30f03b084
+/GstPipeline:pipeline0/avdec_h265:avdec_h265-0.GstPad:src: caps = video/x-raw, format=(string)I420_10LE, width=(int)640, height=(int)480, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)bt709, framerate=(fraction)25/1
+/GstPipeline:pipeline0/GstFileSink:filesink0.GstPad:sink: caps = video/x-raw, format=(string)I420_10LE, width=(int)640, height=(int)480, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)bt709, framerate=(fraction)25/1
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+Redistribute latency...
+New clock: GstSystemClock
+Got EOS from element "pipeline0".
+Execution ended after 0:00:00.031709413
+Setting pipeline to NULL ...
+Freeing pipeline ...
+
+
+active
+34879 /home/ubuntu/stereo-h265-rtsp/build-exposure60/stereo-h265-rtsp --cam0 /dev/video0 --cam1 /dev/video3 --bind 192.168.137.226 --port 8554 --mount /stereo --downscale 1 --fps 60 --brightness 40 --auto-exposure off
+

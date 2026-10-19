@@ -1,0 +1,48 @@
+{
+  "status": "camera_capture_prepared_imu_time_pending",
+  "stereo_pairs": 50,
+  "images_written": 100,
+  "paired_driver_stamp_delta_ms": {
+    "p50": 0.274,
+    "p95": 0.29919999999999997,
+    "max": 0.317
+  },
+  "imu_samples": 2628,
+  "png_pixel_roundtrip_passed": true,
+  "SI_unit_conversion_all_rows_passed": true,
+  "target_detector": {
+    "ideal_png": true,
+    "rendered_pdf": true,
+    "internal_corners": 54
+  },
+  "preview_metrics": [
+    {
+      "eye": 0,
+      "mean": 94.50503145105698,
+      "p01": 13.0,
+      "p99": 255.0,
+      "saturated_fraction": 0.03254825367647059
+    },
+    {
+      "eye": 1,
+      "mean": 98.5193115234375,
+      "p01": 14.0,
+      "p99": 255.0,
+      "saturated_fraction": 0.03254538143382353
+    }
+  ],
+  "camera_driver_sequence_gaps": [
+    0,
+    0
+  ],
+  "saved_state_preserved": true,
+  "imu_time_validated": false,
+  "camera_imu_bag_export_allowed": false,
+  "geometric_calibration_solved": false,
+  "limitations": [
+    "No target was moved for this acquisition smoke test.",
+    "Paired driver timestamps do not establish equal exposure times.",
+    "IMU sensor-relative time is not a common host time; no imu0.csv placed in images-only.",
+    "Intrinsic/stereo and camera-IMU calibration still need physical target data and clock/noise work."
+  ]
+}

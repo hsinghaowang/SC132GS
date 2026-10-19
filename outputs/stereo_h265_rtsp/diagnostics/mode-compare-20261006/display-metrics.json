@@ -1,0 +1,37 @@
+{
+  "source": "Decoded 8-bit RTSP screenshots; not RAW sensor saturation",
+  "roi_per_eye_xyxy": [
+    650,
+    660,
+    1080,
+    1060
+  ],
+  "eyes": [
+    {
+      "eye": 0,
+      "linear": {
+        "mean_8bit": 103.824,
+        "near_white_ge_250_percent": 7.311,
+        "highlight_crop_near_white_ge_250_percent": 9.316
+      },
+      "hdr": {
+        "mean_8bit": 103.383,
+        "near_white_ge_250_percent": 6.955,
+        "highlight_crop_near_white_ge_250_percent": 9.269
+      }
+    },
+    {
+      "eye": 1,
+      "linear": {
+        "mean_8bit": 111.231,
+        "near_white_ge_250_percent": 10.015,
+        "highlight_crop_near_white_ge_250_percent": 9.974
+      },
+      "hdr": {
+        "mean_8bit": 110.619,
+        "near_white_ge_250_percent": 9.505,
+        "highlight_crop_near_white_ge_250_percent": 9.912
+      }
+    }
+  ]
+}

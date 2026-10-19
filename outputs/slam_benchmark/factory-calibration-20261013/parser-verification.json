@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "official_revision": "12bde1f530533a11eba1803c1de525cee928c88b",
+  "official_sources_unmodified": true,
+  "source_sha256": {
+    "types.hpp": "44dcf0e2d2fcb1ed10a4971357b62cc3ede811b2ebaea62c96395b3dba3744d5",
+    "base/i2c/i2c.hpp": "465080ec87e8417ac2efc45565203e55d7d7927914253ca83e659a7d0e8bd76e",
+    "devices/eeprom/eeprom.hpp": "549a71e05d47b93faf664b0830be5de364f103d07cf88a3b32080f504ba6573c",
+    "devices/eeprom/union_stereo_imu_fisheye_v1p2r0n4.cpp": "88d4795ba234b1405fa7133e58d134674f008ce1ce08f7caa58959272a9af8e3"
+  },
+  "hardware_access_during_crosscheck": false,
+  "header_probe_passed": true,
+  "intrinsic_and_distortion_doubles_exactly_matching": 16,
+  "geometric_accuracy_validated": false,
+  "scope": "C++17 original decoder against captured EEPROM, independent of Python unpack implementation"
+}

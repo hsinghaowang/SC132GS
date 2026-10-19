@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "timestamp_offset_ns": 8196429,
+  "source": "exposure_midpoint_estimate",
+  "reference_exposure_rows": 1377,
+  "nominal_rows_per_second": 84000,
+  "assumed_exposure_start_offset_ns": 0,
+  "model": "fixed reference exposure duration / 2, rounded to nearest ns",
+  "ae_enabled": true,
+  "physically_calibrated_exposure_start": false,
+  "limitations": [
+    "fixed offset does not follow AE exposure changes",
+    "not derived from DMA latency / 2",
+    "not V4L2 SOE semantics"
+  ]
+}

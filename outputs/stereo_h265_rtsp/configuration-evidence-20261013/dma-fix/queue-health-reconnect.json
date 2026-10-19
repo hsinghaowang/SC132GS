@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "completed_cases": 6,
+  "cases": [
+    {
+      "case": 0,
+      "frames": 120,
+      "width": 2176,
+      "height": 1280,
+      "format": "yuv420p10le",
+      "pts_fps": 59.99764715109212,
+      "elapsed_s": 2.327999999979511,
+      "passed": true
+    },
+    {
+      "case": 1,
+      "frames": 120,
+      "width": 2176,
+      "height": 1280,
+      "format": "yuv420p10le",
+      "pts_fps": 60.003361532858975,
+      "elapsed_s": 2.344000000040978,
+      "passed": true
+    },
+    {
+      "case": 2,
+      "frames": 120,
+      "width": 2176,
+      "height": 1280,
+      "format": "yuv420p10le",
+      "pts_fps": 59.99932773862477,
+      "elapsed_s": 2.327999999979511,
+      "passed": true
+    },
+    {
+      "case": 3,
+      "frames": 120,
+      "width": 2176,
+      "height": 1280,
+      "format": "yuv420p10le",
+      "pts_fps": 59.996974942439884,
+      "elapsed_s": 2.3439999999827705,
+      "passed": true
+    },
+    {
+      "case": 4,
+      "frames": 120,
+      "width": 2176,
+      "height": 1280,
+      "format": "yuv420p10le",
+      "pts_fps": 60.00369770686149,
+      "elapsed_s": 2.3429999999934807,
+      "passed": true
+    },
+    {
+      "case": 5,
+      "frames": 120,
+      "width": 2176,
+      "height": 1280,
+      "format": "yuv420p10le",
+      "pts_fps": 60.00369770686149,
+      "elapsed_s": 2.344000000040978,
+      "passed": true
+    }
+  ]
+}

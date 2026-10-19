@@ -1,0 +1,50 @@
+Main10 hardware retry SUCCESS — 2026-10-08 (Asia/Taipei)
+
+Correction: the current board can encode real HEVC Main10. Earlier failures do
+not establish that this driver/firmware cannot use Main10.
+
+Board: 192.168.137.226; kernel 6.8.0-1084-qcom.
+Firmware: video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf.
+No kernel/firmware or production plugin modifications were installed.
+
+Successful configuration:
+- Native C++20 V4L2 harness, /dev/video33.
+- Set HEVC capture codec, set P010 input, re-set capture dimensions.
+- Explicit BT.709 transfer/matrix with limited range.
+- Main10 profile; mmap buffers; capture STREAMON before output STREAMON.
+- NV12/Main 640x480 baseline passed 8 frames with same harness.
+- P010/Main10 640x480 passed 8 frames.
+- P010/Main10 2176x1280, requested 60 FPS, passed 8 frames.
+Both capture-first ordering and explicit colorspace differ from the initial
+failed harness; their individual causal roles have not been isolated.
+Do not claim a unique root cause or measured sustained 60 FPS.
+
+Bitstream proof:
+h265parse reports profile=main-10, luma=10 bits, chroma=10 bits.
+avdec_h265 outputs I420_10LE at 2176x1280 and reaches EOS.
+Numeric analysis confirms 8 decoded frames and 871–878 distinct luma values
+per frame, with all four low-two-bit residues present.
+Synthetic linear P010 gradient error relative to input:
+RMSE 0.496–0.782; per-frame P99 absolute error 1; maximum error up to 13.
+Chroma remains exactly 512. These are synthetic-gradient measurements,
+not raw camera/stereo quality measurements or bit-exact preservation.
+Artifacts: hardware-main10-2176x1280.hevc, retry-metrics.json,
+retry-logs.txt, retry-kernel.log, retry-restored.png.
+
+Driver source reference:
+Nearby Ubuntu source version 6.8.0-1079.84 diff was inspected (not exact
+running 1084 source). QCM6490 capabilities include HEVC P010 and TP10C.
+Media layout helpers specify P010 byte stride align(width*2,256),
+pixel stride align(width,128), Y scanlines align(height,32).
+At tested dimensions these match the driver-returned layouts.
+GStreamer 1.24.2 upstream V4L2 object source lacks P010 mapping:
+https://raw.githubusercontent.com/GStreamer/gstreamer/1.24.2/subprojects/gst-plugins-good/sys/v4l2/gstv4l2object.c
+Current installed factory rejects P010 before linking; native V4L2 bypasses
+this limitation. Camera RTSP application still uses original NV12.
+
+Restoration:
+Stopped camera service before tests. Restored original service afterwards.
+Confirmed active original 60 FPS, downscale=1, brightness=40, AE=off process.
+RTSP/TCP software decode to retry-restored.png completed; image inspected.
+Camera-to-Main10 RTSP integration and VLC 10-bit display remain future work.
+

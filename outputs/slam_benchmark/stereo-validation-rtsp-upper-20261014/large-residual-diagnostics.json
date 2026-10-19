@@ -1,0 +1,10 @@
+{
+  "native_virtual_focal_px": 487.6569385939076,
+  "corner_count": 4644,
+  "count_above_1px": 51,
+  "count_above_3px": 16,
+  "count_above_5px": 15,
+  "maximum_px": 11.65192700575659,
+  "largest_error_pair": 2652,
+  "residual_based_rejection_performed": false
+}

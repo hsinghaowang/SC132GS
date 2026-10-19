@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "session": 7,
+  "smmu_or_oops_errors": 0,
+  "queue_errors": 0,
+  "server_dropped_fps": 0,
+  "last_pairs": 20322,
+  "service_restarts": 0
+}

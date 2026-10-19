@@ -1,0 +1,5 @@
+*.json -text -whitespace
+*.jsonl -text -whitespace
+*.txt -text -whitespace
+*.log -text -whitespace
+*.dsc -text -whitespace

@@ -1,0 +1,76 @@
+{
+  "session": "target-preview-20261014",
+  "sampled_pairs": 3,
+  "stereo_target_pairs": 0,
+  "target": {
+    "inner_corners": [
+      9,
+      6
+    ],
+    "square_size_m_nominal": 0.02,
+    "physical_square_measurement_verified": false
+  },
+  "observations": [
+    {
+      "pair_id": 0,
+      "eyes": [
+        {
+          "eye": 0,
+          "found": false,
+          "detector": "SB",
+          "image": "cam0/72258936346000-7.pgm",
+          "sha256": "d09ffca1db0fd2347442fe1a5c78fec5f6d7202492eab7ebf0fbcc0916b46666"
+        },
+        {
+          "eye": 1,
+          "found": false,
+          "detector": "SB",
+          "image": "cam1/72258936565000-0.pgm",
+          "sha256": "f7891b210b30fa555d0654037716c9a716c971297d36eea53b8d5c949cd08603"
+        }
+      ],
+      "both_found": false
+    },
+    {
+      "pair_id": 84,
+      "eyes": [
+        {
+          "eye": 0,
+          "found": false,
+          "detector": "SB",
+          "image": "cam0/72261736468000-91.pgm",
+          "sha256": "c779525324bf23a78822416d05b18544653d91051383285a18e3324c60d190b2"
+        },
+        {
+          "eye": 1,
+          "found": false,
+          "detector": "SB",
+          "image": "cam1/72261736728000-84.pgm",
+          "sha256": "3bb969dc735e9cead3a79f95f74db6c57a5c81319137da153af65128e2013ccd"
+        }
+      ],
+      "both_found": false
+    },
+    {
+      "pair_id": 174,
+      "eyes": [
+        {
+          "eye": 0,
+          "found": false,
+          "detector": "SB",
+          "image": "cam0/72264736465000-181.pgm",
+          "sha256": "47931e92b190248260745865fd77478b0b8fe8528c5f671b0a9f846a18167868"
+        },
+        {
+          "eye": 1,
+          "found": false,
+          "detector": "SB",
+          "image": "cam1/72264736726000-174.pgm",
+          "sha256": "45cc395406383566b3ff21943ca8836d7df7e92b84ba643aa1c3befc3205504f"
+        }
+      ],
+      "both_found": false
+    }
+  ],
+  "calibration_fitted": false
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "source_sha256": "ea56dce9ab809491dcba7e5d4732d6a79f905649218a47d3859420963995613b",
+  "publication_sha256": "46357f9da3216712c766ec3a02d9d89ca5d00430ff0072208d7bed1d855b64c4",
+  "worker_sha256": "b0de3816cf6f04daa1fb7e85f039214470b2ea84145b3f460ecce3444915a888",
+  "queue_capacity": 256
+}

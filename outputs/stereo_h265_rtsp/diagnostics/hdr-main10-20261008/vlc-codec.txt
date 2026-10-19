@@ -1,0 +1,37 @@
+Window: "Current Media Information", App: vlc.exe.
+	0 視窗 Current Media Information Secondary Actions: Raise
+		1 標題列 (settable, string) Value: Current Media Information
+			2 功能表列 系統 ID: MenuBar
+				3 功能表項目 系統
+			4 按鈕 最小化
+			5 按鈕 (disabled) 最大化
+			6 按鈕 關閉
+		1903 custom
+			1904 窗格
+				1905 custom
+					1906 文字 Information about what your media or stream is made of. Muxer, Audio and Video Codecs, Subtitles are shown.
+					1907 樹狀目錄
+						1908 樹狀目錄項目 (selectable) Stream 0
+						1909 樹狀目錄項目 (selectable) Codec: MPEG-H Part2/HEVC (H.265) (hevc)
+						1910 樹狀目錄項目 (selectable) Type: Video
+						1911 樹狀目錄項目 (selectable) Video resolution: 2176x1280
+						1912 樹狀目錄項目 (selectable) Buffer dimensions: 2176x1280
+						1913 樹狀目錄項目 (selectable) Frame rate: 30
+						1914 樹狀目錄項目 (selectable) Decoded format: Planar 4:2:0 YUV 10-bit LE (I0AL)
+						1915 樹狀目錄項目 (selectable) Orientation: Top left
+						1916 樹狀目錄項目 (selectable) Color primaries: ITU-R BT.709
+						1917 樹狀目錄項目 (selectable) Color space: ITU-R BT.709 Range
+						1918 樹狀目錄項目 (selectable) Chroma location: Left
+			1919 索引標籤 Codec Alt+d
+				1920 索引標籤項目 (selectable) General Alt+G
+				1921 索引標籤項目 (selectable) Metadata Alt+M
+				1922 索引標籤項目 (selectable) Codec Alt+d
+				1923 索引標籤項目 (selectable) Statistics Alt+t
+		1924 文字 Location:
+		1925 編輯 Value: rtsp://192.168.137.226:8554/stereo
+		1926 按鈕 Close Enter
+
+Document text: ```
+Information about what your media or stream is made of.
+Muxer, Audio and Video Codecs, Subtitles are shown.
+```

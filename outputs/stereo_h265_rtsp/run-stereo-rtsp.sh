@@ -15,24 +15,31 @@ CTL=${CTL:-/usr/local/bin/sc132gs-ctl}
 mode_status=$("$CTL" mode)
 if [[ $mode_status == 'ok camera_mode=hdr '* ]]; then
     FPS=${FPS:-30}
-    if (( FPS != 30 )); then
-        echo 'SC132GS HDR mode requires FPS=30.' >&2
+    if (( FPS < 1 || FPS > 30 )); then
+        echo 'SC132GS HDR supports integer FPS=1..30.' >&2
         exit 1
     fi
 elif [[ $mode_status == 'ok camera_mode=linear '* ]]; then
     FPS=${FPS:-60}
-    if (( FPS != 30 && FPS != 60 )); then
-        echo 'SC132GS Linear mode requires FPS=30 or FPS=60.' >&2
+    if (( FPS < 1 || FPS > 60 )); then
+        echo 'SC132GS Linear supports integer FPS=1..60.' >&2
         exit 1
     fi
 else
     echo 'Cannot determine a consistent mode for both cameras.' >&2
     exit 1
 fi
-BRIGHTNESS=${BRIGHTNESS:-40}
+BRIGHTNESS=${BRIGHTNESS:-30}
 AUTO_EXPOSURE=${AUTO_EXPOSURE:-1}
 HEVC_PROFILE=${HEVC_PROFILE:-main}
+TONE_MAP=${TONE_MAP:-off}
 BITRATE=${BITRATE:-20000000}
+# Optional deployment affinity: keep pixel processing on the selected CPUs.
+CPU_RUNNER=()
+[[ -z ${CAMERA_CPUS:-} ]] || CPU_RUNNER=(taskset --cpu-list "$CAMERA_CPUS")
+GPU_OPTIONS=()
+[[ -z ${GPU_RECTIFICATION_MAP:-} ]] || GPU_OPTIONS+=(--gpu-rectification-map "$GPU_RECTIFICATION_MAP")
+[[ -z ${DEPTH_CALIBRATION:-} ]] || GPU_OPTIONS+=(--depth-calibration "$DEPTH_CALIBRATION")
 case "$AUTO_EXPOSURE" in
     1) AE_MODE=on ;;
     0) AE_MODE=off ;;
@@ -72,7 +79,7 @@ fi
 # Matches the already verified bring-up order: start periodic FSYNC before
 # both V4L2 receivers STREAMON. The service captures every trigger directly.
 kill -USR1 "$generator_pid"
-"$SERVER_BIN" --cam0 "$CAM0" --cam1 "$CAM1" \
+"${CPU_RUNNER[@]}" "$SERVER_BIN" --cam0 "$CAM0" --cam1 "$CAM1" \
     --bind "$BIND" --port "$PORT" --mount /stereo \
     --downscale "$DOWNSCALE" --fps "$FPS" --brightness "$BRIGHTNESS" \
-    --auto-exposure "$AE_MODE" --hevc-profile "$HEVC_PROFILE" --bitrate "$BITRATE"
+    --auto-exposure "$AE_MODE" --hevc-profile "$HEVC_PROFILE" --tone-map "$TONE_MAP" --bitrate "$BITRATE" "${GPU_OPTIONS[@]}"

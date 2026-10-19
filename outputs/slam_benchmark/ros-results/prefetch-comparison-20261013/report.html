@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>OpenVINS 提前解碼回放</title>
+<style>body{font:16px/1.65 system-ui,sans-serif;max-width:1120px;margin:32px auto;padding:0 24px;color:#16263b}table{border-collapse:collapse;width:100%;margin:18px 0}td,th{padding:9px;border-bottom:1px solid #dce3eb;text-align:right}td:first-child,th:first-child{text-align:left}th{background:#edf4fb}.note{background:#f3f6fa;padding:16px;border-radius:8px}a{color:#1753bb}</style>
+<h1>RUBIK Pi 3：提前解碼版本未通過輸入完整性檢查</h1><p>2026-10-13。估測器 binary／YAML 不變，位姿仍經 rclpy 接收 stock /poseimu。C++17 發布器增加 owned 解碼工作者、最多四對影像的準備佇列。原發布器零漏收版本保留為基準。</p>
+<div class="note"><strong>不能判定為效能改善：</strong>四次完整候選回放都有 IMU 漏收。最後 MH 第 2 次與另一工作啟動的相機串流重疊；前三次在相機／編譯程序未被抽樣偵測到的條件下已漏收，不能用最後一次的背景負載解釋全部問題。下表只列無該重疊的失敗診斷數據，沒有合格候選。</div>
+<div class="note"><strong>量測範圍已改變：</strong>原發布器把 PNG 讀取與解碼放在影格排程之後；本版本提前解碼，延遲由已準備影像的發布排程開始計算。解碼成本沒有消失，這是減少資料集回放工具對估測量測的干擾，不代表實體相機或曝光到位姿已達此延遲。</div>
+<table><tr><th>資料集</th><th>原發布器 P95 ms</th><th>候選診斷 P95 ms</th><th>候選診斷最大 ms</th><th>原影像發布 P95 ms</th><th>候選影像發布 P95 ms</th></tr>
+<tr><td>MH_01_easy</td><td>78.5</td><td>60.3–60.3</td><td>105.7–105.7</td><td>33.3</td><td>4.5–4.5</td></tr>
+<tr><td>V2_02_medium</td><td>77.9</td><td>63.9–64.8</td><td>102.5–106.8</td><td>31.8</td><td>6.0–6.2</td></tr>
+</table><table><tr><th>回放</th><th>相機／編譯重疊</th><th>P95／最大 ms</th><th>IMU 漏收／送出</th><th>ATE cm</th><th>有效比較</th></tr>
+<tr><td>MH_01_easy-paced-prefetch-1</td><td>未偵測到</td><td>60.3／105.7</td><td>526／36820</td><td>22.260</td><td>未通過</td></tr>
+<tr><td>MH_01_easy-paced-prefetch-2</td><td>偵測到</td><td>63.4／124.0</td><td>448／36820</td><td>14.176</td><td>未通過</td></tr>
+<tr><td>V2_02_medium-paced-prefetch-1</td><td>未偵測到</td><td>63.9／102.5</td><td>308／23490</td><td>5.534</td><td>未通過</td></tr>
+<tr><td>V2_02_medium-paced-prefetch-2</td><td>未偵測到</td><td>64.8／106.8</td><td>332／23490</td><td>5.213</td><td>未通過</td></tr>
+</table><p>四次完整候選回放均正常退出、初始化後位姿涵蓋率 100%，但均漏收 IMU。事件種類／索引／時間戳順序 SHA-256 相同只表示發布器嘗試送出相同資料，不表示接收端全數收到。抽樣 24 對影像逐像素與 241 筆 IMU 數值短驗證通過；SIGINT 約 318 ms 退出、預期回報 Interrupted。兩者均不能取代完整回放的輸入完整性驗收。</p>
+<p>先前單純更換 C++ 發布器沒有明顯改善 MH：單眼 PNG 解碼 P95 約 16.6 ms，訊息建立 P95 不到 0.2 ms。原試驗的 source／原始資料與結果均保留，可由連結重建比較。</p>
+<h2>串流與其他工作</h2><p>本工作在 10:49 用原保存設定恢復相機，驗證因 capture timeout 失敗；同時有 SMMU fault，尚未證實因果。另一工作於 11:09:42 啟動串流，最後一次回放受影響。批次結束快照顯示 active、Linear 60、AE 關閉、gain 27；這是當時快照，並非新的長時間串流驗證。使用者確認另一工作正在長時間測試，後續僅在 Windows 本機分析，保留板上狀態。<a href="../publisher-comparison-20261013/camera-recovery/result.json">本工作恢復失敗紀錄</a>。</p>
+<h2>逐筆 IMU 離線定位</h2><p>接收事件逐筆時間戳配對與接收器独立總數相符：MH 漏收 526／448 筆、V2 漏收 308／332 筆。全部都是單筆漏收，來源時間戳與影像相同或相差約 128 ns，沒有連續多筆中斷；漏掉的 IMU 在發布紀錄中仍存在，發布起始延遲 P95 約 0.52–0.57 ms。估測工作者停止時放棄量測為 0。這縮小到影像發布鄰近時段的接收／傳輸問題，尚不能直接判定 DDS 或排程器根因。</p><p>MH 未偵測到串流重疊的候選 ATE 為 22.26 cm，同期零漏收對照為 12.00 cm。較低延遲伴隨輸入不等價與精度差異，故不採用。</p><h2>下一步</h2><p>離線對照逐筆 IMU 發布／接收、漏收連續區段與影像發布時段，責任位置尚未定案。待板子可用後，先驗收零輸入漏收與精度，再評估延遲；目前不切換到候選版本。</p>
+<p><a href="comparison.json">完整分段與驗證結果</a> · <a href="provenance.json">執行檔／設定雜湊</a> · <a href="../publisher-comparison-20261013/report.html">C++ 發布器同期對照</a> · <a href="../evaluation.json">所有逐次評估</a></p></html>

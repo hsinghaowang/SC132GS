@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-10-16T02:17:58.044164+00:00",
+  "requested_seconds": 7200,
+  "boot_id": "c5c9582b-15bc-42d1-a61a-976a368933fd",
+  "module_srcversion": "C243ABE8CAC3FA872B2A08C",
+  "persistent_files_match": {
+    "/etc/modprobe.d/sc132gs-csid-monitor.conf": true,
+    "/var/lib/sc132gs-camera/settings.json": true,
+    "/var/lib/sc132gs-camera/settings.yaml": true,
+    "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": true,
+    "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh": true,
+    "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": true
+  },
+  "previous_run": "/home/ubuntu/sc132gs-stability-20261015/revision-02/paused-20261015-1847",
+  "long_run_service": {
+    "MainPID": "25219",
+    "ActiveState": "active"
+  },
+  "resources_service": {
+    "MainPID": "25251",
+    "ActiveState": "active"
+  },
+  "progress": {
+    "state": "running",
+    "elapsed_s": 0.20762997300334973,
+    "requested_seconds": 7200,
+    "pairs": 1512985,
+    "pulses": 1513067,
+    "failure": null,
+    "sample_count": 1,
+    "imu_pid": 25246
+  }
+}

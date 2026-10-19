@@ -1,0 +1,24 @@
+85356498786
+exposure: 8
+exposure: 8
+105438724910
+exposure: 32
+exposure: 32
+125531955655
+exposure: 808
+exposure: 808
+145629974474
+exposure: 1330
+exposure: 1330
+165708092745
+exposure: 1360
+exposure: 1360
+185796475516
+exposure: 1377
+exposure: 1377
+205883841175
+exposure: 8
+exposure: 8
+225978871872
+exposure: 1377
+exposure: 1377

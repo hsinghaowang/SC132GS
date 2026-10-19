@@ -1,0 +1,60 @@
+{
+  "kernel_arm64_build_passed": true,
+  "kernel_build_log_sha256": "49a6e0eaa09c66ff06f541e0fe8f8459586ca02563602c42b2067556146f3c10",
+  "ctest_passed": 11,
+  "ctest_failed": 0,
+  "ctest_log_sha256": "2d603c90c4f1ff0c07eb7b771f64e4e9a991f6ca3dd1545db3e5bbf6a864a73d",
+  "association_fixture_checks_passed": 32,
+  "cpp17_status_api_check_passed": true,
+  "raw_analysis": {
+    "eyes": {
+      "0": {
+        "frames": 18144,
+        "duration_s": 604.766662,
+        "fps": 30.00000023149424,
+        "gaps": 0,
+        "monotonic": true,
+        "invalid": 0
+      },
+      "1": {
+        "frames": 18138,
+        "duration_s": 604.566658,
+        "fps": 30.000000430060105,
+        "gaps": 0,
+        "monotonic": true,
+        "invalid": 0
+      }
+    },
+    "passed": true,
+    "identity_errors": 0,
+    "provenance_ok": true,
+    "timestamp_offset_ns": 344903,
+    "source": "exposure_start_estimate",
+    "startup_invalid_buffers": 2,
+    "exact_pairs": 18138,
+    "unpaired": [
+      6,
+      0
+    ],
+    "maximum_pair_delta_ns": 0,
+    "internal_unpaired": 0
+  },
+  "restored_state": {
+    "passed": true,
+    "abi": 4,
+    "source": "exposure_start_estimate",
+    "timestamp_offset_ns": 344903,
+    "session": 5,
+    "smmu_or_oops_errors": 0,
+    "queue_errors": 0,
+    "server_dropped_fps": 0,
+    "last_pairs": 4209,
+    "service_restarts": 0
+  },
+  "archive_verification": {
+    "archive_sha256": "dc5d2932ea5297e58110552fbc845e2569c7231cd9944232498bc72fdfb732aa",
+    "manifest_files_verified": 99,
+    "independent_raw_replay_agrees": true,
+    "model_replay_passed": true
+  }
+}

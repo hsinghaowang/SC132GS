@@ -1,0 +1,339 @@
+{
+  "stream_id_hex": "0x8a0",
+  "matches": [
+    {
+      "node": "soc@0/camss@acaf000",
+      "property": "iommus",
+      "values": [
+        "0x43",
+        "0x800",
+        "0x4e0"
+      ],
+      "status": "okay",
+      "stream_matches": [
+        {
+          "stream_id": "0x800",
+          "mask": "0x4e0",
+          "matches_fault": true
+        }
+      ]
+    },
+    {
+      "node": "soc@0/qcom,cam_smmu/msm_cam_smmu_ife",
+      "property": "iommus",
+      "values": [
+        "0x43",
+        "0x800",
+        "0x4e0",
+        "0x43",
+        "0x820",
+        "0x4e0",
+        "0x43",
+        "0x840",
+        "0x4e0",
+        "0x43",
+        "0x860",
+        "0x4e0",
+        "0x43",
+        "0x880",
+        "0x4e0",
+        "0x43",
+        "0x8a0",
+        "0x4e0",
+        "0x43",
+        "0x8c0",
+        "0x4e0",
+        "0x43",
+        "0x8e0",
+        "0x4e0",
+        "0x43",
+        "0xc00",
+        "0x4e0",
+        "0x43",
+        "0xc20",
+        "0x4e0",
+        "0x43",
+        "0xc40",
+        "0x4e0",
+        "0x43",
+        "0xc60",
+        "0x4e0",
+        "0x43",
+        "0xc80",
+        "0x4e0",
+        "0x43",
+        "0xca0",
+        "0x4e0",
+        "0x43",
+        "0xcc0",
+        "0x4e0",
+        "0x43",
+        "0xce0",
+        "0x4e0"
+      ],
+      "status": "okay (default)",
+      "stream_matches": [
+        {
+          "stream_id": "0x800",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0x820",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0x840",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0x860",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0x880",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0x8a0",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0x8c0",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0x8e0",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0xc00",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0xc20",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0xc40",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0xc60",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0xc80",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0xca0",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0xcc0",
+          "mask": "0x4e0",
+          "matches_fault": true
+        },
+        {
+          "stream_id": "0xce0",
+          "mask": "0x4e0",
+          "matches_fault": true
+        }
+      ]
+    },
+    {
+      "node": "soc@0/qcom,cam_smmu/msm_cam_smmu_lrme",
+      "property": "iommus",
+      "values": [
+        "0x43",
+        "0x2100",
+        "0x20",
+        "0x43",
+        "0x2120",
+        "0x20"
+      ],
+      "status": "okay (default)",
+      "stream_matches": [
+        {
+          "stream_id": "0x2100",
+          "mask": "0x20",
+          "matches_fault": false
+        },
+        {
+          "stream_id": "0x2120",
+          "mask": "0x20",
+          "matches_fault": false
+        }
+      ]
+    },
+    {
+      "node": "soc@0/qcom,cam_smmu/msm_cam_smmu_cpas_cdm",
+      "property": "iommus",
+      "values": [
+        "0x43",
+        "0x2040",
+        "0x0"
+      ],
+      "status": "okay (default)",
+      "stream_matches": [
+        {
+          "stream_id": "0x2040",
+          "mask": "0x0",
+          "matches_fault": false
+        }
+      ]
+    },
+    {
+      "node": "soc@0/qcom,cam_smmu/msm_cam_smmu_icp",
+      "property": "iommus",
+      "values": [
+        "0x43",
+        "0x2000",
+        "0x20",
+        "0x43",
+        "0x2020",
+        "0x20",
+        "0x43",
+        "0x2062",
+        "0x0",
+        "0x43",
+        "0x2080",
+        "0x20",
+        "0x43",
+        "0x20a0",
+        "0x20",
+        "0x43",
+        "0x2140",
+        "0x0"
+      ],
+      "status": "okay (default)",
+      "stream_matches": [
+        {
+          "stream_id": "0x2000",
+          "mask": "0x20",
+          "matches_fault": false
+        },
+        {
+          "stream_id": "0x2020",
+          "mask": "0x20",
+          "matches_fault": false
+        },
+        {
+          "stream_id": "0x2062",
+          "mask": "0x0",
+          "matches_fault": false
+        },
+        {
+          "stream_id": "0x2080",
+          "mask": "0x20",
+          "matches_fault": false
+        },
+        {
+          "stream_id": "0x20a0",
+          "mask": "0x20",
+          "matches_fault": false
+        },
+        {
+          "stream_id": "0x2140",
+          "mask": "0x0",
+          "matches_fault": false
+        }
+      ]
+    },
+    {
+      "node": "soc@0/qcom,cam_smmu/msm_cam_smmu_jpeg",
+      "property": "iommus",
+      "values": [
+        "0x43",
+        "0x20c0",
+        "0x20",
+        "0x43",
+        "0x20e0",
+        "0x20"
+      ],
+      "status": "okay (default)",
+      "stream_matches": [
+        {
+          "stream_id": "0x20c0",
+          "mask": "0x20",
+          "matches_fault": false
+        },
+        {
+          "stream_id": "0x20e0",
+          "mask": "0x20",
+          "matches_fault": false
+        }
+      ]
+    },
+    {
+      "node": "soc@0/video-codec@aa00000/non-secure-cb",
+      "property": "iommus",
+      "values": [
+        "0x43",
+        "0x2180",
+        "0x20"
+      ],
+      "status": "okay (default)",
+      "stream_matches": [
+        {
+          "stream_id": "0x2180",
+          "mask": "0x20",
+          "matches_fault": false
+        }
+      ]
+    }
+  ],
+  "phandle_nodes": {
+    "0x43": "soc@0/iommu@15000000"
+  },
+  "captures": [
+    {
+      "eye": "cam0",
+      "node": "/dev/video0",
+      "returncode": 0,
+      "format": "Format Video Capture Multiplanar:\n\tWidth/Height      : 1088/1280\n\tPixel Format      : 'pRAA' (10-bit Bayer RGRG/GBGB Packed)\n\tField             : None\n\tNumber of planes  : 1\n\tFlags             : \n\tColorspace        : sRGB\n\tTransfer Function : sRGB\n\tYCbCr/HSV Encoding: ITU-R 601\n\tQuantization      : Full Range\n\tPlane 0           :\n\t   Bytes per Line : 1360\n\t   Size Image     : 1740800\n",
+      "error": ""
+    },
+    {
+      "eye": "cam1",
+      "node": "/dev/video3",
+      "returncode": 0,
+      "format": "Format Video Capture Multiplanar:\n\tWidth/Height      : 1088/1280\n\tPixel Format      : 'pRAA' (10-bit Bayer RGRG/GBGB Packed)\n\tField             : None\n\tNumber of planes  : 1\n\tFlags             : \n\tColorspace        : sRGB\n\tTransfer Function : sRGB\n\tYCbCr/HSV Encoding: ITU-R 601\n\tQuantization      : Full Range\n\tPlane 0           :\n\t   Bytes per Line : 1360\n\t   Size Image     : 1740800\n",
+      "error": ""
+    }
+  ],
+  "camera_platform_devices": [
+    {
+      "device": "acb3000.camss",
+      "driver": "/sys/bus/platform/drivers/qcom-camss",
+      "iommu_group": "/sys/kernel/iommu_groups/30"
+    }
+  ],
+  "raw10_payload_bytes": 1740800,
+  "raw10_payload_hex": "0x1a9000",
+  "fault_addresses": [
+    {
+      "iova": "0xfe1a9000",
+      "offset_within_2MiB": "0x1a9000"
+    },
+    {
+      "iova": "0xfefa9000",
+      "offset_within_2MiB": "0x1a9000"
+    }
+  ],
+  "note": "Equal offsets suggest a buffer boundary; allocation base and write size still require verification."
+}

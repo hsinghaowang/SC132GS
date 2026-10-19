@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "platform": "RUBIK Pi 3 / QCS6490 / ARM64",
+  "algorithms": [
+    {
+      "name": "OpenVINS",
+      "repository": "https://github.com/rpng/open_vins",
+      "revision": "69488123ed9362dd44b6f28e7f4680abbff1442b",
+      "role": "local_visual_inertial_odometry"
+    },
+    {
+      "name": "ORB-SLAM3",
+      "repository": "https://github.com/UZ-SLAMLab/ORB_SLAM3",
+      "revision": "4452a3c4ab75b1cde34e5505a36ec3f9edcdc4c4",
+      "role": "visual_inertial_slam_with_loop_closure"
+    }
+  ],
+  "execution": {
+    "baseline_backend": "CPU",
+    "build_type": "Release",
+    "viewer_enabled": false,
+    "repetitions": 3,
+    "input_policy": "identical immutable dataset for both algorithms",
+    "public_adapter_cpp_standard": 17,
+    "record_required": [
+      "compiler",
+      "dependency_versions",
+      "cpu_affinity",
+      "thread_counts",
+      "temperature",
+      "clock_policy",
+      "concurrent_workloads",
+      "dataset_sha256",
+      "calibration_sha256",
+      "algorithm_config_sha256"
+    ]
+  },
+  "phases": [
+    {
+      "id": "dataset_baseline",
+      "dataset": "EuRoC MH_01_easy and V2_02_medium",
+      "input_camera_hz": 20,
+      "input_imu_hz": 200,
+      "input_width": 752,
+      "input_height": 480,
+      "status": "openvins_native_complete_orb_slam3_pending",
+      "modes": [
+        "unpaced throughput",
+        "1x paced playback"
+      ],
+      "accuracy_policy": "full image-time trajectory; SE3 alignment; report coverage and failures; distinguish loop-corrected trajectory from online odometry"
+    },
+    {
+      "id": "board_sensor_baseline",
+      "status": "not_ready",
+      "initial_target_camera_hz": 30,
+      "initial_target_imu_hz": 200,
+      "initial_target_width": 640,
+      "initial_target_height": 480,
+      "geometry_policy": "preserve FOV/aspect ratio or record explicit crop and resize transform; transform camera intrinsics accordingly",
+      "image_policy": "same lossless grayscale preprocessing for both estimators; preserve camera identities, sequence numbers, raw timestamps and image orientation",
+      "required_evidence": [
+        "stereo_calibration",
+        "camera_imu_extrinsics",
+        "imu_noise_and_bias",
+        "sensor_to_host_clock_mapping",
+        "camera_timestamp_semantics",
+        "stereo_exposure_skew",
+        "combined_camera_imu_capture_stability"
+      ],
+      "units": {
+        "acceleration": "m/s^2",
+        "angular_velocity": "rad/s"
+      }
+    }
+  ],
+  "metrics": {
+    "tracking_time_ms": [
+      "p50",
+      "p95",
+      "p99",
+      "max"
+    ],
+    "capture_to_pose_latency_ms": "live phase only; use a validated common clock and declared exposure-time reference",
+    "playback_to_pose_latency_ms": "paced dataset phase; host enqueue to corresponding visual update; not physical exposure latency",
+    "throughput_pairs_per_second": "completed visual updates / measured processing wall time",
+    "cpu_usage": "sum over all estimator processes; 100 percent means one logical core",
+    "memory_peak_rss_mb": "sum over estimator processes with aggregation policy recorded",
+    "accuracy": [
+      "ATE_RMSE_m",
+      "RPE_translation_m",
+      "RPE_rotation_deg",
+      "trajectory_coverage",
+      "tracking_failures",
+      "reinitializations"
+    ],
+    "runtime": [
+      "input_drops",
+      "queue_depth",
+      "loop_closure_duration_ms",
+      "temperature_c",
+      "throttling"
+    ]
+  },
+  "interpretation": {
+    "camera_30hz_frame_interval_ms": 33.333333,
+    "realtime_requirement": "bounded queue over complete paced playback; record p95/p99 latency, drops and accuracy",
+    "imu_prediction_is_visual_update": false,
+    "published_desktop_results_are_board_results": false
+  }
+}

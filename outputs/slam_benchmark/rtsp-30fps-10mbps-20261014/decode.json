@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "decoded_frames": 240,
+  "pts_fps": 29.87429463471001,
+  "width": 2176,
+  "height": 1280,
+  "format": "yuv420p10le",
+  "observation_pts_seconds": 8.00018888888889,
+  "wall_seconds": 8.827999999979511,
+  "configured_target_bitrate_bits_per_second": 10000000
+}

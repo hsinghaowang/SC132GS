@@ -1,0 +1,6 @@
+TimeoutStopUSec=35s
+MainPID=20171
+ExecStart={ path=/usr/bin/python3 ; argv[]=/usr/bin/python3 -u /home/ubuntu/board-live-depth-20261015/board_owner.py ; ignore_errors=no ; start_time=[Thu 2026-10-15 19:25:05 CST] ; stop_time=[n/a] ; pid=20171 ; code=(null) ; status=0/0 }
+Id=stereo-gpu-live.service
+ActiveState=active
+SubState=running

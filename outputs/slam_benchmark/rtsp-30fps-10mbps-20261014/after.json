@@ -1,0 +1,54 @@
+{
+  "service": {
+    "returncode": 0,
+    "stdout": "MainPID=35767\nEnvironment=BINNING=0 FPS=30 SENSOR_MODE=linear TOKEN=97ba5630-7b2f-4c72-a658-587c25d5a4c7\nActiveState=active\nSubState=running\n",
+    "stderr": ""
+  },
+  "camera_status": {
+    "returncode": 0,
+    "stdout": "ok sensor_mode=linear binning=0 max_fps=30 effective_fps=30 measured_fps_x10=299 eye_resolution=1088x1280 ae=1 brightness=30 ae_target_percent=30 exposure_rows=1377 gain_index=128 exposure_ceiling_rows=1377 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=182\n",
+    "stderr": ""
+  },
+  "files": {
+    "/var/lib/sc132gs-camera/settings.yaml": {
+      "sha256": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd",
+      "text": "# SC132GS camera settings; exposure rows are mode-specific.\n# AE on: rows/gain are startup seeds; AE adjusts them after start.\nmode: linear\nbinning: false\nmax_fps: 30\nfps: 30\nae: true\nbrightness: 30\nrows: 1330\ngain: 128\nmax_exposure_us: 0\nmax_gain_index: 128\nrevision: 182\nschema: 1\n"
+    },
+    "/run/sc132gs-camera-state.json": {
+      "sha256": "b8a385517fccf2076253de8fcb138da69efa244af85c4e886650646402f095af",
+      "text": "{\"mode\": \"linear\", \"binning\": 0, \"max_fps\": 30, \"fps\": 30, \"ae\": 1, \"brightness\": 30, \"rows\": 1330, \"gain\": 128, \"max_exposure_us\": 0, \"max_gain_index\": 128, \"revision\": 182, \"schema\": 1}"
+    }
+  },
+  "processes": [
+    {
+      "pid": 35686,
+      "comm": "python3",
+      "args": "python3 /home/ubuntu/ros2_humble_ws/slam_benchmark/repair-linear30-rtsp.py "
+    },
+    {
+      "pid": 35822,
+      "comm": "sc132gs-fsync-g",
+      "args": "/usr/local/bin/sc132gs-fsync-generator auto 18 19 60 100 active-low "
+    },
+    {
+      "pid": 35830,
+      "comm": "stereo-h265-rts",
+      "args": "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp --cam0 /dev/video0 --cam1 /dev/video3 --bind 192.168.137.226 --port 8554 --mount /stereo --downscale 1 --fps 30 --brightness 30 --auto-exposure off --hevc-profile main10 --bitrate 10000000 "
+    },
+    {
+      "pid": 35921,
+      "comm": "python3",
+      "args": "python3 /home/ubuntu/ros2_humble_ws/slam_benchmark/inspect-delivery-board.py "
+    }
+  ],
+  "containers": {
+    "returncode": 0,
+    "stdout": "ros2-humble Up 21 hours\n",
+    "stderr": ""
+  },
+  "versions": {
+    "returncode": 0,
+    "stdout": "ros-humble-fastrtps\t2.6.12-1jammy.20260725.060440\nros-humble-rmw-fastrtps-cpp\t6.2.10-1jammy.20260725.133410\n",
+    "stderr": ""
+  }
+}

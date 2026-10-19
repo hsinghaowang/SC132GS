@@ -1,0 +1,12 @@
+ae: true
+binning: false
+brightness: 10
+fps: 30
+gain: 19
+max_exposure_us: 0
+max_fps: 30
+max_gain_index: 128
+mode: hdr
+revision: 159
+rows: 1492
+schema: 1

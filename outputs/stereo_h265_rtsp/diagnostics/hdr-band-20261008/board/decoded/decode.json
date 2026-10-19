@@ -1,0 +1,15 @@
+{
+  "caps": "video/x-raw, format=(string)I420_10LE, width=(int)2176, height=(int)1280, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)1:3:0:1, framerate=(fraction)30/1",
+  "decoded_frames": 155,
+  "wall_seconds": 5.007462605994078,
+  "wall_fps": 30.75409885550768,
+  "pts_fps": 29.998636429512768,
+  "pts_gaps_over_45ms": 0,
+  "sampled_unique_hashes": 3,
+  "snapshot": {
+    "min": 51,
+    "max": 810,
+    "unique_levels": 749,
+    "low_bits_present": true
+  }
+}

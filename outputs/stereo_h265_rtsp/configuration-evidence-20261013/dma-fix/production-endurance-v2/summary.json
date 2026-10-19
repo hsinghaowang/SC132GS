@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "failure": null,
+  "elapsed_s": 604.387105843,
+  "boot_id": "005c760b-d434-490f-a55e-073c02db97cb",
+  "scope": "bounded capture progression and kernel faults; not indefinite stability",
+  "samples": 60,
+  "pairs_progress": 35762,
+  "input_fps_min": 59.974,
+  "input_fps_median": 59.99675,
+  "input_fps_max": 60.0425,
+  "encoded_fps_min": 59.7819,
+  "encoded_fps_median": 59.99695
+}

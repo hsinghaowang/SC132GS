@@ -1,0 +1,388 @@
+The pixelformat 'P010' is invalid
+
+User Controls
+
+                horizontal_flip 0x00980914 (bool)   : default=0 value=0 flags=execute-on-write
+                  vertical_flip 0x00980915 (bool)   : default=0 value=0 flags=execute-on-write
+                         rotate 0x00980922 (int)    : min=0 max=270 step=90 default=0 value=0 flags=execute-on-write, modify-layout
+  min_number_of_capture_buffers 0x00980927 (int)    : min=0 max=64 step=1 default=4 value=4 flags=read-only, volatile, execute-on-write
+   min_number_of_output_buffers 0x00980928 (int)    : min=0 max=64 step=1 default=4 value=7 flags=read-only, volatile, execute-on-write
+
+Codec Controls
+
+                 video_b_frames 0x009909ca (int)    : min=0 max=1 step=1 default=0 value=0 flags=update, execute-on-write
+                 video_gop_size 0x009909cb (int)    : min=0 max=2147483647 step=1 default=59 value=59 flags=execute-on-write
+              video_gop_closure 0x009909cc (bool)   : default=1 value=1 flags=execute-on-write
+             video_bitrate_mode 0x009909ce (menu)   : min=0 max=3 default=0 value=0 (Variable Bitrate) flags=update, execute-on-write
+				0: Variable Bitrate
+				1: Constant Bitrate
+				2: Constant Quality
+				3: Maximum Bitrate
+                  video_bitrate 0x009909cf (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+             video_peak_bitrate 0x009909d0 (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+frame_level_rate_control_enable 0x009909d7 (bool)   : default=1 value=1 flags=execute-on-write
+           sequence_header_mode 0x009909d8 (menu)   : min=0 max=1 default=1 value=1 (Joined With 1st Frame) flags=execute-on-write
+				0: Separate Buffer
+				1: Joined With 1st Frame
+     h264_mb_level_rate_control 0x009909da (bool)   : default=1 value=1 flags=execute-on-write
+       maximum_bytes_in_a_slice 0x009909db (int)    : min=512 max=12500000 step=1 default=512 value=512 flags=execute-on-write
+       number_of_mbs_in_a_slice 0x009909dc (int)    : min=1 max=34816 step=1 default=1 value=1 flags=execute-on-write
+      slice_partitioning_method 0x009909dd (menu)   : min=0 max=2 default=0 value=0 (Single) flags=execute-on-write
+				0: Single
+				1: Max Macroblocks
+				2: Max Bytes
+  initial_delay_for_vbv_control 0x009909e1 (int)    : min=200 max=300 step=100 default=300 value=300 flags=execute-on-write
+                force_key_frame 0x009909e5 (button) : value=0 flags=write-only, execute-on-write
+         base_layer_priority_id 0x009909e6 (int)    : min=0 max=63 step=1 default=0 value=0 flags=execute-on-write
+generate_access_unit_delimiters 0x009909e7 (bool)   : default=0 value=0 flags=execute-on-write
+                      ltr_count 0x009909e8 (int)    : min=0 max=2 step=1 default=0 value=0 flags=execute-on-write
+                frame_ltr_index 0x009909e9 (int)    : min=-1 max=1 step=1 default=-1 value=-1 flags=execute-on-write
+                 use_ltr_frames 0x009909ea (bitmask): max=0x00000003 default=0x00000000 value=0 flags=execute-on-write
+           intra_refresh_period 0x009909ec (int)    : min=0 max=2147483647 step=1 default=0 value=0 flags=execute-on-write
+      intra_refresh_period_type 0x009909ed (menu)   : min=0 max=1 default=0 value=0 (Random) flags=execute-on-write
+				0: Random
+				1: Cyclic
+          h264_i_frame_qp_value 0x00990a5e (int)    : min=1 max=51 step=1 default=20 value=20 flags=execute-on-write
+          h264_p_frame_qp_value 0x00990a5f (int)    : min=1 max=51 step=1 default=20 value=20 flags=execute-on-write
+          h264_b_frame_qp_value 0x00990a60 (int)    : min=1 max=51 step=1 default=20 value=20 flags=execute-on-write
+          h264_minimum_qp_value 0x00990a61 (int)    : min=1 max=51 step=1 default=1 value=1 flags=execute-on-write
+          h264_maximum_qp_value 0x00990a62 (int)    : min=1 max=51 step=1 default=51 value=51 flags=execute-on-write
+      h264_8x8_transform_enable 0x00990a63 (bool)   : default=1 value=1 flags=execute-on-write
+              h264_entropy_mode 0x00990a65 (menu)   : min=0 max=1 default=1 value=1 (CABAC) flags=execute-on-write
+				0: CAVLC
+				1: CABAC
+                     h264_level 0x00990a67 (menu)   : min=0 max=15 default=15 value=15 (5.1) flags=execute-on-write
+				0: 1
+				1: 1b
+				2: 1.1
+				3: 1.2
+				4: 1.3
+				5: 2
+				6: 2.1
+				7: 2.2
+				8: 3
+				9: 3.1
+				10: 3.2
+				11: 4
+				12: 4.1
+				13: 4.2
+				14: 5
+				15: 5.1
+  h264_loop_filter_alpha_offset 0x00990a68 (int)    : min=-6 max=6 step=1 default=0 value=0 flags=execute-on-write
+   h264_loop_filter_beta_offset 0x00990a69 (int)    : min=-6 max=6 step=1 default=0 value=0 flags=execute-on-write
+          h264_loop_filter_mode 0x00990a6a (menu)   : min=0 max=2 default=0 value=0 (Enabled) flags=execute-on-write
+				0: Enabled
+				1: Disabled
+				2: Disabled at Slice Boundary
+                   h264_profile 0x00990a6b (menu)   : min=0 max=17 default=4 value=4 (High) flags=execute-on-write
+				0: Baseline
+				1: Constrained Baseline
+				2: Main
+				4: High
+				17: Constrained High
+enable_h264_hierarchical_coding 0x00990a7b (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+  h264_hierarchical_coding_type 0x00990a7c (menu)   : min=0 max=1 default=1 value=1 (Hier Coding P) flags=execute-on-write
+				0: Hier Coding B
+				1: Hier Coding P
+       h264_number_of_hc_layers 0x00990a7d (int)    : min=0 max=5 step=1 default=0 value=0 flags=execute-on-write
+    h264_chroma_qp_index_offset 0x00990a80 (int)    : min=-12 max=0 step=1 default=0 value=0 flags=execute-on-write
+  h264_i_frame_minimum_qp_value 0x00990a81 (int)    : min=1 max=51 step=1 default=1 value=1 flags=execute-on-write
+  h264_i_frame_maximum_qp_value 0x00990a82 (int)    : min=1 max=51 step=1 default=51 value=51 flags=execute-on-write
+  h264_p_frame_minimum_qp_value 0x00990a83 (int)    : min=1 max=51 step=1 default=1 value=1 flags=execute-on-write
+  h264_p_frame_maximum_qp_value 0x00990a84 (int)    : min=1 max=51 step=1 default=51 value=51 flags=execute-on-write
+  h264_b_frame_minimum_qp_value 0x00990a85 (int)    : min=1 max=51 step=1 default=1 value=1 flags=execute-on-write
+  h264_b_frame_maximum_qp_value 0x00990a86 (int)    : min=1 max=51 step=1 default=51 value=51 flags=execute-on-write
+h264_hierarchical_lay_0_bitrate 0x00990a87 (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+h264_hierarchical_lay_1_bitrate 0x00990a88 (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+h264_hierarchical_lay_2_bitrate 0x00990a89 (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+h264_hierarchical_lay_3_bitrate 0x00990a8a (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+h264_hierarchical_lay_4_bitrate 0x00990a8b (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+h264_hierarchical_lay_5_bitrate 0x00990a8c (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+          hevc_minimum_qp_value 0x00990b58 (int)    : min=-11 max=51 step=1 default=-11 value=-11 flags=execute-on-write
+          hevc_maximum_qp_value 0x00990b59 (int)    : min=-11 max=51 step=1 default=51 value=51 flags=execute-on-write
+          hevc_i_frame_qp_value 0x00990b5a (int)    : min=-11 max=51 step=1 default=20 value=20 flags=execute-on-write
+          hevc_p_frame_qp_value 0x00990b5b (int)    : min=-11 max=51 step=1 default=20 value=20 flags=execute-on-write
+          hevc_b_frame_qp_value 0x00990b5c (int)    : min=-11 max=51 step=1 default=20 value=20 flags=execute-on-write
+  hevc_hierarchical_coding_type 0x00990b5e (menu)   : min=0 max=1 default=1 value=1 (P) flags=execute-on-write
+				0: B
+				1: P
+ hevc_hierarchical_coding_layer 0x00990b5f (int)    : min=0 max=5 step=1 default=0 value=0 flags=execute-on-write
+                        profile 0x00990b67 (menu)   : min=0 max=3 default=0 value=0 (Main) flags=execute-on-write
+				0: Main
+				1: Main Still Picture
+				2: Main 10
+				3: Main 10 Still Picture
+                     hevc_level 0x00990b68 (menu)   : min=0 max=7 default=7 value=7 (5) flags=execute-on-write
+				0: 1
+				1: 2
+				2: 2.1
+				3: 3
+				4: 3.1
+				5: 4
+				6: 4.1
+				7: 5
+                      hevc_tier 0x00990b6a (menu)   : min=0 max=1 default=1 value=1 (High) flags=execute-on-write
+				0: Main
+				1: High
+               hevc_loop_filter 0x00990b6c (menu)   : min=0 max=2 default=1 value=1 (Enabled) flags=execute-on-write
+				0: Disabled
+				1: Enabled
+				2: Disabled at slice boundary
+   hevc_loop_filter_beta_offset 0x00990b6d (int)    : min=-6 max=6 step=1 default=0 value=0 flags=execute-on-write
+     hevc_loop_filter_tc_offset 0x00990b6e (int)    : min=-6 max=6 step=1 default=0 value=0 flags=execute-on-write
+         hevc_lossless_encoding 0x00990b71 (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+     hevc_enc_without_startcode 0x00990b7a (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+      hevc_size_of_length_field 0x00990b7b (menu)   : min=0 max=3 default=0 value=0 (0) flags=execute-on-write
+				0: 0
+				3: 4
+hevc_hierarchical_lay_0_bitrate 0x00990b7c (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+hevc_hierarchical_lay_1_bitrate 0x00990b7d (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+hevc_hierarchical_lay_2_bitrate 0x00990b7e (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+hevc_hierarchical_lay_3_bitrate 0x00990b7f (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+hevc_hierarchical_lay_4_bitrate 0x00990b80 (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+hevc_hierarchical_lay_5_bitrate 0x00990b81 (int)    : min=1 max=100000000 step=1 default=20000000 value=20000000 flags=execute-on-write
+     prepend_sps_and_pps_to_idr 0x00990b84 (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+               constant_quality 0x00990b85 (int)    : min=1 max=100 step=1 default=90 value=90 flags=execute-on-write
+                frame_skip_mode 0x00990b86 (menu)   : min=0 max=2 default=0 value=0 (Disabled) flags=execute-on-write
+				0: Disabled
+				1: Level Limit
+				2: VBV/CPB Limit
+  hevc_i_frame_minimum_qp_value 0x00990b87 (int)    : min=-11 max=51 step=1 default=-11 value=-11 flags=execute-on-write
+  hevc_i_frame_maximum_qp_value 0x00990b88 (int)    : min=-11 max=51 step=1 default=51 value=51 flags=execute-on-write
+  hevc_p_frame_minimum_qp_value 0x00990b89 (int)    : min=-11 max=51 step=1 default=-11 value=-11 flags=execute-on-write
+  hevc_p_frame_maximum_qp_value 0x00990b8a (int)    : min=-11 max=51 step=1 default=51 value=51 flags=execute-on-write
+  hevc_b_frame_minimum_qp_value 0x00990b8b (int)    : min=-11 max=51 step=1 default=-11 value=-11 flags=execute-on-write
+  hevc_b_frame_maximum_qp_value 0x00990b8c (int)    : min=-11 max=51 step=1 default=51 value=51 flags=execute-on-write
+                    secure_mode 0x00992001 (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+                lowlatency_mode 0x00992003 (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+            time_delta_based_rc 0x0099200d (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+        content_adaptive_coding 0x0099200e (int)    : min=0 max=1 step=1 default=1 value=1 flags=execute-on-write
+                  bitrate_boost 0x0099200f (int)    : min=0 max=25 step=25 default=25 value=25 flags=execute-on-write
+                     blur_types 0x00992010 (menu)   : min=0 max=1 default=0 value=0 (Blur None) flags=execute-on-write
+				0: Blur None
+				1: Blur External
+                blur_resolution 0x00992011 (int)    : min=0 max=2147483647 step=1 default=0 value=0 flags=execute-on-write
+              csc_custom_matrix 0x00992012 (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+              meta_ltr_mark_use 0x00992013 (bitmask): max=0x00000011 default=0x00000000 value=0 flags=execute-on-write
+               meta_seq_hdr_nal 0x00992014 (bitmask): max=0x00000011 default=0x00000000 value=0 flags=execute-on-write
+        meta_sei_mastering_disp 0x0099201a (bitmask): max=0x00000023 default=0x00000000 value=0 flags=execute-on-write
+                   meta_sei_cll 0x0099201b (bitmask): max=0x00000023 default=0x00000000 value=0 flags=execute-on-write
+                 meta_hdr10plus 0x0099201c (bitmask): max=0x00000023 default=0x00000000 value=0 flags=execute-on-write
+                 meta_eva_stats 0x0099201d (bitmask): max=0x00000023 default=0x00000000 value=0 flags=execute-on-write
+                   meta_buf_tag 0x0099201e (bitmask): max=0x00000013 default=0x00000000 value=0 flags=execute-on-write
+           meta_subframe_output 0x0099201f (bitmask): max=0x00000011 default=0x00000000 value=0 flags=execute-on-write
+                  meta_roi_info 0x00992020 (bitmask): max=0x00000003 default=0x00000000 value=0 flags=execute-on-write
+                 meta_timestamp 0x00992021 (bitmask): max=0x00000011 default=0x00000000 value=0 flags=execute-on-write
+           meta_enc_qp_metadata 0x00992022 (bitmask): max=0x00000011 default=0x00000000 value=0 flags=execute-on-write
+     meta_transcoding_stat_info 0x00992027 (bitmask): max=0x00000022 default=0x00000000 value=0 flags=execute-on-write
+                    super_frame 0x00992028 (int)    : min=0 max=32 step=1 default=0 value=0 flags=execute-on-write
+                       priority 0x0099202a (int)    : min=0 max=4 step=1 default=4 value=4 flags=execute-on-write
+                      enc_ip_cr 0x0099202c (int)    : min=0 max=2147483647 step=1 default=0 value=0 flags=execute-on-write
+                     complexity 0x0099202f (int)    : min=0 max=100 step=1 default=50 value=50 flags=execute-on-write
+                      client_id 0x00992041 (int)    : min=-1 max=2147483647 step=1 default=-1 value=-1 flags=execute-on-write
+         last_flag_event_enable 0x00992042 (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+                vui_timing_info 0x00992043 (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+              signal_color_info 0x00992046 (int)    : min=0 max=2147483647 step=1 default=0 value=0 flags=execute-on-write
+                            csc 0x00992047 (int)    : min=0 max=1 step=1 default=0 value=0 flags=execute-on-write
+                    drv_version 0x00992048 (int)    : min=0 max=2147483647 step=1 default=67108864 value=67108864 flags=execute-on-write
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Output Multiplanar
+
+	[0]: 'Q08C' (QCOM Compressed 8-bit Format, compressed)
+	[1]: 'NV12' (Y/UV 4:2:0)
+	[2]: 'NV21' (Y/VU 4:2:0)
+	[3]: 'Q10C' (QCOM Compressed 10-bit Format, compressed)
+	[4]: 'P010' (10-bit Y/UV 4:2:0)
+Setting pipeline to PAUSED ...
+Pipeline is PREROLLING ...
+/GstPipeline:pipeline0/GstVideoTestSrc:videotestsrc0.GstPad:src: caps = video/x-raw, format=(string)I420_10LE, width=(int)320, height=(int)240, framerate=(fraction)30/1, multiview-mode=(string)mono, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive
+/GstPipeline:pipeline0/GstCapsFilter:capsfilter0.GstPad:src: caps = video/x-raw, format=(string)I420_10LE, width=(int)320, height=(int)240, framerate=(fraction)30/1, multiview-mode=(string)mono, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive
+Redistribute latency...
+/GstPipeline:pipeline0/GstX265Enc:x265enc0.GstPad:sink: caps = video/x-raw, format=(string)I420_10LE, width=(int)320, height=(int)240, framerate=(fraction)30/1, multiview-mode=(string)mono, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive
+/GstPipeline:pipeline0/GstCapsFilter:capsfilter0.GstPad:sink: caps = video/x-raw, format=(string)I420_10LE, width=(int)320, height=(int)240, framerate=(fraction)30/1, multiview-mode=(string)mono, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive
+/GstPipeline:pipeline0/GstX265Enc:x265enc0.GstPad:src: caps = video/x-h265, stream-format=(string)byte-stream, alignment=(string)au, level=(string)2.1, tier=(string)main, profile=(string)main-10, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)30/1, interlace-mode=(string)progressive, colorimetry=(string)bt601, chroma-site=(string)jpeg, multiview-mode=(string)mono, multiview-flags=(GstVideoMultiviewFlagsSet)0:ffffffff:/right-view-first/left-flipped/left-flopped/right-flipped/right-flopped/half-aspect/mixed-mono
+/GstPipeline:pipeline0/GstCapsFilter:capsfilter1.GstPad:src: caps = video/x-h265, stream-format=(string)byte-stream, alignment=(string)au, level=(string)2.1, tier=(string)main, profile=(string)main-10, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)30/1, interlace-mode=(string)progressive, colorimetry=(string)bt601, chroma-site=(string)jpeg, multiview-mode=(string)mono, multiview-flags=(GstVideoMultiviewFlagsSet)0:ffffffff:/right-view-first/left-flipped/left-flopped/right-flipped/right-flopped/half-aspect/mixed-mono
+/GstPipeline:pipeline0/GstH265Parse:h265parse0.GstPad:sink: caps = video/x-h265, stream-format=(string)byte-stream, alignment=(string)au, level=(string)2.1, tier=(string)main, profile=(string)main-10, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)30/1, interlace-mode=(string)progressive, colorimetry=(string)bt601, chroma-site=(string)jpeg, multiview-mode=(string)mono, multiview-flags=(GstVideoMultiviewFlagsSet)0:ffffffff:/right-view-first/left-flipped/left-flopped/right-flipped/right-flopped/half-aspect/mixed-mono
+/GstPipeline:pipeline0/GstCapsFilter:capsfilter1.GstPad:sink: caps = video/x-h265, stream-format=(string)byte-stream, alignment=(string)au, level=(string)2.1, tier=(string)main, profile=(string)main-10, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)30/1, interlace-mode=(string)progressive, colorimetry=(string)bt601, chroma-site=(string)jpeg, multiview-mode=(string)mono, multiview-flags=(GstVideoMultiviewFlagsSet)0:ffffffff:/right-view-first/left-flipped/left-flopped/right-flipped/right-flopped/half-aspect/mixed-mono
+Redistribute latency...
+/GstPipeline:pipeline0/GstH265Parse:h265parse0.GstPad:src: caps = video/x-h265, stream-format=(string)byte-stream, alignment=(string)au, level=(string)2.1, tier=(string)main, profile=(string)main-10, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)30/1, interlace-mode=(string)progressive, colorimetry=(string)bt601, chroma-site=(string)jpeg, multiview-mode=(string)mono, multiview-flags=(GstVideoMultiviewFlagsSet)0:ffffffff:/right-view-first/left-flipped/left-flopped/right-flipped/right-flopped/half-aspect/mixed-mono, chroma-format=(string)4:2:0, bit-depth-luma=(uint)10, bit-depth-chroma=(uint)10, parsed=(boolean)true
+Redistribute latency...
+/GstPipeline:pipeline0/avdec_h265:avdec_h265-0.GstPad:sink: caps = video/x-h265, stream-format=(string)byte-stream, alignment=(string)au, level=(string)2.1, tier=(string)main, profile=(string)main-10, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)30/1, interlace-mode=(string)progressive, colorimetry=(string)bt601, chroma-site=(string)jpeg, multiview-mode=(string)mono, multiview-flags=(GstVideoMultiviewFlagsSet)0:ffffffff:/right-view-first/left-flipped/left-flopped/right-flipped/right-flopped/half-aspect/mixed-mono, chroma-format=(string)4:2:0, bit-depth-luma=(uint)10, bit-depth-chroma=(uint)10, parsed=(boolean)true
+/GstPipeline:pipeline0/avdec_h265:avdec_h265-0.GstPad:src: caps = video/x-raw, format=(string)I420_10LE, width=(int)320, height=(int)240, interlace-mode=(string)progressive, multiview-mode=(string)mono, multiview-flags=(GstVideoMultiviewFlagsSet)0:ffffffff:/right-view-first/left-flipped/left-flopped/right-flipped/right-flopped/half-aspect/mixed-mono, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)jpeg, colorimetry=(string)bt601, framerate=(fraction)30/1
+/GstPipeline:pipeline0/GstFakeSink:fakesink0.GstPad:sink: caps = video/x-raw, format=(string)I420_10LE, width=(int)320, height=(int)240, interlace-mode=(string)progressive, multiview-mode=(string)mono, multiview-flags=(GstVideoMultiviewFlagsSet)0:ffffffff:/right-view-first/left-flipped/left-flopped/right-flipped/right-flopped/half-aspect/mixed-mono, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)jpeg, colorimetry=(string)bt601, framerate=(fraction)30/1
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+Redistribute latency...
+New clock: GstSystemClock
+Got EOS from element "pipeline0".
+Execution ended after 0:00:00.006444644
+Setting pipeline to NULL ...
+Freeing pipeline ...
+active
+    PID COMMAND
+  23553 /home/ubuntu/stereo-h265-rtsp/build-exposure60/stereo-h265-rtsp --cam0 /dev/video0 --cam1 /dev/video3 --bind 192.168.137.226 --port 8554 --mount /stereo --downscale 1 --fps 60 --brightness 40 --auto-exposure off
+
+
+		VIDIOC_G_FMT returned 0 (Success)
+		VIDIOC_G_FMT returned 0 (Success)
+		VIDIOC_G_FMT returned 0 (Success)
+		VIDIOC_REQBUFS returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_G_FMT returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_STREAMON returned 0 (Success)
+VIDIOC_DQBUF: failed: Invalid argument
+out dqbuf: 0 seq:      0 bytesused: 0 ts: 0.000000 field: Any
+VIDIOC_DQBUF: failed: Invalid argument
+
+VIDIOC_QUERYCAP: ok
+VIDIOC_G_FMT: ok
+VIDIOC_S_FMT: ok
+Format Video Capture Multiplanar:
+	Width/Height      : 320/256
+	Pixel Format      : 'HEVC' (HEVC)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 0
+	   Size Image     : 307200
+VIDIOC_G_FMT: ok
+VIDIOC_S_FMT: ok
+Format Video Output Multiplanar:
+	Width/Height      : 640/480
+	Pixel Format      : 'P010' (10-bit Y/UV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 1280
+	   Size Image     : 921600
+VIDIOC_G_FMT: ok
+Format Video Output Multiplanar:
+	Width/Height      : 640/480
+	Pixel Format      : 'P010' (10-bit Y/UV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 1280
+	   Size Image     : 921600
+VIDIOC_G_FMT: ok
+
+
+		VIDIOC_G_FMT returned 0 (Success)
+		VIDIOC_G_FMT returned 0 (Success)
+		VIDIOC_G_FMT returned 0 (Success)
+		VIDIOC_REQBUFS returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_G_FMT returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_QUERYBUF returned 0 (Success)
+		VIDIOC_QBUF returned 0 (Success)
+		VIDIOC_STREAMON returned 0 (Success)
+VIDIOC_DQBUF: failed: Invalid argument
+out dqbuf: 0 seq:      0 bytesused: 0 ts: 0.000000 field: Any
+VIDIOC_DQBUF: failed: Invalid argument
+
+VIDIOC_QUERYCAP: ok
+VIDIOC_G_FMT: ok
+VIDIOC_S_FMT: ok
+Format Video Capture Multiplanar:
+	Width/Height      : 320/256
+	Pixel Format      : 'HEVC' (HEVC)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 0
+	   Size Image     : 307200
+VIDIOC_G_FMT: ok
+VIDIOC_S_FMT: ok
+Format Video Output Multiplanar:
+	Width/Height      : 384/256
+	Pixel Format      : 'P010' (10-bit Y/UV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Default
+	Plane 0           :
+	   Bytes per Line : 768
+	   Size Image     : 294912
+VIDIOC_G_FMT: ok
+0
+Setting pipeline to PAUSED ...
+ERROR: from element /GstPipeline:pipeline0/GstH265Parse:h265parse0: No valid frames found before end of stream
+Additional debug info:
+../libs/gst/base/gstbaseparse.c(3693): gst_base_parse_loop (): /GstPipeline:pipeline0/GstH265Parse:h265parse0
+ERROR: pipeline doesn't want to preroll.
+Pipeline is PREROLLING ...
+Setting pipeline to NULL ...
+Freeing pipeline ...
+
+
+active
+28865 /home/ubuntu/stereo-h265-rtsp/build-exposure60/stereo-h265-rtsp --cam0 /dev/video0 --cam1 /dev/video3 --bind 192.168.137.226 --port 8554 --mount /stereo --downscale 1 --fps 60 --brightness 40 --auto-exposure off
+1342222
+

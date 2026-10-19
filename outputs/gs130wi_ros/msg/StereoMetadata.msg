@@ -1,0 +1,12 @@
+uint8 FSYNC_HOST_REFERENCE=0
+uint8 EXPOSURE_MIDPOINT_ESTIMATE=1
+uint8 EXPOSURE_START_ESTIMATE=2
+std_msgs/Header header
+uint64 acquisition_id
+uint64 camera_session
+uint32 left_sequence
+uint32 right_sequence
+uint64 monotonic_timestamp_ns
+uint8 timestamp_source
+uint64 timestamp_offset_ns
+bool imu_association_validated

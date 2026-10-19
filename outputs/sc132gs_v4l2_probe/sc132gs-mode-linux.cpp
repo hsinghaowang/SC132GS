@@ -190,6 +190,10 @@ LinuxModeBackend::~LinuxModeBackend()=default;
 LinuxModeBackend::LinuxModeBackend(LinuxModeBackend&&) noexcept=default;
 LinuxModeBackend& LinuxModeBackend::operator=(LinuxModeBackend&&) noexcept=default;
 ModeState LinuxModeBackend::inspect() {
+    if (impl_->writable &&
+        (run({"systemctl","is-active","--quiet","sc132gs-camera-rtsp"}).status==0 ||
+         run({"systemctl","is-active","--quiet","sc132gs-binning60-rtsp"}).status==0))
+        fail(ModeErrorCode::busy, EBUSY);
     // This board deliberately blacklists automatic CAMSS loading. A command
     // after reboot must bring up the receiver before discovering its graph.
     // Loading an already present module is harmless; never unload it here.

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "source_sha256": "6d623b49cf31d1038a329810a2d3395b28545630708885df0cbebe9ba89998f7",
+  "callback_sha256": "2229eaa898edacf713292acf4e271251472479d9e3a8af539cff93936fcc3408",
+  "callbacks": 40000,
+  "configuration_ns": {
+    "PERIOD_NS": 33333333,
+    "PULSE_NS": 100000,
+    "LATE_BUDGET_NS": 100000
+  }
+}

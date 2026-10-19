@@ -1,0 +1,53 @@
+{
+  "sessions": [
+    4
+  ],
+  "counts": {
+    "1": 36307,
+    "2": 36287,
+    "3": 36287,
+    "4": 0,
+    "5": 2,
+    "6": 2
+  },
+  "eyes": {
+    "0": {
+      "sof": 18086,
+      "done": 18146,
+      "fps": 29.99999930425216,
+      "min_delay_us": 16536.248,
+      "max_delay_us": 16563.3,
+      "median_delay_us": 16539.388,
+      "unmatched_or_ambiguous": 0,
+      "trigger_gaps": 0,
+      "hw_nonzero": true,
+      "hw_monotonic": true,
+      "trigger_monotonic": true
+    },
+    "1": {
+      "sof": 18081,
+      "done": 18141,
+      "fps": 29.999999280331874,
+      "min_delay_us": 16537.199,
+      "max_delay_us": 16564.496,
+      "median_delay_us": 16540.563,
+      "unmatched_or_ambiguous": 0,
+      "trigger_gaps": 0,
+      "hw_nonzero": true,
+      "hw_monotonic": true,
+      "trigger_monotonic": true
+    }
+  },
+  "passed": true,
+  "pulse_fps": 59.99999866752606,
+  "candidate_window_us": [
+    16037.369,
+    17044.486
+  ],
+  "hardware_clock_mapping": true,
+  "hardware_buffer_identity_errors": 0,
+  "shared_triggers": 18081,
+  "shared_fraction": 0.9997235430719894,
+  "sof_min_us": 16037,
+  "sof_max_us": 17045
+}

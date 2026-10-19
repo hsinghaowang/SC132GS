@@ -1,0 +1,65 @@
+--- a/camss-csid-gen2.c
++++ b/camss-csid-gen2.c
+@@ -11,6 +11,12 @@
+ #include <linux/io.h>
+ #include <linux/kernel.h>
+ #include <linux/of.h>
++#include <linux/moduleparam.h>
++
++/* Opt-in: verified on the QCS6490 SC132GS packed RAW10 RDI path. */
++static bool geometry_guard;
++module_param(geometry_guard, bool, 0644);
++MODULE_PARM_DESC(geometry_guard, "Bound packed RAW10 RDI writes to negotiated geometry");
+ 
+ #include "camss-csid.h"
+ #include "camss-csid-gen2.h"
+@@ -98,6 +104,9 @@
+ #define		RDI_CFG0_PACKING_FORMAT		30
+ #define		RDI_CFG0_ENABLE			31
+ 
++#define CSID_RDI_HCROP(rdi) ((csid_is_lite(csid) ? 0x21c : 0x31c) + 0x100 * (rdi))
++#define CSID_RDI_VCROP(rdi) ((csid_is_lite(csid) ? 0x220 : 0x320) + 0x100 * (rdi))
++
+ #define CSID_RDI_CFG1(rdi)			((csid_is_lite(csid) ? 0x204 : 0x304)\
+ 						+ 0x100 * (rdi))
+ #define		RDI_CFG1_TIMESTAMP_STB_SEL	0
+@@ -266,6 +275,8 @@
+ 	const struct csid_format_info *format = csid_get_fmt_entry(csid->res->formats->formats,
+ 								   csid->res->formats->nformats,
+ 								   input_format->code);
++	bool bound_raw10 = READ_ONCE(geometry_guard) &&
++			   format->data_type == DATA_TYPE_RAW_10BIT;
+ 	u32 val;
+ 
+ 	/*
+@@ -282,11 +293,28 @@
+ 	 */
+ 	u8 dt_id = vc & 0x03;
+ 
++	if (bound_raw10) {
++		u32 bytes = DIV_ROUND_UP(input_format->width * format->bpp * format->spp, 8);
++
++		/* Byte transport keeps the packed RAW10 DMA layout. Inclusive crop
++		 * windows bound each packet and frame to the negotiated allocation.
++		 */
++		writel_relaxed((bytes - 1) << 16, csid->base + CSID_RDI_HCROP(vc));
++		writel_relaxed((input_format->height - 1) << 16,
++			       csid->base + CSID_RDI_VCROP(vc));
++	}
++
+ 	val = 1 << RDI_CFG0_BYTE_CNTR_EN;
+ 	val |= 1 << RDI_CFG0_FORMAT_MEASURE_EN;
+ 	val |= 1 << RDI_CFG0_TIMESTAMP_EN;
+-	/* note: for non-RDI path, this should be format->decode_format */
+-	val |= DECODE_FORMAT_PAYLOAD_ONLY << RDI_CFG0_DECODE_FORMAT;
++	/* Payload-only bypasses the crop engine. RAW8 byte transport enables
++	 * cropping without unpacking or truncating the RAW10 sample bits.
++	 * VFE and the public media format remain packed RAW10.
++	 */
++	val |= (bound_raw10 ? DECODE_FORMAT_UNCOMPRESSED_8_BIT :
++		DECODE_FORMAT_PAYLOAD_ONLY) << RDI_CFG0_DECODE_FORMAT;
++	if (bound_raw10)
++		val |= BIT(RDI_CFG0_CROP_H_EN) | BIT(RDI_CFG0_CROP_V_EN);
+ 	val |= format->data_type << RDI_CFG0_DATA_TYPE;
+ 	val |= vc << RDI_CFG0_VIRTUAL_CHANNEL;
+ 	val |= dt_id << RDI_CFG0_DT_ID;

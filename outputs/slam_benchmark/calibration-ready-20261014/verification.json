@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Taipei",
+  "status": "camera_only_stereo_candidate_obtained_pending_independent_coverage",
+  "session": "D:\\projects\\collision_avoid\\outputs\\slam_benchmark\\live-calibration-20261013\\target-sweep-20261014",
+  "board_session": "/home/ubuntu/ros2_humble_ws/slam_benchmark/live-calibration-20261013/target-sweep-20261014",
+  "stereo_pairs": 449,
+  "lossless_png_images": 898,
+  "imu_samples": 18834,
+  "camera_sequence_gaps": [
+    0,
+    0
+  ],
+  "camera_error_code": 0,
+  "imu_restored": true,
+  "sampled_pairs": 60,
+  "complete_target_pairs": 41,
+  "diverse_pose_representatives": 13,
+  "fitting_poses": 9,
+  "held_out_poses": 4,
+  "factory_held_out_vertical": {
+    "count": 216,
+    "median_px": 0.8398631875280671,
+    "p95_px": 1.1564776966786212,
+    "rms_px": 0.8536588423090987,
+    "max_px": 2.7987492854457514
+  },
+  "candidate_held_out_vertical": {
+    "count": 216,
+    "median_px": 0.06505384737579334,
+    "p95_px": 0.23516638858171746,
+    "rms_px": 0.29455491869317163,
+    "max_px": 3.9953834534499038
+  },
+  "target_metrology": {
+    "date": "2026-10-14",
+    "timezone": "Asia/Taipei",
+    "source": "direct_user_reply_in_this_chat",
+    "user_statement": "已確認 20 mm，且平整固定",
+    "square_size_m_reported": 0.02,
+    "horizontal_and_vertical_square_spacing_user_confirmed": true,
+    "flat_mount_user_confirmed": true,
+    "independently_measured_by_agent": false
+  },
+  "factory_intrinsics_changed": false,
+  "EEPROM_writes": 0,
+  "candidate_deployed": false,
+  "camera_imu_calibrated": false,
+  "live_VIO_performed": false,
+  "downloaded_session_files_verified": 997,
+  "board_original_PGM_files_hashed_and_retained": 898,
+  "archive_sha256": "372cd9f4d234a6f12ed4dd04f0cfde70d5ba3c8a2750710e49b70a76c41ce66d",
+  "archive_bytes": 463616000,
+  "backup_scope": "All 898 saved images backed up as pixel-identical PNG; original PGM and hashes retained on board",
+  "RTSP": {
+    "url": "rtsp://192.168.137.226:8554/stereo",
+    "active_at_user_request": true,
+    "windows_decode": {
+      "viewer": "Windows/PyAV",
+      "codec": "HEVC",
+      "decoded_frames": 482,
+      "width": 2176,
+      "height": 1280,
+      "format": "yuv420p10le",
+      "pts_fps": 60.00049896464835,
+      "wall_seconds": 8.327999999979511,
+      "sampled_unique_frames": 16,
+      "channel_extrema": [
+        [
+          1,
+          255
+        ],
+        [
+          1,
+          255
+        ],
+        [
+          1,
+          255
+        ]
+      ],
+      "passed": true
+    },
+    "initial_six_frame_snapshot_accepted_as_scene_proof": false
+  },
+  "coverage": {
+    "complete_pairs": 41,
+    "diverse_pose_representatives": 13,
+    "training_pose_representatives": 9,
+    "held_out_pose_representatives": 4,
+    "center_min": [
+      0.23156759746713576,
+      0.49124363307599667
+    ],
+    "center_max": [
+      0.42758178399279223,
+      0.7726757747155648
+    ],
+    "corner_hull_image_fraction": [
+      0.1731212543774849,
+      0.189604216495347
+    ],
+    "board_area_fraction_range": [
+      0.030765066141174538,
+      0.06970762146564533
+    ],
+    "tilt_deg_range": [
+      0.19327612518980788,
+      41.521920840313825
+    ],
+    "pose_selection": "Greedy: center change >=0.06 frame, log area change >=0.25 or normal angle >=10deg; held-out every fourth representative, whole observations withheld"
+  },
+  "final_state": {
+    "saved_camera_settings_unchanged": true,
+    "final_stream_state": "active_at_explicit_user_request",
+    "initial_service_state": "failed_unowned",
+    "failure_logs_saved": true,
+    "short_capture_and_90s_capture_driver_controls_restored": true,
+    "EEPROM_writes": 0,
+    "calibrated_candidate_deployed": false
+  },
+  "next_step": "Use RTSP to position a larger target at top/right/corners, then record an independent validation session. Camera-IMU common time and extrinsics remain separate work."
+}

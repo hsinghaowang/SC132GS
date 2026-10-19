@@ -1,0 +1,40 @@
+{
+  "boot_id": "c5c9582b-15bc-42d1-a61a-976a368933fd",
+  "module_srcversion": "C243ABE8CAC3FA872B2A08C",
+  "control": {
+    "abi": "4",
+    "timestamp_offset_ns": "344903",
+    "trigger_hz": "30",
+    "frame_step": "1",
+    "locked_mask": "3",
+    "startup_dropped": "2",
+    "startup_end0": "1",
+    "startup_end1": "1",
+    "node0": "0",
+    "node1": "3",
+    "mode": "2",
+    "running": "1",
+    "session": "1",
+    "pulses": "2222",
+    "skipped": "0",
+    "cpu": "7",
+    "worker_cpu": "0",
+    "error": "0",
+    "error_count": "0",
+    "source": "exposure_start_estimate"
+  },
+  "service": {
+    "MainPID": "2641",
+    "ExecMainStartTimestampMonotonic": "31958658",
+    "ActiveState": "active"
+  },
+  "hashes": {
+    "/etc/modprobe.d/sc132gs-csid-monitor.conf": "d0592b112d775bd8078d4cb243e802d82f60ff263ff38e2f5e7ccf4a520c65bc",
+    "/var/lib/sc132gs-camera/settings.json": "9daf563ddd04efeef09807561775d060b83a3cc032bf821ea18362399be661a7",
+    "/var/lib/sc132gs-camera/settings.yaml": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd",
+    "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": "bce3ba5017f04f27a10a791a4b66f22e49774110ea376ee40ed8a22c16b16ea8",
+    "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh": "25e2d7d6ec17ef05e8b315fb7ac2ea4227d225566e462cf3f070a89c0563f247",
+    "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": "d22a1f17d9e97cbb22b1a1428bea74e8b22c5c81d43962c5a486dbc96da1808f"
+  },
+  "requested_seconds": 7200
+}

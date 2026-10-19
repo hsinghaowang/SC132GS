@@ -1,0 +1,5 @@
+Oct 13 15:41:01 ubuntu python3[12978]: {"elapsed_s": 704.99, "boot_id": "005c760b-d434-490f-a55e-073c02db97cb", "service": "active", "last_metrics": ["59.9814", "59.9814", "46523"], "new_kernel_fault": false}
+Oct 13 15:41:11 ubuntu python3[12978]: {"elapsed_s": 715.06, "boot_id": "005c760b-d434-490f-a55e-073c02db97cb", "service": "active", "last_metrics": ["59.9757", "59.9757", "47125"], "new_kernel_fault": false}
+Oct 13 15:41:21 ubuntu python3[12978]: {"elapsed_s": 725.13, "boot_id": "005c760b-d434-490f-a55e-073c02db97cb", "service": "active", "last_metrics": ["60.031", "60.031", "47726"], "new_kernel_fault": false}
+Oct 13 15:41:31 ubuntu python3[12978]: {"elapsed_s": 735.2, "boot_id": "005c760b-d434-490f-a55e-073c02db97cb", "service": "active", "last_metrics": ["59.9953", "59.9953", "48327"], "new_kernel_fault": false}
+Oct 13 15:41:41 ubuntu python3[12978]: {"elapsed_s": 745.26, "boot_id": "005c760b-d434-490f-a55e-073c02db97cb", "service": "active", "last_metrics": ["59.9771", "59.9771", "48929"], "new_kernel_fault": false}

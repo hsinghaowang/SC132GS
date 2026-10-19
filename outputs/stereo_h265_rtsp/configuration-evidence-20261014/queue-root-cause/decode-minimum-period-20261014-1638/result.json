@@ -1,0 +1,9 @@
+{
+  "scope": "bounded RTSP TCP decode attempt",
+  "passed": false,
+  "error": "ExitError(1414092869, 'Immediate exit requested', 'rtsp://192.168.137.226:8554/stereo')",
+  "decoded_frames": 0,
+  "wall_elapsed_s": 5.031148433685303,
+  "classification": "interrupted_by_coordinated_RAW_test_shutdown; no decode pass",
+  "context": "journal: systemd stopping camera RTSP at 2026-10-14 16:38:23+08:00, normal application exit130; RAW test owned by timestamp thread"
+}

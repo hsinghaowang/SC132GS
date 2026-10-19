@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "irq_flags": {
+      "0": 483,
+      "1": 483
+    },
+    "irq_bus": {
+      "0": 483,
+      "1": 483
+    }
+  },
+  "flags": [
+    "vfe=0 status0=0x1000200 status1=0x0",
+    "vfe=0 status0=0x8000000 status1=0x0",
+    "vfe=1 status0=0x1000200 status1=0x0",
+    "vfe=1 status0=0x8000000 status1=0x0"
+  ],
+  "bus": [
+    "vfe=0 status0=0x1000200 bus0=0x0 bus1=0x1 bus2=0x0",
+    "vfe=0 status0=0x8000000 bus0=0x0 bus1=0x0 bus2=0x0",
+    "vfe=1 status0=0x1000200 bus0=0x0 bus1=0x1 bus2=0x0",
+    "vfe=1 status0=0x8000000 bus0=0x0 bus1=0x0 bus2=0x0"
+  ]
+}

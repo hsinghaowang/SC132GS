@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "checks": {
+    "deployment": true,
+    "duration": true,
+    "no_runtime_failure": true,
+    "no_lost_events": true,
+    "corrected_trace_replay": true,
+    "all_decodes_passed": true,
+    "trace_hash_matches": true,
+    "all_samples_same_service": true,
+    "all_samples_healthy": true
+  },
+  "envelope_ns": 200000,
+  "release_overrun_ns": 25000,
+  "module_srcversion": "E966374A47464C038D0632F",
+  "module_sha256": "aca51a31dac8dea9987e8fe746cbbd1734deafabddfaa7fc38a3f81cde44d5da",
+  "observed_duration_s": 300.04205978899995,
+  "pulse_envelope_max_us": 155.105,
+  "release_overrun_max_us": 8.744,
+  "per_eye_frames": {
+    "0": {
+      "frames": 9818,
+      "first_trigger": 369,
+      "last_trigger": 10186,
+      "duration_s": 327.233329174,
+      "fps": 30.000000381318127
+    },
+    "1": {
+      "frames": 9818,
+      "first_trigger": 369,
+      "last_trigger": 10186,
+      "duration_s": 327.233328132,
+      "fps": 30.000000476846296
+    }
+  },
+  "decodes": [
+    {
+      "decoded_frames": 330,
+      "steady_media_fps": 29.70198675496689,
+      "steady_pts_monotonic": true,
+      "unique_sample_hashes": 11,
+      "snapshot": {
+        "min": 13,
+        "max": 1023,
+        "low_bits_present": true,
+        "eyes": [
+          {
+            "range": 1010,
+            "mean": 371.01269387637865
+          },
+          {
+            "range": 1009,
+            "mean": 318.9552684110754
+          }
+        ]
+      },
+      "codec_profile": "Main 10",
+      "passed": true
+    },
+    {
+      "decoded_frames": 330,
+      "steady_media_fps": 29.999966555221235,
+      "steady_pts_monotonic": true,
+      "unique_sample_hashes": 11,
+      "snapshot": {
+        "min": 4,
+        "max": 1023,
+        "low_bits_present": true,
+        "eyes": [
+          {
+            "range": 1014,
+            "mean": 310.02356603285847
+          },
+          {
+            "range": 1019,
+            "mean": 241.55237462660847
+          }
+        ]
+      },
+      "codec_profile": "Main 10",
+      "passed": true
+    }
+  ],
+  "final_control": {
+    "abi": "4",
+    "timestamp_offset_ns": "344903",
+    "trigger_hz": "30",
+    "frame_step": "1",
+    "locked_mask": "3",
+    "startup_dropped": "2",
+    "startup_end0": "1",
+    "startup_end1": "1",
+    "node0": "0",
+    "node1": "3",
+    "mode": "2",
+    "running": "1",
+    "session": "1",
+    "pulses": "11741",
+    "skipped": "0",
+    "cpu": "7",
+    "worker_cpu": "0",
+    "error": "0",
+    "error_count": "0",
+    "source": "exposure_start_estimate"
+  },
+  "initial_auditor_false_rejection": "Original result.json retained. Its low_gpio_duration limit was still derived from the old 150us envelope (50us low-call maximum). Replayed the identical captured trace after deriving this necessary bound from the selected envelope minus 100us hold; release 25us remains independent.",
+  "scope": "300-second live observation plus same-trace replay and external Main10 decoding; no long-run or electrical pulse guarantee."
+}

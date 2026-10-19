@@ -1,0 +1,23 @@
+2026-10-14T15:08:26+08:00
+MainPID=35767
+ActiveState=active
+SubState=running
+ActiveEnterTimestamp=Wed 2026-10-14 11:35:17 CST
+4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd  /var/lib/sc132gs-camera/settings.yaml
+25e2d7d6ec17ef05e8b315fb7ac2ea4227d225566e462cf3f070a89c0563f247  /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh
+8e4349ffca8cbde5d8b6c5cd5958fde1ecba60dd5d36b8902d412edcba21bf0f  /home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh
+35830 /home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp --cam0 /dev/video0 --cam1 /dev/video3 --bind 192.168.137.226 --port 8554 --mount /stereo --downscale 1 --fps 30 --brightness 30 --auto-exposure off --hevc-profile main10 --bitrate 10000000
+# SC132GS camera settings; exposure rows are mode-specific.
+# AE on: rows/gain are startup seeds; AE adjusts them after start.
+mode: linear
+binning: false
+max_fps: 30
+fps: 30
+ae: true
+brightness: 30
+rows: 1330
+gain: 128
+max_exposure_us: 0
+max_gain_index: 128
+revision: 182
+schema: 1

@@ -1,0 +1,38 @@
+{
+  "status": "diagnostic_completed_accuracy_not_accepted",
+  "physical_saved_camera_images": true,
+  "sampled_pairs_initial": 10,
+  "sampled_pairs_full_resolution": 3,
+  "unique_viewpoints": "One mostly stationary scene; repetitions are not independent coverage",
+  "factory_extrinsics_modified": false,
+  "live_VIO_performed": false,
+  "complete_checkerboard_pairs": 0,
+  "all_appearance_matches": {
+    "count": 223,
+    "median_px": 2.141630509309948,
+    "p95_px": 11.648440476474661,
+    "max_px": 29.915593597259885,
+    "fraction_le_1px": 0.026905829596412557,
+    "fraction_le_2px": 0.3094170403587444
+  },
+  "independently_fitted_F_subset": {
+    "count": 178,
+    "median_px": 2.131116408959201,
+    "p95_px": 4.397810935580356,
+    "max_px": 22.976985151967256,
+    "fraction_le_1px": 0.0056179775280898875,
+    "fraction_le_2px": 0.29775280898876405
+  },
+  "raw_input_hash_checks": 26,
+  "saved_camera_state_matches_EEPROM_baseline": true,
+  "camera_service_inactive": true,
+  "documented_direction_positive_depth_fraction": 0.9865470852017937,
+  "alternative_direction_positive_depth_fraction": 0.02242152466367713,
+  "conclusions": [
+    "Factory transform direction is compatible with point-in-front checks on this scene.",
+    "Residual epipolar misalignment remains after full-resolution appearance refinement.",
+    "Do not substitute inverse-direction control simply because its vertical residual is smaller.",
+    "No reprojection accuracy, metric baseline, physical exposure synchronization or camera-IMU calibration claim."
+  ],
+  "next_step": "Prepare the 20mm target for varied stereo poses; validate factory geometry before deciding whether recalibration is required."
+}

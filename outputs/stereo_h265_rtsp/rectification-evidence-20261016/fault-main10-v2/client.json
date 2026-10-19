@@ -1,0 +1,10 @@
+{
+  "stereo": {
+    "rows": [],
+    "error": "[Errno 1414092869] Immediate exit requested: 'rtsp://192.168.137.226:8554/stereo'"
+  },
+  "depth": {
+    "rows": [],
+    "error": "[Errno 1414092869] Immediate exit requested: 'rtsp://192.168.137.226:8554/depth'"
+  }
+}

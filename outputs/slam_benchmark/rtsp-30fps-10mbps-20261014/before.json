@@ -1,0 +1,54 @@
+{
+  "service": {
+    "returncode": 0,
+    "stdout": "MainPID=33078\nEnvironment=BINNING=0 FPS=60 SENSOR_MODE=linear TOKEN=62829f72-823a-4bd6-bdbb-2caadf42daf0\nActiveState=active\nSubState=running\n",
+    "stderr": ""
+  },
+  "camera_status": {
+    "returncode": 0,
+    "stdout": "ok sensor_mode=linear binning=0 max_fps=60 effective_fps=60 measured_fps_x10=599 eye_resolution=1088x1280 ae=1 brightness=30 ae_target_percent=30 exposure_rows=1330 gain_index=128 exposure_ceiling_rows=1330 max_exposure_us=0 max_gain_index=128 limited=1 control_error=0 revision=181\n",
+    "stderr": ""
+  },
+  "files": {
+    "/var/lib/sc132gs-camera/settings.yaml": {
+      "sha256": "602bd5f039e2550ebf3262a502df9cf4708b917aad798e084d4b819e1d4ccd74",
+      "text": "# SC132GS camera settings; exposure rows are mode-specific.\n# AE on: rows/gain are startup seeds; AE adjusts them after start.\nmode: linear\nbinning: false\nmax_fps: 60\nfps: 60\nae: true\nbrightness: 30\nrows: 1330\ngain: 128\nmax_exposure_us: 0\nmax_gain_index: 128\nrevision: 181\nschema: 1\n"
+    },
+    "/run/sc132gs-camera-state.json": {
+      "sha256": "8be1b4c0652501be72f243f5b96f6cba8faba1de442a0ffa5b93f85f0e4092cd",
+      "text": "{\"mode\": \"linear\", \"binning\": 0, \"max_fps\": 60, \"fps\": 60, \"ae\": 1, \"brightness\": 30, \"rows\": 1330, \"gain\": 128, \"max_exposure_us\": 0, \"max_gain_index\": 128, \"revision\": 181, \"schema\": 1}"
+    }
+  },
+  "processes": [
+    {
+      "pid": 33125,
+      "comm": "sc132gs-fsync-g",
+      "args": "/usr/local/bin/sc132gs-fsync-generator auto 18 19 60 100 active-low "
+    },
+    {
+      "pid": 33128,
+      "comm": "stereo-h265-rts",
+      "args": "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp --cam0 /dev/video0 --cam1 /dev/video3 --bind 192.168.137.226 --port 8554 --mount /stereo --downscale 1 --fps 60 --brightness 30 --auto-exposure off --hevc-profile main10 --bitrate 20000000 "
+    },
+    {
+      "pid": 34791,
+      "comm": "python3",
+      "args": "python3 /home/ubuntu/ros2_humble_ws/slam_benchmark/set-rtsp-30fps-10mbps.py "
+    },
+    {
+      "pid": 34792,
+      "comm": "python3",
+      "args": "python3 /home/ubuntu/ros2_humble_ws/slam_benchmark/inspect-delivery-board.py "
+    }
+  ],
+  "containers": {
+    "returncode": 0,
+    "stdout": "ros2-humble Up 21 hours\n",
+    "stderr": ""
+  },
+  "versions": {
+    "returncode": 0,
+    "stdout": "ros-humble-fastrtps\t2.6.12-1jammy.20260725.060440\nros-humble-rmw-fastrtps-cpp\t6.2.10-1jammy.20260725.133410\n",
+    "stderr": ""
+  }
+}

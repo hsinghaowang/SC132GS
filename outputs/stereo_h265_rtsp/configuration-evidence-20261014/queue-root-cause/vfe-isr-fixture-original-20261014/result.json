@@ -1,0 +1,7 @@
+{
+  "dispatch_cases": 256,
+  "async_completed": 0,
+  "fixed": false,
+  "source_sha256": "25fafad7e739bf1bffa8fad97c9a4414b309ab29ad7066e17c7471cf76f727f8",
+  "scope": "actual ISR with deterministic MMIO fixtures; not physical hardware"
+}

@@ -1,0 +1,99 @@
+{
+  "decoded_frames": 181,
+  "first10": [
+    {
+      "index": 0,
+      "pts": null,
+      "time_base": "1/90000",
+      "seconds": null,
+      "keyframe": true,
+      "arrival_monotonic_s": 518802.343
+    },
+    {
+      "index": 1,
+      "pts": 3003,
+      "time_base": "1/90000",
+      "seconds": 0.03336666666666667,
+      "keyframe": false,
+      "arrival_monotonic_s": 518802.359
+    },
+    {
+      "index": 2,
+      "pts": 6006,
+      "time_base": "1/90000",
+      "seconds": 0.06673333333333334,
+      "keyframe": false,
+      "arrival_monotonic_s": 518802.375
+    },
+    {
+      "index": 3,
+      "pts": 9010,
+      "time_base": "1/90000",
+      "seconds": 0.10011111111111111,
+      "keyframe": false,
+      "arrival_monotonic_s": 518802.375
+    },
+    {
+      "index": 4,
+      "pts": 12012,
+      "time_base": "1/90000",
+      "seconds": 0.13346666666666668,
+      "keyframe": false,
+      "arrival_monotonic_s": 518802.39
+    },
+    {
+      "index": 5,
+      "pts": 15015,
+      "time_base": "1/90000",
+      "seconds": 0.16683333333333333,
+      "keyframe": false,
+      "arrival_monotonic_s": 518802.39
+    },
+    {
+      "index": 6,
+      "pts": 18019,
+      "time_base": "1/90000",
+      "seconds": 0.20021111111111112,
+      "keyframe": false,
+      "arrival_monotonic_s": 518802.406
+    },
+    {
+      "index": 7,
+      "pts": 21022,
+      "time_base": "1/90000",
+      "seconds": 0.23357777777777777,
+      "keyframe": false,
+      "arrival_monotonic_s": 518802.406
+    },
+    {
+      "index": 8,
+      "pts": 24025,
+      "time_base": "1/90000",
+      "seconds": 0.26694444444444443,
+      "keyframe": false,
+      "arrival_monotonic_s": 518802.421
+    },
+    {
+      "index": 9,
+      "pts": 27028,
+      "time_base": "1/90000",
+      "seconds": 0.3003111111111111,
+      "keyframe": false,
+      "arrival_monotonic_s": 518802.421
+    }
+  ],
+  "bad": [
+    {
+      "index": 0,
+      "pts": null,
+      "time_base": "1/90000",
+      "seconds": null,
+      "keyframe": true,
+      "arrival_monotonic_s": 518802.343
+    }
+  ],
+  "steady_frames": 151,
+  "steady_pts_monotonic": true,
+  "steady_media_fps": 29.96470823252614,
+  "scope": "RTSP startup and steady PTS diagnostic; no timestamp correction applied"
+}

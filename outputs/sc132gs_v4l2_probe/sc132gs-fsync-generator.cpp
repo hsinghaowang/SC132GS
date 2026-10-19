@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <linux/gpio.h>
+#include "FsyncSchedule.hpp"
 
 #include <atomic>
 #include <cerrno>
@@ -61,7 +62,7 @@ std::uint32_t parse_u32(const char* text, std::string_view name) {
 double parse_positive(const char* text, std::string_view name) {
     try {
         const auto value = std::stod(text);
-        if (!(value > 0.0)) {
+        if (!(value > 0.0) || !std::isfinite(value)) {
             throw std::invalid_argument("non-positive");
         }
         return value;
@@ -174,6 +175,18 @@ timespec add_ns(timespec value, std::int64_t nanoseconds) {
     return value;
 }
 
+std::int64_t monotonic_ns() {
+    timespec now{};
+    if (::clock_gettime(CLOCK_MONOTONIC, &now) < 0)
+        throw Error("clock_gettime", errno);
+    return static_cast<std::int64_t>(now.tv_sec) * 1'000'000'000LL + now.tv_nsec;
+}
+
+timespec as_timespec(std::int64_t ns) {
+    return timespec{static_cast<time_t>(ns / 1'000'000'000LL),
+                    static_cast<long>(ns % 1'000'000'000LL)};
+}
+
 void sleep_until(const timespec& deadline) {
     while (!stop_requested.load()) {
         const int result = ::clock_nanosleep(CLOCK_MONOTONIC, TIMER_ABSTIME,
@@ -223,11 +236,12 @@ int main(int argc, char** argv) {
         }
         const bool active_high = polarity == "active-high";
 
+        // Keep conversion and monotonic timestamp arithmetic within int64_t.
+        if (fps < 0.001 || fps > 1'000'000 || pulse_us > 1'000'000'000)
+            throw std::runtime_error("FSYNC timing outside supported range");
         const auto period_ns = static_cast<std::int64_t>(std::llround(1.0e9 / fps));
         const auto pulse_ns = static_cast<std::int64_t>(std::llround(pulse_us * 1000.0));
-        if (pulse_ns >= period_ns) {
-            throw std::runtime_error("pulse_us must be shorter than the frame period");
-        }
+        sc132gs::detail::FsyncSchedule schedule(period_ns, pulse_ns);
 
         const std::string chip_path = requested_chip == "auto"
                                           ? discover_chip(std::max(line0, line1))
@@ -257,19 +271,29 @@ int main(int argc, char** argv) {
         std::cout << "FSYNC generator started" << std::endl;
 
         std::uint64_t pulses = 0;
+        std::uint64_t missed_periods = 0;
+        std::int64_t max_lateness_ns = 0;
         while (!stop_requested.load()) {
             sleep_until(rising);
             if (stop_requested.load()) {
                 break;
             }
             lines.set(active_high);
-            const timespec falling = add_ns(rising, pulse_ns);
+            const auto asserted_ns = monotonic_ns();
+            const auto planned_ns = static_cast<std::int64_t>(rising.tv_sec) *
+                                    1'000'000'000LL + rising.tv_nsec;
+            const auto lateness = std::max<std::int64_t>(0, asserted_ns - planned_ns);
+            max_lateness_ns = std::max(max_lateness_ns, lateness);
+            missed_periods += static_cast<std::uint64_t>(lateness / period_ns);
+            const timespec falling = as_timespec(schedule.asserted(planned_ns, asserted_ns));
             sleep_until(falling);
             lines.set(!active_high);
-            rising = add_ns(rising, period_ns);
+            rising = as_timespec(schedule.deasserted(monotonic_ns()));
             ++pulses;
         }
-        std::cout << "FSYNC generator stopped pulses=" << pulses << '\n';
+        std::cout << "FSYNC generator stopped pulses=" << pulses
+                  << " missed_periods=" << missed_periods
+                  << " max_lateness_ns=" << max_lateness_ns << '\n';
         return 0;
     } catch (const Error& error) {
         std::cerr << "error operation=" << error.operation

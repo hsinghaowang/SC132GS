@@ -1,0 +1,7 @@
+{
+  "restored": false,
+  "peer": "192.168.137.1",
+  "port": 51323,
+  "before_sha256": "815fee0492c13a6ebb54bc612e0c47708d31c9767433c4711fdefc04da51c17a",
+  "after_sha256": "76dbc75385dff0e053f66c8e94d01a9507563765e152f0016e53099295bc1095"
+}

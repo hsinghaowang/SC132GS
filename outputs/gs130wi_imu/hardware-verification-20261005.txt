@@ -1,0 +1,48 @@
+GS130WI IMU hardware verification
+Date: 2026-10-05 (Asia/Taipei)
+Board: RUBIK Pi 3, ubuntu@192.168.137.226
+Kernel: 6.8.0-1084-qcom
+Module identity: D-Robotics GS130WI, confirmed from user photograph.
+User confirmed: three external interrupt wires disconnected; board powered.
+
+Connection:
+IMU power and I2C use the right-camera FPC. External INT1/INT2/GND wires
+are not required for this polling verification. Wire-color mapping unverified.
+Live adapter: /dev/i2c-18, Qualcomm-CCI, ac4b000.cci (CCI1).
+Adapter numbers are runtime assignments; identify the controller before reuse.
+Address: 0x68. Bank selector 0x76 returned 0x00.
+WHO_AM_I register 0x75 returned 0x47 (ICM-42688-P).
+Address 0x69 did not acknowledge on this bus. Neither address acknowledged
+on camera adapter 16. No general address scan was performed.
+
+Initial state:
+PWR_MGMT0/GYRO_CONFIG0/ACCEL_CONFIG0 (0x4e..0x50): 00 06 06.
+Sensors were disabled; initial raw axes returned 0x8000 (invalid).
+
+Finite live test:
+Wrote PWR_MGMT0=0x0f, waited 100 ms, read accel and gyro in separate
+six-byte transactions, waited 200 ms, repeated, restored PWR_MGMT0=0x00.
+Restoration readback: 0x00.
+CCI rejected a 14-byte read with Operation not supported; six-byte reads work.
+Accel/gyro transactions are separate and do not prove simultaneous sampling.
+
+Sample 1 accel bytes: ff de 00 c3 f8 26
+Sample 1 gyro bytes:  ff fa ff f4 00 09
+Sample 2 accel bytes: ff dd 00 bf f8 29
+Sample 2 gyro bytes:  ff fc ff f5 00 09
+Big-endian signed int16:
+Sample 1 accel: -34, 195, -2010; gyro: -6, -12, 9.
+Sample 2 accel: -35, 191, -2007; gyro: -4, -11, 9.
+Unchanged default range: accel +/-16 g, gyro +/-2000 deg/s.
+Sample 1 accel g: approximately -0.0166, 0.0952, -0.9814.
+Sample 1 gyro deg/s: approximately -0.366, -0.732, 0.549.
+Valid changing six-axis data demonstrate hardware communication and acquisition.
+No deliberate motion, calibration, camera/IMU sync, continuous service or
+application integration has been verified. Sensors left in original off state.
+Existing IIO nodes are PMIC ADCs, not this IMU. Installed inv_icm42600_i2c
+module does not advertise an icm42688 binding; no driver binding was forced.
+
+References:
+https://developer.d-robotics.cc/accessories_stereo_camera_doc/en/stereo_camera_gs130wi/hardware
+https://developer.d-robotics.cc/accessories_stereo_camera_doc/en/stereo_camera_gs130wi/product_overview
+https://raw.githubusercontent.com/torvalds/linux/v6.8/drivers/iio/imu/inv_icm42600/inv_icm42600.h

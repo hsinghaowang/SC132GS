@@ -1,0 +1,19 @@
+{
+  "board-after.json": "6d526277710069540f7107990e1a0295dbf5e3750a63b9eab879d2a60afcb905",
+  "candidate-preview.png": "fbdb0c0a08ae2d3444fff03b37c60b71f9ecf42ba1206b099c546126dd5d3559",
+  "capture-used.py": "3295b814141fea6caa9684c0dfac790e2733dfcc38b7fd1d2b6f93857af5b716",
+  "frozen-candidate.npz": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "frozen-intrinsics.json": "0ba1d4bd09f4ad818b861f35120597cadf2aef5174941ac1af1af30409c7dab9",
+  "frozen-training-report.json": "1fa356e2a5561c8cb3dfaa496c70fa3ca3eca503cb85011f6cbf64c4bbed0c56",
+  "report.html": "753fd091126bbf9a9b52de0a66dff7cfd57539c099faefd35a71d8d24383cab5",
+  "transaction.json": "3cc447cc1cadea66f9d250fc7fccc1cf4dca6dd073b785e1f6b5cf516cf051c7",
+  "verification.json": "799f4f6c90f27a198e12655041e16a377a2bcb3e06cdb86db16d6a3e0d2fa57e",
+  "deployed-source/StereoCapture.cpp": "d69e52ea553b940bb1552120a6f97495b7e2437418d9f487cfac4851f9bd4898",
+  "deployed-source/StereoComposeNV12.cpp": "4357ac6f007001bd547b1656451d3ade33f6e7842337288cd237fa6a44099b16",
+  "deployed-source/StereoRtspServer.cpp": "1ed8098aac3b0e4c1f57d7cc1b58eaab31bbb47ae7bf002e06e517b09994babe",
+  "evaluation/corner-errors.csv": "e2fe70239955df6df6a40e4b5db552db048cd8cc799f5a5b2694e50d24c56cf6",
+  "evaluation/report.json": "80de12142b13e32a468afa5365ad2e8720f1d532b7c0488792fef55d458eab34",
+  "tested-analysis/evaluate-independent-stereo.py": "72eec3d58e9f3ed2472b19465288b19cd951af51ce31c6b993213959a0b0bc50",
+  "tested-analysis/finalize-rtsp-validation.py": "80cbb927d2b32f4b45e376ea9d8999cbff2bca3a3e5dfcd47445c7cd14ef6c4f",
+  "tested-analysis/inspect-target-session.py": "f8d1fbc1eee8ddcaf002c6a1412a1c20e12c92f91453514a539702ba83506a71"
+}

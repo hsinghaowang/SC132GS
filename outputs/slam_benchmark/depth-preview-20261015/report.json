@@ -1,0 +1,68 @@
+{
+  "input_sha256": {
+    "D:\\projects\\collision_avoid\\outputs\\slam_benchmark\\calibration-ready-20261014\\rtsp-decode-stable\\decoded.png": "585afdd6876b76a46a65380dad8322ad2dec91ef9028cb9b0d440811fd718a7c",
+    "D:\\projects\\collision_avoid\\outputs\\slam_benchmark\\calibration-ready-20261014\\geometry-analysis\\stereo-candidate.npz": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b"
+  },
+  "script_sha256": "4c6fad74400be42e1ccc1d0b825b64c4dcf5e5b34cb0747d9c980e78f8d98a49",
+  "opencv": "5.0.0",
+  "numpy": "2.5.4",
+  "source_kind": "Previously decoded RTSP; not sensor RAW",
+  "geometry": "Unmirror each half; physical left=cam1/right half, physical right=cam0/left half; invert cam0->cam1 extrinsics",
+  "image_size": [
+    1088,
+    1280
+  ],
+  "output_reference": "Rectified physical left (cam1); depth is optical-axis Z, not ray range",
+  "sgbm": {
+    "numDisparities": 256,
+    "blockSize": 5,
+    "P1": 200,
+    "P2": 800,
+    "disp12MaxDiff": 1,
+    "preFilterCap": 31,
+    "uniquenessRatio": 10,
+    "speckleWindowSize": 100,
+    "speckleRange": 2,
+    "mode": 2
+  },
+  "left_min_disparity": 0,
+  "right_min_disparity": -255,
+  "lr_max_error_px": 1.0,
+  "baseline_m": 0.07021513988684862,
+  "rectified_focal_px": 487.6569385939088,
+  "valid_pixels": 344765,
+  "valid_fraction": 0.24756218405330882,
+  "depth_m": {
+    "p05": 0.14083661139011383,
+    "median": 0.25235119462013245,
+    "p95": 1.8021526336669922
+  },
+  "lr_error_px": {
+    "p05": 0.0,
+    "median": 0.0625,
+    "p95": 0.5625
+  },
+  "board_diagnostic": {
+    "both_detected": false
+  },
+  "quality_status": "diagnostic_only_not_accepted_for_ranging",
+  "visual_assessment": "Checkerboard depth is fragmented with apparent false matches; ceiling also contains suspect near-depth streaks.",
+  "color_scale_m": [
+    0.2,
+    3.0
+  ],
+  "color_clips_only": true,
+  "invalid_depth": "NaN",
+  "input_hashes_unchanged": true,
+  "numeric_roundtrip_passed": true,
+  "calibration_modified": false,
+  "hardware_accessed": false,
+  "hole_filling": false,
+  "limitations": [
+    "20 mm physical checkerboard scale assumed",
+    "No distance ground truth or real-time performance test",
+    "Left-right consistency cannot exclude all repeated-pattern mismatches",
+    "Complete checkerboard not detected in both eyes; no corner-based geometry verification on this snapshot",
+    "Low-texture surfaces and occlusions remain invalid; decoded compression may affect matching"
+  ]
+}

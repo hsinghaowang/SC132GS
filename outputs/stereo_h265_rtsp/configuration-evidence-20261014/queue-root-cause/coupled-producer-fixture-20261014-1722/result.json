@@ -1,0 +1,25 @@
+{
+  "passed": false,
+  "scenarios": 4,
+  "callback_invocations": 20000,
+  "early_callbacks": 64,
+  "minimum_assert_interval_ns": 16678667,
+  "minimum_deassert_interval_ns": 16678667,
+  "minimum_pulse_ns": 106000,
+  "nominal_phase_drift_ns": 29988000,
+  "consumer_contended_locks": 1,
+  "producer_independent": false,
+  "absolute_cadence_required": true,
+  "absolute_cadence_passed": false,
+  "independent_producer_required": true,
+  "scope": "actual timer callback with virtual clock and GPIO; no hardware proof",
+  "source_sha256": "db7a3f2bdc5096b831c3782e8ae289c9cf91f13012f54cf5c036c5f8eb63af2c",
+  "header_sha256": "e95e28160504fdb39e354ac25208ef30d937f0c8b780eb36e7f963a4b56e8f1b",
+  "callback_sha256": "2ba5c01bc18f647c21180476f443970273e402ade7773cafed99f9eb0b06e3dc",
+  "additional_checks": [
+    "GPIO assertion failure",
+    "GPIO deassertion failure",
+    "stopped session",
+    "error session"
+  ]
+}

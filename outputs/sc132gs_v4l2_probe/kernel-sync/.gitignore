@@ -1,0 +1,18 @@
+__pycache__/
+# Exact baseline source is reconstructed from the saved archive.
+camss-*.c
+camss-*.h
+!camss-sync.c
+!camss-sync.h
+!camss-sync-match.h
+camss.c
+camss.h
+Makefile
+Kconfig
+*reference.c
+*reference.h
+*.ko
+evidence/*.tar.gz
+evidence/**/*.raw10
+evidence/**/events.txt
+evidence/**/buffers.csv

@@ -1,0 +1,52 @@
+{
+  "status": "target_capture_exported_imu_time_pending",
+  "stereo_pairs": 449,
+  "images_written": 898,
+  "paired_driver_stamp_delta_ms": {
+    "p50": 0.272,
+    "p95": 0.2966,
+    "max": 0.32
+  },
+  "imu_samples": 18834,
+  "png_pixel_roundtrip_passed": true,
+  "SI_unit_conversion_all_rows_passed": true,
+  "target_detector": {
+    "ideal_png": true,
+    "rendered_pdf": true,
+    "internal_corners": 54
+  },
+  "preview_metrics": [
+    {
+      "eye": 0,
+      "mean": 42.90784265854779,
+      "p01": 10.0,
+      "p99": 255.0,
+      "saturated_fraction": 0.015766457950367647
+    },
+    {
+      "eye": 1,
+      "mean": 45.698357077205884,
+      "p01": 11.0,
+      "p99": 255.0,
+      "saturated_fraction": 0.017531451056985295
+    }
+  ],
+  "camera_driver_sequence_gaps": [
+    0,
+    0
+  ],
+  "saved_state_preserved": true,
+  "imu_time_validated": false,
+  "camera_imu_bag_export_allowed": false,
+  "geometric_calibration_solved": false,
+  "observed_physical_target_coverage": {
+    "sampled_pairs": 60,
+    "stereo_target_pairs": 41
+  },
+  "limitations": [
+    "Physical target presence checked on a sampled subset; see target-coverage/report.json.",
+    "Paired driver timestamps do not establish equal exposure times.",
+    "IMU sensor-relative time is not a common host time; no imu0.csv placed in images-only.",
+    "Intrinsic/stereo and camera-IMU calibration still need physical target data and clock/noise work."
+  ]
+}

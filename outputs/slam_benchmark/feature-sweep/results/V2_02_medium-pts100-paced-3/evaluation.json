@@ -1,0 +1,75 @@
+{
+  "run": "V2_02_medium-pts100-paced-3",
+  "dataset": "V2_02_medium",
+  "num_pts": 100,
+  "target_per_eye": 50,
+  "resources": {
+    "exit_code": 0,
+    "elapsed_wrapper_s": 117.83802281200042,
+    "cpu_user_s": 110.004448,
+    "cpu_system_s": 54.009889,
+    "average_cpu_percent": 139.18626016126356,
+    "peak_rss_mib": 74.73828125,
+    "affinity_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "command": [
+      "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+      "/ws/slam_benchmark/feature-sweep/configs/100/estimator_config.yaml",
+      "/ws/slam_benchmark/datasets/V2_02_medium/mav0",
+      "/ws/slam_benchmark/feature-sweep/results/V2_02_medium-pts100-paced-3",
+      "1",
+      "0"
+    ],
+    "thermal_units": "raw sysfs values; platform units vary by zone"
+  },
+  "frames": 2348,
+  "input_frames": 2348,
+  "poses": 2266,
+  "elapsed_s": 117.39232354500001,
+  "paced": true,
+  "opencv_threads": 4,
+  "gt_initialization": false,
+  "ros_transport": false,
+  "status": "completed",
+  "all_frame_lag_ms": {
+    "p50": 38.270576234863256,
+    "p95": 49.56818695114416,
+    "p99": 58.75722199506297,
+    "max": 71.84209741857194
+  },
+  "initialized_lag_ms": {
+    "p50": 38.2534135511487,
+    "p95": 49.639898313929734,
+    "p99": 58.724195178131396,
+    "max": 71.84209741857194
+  },
+  "initialized_service_ms": {
+    "p50": 32.929722999999996,
+    "p95": 44.21658475,
+    "p99": 53.791228,
+    "max": 66.366752
+  },
+  "service_over_50ms_fraction": 0.018534863195057368,
+  "pose_frame_coverage": 0.965076660988075,
+  "post_init_pose_coverage": 1.0,
+  "nonadvancing_initialized_frames": 0,
+  "initialization_delay_s": 4.099999904632568,
+  "ate_rmse_m": 0.05473843930635451,
+  "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+  "rpe_interval_s": 1,
+  "rpe_pairs": 2231,
+  "rpe_translation_rmse_m": 0.025223532301647453,
+  "rpe_rotation_rmse_deg": 0.28048949006970353,
+  "ground_truth_matched_poses": 2252,
+  "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+  "matched_start_timestamp": 1413393890.1050446,
+  "matched_end_timestamp": 1413394002.6557965
+}

@@ -1,0 +1,17 @@
+{
+  "samples": 1035,
+  "pc_clock": "QueryPerformanceCounter via perf_counter_ns",
+  "clock_offset_drift_ms": 0.554287,
+  "clock_min_rtt_half_ms": 0.786,
+  "latency_ms": {
+    "p50": 175.49501311132812,
+    "p95": 187.6092507513672,
+    "p99": 196.1978888120703
+  },
+  "start": "driver exposure_start_estimate",
+  "end": "PC decoder-ready",
+  "watermarks_exactly_joined": true,
+  "unique_frames": true,
+  "source_timestamp_fps": 29.71264623959594,
+  "pc_decode_fps": 29.72617369987649
+}

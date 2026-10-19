@@ -1,0 +1,66 @@
+[
+  {
+    "directory": "apply-a4ff0b53-c8f0-461b-a0ad-95a1f2004162",
+    "request": null,
+    "width": 1088,
+    "height": 640,
+    "decoded_frames": 357,
+    "pts_fps": 59.997865238877466
+  },
+  {
+    "directory": "apply-6dc286f9-9a81-46be-b8f4-f08b7d9d7e9e",
+    "request": null,
+    "width": 2176,
+    "height": 1280,
+    "decoded_frames": 178,
+    "pts_fps": 29.999322050914063
+  },
+  {
+    "directory": "apply-97b30429-7dd6-450a-a1fa-2d3d910b6325",
+    "request": null,
+    "width": 2176,
+    "height": 1280,
+    "decoded_frames": 178,
+    "pts_fps": 29.971552424817123
+  },
+  {
+    "directory": "apply-f3087bb7-545b-4c74-8c5c-408d778e8b84",
+    "request": null,
+    "width": 2176,
+    "height": 1280,
+    "decoded_frames": 128,
+    "pts_fps": 29.996142226852918
+  },
+  {
+    "directory": "apply-0c807fba-f457-4670-918f-d7cf58d0c297",
+    "request": null,
+    "width": 1088,
+    "height": 640,
+    "decoded_frames": 357,
+    "pts_fps": 59.99831465408275
+  },
+  {
+    "directory": "apply-c00fb285-9039-4aba-88d2-8554637542a7",
+    "request": null,
+    "width": 2176,
+    "height": 1280,
+    "decoded_frames": 241,
+    "pts_fps": 59.74921924755404
+  },
+  {
+    "directory": "final-linear-binning60-ae",
+    "request": null,
+    "width": 1088,
+    "height": 640,
+    "decoded_frames": 896,
+    "pts_fps": 59.998748628557486
+  },
+  {
+    "directory": "apply-3425659d-7a91-4281-acd4-5822526cc33a",
+    "request": null,
+    "width": 1088,
+    "height": 640,
+    "decoded_frames": 179,
+    "pts_fps": 29.99870792025814
+  }
+]

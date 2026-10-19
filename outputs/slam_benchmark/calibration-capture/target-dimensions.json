@@ -1,0 +1,22 @@
+{
+  "page_mm": [
+    297,
+    210
+  ],
+  "squares": [
+    10,
+    7
+  ],
+  "internal_corners": [
+    9,
+    6
+  ],
+  "square_mm": 20,
+  "pattern_mm": [
+    200,
+    140
+  ],
+  "ruler_mm": 50,
+  "print_scale_must_be_measured": true,
+  "reference": "https://github.com/ethz-asl/kalibr/wiki/calibration-targets"
+}

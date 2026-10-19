@@ -1,0 +1,42 @@
+{
+  "fsync-stall-after": {
+    "gpio_software_timing": {
+      "565": {
+        "pulses": 471,
+        "min_period_us": 16810.000000987202,
+        "max_period_us": 319870.000006631,
+        "min_pulse_us": 132.0000010309741,
+        "periods_under_1ms": 0
+      },
+      "566": {
+        "pulses": 471,
+        "min_period_us": 16810.000000987202,
+        "max_period_us": 319873.00000037067,
+        "min_pulse_us": 130.00000035390258,
+        "periods_under_1ms": 0
+      }
+    },
+    "iommu_fault_events": 0,
+    "driver_queue_exhaustions": 0
+  },
+  "fsync-stall-before": {
+    "gpio_software_timing": {
+      "565": {
+        "pulses": 505,
+        "min_period_us": 67.0000008540228,
+        "max_period_us": 307054.0000044275,
+        "min_pulse_us": 29.999995604157448,
+        "periods_under_1ms": 17
+      },
+      "566": {
+        "pulses": 505,
+        "min_period_us": 67.99999391660094,
+        "max_period_us": 307062.0000071358,
+        "min_pulse_us": 29.999995604157448,
+        "periods_under_1ms": 17
+      }
+    },
+    "iommu_fault_events": 0,
+    "driver_queue_exhaustions": 0
+  }
+}

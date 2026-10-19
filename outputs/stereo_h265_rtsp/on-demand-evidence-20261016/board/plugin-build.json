@@ -1,0 +1,5 @@
+{
+  "plugin": "/home/ubuntu/rtsp-demand-20261016/plugin-build/sys/v4l2/libgstvideo4linux2.so",
+  "sha256": "198728c1276a3382734bd65f457042b3f25a6af96251667cdc29f90b3465d07c",
+  "patch_sha256": "136cacfc69451e718c21e1c9a0a1c6fec24fcb2eb32d8a74252117e1ae7b81ce"
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-12",
+  "platform": "RUBIK Pi 3 QCS6490 ARM64",
+  "container": "ros2-humble Jammy /opt/ros/humble",
+  "estimator_revision": "69488123ed9362dd44b6f28e7f4680abbff1442b",
+  "receiver_binary_sha256": "792c66116e2edddcb8877ec7fe488e29047dd38db28ea476306bc7722585b85f",
+  "candidate_yaml_sha256": "92b82dce6932b3289c0cd7152068219b87e21c585419908f7ee3558e2b66ec10",
+  "num_pts": 100,
+  "target_per_eye": 50,
+  "DDS": "Fast DDS rmw_fastrtps_cpp, localhost, ROS_DOMAIN_ID 73",
+  "receiver": "custom C++17 PIMPL wrapper using pinned OpenVINS core and ROS2Visualizer; stock run_subscribe_msckf main is not tested by this harness",
+  "concurrency": "one executor ingests immutable owned image/IMU measurements; bounded queue 4096; one owned worker serializes all VioManager and ROS2Visualizer access; joined before ROS shutdown",
+  "receiver_imu_qos": "best effort KeepLast 100",
+  "image_qos": "reliable KeepLast 10, ApproximateTime pair queue 10",
+  "high_rate_imu_odometry_and_TF": false,
+  "camera_rate_hz": 20,
+  "imu_rate_hz": 200,
+  "publisher": "Python rclpy, cv2 PNG decode threads=1, array.array mono8 serialization, separate process from receiver",
+  "opencv_estimator_threads": 4,
+  "ground_truth_initialization": false,
+  "physical_sensors": false,
+  "native_comparison_scope": "native estimator return includes PNG load; ROS measurement includes publisher, DDS, image clones, estimator, headless state/path publication, pose DDS and probe",
+  "background_work": "No dataset download, extraction or concurrent compilation during full sequences; small transfers of completed logs may overlap next run; other board processes not isolated",
+  "failed_prototypes": "*-paced-1 serialized callbacks with 100-sample IMU DDS queue; retain as diagnostic failures with observed IMU loss, do not combine with paced-worker-1 final variant",
+  "limits": [
+    "one full ROS2 run per dataset",
+    "physical exposure-to-pose latency and camera-IMU synchronization untested",
+    "default detached stock subscriber mode and high-rate IMU odometry remain untested"
+  ],
+  "source_sha256": {
+    "ros2-runner\\Receiver.hpp": "0c58505e6bf8ce0185d96d2a92692f5819e63e8170afc24a532cd33c763064f1",
+    "ros2-runner\\Receiver.cpp": "25868c1fe77f392c6fb75e8f68a0748fb19595b95a4b5c7cf7a7c4f24e35940b",
+    "ros2-runner\\CMakeLists.txt": "c1d0c52574e11d41866fbeffa396115ead4b74cc3bd604b6ce9aa3df51b15d8b",
+    "ros-replay.py": "284927ae4e5e033005b417ce023d55ba4a62d013407828f77f72a82a4f21e489",
+    "analyze-ros-replay.py": "35aac79cc1846d9b09f55764427bc4cbb880293ac09159214a02e714c1fb93fb",
+    "run-ros-full.sh": "dcc92a31d5bd1440eb7e6ccef9c005e578d11fbbbc13eb690bbf23eb6e7b3a19"
+  },
+  "final_result": "zero input loss and complete post-init poses, MH latency tail still pending"
+}

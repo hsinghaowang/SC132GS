@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "production-cam0-extra-row",
+      "capture_exit": 0,
+      "sensor_readback": "dimension=height original=1280 injected=1281\nreadback=1281",
+      "new_kernel_faults": [],
+      "restored_status": "ok sensor_mode=linear binning=0 max_fps=60 effective_fps=60 measured_fps_x10=599 eye_resolution=1088x1280 ae=1 brightness=30 ae_target_percent=30 exposure_rows=1330 gain_index=32 exposure_ceiling_rows=1330 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=181",
+      "capture_log": "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 47.86 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 53.95 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 55.98 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 56.99 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 60.03 fps\n<<<<<<<<<<<"
+    },
+    {
+      "case": "production-cam1-extra-row",
+      "capture_exit": 0,
+      "sensor_readback": "dimension=height original=1280 injected=1281\nreadback=1281",
+      "new_kernel_faults": [],
+      "restored_status": "ok sensor_mode=linear binning=0 max_fps=60 effective_fps=60 measured_fps_x10=598 eye_resolution=1088x1280 ae=1 brightness=30 ae_target_percent=30 exposure_rows=1330 gain_index=32 exposure_ceiling_rows=1330 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=181",
+      "capture_log": "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 50.55 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 55.23 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 56.83 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 57.62 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 59.99 fps\n<<<<<<<<"
+    },
+    {
+      "case": "production-cam1-short-row",
+      "capture_exit": 0,
+      "sensor_readback": "dimension=height original=1280 injected=1279\nreadback=1279",
+      "new_kernel_faults": [],
+      "restored_status": "ok sensor_mode=linear binning=0 max_fps=60 effective_fps=60 measured_fps_x10=599 eye_resolution=1088x1280 ae=1 brightness=30 ae_target_percent=30 exposure_rows=1330 gain_index=32 exposure_ceiling_rows=1330 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=181",
+      "capture_log": "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 49.66 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 54.81 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 56.52 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 57.40 fps\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 59.99 fps\n<<<<<<<<<"
+    }
+  ]
+}

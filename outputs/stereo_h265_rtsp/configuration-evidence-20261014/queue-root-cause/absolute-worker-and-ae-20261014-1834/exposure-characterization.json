@@ -1,0 +1,76 @@
+{
+  "passed": false,
+  "sof_min_us": 341,
+  "sof_max_us": 16856,
+  "exposure_min_rows": 8,
+  "exposure_max_rows": 1377,
+  "maximum_window_ns": 16566667,
+  "window_ns": 16515000,
+  "unique_sof": 13712,
+  "unmatched_or_ambiguous": 0,
+  "trigger_gaps": [
+    3497,
+    3498
+  ],
+  "phase_mismatch": false,
+  "offset_ns": 350305.66666666605,
+  "profiles": [
+    {
+      "rows": 8,
+      "samples": 2050,
+      "min_ns": 441783,
+      "median_ns": 444571.5,
+      "max_ns": 452315
+    },
+    {
+      "rows": 32,
+      "samples": 2052,
+      "min_ns": 727564,
+      "median_ns": 730005.5,
+      "max_ns": 740268
+    },
+    {
+      "rows": 808,
+      "samples": 1025,
+      "min_ns": 9966833,
+      "median_ns": 9969306,
+      "max_ns": 9976338
+    },
+    {
+      "rows": 1330,
+      "samples": 1025,
+      "min_ns": 16181812,
+      "median_ns": 16183639,
+      "max_ns": 16191108
+    },
+    {
+      "rows": 1360,
+      "samples": 1025,
+      "min_ns": 16537376,
+      "median_ns": 16540101,
+      "max_ns": 16548631
+    },
+    {
+      "rows": 1377,
+      "samples": 1025,
+      "min_ns": 16740066,
+      "median_ns": 16742314,
+      "max_ns": 16751723
+    },
+    {
+      "rows": 8,
+      "samples": 2050,
+      "min_ns": 442120,
+      "median_ns": 444443.5,
+      "max_ns": 457514
+    },
+    {
+      "rows": 1377,
+      "samples": 1779,
+      "min_ns": 16741964,
+      "median_ns": 16744568,
+      "max_ns": 16755153
+    }
+  ],
+  "source": "1330-row measured causal anchor plus stable exposure control readback; actual recorded pulse search"
+}

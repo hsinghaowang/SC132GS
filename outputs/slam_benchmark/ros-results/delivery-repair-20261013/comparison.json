@@ -1,0 +1,466 @@
+{
+  "status": "passed_delivery_and_accuracy",
+  "datasets": {
+    "MH_01_easy": {
+      "repeats": 2,
+      "control_p95_ms": 78.50253225,
+      "repaired_frame_ready_p95_range_ms": [
+        48.77044245,
+        49.52152505
+      ],
+      "repaired_max_range_ms": [
+        86.40659,
+        97.656207
+      ],
+      "control_ate_rmse_m": 0.12003840360346094,
+      "repaired_ate_rmse_m": [
+        0.12003840360346094,
+        0.12003840360346094
+      ],
+      "receiver_cpu_percent_one_core": [
+        129.8442997208317,
+        117.46025382862275
+      ],
+      "publisher_and_probe_cpu_percent_one_core": [
+        67.1785800626563,
+        56.46953574809856
+      ],
+      "max_absolute_ate_delta_m": 0.0
+    },
+    "V2_02_medium": {
+      "repeats": 2,
+      "control_p95_ms": 77.949026,
+      "repaired_frame_ready_p95_range_ms": [
+        56.45264075,
+        57.23297275
+      ],
+      "repaired_max_range_ms": [
+        77.577227,
+        82.218541
+      ],
+      "control_ate_rmse_m": 0.055259442266562965,
+      "repaired_ate_rmse_m": [
+        0.055259442266562965,
+        0.055259442266562965
+      ],
+      "receiver_cpu_percent_one_core": [
+        142.62581624119932,
+        139.54440408193088
+      ],
+      "publisher_and_probe_cpu_percent_one_core": [
+        56.29624206553968,
+        52.19781868961476
+      ],
+      "max_absolute_ate_delta_m": 0.0
+    }
+  },
+  "runs": [
+    {
+      "run": "MH_01_easy-paced-delivery-shm4m-1",
+      "dataset": "MH_01_easy",
+      "input_missing": {
+        "imu": 0,
+        "left": 0,
+        "right": 0,
+        "paired_stereo": 0
+      },
+      "scheduled_to_pose_ms": {
+        "p50": 40.159069,
+        "p95": 49.52152505,
+        "p99": 62.15321573000001,
+        "max": 86.40659
+      },
+      "scheduled_to_stereo_publish_ms": {
+        "p50": 2.904815,
+        "p95": 5.916473,
+        "p99": 7.255235360000001,
+        "max": 9.318604
+      },
+      "callback_entry_to_worker_ms": {
+        "p50": 0.7880199999999999,
+        "p95": 2.4928086,
+        "p99": 4.59577117000005,
+        "max": 26.099459
+      },
+      "worker_update_publication_ms": {
+        "p50": 31.530059,
+        "p95": 40.237428349999995,
+        "p99": 51.97070716000001,
+        "max": 75.729143
+      },
+      "ate_rmse_m": 0.12003840360346094,
+      "ate_delta_vs_control_m": 0.0,
+      "rpe_translation_rmse_m": 0.0361591069256667,
+      "rpe_rotation_rmse_deg": 0.29420503941002296,
+      "post_init_pose_coverage": 1.0,
+      "full_sequence_pose_coverage": 0.7561108093427485,
+      "pairs": 3682,
+      "imu": 36820,
+      "poses": 2784,
+      "maximum_prepared_queue": 4,
+      "maximum_measurement_queue": 16,
+      "input_schedule_sha256": "2e54739137d2e69210ade0c86caf409330875d983119290a12128459a6583486",
+      "background_monitor_samples": 173,
+      "forbidden_background_samples": [],
+      "resources": {
+        "elapsed_including_startup_drain_stop_s": 189.91651041299974,
+        "publisher_probe_cpu_percent": 67.1785800626563,
+        "receiver_cpu_percent": 129.8442997208317,
+        "publisher_probe_peak_rss_mib": 93.41796875,
+        "receiver_peak_rss_mib": 101.0859375,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cpu_units": "100 percent is one logical core",
+        "accounting": "publisher includes native input process and rclpy probe; receiver CPU subtracts native self CPU from waited children; child peak RSS is aggregate maximum"
+      },
+      "prepared_before_due_fraction": 1.0,
+      "per_eye_decode_ms": {
+        "p50": 12.743696,
+        "p95": 17.47202135,
+        "p99": 18.16191254,
+        "max": 22.187291
+      }
+    },
+    {
+      "run": "V2_02_medium-paced-delivery-shm4m-1",
+      "dataset": "V2_02_medium",
+      "input_missing": {
+        "imu": 0,
+        "left": 0,
+        "right": 0,
+        "paired_stereo": 0
+      },
+      "scheduled_to_pose_ms": {
+        "p50": 42.577367,
+        "p95": 57.23297275,
+        "p99": 68.38455479999995,
+        "max": 77.577227
+      },
+      "scheduled_to_stereo_publish_ms": {
+        "p50": 3.120361,
+        "p95": 6.471538750000001,
+        "p99": 7.803093299999996,
+        "max": 11.681529
+      },
+      "callback_entry_to_worker_ms": {
+        "p50": 1.2735535,
+        "p95": 6.1589285,
+        "p99": 8.993085549999996,
+        "max": 16.624369
+      },
+      "worker_update_publication_ms": {
+        "p50": 31.983122,
+        "p95": 44.74135275,
+        "p99": 57.023370299999975,
+        "max": 66.706533
+      },
+      "ate_rmse_m": 0.055259442266562965,
+      "ate_delta_vs_control_m": 0.0,
+      "rpe_translation_rmse_m": 0.025358945684632525,
+      "rpe_rotation_rmse_deg": 0.28357834149811806,
+      "post_init_pose_coverage": 1.0,
+      "full_sequence_pose_coverage": 0.965076660988075,
+      "pairs": 2348,
+      "imu": 23490,
+      "poses": 2266,
+      "maximum_prepared_queue": 4,
+      "maximum_measurement_queue": 15,
+      "input_schedule_sha256": "d31a2bcd3d27262b9cdab22031946e7a75621e23b2ae622b85a5758c00ae3b31",
+      "background_monitor_samples": 113,
+      "forbidden_background_samples": [],
+      "resources": {
+        "elapsed_including_startup_drain_stop_s": 123.2879717249998,
+        "publisher_probe_cpu_percent": 56.29624206553968,
+        "receiver_cpu_percent": 142.62581624119932,
+        "publisher_probe_peak_rss_mib": 85.734375,
+        "receiver_peak_rss_mib": 100.8828125,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cpu_units": "100 percent is one logical core",
+        "accounting": "publisher includes native input process and rclpy probe; receiver CPU subtracts native self CPU from waited children; child peak RSS is aggregate maximum"
+      },
+      "prepared_before_due_fraction": 1.0,
+      "per_eye_decode_ms": {
+        "p50": 9.3010555,
+        "p95": 13.70874525,
+        "p99": 15.072656300000002,
+        "max": 21.030479
+      }
+    },
+    {
+      "run": "V2_02_medium-paced-delivery-shm4m-2",
+      "dataset": "V2_02_medium",
+      "input_missing": {
+        "imu": 0,
+        "left": 0,
+        "right": 0,
+        "paired_stereo": 0
+      },
+      "scheduled_to_pose_ms": {
+        "p50": 42.3171785,
+        "p95": 56.45264075,
+        "p99": 67.34980404999997,
+        "max": 82.218541
+      },
+      "scheduled_to_stereo_publish_ms": {
+        "p50": 3.013171,
+        "p95": 6.27044625,
+        "p99": 7.452697999999997,
+        "max": 10.067641
+      },
+      "callback_entry_to_worker_ms": {
+        "p50": 1.346522,
+        "p95": 6.29158375,
+        "p99": 8.027650199999998,
+        "max": 22.551875
+      },
+      "worker_update_publication_ms": {
+        "p50": 31.685517,
+        "p95": 43.29772475,
+        "p99": 55.687886299999974,
+        "max": 71.941486
+      },
+      "ate_rmse_m": 0.055259442266562965,
+      "ate_delta_vs_control_m": 0.0,
+      "rpe_translation_rmse_m": 0.025358945684632525,
+      "rpe_rotation_rmse_deg": 0.28357834149811806,
+      "post_init_pose_coverage": 1.0,
+      "full_sequence_pose_coverage": 0.965076660988075,
+      "pairs": 2348,
+      "imu": 23490,
+      "poses": 2266,
+      "maximum_prepared_queue": 4,
+      "maximum_measurement_queue": 16,
+      "input_schedule_sha256": "d31a2bcd3d27262b9cdab22031946e7a75621e23b2ae622b85a5758c00ae3b31",
+      "background_monitor_samples": 114,
+      "forbidden_background_samples": [],
+      "resources": {
+        "elapsed_including_startup_drain_stop_s": 123.26695945400024,
+        "publisher_probe_cpu_percent": 52.19781868961476,
+        "receiver_cpu_percent": 139.54440408193088,
+        "publisher_probe_peak_rss_mib": 85.87109375,
+        "receiver_peak_rss_mib": 100.15234375,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cpu_units": "100 percent is one logical core",
+        "accounting": "publisher includes native input process and rclpy probe; receiver CPU subtracts native self CPU from waited children; child peak RSS is aggregate maximum"
+      },
+      "prepared_before_due_fraction": 1.0,
+      "per_eye_decode_ms": {
+        "p50": 8.2747265,
+        "p95": 11.59016525,
+        "p99": 12.786739500000003,
+        "max": 16.542103
+      }
+    },
+    {
+      "run": "MH_01_easy-paced-delivery-shm4m-2",
+      "dataset": "MH_01_easy",
+      "input_missing": {
+        "imu": 0,
+        "left": 0,
+        "right": 0,
+        "paired_stereo": 0
+      },
+      "scheduled_to_pose_ms": {
+        "p50": 38.698864,
+        "p95": 48.77044245,
+        "p99": 60.31125549000005,
+        "max": 97.656207
+      },
+      "scheduled_to_stereo_publish_ms": {
+        "p50": 2.4338565,
+        "p95": 4.757300900000001,
+        "p99": 6.021819850000006,
+        "max": 9.041611
+      },
+      "callback_entry_to_worker_ms": {
+        "p50": 0.715735,
+        "p95": 2.700825349999999,
+        "p99": 5.79930922000004,
+        "max": 38.310948
+      },
+      "worker_update_publication_ms": {
+        "p50": 30.612778,
+        "p95": 40.597528,
+        "p99": 49.61320569000003,
+        "max": 90.359581
+      },
+      "ate_rmse_m": 0.12003840360346094,
+      "ate_delta_vs_control_m": 0.0,
+      "rpe_translation_rmse_m": 0.0361591069256667,
+      "rpe_rotation_rmse_deg": 0.29420503941002296,
+      "post_init_pose_coverage": 1.0,
+      "full_sequence_pose_coverage": 0.7561108093427485,
+      "pairs": 3682,
+      "imu": 36820,
+      "poses": 2784,
+      "maximum_prepared_queue": 4,
+      "maximum_measurement_queue": 19,
+      "input_schedule_sha256": "2e54739137d2e69210ade0c86caf409330875d983119290a12128459a6583486",
+      "background_monitor_samples": 174,
+      "forbidden_background_samples": [],
+      "resources": {
+        "elapsed_including_startup_drain_stop_s": 189.9702194800002,
+        "publisher_probe_cpu_percent": 56.46953574809856,
+        "receiver_cpu_percent": 117.46025382862275,
+        "publisher_probe_peak_rss_mib": 93.234375,
+        "receiver_peak_rss_mib": 101.22265625,
+        "affinity_cpus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cpu_units": "100 percent is one logical core",
+        "accounting": "publisher includes native input process and rclpy probe; receiver CPU subtracts native self CPU from waited children; child peak RSS is aggregate maximum"
+      },
+      "prepared_before_due_fraction": 1.0,
+      "per_eye_decode_ms": {
+        "p50": 10.2419725,
+        "p95": 12.342875049999993,
+        "p99": 13.432248759999998,
+        "max": 16.083536
+      }
+    }
+  ],
+  "short_transport_controls": [
+    {
+      "run": "V2_02_medium-paced-delivery-default-600",
+      "profile": "default",
+      "frames": 600,
+      "start_monotonic_ns": 4636170967357,
+      "end_monotonic_ns": 4674452582034,
+      "returncode": 0,
+      "input_missing": {
+        "imu": 62,
+        "left": 0,
+        "right": 0,
+        "pairs": 0
+      },
+      "receiver_error": 0,
+      "receiver_exit_code": 0,
+      "publisher_exit_code": 0
+    },
+    {
+      "run": "V2_02_medium-paced-delivery-shm512-600",
+      "profile": "fastdds-shm-512k.xml",
+      "frames": 600,
+      "start_monotonic_ns": 4674608483219,
+      "end_monotonic_ns": 4711653253981,
+      "returncode": 0,
+      "input_missing": {
+        "imu": 78,
+        "left": 0,
+        "right": 0,
+        "pairs": 0
+      },
+      "receiver_error": 0,
+      "receiver_exit_code": 0,
+      "publisher_exit_code": 0
+    },
+    {
+      "run": "V2_02_medium-paced-delivery-shm4m-600",
+      "profile": "fastdds-shm-4m.xml",
+      "frames": 600,
+      "start_monotonic_ns": 4711820991233,
+      "end_monotonic_ns": 4748879078073,
+      "returncode": 0,
+      "input_missing": {
+        "imu": 0,
+        "left": 0,
+        "right": 0,
+        "pairs": 0
+      },
+      "receiver_error": 0,
+      "receiver_exit_code": 0,
+      "publisher_exit_code": 0
+    }
+  ],
+  "gate_validation": [
+    {
+      "run": "V2_02_medium-paced-delivery-gate-512k",
+      "returncode": 4,
+      "expected_returncode": 4,
+      "input_integrity": {
+        "passed": false,
+        "missing": {
+          "imu": 98,
+          "left": 0,
+          "right": 0,
+          "pairs": 0
+        },
+        "receiver_error_code": 0,
+        "abandoned_measurements_at_stop": 0
+      },
+      "DDS_profile": {
+        "path": "/ws/slam_benchmark/fastdds-shm-512k.xml",
+        "sha256": "f36b542f68cdd0dad493584a7165320e065f5e8bfdf51c4a2bffdb12e77d6846",
+        "scope": "Process-local participant transport profile inherited by publisher, receiver and probe; topic QoS unchanged"
+      }
+    },
+    {
+      "run": "V2_02_medium-paced-delivery-gate-4m",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "input_integrity": {
+        "passed": true,
+        "missing": {
+          "imu": 0,
+          "left": 0,
+          "right": 0,
+          "pairs": 0
+        },
+        "receiver_error_code": 0,
+        "abandoned_measurements_at_stop": 0
+      },
+      "DDS_profile": {
+        "path": "/ws/slam_benchmark/fastdds-shm-4m.xml",
+        "sha256": "69852bf171675f4160656c1e11228313d7a16a5211d5fff3f866d5e4e5406fe7",
+        "scope": "Process-local participant transport profile inherited by publisher, receiver and probe; topic QoS unchanged"
+      }
+    }
+  ],
+  "payload_validation": {
+    "exact_pixels_and_IMU_values": true,
+    "left": 120,
+    "right": 120,
+    "imu": 1201
+  },
+  "raw_files_verified": 162,
+  "camera_initially_inactive_and_preserved": true,
+  "receiver_and_yaml_unchanged": true,
+  "input_qos_unchanged": "IMU publisher best effort KeepLast200, receiver best effort KeepLast100; images reliable KeepLast10",
+  "mitigation": "Explicit process-local Fast DDS 4 MiB SHM segment instead of 512 KiB; no algorithm/binary changes",
+  "causal_limit": "Single-variable segment-capacity intervention and reverse 512KiB control support transport-capacity cause. No internal overwrite trace captured.",
+  "measurement_limit": "Frame-ready dataset replay: PNG decoded before source schedule; not equivalent to old PNG-on-path latency and not physical exposure-to-pose.",
+  "documentation": "https://fast-dds.docs.eprosima.com/en/v2.6.11/fastdds/transport/shared_memory/shared_memory.html"
+}

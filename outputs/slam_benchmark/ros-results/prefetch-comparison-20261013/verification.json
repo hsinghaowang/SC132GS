@@ -1,0 +1,24 @@
+{
+  "raw_manifests_verified": {
+    "publisher-comparison-20261013": 94,
+    "prefetch-comparison-20261013": 90
+  },
+  "frozen_initial_native_sources_verified": {
+    "native-publisher/ReplayPublisher.hpp": "cfaa3e1f9de0efb65abc314c99ba458c97a40a959813b28fbb4ec6ec1f7a6ccb",
+    "native-publisher/ReplayPublisher.cpp": "4fb77ee3cf3b7f245df7539f7e36aaea71d1e572a30c1d571c3b1e9362343266",
+    "native-publisher/CMakeLists.txt": "4a3a4c44bbe4adc996851a62623005d853c786a3e67319d8695f779bd9c8a851",
+    "ros-replay-native.py": "362dd4f62f02e361d3549f44937836f5a447bea8621919f12049abfd798ec854"
+  },
+  "prefetch_tested_source_snapshot": "tested-sources",
+  "valid_prefetch_performance_runs": 0,
+  "background_overlap_excluded": "MH_01_easy-paced-prefetch-2",
+  "independent_imu_count_and_timestamp_audit": true,
+  "report_relative_links_passed": true,
+  "board_contact_during_this_followup": false,
+  "source_sha256": {
+    "analyze-prefetch.py": "6557547b95bfd3ca8f8993099fba26101974033a28eb3b0b9e24d0fc471f74b5",
+    "audit-prefetch-imu.py": "031af41b0eaf74677c0a75aa1f1c605e6fbf5b9a68b68d350f6488f40a29da0a",
+    "analyze-publisher-comparison.py": "8d5da15beefe26c8f49f5074ca6a665de69084d8b14060320d3029ba5f161821",
+    "finalize-publisher-audit.py": "dee86bac1905748723e084f7df6561612fb25f1ecf4c9f671f075c42409410e5"
+  }
+}

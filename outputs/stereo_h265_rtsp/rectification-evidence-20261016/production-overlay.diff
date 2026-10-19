@@ -1,0 +1,197 @@
+--- deployed/StereoRtspServer.cpp
++++ new/StereoRtspServer.cpp
+@@ -5,6 +5,10 @@
+ #include "LinearVideoLuma.hpp"
+ #include "Main10Encoder.hpp"
+ #include "SensorSignalCalibration.hpp"
++#include "GpuStereoRectifier.hpp"
++#include "DepthPipeline.hpp"
++#include "DepthRtspEndpoint.hpp"
++#include "StereoOutputWorker.hpp"
+ #include "sc132gs-exposure-budget.hpp"
+ #include "sc132gs-ae.hpp"
+ #include "sc132gs-control-server.hpp"
+@@ -42,6 +46,7 @@
+     explicit Impl(Settings value) : settings(std::move(value)) {}
+ 
+     Settings settings;
++    detail::DepthRtspEndpoint depth_endpoint;
+     GMainLoop* loop{};
+     GstRTSPServer* server{};
+     GstRTSPMediaFactory* factory{};
+@@ -228,6 +233,10 @@
+     }
+ 
+     std::variant<std::monostate, Error> run() {
++        if ((!settings.gpu_rectification_map.empty() || !settings.depth_calibration.empty()) &&
++            (!settings.main10 || settings.downscale!=1 ||
++             settings.capture_mode!=CaptureMode::external_trigger))
++            return Error{ErrorCode::invalid_config,"GPU rectification/depth requires full-resolution Main10 external-trigger capture"};
+         const bool experimental = settings.capture_mode != CaptureMode::external_trigger;
+         const bool binning = settings.capture_mode == CaptureMode::experimental_linear120_binning ||
+                              settings.capture_mode == CaptureMode::experimental_linear60_binning ||
+@@ -318,6 +327,7 @@
+         GstRTSPMountPoints* mounts = gst_rtsp_server_get_mount_points(server);
+         gst_rtsp_mount_points_add_factory(mounts, settings.mount.c_str(),
+                                           GST_RTSP_MEDIA_FACTORY(gst_object_ref(factory)));
++        if(!settings.depth_calibration.empty())depth_endpoint.mount(mounts);
+         gst_object_unref(mounts);
+         attach_id = gst_rtsp_server_attach(server, nullptr);
+         if (!attach_id) {
+@@ -381,6 +391,8 @@
+         exposure.set_target(settings.target_brightness_percent);
+         if (!settings.auto_exposure) exposure.disable();
+         const bool linear_display = !exposure.snapshot().hdr_enabled;
++        if(!linear_display && !settings.gpu_rectification_map.empty())
++            throw std::runtime_error("GPU rectification is validated for Linear mono10 only");
+         if(settings.main10 && !linear_display)
+             std::cerr << "hdr_display_profile=" << (settings.hdr_display_b ? "b" : "sensor") << '\n';
+         const sc132gs::HdrDisplay hdr_display;
+@@ -401,6 +413,33 @@
+                                                            settings.frame_rate,settings.bitrate);
+             stereo10.resize(static_cast<std::size_t>(eye_width)*2*eye_height);
+         }
++        std::unique_ptr<detail::GpuStereoRectifier> rectifier;
++        if(!settings.gpu_rectification_map.empty()) {
++            try {rectifier=std::make_unique<detail::GpuStereoRectifier>(settings.gpu_rectification_map);}
++            catch(const detail::RectificationError& e) {throw std::runtime_error("gpu_rectification initialization code="+std::to_string(int(e.code))+" native="+std::to_string(e.native_code));}
++        }
++        std::unique_ptr<detail::DepthPipeline> depth;
++        if(!settings.depth_calibration.empty()) {
++            try {depth=std::make_unique<detail::DepthPipeline>(settings.depth_calibration,depth_endpoint);}
++            catch(const std::exception&) {depth_endpoint.on_depth_error({detail::DepthStage::initialization});}
++        }
++        struct Main10Sink final : detail::StereoOutputWorker::Observer {
++            Impl& owner;explicit Main10Sink(Impl& o):owner(o){}
++            void on_stereo_access_unit(const detail::StereoAccessUnit& unit)noexcept override {
++                auto* buffer=gst_buffer_new_allocate(nullptr,unit.bytes,nullptr);
++                if(!buffer){on_stereo_processing_error({detail::StereoProcessingStage::internal});return;}
++                gst_buffer_fill(buffer,0,unit.data,unit.bytes);GST_BUFFER_PTS(buffer)=unit.pts_ns;
++                GST_BUFFER_DTS(buffer)=GST_CLOCK_TIME_NONE;GST_BUFFER_DURATION(buffer)=GST_SECOND/owner.settings.frame_rate;
++                if(!unit.keyframe)GST_BUFFER_FLAG_SET(buffer,GST_BUFFER_FLAG_DELTA_UNIT);
++                if(gst_app_src_push_buffer(owner.encoder_source,buffer)!=GST_FLOW_OK)on_stereo_processing_error({detail::StereoProcessingStage::encoding});
++            }
++            void on_stereo_processing_error(detail::StereoProcessingError error)noexcept override {
++                {std::lock_guard lock(owner.mutex);owner.worker_error=Error{ErrorCode::pipeline,"stereo_processing stage="+std::to_string(int(error.stage))+" native="+std::to_string(error.native_code)};}
++                owner.reader_done=true;
++            }
++        } main10_sink(*this);
++        std::unique_ptr<detail::StereoOutputWorker> stereo_worker;
++        if(rectifier)stereo_worker=std::make_unique<detail::StereoOutputWorker>(*main10,*rectifier,main10_sink);
+         // Prepare the consumer before STREAMON: VPU startup must not exhaust
+         // the cameras' eight hardware buffers before the first dequeue. The
+         // reverse destruction order stops camera DMA before closing the VPU.
+@@ -436,6 +475,11 @@
+                                   eye_width, eye_height, pair.cam0_sequence,
+                                   pair.cam0_timestamp_ns);
+             if(calibration && !linear_display) calibrate_pair(*calibration,pair);
++            // Depth receives a bounded copy and owns neither camera nor AE.
++            if(depth) {
++                if(depth_endpoint.take_keyframe_request())depth->request_keyframe();
++                depth->submit(pair.left_luma10.data(),pair.right_luma10.data(),pair.left_luma10.size(),pair.cam0_timestamp_ns);
++            }
+             ++input_pairs;
+             ++interval_input;
+             GstAppSrc* source = GST_APP_SRC(gst_object_ref(encoder_source));
+@@ -443,7 +487,10 @@
+                 first_input_timestamp_ns = pair.cam0_timestamp_ns;
+             const auto pts = static_cast<GstClockTime>(
+                 pair.cam0_timestamp_ns - first_input_timestamp_ns);
+-            if (settings.main10) {
++            if(stereo_worker) {
++                if(request_encoder_keyframe.exchange(false))stereo_worker->request_keyframe();
++                stereo_worker->submit(std::move(pair));gst_object_unref(source);
++            } else if (settings.main10) {
+                 if (request_encoder_keyframe.exchange(false)) main10->request_keyframe();
+                 for(int y=0;y<eye_height;++y) {
+                     auto* row=stereo10.data()+static_cast<std::size_t>(y)*eye_width*2;
+@@ -515,6 +562,7 @@
+             const auto now = std::chrono::steady_clock::now();
+             const auto seconds = std::chrono::duration<double>(now - interval_start).count();
+             if (seconds >= 5.0) {
++                if(stereo_worker){const auto s=stereo_worker->statistics();interval_submitted=s.submitted-submitted_pairs;interval_dropped=s.dropped+s.replaced-dropped_pairs;submitted_pairs=s.submitted;dropped_pairs=s.dropped+s.replaced;}
+                 const auto encoded = encoded_pairs.load();
+                 const auto delivered = delivered_pairs.load();
+                 std::cerr << "input_fps=" << interval_input / seconds
+@@ -523,6 +571,16 @@
+                           << " encoded_fps=" << (encoded - previous_encoded) / seconds
+                           << " rtsp_fps=" << (delivered - previous_delivered) / seconds
+                           << " pairs=" << input_pairs << '\n';
++                if(rectifier) {
++                    const auto ae=exposure.snapshot();
++                    const auto s=stereo_worker->statistics();
++                    std::cerr<<"gpu_rectification active=1 order=cam1_cam0 width=2176 height=1280 bits=10 frames="<<s.processed
++                             <<" mean_gpu_ms="<<(s.processed?s.gpu_ns/1e6/s.processed:0)
++                             <<" depth_encoded="<<depth_endpoint.encoded()
++                             <<" ae="<<ae.enabled<<" target="<<ae.target_percent
++                             <<" exposure_rows="<<ae.exposure_lines<<" gain_index="<<ae.analogue_gain_index<<" ae_error="<<ae.last_error<<'\n';
++                    if(depth){const auto d=depth->statistics();std::cerr<<"depth_pipeline submitted="<<d.submitted<<" processed="<<d.processed<<" replaced="<<d.replaced<<" busy="<<d.busy<<" failed="<<d.failed<<'\n';}
++                }
+                 if (binning60) {
+                     const auto ae = exposure.snapshot();
+                     std::cerr << "ae=" << ae.enabled << " target_linear_percent=" << ae.target_percent
+@@ -537,6 +595,8 @@
+                 interval_input = interval_submitted = interval_dropped = 0;
+             }
+         }
++        if(depth)depth->stop();
++        if(stereo_worker){stereo_worker->stop();const auto s=stereo_worker->statistics();submitted_pairs=s.submitted;dropped_pairs=s.dropped+s.replaced;}
+     }
+ };
+ 
+--- deployed/StereoRtspServer.hpp
++++ new/StereoRtspServer.hpp
+@@ -28,6 +28,8 @@
+     bool auto_exposure{true};
+     bool main10{false};
+     bool hdr_display_b{false}; // Main10 HDR display and matching AE target encoding.
++    std::string gpu_rectification_map;
++    std::string depth_calibration;
+     int bitrate{20000000};
+     CaptureMode capture_mode{CaptureMode::external_trigger};
+ };
+--- deployed/main.cpp
++++ new/main.cpp
+@@ -34,6 +34,8 @@
+             else if (option == "--downscale") settings.downscale = positive_int(value);
+             else if (option == "--fps") settings.frame_rate = positive_int(value);
+             else if (option == "--bitrate") settings.bitrate = positive_int(value);
++            else if (option == "--gpu-rectification-map") settings.gpu_rectification_map=value;
++            else if (option == "--depth-calibration") settings.depth_calibration=value;
+             else if (option == "--hdr-display") {
+                 const std::string profile(value);
+                 if(profile!="sensor" && profile!="b")
+--- deployed/CMakeLists.txt
++++ new/CMakeLists.txt
+@@ -20,6 +20,17 @@
+ target_include_directories(stereo-h265-rtsp PRIVATE "${SC132GS_AE_SOURCE_DIR}")
+ target_link_libraries(stereo-h265-rtsp PRIVATE PkgConfig::GST Threads::Threads)
+ target_compile_options(stereo-h265-rtsp PRIVATE -Wall -Wextra -Wpedantic)
++
++
++find_package(OpenCL REQUIRED)
++add_library(stereo_gpu_rectification GpuStereoRectifier.cpp StereoOutputWorker.cpp)
++target_compile_features(stereo_gpu_rectification PUBLIC cxx_std_17 PRIVATE cxx_std_20)
++target_link_libraries(stereo_gpu_rectification PRIVATE OpenCL::OpenCL Threads::Threads)
++target_include_directories(stereo_gpu_rectification PRIVATE "${SC132GS_AE_SOURCE_DIR}")
++add_library(stereo_depth_pipeline DepthPipeline.cpp depth/GpuStereoDepth.cpp)
++target_compile_features(stereo_depth_pipeline PUBLIC cxx_std_17 PRIVATE cxx_std_20)
++target_link_libraries(stereo_depth_pipeline PRIVATE OpenCL::OpenCL Threads::Threads PkgConfig::GST)
++target_link_libraries(stereo-h265-rtsp PRIVATE stereo_gpu_rectification stereo_depth_pipeline)
+ 
+ include(CTest)
+ add_executable(optical-raw-capture OpticalCaptureMain.cpp RawOpticalCapture.cpp)
+@@ -95,3 +106,13 @@
+     target_compile_features(stereo-capture-check PRIVATE cxx_std_20)
+     target_compile_options(stereo-capture-check PRIVATE -Wall -Wextra -Wpedantic)
+ endif()
++
++if(BUILD_TESTING)
++add_executable(gpu-stereo-rectifier-check GpuStereoRectifierCheck.cpp)
++target_compile_features(gpu-stereo-rectifier-check PRIVATE cxx_std_17)
++target_link_libraries(gpu-stereo-rectifier-check PRIVATE stereo_gpu_rectification)
++add_executable(depth-pipeline-check DepthPipelineCheck.cpp)
++target_compile_features(depth-pipeline-check PRIVATE cxx_std_17)
++target_link_libraries(depth-pipeline-check PRIVATE stereo_depth_pipeline)
++add_test(NAME depth-pipeline-failure-isolation COMMAND depth-pipeline-check)
++endif()

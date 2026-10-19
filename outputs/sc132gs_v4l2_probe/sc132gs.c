@@ -162,6 +162,8 @@ struct sc132gs {
 	struct v4l2_ctrl *pixel_rate;
 	struct v4l2_ctrl *hdr_total;
 	struct v4l2_ctrl *hdr_ratio;
+	struct v4l2_ctrl *hdr_second;
+	struct v4l2_ctrl *hdr_controls[3];
 	bool hdr_mode;
 	unsigned int data_lanes;
 	struct mutex lock;
@@ -227,7 +229,8 @@ static int sc132gs_write_hdr_exposure(struct sc132gs *sensor,
 static int sc132gs_write_managed_hdr(struct sc132gs *sensor)
 {
 	unsigned int total = sensor->hdr_total->val * 16U;
-	unsigned int second = max(1U, DIV_ROUND_CLOSEST(total, sensor->hdr_ratio->val));
+	unsigned int second = sensor->hdr_second->val ? sensor->hdr_second->val :
+		max(1U, DIV_ROUND_CLOSEST(total, sensor->hdr_ratio->val));
 
 	return sc132gs_write_hdr_pair(sensor, total, second);
 }
@@ -286,7 +289,10 @@ static int sc132gs_set_ctrl(struct v4l2_ctrl *ctrl)
 		v4l2_ctrl_activate(sensor->pixel_rate, !sensor->hdr_mode);
 		v4l2_ctrl_activate(sensor->hdr_total, sensor->hdr_mode);
 		v4l2_ctrl_activate(sensor->hdr_ratio, sensor->hdr_mode);
-		ret = __v4l2_ctrl_s_ctrl(sensor->hdr_ratio, 0);
+		v4l2_ctrl_activate(sensor->hdr_second, sensor->hdr_mode);
+		ret = __v4l2_ctrl_s_ctrl(sensor->hdr_second, 0);
+		if (!ret)
+			ret = __v4l2_ctrl_s_ctrl(sensor->hdr_ratio, 0);
 		if (!ret)
 			ret = __v4l2_ctrl_s_ctrl(sensor->hdr_total, SC132GS_HDR_TOTAL_DEFAULT);
 		if (ret)
@@ -298,7 +304,10 @@ static int sc132gs_set_ctrl(struct v4l2_ctrl *ctrl)
 					SC132GS_EXPOSURE_DEFAULT);
 	}
 
-	if (ctrl->id == V4L2_CID_SC132GS_HDR_RATIO && ctrl->val == 1)
+	if (ctrl->id == V4L2_CID_SC132GS_HDR_TOTAL_ROWS && sensor->hdr_ratio->val == 1)
+		return -ERANGE;
+	if (ctrl->id == V4L2_CID_SC132GS_HDR_TOTAL_ROWS && sensor->hdr_second->val &&
+	    (!sensor->hdr_ratio->val || sensor->hdr_second->val >= sensor->hdr_total->val * 16U))
 		return -ERANGE;
 	if (ctrl->id == V4L2_CID_EXPOSURE && sensor->hdr_mode && sensor->hdr_ratio->val)
 		return -EBUSY;
@@ -311,9 +320,7 @@ static int sc132gs_set_ctrl(struct v4l2_ctrl *ctrl)
 	case V4L2_CID_ANALOGUE_GAIN:
 		return sc132gs_write_analogue_gain(sensor, ctrl->val);
 	case V4L2_CID_SC132GS_HDR_TOTAL_ROWS:
-		return sensor->hdr_ratio->val ? sc132gs_write_managed_hdr(sensor) : 0;
-	case V4L2_CID_SC132GS_HDR_RATIO:
-		if (ctrl->val)
+		if (sensor->hdr_ratio->val)
 			return sc132gs_write_managed_hdr(sensor);
 		/* Explicitly restore the fixed-TOTAL legacy profile. */
 		return sc132gs_write_hdr_pair(sensor, SC132GS_HDR_TOTAL_DEFAULT * 16U,
@@ -863,12 +870,28 @@ static int sc132gs_probe(struct i2c_client *client)
 			.type = V4L2_CTRL_TYPE_INTEGER,
 			.min = 0, .max = 256, .step = 1, .def = 0,
 		};
+		const struct v4l2_ctrl_config second_config = {
+			.ops = &sc132gs_ctrl_ops,
+			.id = V4L2_CID_SC132GS_HDR_SECOND,
+			.name = "HDR Second Exposure Ticks",
+			.type = V4L2_CTRL_TYPE_INTEGER,
+			.min = 0, .max = 65535, .step = 1, .def = 0,
+		};
 		sensor->hdr_total = v4l2_ctrl_new_custom(&sensor->ctrls, &total_config, NULL);
 		sensor->hdr_ratio = v4l2_ctrl_new_custom(&sensor->ctrls, &ratio_config, NULL);
+		sensor->hdr_second = v4l2_ctrl_new_custom(&sensor->ctrls, &second_config, NULL);
+		if (sensor->hdr_total && sensor->hdr_ratio && sensor->hdr_second) {
+			sensor->hdr_controls[0] = sensor->hdr_total;
+			sensor->hdr_controls[1] = sensor->hdr_ratio;
+			sensor->hdr_controls[2] = sensor->hdr_second;
+			v4l2_ctrl_cluster(3, sensor->hdr_controls);
+		}
 		if (sensor->hdr_total)
 			v4l2_ctrl_activate(sensor->hdr_total, sensor->hdr_mode);
 		if (sensor->hdr_ratio)
 			v4l2_ctrl_activate(sensor->hdr_ratio, sensor->hdr_mode);
+		if (sensor->hdr_second)
+			v4l2_ctrl_activate(sensor->hdr_second, sensor->hdr_mode);
 	}
 	if (sensor->ctrls.error) {
 		ret = sensor->ctrls.error;

@@ -1,0 +1,11 @@
+3972ec234ce3acc7ff66756b4b3f203f2813ee9a59c677c23c68aeeeb41c8eb4  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/control.txt
+ac1d1d40275a42f9baab6fd2c2c4d65ea618d87577ee3f3aaa87eb79a0436fb4  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/dmesg.txt
+def495aa822f256107dce2dff1a215acfe89aea95171439e196db16a9cc46db7  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/initrd.img
+7f2f8c9e7cc19f9974a62ef56c591cab9a9bb23867d0466b1eb1af658d465b60  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/kernel-fsync.conf
+de222eb7ede3e02f8c3652da3222de7fe124cd93cbe6e3c846daf78e1e0d1530  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/options.conf
+0b84b5fbb379b05d2e5362726864c78a4ab20e033064f12bc588854b87705dec  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/qcom-camss.ko
+d22a1f17d9e97cbb22b1a1428bea74e8b22c5c81d43962c5a486dbc96da1808f  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/run-stereo-rtsp.sh
+50350309107de4b1a81959edeb6e27e4d9892428d839a5d0bac80455e8c99a8c  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/server.log
+7d8fcb35b10cbd0f153de42bb1c734535a6f84563d37b3850a0e655685f87c6f  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/services.txt
+4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/settings.yaml
+ed8ed3e9c5739274d0959c58e41b0aa044761060193900c28ef628f09b190412  /home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/stereo-h265-rtsp

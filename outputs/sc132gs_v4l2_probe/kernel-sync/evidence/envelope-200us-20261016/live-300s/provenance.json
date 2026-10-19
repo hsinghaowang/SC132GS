@@ -1,0 +1,26 @@
+{
+  "control": {
+    "abi": "4",
+    "timestamp_offset_ns": "344903",
+    "trigger_hz": "30",
+    "frame_step": "1",
+    "locked_mask": "3",
+    "startup_dropped": "2",
+    "startup_end0": "1",
+    "startup_end1": "1",
+    "node0": "0",
+    "node1": "3",
+    "mode": "2",
+    "running": "1",
+    "session": "1",
+    "pulses": "1187",
+    "skipped": "0",
+    "cpu": "7",
+    "worker_cpu": "0",
+    "error": "0",
+    "error_count": "0",
+    "source": "exposure_start_estimate"
+  },
+  "boot_id": "d3eaf26b-6373-4010-a47b-ee89c6fb2d94",
+  "module_srcversion": "E966374A47464C038D0632F"
+}

@@ -1,0 +1,28 @@
+{
+  "configured_link_frequency_hz": 600000000,
+  "data_lanes": {
+    "18-0032": [
+      0,
+      1
+    ],
+    "16-0030": [
+      0,
+      1
+    ]
+  },
+  "assumed_total_rate_bps": 2400000000,
+  "payload_bytes": 1740800,
+  "payload_only_ms": 5.802666666666667,
+  "one_long_packet_per_row_plus_FS_FE_ms": 5.828293333333333,
+  "per_eye_measured_SOF_to_DMA_mean_ms": [
+    15.403124914818822,
+    15.638540499729583
+  ],
+  "physical_lane_clock_measured": false,
+  "packetization_verified": false,
+  "limitations": [
+    "configured receiver clock is not a physical lane-rate measurement",
+    "packet serialization omits pacing, line gaps, PHY transitions and receiver/IRQ latency",
+    "SOF-to-DMA span is measured, but SOF versus exposure end is unverified"
+  ]
+}

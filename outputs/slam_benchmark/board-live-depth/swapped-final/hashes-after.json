@@ -1,0 +1,7 @@
+{
+  "/var/lib/sc132gs-camera/settings.json": "9daf563ddd04efeef09807561775d060b83a3cc032bf821ea18362399be661a7",
+  "/var/lib/sc132gs-camera/settings.yaml": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd",
+  "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh": "25e2d7d6ec17ef05e8b315fb7ac2ea4227d225566e462cf3f070a89c0563f247",
+  "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": "d22a1f17d9e97cbb22b1a1428bea74e8b22c5c81d43962c5a486dbc96da1808f",
+  "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": "bce3ba5017f04f27a10a791a4b66f22e49774110ea376ee40ed8a22c16b16ea8"
+}

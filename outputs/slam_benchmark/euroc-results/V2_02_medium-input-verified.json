@@ -1,0 +1,10 @@
+{
+  "stereo_pairs": 2348,
+  "imu_samples": 23490,
+  "all_images_present": true,
+  "exact_integer_stereo_timestamp_match": true,
+  "strictly_monotonic": true,
+  "camera_duration_s": 117.349999872,
+  "camera_interval_ns_min": 49999872,
+  "camera_interval_ns_max": 50000128
+}

@@ -1,0 +1,28 @@
+# CAMERA-ONLY CANDIDATE; not deployed; not a complete OpenVINS/IMU config.
+# Unrotated RAW 1088x1280; cam0=RIGHT 0x32, cam1=LEFT 0x30.
+# Intrinsics and equidistant coefficients are unchanged factory EEPROM values.
+# Translation in meters is CONDITIONAL on actual flat 20mm square spacing.
+# T_cn_cnm1 maps cam0 points into cam1: p_cam1=R*p_cam0+T.
+# No T_cam_imu or common-time claim is supplied.
+# 9 diverse poses fitted, 4 representatives withheld; one session; limited field coverage.
+cam0:
+  camera_model: pinhole
+  distortion_model: equidistant
+  intrinsics: [657.8239450517727, 658.2150920608404, 524.0026141065277, 640.7191886623792]
+  distortion_coeffs: [-0.02178480406769214, -5.9635367621555255e-05, -0.0014060047059429044, -0.0012274502728586922]
+  resolution: [1088, 1280]
+  rostopic: /cam0/image_raw
+  cam_overlaps: [1]
+cam1:
+  camera_model: pinhole
+  distortion_model: equidistant
+  intrinsics: [655.758106055711, 655.8953912485096, 522.6808527771126, 628.2127111310857]
+  distortion_coeffs: [-0.014722095589258003, -0.014398333960392052, 0.010330564415067026, -0.004621151172464282]
+  resolution: [1088, 1280]
+  rostopic: /cam1/image_raw
+  cam_overlaps: [0]
+  T_cn_cnm1:
+  - [0.9999776165973728, -0.006581213532565861, 0.0012057913071547954, 0.07021225654797376]
+  - [0.006573630991090164, 0.9999592469762917, 0.006188033791163742, 2.5577787551447504e-05]
+  - [-0.0012464669392394756, -0.0061799688548064185, 0.9999801269550925, -0.000635803073300562]
+  - [0.0, 0.0, 0.0, 1.0]

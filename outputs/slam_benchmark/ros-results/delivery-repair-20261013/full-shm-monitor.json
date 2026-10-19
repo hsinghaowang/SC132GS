@@ -1,0 +1,8 @@
+{
+  "pid": 15473,
+  "container_init_pid": 2508,
+  "actual_container_shm": "/proc/2508/root/dev/shm",
+  "source_sha256": "9a44d0af285aef3399c2e1e0e62a7bb8148aa18ab99466422036d8145c3b33ad",
+  "sampling_interval_s": 1,
+  "reason": "Initial short sampler watched host /dev/shm; full sampler watches container namespace"
+}

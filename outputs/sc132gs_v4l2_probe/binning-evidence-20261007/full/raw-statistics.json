@@ -1,0 +1,13 @@
+{
+  "width": 1088,
+  "height": 1280,
+  "stride": 1360,
+  "frames": 32,
+  "central_roi_mean_dn": 71.6375503540039,
+  "central_roi_median_dn": 49.859375,
+  "frame_mean_std_dn": 0.040373091656069865,
+  "usable_grid_points": 4042,
+  "temporal_rms_dn": 3.011632414423141,
+  "common_offset_removed_temporal_rms_dn": 3.011357673279677,
+  "clipped_fraction": 0.01303863525390625
+}

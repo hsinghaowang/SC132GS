@@ -1,0 +1,684 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Taipei",
+  "revision": "69488123ed9362dd44b6f28e7f4680abbff1442b",
+  "board": "ubuntu@192.168.137.226",
+  "container": "ros2-humble",
+  "host_workspace": "/home/ubuntu/ros2_humble_ws/slam_benchmark/openvins_ws",
+  "container_workspace": "/ws/slam_benchmark/openvins_ws",
+  "build": {
+    "status": "passed",
+    "packages": [
+      "ov_core",
+      "ov_init",
+      "ov_msckf"
+    ],
+    "reported_duration": "28min 17s",
+    "lifecycle_rebuild_duration": "2min 6s",
+    "type": "Release",
+    "jobs": 1,
+    "compiler": "GCC 11.4.0",
+    "aruco": false,
+    "matplotlib": false,
+    "upstream_sources_modified": true,
+    "patch": "ros2-lifecycle.patch",
+    "patch_scope": "release ROS2Visualizer in main before process-wide static destruction; estimator unchanged"
+  },
+  "executables_found": [
+    "run_simulation",
+    "run_subscribe_msckf",
+    "test_sim_meas",
+    "test_sim_repeat"
+  ],
+  "subscriber": {
+    "input_subscription_creation": "passed",
+    "topics": [
+      "/imu0",
+      "/cam0/image_raw",
+      "/cam1/image_raw"
+    ],
+    "shutdown": "passed",
+    "background_image_publishing": false,
+    "scope": "idle node startup and SIGINT shutdown; no real sensor messages"
+  },
+  "synthetic_simulation": {
+    "status": "passed",
+    "exit_code": 0,
+    "camera_hz": 20,
+    "imu_hz": 200,
+    "reported_time_s": 90.377,
+    "orientation_rmse_deg": 0.226,
+    "position_rmse_m": 0.053,
+    "scope": "synthetic features and IMU with ground-truth initialization; not real image tracking; not a board image FPS benchmark"
+  },
+  "overall_runtime_verification": "passed_for_declared_smoke_test_configuration",
+  "real_camera_imu_test_performed": false,
+  "dataset_benchmark_performed": true,
+  "initial_failures": {
+    "subscriber": "global ROS2Visualizer destruction after main produced middleware teardown errors",
+    "simulation": "smoke command lacked required simulation parameters; early exit encountered middleware teardown assertion",
+    "diagnostic_backtrace": "openvins-evidence/simulation-backtrace.txt",
+    "resolution_evidence": "lifecycle patch plus explicit simulation parameters; final smoke exit 0; no algorithm core edits"
+  },
+  "remote_evidence_directory": "/home/ubuntu/ros2_humble_ws/slam_benchmark/openvins_ws/evidence",
+  "local_evidence_directory": "openvins-evidence",
+  "next_step": "Review independent RTSP coverage and residuals; preserve preview and frozen geometry. RAW comparison and camera-IMU timing/extrinsics remain pending.",
+  "dataset_benchmark": {
+    "results": "euroc-results/evaluation.json",
+    "conditions": "benchmark-conditions.json",
+    "runs": 12,
+    "report": "euroc-results/report.md",
+    "orb_slam3_benchmark_performed": false,
+    "real_sensor_capture": false,
+    "datasets": [
+      "MH_01_easy",
+      "V2_02_medium"
+    ],
+    "status": "passed_native_replay",
+    "ros_transport": false,
+    "ground_truth_initialization": false,
+    "input_pairs_processed": 36180
+  },
+  "feature_sweep": {
+    "runs": 10,
+    "input_pairs_processed": 30150,
+    "status": "candidate_confirmed_three_native_replays_per_dataset",
+    "report": "feature-sweep/結論.md",
+    "num_pts": [
+      200,
+      150,
+      100
+    ],
+    "target_per_eye": [
+      100,
+      75,
+      50
+    ],
+    "repeats_per_dataset_setting": {
+      "100": 3,
+      "150": 1,
+      "200": 1
+    },
+    "all_post_init_pose_coverage": 1.0,
+    "hardware_test": false,
+    "confirmation": "feature-sweep/confirmation.json"
+  },
+  "ros2_active_input_dataset_benchmark": {
+    "status": "six_camera_paused_replays_passed_functional_checks_latency_tail_pending",
+    "report": "ros-results/exclusive-report.html",
+    "evidence": "ros-results/evaluation.json",
+    "datasets": [
+      "MH_01_easy",
+      "V2_02_medium"
+    ],
+    "final_runs": 6,
+    "input_pairs_received": 18090,
+    "imu_samples_received": 180930,
+    "input_loss": 0,
+    "post_init_pose_coverage": 1.0,
+    "active_SIGINT_exit_code": 0,
+    "receiver_mode": "custom C++17 PIMPL adapter; one owned estimator worker; high-rate IMU odometry/TF disabled",
+    "stock_subscriber_main_tested": false,
+    "physical_sensors": false,
+    "earlier_nonisolated_runs": 2,
+    "post_init_poses": 15150,
+    "camera_restored": true,
+    "camera_configuration_unchanged": true,
+    "exclusive_comparison": "ros-results/exclusive-summary.json"
+  },
+  "publisher_optimization": {
+    "date": "2026-10-13",
+    "native_full_runs": 6,
+    "native_input_loss": 0,
+    "native_report": "ros-results/publisher-comparison-20261013/report.html",
+    "prefetch_full_runs": 4,
+    "prefetch_candidate_status": "rejected_imu_input_loss",
+    "prefetch_camera_off_sampled_runs": 3,
+    "prefetch_overlap_runs": [
+      "MH_01_easy-paced-prefetch-2"
+    ],
+    "prefetch_valid_performance_runs": 0,
+    "prefetch_report": "ros-results/prefetch-comparison-20261013/report.html",
+    "receiver_binary_and_yaml_unchanged": true,
+    "baseline": "Original Python publisher plus owned-worker receiver: loss-free; about 78 ms P95 source-schedule-to-stock-pose receive",
+    "prefetch_measurement_scope": "PNG decode moved before schedule; lower diagnostic latency with lost IMU is not an accepted improvement",
+    "other_long_duration_job_running_user_confirmed": true,
+    "board_work_deferred": true,
+    "camera_recovery_attempt": "Failed capture timeout at 10:49; SMMU fault contemporaneous, causality unproven",
+    "camera_after_batch": "Another job restarted stream at 11:09:42; active Linear60 AEoff gain27 in saved snapshot; no fresh live verification",
+    "historical_camera_restored_flag_scope": "2026-10-12 original exclusive-test restoration only"
+  },
+  "delivery_repair": {
+    "status": "passed_delivery_and_accuracy",
+    "report": "ros-results/delivery-repair-20261013/report.html",
+    "summary": "ros-results/delivery-repair-20261013/comparison.json",
+    "full_runs": 4,
+    "input_loss": 0,
+    "post_init_pose_coverage": 1.0,
+    "receiver_binary_and_yaml_unchanged": true,
+    "topic_qos_unchanged": true,
+    "repair": "Fast DDS process-local SHM segment_size=4194304",
+    "negative_control": "512KiB lost IMU again after fixed full runs; checked runner exit4",
+    "entrypoint": "run-frame-ready-replay.sh",
+    "input_gate": "ros-replay-native-checked.py; exit4 on count loss, exit5 on incomplete receiver; evidence saved before failure",
+    "datasets": {
+      "MH_01_easy": {
+        "repeats": 2,
+        "control_p95_ms": 78.50253225,
+        "repaired_frame_ready_p95_range_ms": [
+          48.77044245,
+          49.52152505
+        ],
+        "repaired_max_range_ms": [
+          86.40659,
+          97.656207
+        ],
+        "control_ate_rmse_m": 0.12003840360346094,
+        "repaired_ate_rmse_m": [
+          0.12003840360346094,
+          0.12003840360346094
+        ],
+        "receiver_cpu_percent_one_core": [
+          129.8442997208317,
+          117.46025382862275
+        ],
+        "publisher_and_probe_cpu_percent_one_core": [
+          67.1785800626563,
+          56.46953574809856
+        ],
+        "max_absolute_ate_delta_m": 0.0
+      },
+      "V2_02_medium": {
+        "repeats": 2,
+        "control_p95_ms": 77.949026,
+        "repaired_frame_ready_p95_range_ms": [
+          56.45264075,
+          57.23297275
+        ],
+        "repaired_max_range_ms": [
+          77.577227,
+          82.218541
+        ],
+        "control_ate_rmse_m": 0.055259442266562965,
+        "repaired_ate_rmse_m": [
+          0.055259442266562965,
+          0.055259442266562965
+        ],
+        "receiver_cpu_percent_one_core": [
+          142.62581624119932,
+          139.54440408193088
+        ],
+        "publisher_and_probe_cpu_percent_one_core": [
+          56.29624206553968,
+          52.19781868961476
+        ],
+        "max_absolute_ate_delta_m": 0.0
+      }
+    },
+    "physical_sensor_input": false,
+    "camera_initially_inactive_and_preserved": true,
+    "latency_scope": "Prepared-image schedule to stock-pose DDS receive; PNG decode happens before schedule",
+    "historical_failure": "Earlier prefetch-comparison-20261013 remains rejected, preserved without rewriting raw evidence"
+  },
+  "physical_calibration_preparation": {
+    "date": "2026-10-13",
+    "timezone": "Asia/Taipei",
+    "status": "physical_target_capture_and_camera_only_candidate_obtained",
+    "physical_camera_imu_acquisition": true,
+    "physical_openvins_vio_performed": false,
+    "stereo_pairs": 50,
+    "camera_resolution": [
+      1088,
+      1280
+    ],
+    "png_images": 100,
+    "imu_samples": 2628,
+    "paired_driver_timestamp_delta_ms": {
+      "p50": 0.274,
+      "p95": 0.29919999999999997,
+      "max": 0.317
+    },
+    "driver_timestamp_not_exposure_proof": true,
+    "imu_host_sample_time_validated": false,
+    "camera_driver_sequence_gaps": [
+      0,
+      0
+    ],
+    "camera_saved_controls_and_inactive_state_preserved": true,
+    "capture_api": "C++17 public API/PIMPL/move-only; C++23 private implementation; joined owned storage worker; nested optional Observer",
+    "cpp17_header_compile_check_passed": true,
+    "cpp23_board_build_passed": true,
+    "nominal_sensor_counter_rate_hz": 199.99999188427898,
+    "host_read_observed_rate_hz": 202.44522254469092,
+    "PDF": {
+      "path": "D:\\projects\\collision_avoid\\output\\pdf\\sc132gs-checkerboard-a4-20mm.pdf",
+      "sha256": "50e0ca13dc1d334b8eb2fd67ea22bb68e54e4b2c8d885df3d21dcc89e86a1ab7",
+      "print_size": "Landscape A4; 9x6 inner corners; 20mm squares; 50mm ruler",
+      "rendered_visual_inspection_passed": true,
+      "rendered_detector_corners": 54
+    },
+    "raw_files_verified": 237,
+    "guide": "calibration-capture/採集說明.md",
+    "camera_intrinsic_and_stereo_calibration_solved": false,
+    "camera_imu_calibration_solved": false,
+    "combined_camera_imu_bag_export_allowed": false,
+    "next_step": "Use RTSP to position a larger target at top/right/corners, then record an independent validation session. Camera-IMU common time and extrinsics remain separate work.",
+    "remaining": [
+      "Target images to validate factory fisheye intrinsics/stereo geometry; recalibrate if residuals require it",
+      "Validated IMU sensor-to-host clock mapping and sample latency",
+      "IMU noise/bias random-walk model",
+      "Physical camera-IMU extrinsics/time offset and live VIO validation"
+    ],
+    "factory_intrinsics_obtained": true,
+    "physical_target_acquisition_complete": true
+  },
+  "physical_sensor_acquisition_performed": true,
+  "real_camera_imu_test_scope": "OpenVINS live physical integration still untested; physical sensor acquisition verified separately",
+  "factory_calibration": {
+    "status": "read_decoded_and_official_parser_crosschecked",
+    "intrinsics": "factory-calibration-20261013/raw-intrinsics.yaml",
+    "evidence": "factory-calibration-20261013/raw-intrinsics.json",
+    "actual_module_EEPROM_read": true,
+    "vendor": "UNION",
+    "version": "1.2",
+    "header_checksum_passed": true,
+    "repeat_reads_identical": true,
+    "official_CPP_parser_crosscheck_passed": true,
+    "camera_model": "pinhole",
+    "distortion_model": "equidistant",
+    "resolution": [
+      1088,
+      1280
+    ],
+    "geometric_validation_performed": false,
+    "camera_IMU_time_synchronization_validated": false,
+    "saved_camera_state_unchanged": true,
+    "geometry_diagnostic": {
+      "status": "diagnostic_completed_accuracy_not_accepted",
+      "report": "factory-geometry-full-20261013/report.html",
+      "sampled_pairs_initial": 10,
+      "sampled_pairs_full_resolution": 3,
+      "appearance_matches": {
+        "count": 223,
+        "median_px": 2.141630509309948,
+        "p95_px": 11.648440476474661,
+        "max_px": 29.915593597259885,
+        "fraction_le_1px": 0.026905829596412557,
+        "fraction_le_2px": 0.3094170403587444
+      },
+      "independently_fitted_F_subset": {
+        "count": 178,
+        "median_px": 2.131116408959201,
+        "p95_px": 4.397810935580356,
+        "max_px": 22.976985151967256,
+        "fraction_le_1px": 0.0056179775280898875,
+        "fraction_le_2px": 0.29775280898876405
+      },
+      "positive_depth_fraction": 0.9865470852017937,
+      "factory_intrinsics_or_extrinsics_modified": false,
+      "camera_saved_state_preserved": true,
+      "geometric_accuracy_accepted": false
+    },
+    "target_geometric_validation_performed": true,
+    "target_validation_scope": "Limited image region; fixed-intrinsics mono pose fits and same-session held-out stereo poses; full-field acceptance pending"
+  },
+  "physical_target_calibration": {
+    "status": "camera_only_stereo_candidate_obtained_pending_independent_coverage",
+    "report": "calibration-ready-20261014/report.html",
+    "stereo_pairs": 449,
+    "png_images": 898,
+    "imu_samples": 18834,
+    "target_square_size_m_user_confirmed": 0.02,
+    "target_flat_mount_user_confirmed": true,
+    "candidate": "calibration-ready-20261014/geometry-analysis/stereo-candidate.yaml",
+    "factory_intrinsics_unchanged": true,
+    "fitting_poses": 9,
+    "held_out_poses": 4,
+    "held_out_factory_vertical": {
+      "count": 216,
+      "median_px": 0.8398631875280671,
+      "p95_px": 1.1564776966786212,
+      "rms_px": 0.8536588423090987,
+      "max_px": 2.7987492854457514
+    },
+    "held_out_candidate_vertical": {
+      "count": 216,
+      "median_px": 0.06505384737579334,
+      "p95_px": 0.23516638858171746,
+      "rms_px": 0.29455491869317163,
+      "max_px": 3.9953834534499038
+    },
+    "full_field_validation_complete": false,
+    "camera_IMU_calibration_complete": false,
+    "candidate_deployed": false,
+    "RTSP_active_at_user_request": true
+  },
+  "independent_camera_validation": {
+    "status": "independent_RTSP_diagnostic_completed",
+    "session": "target-rtsp-upper-20261014",
+    "input_source": "RTSP_HEVC_Main10_decoded_mirror_undone",
+    "source_processing": "HEVC Main10 -> RGB -> mono8 -> split eyes -> undo horizontal mirror per eye",
+    "source_eye_order": "cam0/right sensor0x32 in displayed left half; cam1/left sensor0x30 in displayed right half",
+    "saved_pairs": 225,
+    "verified_PNG_images": 450,
+    "complete_sampled_pairs": 86,
+    "sampled_pairs": 90,
+    "frozen_candidate_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+    "refit_performed": false,
+    "candidate_deployed": false,
+    "full_field_diagnostic_gate_passed": false,
+    "coverage_gate_passed": false,
+    "epipolar_error_gate_passed": true,
+    "RAW_sensor_calibration_accepted": false,
+    "camera_IMU_calibration_complete": false,
+    "RTSP_continued_during_capture": true,
+    "RTSP_active_after_evaluation": true,
+    "camera_owner_PID_and_start_time_unchanged": true,
+    "saved_settings_and_owner_scripts_unchanged": true,
+    "decoded_pts_fps": 29.944387408325447,
+    "board_state_hashes": {
+      "/var/lib/sc132gs-camera/settings.yaml": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd",
+      "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh": "25e2d7d6ec17ef05e8b315fb7ac2ea4227d225566e462cf3f070a89c0563f247",
+      "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": "8e4349ffca8cbde5d8b6c5cd5958fde1ecba60dd5d36b8902d412edcba21bf0f"
+    },
+    "metrics": {
+      "factory": {
+        "vertical_error": {
+          "count": 4644,
+          "median_px": 1.364278595144242,
+          "p95_px": 3.9078311433360367,
+          "rms_px": 2.0915850791658883,
+          "max_px": 14.631450041232483
+        },
+        "vertical_error_at_common_650px_focal": {
+          "count": 4644,
+          "median_px": 1.8246590733841717,
+          "p95_px": 5.226542128799912,
+          "rms_px": 2.7973976180807023,
+          "max_px": 19.56888290230736
+        },
+        "virtual_focal_px": 485.99823374075896,
+        "cam0_pose_to_cam1_prediction": {
+          "count": 4644,
+          "median_px": 3.5059116649504714,
+          "p95_px": 4.762249269011425,
+          "rms_px": 3.6421519590252838,
+          "max_px": 16.69111960212488
+        }
+      },
+      "frozen_candidate": {
+        "vertical_error": {
+          "count": 4644,
+          "median_px": 0.1657034006107665,
+          "p95_px": 0.6203424919962909,
+          "rms_px": 0.573074689522524,
+          "max_px": 11.65192700575659
+        },
+        "vertical_error_at_common_650px_focal": {
+          "count": 4644,
+          "median_px": 0.22086676487687695,
+          "p95_px": 0.8268571364127958,
+          "rms_px": 0.7638536821883217,
+          "max_px": 15.530902883448492
+        },
+        "virtual_focal_px": 487.6569385939076,
+        "cam0_pose_to_cam1_prediction": {
+          "count": 4644,
+          "median_px": 0.505978156445275,
+          "p95_px": 1.7083834508779754,
+          "rms_px": 0.9998183163445651,
+          "max_px": 14.621218921741349
+        }
+      }
+    },
+    "coverage": [
+      {
+        "eye": 0,
+        "corner_hull_image_fraction": 0.3804626035225094,
+        "center_min": [
+          0.15097495829098107,
+          0.16428045398659177
+        ],
+        "center_max": [
+          0.7472692865691674,
+          0.5425915303053679
+        ],
+        "center_span": [
+          0.5962943282781863,
+          0.37831107631877614
+        ],
+        "center_grid_3x3": [
+          [
+            6,
+            32,
+            3
+          ],
+          [
+            0,
+            45,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "mono_pose_reprojection": {
+          "count": 4644,
+          "median_px": 0.45167805341924105,
+          "p95_px": 1.2081224406320281,
+          "rms_px": 0.7263889414529382,
+          "max_px": 11.430356490101722
+        }
+      },
+      {
+        "eye": 1,
+        "corner_hull_image_fraction": 0.3717367060978935,
+        "center_min": [
+          0.2645528425578198,
+          0.16407481652719003
+        ],
+        "center_max": [
+          0.863673010682748,
+          0.5353258751056813
+        ],
+        "center_span": [
+          0.5991201681249283,
+          0.3712510585784913
+        ],
+        "center_grid_3x3": [
+          [
+            2,
+            20,
+            19
+          ],
+          [
+            0,
+            44,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "mono_pose_reprojection": {
+          "count": 4644,
+          "median_px": 0.45148861272008034,
+          "p95_px": 1.281563457407577,
+          "rms_px": 0.7902600710948422,
+          "max_px": 13.473384226700906
+        }
+      }
+    ],
+    "comparison_to_previous": [
+      {
+        "eye": 0,
+        "previous_upper_center_observations": 0,
+        "current_upper_center_observations": 41,
+        "previous_corner_hull_fraction": 0.4265373989911377,
+        "current_corner_hull_fraction": 0.3804626035225094,
+        "current_center_grid_3x3": [
+          [
+            6,
+            32,
+            3
+          ],
+          [
+            0,
+            45,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "eye": 1,
+        "previous_upper_center_observations": 0,
+        "current_upper_center_observations": 41,
+        "previous_corner_hull_fraction": 0.4239262883750284,
+        "current_corner_hull_fraction": 0.3717367060978935,
+        "current_center_grid_3x3": [
+          [
+            2,
+            20,
+            19
+          ],
+          [
+            0,
+            44,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "complementary_coverage_union": {
+      "source_sessions": [
+        "target-rtsp-wide-20261014",
+        "target-rtsp-upper-20261014"
+      ],
+      "complete_pairs": 143,
+      "source_inspection_sha256": [
+        "7b1ce23a941ddec0b9f9c07101d09a4ea4f2cebc504e4110c926ff4988e35bd4",
+        "34065173eda9a3fa91f03ff78482d2e87ffab0b365661dd3f720bec582c55a61"
+      ],
+      "source_models_identical": true,
+      "frozen_candidate_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+      "geometry_fitting_performed": false,
+      "coverage": [
+        {
+          "eye": 0,
+          "corner_hull_image_fraction": 0.6373638351570042,
+          "center_min": [
+            0.15097497491275563,
+            0.1642804503440857
+          ],
+          "center_max": [
+            0.7472693499396829,
+            0.8229290008544922
+          ],
+          "center_span": [
+            0.5962943750269272,
+            0.6586485505104065
+          ],
+          "center_grid_3x3": [
+            [
+              6,
+              32,
+              3
+            ],
+            [
+              15,
+              64,
+              0
+            ],
+            [
+              5,
+              18,
+              0
+            ]
+          ]
+        },
+        {
+          "eye": 1,
+          "corner_hull_image_fraction": 0.6263147563589545,
+          "center_min": [
+            0.26455290177289176,
+            0.16407480239868164
+          ],
+          "center_max": [
+            0.8636728735531077,
+            0.8107083320617676
+          ],
+          "center_span": [
+            0.599119971780216,
+            0.646633529663086
+          ],
+          "center_grid_3x3": [
+            [
+              2,
+              20,
+              19
+            ],
+            [
+              0,
+              78,
+              5
+            ],
+            [
+              0,
+              8,
+              11
+            ]
+          ]
+        }
+      ],
+      "project_specific_coverage_gate_passed": true,
+      "accuracy_acceptance": false,
+      "limitation": "Coverage union only. Prior session: 60 FPS/20 Mbit/s; current: 30 FPS/10 Mbit/s. Residuals and capture provenance remain separate."
+    },
+    "large_residual_diagnostics": {
+      "native_virtual_focal_px": 487.6569385939076,
+      "corner_count": 4644,
+      "count_above_1px": 51,
+      "count_above_3px": 16,
+      "count_above_5px": 15,
+      "maximum_px": 11.65192700575659,
+      "largest_error_pair": 2652,
+      "residual_based_rejection_performed": false
+    },
+    "previous_report": "stereo-validation-rtsp-wide-20261014/report.html",
+    "next_step": "Review independent RTSP coverage and residuals; preserve preview and frozen geometry. RAW comparison and camera-IMU timing/extrinsics remain pending.",
+    "report": "stereo-validation-rtsp-upper-20261014/report.html"
+  },
+  "current_preview_stream": {
+    "status": "verified",
+    "requested_fps": 30,
+    "measured_decoded_fps": 29.87429463471001,
+    "decoded_frames": 240,
+    "observation_seconds": 8.00018888888889,
+    "target_bitrate_bits_per_second": 10000000,
+    "bitrate_verified_from_running_encoder_arguments": true,
+    "width": 2176,
+    "height": 1280,
+    "RTSP_url": "rtsp://192.168.137.226:8554/stereo",
+    "persistent_camera_settings_revision": 182,
+    "persistent_bitrate_owner_profile": true,
+    "camera_mode": "linear",
+    "binning": false,
+    "auto_exposure": true,
+    "ae_target_percent": 30,
+    "physical_exposure_sync_proven": false
+  }
+}

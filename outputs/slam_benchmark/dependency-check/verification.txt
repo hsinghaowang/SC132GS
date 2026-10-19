@@ -1,0 +1,26 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenCV: /usr (found suitable version "4.5.4", minimum required is "4") found components: core imgproc video calib3d 
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/slam-dependency-check-20261012/build
+[ 50%] Building CXX object CMakeFiles/slam_dependency_check.dir/main.cpp.o
+[100%] Linking CXX executable slam_dependency_check
+[100%] Built target slam_dependency_check
+OpenCV=4.5.4 Ceres=2.0.0 Eigen=3.4.0 dependency_link_and_run=passed
+libceres-dev	2.0.0+dfsg1-5
+libeigen3-dev	3.4.0-2ubuntu2
+libopencv-dev	4.5.4+dfsg-9ubuntu4

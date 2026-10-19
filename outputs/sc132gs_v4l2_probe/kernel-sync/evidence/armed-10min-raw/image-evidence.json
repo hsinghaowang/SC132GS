@@ -1,0 +1,20 @@
+{
+  "timestamp_ns": 162904904000,
+  "eyes": [
+    {
+      "eye": 0,
+      "sha256": "016eda0d1c9e014427f17140b2d1d3f787b4f568c20a62f7338881dce14acd28",
+      "min": 4,
+      "max": 1023,
+      "mean": 125.97875545726103
+    },
+    {
+      "eye": 1,
+      "sha256": "c7fc98c48bae5913331b9e0215ed9c17bc40ad2c85a49078b59db0c9fc397032",
+      "min": 4,
+      "max": 1023,
+      "mean": 139.17019904641543
+    }
+  ],
+  "preview": "8-bit grayscale RAW10 content preview; no exposure alignment measurement"
+}

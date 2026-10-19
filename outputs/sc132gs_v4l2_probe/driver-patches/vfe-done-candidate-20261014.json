@@ -1,0 +1,20 @@
+{
+  "status": "compiled_not_deployed_pending_timestamp_integration",
+  "kernel": "6.8.0-1084-qcom",
+  "ubuntu_source_version": "6.8.0-1084.89",
+  "baseline_vfe_source_sha256": "25fafad7e739bf1bffa8fad97c9a4414b309ab29ad7066e17c7471cf76f727f8",
+  "fixed_vfe_source_sha256": "f1b4937a3f78582afecea046fff04605cb3090d44fedb80bc0b96e019f267219",
+  "patch_sha256": "13578f17a39a138485fa4620e3b48358daea9e47a67c9effdca24a6b7040b7c7",
+  "candidate_camss_srcversion": "1129608FFE47E3D0B248692",
+  "candidate_module_sha256": "4d0e0cf00f3a0da16cbe417769aa80d137f61efc1572ccf50c859f75dd886be9",
+  "candidate_contains": ["existing RAW10 geometry guard", "reviewed VFE-17x buffer-done gate removal"],
+  "upstream_patch": "https://lists.openwall.net/linux-kernel/2026/09/28/486",
+  "upstream_review": "https://lists.openwall.net/linux-kernel/2026/09/28/757",
+  "verification": {
+    "actual_isr_dispatch_matrix_cases_per_source": 256,
+    "async_completion_delivered_by_original": 0,
+    "async_completion_delivered_by_fixed": 1,
+    "hardware_trigger_of_overnight_failure": "not_captured"
+  },
+  "integration_constraint": "Apply the minimal source patch to the current timestamp driver's VFE-17x source; do not replace its module with this older-base candidate. Rebuild and cold-boot verify the combined source."
+}

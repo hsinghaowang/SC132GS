@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "error": null,
+  "session": 7,
+  "boot_id": "b0220435-decf-4c94-b1ac-e41ba7bea41a",
+  "elapsed_s": 605.7859904719999,
+  "pulse_fps": 29.995741542061765,
+  "samples": 605,
+  "producer_cpu": 7,
+  "worker_cpu": 0,
+  "consumer_affinity": [
+    {
+      "tid": 6442,
+      "allowed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "tid": 6445,
+      "allowed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "tid": 6446,
+      "allowed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "tid": 6447,
+      "allowed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "tid": 6448,
+      "allowed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "tid": 6576,
+      "allowed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+}

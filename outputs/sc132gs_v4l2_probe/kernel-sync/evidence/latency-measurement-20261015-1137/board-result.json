@@ -1,0 +1,204 @@
+{
+  "passed": true,
+  "matched_triggers": 3756,
+  "first_trigger": 143591,
+  "last_trigger": 147346,
+  "elapsed_s": 125.169425429,
+  "reference": "actual FSYNC pulse.after (current buffer timestamp before timeval truncation)",
+  "frame_event": "VFE DMA completion in kernel; not userspace DQBUF return time",
+  "selection": "first of the two valid DMA completions belonging to the same verified trigger",
+  "first_frame": {
+    "count": 3756,
+    "mean_ns": 32145787.838391908,
+    "median_ns": 32145977.5,
+    "stddev_ns": 3371.894459140831,
+    "min_ns": 32134864,
+    "p95_ns": 32150426,
+    "max_ns": 32188777
+  },
+  "per_eye_dma": [
+    {
+      "count": 3756,
+      "mean_ns": 32145960.873003196,
+      "median_ns": 32145982.5,
+      "stddev_ns": 7225.2139845163565,
+      "min_ns": 32134864,
+      "p95_ns": 32150445,
+      "max_ns": 32436772
+    },
+    {
+      "count": 3756,
+      "mean_ns": 32402817.922790203,
+      "median_ns": 32403375.0,
+      "stddev_ns": 15908.6668214061,
+      "min_ns": 32136790,
+      "p95_ns": 32412988,
+      "max_ns": 32642096
+    }
+  ],
+  "per_eye_sof": [
+    {
+      "count": 3756,
+      "mean_ns": 16737601.611821087,
+      "median_ns": 16737563.0,
+      "stddev_ns": 401.15121015221655,
+      "min_ns": 16736278,
+      "p95_ns": 16738217,
+      "max_ns": 16743956
+    },
+    {
+      "count": 3756,
+      "mean_ns": 16738567.119542066,
+      "median_ns": 16738509.0,
+      "stddev_ns": 361.604962514665,
+      "min_ns": 16737111,
+      "p95_ns": 16739180,
+      "max_ns": 16744757
+    }
+  ],
+  "first_eye_counts": [
+    3753,
+    3
+  ],
+  "ten_second_windows": [
+    {
+      "index": 0,
+      "count": 300,
+      "mean_ns": 32144802.656666666,
+      "median_ns": 32145282.0,
+      "stddev_ns": 3103.0732452611483,
+      "min_ns": 32136007,
+      "p95_ns": 32149659,
+      "max_ns": 32151428
+    },
+    {
+      "index": 1,
+      "count": 300,
+      "mean_ns": 32145296.72,
+      "median_ns": 32145455.5,
+      "stddev_ns": 3865.430688586547,
+      "min_ns": 32137541,
+      "p95_ns": 32149353,
+      "max_ns": 32183419
+    },
+    {
+      "index": 2,
+      "count": 300,
+      "mean_ns": 32144459.706666667,
+      "median_ns": 32145099.5,
+      "stddev_ns": 2874.2127479750384,
+      "min_ns": 32136875,
+      "p95_ns": 32148849,
+      "max_ns": 32151191
+    },
+    {
+      "index": 3,
+      "count": 300,
+      "mean_ns": 32144496.76,
+      "median_ns": 32145010.0,
+      "stddev_ns": 2657.0643416623043,
+      "min_ns": 32137714,
+      "p95_ns": 32148647,
+      "max_ns": 32151095
+    },
+    {
+      "index": 4,
+      "count": 300,
+      "mean_ns": 32144899.393333334,
+      "median_ns": 32145123.5,
+      "stddev_ns": 3553.2278909871357,
+      "min_ns": 32134864,
+      "p95_ns": 32150126,
+      "max_ns": 32170282
+    },
+    {
+      "index": 5,
+      "count": 300,
+      "mean_ns": 32147088.14,
+      "median_ns": 32147578.0,
+      "stddev_ns": 2975.9319202114375,
+      "min_ns": 32137890,
+      "p95_ns": 32150702,
+      "max_ns": 32173102
+    },
+    {
+      "index": 6,
+      "count": 300,
+      "mean_ns": 32147511.09,
+      "median_ns": 32147775.5,
+      "stddev_ns": 2407.9966116878154,
+      "min_ns": 32140098,
+      "p95_ns": 32151344,
+      "max_ns": 32152805
+    },
+    {
+      "index": 7,
+      "count": 300,
+      "mean_ns": 32147457.516666666,
+      "median_ns": 32147758.5,
+      "stddev_ns": 2620.0148491415507,
+      "min_ns": 32140469,
+      "p95_ns": 32151302,
+      "max_ns": 32154217
+    },
+    {
+      "index": 8,
+      "count": 300,
+      "mean_ns": 32147326.293333333,
+      "median_ns": 32147792.5,
+      "stddev_ns": 2599.4730544135714,
+      "min_ns": 32137723,
+      "p95_ns": 32151053,
+      "max_ns": 32154908
+    },
+    {
+      "index": 9,
+      "count": 300,
+      "mean_ns": 32145447.923333332,
+      "median_ns": 32145671.5,
+      "stddev_ns": 2719.487426726261,
+      "min_ns": 32139028,
+      "p95_ns": 32149650,
+      "max_ns": 32151117
+    },
+    {
+      "index": 10,
+      "count": 300,
+      "mean_ns": 32146161.233333334,
+      "median_ns": 32145994.0,
+      "stddev_ns": 4699.776684647427,
+      "min_ns": 32137742,
+      "p95_ns": 32151171,
+      "max_ns": 32188777
+    },
+    {
+      "index": 11,
+      "count": 300,
+      "mean_ns": 32144917.13,
+      "median_ns": 32145090.5,
+      "stddev_ns": 3244.7991000625398,
+      "min_ns": 32137535,
+      "p95_ns": 32149209,
+      "max_ns": 32173106
+    },
+    {
+      "index": 12,
+      "count": 156,
+      "mean_ns": 32144998.410256412,
+      "median_ns": 32144734.5,
+      "stddev_ns": 3087.950101878215,
+      "min_ns": 32139788,
+      "p95_ns": 32149575,
+      "max_ns": 32153793
+    }
+  ],
+  "proposed_common_offset_ns": 16072894,
+  "timestamp_modified": false,
+  "trace_lost": 0,
+  "source_sha256": "45e8e301fd3656a5e64b12b45dddeb712ee393cc0831b5d0325632a2ff816e66",
+  "limitations": [
+    "AE remains enabled; exposure readbacks are periodic, not per-frame metadata",
+    "DMA latency includes sensor output and receiver completion latency",
+    "not a measurement of exposure start or exposure midpoint"
+  ]
+}

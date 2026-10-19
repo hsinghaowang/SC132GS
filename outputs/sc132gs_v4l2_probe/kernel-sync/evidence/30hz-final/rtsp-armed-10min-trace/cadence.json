@@ -1,0 +1,29 @@
+{
+  "trigger_hz": 30,
+  "period_ns": 33333333,
+  "pulse_count": 18978,
+  "pulse_fps": 30.000000260921116,
+  "trigger_id_gaps": 0,
+  "actual_assert_interval_ns": {
+    "min": 33315742,
+    "median": 33333333,
+    "max": 33350896
+  },
+  "host_assert_bracket_width_ns": {
+    "min": 1874,
+    "median": 2396.0,
+    "max": 11301
+  },
+  "host_low_duration_lower_bound_ns": {
+    "min": 101505,
+    "median": 102496.0,
+    "max": 109164
+  },
+  "relative_phase_residual_ns": {
+    "min": -1301,
+    "median": 417.0,
+    "max": 17319
+  },
+  "end_to_start_phase_residual_ns": 824,
+  "source": "host GPIO operation brackets; electrical edge and exposure unmeasured"
+}

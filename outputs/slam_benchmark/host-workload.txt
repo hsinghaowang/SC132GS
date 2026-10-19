@@ -1,0 +1,26 @@
+COMMAND         %CPU %MEM
+ps               400  0.0
+euroc_benchmark  169  1.1
+curl            27.0  0.2
+stereo-h265-rts 26.0  2.0
+kworker/u17:0-b  8.1  0.0
+sshd             7.3  0.1
+kworker/0:0-eve  4.1  0.0
+python3          2.6  0.1
+kworker/u17:3-u  2.5  0.0
+kworker/0:2-eve  1.5  0.0
+irq/150-9091000  1.5  0.0
+irq/144-mmc1     1.1  0.0
+irq/152-90b6400  1.1  0.0
+systemd          0.9  0.2
+gnome-shell      0.7  2.5
+polkitd          0.6  0.1
+dbus-daemon      0.5  0.0
+irq/211-msm-vid  0.5  0.0
+containerd       0.4  0.6
+sugov:4          0.3  0.0
+kworker/u16:3-e  0.3  0.0
+sugov:0          0.3  0.0
+fwupd            0.3  0.7
+kworker/u16:1-u  0.2  0.0
+schedutil

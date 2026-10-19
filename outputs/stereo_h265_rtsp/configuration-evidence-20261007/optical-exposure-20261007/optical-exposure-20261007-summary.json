@@ -1,0 +1,328 @@
+{
+  "captures": [
+    {
+      "board_directory": "/home/ubuntu/sc132gs-camera-tests/optical-exposure-20261007-2ms",
+      "status": "conditional_estimate",
+      "duration_seconds": 60,
+      "sensor_fps": 30,
+      "nominal_exposure_us": 2000.0,
+      "joint_events": 23,
+      "eyes": [
+        {
+          "eye": 0,
+          "frames": 1807,
+          "sequence_gaps": 0,
+          "measured_receive_fps": 29.98131894894062,
+          "source_peak_tile": 13498,
+          "excluded_clipped_tiles": 9,
+          "roi_tiles": [
+            13359,
+            13360,
+            13496
+          ],
+          "roi_pixel_bounds": [
+            232,
+            768,
+            272,
+            808
+          ],
+          "dark_raw10": 42.0,
+          "light_raw10": 107.0,
+          "amplitude_raw10": 65.0,
+          "noise_raw10": 0.4985706402861006,
+          "saturation_fraction": 0.0,
+          "dark_drift_fraction": 0.0,
+          "failures": []
+        },
+        {
+          "eye": 1,
+          "frames": 1800,
+          "sequence_gaps": 0,
+          "measured_receive_fps": 29.996731373401264,
+          "source_peak_tile": 13545,
+          "excluded_clipped_tiles": 10,
+          "roi_tiles": [
+            13407,
+            13543,
+            13680,
+            13681,
+            13682,
+            13683
+          ],
+          "roi_pixel_bounds": [
+            632,
+            784,
+            672,
+            824
+          ],
+          "dark_raw10": 40.833333333333336,
+          "light_raw10": 86.16666666666667,
+          "amplitude_raw10": 45.333333333333336,
+          "noise_raw10": 0.21499558267770716,
+          "saturation_fraction": 0.0,
+          "dark_drift_fraction": 0.0036764705882353986,
+          "failures": []
+        }
+      ],
+      "estimate": {
+        "median_start_skew_us": -25.037707390648258,
+        "mad_us": 19.004524886878094,
+        "p10_us": -41.085972850678694,
+        "p90_us": 52.963800904977326,
+        "normalized_noise_scale_us": 24.825734321507372,
+        "rising_count": 10,
+        "falling_count": 13,
+        "rising_median_us": 29.562594268476488,
+        "falling_median_us": -32.42835595776727,
+        "sign": "positive means second eye exposure starts later",
+        "assumptions": "equal fixed exposure, linear unsaturated RAW, common fast optical step; LED edge speed is not independently measured"
+      },
+      "receiver_delta_median_us": 174.0,
+      "restored_revision": 43,
+      "raw_frames_audited": 6
+    },
+    {
+      "board_directory": "/home/ubuntu/sc132gs-camera-tests/optical-exposure-20261007-4ms",
+      "status": "conditional_estimate",
+      "duration_seconds": 60,
+      "sensor_fps": 30,
+      "nominal_exposure_us": 4000.0,
+      "joint_events": 61,
+      "eyes": [
+        {
+          "eye": 0,
+          "frames": 1806,
+          "sequence_gaps": 0,
+          "measured_receive_fps": 29.967280046805406,
+          "source_peak_tile": 13498,
+          "excluded_clipped_tiles": 11,
+          "roi_tiles": [
+            13224,
+            13225,
+            13226,
+            13360,
+            13495,
+            13496,
+            13632,
+            13770
+          ],
+          "roi_pixel_bounds": [
+            240,
+            776,
+            280,
+            816
+          ],
+          "dark_raw10": 44.25,
+          "light_raw10": 98.6875,
+          "amplitude_raw10": 54.4375,
+          "noise_raw10": 0.2398508059000617,
+          "saturation_fraction": 0.0,
+          "dark_drift_fraction": 0.0,
+          "failures": []
+        },
+        {
+          "eye": 1,
+          "frames": 1800,
+          "sequence_gaps": 0,
+          "measured_receive_fps": 30.00355522949876,
+          "source_peak_tile": 13545,
+          "excluded_clipped_tiles": 13,
+          "roi_tiles": [
+            13407,
+            13680,
+            13681,
+            13682,
+            13683
+          ],
+          "roi_pixel_bounds": [
+            632,
+            784,
+            672,
+            824
+          ],
+          "dark_raw10": 44.8,
+          "light_raw10": 131.6,
+          "amplitude_raw10": 86.8,
+          "noise_raw10": 0.31908961408698755,
+          "saturation_fraction": 0.0,
+          "dark_drift_fraction": 0.0,
+          "failures": []
+        }
+      ],
+      "estimate": {
+        "median_start_skew_us": 2.200976683403244,
+        "mad_us": 28.22117699344484,
+        "p10_us": -37.00392048971723,
+        "p90_us": 40.083171522747875,
+        "normalized_noise_scale_us": 32.32853032447326,
+        "rising_count": 30,
+        "falling_count": 31,
+        "rising_median_us": -27.406392355838307,
+        "falling_median_us": 22.729316903606467,
+        "sign": "positive means second eye exposure starts later",
+        "assumptions": "equal fixed exposure, linear unsaturated RAW, common fast optical step; LED edge speed is not independently measured"
+      },
+      "receiver_delta_median_us": 176.0,
+      "restored_revision": 43,
+      "raw_frames_audited": 6
+    },
+    {
+      "board_directory": "/home/ubuntu/sc132gs-camera-tests/optical-exposure-20261007-60fps-4ms-verified",
+      "status": "conditional_estimate",
+      "duration_seconds": 60,
+      "sensor_fps": 60,
+      "nominal_exposure_us": 4000.0,
+      "joint_events": 86,
+      "eyes": [
+        {
+          "eye": 0,
+          "frames": 3604,
+          "sequence_gaps": 0,
+          "measured_receive_fps": 59.83932568072008,
+          "source_peak_tile": 13498,
+          "excluded_clipped_tiles": 11,
+          "roi_tiles": [
+            13224,
+            13225,
+            13226,
+            13360,
+            13495,
+            13496,
+            13632
+          ],
+          "roi_pixel_bounds": [
+            240,
+            768,
+            280,
+            808
+          ],
+          "dark_raw10": 36.0,
+          "light_raw10": 91.71428571428571,
+          "amplitude_raw10": 55.71428571428571,
+          "noise_raw10": 0.2164155816445784,
+          "saturation_fraction": 0.0,
+          "dark_drift_fraction": 0.0,
+          "failures": []
+        },
+        {
+          "eye": 1,
+          "frames": 3597,
+          "sequence_gaps": 0,
+          "measured_receive_fps": 59.96845685851537,
+          "source_peak_tile": 13545,
+          "excluded_clipped_tiles": 12,
+          "roi_tiles": [
+            12999,
+            13272,
+            13273,
+            13274,
+            13407,
+            13543
+          ],
+          "roi_pixel_bounds": [
+            632,
+            760,
+            672,
+            800
+          ],
+          "dark_raw10": 37.0,
+          "light_raw10": 124.33333333333333,
+          "amplitude_raw10": 87.33333333333333,
+          "noise_raw10": 0.22190634114964872,
+          "saturation_fraction": 0.0,
+          "dark_drift_fraction": 0.0,
+          "failures": []
+        }
+      ],
+      "estimate": {
+        "median_start_skew_us": 17.88999804266972,
+        "mad_us": 22.54844392248939,
+        "p10_us": -32.66784106478782,
+        "p90_us": 43.70718340183966,
+        "normalized_noise_scale_us": 25.701178151546127,
+        "rising_count": 48,
+        "falling_count": 38,
+        "rising_median_us": 33.881385789782954,
+        "falling_median_us": -18.986102955568683,
+        "sign": "positive means second eye exposure starts later",
+        "assumptions": "equal fixed exposure, linear unsaturated RAW, common fast optical step; LED edge speed is not independently measured"
+      },
+      "receiver_delta_median_us": 255.5,
+      "restored_revision": 43,
+      "raw_frames_audited": 6
+    }
+  ],
+  "live_after": {
+    "sensor_mode": "linear",
+    "binning": 0,
+    "max_fps": 60,
+    "fps": 60,
+    "ae": 1,
+    "brightness": 40,
+    "width": 1088,
+    "height": 1280,
+    "measured_fps_x10": 597,
+    "exposure_rows": 1330,
+    "gain_index": 128,
+    "exposure_ceiling_rows": 1330,
+    "limited": 1,
+    "control_error": 0,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 43,
+    "native_target": 17
+  },
+  "leds_after": [
+    {
+      "colour": "red",
+      "brightness": 0,
+      "trigger": "none"
+    },
+    {
+      "colour": "green",
+      "brightness": 0,
+      "trigger": "heartbeat"
+    },
+    {
+      "colour": "blue",
+      "brightness": 0,
+      "trigger": "none"
+    }
+  ],
+  "hardware_exposure_sync_verified": false,
+  "calibrated_accuracy_us": null,
+  "interpretation": "All optical-model medians are close to zero; sign is unresolved at the observed noise scale. Receiver timestamps are distinct diagnostics.",
+  "large_capture_data": "frames.bin remains in each board_directory; local archive retains manifests and packed RAW snapshots.",
+  "excluded_run": {
+    "board_directory": "/home/ubuntu/sc132gs-camera-tests/optical-exposure-20261007-60fps-4ms",
+    "status": "inconclusive",
+    "reason": "Initial 60 FPS test omitted the post-stream high-rate sensor profile; actual capture was 30 FPS.",
+    "initial_restore_errors": [
+      "camera: FileNotFoundError(2, 'No such file or directory')"
+    ],
+    "later_recovery": {
+      "restored": true,
+      "method": "camera_platform restore from saved YAML; decoded RTSP verified",
+      "final_state": {
+        "sensor_mode": "linear",
+        "binning": 0,
+        "max_fps": 60,
+        "fps": 60,
+        "ae": 1,
+        "brightness": 40,
+        "width": 1088,
+        "height": 1280,
+        "measured_fps_x10": 597,
+        "exposure_rows": 1330,
+        "gain_index": 128,
+        "exposure_ceiling_rows": 1330,
+        "limited": 1,
+        "control_error": 0,
+        "max_exposure_us": 0,
+        "max_gain_index": 128,
+        "revision": 43,
+        "native_target": 17
+      }
+    }
+  }
+}

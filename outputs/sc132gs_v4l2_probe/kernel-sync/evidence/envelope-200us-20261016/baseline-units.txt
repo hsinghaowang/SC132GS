@@ -1,0 +1,43 @@
+# /etc/systemd/system/sc132gs-camera-restore.service
+[Unit]
+Description=Restore last verified SC132GS stereo camera settings
+After=local-fs.target systemd-modules-load.service network-online.target
+Wants=network-online.target
+RequiresMountsFor=/home/ubuntu/stereo-h265-rtsp /var/lib/sc132gs-camera
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/ubuntu/stereo-h265-rtsp/camera_platform.py restore
+RemainAfterExit=yes
+TimeoutStartSec=120
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+# /etc/systemd/system/sc132gs-camera-restore.service.d/kernel-fsync.conf
+[Service]
+ExecStartPre=/bin/bash /home/ubuntu/sc132gs-kernel-sync-20261014/preflight.sh
+
+# /run/systemd/transient/sc132gs-camera-rtsp.service
+# This is a transient unit file, created programmatically via the systemd API. Do not edit.
+[Unit]
+Description=/bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh
+
+[Service]
+TimeoutStopSec=15s
+Restart=no
+Environment="BINNING=0" "FPS=30" "SENSOR_MODE=linear" "TOKEN=bd71b542-7126-4e3c-8119-585e4184b927" "GPU_RECTIFICATION_MAP=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map" "DEPTH_CALIBRATION=/home/ubuntu/main10-rectification-20261016/depth-calibration" "AUTO_EXPOSURE=1" "BRIGHTNESS=30" "CAMERA_CPUS=4-6"
+ExecStart=
+ExecStart="/bin/bash" "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh"
+
+# /etc/systemd/system/sc132gs-camera-rtsp.service.d/40-gpu-rectification.conf
+[Service]
+Environment="GPU_RECTIFICATION_MAP=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map"
+Environment="DEPTH_CALIBRATION=/home/ubuntu/main10-rectification-20261016/depth-calibration"
+
+# /etc/systemd/system/sc132gs-camera-rtsp.service.d/45-auto-exposure.conf
+[Service]
+Environment="AUTO_EXPOSURE=1" "BRIGHTNESS=30" "CAMERA_CPUS=4-6"

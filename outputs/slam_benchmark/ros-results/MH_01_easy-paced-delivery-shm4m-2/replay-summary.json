@@ -1,0 +1,67 @@
+{
+  "sent": {
+    "imu": 36820,
+    "left": 3682,
+    "right": 3682
+  },
+  "sent_after_stop_signal": null,
+  "dataset_stereo_pairs": 3682,
+  "dataset_imu_samples": 36820,
+  "observed_poses": 2784,
+  "observed_stock_poseimu": 2784,
+  "receiver_exit_code": 0,
+  "shutdown_mode": "end_of_sequence",
+  "signal_to_exit_observed_ms": 318.735905,
+  "origin_camera_timestamp_ns": 1403636579763555500,
+  "start_monotonic_ns": 5215402209282,
+  "timing_clock": "Linux CLOCK_MONOTONIC via clock_gettime / time.monotonic_ns",
+  "image_qos": "reliable KeepLast 10",
+  "imu_publisher_qos": "best effort KeepLast 200",
+  "publisher_image_decode_threads": 1,
+  "publisher_implementation": "C++17 rclcpp; bounded decode-ahead",
+  "prefetch_pairs": 4,
+  "ROS_DOMAIN_ID": "73",
+  "ROS_LOCALHOST_ONLY": "1",
+  "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+  "ground_truth_initialization": false,
+  "physical_sensor_input": false,
+  "primary_pose_stream": "/poseimu, calibrated IMU stamp; nearest source camera association checked within 20 ms",
+  "diagnostic_probe_scope": "camera-stamped pose after every processed camera on the owned estimator worker",
+  "publisher_exit_code": 0,
+  "native_publisher_summary": {
+    "sent": {
+      "imu": 36820,
+      "left": 3682,
+      "right": 3682
+    },
+    "dataset_stereo_pairs": 3682,
+    "dataset_imu_samples": 36820,
+    "origin_camera_timestamp_ns": 1403636579763555500,
+    "start_monotonic_ns": 5215402209282,
+    "prefetch_pairs": 4,
+    "maximum_prepared_queue": 4,
+    "error_code": 0,
+    "cpu_seconds": 89.009774,
+    "peak_rss_mib": 93.234375,
+    "elapsed_s": 186.85277330600002
+  },
+  "resources": {
+    "elapsed_including_startup_drain_stop_s": 189.9702194800002,
+    "publisher_probe_cpu_percent": 56.46953574809856,
+    "receiver_cpu_percent": 117.46025382862275,
+    "publisher_probe_peak_rss_mib": 93.234375,
+    "receiver_peak_rss_mib": 101.22265625,
+    "affinity_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "cpu_units": "100 percent is one logical core",
+    "accounting": "publisher includes native input process and rclpy probe; receiver CPU subtracts native self CPU from waited children; child peak RSS is aggregate maximum"
+  }
+}

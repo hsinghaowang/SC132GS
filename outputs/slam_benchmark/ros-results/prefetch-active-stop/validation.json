@@ -1,0 +1,12 @@
+{
+  "SIGINT_during_publishing": true,
+  "owned_producer_joined_on_exit": true,
+  "exit_code": 1,
+  "interrupted_error_code": 3,
+  "observed_stop_ms": 318.229041,
+  "received_before_stop": {
+    "left": 40,
+    "right": 40,
+    "imu": 382
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "camera_service": {
+    "returncode": 0,
+    "stdout": "MainPID=153981\nActiveState=active\nSubState=running\n",
+    "stderr": ""
+  },
+  "camera_status": {
+    "returncode": 0,
+    "stdout": "ok sensor_mode=linear binning=0 max_fps=60 effective_fps=60 measured_fps_x10=600 eye_resolution=1088x1280 ae=0 brightness=30 ae_target_percent=30 exposure_rows=1330 gain_index=27 exposure_ceiling_rows=1330 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=178\n",
+    "stderr": ""
+  },
+  "camera_processes": [
+    [
+      154027,
+      "sc132gs-fsync-g"
+    ],
+    [
+      154035,
+      "stereo-h265-rts"
+    ]
+  ],
+  "durable_sha256": "9658bad46876f87d7ae7970f936ed8eb17bdf8da4b065a4e514b92ad62ac3299",
+  "runtime_state_sha256": "c68c55a604fafc9a529faed0da1244486cde7544801f8225097492c40e882739",
+  "unix_ns": 1791861026797878962
+}

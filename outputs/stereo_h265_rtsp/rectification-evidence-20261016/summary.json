@@ -1,0 +1,188 @@
+{
+  "fault-worker-main10": {
+    "passed.json": {
+      "passed": true,
+      "seconds": 50,
+      "fault_injection": true
+    },
+    "restoration.json": {
+      "profile_hashes_unchanged": true,
+      "original_active": true,
+      "ae": {
+        "mode": "off",
+        "camera_mode": "linear",
+        "hdr_enabled": "0",
+        "hdr_ratio": "0",
+        "hdr_second_ticks": "0",
+        "shadow_metric": "sensor_signal_median",
+        "shadow_sample_percent": "100",
+        "effective_target_bp": "3000",
+        "saturation_scope": "unused",
+        "highlight_sample_percent": "0",
+        "cam0_saturation_bp": "0",
+        "cam1_saturation_bp": "0",
+        "saturation_limit_bp": "500",
+        "highlight_limited": "0",
+        "exposure_kind": "linear_rows",
+        "display_gamma_x100": "100",
+        "display_black_raw10": "0",
+        "signal_black_raw10": "37",
+        "signal_target_luma10": "307",
+        "target_kind": "sensor_signal_percent",
+        "hdr_target_raw10": "0",
+        "cam0_shadow_raw10": "0",
+        "cam1_shadow_raw10": "0",
+        "target_percent": "30",
+        "cam0_percent": "0",
+        "cam1_percent": "0",
+        "exposure_lines": "1377",
+        "gain_index": "34",
+        "fps_x10": "0",
+        "max_exposure_lines": "1377",
+        "brightness_limited": "0",
+        "error_errno": "0",
+        "max_exposure_us": "0",
+        "max_gain_index": "128"
+      }
+    },
+    "client": {
+      "stereo": {
+        "error": null,
+        "decode_fps": 29.74625165716025,
+        "pts_monotonic": true,
+        "max_pts_gap_s": 0.0666777777777785,
+        "frames": 1129
+      },
+      "depth": {
+        "error": null,
+        "decode_fps": 23.937249373396465,
+        "pts_monotonic": true,
+        "max_pts_gap_s": 0.06669999999999998,
+        "frames": 300
+      }
+    }
+  },
+  "healthy-worker-main10": {
+    "restoration.json": {
+      "profile_hashes_unchanged": true,
+      "original_active": true,
+      "ae": {
+        "mode": "off",
+        "camera_mode": "linear",
+        "hdr_enabled": "0",
+        "hdr_ratio": "0",
+        "hdr_second_ticks": "0",
+        "shadow_metric": "sensor_signal_median",
+        "shadow_sample_percent": "100",
+        "effective_target_bp": "3000",
+        "saturation_scope": "unused",
+        "highlight_sample_percent": "0",
+        "cam0_saturation_bp": "0",
+        "cam1_saturation_bp": "0",
+        "saturation_limit_bp": "500",
+        "highlight_limited": "0",
+        "exposure_kind": "linear_rows",
+        "display_gamma_x100": "100",
+        "display_black_raw10": "0",
+        "signal_black_raw10": "37",
+        "signal_target_luma10": "307",
+        "target_kind": "sensor_signal_percent",
+        "hdr_target_raw10": "0",
+        "cam0_shadow_raw10": "0",
+        "cam1_shadow_raw10": "0",
+        "target_percent": "30",
+        "cam0_percent": "0",
+        "cam1_percent": "0",
+        "exposure_lines": "1377",
+        "gain_index": "34",
+        "fps_x10": "0",
+        "max_exposure_lines": "1377",
+        "brightness_limited": "0",
+        "error_errno": "0",
+        "max_exposure_us": "0",
+        "max_gain_index": "128"
+      }
+    },
+    "client": {
+      "stereo": {
+        "error": null,
+        "decode_fps": 28.894661799090745,
+        "pts_monotonic": true,
+        "max_pts_gap_s": 0.06670000000000442,
+        "frames": 2142
+      },
+      "depth": {
+        "error": null,
+        "decode_fps": 23.925490128154316,
+        "pts_monotonic": true,
+        "max_pts_gap_s": 0.06670000000000442,
+        "frames": 1772
+      }
+    }
+  },
+  "healthy-worker-main10-pinned": {
+    "passed.json": {
+      "passed": true,
+      "seconds": 300,
+      "fault_injection": false
+    },
+    "restoration.json": {
+      "profile_hashes_unchanged": true,
+      "original_active": true,
+      "ae": {
+        "mode": "off",
+        "camera_mode": "linear",
+        "hdr_enabled": "0",
+        "hdr_ratio": "0",
+        "hdr_second_ticks": "0",
+        "shadow_metric": "sensor_signal_median",
+        "shadow_sample_percent": "100",
+        "effective_target_bp": "3000",
+        "saturation_scope": "unused",
+        "highlight_sample_percent": "0",
+        "cam0_saturation_bp": "0",
+        "cam1_saturation_bp": "0",
+        "saturation_limit_bp": "500",
+        "highlight_limited": "0",
+        "exposure_kind": "linear_rows",
+        "display_gamma_x100": "100",
+        "display_black_raw10": "0",
+        "signal_black_raw10": "37",
+        "signal_target_luma10": "307",
+        "target_kind": "sensor_signal_percent",
+        "hdr_target_raw10": "0",
+        "cam0_shadow_raw10": "0",
+        "cam1_shadow_raw10": "0",
+        "target_percent": "30",
+        "cam0_percent": "0",
+        "cam1_percent": "0",
+        "exposure_lines": "1377",
+        "gain_index": "34",
+        "fps_x10": "0",
+        "max_exposure_lines": "1377",
+        "brightness_limited": "0",
+        "error_errno": "0",
+        "max_exposure_us": "0",
+        "max_gain_index": "128"
+      }
+    },
+    "client": {
+      "stereo": {
+        "error": null,
+        "observed_seconds": 269.2660828,
+        "decode_fps": 28.744801125765846,
+        "pts_monotonic": true,
+        "max_pts_gap_s": 0.06671111111111827,
+        "frames": 7741
+      },
+      "depth": {
+        "error": null,
+        "observed_seconds": 269.5764243,
+        "decode_fps": 23.811429418088025,
+        "pts_monotonic": true,
+        "max_pts_gap_s": 0.06671111111111827,
+        "frames": 6420
+      }
+    }
+  }
+}

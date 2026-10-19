@@ -1,0 +1,75 @@
+{
+  "algorithm": "5x5 census + 5x5 box Hamming cost, integer WTA, uniqueness10, bidirectional LR<=1px; NOT SGM/SGBM",
+  "gpu_metrics": {
+    "device": "QUALCOMM Adreno(TM) 635",
+    "cpu_gpu_rectification_equal": "1",
+    "rectification_checked_pixels": "696320",
+    "stage_0_median_ms": "1.678",
+    "stage_1_median_ms": "0.684",
+    "stage_2_median_ms": "0.673",
+    "stage_3_median_ms": "15.839",
+    "stage_4_median_ms": "4.474",
+    "stage_5_median_ms": "4.224",
+    "stage_6_median_ms": "0.242",
+    "measured_iterations": "1",
+    "wall_median_ms": "32.0426",
+    "wall_p95_ms": "32.0426",
+    "kernel_median_ms": "27.814",
+    "valid_fraction": "0.363083",
+    "census_checked_pixels": "348160",
+    "disparity_checked_samples": "182",
+    "cost_volume_bytes": "44564480",
+    "mode": "--wide"
+  },
+  "final_valid_fraction": 0.36308306525735295,
+  "resolution": [
+    544,
+    640
+  ],
+  "disparities": 128,
+  "calibration_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "snapshot_sha256": null,
+  "test_case": "photo",
+  "rectification_case": "borders",
+  "board_before": {
+    "service": "MainPID=2641\nActiveState=active",
+    "settings_hash": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd  /var/lib/sc132gs-camera/settings.yaml"
+  },
+  "board_after": {
+    "service": "MainPID=2641\nActiveState=active",
+    "settings_hash": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd  /var/lib/sc132gs-camera/settings.yaml"
+  },
+  "camera_state_same_during_this_run": true,
+  "camera_active_before_and_after": true,
+  "host_to_gpu_and_disparity_readback_in_wall_time": true,
+  "gpu_rectification_in_wall_time": true,
+  "metric_conversion_in_wall_time": false,
+  "interpolation": "OpenCV INTER_LINEAR compatible 1/32 pixel quantized bilinear, BORDER_CONSTANT=0",
+  "difference_from_previous_float_map_CPU_path": [
+    {
+      "differing_pixels": 65791,
+      "maximum_gray_difference": 251
+    },
+    {
+      "differing_pixels": 66048,
+      "maximum_gray_difference": 247
+    }
+  ],
+  "full_resolution_source_size": [
+    2176,
+    1280
+  ],
+  "maps_uploaded_once_outside_frame_timing": true,
+  "live_stream_acceleration_verified": false,
+  "metric_accuracy_verified": false,
+  "transfer_to_board_via_ssh_in_wall_time": false,
+  "kernel_input_hashes": {
+    "stereo_bench.cpp": "a924cf26794c01449b6cf6b191060308e6b87e853d3f3ee7230c39c02bea4580",
+    "left.u8": "693fd3806a6bbfdf6ba5a0b37254537c586e36b69598b00690e42532aa520570",
+    "right.u8": "c5720487c2d5e9f96131913a7ba765b0261373c7963dfe4a951771f42a9f6310",
+    "source.u8": "c4732e27f3f578f4656218537b3cd4179f1764774653c192ada242f11b313b91",
+    "left-map.i32": "01cb5cc14851bc4a5ad969f0f8349047f6cbf60995fc17d22592627e2f9fc635",
+    "right-map.i32": "b67905d3a2dbc0952658ee4c86131090db83356e2a809d9710e6080e0eaae085"
+  },
+  "note": "Repeated frozen image, streaming service kept active; different algorithm from CPU SGBM, not an equivalent quality speedup."
+}

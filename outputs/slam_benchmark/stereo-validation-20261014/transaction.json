@@ -1,0 +1,11 @@
+{
+  "session": "target-validation-20261014",
+  "seconds": 60,
+  "candidate_frozen_before_new_capture": true,
+  "frozen_candidate_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "fit_or_update_candidate_allowed": false,
+  "capture_returncode": 0,
+  "rtsp_active_restored": true,
+  "saved_settings_unchanged": true,
+  "frozen_candidate_unchanged": true
+}

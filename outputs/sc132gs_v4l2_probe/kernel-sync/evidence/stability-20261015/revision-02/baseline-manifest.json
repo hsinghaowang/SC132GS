@@ -1,0 +1,34 @@
+{
+  "/lib/modules/6.8.0-1084-qcom/updates/sc132gs-csid-monitor/qcom-camss.ko": {
+    "backup": "0-qcom-camss.ko",
+    "sha256": "feecb67bcdd64d2d8a57b32ebaf9c8c9fbaa207c753f3d91d58e0e57b8e23e6a"
+  },
+  "/boot/initrd.img-6.8.0-1084-qcom": {
+    "backup": "1-initrd.img-6.8.0-1084-qcom",
+    "sha256": "4f50c954ca01844ff7dcdc92e71a7c56165ec5b50f0fefa526d30b273e3558d5"
+  },
+  "/etc/modprobe.d/sc132gs-csid-monitor.conf": {
+    "backup": "2-sc132gs-csid-monitor.conf",
+    "sha256": "d0592b112d775bd8078d4cb243e802d82f60ff263ff38e2f5e7ccf4a520c65bc"
+  },
+  "/var/lib/sc132gs-camera/settings.json": {
+    "backup": "3-settings.json",
+    "sha256": "9daf563ddd04efeef09807561775d060b83a3cc032bf821ea18362399be661a7"
+  },
+  "/var/lib/sc132gs-camera/settings.yaml": {
+    "backup": "4-settings.yaml",
+    "sha256": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd"
+  },
+  "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp": {
+    "backup": "5-stereo-h265-rtsp",
+    "sha256": "bce3ba5017f04f27a10a791a4b66f22e49774110ea376ee40ed8a22c16b16ea8"
+  },
+  "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh": {
+    "backup": "6-run-camera-profile.sh",
+    "sha256": "25e2d7d6ec17ef05e8b315fb7ac2ea4227d225566e462cf3f070a89c0563f247"
+  },
+  "/home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh": {
+    "backup": "7-run-stereo-rtsp.sh",
+    "sha256": "d22a1f17d9e97cbb22b1a1428bea74e8b22c5c81d43962c5a486dbc96da1808f"
+  }
+}

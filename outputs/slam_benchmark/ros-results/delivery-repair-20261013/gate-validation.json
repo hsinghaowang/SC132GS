@@ -1,0 +1,44 @@
+[
+  {
+    "run": "V2_02_medium-paced-delivery-gate-512k",
+    "returncode": 4,
+    "expected_returncode": 4,
+    "input_integrity": {
+      "passed": false,
+      "missing": {
+        "imu": 98,
+        "left": 0,
+        "right": 0,
+        "pairs": 0
+      },
+      "receiver_error_code": 0,
+      "abandoned_measurements_at_stop": 0
+    },
+    "DDS_profile": {
+      "path": "/ws/slam_benchmark/fastdds-shm-512k.xml",
+      "sha256": "f36b542f68cdd0dad493584a7165320e065f5e8bfdf51c4a2bffdb12e77d6846",
+      "scope": "Process-local participant transport profile inherited by publisher, receiver and probe; topic QoS unchanged"
+    }
+  },
+  {
+    "run": "V2_02_medium-paced-delivery-gate-4m",
+    "returncode": 0,
+    "expected_returncode": 0,
+    "input_integrity": {
+      "passed": true,
+      "missing": {
+        "imu": 0,
+        "left": 0,
+        "right": 0,
+        "pairs": 0
+      },
+      "receiver_error_code": 0,
+      "abandoned_measurements_at_stop": 0
+    },
+    "DDS_profile": {
+      "path": "/ws/slam_benchmark/fastdds-shm-4m.xml",
+      "sha256": "69852bf171675f4160656c1e11228313d7a16a5211d5fff3f866d5e4e5406fe7",
+      "scope": "Process-local participant transport profile inherited by publisher, receiver and probe; topic QoS unchanged"
+    }
+  }
+]

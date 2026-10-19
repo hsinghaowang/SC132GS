@@ -1,0 +1,44 @@
+[
+  {
+    "condition": "ratio2",
+    "eye": 0,
+    "p25": 95.0,
+    "p50": 122.0,
+    "saturated_percent": 3.0891628440366974
+  },
+  {
+    "condition": "ratio2",
+    "eye": 1,
+    "p25": 108.0,
+    "p50": 123.0,
+    "saturated_percent": 3.8184489678899083
+  },
+  {
+    "condition": "ratio16",
+    "eye": 0,
+    "p25": 95.0,
+    "p50": 122.0,
+    "saturated_percent": 1.76139621559633
+  },
+  {
+    "condition": "ratio16",
+    "eye": 1,
+    "p25": 108.0,
+    "p50": 123.0,
+    "saturated_percent": 2.042717889908257
+  },
+  {
+    "condition": "ratio256",
+    "eye": 0,
+    "p25": 95.0,
+    "p50": 122.0,
+    "saturated_percent": 0.2060636467889908
+  },
+  {
+    "condition": "ratio256",
+    "eye": 1,
+    "p25": 108.0,
+    "p50": 123.0,
+    "saturated_percent": 0.5608514908256881
+  }
+]

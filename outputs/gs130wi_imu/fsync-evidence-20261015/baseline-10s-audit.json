@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "errors": [],
+  "samples": 2024,
+  "host_read_span_s": 9.975139843,
+  "fsync_marked_packets": 0,
+  "fsync_packet_index_gaps": {},
+  "adjacent_fsync_pairs": 0,
+  "registers_restored": true,
+  "frame_association_validated": false,
+  "host_sample_time_validated": false,
+  "scope": "FIFO field semantics/counter integrity/restoration only. Adjacent marked packets remain separate raw observations; no deduplication or frame ID assigned."
+}

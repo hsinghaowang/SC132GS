@@ -1,0 +1,44 @@
+{
+  "service": {
+    "returncode": 0,
+    "stdout": "MainPID=0\nEnvironment=\nActiveState=inactive\nSubState=dead\n",
+    "stderr": ""
+  },
+  "camera_status": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "error code=device errno=2 rollback_failed=0\n"
+  },
+  "files": {
+    "/var/lib/sc132gs-camera/settings.yaml": {
+      "sha256": "602bd5f039e2550ebf3262a502df9cf4708b917aad798e084d4b819e1d4ccd74",
+      "text": "# SC132GS camera settings; exposure rows are mode-specific.\n# AE on: rows/gain are startup seeds; AE adjusts them after start.\nmode: linear\nbinning: false\nmax_fps: 60\nfps: 60\nae: true\nbrightness: 30\nrows: 1330\ngain: 128\nmax_exposure_us: 0\nmax_gain_index: 128\nrevision: 181\nschema: 1\n"
+    },
+    "/run/sc132gs-camera-state.json": {
+      "sha256": "8be1b4c0652501be72f243f5b96f6cba8faba1de442a0ffa5b93f85f0e4092cd",
+      "text": "{\"mode\": \"linear\", \"binning\": 0, \"max_fps\": 60, \"fps\": 60, \"ae\": 1, \"brightness\": 30, \"rows\": 1330, \"gain\": 128, \"max_exposure_us\": 0, \"max_gain_index\": 128, \"revision\": 181, \"schema\": 1}"
+    }
+  },
+  "processes": [
+    {
+      "pid": 19164,
+      "comm": "python3",
+      "args": "python3 /home/ubuntu/ros2_humble_ws/slam_benchmark/probe-calibration-inputs.py "
+    },
+    {
+      "pid": 19217,
+      "comm": "python3",
+      "args": "python3 /home/ubuntu/ros2_humble_ws/slam_benchmark/inspect-delivery-board.py "
+    }
+  ],
+  "containers": {
+    "returncode": 0,
+    "stdout": "ros2-humble Up 2 hours\n",
+    "stderr": ""
+  },
+  "versions": {
+    "returncode": 0,
+    "stdout": "ros-humble-fastrtps\t2.6.12-1jammy.20260725.060440\nros-humble-rmw-fastrtps-cpp\t6.2.10-1jammy.20260725.133410\n",
+    "stderr": ""
+  }
+}

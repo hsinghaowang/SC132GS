@@ -1,0 +1,29 @@
+{
+  "sent": {
+    "imu": 2401,
+    "left": 240,
+    "right": 240
+  },
+  "sent_after_stop_signal": {
+    "imu": 595,
+    "left": 60,
+    "right": 60
+  },
+  "dataset_stereo_pairs": 240,
+  "dataset_imu_samples": 2401,
+  "observed_poses": 98,
+  "receiver_exit_code": 0,
+  "shutdown_mode": "SIGINT_while_publisher_active",
+  "signal_to_exit_observed_ms": 275.053722,
+  "origin_camera_timestamp_ns": 1413393886005760512,
+  "start_monotonic_ns": 9050623363685,
+  "timing_clock": "Linux CLOCK_MONOTONIC via time.monotonic_ns / clock_gettime",
+  "image_qos": "reliable KeepLast 10",
+  "imu_publisher_qos": "best effort KeepLast 200",
+  "publisher_image_decode_threads": 1,
+  "ROS_DOMAIN_ID": "73",
+  "ROS_LOCALHOST_ONLY": "1",
+  "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+  "ground_truth_initialization": false,
+  "physical_sensor_input": false
+}

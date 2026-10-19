@@ -1,0 +1,253 @@
+{
+  "created_local": "2026-10-14T16:15:49+0800",
+  "files": {
+    "outputs/stereo_h265_rtsp/BayerLuma.cpp": {
+      "sha256": "aa3945325ab183f5e29584af2152c1e384dda6ab435007773e6eeb78df21240a",
+      "bytes": 7540
+    },
+    "outputs/stereo_h265_rtsp/BayerLuma.hpp": {
+      "sha256": "9a15b858683ff2d00daad0f08af9a8f089704a2d304eeed032c5cb772bc9b655",
+      "bytes": 884
+    },
+    "outputs/stereo_h265_rtsp/BayerLumaCheck.cpp": {
+      "sha256": "bb804c5acbb41773db993efdbe8b58a68bc9313a33b493bfdfd9677d2f90d41d",
+      "bytes": 6387
+    },
+    "outputs/stereo_h265_rtsp/CameraConfiguration.cpp": {
+      "sha256": "201e8b3913c4f755a5076a67f79d6bbdf23a1f170334912f73a55a87d3308c21",
+      "bytes": 3837
+    },
+    "outputs/stereo_h265_rtsp/CameraConfiguration.hpp": {
+      "sha256": "e369711bf127d4a0fc2e0b2557f6f6e401ceef4cdeae0164e0d727e0c3b20b30",
+      "bytes": 3156
+    },
+    "outputs/stereo_h265_rtsp/CameraConfigurationCheck.cpp": {
+      "sha256": "16aa2fe6bb58c374daf52df527ebefc966633c509cda53552df3d0ff41a46d18",
+      "bytes": 5936
+    },
+    "outputs/stereo_h265_rtsp/CameraConfigurationCli.cpp": {
+      "sha256": "1ad23678a78011a52738cd4d01bff12d0c737f2b8868f7429650607820f3e053",
+      "bytes": 6006
+    },
+    "outputs/stereo_h265_rtsp/CameraConfigurationLinux.cpp": {
+      "sha256": "7ab6a5df7be84bffdf70e99a15413dd3502f6ad33fae0d55516cf2f01c6ded66",
+      "bytes": 5005
+    },
+    "outputs/stereo_h265_rtsp/CaptureError.hpp": {
+      "sha256": "e6a45923b6be221facb0b6e42319d17a0e723556a2c8397a10d93387380a211a",
+      "bytes": 1284
+    },
+    "outputs/stereo_h265_rtsp/CaptureMode.hpp": {
+      "sha256": "35f6197922110f17e9b5f803e5933c343819ea7bb18bdc7d6d07f7a0f8b7c0a9",
+      "bytes": 248
+    },
+    "outputs/stereo_h265_rtsp/CaptureProgress.hpp": {
+      "sha256": "038666cfd5aadfa0231ea73151a7a24f347b74d80522bd86f102555cd0faef66",
+      "bytes": 1771
+    },
+    "outputs/stereo_h265_rtsp/CMakeLists.txt": {
+      "sha256": "512593296b17dd30a20a35e6daecdcccf8c94c12d64647d6224d16c9a767253a",
+      "bytes": 6132
+    },
+    "outputs/stereo_h265_rtsp/FrameTiming.hpp": {
+      "sha256": "a97ac7b577e70e71b42bd5a4818bb80dc38925d34eebb64f2a7fa872e1f2f6b3",
+      "bytes": 387
+    },
+    "outputs/stereo_h265_rtsp/HdrAePolicyCheck.cpp": {
+      "sha256": "54c0ed949e0e2f2a2d46348db35c531dc470d01331bedcbf94a0ea8574d627d1",
+      "bytes": 7805
+    },
+    "outputs/stereo_h265_rtsp/LinearVideoLuma.cpp": {
+      "sha256": "b3a32d743b371e81ba6dcb99b87b52dc0f9e132592612cf037cf46ec539e7f21",
+      "bytes": 688
+    },
+    "outputs/stereo_h265_rtsp/LinearVideoLuma.hpp": {
+      "sha256": "be414a8c525e2c9d8409d934a2de574f10502e8a546f6f69163e823429914522",
+      "bytes": 329
+    },
+    "outputs/stereo_h265_rtsp/LinearVideoLumaCheck.cpp": {
+      "sha256": "0818bc8f4d771bc30d577a0271b53b024c8f49a964857a1fc968a434af8aba01",
+      "bytes": 674
+    },
+    "outputs/stereo_h265_rtsp/main.cpp": {
+      "sha256": "73b6f92b78d91f604ba550470f7347973c0688353246443b868c85ead701779b",
+      "bytes": 4170
+    },
+    "outputs/stereo_h265_rtsp/Main10Encoder.cpp": {
+      "sha256": "749075539e7eed2459e3288d1e814ed2bfbdb5cb27ea84007abca9e56ae3e8e2",
+      "bytes": 11076
+    },
+    "outputs/stereo_h265_rtsp/Main10Encoder.hpp": {
+      "sha256": "e0fae27bfc40dadaa9aa49cc01d75340f887a552ccdd5da9da92739e19cc13df",
+      "bytes": 1301
+    },
+    "outputs/stereo_h265_rtsp/OpticalCaptureMain.cpp": {
+      "sha256": "e2ea8a31491303047abe185418e31f138acc54853711b1dccb6b6e6aa54409e5",
+      "bytes": 4831
+    },
+    "outputs/stereo_h265_rtsp/Raw10Luma.cpp": {
+      "sha256": "2dd68e593ef4739c3d929eb5dba615d9c487c71721796d031ca95baf1ceae893",
+      "bytes": 2614
+    },
+    "outputs/stereo_h265_rtsp/Raw10Luma.hpp": {
+      "sha256": "70f86ab7a54bd0248b7f65b02e091a9990afe2372439bc757f9acac863e44b50",
+      "bytes": 688
+    },
+    "outputs/stereo_h265_rtsp/Raw10LumaCheck.cpp": {
+      "sha256": "5df20c600238eb14f09dbe983e1b1aef59d218da44d43afdc2681ce6dcd0c6cc",
+      "bytes": 4260
+    },
+    "outputs/stereo_h265_rtsp/RawNoiseMain.cpp": {
+      "sha256": "ccacdb5ec03db052174bf9463835b6435c36b69ef82a4e0b98d317c7305acf0c",
+      "bytes": 3364
+    },
+    "outputs/stereo_h265_rtsp/RawOpticalCapture.cpp": {
+      "sha256": "187df2d81fecaa7e97eec3cf2582435ad902190da9286fc0b1e3854c3f5b27eb",
+      "bytes": 7098
+    },
+    "outputs/stereo_h265_rtsp/RawOpticalCapture.hpp": {
+      "sha256": "cae3d64862dc8f46950311eab545bfa74de711a8f6b818723e7bf887ca11a8cf",
+      "bytes": 1572
+    },
+    "outputs/stereo_h265_rtsp/SensorSignalCalibration.cpp": {
+      "sha256": "eecafdc58544a34b236a39235697eb69ec6549e88768bc3da055417e3868e330",
+      "bytes": 1226
+    },
+    "outputs/stereo_h265_rtsp/SensorSignalCalibration.hpp": {
+      "sha256": "0dc2890fee887faa669229c6fb0f5495ea30716419f2653ae5bb6dc473007998",
+      "bytes": 930
+    },
+    "outputs/stereo_h265_rtsp/SensorSignalCalibrationCheck.cpp": {
+      "sha256": "8b4105c1bb2ceb396bcc67ff33ed868e268b47e6a86b431db3755ba63661d878",
+      "bytes": 1527
+    },
+    "outputs/stereo_h265_rtsp/StereoCapture.cpp": {
+      "sha256": "181896763653594e61eaecd8e025a2c05626f4abfcd41414ce9cf45e502e9054",
+      "bytes": 18912
+    },
+    "outputs/stereo_h265_rtsp/StereoCapture.hpp": {
+      "sha256": "c22914d54388e03d7cb8d5d6c574efec58b0d2466566e3d2f914fabecd28c350",
+      "bytes": 1345
+    },
+    "outputs/stereo_h265_rtsp/StereoCaptureCheck.cpp": {
+      "sha256": "ca8194681a76b9aaf0a8777c5750fb6b27dde8cda861662b7629a5aea44bf3e6",
+      "bytes": 2640
+    },
+    "outputs/stereo_h265_rtsp/StereoComposeNV12.cpp": {
+      "sha256": "4357ac6f007001bd547b1656451d3ade33f6e7842337288cd237fa6a44099b16",
+      "bytes": 1627
+    },
+    "outputs/stereo_h265_rtsp/StereoComposeNV12.hpp": {
+      "sha256": "0aaae334315370d28b979beff204219216a0823247c56a0168ebcf61cb937dc4",
+      "bytes": 655
+    },
+    "outputs/stereo_h265_rtsp/StereoComposeNV12Check.cpp": {
+      "sha256": "fa065fd021be6eaed676097c565073e0a16c496f783ae059bb9984b77dbbe60c",
+      "bytes": 2335
+    },
+    "outputs/stereo_h265_rtsp/StereoPendingFrames.hpp": {
+      "sha256": "6f7ffc0e9cae8d1e4066e753b60923ac6c3501308044de83078a468e622a3a93",
+      "bytes": 3701
+    },
+    "outputs/stereo_h265_rtsp/StereoPendingFramesCheck.cpp": {
+      "sha256": "ded387ddbc266c95503839145742fc895792984158f71963faa3b3f44a5212e7",
+      "bytes": 6235
+    },
+    "outputs/stereo_h265_rtsp/StereoRtspServer.cpp": {
+      "sha256": "d96bf9476c5547947f6c7b78451ff27b40c2908e01e43e3a7eff3e7de4391080",
+      "bytes": 29518
+    },
+    "outputs/stereo_h265_rtsp/StereoRtspServer.hpp": {
+      "sha256": "09a4989bb3e6a8c5089f8fdae523e5292def2a5ffe2d8a2e4beaf2f99a823c71",
+      "bytes": 1310
+    },
+    "outputs/sc132gs_v4l2_probe/FsyncSchedule.hpp": {
+      "sha256": "d2f19384a3ab9637f248756fb4e221aaff66c52bccb8a093efcfe6fc16600dcc",
+      "bytes": 1495
+    },
+    "outputs/sc132gs_v4l2_probe/FsyncScheduleCheck.cpp": {
+      "sha256": "7730b6714ddff09eb385e3adf83eb4f9ec1c261e886fbd2d9a7ea416cb10273d",
+      "bytes": 1691
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-ae-statistics.hpp": {
+      "sha256": "8e6ab8936980aea65d8b4892be7dc068a1cdbd96019a39c6d7b7c8bb11c7af5a",
+      "bytes": 429
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-ae.cpp": {
+      "sha256": "e0295d5c375e63900fb6481b545bba2bf8f1d7ff2fed7f0d789c2c709aad39ee",
+      "bytes": 31815
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-ae.hpp": {
+      "sha256": "bf7f489cf4a2c428e9b9f4333d7a28ea8d7dac6371c539f2452b4b8b2fdd58fb",
+      "bytes": 3973
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-control-server.cpp": {
+      "sha256": "fe3b8e66de278d2a56ec1ad7e9bba335e4c2715803490fc40fa7a3baeec1b620",
+      "bytes": 8947
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-control-server.hpp": {
+      "sha256": "38bb8c2fce2dd2e164b1e4c000a68cac50055c4fafecd2fbbf1c02927153c969",
+      "bytes": 467
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-controls.h": {
+      "sha256": "9e02dcb4e13e1343dea85aae9372a6c0eb5760335ffd131a98dce5d9d1bd5854",
+      "bytes": 655
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-ctl.cpp": {
+      "sha256": "78119f7b95e5ee2420533645f980cc64f203f37d18962972f4f97254a305d293",
+      "bytes": 5217
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-exposure-budget.hpp": {
+      "sha256": "aa68664006294a4782efa69a0395bdc818eb91efd4706aef7c07b3cd47ba19f0",
+      "bytes": 1315
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-fsync-generator.cpp": {
+      "sha256": "75911ccc4411d38fea2b4fe8ece49c903778526153cd2e7bb0fdce7e5fbc3dae",
+      "bytes": 10574
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-hdr-ae-policy.hpp": {
+      "sha256": "540fb502e21032dfcb7740fb884b1c0409e365adea0af8ffa87e1d9c69c05c98",
+      "bytes": 7095
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-hdr-display.hpp": {
+      "sha256": "e58eab199302ffa73cedfd06632b71848f431a23d09f1e6dab46f282c7ec6ac4",
+      "bytes": 1442
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-hdr-profile.hpp": {
+      "sha256": "0c0f451f23be8a1715a38d20d1cc1cd1bc7cce8f19cb600576d3b521bc45b955",
+      "bytes": 776
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-hdr-settings.h": {
+      "sha256": "796a33879f2d6ff9256e3e7a4b6525ce302b5c0e63c4cd47b61892369596d65e",
+      "bytes": 2644
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-mode-check.cpp": {
+      "sha256": "8b9fe6bde1cfbe3c341f5fdf9db550d772493ffe59b87ce7fce9545a04cc7964",
+      "bytes": 2912
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-mode-linux.cpp": {
+      "sha256": "dfd6b8f1e4afd248bc60e22847667ea8a337d9fc61f6c7ac42428e5224dd013e",
+      "bytes": 15284
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-mode.cpp": {
+      "sha256": "b93ae1536307f09ce1a8ca90f044525dc25d13cee02de59ff2b08d87fc923fca",
+      "bytes": 2428
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-mode.hpp": {
+      "sha256": "660774507f1878173df74ccf0f01189da8e12de3336ff682371e29746e0ea108",
+      "bytes": 2878
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-paired-stream.cpp": {
+      "sha256": "eee60afc8904b48d5af3b23e4bfc6457dedb76e44888d996548cfddeb64f6cd3",
+      "bytes": 13927
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-sensor-signal.hpp": {
+      "sha256": "6ba700461b70d26d3332ab3b46ccd3421f0b0d6fc53c1f263986a5bbda6c80a2",
+      "bytes": 735
+    },
+    "outputs/sc132gs_v4l2_probe/sc132gs-sync-check.cpp": {
+      "sha256": "5ee8105340c8997b055117db7bec0dd4cda38450d691eb9e43d1d1084501ecb6",
+      "bytes": 13163
+    }
+  }
+}

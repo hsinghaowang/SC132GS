@@ -1,0 +1,2 @@
+error=3 errno=5 rollback_failed=0
+command failed: ['/usr/bin/python3', '/home/ubuntu/stereo-h265-rtsp/verify_rtsp.py', '--url', 'rtsp://192.168.137.226:8554/stereo', '--seconds', '8', '--expected-fps', '60', '--output', '/home/ubuntu/sc132gs-camera-tests/apply-a791b184-d1f3-4e84-8dd1-23f5251c7fbc/encoded.json'] 

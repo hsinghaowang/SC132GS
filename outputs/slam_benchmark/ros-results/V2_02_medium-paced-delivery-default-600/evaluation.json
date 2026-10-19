@@ -1,0 +1,159 @@
+{
+  "run": "V2_02_medium-paced-delivery-default-600",
+  "replay": {
+    "sent": {
+      "imu": 6001,
+      "left": 600,
+      "right": 600
+    },
+    "sent_after_stop_signal": null,
+    "dataset_stereo_pairs": 600,
+    "dataset_imu_samples": 6001,
+    "observed_poses": 518,
+    "observed_stock_poseimu": 518,
+    "receiver_exit_code": 0,
+    "shutdown_mode": "end_of_sequence",
+    "signal_to_exit_observed_ms": 321.318704,
+    "origin_camera_timestamp_ns": 1413393886005760512,
+    "start_monotonic_ns": 4639484919795,
+    "timing_clock": "Linux CLOCK_MONOTONIC via clock_gettime / time.monotonic_ns",
+    "image_qos": "reliable KeepLast 10",
+    "imu_publisher_qos": "best effort KeepLast 200",
+    "publisher_image_decode_threads": 1,
+    "publisher_implementation": "C++17 rclcpp; bounded decode-ahead",
+    "prefetch_pairs": 4,
+    "ROS_DOMAIN_ID": "73",
+    "ROS_LOCALHOST_ONLY": "1",
+    "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+    "ground_truth_initialization": false,
+    "physical_sensor_input": false,
+    "primary_pose_stream": "/poseimu, calibrated IMU stamp; nearest source camera association checked within 20 ms",
+    "diagnostic_probe_scope": "camera-stamped pose after every processed camera on the owned estimator worker",
+    "publisher_exit_code": 0,
+    "native_publisher_summary": {
+      "sent": {
+        "imu": 6001,
+        "left": 600,
+        "right": 600
+      },
+      "dataset_stereo_pairs": 600,
+      "dataset_imu_samples": 6001,
+      "origin_camera_timestamp_ns": 1413393886005760512,
+      "start_monotonic_ns": 4639484919795,
+      "prefetch_pairs": 4,
+      "maximum_prepared_queue": 4,
+      "error_code": 0,
+      "cpu_seconds": 14.125107,
+      "peak_rss_mib": 79.0859375,
+      "elapsed_s": 32.796982679
+    },
+    "resources": {
+      "elapsed_including_startup_drain_stop_s": 36.45983844900002,
+      "publisher_probe_cpu_percent": 50.06241326475382,
+      "receiver_cpu_percent": 122.22088987676845,
+      "publisher_probe_peak_rss_mib": 79.0859375,
+      "receiver_peak_rss_mib": 94.83203125,
+      "affinity_cpus": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "cpu_units": "100 percent is one logical core",
+      "accounting": "publisher includes native input process and rclpy probe; receiver CPU subtracts native self CPU from waited children; child peak RSS is aggregate maximum"
+    }
+  },
+  "receiver": {
+    "imu_received": 5939,
+    "left_received": 600,
+    "right_received": 600,
+    "pairs_received": 600,
+    "poses": 518,
+    "first_initialized_camera_ns": 1413393890105760512,
+    "imu_queue_depth": 100,
+    "maximum_measurement_queue": 13,
+    "abandoned_measurements_at_stop": 0,
+    "error_code": 0,
+    "owned_estimator_worker": true,
+    "high_rate_imu_odometry": false,
+    "publisher_threading": false,
+    "executor": "SingleThreadedExecutor",
+    "stock_subscriber_main": false
+  },
+  "post_init_scheduled_frame_count": 518,
+  "observed_pose_coverage_after_init": 1.0,
+  "scheduled_to_pose_arrival_ms": {
+    "p50": 43.813335499999994,
+    "p95": 62.210590149999994,
+    "p99": 73.78747254999998,
+    "max": 86.988658
+  },
+  "scheduled_to_receiver_completion_ms": {
+    "p50": 39.759995,
+    "p95": 57.80039675,
+    "p99": 69.43511388,
+    "max": 82.819866
+  },
+  "scheduled_to_stereo_publish_complete_ms": {
+    "p50": 3.2293015,
+    "p95": 6.29925805,
+    "p99": 7.545248379999995,
+    "max": 9.265762
+  },
+  "stereo_publish_complete_to_pose_arrival_ms": {
+    "p50": 40.2612405,
+    "p95": 59.2053898,
+    "p99": 68.23745464,
+    "max": 80.949731
+  },
+  "matched_probe_frames": 518,
+  "missing_probe_frame_indices": [],
+  "input_missing": {
+    "imu": 62,
+    "left": 0,
+    "right": 0,
+    "paired_stereo": 0
+  },
+  "frame_match_tolerance_ns": 5000,
+  "clock_scope": "Same Linux CLOCK_MONOTONIC; decode-ahead image schedule to stock-pose receive, including construction, DDS, pairing, estimator and probe. PNG decode runs before schedule when ready; any preparation delay remains in latency. Not physical exposure timing.",
+  "primary_pose_stream": "stock /poseimu, calibrated IMU stamp associated one-to-one with nearest camera within 20 ms",
+  "stock_pose_camera_association_offset_ms": {
+    "p50": 0.1602815,
+    "p95": 0.5313782499999976,
+    "p99": 1.2821596599999994,
+    "max": 1.577964
+  },
+  "intentional_active_stop": false,
+  "full_sequence_pose_coverage": 0.8633333333333333,
+  "paired_callback_entry_to_worker_begin_ms": {
+    "p50": 1.0755819999999998,
+    "p95": 5.981885199999998,
+    "p99": 12.683942019999998,
+    "max": 22.264565
+  },
+  "worker_camera_update_and_publication_ms": {
+    "p50": 32.0594,
+    "p95": 43.432429599999985,
+    "p99": 56.281955709999956,
+    "max": 65.006046
+  },
+  "ate_rmse_m": 0.03741969287245754,
+  "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+  "rpe_interval_s": 1,
+  "rpe_pairs": 497,
+  "rpe_translation_rmse_m": 0.029611542692154238,
+  "rpe_rotation_rmse_deg": 0.34547038193406404,
+  "ground_truth_matched_poses": 518,
+  "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+  "matched_start_timestamp": 1413393890.1050496,
+  "matched_end_timestamp": 1413393915.9558752,
+  "native_candidate_baseline": {
+    "ate_rmse_m": 0.05473843930635451,
+    "lag_p95_ms": 49.78945903836211,
+    "scope": "different run; native estimator return, not ROS2 pose receive"
+  }
+}

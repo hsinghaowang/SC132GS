@@ -1,0 +1,117 @@
+{
+  "run": "V2_02_medium-paced-1",
+  "replay": {
+    "sent": {
+      "imu": 23490,
+      "left": 2348,
+      "right": 2348
+    },
+    "sent_after_stop_signal": null,
+    "dataset_stereo_pairs": 2348,
+    "dataset_imu_samples": 23490,
+    "observed_poses": 2266,
+    "receiver_exit_code": 0,
+    "shutdown_mode": "end_of_sequence",
+    "signal_to_exit_observed_ms": 268.387725,
+    "origin_camera_timestamp_ns": 1413393886005760512,
+    "start_monotonic_ns": 9255368953707,
+    "timing_clock": "Linux CLOCK_MONOTONIC via time.monotonic_ns / clock_gettime",
+    "image_qos": "reliable KeepLast 10",
+    "imu_publisher_qos": "best effort KeepLast 200",
+    "publisher_image_decode_threads": 1,
+    "ROS_DOMAIN_ID": "73",
+    "ROS_LOCALHOST_ONLY": "1",
+    "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+    "ground_truth_initialization": false,
+    "physical_sensor_input": false,
+    "resources": {
+      "elapsed_including_startup_drain_stop_s": 120.83281741700011,
+      "publisher_probe_cpu_percent": 62.059798491009744,
+      "receiver_cpu_percent": 127.86989768415512,
+      "publisher_probe_peak_rss_mib": 154.80078125,
+      "receiver_peak_rss_mib": 143.17578125,
+      "affinity_cpus": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "cpu_units": "100 percent is one core"
+    }
+  },
+  "receiver": {
+    "imu_received": 23082,
+    "left_received": 2348,
+    "right_received": 2348,
+    "pairs_received": 2348,
+    "poses": 2266,
+    "first_initialized_camera_ns": 1413393890105760512,
+    "imu_queue_depth": 100,
+    "error_code": 0,
+    "subscriber_threading": false,
+    "publisher_threading": false,
+    "executor": "SingleThreadedExecutor",
+    "stock_subscriber_main": false
+  },
+  "post_init_scheduled_frame_count": 2266,
+  "observed_pose_coverage_after_init": 1.0,
+  "scheduled_to_pose_arrival_ms": {
+    "p50": 451.02635150000003,
+    "p95": 518.506865,
+    "p99": 530.6014171,
+    "max": 555.592991
+  },
+  "scheduled_to_receiver_completion_ms": {
+    "p50": 448.1751345,
+    "p95": 515.485469,
+    "p99": 526.4530468,
+    "max": 552.670224
+  },
+  "scheduled_to_stereo_publish_complete_ms": {
+    "p50": 21.332009999999997,
+    "p95": 29.04243775,
+    "p99": 32.17865484999999,
+    "max": 40.829888
+  },
+  "stereo_publish_complete_to_pose_arrival_ms": {
+    "p50": 430.36318,
+    "p95": 497.5998705,
+    "p99": 510.73357754999995,
+    "max": 531.867156
+  },
+  "matched_probe_frames": 2266,
+  "missing_probe_frame_indices": [],
+  "input_missing": {
+    "imu": 408,
+    "left": 0,
+    "right": 0,
+    "paired_stereo": 0
+  },
+  "frame_match_tolerance_ns": 5000,
+  "clock_scope": "Same Linux host CLOCK_MONOTONIC; DDS + callback + estimator + headless visualization + probe receive; image load/serialization included in scheduled-to-arrival",
+  "primary_pose_stream": "diagnostic camera-stamped probe",
+  "stock_pose_camera_association_offset_ms": null,
+  "intentional_active_stop": false,
+  "full_sequence_pose_coverage": 0.965076660988075,
+  "paired_callback_entry_to_worker_begin_ms": null,
+  "worker_camera_update_and_publication_ms": null,
+  "ate_rmse_m": 0.06990453495507615,
+  "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+  "rpe_interval_s": 1,
+  "rpe_pairs": 2231,
+  "rpe_translation_rmse_m": 0.026296330430261694,
+  "rpe_rotation_rmse_deg": 0.2936741046214827,
+  "ground_truth_matched_poses": 2252,
+  "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+  "matched_start_timestamp": 1413393890.1050446,
+  "matched_end_timestamp": 1413394002.6557093,
+  "native_candidate_baseline": {
+    "ate_rmse_m": 0.05473843930635451,
+    "lag_p95_ms": 49.78945903836211,
+    "scope": "different run; native estimator return, not ROS2 pose receive"
+  }
+}

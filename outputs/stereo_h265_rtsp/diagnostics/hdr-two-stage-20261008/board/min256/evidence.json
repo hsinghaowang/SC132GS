@@ -1,0 +1,50 @@
+{
+  "initial": "ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 exposure_kind=hdr_total_rows display_gamma_x100=38 display_black_raw10=52 target_percent=40 cam0_percent=40 cam1_percent=40 exposure_lines=1366 gain_index=0 fps_x10=299 max_exposure_lines=1492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=0",
+  "rows": 8,
+  "raw": [
+    {
+      "eye": 0,
+      "sha256": [
+        "48d2ae4f8c983922a1dc7c38f82fcc6c541b3459cf7eb4d75e456a3bffefd912",
+        "5bdf3a1ef8a732b07edff41aa8b1f0e57dad03137b046dd694b8108562e6ecae",
+        "2ba257a372d615757f6a7685edfde0b6d90ad6a900dc4665ccfa4f6b3c0792fe",
+        "ae6ef5ecc613133c947fdea04b4f14d0f673c9846fa5e29fc67a25caf0b9bca7"
+      ]
+    },
+    {
+      "eye": 1,
+      "sha256": [
+        "d1811f44827d2576af9f3a4dc3d7a4cd0a0dcae4340b005cc3f99bd8648e7b53",
+        "f19f6e747887fd8d1c55da3a37cf9a729458917208fe3ec5c31ee056d744769d",
+        "82d78044e393fc28b2807dc013728680fe1a46775f356c599007a52696995d83",
+        "7f7f5a3a51901a051a6421163e2b0041c62c3dbfa978e11e2917d4d76635daf2"
+      ]
+    }
+  ],
+  "trigger_hz": 30,
+  "registers": [
+    {
+      "bus": 18,
+      "address": "0x32",
+      "stream": "0x01",
+      "hdr": "0xc3",
+      "trigger": "0x32",
+      "gate": "0x00",
+      "total": "0x00 0x00 0x80",
+      "second": "0x00 0x01",
+      "gain": "0x00 0x80 0x03 0x20"
+    },
+    {
+      "bus": 16,
+      "address": "0x30",
+      "stream": "0x01",
+      "hdr": "0xc3",
+      "trigger": "0x32",
+      "gate": "0x00",
+      "total": "0x00 0x00 0x80",
+      "second": "0x00 0x01",
+      "gain": "0x00 0x80 0x03 0x20"
+    }
+  ],
+  "restored": "ok mode=auto camera_mode=hdr hdr_enabled=1 hdr_ratio=256 exposure_kind=hdr_total_rows display_gamma_x100=38 display_black_raw10=52 target_percent=40 cam0_percent=0 cam1_percent=0 exposure_lines=8 gain_index=0 fps_x10=0 max_exposure_lines=1492 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=0"
+}

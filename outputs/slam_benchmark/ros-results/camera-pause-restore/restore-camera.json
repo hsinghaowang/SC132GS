@@ -1,0 +1,10 @@
+{
+  "started_unix_ns": 1791803895131676756,
+  "finished_unix_ns": 1791803909054724308,
+  "arguments": [
+    "python3",
+    "/home/ubuntu/stereo-h265-rtsp/camera_platform.py",
+    "restore"
+  ],
+  "returncode": 0
+}

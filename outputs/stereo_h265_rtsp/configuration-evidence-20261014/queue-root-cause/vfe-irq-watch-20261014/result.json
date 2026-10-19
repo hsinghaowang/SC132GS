@@ -1,0 +1,5 @@
+{
+  "reason": "observer_error",
+  "error": "[Errno 2] No such file or directory: '/sys/kernel/debug/tracing/instances/sc132gs_dma_ring/tracing_on'",
+  "elapsed_s": 547.1780919170124
+}

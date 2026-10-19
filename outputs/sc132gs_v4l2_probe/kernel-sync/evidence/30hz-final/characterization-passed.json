@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "sof_min_us": 341,
+  "sof_max_us": 16853,
+  "exposure_min_rows": 8,
+  "exposure_max_rows": 1377,
+  "maximum_window_ns": 33233333,
+  "window_ns": 16512000,
+  "unique_sof": 10211,
+  "unmatched_or_ambiguous": 0,
+  "trigger_gaps": [
+    0,
+    0
+  ],
+  "phase_mismatch": false,
+  "trigger_hz": 30,
+  "frame_step": 1,
+  "offset_ns": 353308.66666666605,
+  "pulse_fps": 29.999999463049697,
+  "hardware_errors": 0,
+  "profiles": [
+    {
+      "rows": 8,
+      "samples": 1026,
+      "eye_fps": {
+        "0": 30.000001133203167,
+        "1": 30.000001043554725
+      },
+      "min_ns": 442251,
+      "median_ns": 445222.5,
+      "max_ns": 479439
+    },
+    {
+      "rows": 32,
+      "samples": 1024,
+      "eye_fps": {
+        "0": 30.00000331878706,
+        "1": 30.00000313737802
+      },
+      "min_ns": 727349,
+      "median_ns": 730733.0,
+      "max_ns": 736986
+    },
+    {
+      "rows": 808,
+      "samples": 1026,
+      "eye_fps": {
+        "0": 29.999986870318246,
+        "1": 29.99998714629457
+      },
+      "min_ns": 9966103,
+      "median_ns": 9969490.0,
+      "max_ns": 9974810
+    },
+    {
+      "rows": 1330,
+      "samples": 1024,
+      "eye_fps": {
+        "0": 30.00003725464509,
+        "1": 30.00003643037692
+      },
+      "min_ns": 16183607,
+      "median_ns": 16186642.0,
+      "max_ns": 16198076
+    },
+    {
+      "rows": 1360,
+      "samples": 1026,
+      "eye_fps": {
+        "0": 30.000005009180523,
+        "1": 30.000005833594884
+      },
+      "min_ns": 16539623,
+      "median_ns": 16542323.0,
+      "max_ns": 16553985
+    },
+    {
+      "rows": 1377,
+      "samples": 1026,
+      "eye_fps": {
+        "0": 30.00000064804689,
+        "1": 30.00000037558594
+      },
+      "min_ns": 16741226,
+      "median_ns": 16744364.5,
+      "max_ns": 16751301
+    },
+    {
+      "rows": 8,
+      "samples": 1026,
+      "eye_fps": {
+        "0": 29.999999973046876,
+        "1": 29.999999329687515
+      },
+      "min_ns": 441535,
+      "median_ns": 445025.5,
+      "max_ns": 451697
+    },
+    {
+      "rows": 1377,
+      "samples": 1775,
+      "eye_fps": {
+        "0": 29.999993958400314,
+        "1": 29.99999132031854
+      },
+      "min_ns": 16740843,
+      "median_ns": 16743837,
+      "max_ns": 16752569
+    }
+  ],
+  "source": "1330-row measured causal anchor plus stable exposure control readback; actual recorded pulse search"
+}

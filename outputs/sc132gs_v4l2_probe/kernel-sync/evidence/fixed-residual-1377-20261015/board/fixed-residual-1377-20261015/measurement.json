@@ -1,0 +1,356 @@
+{
+  "run_name": "fixed-residual-1377-20261015",
+  "seconds": 125,
+  "rows": 1377,
+  "nominal_rows_per_second": 84000,
+  "wall_start": "2026-10-15T13:41:06.637144+08:00",
+  "boot_id": "d9ee96f9-decc-4aa0-8ea5-91b7136ea846",
+  "settings_sha256": "4d5b0e100dbdab6550abb77094e50ad380ed298ac0fc3239a48566311aa0b6bd",
+  "before_control": "abi=3 timestamp_offset_ns=8196429 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=5 pulses=9346 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_midpoint_estimate\n",
+  "before_ae": "ok mode=auto camera_mode=linear hdr_enabled=0 hdr_ratio=0 hdr_second_ticks=0 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=3000 saturation_scope=unused highlight_sample_percent=0 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=37 signal_target_luma10=307 target_kind=sensor_signal_percent hdr_target_raw10=0 cam0_shadow_raw10=0 cam1_shadow_raw10=0 target_percent=30 cam0_percent=29 cam1_percent=31 exposure_lines=1377 gain_index=30 fps_x10=299 max_exposure_lines=1377 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+  "samples": [
+    {
+      "ns": 1041004361964,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1046023835727,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1051034980098,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1056054458222,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1061073400109,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1066092760836,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1071111948465,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1076131718014,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1081151217111,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1086170278072,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1091189834202,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1096209110578,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1101228919552,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1106247986588,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1111267428176,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1116286553927,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1121304638085,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1126324245316,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1131342861983,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1136362405032,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1141381112153,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1146400522334,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1151419062550,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1156437948779,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1161456060496,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    },
+    {
+      "ns": 1166477574419,
+      "controls": [
+        {
+          "node": "/dev/v4l-subdev27",
+          "rows": 1377
+        },
+        {
+          "node": "/dev/v4l-subdev28",
+          "rows": 1377
+        }
+      ]
+    }
+  ],
+  "start_ns": 1040990381667,
+  "end_ns": 1171479222708,
+  "after_control": "abi=3 timestamp_offset_ns=8196429 trigger_hz=30 frame_step=1 locked_mask=3 startup_dropped=2 startup_end0=1 startup_end1=1 node0=0 node1=3 mode=2 running=1 session=7 pulses=341 skipped=0 cpu=7 worker_cpu=0 error=0 error_count=0 source=exposure_midpoint_estimate\n",
+  "after_ae": "ok mode=auto camera_mode=linear hdr_enabled=0 hdr_ratio=0 hdr_second_ticks=0 shadow_metric=sensor_signal_median shadow_sample_percent=100 effective_target_bp=3000 saturation_scope=unused highlight_sample_percent=0 cam0_saturation_bp=0 cam1_saturation_bp=0 saturation_limit_bp=500 highlight_limited=0 exposure_kind=linear_rows display_gamma_x100=100 display_black_raw10=0 signal_black_raw10=37 signal_target_luma10=307 target_kind=sensor_signal_percent hdr_target_raw10=0 cam0_shadow_raw10=0 cam1_shadow_raw10=0 target_percent=30 cam0_percent=30 cam1_percent=32 exposure_lines=1360 gain_index=31 fps_x10=299 max_exposure_lines=1377 brightness_limited=0 error_errno=0 max_exposure_us=0 max_gain_index=128",
+  "settings_restored_identical": true
+}

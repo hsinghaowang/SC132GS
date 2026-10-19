@@ -1,0 +1,16 @@
+{
+  "decoder": "software",
+  "decoded_frames": 954,
+  "unique_rgb_hashes": 954,
+  "snapshot_channel_ranges": [
+    255,
+    255,
+    255
+  ],
+  "snapshot_has_spatial_detail": true,
+  "width": 1088,
+  "height": 640,
+  "wall_seconds": 7.896230308993836,
+  "wall_fps": 120.690502012654,
+  "pts_fps": 119.99916055487542
+}

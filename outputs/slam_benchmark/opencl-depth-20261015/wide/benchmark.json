@@ -1,0 +1,41 @@
+{
+  "algorithm": "5x5 census + 5x5 box Hamming cost, integer WTA, uniqueness10, bidirectional LR<=1px; NOT SGM/SGBM",
+  "gpu_metrics": {
+    "device": "QUALCOMM Adreno(TM) 635",
+    "stage_0_median_ms": "0.671",
+    "stage_1_median_ms": "0.667",
+    "stage_2_median_ms": "13.114",
+    "stage_3_median_ms": "4.427",
+    "stage_4_median_ms": "4.015",
+    "stage_5_median_ms": "0.193",
+    "measured_iterations": "30",
+    "wall_median_ms": "27.6253",
+    "wall_p95_ms": "28.747",
+    "kernel_median_ms": "23.096",
+    "valid_fraction": "0.142822",
+    "census_checked_pixels": "348160",
+    "disparity_checked_samples": "182",
+    "cost_volume_bytes": "44564480",
+    "mode": "--wide"
+  },
+  "final_valid_fraction": 0.142822265625,
+  "resolution": [
+    544,
+    640
+  ],
+  "disparities": 128,
+  "calibration_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "snapshot_sha256": "585afdd6876b76a46a65380dad8322ad2dec91ef9028cb9b0d440811fd718a7c",
+  "host_to_gpu_and_disparity_readback_in_wall_time": true,
+  "rectification_and_metric_conversion_in_wall_time": false,
+  "live_stream_acceleration_verified": false,
+  "metric_accuracy_verified": false,
+  "transfer_to_board_via_ssh_in_wall_time": false,
+  "kernel_input_hashes": {
+    "stereo_bench.cpp": "2df3f02e87adecd78271732ac5d44c9eaf4823e70026fd202ab75725d84d641d",
+    "left.u8": "143910abb38c1065df468c8290069d8ecc31abe61011b1bf06b1020786350138",
+    "right.u8": "053762ddef37508e13c60d6651760485d77ef972faf698a0aa1f4d429d352536"
+  },
+  "note": "Repeated frozen image, streaming service kept active; different algorithm from CPU SGBM, not an equivalent quality speedup.",
+  "whole_image_disparity_equal_to_previous": true
+}

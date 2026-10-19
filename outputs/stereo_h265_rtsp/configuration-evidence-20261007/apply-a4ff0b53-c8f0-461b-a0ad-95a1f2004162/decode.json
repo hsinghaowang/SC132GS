@@ -1,0 +1,25 @@
+{
+  "decoder": "software",
+  "decoded_frames": 357,
+  "unique_rgb_hashes": 357,
+  "snapshot_channel_ranges": [
+    219,
+    219,
+    219
+  ],
+  "snapshot_luma_statistics": {
+    "sampled_pixels": 27904,
+    "mean": 113.22369552752293,
+    "median": 101,
+    "p10": 66,
+    "p90": 177,
+    "dark_fraction": 0.0,
+    "bright_fraction": 0.035980504587155966
+  },
+  "snapshot_has_spatial_detail": true,
+  "width": 1088,
+  "height": 640,
+  "wall_seconds": 5.875713669998731,
+  "wall_fps": 60.58838466171836,
+  "pts_fps": 59.997865238877466
+}

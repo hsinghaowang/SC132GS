@@ -1,0 +1,8 @@
+/home/ubuntu/sc132gs-kernel-sync-20261014/backup/dmesg.txt: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/backup/initrd.img: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/backup/options.conf: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/backup/qcom-camss.ko: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/backup/run-stereo-rtsp.sh: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/backup/services.txt: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/backup/settings.yaml: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/backup/stereo-h265-rtsp: OK

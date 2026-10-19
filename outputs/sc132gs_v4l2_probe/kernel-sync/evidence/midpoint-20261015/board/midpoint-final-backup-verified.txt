@@ -1,0 +1,11 @@
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/control.txt: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/dmesg.txt: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/initrd.img: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/kernel-fsync.conf: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/options.conf: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/qcom-camss.ko: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/run-stereo-rtsp.sh: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/server.log: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/services.txt: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/settings.yaml: OK
+/home/ubuntu/sc132gs-kernel-sync-20261014/midpoint-baseline-20261015/stereo-h265-rtsp: OK

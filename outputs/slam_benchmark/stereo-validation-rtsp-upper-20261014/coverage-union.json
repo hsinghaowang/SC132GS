@@ -1,0 +1,85 @@
+{
+  "source_sessions": [
+    "target-rtsp-wide-20261014",
+    "target-rtsp-upper-20261014"
+  ],
+  "complete_pairs": 143,
+  "source_inspection_sha256": [
+    "7b1ce23a941ddec0b9f9c07101d09a4ea4f2cebc504e4110c926ff4988e35bd4",
+    "34065173eda9a3fa91f03ff78482d2e87ffab0b365661dd3f720bec582c55a61"
+  ],
+  "source_models_identical": true,
+  "frozen_candidate_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "geometry_fitting_performed": false,
+  "coverage": [
+    {
+      "eye": 0,
+      "corner_hull_image_fraction": 0.6373638351570042,
+      "center_min": [
+        0.15097497491275563,
+        0.1642804503440857
+      ],
+      "center_max": [
+        0.7472693499396829,
+        0.8229290008544922
+      ],
+      "center_span": [
+        0.5962943750269272,
+        0.6586485505104065
+      ],
+      "center_grid_3x3": [
+        [
+          6,
+          32,
+          3
+        ],
+        [
+          15,
+          64,
+          0
+        ],
+        [
+          5,
+          18,
+          0
+        ]
+      ]
+    },
+    {
+      "eye": 1,
+      "corner_hull_image_fraction": 0.6263147563589545,
+      "center_min": [
+        0.26455290177289176,
+        0.16407480239868164
+      ],
+      "center_max": [
+        0.8636728735531077,
+        0.8107083320617676
+      ],
+      "center_span": [
+        0.599119971780216,
+        0.646633529663086
+      ],
+      "center_grid_3x3": [
+        [
+          2,
+          20,
+          19
+        ],
+        [
+          0,
+          78,
+          5
+        ],
+        [
+          0,
+          8,
+          11
+        ]
+      ]
+    }
+  ],
+  "project_specific_coverage_gate_passed": true,
+  "accuracy_acceptance": false,
+  "limitation": "Coverage union only. Prior session: 60 FPS/20 Mbit/s; current: 30 FPS/10 Mbit/s. Residuals and capture provenance remain separate."
+}

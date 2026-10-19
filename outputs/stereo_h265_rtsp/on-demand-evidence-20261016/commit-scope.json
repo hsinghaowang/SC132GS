@@ -1,0 +1,37 @@
+{
+  "scope": "On-demand RTSP capture implementation and its board evidence only",
+  "staged_source_sha256": {
+    "StereoRtspServer.cpp": "1c6112dcc429f392e2e245cb0260ebbb45a94f40a319ba591be359c791c121f9",
+    "DepthRtspEndpoint.hpp": "7302c7fcb96ea3c2c367ae68446086ecfefa3d085cf568aae97f74c5722fafe5",
+    "DepthPipeline.cpp": "7e372d0506be5ffceb3360a00f6b56769a506cb4d25ab8ef71666157a2411327",
+    "CMakeLists.txt": "775fc7f65348371f4bd41151eabf59aae361c7d59d3008709ef93a3f9c4d2c43"
+  },
+  "deployed_build_source_sha256": {
+    "StereoRtspServer.cpp": "474326243cb40cdf0cf12b1a860772496d46fdc7c39cf29903cc719bc35676c4",
+    "DepthRtspEndpoint.hpp": "7302c7fcb96ea3c2c367ae68446086ecfefa3d085cf568aae97f74c5722fafe5",
+    "DepthPipeline.cpp": "5d72c10b6cc9a3bcf88783018ecec4efc1342583bb0f474bb0bdc23eb6bc4520",
+    "CMakeLists.txt": "2a6ad0de80e3947f14fa201e208eaf9f55175050feb7d422e0bae604bd39fa14"
+  },
+  "deployed_source_lf_normalized_sha256": {
+    "StereoRtspServer.cpp": "1c6112dcc429f392e2e245cb0260ebbb45a94f40a319ba591be359c791c121f9",
+    "DepthRtspEndpoint.hpp": "7302c7fcb96ea3c2c367ae68446086ecfefa3d085cf568aae97f74c5722fafe5",
+    "DepthPipeline.cpp": "7e372d0506be5ffceb3360a00f6b56769a506cb4d25ab8ef71666157a2411327",
+    "CMakeLists.txt": "fed13719b4f52e4bac551aa6a7bd042bad7b3cf5d26b9b9ff69247d67e1c10b8"
+  },
+  "excluded_existing_change": "CMakeLists.txt depth-precision-benchmark registration remains unstaged. It was already present in the measured board build and is unrelated to RTSP production target behavior.",
+  "excluded_downloads_caches_and_redundant_arrays": [
+    "__pycache__/complete_lifecycle.cpython-312.pyc",
+    "__pycache__/finish_board.cpython-312.pyc",
+    "gst-plugins-qcom-good1.0_1.24.2-qc2~1ubuntu2.debian.tar.xz",
+    "gst-plugins-qcom-good1.0_1.24.2.orig.tar.gz",
+    "gstv4l2allocator.c",
+    "gstv4l2bufferpool.c",
+    "gstv4l2object.c",
+    "gstv4l2videoenc.c",
+    "pc-decode/stereo/snapshot-00-frame-000000-luma.npy",
+    "pc-decode/stereo/snapshot-01-frame-000293-luma.npy",
+    "pc-decode/stereo/snapshot-02-frame-000585-luma.npy",
+    "tools/meson-1.5.2-py3-none-any.whl"
+  ],
+  "evidence_integrity": "Raw JSON, JSONL, text, log and signed source metadata retain original bytes using directory-local attributes. C++ sources use repository LF normalization; all three runtime source contents match the deployed source after CRLF-to-LF normalization. Original deployed and staged CMake hashes remain separate."
+}

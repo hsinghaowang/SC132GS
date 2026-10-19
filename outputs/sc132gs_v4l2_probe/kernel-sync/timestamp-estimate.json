@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "abi": 4,
+  "source": "exposure_start_estimate",
+  "timestamp_offset_ns": 344903,
+  "formula": "round(mean_eye(mean(R-Y) - mean(C_SOF_to_R) - B_reference))",
+  "reference_exposure_rows": 1377,
+  "nominal_rows_per_second": 84000,
+  "matched_triggers": 3698,
+  "sof_equals_exposure_end": "assumed, not physically verified",
+  "physically_calibrated_exposure_start": false,
+  "ae_enabled": true,
+  "evidence": {
+    "fixed_exposure": {
+      "path": "fixed-residual-1377-20261015/result.json",
+      "sha256": "4b13029cd854fa7bd861e45f91a2c0ad4d4ff5501afd4bf36531161cfcdd0781"
+    },
+    "mipi_budget": {
+      "path": "fixed-residual-1377-20261015/mipi-budget.json",
+      "sha256": "214c46ac6000767e237628da82248df43274ce3155fca7105a5acdb224a126b5"
+    }
+  },
+  "limitations": [
+    "common offset preserves exact stereo equality; per-eye receive timestamps are never used for pairing",
+    "exposure start is estimated; no V4L2 SOE claim",
+    "offset is fixed; stability over AE conditions is an assumption"
+  ]
+}

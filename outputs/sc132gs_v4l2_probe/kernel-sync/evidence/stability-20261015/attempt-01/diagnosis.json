@@ -1,0 +1,24 @@
+{
+  "trigger_id": 218712,
+  "low_command_ns": 33227,
+  "release_overrun_ns": 2755,
+  "pulse_envelope_ns": 135982,
+  "original_envelope_budget_ns": 150000,
+  "eyes": {
+    "0": {
+      "selected_trigger": 218712,
+      "sof_delay_ns": 16769042,
+      "inside_unchanged_window": true,
+      "hardware_identity_valid": true,
+      "returned_error": 14
+    },
+    "1": {
+      "selected_trigger": 218712,
+      "sof_delay_ns": 16769344,
+      "inside_unchanged_window": true,
+      "hardware_identity_valid": true,
+      "returned_error": 14
+    }
+  },
+  "diagnosis": "Fatal low-command guard at 25us, while total host envelope and SOF/DMA identity remained inside existing bounds; not an accepted long run."
+}

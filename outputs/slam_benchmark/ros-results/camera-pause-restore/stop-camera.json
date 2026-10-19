@@ -1,0 +1,10 @@
+{
+  "started_unix_ns": 1791802959857814899,
+  "finished_unix_ns": 1791802960251497181,
+  "arguments": [
+    "systemctl",
+    "stop",
+    "sc132gs-camera-rtsp"
+  ],
+  "returncode": 0
+}

@@ -1,0 +1,369 @@
+PID    PPID COMMAND
+      1       0 /sbin/init
+      2       0 [kthreadd]
+      3       2 [pool_workqueue_release]
+      4       2 [kworker/R-rcu_g]
+      5       2 [kworker/R-rcu_p]
+      6       2 [kworker/R-slub_]
+      7       2 [kworker/R-netns]
+      8       2 [kworker/0:0-cgroup_release]
+      9       2 [kworker/0:0H-events_highpri]
+     12       2 [kworker/R-mm_pe]
+     13       2 [rcu_tasks_kthread]
+     14       2 [rcu_tasks_rude_kthread]
+     15       2 [rcu_tasks_trace_kthread]
+     16       2 [ksoftirqd/0]
+     17       2 [rcu_preempt]
+     18       2 [migration/0]
+     19       2 [idle_inject/0]
+     20       2 [cpuhp/0]
+     21       2 [cpuhp/1]
+     22       2 [idle_inject/1]
+     23       2 [migration/1]
+     24       2 [ksoftirqd/1]
+     26       2 [kworker/1:0H-kblockd]
+     27       2 [cpuhp/2]
+     28       2 [idle_inject/2]
+     29       2 [migration/2]
+     30       2 [ksoftirqd/2]
+     31       2 [kworker/2:0-events]
+     32       2 [kworker/2:0H-kblockd]
+     33       2 [cpuhp/3]
+     34       2 [idle_inject/3]
+     35       2 [migration/3]
+     36       2 [ksoftirqd/3]
+     38       2 [kworker/3:0H-kblockd]
+     39       2 [cpuhp/4]
+     40       2 [idle_inject/4]
+     41       2 [migration/4]
+     42       2 [ksoftirqd/4]
+     44       2 [kworker/4:0H-events_highpri]
+     45       2 [cpuhp/5]
+     46       2 [idle_inject/5]
+     47       2 [migration/5]
+     48       2 [ksoftirqd/5]
+     49       2 [kworker/5:0-cgroup_free]
+     50       2 [kworker/5:0H-kblockd]
+     51       2 [cpuhp/6]
+     52       2 [idle_inject/6]
+     53       2 [migration/6]
+     54       2 [ksoftirqd/6]
+     56       2 [kworker/6:0H-events_highpri]
+     57       2 [cpuhp/7]
+     58       2 [idle_inject/7]
+     59       2 [migration/7]
+     60       2 [ksoftirqd/7]
+     61       2 [kworker/7:0-mm_percpu_wq]
+     62       2 [kworker/7:0H-events_highpri]
+     63       2 [kdevtmpfs]
+     64       2 [kworker/R-inet_]
+     67       2 [kauditd]
+     69       2 [kworker/1:1-rcu_gp]
+     70       2 [kworker/2:1-cgroup_release]
+     71       2 [gh-watchdog]
+     72       2 [khungtaskd]
+     73       2 [oom_reaper]
+     74       2 [kworker/R-write]
+     75       2 [kcompactd0]
+     76       2 [ksmd]
+     77       2 [khugepaged]
+     78       2 [kworker/R-kinte]
+     79       2 [kworker/R-kbloc]
+     80       2 [kworker/R-blkcg]
+     81       2 [kworker/u16:2-ufs_clkscaling_0]
+     82       2 [kworker/u16:3-ring0]
+     83       2 [kworker/R-tpm_d]
+     84       2 [kworker/R-ata_s]
+     85       2 [kworker/R-md]
+     86       2 [kworker/R-md_bi]
+     87       2 [kworker/R-edac-]
+     88       2 [kworker/R-devfr]
+     89       2 [watchdogd]
+     90       2 [kworker/5:1-rcu_gp]
+     91       2 [kworker/R-quota]
+     92       2 [kworker/7:1H-events_highpri]
+     93       2 [kworker/6:1-rcu_gp]
+     94       2 [kswapd0]
+     95       2 [ecryptfs-kthread]
+     96       2 [kworker/R-kthro]
+     97       2 [kworker/4:2-cgroup_release]
+    105       2 [irq/104-bcl-lvl0]
+    106       2 [irq/105-bcl-lvl1]
+    107       2 [irq/106-bcl-lvl2]
+    108       2 [irq/107-bcl-lvl0]
+    109       2 [irq/108-bcl-lvl1]
+    110       2 [irq/109-bcl-lvl2]
+    111       2 [irq/111-gh_msgq_rx]
+    112       2 [kworker/R-mld]
+    113       2 [kworker/R-ipv6_]
+    120       2 [kworker/R-kstrp]
+    121       2 [kworker/3:1-cgroup_free]
+    125       2 [kworker/0:2-events]
+    127       2 [kworker/u16:4-events_unbound]
+    128       2 [kworker/u16:5-events_power_efficient]
+    130       2 [kworker/u16:7-ufs_clkscaling_0]
+    131       2 [kworker/u16:8-events_power_efficient]
+    132       2 [irq/23-arm-smmu-context-fault]
+    133       2 [irq/24-arm-smmu-context-fault]
+    134       2 [kworker/7:8-events]
+    135       2 [kworker/7:9-cgroup_free]
+    136       2 [irq/25-arm-smmu-context-fault]
+    138       2 [kworker/7:11-events]
+    143       2 [irq/18-smp2p-adsp]
+    144       2 [kworker/4:3-rcu_gp]
+    145       2 [irq/19-smp2p-cdsp]
+    147       2 [irq/20-smp2p-mpss]
+    149       2 [irq/21-smp2p-wpss]
+    153       2 [kworker/4:9-mm_percpu_wq]
+    156       2 [irq/133-99c000.serial:wakeup]
+    157       2 [irq/26-arm-smmu-context-fault]
+    160       2 [irq/27-arm-smmu-context-fault]
+    161       2 [irq/137-8804000.mmc]
+    162       2 [kworker/R-sdhci]
+    163       2 [irq/136-mmc1]
+    164       2 [scsi_eh_0]
+    165       2 [kworker/R-scsi_]
+    166       2 [kworker/R-ufs_e]
+    167       2 [kworker/R-ufs_c]
+    168       2 [kworker/R-ufs_c]
+    169       2 [kworker/R-charg]
+    170       2 [kworker/3:1H-kblockd]
+    171       2 [kworker/1:1H-kblockd]
+    172       2 [kworker/2:1H-kblockd]
+    173       2 [kworker/5:1H-kblockd]
+    174       2 [kworker/u17:1-ufs_clk_gating_0]
+    175       2 [irq/28-arm-smmu-context-fault]
+    176       2 [irq/147-aerdrv]
+    177       2 [irq/147-pciehp]
+    178       2 [irq/29-arm-smmu-context-fault]
+    179       2 [irq/148-aerdrv]
+    180       2 [irq/148-pciehp]
+    208       2 [kworker/6:1H-kblockd]
+    229       2 [kworker/4:1H-events_highpri]
+    235       2 [kworker/0:1H-kblockd]
+    240       2 [hwrng]
+    247       2 [kworker/6:2-mm_percpu_wq]
+    284       2 [kworker/3:2-mm_percpu_wq]
+    354       2 [kworker/1:2-device_link_wq]
+    418       2 [kworker/5:2-mm_percpu_wq]
+    438       2 [irq/156-9091000.pmu]
+    441       2 [irq/157-90b6400.pmu]
+    446       2 [spi12]
+    450       2 [kworker/2:2-rcu_gp]
+    451       2 [irq/30-arm-smmu-context-fault]
+    452       2 [irq/181-qcom_dwc3 DP_HS]
+    456       2 [irq/183-qcom_dwc3 DM_HS]
+    458       2 [irq/31-arm-smmu-context-fault]
+    459       2 [kworker/3:3-rcu_gp]
+    461       2 [irq/186-qcom_dwc3 DP_HS]
+    462       2 [irq/187-qcom_dwc3 DM_HS]
+    463       2 [irq/188-qcom_dwc3 SS]
+    482       2 [kworker/1:3-events]
+    557       2 [kworker/R-raid5]
+    600       2 [jbd2/sda3-8]
+    601       2 [kworker/R-ext4-]
+    680       1 /usr/lib/systemd/systemd-journald
+    704       2 [kworker/R-kmpat]
+    705       2 [kworker/R-kmpat]
+    733       1 /sbin/multipathd -d -s
+    747       1 /usr/lib/systemd/systemd-udevd
+    766       2 [psimon]
+   1133       2 [irq/167-q6v5 wdog]
+   1138       2 [kworker/6:3-rcu_gp]
+   1139       2 [irq/159-q6v5 wdog]
+   1140       2 [irq/32-arm-smmu-context-fault]
+   1141       2 [irq/33-arm-smmu-context-fault]
+   1142       2 [irq/189-q6v5 wdog]
+   1145       2 [irq/150-q6v5 wdog]
+   1151       2 [kworker/R-pdr_n]
+   1153       2 [irq/208-dcvsh-irq-0]
+   1154       2 [kworker/R-pm_wo]
+   1155       2 [kworker/R-batch]
+   1156       2 [irq/209-msm-vidc]
+   1157       2 [irq/210-dcvsh-irq-4]
+   1158       2 [irq/34-arm-smmu-context-fault]
+   1159       2 [irq/213-dcvsh-irq-7]
+   1160       2 [kworker/R-qcom_]
+   1161       2 [kworker/R-pdr_n]
+   1163       2 [kworker/R-cfg80]
+   1171       2 [irq/214-temp-alarm]
+   1174       2 [irq/217-c263000.thermal-sensor]
+   1175       2 [kworker/R-brcmf]
+   1176       2 [irq/218-c263000.thermal-sensor]
+   1178       2 [brcmf_wdog/mmc1:0001:1]
+   1190       2 [irq/220-temp-alarm]
+   1191       2 [irq/219-pm-adc-tm5-gen2]
+   1192       2 [irq/221-temp-alarm]
+   1193       2 [irq/222-pmic_pwrkey]
+   1202       2 [irq/223-pmic_resin]
+   1203       2 [irq/224-es8316]
+   1207       2 [irq/226-c265000.thermal-sensor]
+   1208       2 [irq/227-c265000.thermal-sensor]
+   1238       2 [kworker/u17:2-hci0]
+   1243       2 [kworker/5:3-rcu_gp]
+   1248       2 [irq/35-arm-smmu-context-fault]
+   1249       2 [irq/36-arm-smmu-context-fault]
+   1250       2 [irq/37-arm-smmu-context-fault]
+   1255       2 [irq/38-arm-smmu-context-fault]
+   1256       2 [irq/39-arm-smmu-context-fault]
+   1257       2 [irq/40-arm-smmu-context-fault]
+   1258       2 [irq/41-arm-smmu-context-fault]
+   1259       2 [irq/42-arm-smmu-context-fault]
+   1260       2 [irq/43-arm-smmu-context-fault]
+   1261       2 [irq/44-arm-smmu-context-fault]
+   1263       2 [irq/45-arm-smmu-context-fault]
+   1266       2 [irq/46-arm-smmu-context-fault]
+   1267       2 [kworker/R-pdr_n]
+   1268       2 [kworker/R-pdr_n]
+   1269       2 [irq/47-arm-smmu-context-fault]
+   1271       2 [irq/48-arm-smmu-context-fault]
+   1272       2 [kworker/6:4-cgroup_release]
+   1273       2 [irq/49-arm-smmu-context-fault]
+   1277       2 [irq/212-lt9611]
+   1278       2 [dp_hpd_handler]
+   1279       2 [gpu-worker]
+   1280       2 [irq/118-arm-smmu-context-fault]
+   1281       2 [irq/119-arm-smmu-context-fault]
+   1283       2 [disp_snapshot]
+   1284       2 [atomic-worker-0]
+   1285       2 [atomic-worker-1]
+   1286       2 [atomic-worker-2]
+   1287       2 [atomic-worker-3]
+   1288       2 [atomic-worker-4]
+   1289       2 [atomic-worker-5]
+   1290       2 [atomic-worker-6]
+   1291       2 [atomic-worker-7]
+   1292       2 [irq/50-arm-smmu-context-fault]
+   1293       2 [crtc_event:66]
+   1294       2 [crtc_event:67]
+   1295       2 [card0-crtc0]
+   1296       2 [card0-crtc1]
+   1336       2 [jbd2/sda2-8]
+   1337       2 [kworker/R-ext4-]
+   1519       1 /usr/lib/systemd/systemd-oomd
+   1520       1 /usr/lib/systemd/systemd-resolved
+   1527       1 /usr/lib/systemd/systemd-timesyncd
+   1624       1 /usr/bin/property-vault
+   1626       1 avahi-daemon: running [ubuntu.local]
+   1627       1 /usr/libexec/bluetooth/bluetoothd
+   1630       1 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   1633       1 /usr/libexec/gnome-remote-desktop-daemon --system
+   1637       1 /usr/bin/rubikpi-thermal
+   1640       1 /usr/lib/polkit-1/polkitd --no-debug
+   1644       1 /usr/libexec/power-profiles-daemon
+   1645       1 /usr/bin/qrtr-ns -f 1
+   1646       2 [sugov:0]
+   1647       2 [sugov:4]
+   1648       1 /usr/bin/pd-mapper
+   1649       2 [sugov:7]
+   1659       1 /snap/snapd/current/usr/lib/snapd/snapd
+   1678       1 /usr/libexec/accounts-daemon
+   1682       1 /usr/libexec/switcheroo-control
+   1695       1 /usr/lib/systemd/systemd-logind
+   1699       1 /usr/libexec/udisks2/udisksd
+   1717       1 /usr/sbin/rsyslogd -n -iNONE
+   1727    1626 avahi-daemon: chroot helper
+   1787       1 /usr/sbin/adsprpcd
+   1793       1 /usr/sbin/cdsprpcd
+   1805       1 /usr/sbin/ModemManager
+   1806       1 /usr/sbin/NetworkManager --no-daemon
+   1817       1 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   1820       1 /usr/bin/sscrpcd sensorspd
+   1969       2 [psimon]
+   1979       1 /usr/sbin/cupsd -l
+   1984       1 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+   1985       1 /usr/bin/containerd
+   2013       2 [kworker/R-pmic_]
+   2045       2 [kworker/2:3-cgroup_free]
+   2048       1 /usr/sbin/cups-browsed
+   2049       1 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+   2051       1 /usr/sbin/cron -f -P
+   2075       1 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+   2079       1 /usr/sbin/kerneloops --test
+   2084       1 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 - vt220
+   2089       1 /usr/sbin/kerneloops
+   2090       2 [irq/51-arm-smmu-context-fault]
+   2291       1 /usr/sbin/gdm3
+   2309    2291 gdm-session-worker [pam/gdm-launch-environment]
+   2328       1 /usr/lib/systemd/systemd --user
+   2335    2328 (sd-pam)
+   2485       1 /usr/libexec/rtkit-daemon
+   2614       1 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 82f16ef45cf39f1fa60ea666f12d97df5b07894823ceb9e0e7874a20a9164345 -address /run/containerd/containerd.sock
+   2636    2328 /usr/bin/pipewire
+   2638    2328 /usr/bin/pipewire -c filter-chain.conf
+   2640    2309 /usr/libexec/gdm-wayland-session dbus-run-session -- gnome-session --autostart /usr/share/gdm/greeter/autostart
+   2650    2328 /usr/bin/wireplumber
+   2653    2328 /usr/bin/pipewire-pulse
+   2654    2328 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   2661    2614 sleep infinity
+   2670    2640 dbus-run-session -- gnome-session --autostart /usr/share/gdm/greeter/autostart
+   2674    2670 dbus-daemon --nofork --print-address 4 --session
+   2682    2670 /usr/libexec/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+   2720       2 [krfcommd]
+   2770    2328 /usr/libexec/xdg-document-portal
+   2771    2682 /usr/bin/gnome-shell
+   2781    2328 /usr/libexec/xdg-permission-store
+   2790    2770 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/123/doc
+   2799       1 /bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh
+   2801    2799 bash /home/ubuntu/stereo-h265-rtsp/run-stereo-rtsp.sh
+   3050    2801 /home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp --cam0 /dev/video0 --cam1 /dev/video3 --bind 192.168.137.226 --port 8554 --mount /stereo --downscale 1 --fps 30 --brightness 30 --auto-exposure off --hevc-profile main10 --bitrate 10000000 --gpu-rectification-map /home/ubuntu/main10-rectification-20261016/fixtures/calibration.map --depth-calibration /home/ubuntu/main10-rectification-20261016/depth-calibration
+   3108       2 [kworker/R-workq]
+   3115       1 /usr/libexec/at-spi-bus-launcher
+   3123    3115 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/123/at-spi/bus
+   3132    2771 /usr/bin/Xwayland :1024 -rootless -noreset -accessx -core -auth /run/user/123/.mutter-Xwaylandauth.U9FPX3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+   3159       1 /usr/libexec/at-spi2-registryd --use-gnome-session
+   3165       1 /usr/libexec/colord
+   3218       2 [kworker/R-workq]
+   3268       1 /usr/libexec/xdg-permission-store
+   3283       1 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   3287    2682 /usr/libexec/gsd-sharing
+   3289       1 /usr/libexec/upowerd
+   3290    2682 /usr/libexec/gsd-wacom
+   3300    2682 /usr/libexec/gsd-color
+   3319    2682 /usr/libexec/gsd-keyboard
+   3320    2682 /usr/libexec/gsd-print-notifications
+   3329    2682 /usr/libexec/gsd-rfkill
+   3337    2682 /usr/libexec/gsd-smartcard
+   3340    2682 /usr/libexec/gsd-datetime
+   3360    2682 /usr/libexec/gsd-media-keys
+   3365    2682 /usr/libexec/gsd-screensaver-proxy
+   3381    2682 /usr/libexec/gsd-sound
+   3383    2682 /usr/libexec/gsd-a11y-settings
+   3386    2682 /usr/libexec/gsd-housekeeping
+   3390    2682 /usr/libexec/gsd-power
+   3477       1 /usr/libexec/gsd-printer
+   3528    2771 /usr/libexec/mutter-x11-frames
+   3529    2771 ibus-daemon --panel disable -r --xim
+   3545    3529 /usr/libexec/ibus-dconf
+   3548       1 /usr/libexec/ibus-x11 --kill-daemon
+   3553       1 /usr/libexec/ibus-portal
+   3571       1 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+   3605    3529 /usr/libexec/ibus-engine-simple
+   4781       2 [kworker/3:4-cgroup_free]
+   5295       2 [kworker/5:4]
+   5678       2 [kworker/2:4-events]
+   5725       1 /usr/libexec/fwupd/fwupd
+   6469       2 [kworker/0:1]
+   6470       2 [kworker/0:3-events]
+   6659       2 [kworker/4:0-events]
+   6861       2 [kworker/1:0-rcu_gp]
+   6862       2 [kworker/1:4]
+   7056    2075 sshd: ubuntu [priv]
+   7063       1 /usr/lib/systemd/systemd --user
+   7065    7063 (sd-pam)
+   7081    7063 /usr/bin/pipewire
+   7082    7063 /usr/bin/pipewire -c filter-chain.conf
+   7084    7063 /snap/snapd-desktop-integration/396/usr/bin/user-session-helper /snap/snapd-desktop-integration/396/usr/bin/snapd-desktop-integration
+   7085    7063 /usr/bin/wireplumber
+   7087    7063 /usr/bin/pipewire-pulse
+   7110    7063 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   7172    7056 sshd: ubuntu@notty
+   7173    7172 bash -c sudo python3 /home/ubuntu/sc132gs-envelope-200us-20261016/envelope_verify_deployment.py > /home/ubuntu/sc132gs-envelope-200us-20261016/final-readback-output.json && cd /home/ubuntu/sc132gs-envelope-200us-20261016 && sudo tar -czf review-evidence.tar.gz baseline-manifest.json baseline-units.txt baseline-status.txt baseline-processes.txt baseline-events.txt baseline-control.txt baseline-boot-id.txt baseline-loaded-srcversion.txt deployed-manifest.json deployment-readback.json final-readback-output.json restored-runtime-status.txt build.log deploy.log deploy-retry.log server-after.log kernel-after.log processes-after.txt atomic-fixture publication-fixture association-fixture live-300s source/camss-sync.c source/camss-sync-match.h envelope_deploy.py envelope_monitor.py envelope_verify_deployment.py audit_stability.py && sudo chmod 644 review-evidence.tar.gz
+   7176    7173 sudo python3 /home/ubuntu/sc132gs-envelope-200us-20261016/envelope_verify_deployment.py
+   7180    7176 python3 /home/ubuntu/sc132gs-envelope-200us-20261016/envelope_verify_deployment.py
+   7189    7063 /usr/libexec/xdg-document-portal
+   7192       2 [kworker/u17:0]
+   7193     747 (udev-worker)
+   7197    7063 /usr/libexec/xdg-permission-store
+   7207    7189 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+   7260    7180 ps -eo pid,ppid,args

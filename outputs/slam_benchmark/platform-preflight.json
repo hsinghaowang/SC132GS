@@ -1,0 +1,30 @@
+{
+  "observed_date": "2026-10-12",
+  "timezone": "Asia/Taipei",
+  "evidence_type": "read_only_ssh_preflight",
+  "board": "ubuntu@192.168.137.226",
+  "architecture": "aarch64",
+  "os": "Ubuntu 24.04.5 LTS",
+  "ros_on_host": false,
+  "running_ros_container": {"name": "ros2-humble", "image": "rubikpi/ros2-humble:local"},
+  "host_tools_found": ["docker", "cmake", "g++"],
+  "container_tools_found": ["git", "colcon", "cmake"],
+  "container_packages": {
+    "libeigen3-dev": "3.4.0-2ubuntu2",
+    "libopencv-dev": "not_installed",
+    "libceres-dev": "not_installed"
+  },
+  "approximate_resources": {"disk_available_gb": 70, "memory_available_gib": 5.5},
+  "named_service_probe": {"unit": "sc132gs-stereo-rtsp.service", "is_active_output": "inactive", "caution": "this named unit does not establish whether another camera process is streaming"},
+  "algorithm_builds_performed": [],
+  "slam_runs_performed": [],
+  "performance_results": null,
+  "host_or_container_configuration_modified": false,
+  "next_execution": [
+    "build an isolated benchmark image with OpenCV, Eigen and Ceres; leave existing container intact",
+    "build pinned OpenVINS revision and replay EuRoC with its supplied calibration",
+    "build pinned ORB-SLAM3 revision and replay identical EuRoC input",
+    "measure complete processing wall time and visual-update timing separately",
+    "finish clock mapping and real camera/IMU calibration before live sensor comparison"
+  ]
+}

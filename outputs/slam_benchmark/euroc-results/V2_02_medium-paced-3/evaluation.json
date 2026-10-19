@@ -1,0 +1,101 @@
+{
+  "frames": 2348,
+  "input_frames": 2348,
+  "poses": 2266,
+  "elapsed_s": 117.396974003,
+  "paced": true,
+  "opencv_threads": 4,
+  "gt_initialization": false,
+  "ros_transport": false,
+  "dataset": "V2_02_medium",
+  "ate_rmse_m": 0.050773397123977076,
+  "ate_alignment": "full-trajectory rigid SE3, scale fixed to 1",
+  "rpe_interval_s": 1,
+  "rpe_pairs": 2232,
+  "rpe_translation_rmse_m": 0.026980625804003202,
+  "rpe_rotation_rmse_deg": 0.32843067614395993,
+  "ground_truth_matched_poses": 2252,
+  "ground_truth_match_policy": "linear position and normalized shortest-arc quaternion interpolation; maximum bracket 11 ms",
+  "matched_start_timestamp": 1413393890.1040225,
+  "matched_end_timestamp": 1413394002.655818,
+  "run": "V2_02_medium-paced-3",
+  "pose_frame_coverage": 0.965076660988075,
+  "initialization_delay_dataset_s": 4.099999904632568,
+  "post_initialization_pose_frame_coverage": 1.0,
+  "initialized_processing_pair_rate_hz": 23.429106599863857,
+  "all_frame_processing_ms": {
+    "p50": 39.010552000000004,
+    "p95": 49.3380802,
+    "p99": 54.936245400000004,
+    "max": 74.732615
+  },
+  "initialized_frame_processing_ms": {
+    "p50": 39.234745000000004,
+    "p95": 49.4536725,
+    "p99": 55.197533849999935,
+    "max": 74.732615
+  },
+  "image_read_ms": {
+    "p50": 3.5690805,
+    "p95": 4.0592327500000005,
+    "p99": 14.22622143,
+    "max": 17.727319
+  },
+  "frontend_tracking_ms": {
+    "p50": 27.75,
+    "p95": 36.1575,
+    "p99": 42.754,
+    "max": 64.31
+  },
+  "internal_total_ms": {
+    "p50": 39.035,
+    "p95": 49.24,
+    "p99": 55.01299999999993,
+    "max": 74.53
+  },
+  "playback_completion_lag_ms": {
+    "p50": 47.92250060229344,
+    "p95": 61.35967177974672,
+    "p99": 73.15113974102208,
+    "max": 95.09501473486307
+  },
+  "input_pairs_per_wall_second": 20.000515515331752,
+  "pose_updates_per_wall_second": 19.302030731576558,
+  "initialized_nonadvancing_frames": 0,
+  "over_50ms_initialized_frames": 94,
+  "initialized_read_plus_estimate_ms": {
+    "p50": 42.7558085,
+    "p95": 52.93056275,
+    "p99": 58.94586754999998,
+    "max": 77.373947
+  },
+  "playback_lag_first_100_median_ms": 46.94570818371585,
+  "playback_lag_last_100_median_ms": 45.908704551140545,
+  "resources": {
+    "exit_code": 0,
+    "elapsed_wrapper_s": 118.4956743849998,
+    "cpu_user_s": 132.97515,
+    "cpu_system_s": 70.950869,
+    "average_cpu_percent": 172.09574953549082,
+    "peak_rss_mib": 83.984375,
+    "affinity_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "command": [
+      "/ws/slam_benchmark/euroc-runner/build/euroc_benchmark",
+      "/ws/slam_benchmark/openvins_ws/src/open_vins/config/euroc_mav/estimator_config.yaml",
+      "/ws/slam_benchmark/datasets/V2_02_medium/mav0",
+      "/ws/slam_benchmark/results/V2_02_medium-paced-3",
+      "1",
+      "0"
+    ],
+    "thermal_units": "raw sysfs values; platform units vary by zone"
+  }
+}

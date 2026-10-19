@@ -14,8 +14,8 @@ namespace {
 constexpr std::string_view kSocketPath = "/run/sc132gs-ae.sock";
 
 void usage() {
-    std::cerr << "usage: sc132gs-ctl status | set-brightness <1..90> | "
-                 "auto off | max-exposure-us <0..40000> | mode | set-mode hdr|linear\n";
+    std::cerr << "usage: sc132gs-ctl status | set-brightness <0..100> | "
+                 "auto off | hdr-overexposure <0..100> | max-exposure-us <0..40000> | mode | set-mode hdr|linear\n";
 }
 
 class ModeProgress final : public sc132gs::ModeController::Observer {
@@ -78,6 +78,8 @@ int main(int argc, char** argv) {
     std::string request;
     if (argc == 2 && std::string_view(argv[1]) == "status") {
         request = "status";
+    } else if (argc==3 && std::string_view(argv[1])=="hdr-overexposure") {
+        request=std::string("hdr-overexposure ")+argv[2];
     } else if (argc == 3 &&
                std::string_view(argv[1]) == "set-brightness") {
         request = std::string("set-brightness ") + argv[2];
@@ -113,7 +115,7 @@ int main(int argc, char** argv) {
         ::close(fd);
         return 1;
     }
-    char reply[512]{};
+    char reply[2048]{};
     const ssize_t count = ::recv(fd, reply, sizeof(reply) - 1, 0);
     ::close(fd);
     if (count <= 0) {

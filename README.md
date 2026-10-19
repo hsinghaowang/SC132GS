@@ -1,5 +1,20 @@
 # SC132GS 雙目相機：RUBIK Pi 3 / QCS6490
 
+## 最新相機版本（2026-10-16 驗證，2026-10-19 發布）
+
+目前已驗證的按需取像 profile 為 full-resolution Linear 30 FPS、kernel FSYNC mode 2、
+shared-detail Y8 / limited-range HEVC Main，保留 GPU rectification 與 `/depth`。
+`/stereo` 和 `/depth` 共用相機；兩路皆無需求滿 1 秒就停止取像、釋放 DMA/VPU 並停止 FSYNC。
+其他需在 STREAMON 後設定 timing 的 profile 保留原行為。
+
+- [按需啟停設計、私有 QCOM VPU 外掛修正與操作限制](outputs/stereo_h265_rtsp/ON_DEMAND.zh-TW.md)
+- [板端完整驗證紀錄：43 項 lifecycle、兩路 PC 解碼、22 項 CTest、資源釋放](outputs/stereo_h265_rtsp/on-demand-evidence-20261016/README.zh-TW.md)
+- [所有發布目錄與來源 commit 對照](PUBLICATION.zh-TW.md)
+
+此 repository 也包含共用 capture／IMU library、ROS 2 adapter、校正與 GPU depth 的程式和既有驗證紀錄。
+歷史失敗、中止與重測結果保留各自狀態；本次發布沒有重新接管板端執行驗證。
+下方介紹及驗證快照描述 2026-10-06 的歷史版本；最新行為以上方文件為準。
+
 GS130WI 上兩顆 SC132GS 的 Linux V4L2 驅動、曝光控制、HDR / Linear
 模式切換，以及 C++20 H.265 RTSP 串流程式。
 
@@ -80,6 +95,6 @@ RAW10 ≥1020 的比例為 0%；Windows RTP/TCP 接收約 29.93 FPS。
 ## 匯入來源
 
 本 repository 從既有工作區抽出三個相機目錄與相關提交歷史，保持其
-相對位置及程式內容。最新來源提交為 `2899007`，相機歷史中的對應提交
+相對位置及程式內容。初次匯入來源提交為 `2899007`，相機歷史中的對應提交
 為 `0d4bc30`。抽出目錄後 Git tree 與父提交改變，因此 commit SHA 不同。
 各來源檔案原有的授權與著作權標示保留。

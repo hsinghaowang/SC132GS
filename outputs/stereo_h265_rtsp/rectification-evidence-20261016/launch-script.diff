@@ -1,0 +1,28 @@
+--- original
++++ gpu
+@@ -33,6 +33,10 @@
+ AUTO_EXPOSURE=${AUTO_EXPOSURE:-1}
+ HEVC_PROFILE=${HEVC_PROFILE:-main}
+ BITRATE=${BITRATE:-20000000}
++# Private GPU adapters; no camera/AE settings are changed by these options.
++GPU_OPTIONS=()
++[[ -z ${GPU_RECTIFICATION_MAP:-} ]] || GPU_OPTIONS+=(--gpu-rectification-map "$GPU_RECTIFICATION_MAP")
++[[ -z ${DEPTH_CALIBRATION:-} ]] || GPU_OPTIONS+=(--depth-calibration "$DEPTH_CALIBRATION")
+ case "$AUTO_EXPOSURE" in
+     1) AE_MODE=on ;;
+     0) AE_MODE=off ;;
+@@ -61,7 +65,7 @@
+     taskset --cpu-list "$CONSUMER_CPUS" "$SERVER_BIN" --cam0 "$CAM0" --cam1 "$CAM1" \
+         --bind "$BIND" --port "$PORT" --mount /stereo \
+         --downscale "$DOWNSCALE" --fps "$FPS" --brightness "$BRIGHTNESS" \
+-        --auto-exposure "$AE_MODE" --hevc-profile "$HEVC_PROFILE" --bitrate "$BITRATE"
++        --auto-exposure "$AE_MODE" --hevc-profile "$HEVC_PROFILE" --bitrate "$BITRATE" "${GPU_OPTIONS[@]}"
+     exit $?
+ fi
+ 
+@@ -100,4 +104,4 @@
+ "$SERVER_BIN" --cam0 "$CAM0" --cam1 "$CAM1" \
+     --bind "$BIND" --port "$PORT" --mount /stereo \
+     --downscale "$DOWNSCALE" --fps "$FPS" --brightness "$BRIGHTNESS" \
+-    --auto-exposure "$AE_MODE" --hevc-profile "$HEVC_PROFILE" --bitrate "$BITRATE"
++    --auto-exposure "$AE_MODE" --hevc-profile "$HEVC_PROFILE" --bitrate "$BITRATE" "${GPU_OPTIONS[@]}"

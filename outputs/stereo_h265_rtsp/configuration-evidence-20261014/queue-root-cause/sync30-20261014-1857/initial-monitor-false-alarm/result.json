@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "failure": {
+    "code": "capture_or_encoder_fps_out_of_range",
+    "metrics": [
+      "29.974",
+      "30.3711",
+      "81004"
+    ]
+  },
+  "inconclusive": false,
+  "elapsed_s": 1712.328359085,
+  "requested_seconds": 3600.0,
+  "samples": 171,
+  "capture_average_fps": 29.99228764904292,
+  "scope": "bounded ABI2/30Hz session, capture/encoder FPS, health and kernel faults; decode and optical/electrical timing require separate evidence"
+}

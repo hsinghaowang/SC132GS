@@ -1,0 +1,85 @@
+{
+  "pulses": 818,
+  "worst": [
+    {
+      "id": 46783,
+      "code": 14,
+      "assert_us": 44.634,
+      "low_to_high_envelope_us": 150.412,
+      "release_overrun_us": 5.778,
+      "release_us": 5.573
+    },
+    {
+      "id": 46523,
+      "code": 0,
+      "assert_us": 28.593,
+      "low_to_high_envelope_us": 132.808,
+      "release_overrun_us": 4.215,
+      "release_us": 3.958
+    },
+    {
+      "id": 46521,
+      "code": 0,
+      "assert_us": 24.947,
+      "low_to_high_envelope_us": 132.079,
+      "release_overrun_us": 7.132,
+      "release_us": 6.927
+    },
+    {
+      "id": 46280,
+      "code": 0,
+      "assert_us": 27.187,
+      "low_to_high_envelope_us": 130.1,
+      "release_overrun_us": 2.913,
+      "release_us": 2.708
+    },
+    {
+      "id": 46509,
+      "code": 0,
+      "assert_us": 23.176,
+      "low_to_high_envelope_us": 125.62,
+      "release_overrun_us": 2.444,
+      "release_us": 2.239
+    },
+    {
+      "id": 46782,
+      "code": 0,
+      "assert_us": 21.978,
+      "low_to_high_envelope_us": 125.516,
+      "release_overrun_us": 3.538,
+      "release_us": 3.385
+    },
+    {
+      "id": 46181,
+      "code": 0,
+      "assert_us": 18.957,
+      "low_to_high_envelope_us": 123.746,
+      "release_overrun_us": 4.789,
+      "release_us": 4.584
+    },
+    {
+      "id": 46313,
+      "code": 0,
+      "assert_us": 20.572,
+      "low_to_high_envelope_us": 123.642,
+      "release_overrun_us": 3.07,
+      "release_us": 2.709
+    },
+    {
+      "id": 46385,
+      "code": 0,
+      "assert_us": 19.374,
+      "low_to_high_envelope_us": 123.59,
+      "release_overrun_us": 4.216,
+      "release_us": 3.959
+    },
+    {
+      "id": 46321,
+      "code": 0,
+      "assert_us": 19.062,
+      "low_to_high_envelope_us": 122.861,
+      "release_overrun_us": 3.799,
+      "release_us": 3.594
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "first_assertion_skipped": true,
+  "next_deadline_ns": 1016666667,
+  "callback_status": 1,
+  "scope": "actual callback, mocked clock/GPIO/publication; no hardware proof",
+  "source_sha256": "b39dc1718048a76624675687729a55f2ff66b1e3ca632f5348b6bf8c51ccb00d",
+  "callback_sha256": "2229eaa898edacf713292acf4e271251472479d9e3a8af539cff93936fcc3408"
+}

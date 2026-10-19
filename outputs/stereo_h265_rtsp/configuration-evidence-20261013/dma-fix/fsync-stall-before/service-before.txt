@@ -1,0 +1,10 @@
+# /run/systemd/transient/sc132gs-camera-rtsp.service
+# This is a transient unit file, created programmatically via the systemd API. Do not edit.
+[Unit]
+Description=/bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh
+
+[Service]
+TimeoutStopSec=15s
+Environment="BINNING=0" "FPS=60" "SENSOR_MODE=linear" "TOKEN=96eaead5-111a-4bc2-815b-26e787dcb1dd"
+ExecStart=
+ExecStart="/bin/bash" "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh"

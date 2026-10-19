@@ -1,0 +1,64 @@
+FSYNC / RAW capture API 優化：板端結果（2026-10-16，Asia/Taipei）
+
+結論
+已整合至共用 gs130wi_capture library，RTSP 使用該 library 的新擷取實作。
+最終部署是 --tone-map shared --hevc-profile main，輸出 HEVC Main 8-bit yuv420p。
+Shared8 session 11 的 600.418 秒板端監測與兩個獨立 Windows RTSP 解碼窗口均通過；本窗口沒有重現 error=9。
+目前保留測試版持續運行，未在測試結束後重啟相機。
+
+實作
+- packed RAW10 解包與全畫面 highlight count 合併，AArch64 NEON 每批16 pixels，保留 scalar fallback。
+- 使用既有 decoded scratch；不新增整張 RAW 備份。
+- 最後一次讀取 MMAP 後立即 QBUF，再做 HDR grid 統計、demosaic、median；RAII 保護短幀/例外歸還。
+- 擷取 producer 與後處理 consumer 透過單槽 move handoff 交接 owning vectors，不靜默覆蓋同步幀。
+- 每眼 V4L2 requested=8、actual=8；沒有加大相機 queue。
+- 公開 C++17 Capture API 不變，RTSP 的後處理耗時計時保留在上層。
+
+最終驗證
+板端監測：600.418 秒，session=11，error=0、error_count=0、skipped=0、NRestarts=0。
+181532 筆 kernel events、1037 次狀態採樣；獨立 replay 無 serial 遺失、runtime fault、trigger/sequence 缺口。
+cam0：18149 筆有效 DMA，30.000566 FPS。
+cam1：18144 筆有效 DMA，30.000574 FPS。
+trace 包含監測開始前仍保留的本 session 啟動紀錄，因此 trace 幀數與 Windows 600 秒解碼幀數不同，不混用窗口。
+stereo：2176x1280、HEVC Main、yuv420p、600.000 秒、18002 幀、30.001667 FPS、無解碼錯誤。
+depth：544x640、HEVC Main、yuv420p、600.016 秒、16699 幀、27.829258 FPS、無解碼錯誤。
+
+持有時間（最終 lifetime log，wall-clock）
+cam0 平均 1.65323 ms，最大 4.49572 ms。
+cam1 平均 1.77555 ms，最大 5.81735 ms。
+handoff wait 最大 4.13500 ms。
+雙眼後處理平均：校正 7.15735 ms、AE 0.27125 ms、tone 9.55239 ms、depth submit 0.57835 ms、encoder submit 1.40326 ms。
+這些後處理發生在 MMAP 已 QBUF 之後。depth 受既有 AE transition holdoff 等政策影響，不宣稱 depth 輸出30 FPS。
+
+其他檢查
+WSL 完整程式 build 與21項 CTest 通過；ASan/UBSan portable 8項通過。
+AArch64 NEON QEMU portable 8項通過；NEON/ARM scalar/x86 scalar 結果 digest 相同。
+板端原生 build 與 fused RAW、move handoff、實際 Device syscall fixture 三項通過。
+fixture 在 QBUF 時覆寫 RAW mapping，仍得到正確輸出；短幀/ERROR buffer 歸還一次、QBUF failure 不 double return。
+前一輪 Main10 正常停止的 common capture trace 有544筆成功 DQBUF/QBUF 配對、1088筆 statistics/render 均在 QBUF 之後；這只證明相同底層生命週期，不算 Shared8 的10分鐘解碼資料。
+離線 ARM CPU2 benchmark 因頻率/排程造成跨輪時間差異很大，不使用它宣稱固定SIMD加速倍數。
+
+部署與復原
+目前服務：sc132gs-camera-rtsp.service；唯一 camera consumer PID29489（最終核對），MainPID29439。
+binary SHA-256：a1699264c088fd2edb570cc76697ef892f168587f23e0531a7aa14cacdce7936
+API static library SHA-256：a3014e92da17a3c707e415d3932de247794cc7f988ef05c67539ac3f8de977e4
+板端目錄：/home/ubuntu/fsync-api-opt-20261016
+runtime drop-in：/run/systemd/system/sc132gs-camera-rtsp.service.d/90-capture-api-opt.conf
+wrapper：/home/ubuntu/fsync-api-opt-20261016/run-shared8.sh
+此為可回復的 runtime override；沒有覆寫原 binary、launcher 或持久相機設定，重開機後不保證沿用此測試 override。
+若要明確回復原服務配置，移除這一個 drop-in、daemon-reload、restart 原服務即可；原 binary 與設定另有 backup，勿刪除其他 drop-ins。
+
+限制與保留失敗證據
+1. 本結果是有界600秒驗證，不代表長時間可靠性已通過，也無法反推所有歷史error=9的唯一根因。
+2. Shared8 stereo 目前為未整流 cam0|cam1；depth 使用既有自身校正。原 stereo GPU rectification 只支援 Main10，這輪沒有帶入該選項。
+3. 保留原必要的格式轉換、composition 及 depth submit 既有 copy；不是整條 pipeline 零拷貝。
+4. 切換前原舊版 session6 已停止於 error=10、skipped=1，保存於 old-owner-fault；此發生於新版本部署前，不算新版本 error=9。
+5. 第一次部署檢查誤讀尚未reset的舊session sticky error10，保存 deployment-attempt-01.json 並回復舊版；後續啟動檢查改成等待新session。
+6. Main10初輪因後處理log binary缺漏而強制重編；Main10後輪因輸出規格更正為Shared8而中斷。它們均保留 partial result，不列為600秒通過。
+
+證據
+acceptance.json：合併板端監測、獨立本機replay與雙RTSP完整解碼。
+board/live-shared8-600s/：原始events、samples、前後控制與server log。
+pc-shared8-600s/：兩路frame/PTS/格式、統計與解碼摘要。
+live-evidence.tar.gz：板端證據；151個檔案均已核對 board/evidence-sha256.json。
+source-sha256.json：本次板端編譯來源清單。

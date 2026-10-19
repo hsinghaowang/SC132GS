@@ -1,0 +1,4 @@
+COMMAND         %CPU %MEM
+sleep            0.0  0.0
+bash             0.0  0.0
+ps               0.0  0.0

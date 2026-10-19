@@ -1,0 +1,20 @@
+{
+  "state": "live",
+  "decoded": 650,
+  "processed": 222,
+  "skipped": 424,
+  "reconnects": 0,
+  "processing_fps": 9.929906542055761,
+  "frame_age_ms": 125.0,
+  "processing_ms": 109.00000000037835,
+  "valid_fraction": 0.261083984375,
+  "error": null,
+  "source_pts_seconds": 22.966666666666665,
+  "age_semantics": "Since local decoder output; not sensor-to-display latency",
+  "resolution": [
+    544,
+    640
+  ],
+  "calibration_sha256": "819d0befaabe1973d299107b0a181e6ec93853a641840e3c9da04e1c84d4732b",
+  "metric_accuracy_verified": false
+}

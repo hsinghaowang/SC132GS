@@ -1,0 +1,10 @@
+{
+  "state": "running",
+  "elapsed_s": 111.32236217299942,
+  "requested_seconds": 7200,
+  "pairs": 1516297,
+  "pulses": 1516401,
+  "failure": null,
+  "sample_count": 22,
+  "imu_pid": 25246
+}

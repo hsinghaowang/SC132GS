@@ -1,0 +1,50 @@
+{
+  "sent": {
+    "imu": 2401,
+    "left": 240,
+    "right": 240
+  },
+  "sent_after_stop_signal": {
+    "imu": 595,
+    "left": 60,
+    "right": 60
+  },
+  "dataset_stereo_pairs": 240,
+  "dataset_imu_samples": 2401,
+  "observed_poses": 98,
+  "receiver_exit_code": 0,
+  "shutdown_mode": "SIGINT_while_publisher_active",
+  "signal_to_exit_observed_ms": 240.237314,
+  "origin_camera_timestamp_ns": 1413393886005760512,
+  "start_monotonic_ns": 9750674728384,
+  "timing_clock": "Linux CLOCK_MONOTONIC via time.monotonic_ns / clock_gettime",
+  "image_qos": "reliable KeepLast 10",
+  "imu_publisher_qos": "best effort KeepLast 200",
+  "publisher_image_decode_threads": 1,
+  "ROS_DOMAIN_ID": "73",
+  "ROS_LOCALHOST_ONLY": "1",
+  "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+  "ground_truth_initialization": false,
+  "physical_sensor_input": false,
+  "observed_stock_poseimu": 98,
+  "primary_pose_stream": "/poseimu, calibrated IMU stamp; nearest source camera association checked within 20 ms",
+  "diagnostic_probe_scope": "camera-stamped pose after every processed camera on the owned estimator worker",
+  "resources": {
+    "elapsed_including_startup_drain_stop_s": 15.096919489000356,
+    "publisher_probe_cpu_percent": 58.311876183840674,
+    "receiver_cpu_percent": 72.86368591959933,
+    "publisher_probe_peak_rss_mib": 136.20703125,
+    "receiver_peak_rss_mib": 131.375,
+    "affinity_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "cpu_units": "100 percent is one core"
+  }
+}

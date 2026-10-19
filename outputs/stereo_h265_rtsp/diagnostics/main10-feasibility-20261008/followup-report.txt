@@ -1,0 +1,30 @@
+Isolated follow-up — 2026-10-08, Asia/Taipei
+
+Stopped sc132gs-camera-rtsp before all follow-up encoder streaming tests.
+Diagnostic preload selects HEVC on QUERYCAP before raw-format enumeration.
+It exposes Main10 output profile but installed GStreamer v4l2h265enc still
+lists only 8-bit inputs. Upstream 1.24.2 gstv4l2object.c has no P010 mapping:
+https://raw.githubusercontent.com/GStreamer/gstreamer/1.24.2/subprojects/gst-plugins-good/sys/v4l2/gstv4l2object.c
+The earlier default-H.264 explanation was incomplete.
+
+Native C++20 V4L2 diagnostic explicitly selects HEVC, P010, matching
+640x480 capture dimensions, Main10 profile and 30 FPS. Eight mapped
+P010 synthetic gradient input frames use 10-bit values stored in bits 15..6.
+Both queues successfully STREAMON, but capture DQBUF fails with EINVAL.
+The hardware HEVC output file is empty.
+
+Kernel reports system error 0x5000003 and firmware assertion:
+venus_venc_c2_driver.c:2378:7e5ac:111160:0
+Firmware version video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf.
+This establishes a reproducible firmware failure for this configuration,
+not proof that the silicon lacks all 10-bit encoding capabilities.
+No production preload or plugin patch installed.
+
+After all device handles closed, reloaded iris_vpu and restarted the
+original service. Confirmed active process at 60 FPS, downscale 1,
+brightness 40 and AE off. RTSP/TCP -> software H.265 decode -> PNG
+completed successfully; restored-stream.png preserves decoded evidence.
+
+End-to-end Main10 hardware/VLC display remains unproven. Software
+Main10 component encode/decode was proven in the initial report only
+at 320x240 for 8 synthetic frames, not dual-camera full-size 60 FPS.

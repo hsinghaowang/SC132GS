@@ -1,0 +1,128 @@
+Start testing: Oct 12 18:31 CST
+----------------------------------------------------------
+1/8 Testing: sensor-signal-calibration-check
+1/8 Test: sensor-signal-calibration-check
+Command: "/home/ubuntu/hdr-tuning-20261012/build/sensor-signal-calibration-check"
+Directory: /home/ubuntu/hdr-tuning-20261012/build
+"sensor-signal-calibration-check" start time: Oct 12 18:31 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"sensor-signal-calibration-check" end time: Oct 12 18:31 CST
+"sensor-signal-calibration-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: hdr-ae-policy-check
+2/8 Test: hdr-ae-policy-check
+Command: "/home/ubuntu/hdr-tuning-20261012/build/hdr-ae-policy-check"
+Directory: /home/ubuntu/hdr-tuning-20261012/build
+"hdr-ae-policy-check" start time: Oct 12 18:31 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"hdr-ae-policy-check" end time: Oct 12 18:31 CST
+"hdr-ae-policy-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/8 Testing: camera-configuration-check
+3/8 Test: camera-configuration-check
+Command: "/home/ubuntu/hdr-tuning-20261012/build/camera-configuration-check"
+Directory: /home/ubuntu/hdr-tuning-20261012/build
+"camera-configuration-check" start time: Oct 12 18:31 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"camera-configuration-check" end time: Oct 12 18:31 CST
+"camera-configuration-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: linear-video-luma-check
+4/8 Test: linear-video-luma-check
+Command: "/home/ubuntu/hdr-tuning-20261012/build/linear-video-luma-check"
+Directory: /home/ubuntu/hdr-tuning-20261012/build
+"linear-video-luma-check" start time: Oct 12 18:31 CST
+Output:
+----------------------------------------------------------
+BT.709 grayscale reference levels and monotonicity passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"linear-video-luma-check" end time: Oct 12 18:31 CST
+"linear-video-luma-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: camera-mode-check
+5/8 Test: camera-mode-check
+Command: "/home/ubuntu/hdr-tuning-20261012/build/camera-mode-check"
+Directory: /home/ubuntu/hdr-tuning-20261012/build
+"camera-mode-check" start time: Oct 12 18:31 CST
+Output:
+----------------------------------------------------------
+mode transaction/recovery checks passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"camera-mode-check" end time: Oct 12 18:31 CST
+"camera-mode-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: bayer-luma-check
+6/8 Test: bayer-luma-check
+Command: "/home/ubuntu/hdr-tuning-20261012/build/bayer-luma-check"
+Directory: /home/ubuntu/hdr-tuning-20261012/build
+"bayer-luma-check" start time: Oct 12 18:31 CST
+Output:
+----------------------------------------------------------
+RGGB flat color, precision, borders, padded stride, scales and ramp passed
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"bayer-luma-check" end time: Oct 12 18:31 CST
+"bayer-luma-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: raw10-luma-check
+7/8 Test: raw10-luma-check
+Command: "/home/ubuntu/hdr-tuning-20261012/build/raw10-luma-check"
+Directory: /home/ubuntu/hdr-tuning-20261012/build
+"raw10-luma-check" start time: Oct 12 18:31 CST
+Output:
+----------------------------------------------------------
+RAW10 luma correctness passed; neon=1
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"raw10-luma-check" end time: Oct 12 18:31 CST
+"raw10-luma-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: stereo-compose-check
+8/8 Test: stereo-compose-check
+Command: "/home/ubuntu/hdr-tuning-20261012/build/stereo-compose-check"
+Directory: /home/ubuntu/hdr-tuning-20261012/build
+"stereo-compose-check" start time: Oct 12 18:31 CST
+Output:
+----------------------------------------------------------
+per-eye mirrored side-by-side NV12 composition passed
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"stereo-compose-check" end time: Oct 12 18:31 CST
+"stereo-compose-check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 12 18:31 CST

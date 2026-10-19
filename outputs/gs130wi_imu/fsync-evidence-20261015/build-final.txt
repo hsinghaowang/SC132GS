@@ -1,0 +1,9 @@
+[ 16%] Building CXX object CMakeFiles/icm42688.dir/icm42688.cpp.o
+[ 33%] Linking CXX static library libicm42688.a
+[ 33%] Built target icm42688
+[ 50%] Building CXX object CMakeFiles/icm42688-check.dir/Icm42688Check.cpp.o
+[ 66%] Building CXX object CMakeFiles/gs130wi-imu.dir/imu_capture.cpp.o
+[ 83%] Linking CXX executable icm42688-check
+[ 83%] Built target icm42688-check
+[100%] Linking CXX executable gs130wi-imu
+[100%] Built target gs130wi-imu

@@ -1,0 +1,986 @@
+--- a/Makefile
++++ b/Makefile
+@@ -3,6 +3,7 @@
+ 
+ qcom-camss-objs += \
+ 		camss.o \
++		camss-sync.o \
+ 		camss-csid.o \
+ 		camss-csid-4-1.o \
+ 		camss-csid-4-7.o \
+--- a/camss.h
++++ b/camss.h
+@@ -109,7 +109,10 @@
+ 	int (*link_entities)(struct camss *camss);
+ };
+ 
++struct camss_sync;
++
+ struct camss {
++	struct camss_sync *sync;
+ 	struct v4l2_device v4l2_dev;
+ 	struct v4l2_async_notifier notifier;
+ 	struct media_device media_dev;
+--- a/camss.c
++++ b/camss.c
+@@ -29,6 +29,7 @@
+ #include <media/v4l2-fwnode.h>
+ 
+ #include "camss.h"
++#include "camss-sync.h"
+ 
+ #define CAMSS_CLOCK_MARGIN_NUMERATOR 105
+ #define CAMSS_CLOCK_MARGIN_DENOMINATOR 100
+@@ -2792,6 +2793,9 @@
+ 	struct media_pad *pad;
+ 
+ 	while (1) {
++		/* udev can open the first video node before later entities have pads. */
++		if (!entity || !entity->num_pads || !entity->pads)
++			return NULL;
+ 		pad = &entity->pads[0];
+ 		if (!(pad->flags & MEDIA_PAD_FL_SINK))
+ 			return NULL;
+@@ -3641,6 +3645,10 @@
+ 	if (!camss->vfe)
+ 		return -ENOMEM;
+ 
++	ret = camss_sync_init(camss);
++	if (ret)
++		return ret;
++
+ 	ret = camss_icc_get(camss);
+ 	if (ret < 0)
+ 		return ret;
+@@ -3751,6 +3759,7 @@
+ {
+ 	struct camss *camss = platform_get_drvdata(pdev);
+ 
++	camss_sync_remove(camss);
+ 	v4l2_async_nf_unregister(&camss->notifier);
+ 	v4l2_async_nf_cleanup(&camss->notifier);
+ 	camss_unregister_entities(camss);
+--- a/camss-csid-gen2.c
++++ b/camss-csid-gen2.c
+@@ -21,6 +21,7 @@
+ #include "camss-csid.h"
+ #include "camss-csid-gen2.h"
+ #include "camss.h"
++#include "camss-sync.h"
+ 
+ /* The CSID 2 IP-block is different from the others,
+  * and is of a bare-bones Lite version, with no PIX
+@@ -111,6 +112,10 @@
+ 						+ 0x100 * (rdi))
+ #define		RDI_CFG1_TIMESTAMP_STB_SEL	0
+ 
++#define CSID_RDI_SOF_LO(rdi) ((csid_is_lite(csid) ? 0x290 : 0x390) + 0x100 * (rdi))
++#define CSID_RDI_SOF_HI(rdi) (CSID_RDI_SOF_LO(rdi) + 4)
++#define CSID_RDI_INPUT_SOF BIT(12)
++
+ #define CSID_RDI_CTRL(rdi)			((csid_is_lite(csid) ? 0x208 : 0x308)\
+ 						+ 0x100 * (rdi))
+ #define		RDI_CTRL_HALT_CMD		0
+@@ -319,6 +324,11 @@
+ 	val |= vc << RDI_CFG0_VIRTUAL_CHANNEL;
+ 	val |= dt_id << RDI_CFG0_DT_ID;
+ 	writel_relaxed(val, csid->base + CSID_RDI_CFG0(vc));
++	if (camss_sync_observes(csid, vc)) {
++		writel_relaxed(CSID_RDI_INPUT_SOF, csid->base + CSID_CSI2_RDIN_IRQ_CLEAR(vc));
++		writel_relaxed(enable ? CSID_RDI_INPUT_SOF : 0, csid->base + CSID_CSI2_RDIN_IRQ_MASK(vc));
++		writel_relaxed(BIT(IRQ_CMD_CLEAR), csid->base + CSID_IRQ_CMD);
++	}
+ 
+ 	/* CSID_TIMESTAMP_STB_POST_IRQ */
+ 	val = 2 << RDI_CFG1_TIMESTAMP_STB_SEL;
+@@ -428,6 +438,15 @@
+ 	for (i = 0; i < MSM_CSID_MAX_SRC_STREAMS; i++)
+ 		if (csid->phy.en_vc & BIT(i)) {
+ 			val = readl_relaxed(csid->base + CSID_CSI2_RDIN_IRQ_STATUS(i));
++			if ((val & CSID_RDI_INPUT_SOF) && camss_sync_observes(csid, i)) {
++				u32 hi, lo, hi2;
++				do {
++					hi = readl_relaxed(csid->base + CSID_RDI_SOF_HI(i));
++					lo = readl_relaxed(csid->base + CSID_RDI_SOF_LO(i));
++					hi2 = readl_relaxed(csid->base + CSID_RDI_SOF_HI(i));
++				} while (hi != hi2);
++				camss_sync_sof(csid, i, ((u64)hi << 32) | lo);
++			}
+ 			writel_relaxed(val, csid->base + CSID_CSI2_RDIN_IRQ_CLEAR(i));
+ 		}
+ 
+--- a/camss-vfe-17x.c
++++ b/camss-vfe-17x.c
+@@ -12,6 +12,7 @@
+ #include <linux/iopoll.h>
+ 
+ #include "camss.h"
++#include "camss-sync.h"
+ #include "camss-vfe.h"
+ 
+ #define VFE_HW_VERSION				(0x000)
+@@ -380,9 +381,8 @@
+ 			vfe->isr_ops.comp_done(vfe, i);
+ 
+ 	for (wm = 0; wm < MSM_VFE_IMAGE_MASTERS_NUM; wm++)
+-		if (status0 & BIT(9))
+-			if (vfe_bus_status[1] & STATUS1_WM_CLIENT_BUF_DONE(wm))
+-				vfe->isr_ops.wm_done(vfe, wm);
++		if (vfe_bus_status[1] & STATUS1_WM_CLIENT_BUF_DONE(wm))
++			vfe->isr_ops.wm_done(vfe, wm);
+ 
+ 	return IRQ_HANDLED;
+ }
+@@ -518,6 +518,10 @@
+ 	if (ret < 0)
+ 		goto error_get_output;
+ 
++	ret = camss_sync_bind(line);
++	if (ret < 0)
++		goto error_enable_output;
++
+ 	ret = vfe_enable_output(line);
+ 	if (ret < 0)
+ 		goto error_enable_output;
+@@ -527,6 +531,7 @@
+ 	return 0;
+ 
+ error_enable_output:
++	camss_sync_unbind(line);
+ 	vfe_put_output(line);
+ 
+ error_get_output:
+@@ -585,6 +590,7 @@
+ 	unsigned long flags;
+ 	u32 index;
+ 	u64 ts = ktime_get_ns();
++	bool sync_valid;
+ 
+ 	spin_lock_irqsave(&vfe->output_lock, flags);
+ 
+@@ -604,6 +610,7 @@
+ 
+ 	ready_buf->vb.vb2_buf.timestamp = ts;
+ 	ready_buf->vb.sequence = output->sequence++;
++	sync_valid = camss_sync_done(line, ready_buf, ts);
+ 
+ 	index = 0;
+ 	output->buf[0] = output->buf[1];
+@@ -619,7 +626,7 @@
+ 
+ 	spin_unlock_irqrestore(&vfe->output_lock, flags);
+ 
+-	vb2_buffer_done(&ready_buf->vb.vb2_buf, VB2_BUF_STATE_DONE);
++	vb2_buffer_done(&ready_buf->vb.vb2_buf, sync_valid ? VB2_BUF_STATE_DONE : VB2_BUF_STATE_ERROR);
+ 
+ 	return;
+ 
+--- a/camss-vfe.c
++++ b/camss-vfe.c
+@@ -24,6 +24,7 @@
+ 
+ #include "camss-vfe.h"
+ #include "camss.h"
++#include "camss-sync.h"
+ 
+ #define MSM_VFE_NAME "msm_vfe"
+ 
+@@ -964,6 +965,7 @@
+ 				"Failed to enable vfe outputs\n");
+ 	} else {
+ 		ret = vfe->res->hw_ops->vfe_disable(line);
++		camss_sync_unbind(line);
+ 		if (ret < 0)
+ 			dev_err(vfe->camss->dev,
+ 				"Failed to disable vfe outputs\n");
+--- a/camss-video.c
++++ b/camss-video.c
+@@ -16,6 +16,8 @@
+ #include <media/videobuf2-dma-sg.h>
+ 
+ #include "camss-video.h"
++#include "camss-sync.h"
++#include "camss-vfe.h"
+ #include "camss.h"
+ 
+ #define CAMSS_FRAME_MIN_WIDTH		1
+@@ -262,6 +264,7 @@
+ 			goto error;
+ 	}
+ 
++	camss_sync_stream_started(video);
+ 	return 0;
+ 
+ error:
+--- /dev/null
++++ b/camss-sync.c
+@@ -0,0 +1,686 @@
++// SPDX-License-Identifier: GPL-2.0-only
++/* Board-specific, opt-in SC132GS trigger-reference timestamps, ABI v4.
++ * Default mode is off. Mode 1 records only; mode 2 requires a measured SOF
++ * delay window. GPIO write brackets are host times, not electrical timestamps.
++ */
++#include <linux/debugfs.h>
++#include <linux/gpio/consumer.h>
++#include <linux/gpio/driver.h>
++#include <linux/gpio/machine.h>
++#include <linux/hrtimer.h>
++#include <linux/moduleparam.h>
++#include <linux/of.h>
++#include <linux/seq_file.h>
++#include <linux/slab.h>
++#include <linux/spinlock.h>
++#include <linux/io.h>
++#include <linux/cpu.h>
++#include <linux/smp.h>
++#include <linux/pm_qos.h>
++#include <linux/workqueue.h>
++#include <clocksource/arm_arch_timer.h>
++#include <media/v4l2-ctrls.h>
++#include "camss.h"
++#include "camss-csid.h"
++#include "camss-vfe.h"
++#include "camss-sync.h"
++#include "camss-sync-match.h"
++
++static unsigned int fsync_mode;
++module_param(fsync_mode, uint, 0444);
++MODULE_PARM_DESC(fsync_mode, "0=off, 1=record only, 2=validated trigger timestamps");
++/* A single immutable output offset; never used in trigger association. */
++static unsigned long long timestamp_offset_ns;
++module_param(timestamp_offset_ns, ullong, 0444);
++MODULE_PARM_DESC(timestamp_offset_ns, "Fixed shared exposure-start estimate offset (ns), default 0");
++static unsigned int sof_min_us, sof_max_us;
++module_param(sof_min_us, uint, 0444);
++module_param(sof_max_us, uint, 0444);
++#define PERIOD_NS 33333333ULL
++#define PULSE_NS 100000ULL
++#define LATE_BUDGET_NS 500000ULL
++/* Characterized full-frame CSI span <15.385ms, rounded up plus guard. */
++#define READOUT_BOUND_NS 15500000ULL
++#define READOUT_GUARD_NS 250000ULL
++#define PULSE_OVERRUN_NS 25000ULL
++#define EVENTS 8192
++#define PULSES 128
++#define FRAMES 32
++#define TRIGGER_EVENTS 256
++#define ACQUIRE_NS 1000000000ULL
++enum sync_error { SYNC_OK, SYNC_GPIO, SYNC_NO_TRIGGER, SYNC_AMBIGUOUS,
++	SYNC_DUPLICATE, SYNC_OVERFLOW, SYNC_NO_SOF, SYNC_HW_REGRESSION,
++	SYNC_NOT_RUNNING, SYNC_STARVATION, SYNC_TRIGGER_GAP, SYNC_PHASE,
++	SYNC_HARDWARE_FRAME, SYNC_ACQUIRING, SYNC_PULSE_WIDTH };
++struct frame_event { u64 trigger, timestamp, sof, hw_sof; bool startup; };
++struct sync_event { u64 serial, session, ns, a, b, c; u32 kind, eye, code, sequence; };
++struct sync_eye {
++	struct vfe_line *line;
++	struct csid_device *csid;
++	u32 rdi, head, count;
++	u64 bind_hw, bind_ns, last_hw, last_trigger, sof_count, done_count;
++	bool qualified, armed, first_post_arm;
++	u64 arm_hw;
++	u32 startup_end;
++	struct frame_event frames[FRAMES];
++};
++struct trigger_event { u64 before, after, id, extra; u32 kind, code; };
++struct camss_sync {
++	struct camss *camss;
++	struct gpio_desc *gpio[2];
++	struct gpio_device *gdev;
++	struct hrtimer timer;
++	spinlock_t lock;
++	/* Producer publication never shares the frame/diagnostic lock. */
++	raw_spinlock_t trigger_lock;
++	struct work_struct trigger_work;
++	struct trigger_event pending[TRIGGER_EVENTS];
++	u32 pending_head, pending_count, trigger_error;
++	struct mutex control;
++	struct pm_qos_request latency;
++	bool running, asserted, removing;
++	u64 epoch, slot, next, pulse_end, session, pulse_id, serial, skipped, error_count;
++	u64 last_assert_after, last_deassert_after;
++	u64 startup_dropped;
++	u32 error;
++	int timer_cpu, worker_cpu;
++	struct camss_sync_trigger pulses[PULSES];
++	struct sync_eye eyes[2];
++	struct sync_event events[EVENTS];
++	struct dentry *debug;
++};
++
++static void record(struct camss_sync *s, u32 kind, u32 eye, u64 ns,
++		   u64 a, u64 b, u64 c, u32 sequence, u32 code)
++{
++	u64 serial = ++s->serial;
++	s->events[serial % EVENTS] = (struct sync_event){serial, s->session,
++		ns, a, b, c, kind, eye, code, sequence};
++}
++static void fail(struct camss_sync *s, enum sync_error error)
++{
++	if (fsync_mode == 2) s->error_count++;
++	if (fsync_mode == 2 && !s->error) {
++		s->error = error;
++		record(s, 4, 2, ktime_get_ns(), 0, 0, 0, 0, error);
++	}
++}
++
++/* The timer only produces actual GPIO brackets. Frame association and trace
++ * formatting run independently; neither can change the absolute cadence. */
++static void drain_triggers(struct work_struct *work)
++{
++	struct camss_sync *s = container_of(work, struct camss_sync, trigger_work);
++	struct trigger_event e;
++	unsigned long flags;
++	for (;;) {
++		raw_spin_lock_irqsave(&s->trigger_lock, flags);
++		if (!s->pending_count) {
++			raw_spin_unlock_irqrestore(&s->trigger_lock, flags);
++			break;
++		}
++		e = s->pending[s->pending_head];
++		s->pending_head = (s->pending_head + 1) % TRIGGER_EVENTS;
++		s->pending_count--;
++		raw_spin_unlock_irqrestore(&s->trigger_lock, flags);
++		spin_lock_irqsave(&s->lock, flags);
++		record(s, e.kind, 2, e.before, e.id, e.after, e.extra, 0, e.code);
++		spin_unlock_irqrestore(&s->lock, flags);
++	}
++	spin_lock_irqsave(&s->lock, flags);
++	if (READ_ONCE(s->trigger_error)) fail(s, READ_ONCE(s->trigger_error));
++	spin_unlock_irqrestore(&s->lock, flags);
++}
++static void publish_trigger(struct camss_sync *s, struct trigger_event e)
++{
++	unsigned long flags;
++	raw_spin_lock_irqsave(&s->trigger_lock, flags);
++	if (e.kind == 1)
++		s->pulses[e.id % PULSES] = (struct camss_sync_trigger){e.id, e.before, e.after};
++	if (s->pending_count == TRIGGER_EVENTS) {
++		WRITE_ONCE(s->trigger_error, SYNC_OVERFLOW);
++	} else {
++		s->pending[(s->pending_head + s->pending_count) % TRIGGER_EVENTS] = e;
++		s->pending_count++;
++	}
++	raw_spin_unlock_irqrestore(&s->trigger_lock, flags);
++	/* A frame-lock waiter must never mask IRQs on the timer's CPU. */
++	queue_work_on(s->worker_cpu, system_wq, &s->trigger_work);
++}
++static enum hrtimer_restart tick(struct hrtimer *timer)
++{
++	struct camss_sync *s = container_of(timer, struct camss_sync, timer);
++	u64 before, after, rise_before, rise_after, next_slot, earliest;
++	unsigned long values, flags;
++	int ret;
++	if (!READ_ONCE(s->running) || READ_ONCE(s->trigger_error) == SYNC_GPIO) {
++		gpiod_set_value(s->gpio[0], 1);
++		gpiod_set_value(s->gpio[1], 1);
++		return HRTIMER_NORESTART;
++	}
++	/* Keep the entire short pulse in one hard callback. Two separately
++	 * scheduled edges allowed a late release to move the sensor frame
++	 * outside its measured window, then shorten the next rising interval.
++	 * GPIO cannot sleep (checked at probe). No workqueue/frame lock is
++	 * touched while the pulse is asserted; 100us * 30Hz is 0.3% of one CPU.
++	 */
++	local_irq_save(flags);
++	before = ktime_get_ns();
++	earliest = camss_sync_earliest_edge(s->next, s->last_assert_after,
++		s->last_deassert_after, PERIOD_NS - LATE_BUDGET_NS, PULSE_NS);
++	if (before < earliest) {
++		local_irq_restore(flags);
++		hrtimer_set_expires(timer, ns_to_ktime(earliest));
++		return HRTIMER_RESTART;
++	}
++	/* Bounded start jitter is safe only while the full characterized
++	 * exposure/readout fits before the earliest following slot. The
++	 * mode-2 probe gate checks that margin; never emit a catch-up pulse.
++	 */
++	if (before - s->next > LATE_BUDGET_NS) {
++		local_irq_restore(flags);
++		next_slot = camss_sync_future_slot(s->epoch, before, PERIOD_NS);
++		publish_trigger(s, (struct trigger_event){before, before, s->slot + 1, s->next, 10, SYNC_TRIGGER_GAP});
++		s->skipped += next_slot - s->slot;
++		s->slot = next_slot;
++		s->next = s->epoch + s->slot * PERIOD_NS;
++		hrtimer_set_expires(timer, ns_to_ktime(s->next));
++		return HRTIMER_RESTART;
++	}
++	values = 0;
++	ret = gpiod_set_array_value(2, s->gpio, NULL, &values);
++	after = ktime_get_ns();
++	if (ret) {
++		WRITE_ONCE(s->trigger_error, SYNC_GPIO);
++		gpiod_set_value(s->gpio[0], 1);
++		gpiod_set_value(s->gpio[1], 1);
++		local_irq_restore(flags);
++		publish_trigger(s, (struct trigger_event){before, after, s->slot + 1, 0, 4, SYNC_GPIO});
++		return HRTIMER_NORESTART;
++	}
++	s->pulse_id = s->slot + 1;
++	s->last_assert_after = after;
++	s->pulse_end = after + PULSE_NS;
++	while (ktime_get_ns() < s->pulse_end) cpu_relax();
++	rise_before = ktime_get_ns();
++	values = 3;
++	ret = gpiod_set_array_value(2, s->gpio, NULL, &values);
++	rise_after = ktime_get_ns();
++	s->last_deassert_after = rise_after;
++	if (ret) WRITE_ONCE(s->trigger_error, SYNC_GPIO);
++	else if (after - before > PULSE_OVERRUN_NS ||
++		 rise_after - s->pulse_end > PULSE_OVERRUN_NS)
++		WRITE_ONCE(s->trigger_error, SYNC_PULSE_WIDTH);
++	local_irq_restore(flags);
++	/* Publish the low reference unchanged, before any characterized SOF
++	 * can occur (minimum >100us pulse plus bounded GPIO completion).
++	 */
++	publish_trigger(s, (struct trigger_event){before, after, s->pulse_id, s->skipped, 1, 0});
++	publish_trigger(s, (struct trigger_event){rise_before, rise_after, s->pulse_id,
++		s->pulse_end, 9, READ_ONCE(s->trigger_error)});
++	if (READ_ONCE(s->trigger_error)) return HRTIMER_NORESTART;
++	/* No drift: only the absolute epoch selects the next slot. */
++	next_slot = camss_sync_future_slot(s->epoch, rise_after + PERIOD_NS / 2, PERIOD_NS);
++	if (next_slot < s->slot + 1) next_slot = s->slot + 1;
++	if (next_slot > s->slot + 1) {
++		s->skipped += next_slot - s->slot - 1;
++		publish_trigger(s, (struct trigger_event){rise_after, rise_after,
++			s->slot + 2, s->epoch + (s->slot + 1) * PERIOD_NS, 10, SYNC_TRIGGER_GAP});
++	}
++	s->slot = next_slot;
++	s->next = s->epoch + s->slot * PERIOD_NS;
++	hrtimer_set_expires(timer, ns_to_ktime(s->next));
++	return HRTIMER_RESTART;
++}
++
++static ssize_t fsync_control_show(struct device *dev, struct device_attribute *attr, char *buf)
++{
++	struct camss *camss = dev_get_drvdata(dev);
++	struct camss_sync *s = camss->sync;
++	unsigned long flags;
++	ssize_t n;
++	spin_lock_irqsave(&s->lock, flags);
++	n = sysfs_emit(buf, "abi=4 timestamp_offset_ns=%llu trigger_hz=30 frame_step=1 locked_mask=%u startup_dropped=%llu startup_end0=%u startup_end1=%u node0=%u node1=%u mode=%u running=%u session=%llu pulses=%llu skipped=%llu cpu=%d worker_cpu=%d error=%u error_count=%llu source=%s\n",
++		timestamp_offset_ns, (unsigned int)s->eyes[0].qualified | ((unsigned int)s->eyes[1].qualified << 1), s->startup_dropped,
++		s->eyes[0].startup_end, s->eyes[1].startup_end,
++		s->eyes[0].line ? s->eyes[0].line->video_out.vdev.num : ~0U,
++		s->eyes[1].line ? s->eyes[1].line->video_out.vdev.num : ~0U,
++		fsync_mode, s->running, s->session, s->pulse_id, s->skipped, s->timer_cpu, s->worker_cpu, s->error ? s->error : READ_ONCE(s->trigger_error), s->error_count, timestamp_offset_ns ? "exposure_start_estimate" : "fsync_host_reference");
++	spin_unlock_irqrestore(&s->lock, flags);
++	return n;
++}
++static void start_timer_on_cpu(void *data)
++{
++	struct camss_sync *s = data;
++	hrtimer_start(&s->timer, ns_to_ktime(s->next), HRTIMER_MODE_ABS_PINNED_HARD);
++}
++static ssize_t fsync_control_store(struct device *dev, struct device_attribute *attr,
++				  const char *buf, size_t count)
++{
++	struct camss_sync *s = ((struct camss *)dev_get_drvdata(dev))->sync;
++	unsigned long flags;
++	int ret = 0;
++	mutex_lock(&s->control);
++	if (s->removing) { mutex_unlock(&s->control); return -ENODEV; }
++	if (sysfs_streq(buf, "stop")) {
++		spin_lock_irqsave(&s->lock, flags);
++		s->running = false;
++		spin_unlock_irqrestore(&s->lock, flags);
++		hrtimer_cancel(&s->timer);
++		flush_work(&s->trigger_work);
++		if (cpu_latency_qos_request_active(&s->latency))
++			cpu_latency_qos_remove_request(&s->latency);
++		gpiod_set_value(s->gpio[0], 1);
++		gpiod_set_value(s->gpio[1], 1);
++	} else if (sysfs_streq(buf, "start")) {
++		spin_lock_irqsave(&s->lock, flags);
++		if (s->running || s->eyes[0].line || s->eyes[1].line) {
++			ret = -EBUSY;
++		} else {
++			raw_spin_lock(&s->trigger_lock);
++			memset(s->pulses, 0, sizeof(s->pulses));
++			s->pending_head = s->pending_count = 0;
++			s->trigger_error = 0;
++			raw_spin_unlock(&s->trigger_lock);
++			memset(s->eyes, 0, sizeof(s->eyes));
++			s->session++;
++			s->pulse_id = 0;
++			s->error = 0;
++			s->error_count = 0;
++			s->startup_dropped = 0;
++			s->skipped = 0;
++			s->asserted = false;
++			s->last_assert_after = s->last_deassert_after = 0;
++			s->running = true;
++			s->epoch = ktime_get_ns() + 100000000ULL;
++			s->slot = 0;
++			s->next = s->epoch;
++		}
++		spin_unlock_irqrestore(&s->lock, flags);
++		if (!ret) {
++			if (!cpu_latency_qos_request_active(&s->latency))
++				cpu_latency_qos_add_request(&s->latency, 50);
++			cpus_read_lock();
++			s->timer_cpu = cpumask_last(cpu_online_mask);
++			s->worker_cpu = cpumask_first(cpu_online_mask);
++			if (s->worker_cpu == s->timer_cpu)
++				ret = -EOPNOTSUPP;
++			else
++				ret = smp_call_function_single(s->timer_cpu,
++						start_timer_on_cpu, s, 1);
++			cpus_read_unlock();
++			if (ret) {
++				spin_lock_irqsave(&s->lock, flags);
++				s->running = false;
++				spin_unlock_irqrestore(&s->lock, flags);
++				cpu_latency_qos_remove_request(&s->latency);
++			}
++		}
++	} else ret = -EINVAL;
++	mutex_unlock(&s->control);
++	return ret ? ret : count;
++}
++static DEVICE_ATTR_RW(fsync_control);
++
++static int event_show(struct seq_file *file, void *unused)
++{
++	struct camss_sync *s = file->private;
++	struct sync_event *copy;
++	unsigned long flags;
++	u64 end, start, i;
++	copy = kvmalloc_array(EVENTS, sizeof(*copy), GFP_KERNEL);
++	if (!copy) return -ENOMEM;
++	spin_lock_irqsave(&s->lock, flags);
++	end = s->serial;
++	spin_unlock_irqrestore(&s->lock, flags);
++	/* Avoid holding an IRQ-disabling lock over a half-megabyte copy. */
++	for (i = 0; i < EVENTS; i += 64) {
++		spin_lock_irqsave(&s->lock, flags);
++		memcpy(&copy[i], &s->events[i], 64 * sizeof(*copy));
++		spin_unlock_irqrestore(&s->lock, flags);
++	}
++	seq_puts(file, "# abi=2 serial session kind eye ns a b c sequence error\n");
++	start = end >= EVENTS ? end - EVENTS + 1 : 1;
++	for (i = start; i <= end; i++) {
++		struct sync_event *e = &copy[i % EVENTS];
++		if (e->serial != i) continue;
++		seq_printf(file, "%llu %llu %u %u %llu %llu %llu %llu %u %u\n",
++			e->serial, e->session, e->kind, e->eye, e->ns, e->a,
++			e->b, e->c, e->sequence, e->code);
++	}
++	kvfree(copy);
++	return 0;
++}
++DEFINE_SHOW_ATTRIBUTE(event);
++
++static int match_chip(struct gpio_chip *chip, void *data)
++{
++	return chip->parent && chip->parent->of_node &&
++		of_device_is_compatible(chip->parent->of_node, "qcom,sc7280-pinctrl");
++}
++static void cleanup(void *data)
++{
++	struct camss_sync *s = data;
++	camss_sync_remove(s->camss);
++	if (!IS_ERR_OR_NULL(s->gpio[1])) gpiochip_free_own_desc(s->gpio[1]);
++	if (!IS_ERR_OR_NULL(s->gpio[0])) gpiochip_free_own_desc(s->gpio[0]);
++	if (s->gdev) gpio_device_put(s->gdev);
++}
++int camss_sync_init(struct camss *camss)
++{
++	struct gpio_chip *chip;
++	struct gpio_device *gdev;
++	struct camss_sync *s;
++	int ret;
++	if (timestamp_offset_ns > PERIOD_NS / 2 ||
++	    (timestamp_offset_ns && fsync_mode != 2)) return -EINVAL;
++	if (!fsync_mode) return 0;
++	if (fsync_mode > 2 || camss->res->version != CAMSS_7280 ||
++	    (fsync_mode == 2 && (!sof_max_us || sof_max_us <= sof_min_us ||
++		(u64)sof_min_us * 1000 <= PULSE_NS + 2 * PULSE_OVERRUN_NS ||
++		(u64)sof_max_us * 1000 + READOUT_BOUND_NS + READOUT_GUARD_NS >= PERIOD_NS - LATE_BUDGET_NS ||
++		(u64)(sof_max_us - sof_min_us) * 1000 >= PERIOD_NS - LATE_BUDGET_NS))) return -EINVAL;
++	gdev = gpio_device_find(NULL, match_chip);
++	if (!gdev) return -EPROBE_DEFER;
++	chip = gpio_device_get_chip(gdev);
++	s = devm_kzalloc(camss->dev, sizeof(*s), GFP_KERNEL);
++	if (!s) { gpio_device_put(gdev); return -ENOMEM; }
++	s->gdev = gdev;
++	s->camss = camss;
++	s->timer_cpu = -1;
++	s->worker_cpu = -1;
++	spin_lock_init(&s->lock);
++	raw_spin_lock_init(&s->trigger_lock);
++	INIT_WORK(&s->trigger_work, drain_triggers);
++	mutex_init(&s->control);
++	hrtimer_init(&s->timer, CLOCK_MONOTONIC, HRTIMER_MODE_ABS_PINNED_HARD);
++	s->timer.function = tick;
++	camss->sync = s;
++	s->gpio[0] = gpiochip_request_own_desc(chip, 18, "sc132gs-kernel-fsync", GPIO_ACTIVE_HIGH, GPIOD_OUT_HIGH);
++	if (IS_ERR(s->gpio[0])) { ret = PTR_ERR(s->gpio[0]); gpio_device_put(gdev); return ret; }
++	s->gpio[1] = gpiochip_request_own_desc(chip, 19, "sc132gs-kernel-fsync", GPIO_ACTIVE_HIGH, GPIOD_OUT_HIGH);
++	ret = devm_add_action_or_reset(camss->dev, cleanup, s);
++	if (ret) return ret;
++	if (IS_ERR(s->gpio[1])) return PTR_ERR(s->gpio[1]);
++	if (gpiod_cansleep(s->gpio[0]) || gpiod_cansleep(s->gpio[1])) return -EOPNOTSUPP;
++	ret = device_create_file(camss->dev, &dev_attr_fsync_control);
++	if (ret) return ret;
++	s->debug = debugfs_create_dir("sc132gs_sync", NULL);
++	debugfs_create_file("events", 0400, s->debug, s, &event_fops);
++	return 0;
++}
++void camss_sync_remove(struct camss *camss)
++{
++	struct camss_sync *s = camss->sync;
++	unsigned long flags;
++	if (!s) return;
++	mutex_lock(&s->control);
++	spin_lock_irqsave(&s->lock, flags);
++	s->removing = true;
++	s->running = false;
++	spin_unlock_irqrestore(&s->lock, flags);
++	hrtimer_cancel(&s->timer);
++		flush_work(&s->trigger_work);
++	if (cpu_latency_qos_request_active(&s->latency))
++		cpu_latency_qos_remove_request(&s->latency);
++	if (!IS_ERR_OR_NULL(s->gpio[0])) gpiod_set_value(s->gpio[0], 1);
++	if (!IS_ERR_OR_NULL(s->gpio[1])) gpiod_set_value(s->gpio[1], 1);
++	mutex_unlock(&s->control);
++	device_remove_file(camss->dev, &dev_attr_fsync_control);
++	debugfs_remove_recursive(s->debug);
++	s->debug = NULL;
++}
++
++int camss_sync_bind(struct vfe_line *line)
++{
++	struct camss *camss = to_vfe(line)->camss;
++	struct camss_sync *s = camss->sync;
++	struct media_entity *entity = &line->subdev.entity;
++	struct media_pad *pad;
++	struct csid_device *csid = NULL;
++	struct media_entity *sensor_entity;
++	struct v4l2_subdev *sensor;
++	struct v4l2_ctrl *hdr, *exposure;
++	struct v4l2_subdev_format format = {.which = V4L2_SUBDEV_FORMAT_ACTIVE, .pad = 0};
++	unsigned long flags;
++	u32 i, rdi = 0, eye;
++	int ret = 0;
++	if (!s) return 0;
++	/* The calibrated latency is valid only for this full Linear profile.
++	 * SC132GS itself rejects HDR/layout changes while streaming. Its linear
++	 * exposure ceiling is below one 30Hz period; uncalibrated settings must
++	 * yield no candidate, never an adjacent trigger alias. */
++	sensor_entity = camss_find_sensor(entity);
++	if (!sensor_entity) return -ENOLINK;
++	sensor = media_entity_to_v4l2_subdev(sensor_entity);
++	if (strncmp(sensor->name, "sc132gs", 7) || !sensor->ctrl_handler)
++		return -EOPNOTSUPP;
++	hdr = v4l2_ctrl_find(sensor->ctrl_handler, V4L2_CID_WIDE_DYNAMIC_RANGE);
++	exposure = v4l2_ctrl_find(sensor->ctrl_handler, V4L2_CID_EXPOSURE);
++	if (!hdr || !exposure || v4l2_ctrl_g_ctrl(hdr) ||
++	    exposure->minimum != 8 || exposure->maximum > 2560)
++		return -EOPNOTSUPP;
++	ret = v4l2_subdev_call(sensor, pad, get_fmt, NULL, &format);
++	if (ret || format.format.width != 1088 || format.format.height != 1280 ||
++	    format.format.code != MEDIA_BUS_FMT_SRGGB10_1X10)
++		return ret ? ret : -EOPNOTSUPP;
++	for (i = 0; i < 8; i++) {
++		pad = media_pad_remote_pad_first(&entity->pads[0]);
++		if (!pad) return -ENOLINK;
++		entity = pad->entity;
++		for (rdi = 0; rdi < camss->res->csid_num; rdi++)
++			if (entity == &camss->csid[rdi].subdev.entity) {
++				csid = &camss->csid[rdi];
++				break;
++			}
++		if (csid) { rdi = pad->index - MSM_CSID_PAD_FIRST_SRC; break; }
++	}
++	if (!csid || rdi >= MSM_CSID_MAX_SRC_STREAMS) return -ENOLINK;
++	if (csid->phy.csiphy_id == 1) eye = 0;
++	else if (csid->phy.csiphy_id == 4) eye = 1;
++	else return -EOPNOTSUPP;
++	spin_lock_irqsave(&s->lock, flags);
++	if (!s->running || s->error || READ_ONCE(s->trigger_error)) ret = -EPIPE;
++	else if (s->eyes[eye].line) ret = -EBUSY;
++	else {
++		s->eyes[eye] = (struct sync_eye){.line = line, .csid = csid, .rdi = rdi,
++			.bind_ns = ktime_get_ns(), .bind_hw = arch_timer_read_counter()};
++		record(s, 5, eye, ktime_get_ns(), csid->id, rdi, to_vfe(line)->id, line->id, 0);
++	}
++	spin_unlock_irqrestore(&s->lock, flags);
++	return ret;
++}
++void camss_sync_unbind(struct vfe_line *line)
++{
++	struct camss_sync *s = to_vfe(line)->camss->sync;
++	unsigned long flags;
++	u32 i;
++	if (!s) return;
++	mutex_lock(&s->control);
++	spin_lock_irqsave(&s->lock, flags);
++	for (i = 0; i < 2; i++) if (s->eyes[i].line == line) {
++		record(s, 6, i, ktime_get_ns(), 0, 0, 0, 0, 0);
++		memset(&s->eyes[i], 0, sizeof(s->eyes[i]));
++	}
++	/* STREAMOFF ends this session. A remaining consumer gets ERROR if it
++	 * continues to dequeue; an ordinary complete shutdown is not a fault.
++	 */
++	s->running = false;
++	spin_unlock_irqrestore(&s->lock, flags);
++	hrtimer_cancel(&s->timer);
++		flush_work(&s->trigger_work);
++	if (cpu_latency_qos_request_active(&s->latency))
++		cpu_latency_qos_remove_request(&s->latency);
++	gpiod_set_value(s->gpio[0], 1);
++	gpiod_set_value(s->gpio[1], 1);
++	mutex_unlock(&s->control);
++}
++/* Arm only after every upstream STREAMON has returned successfully.  The
++ * first subsequent hardware frame is deliberately untrusted: it may have
++ * started freely while the sensor was entering external trigger mode. */
++void camss_sync_stream_started(struct camss_video *video)
++{
++	struct camss_sync *s = video->camss->sync;
++	unsigned long flags;
++	u32 i;
++	if (!s) return;
++	spin_lock_irqsave(&s->lock, flags);
++	for (i = 0; i < 2; i++) {
++		struct sync_eye *e = &s->eyes[i];
++		if (e->line && &e->line->video_out == video) {
++			e->arm_hw = arch_timer_read_counter();
++			e->armed = true;
++			record(s, 14, i, ktime_get_ns(), e->arm_hw, 0, 0, 0, 0);
++		}
++	}
++	spin_unlock_irqrestore(&s->lock, flags);
++}
++bool camss_sync_observes(struct csid_device *csid, unsigned int rdi)
++{
++	return csid->camss->sync && !csid->testgen.enabled && rdi == 0;
++}
++void camss_sync_sof(struct csid_device *csid, unsigned int rdi, u64 hw_sof)
++{
++	struct camss_sync *s = csid->camss->sync;
++	struct sync_eye *e = NULL;
++	struct camss_sync_trigger found = {};
++	unsigned long flags;
++	u64 counter = arch_timer_read_counter();
++	u64 irq_ns = ktime_get_ns();
++	u64 now = irq_ns;
++	u32 rate = arch_timer_get_cntfrq();
++	bool mapping_valid;
++	bool acquiring = false;
++	u32 i, eye = 2, matches = 0;
++	if (!s) return;
++	spin_lock_irqsave(&s->lock, flags);
++	for (i = 0; i < 2; i++) if (s->eyes[i].csid == csid && s->eyes[i].rdi == rdi) {
++		e = &s->eyes[i]; eye = i; break;
++	}
++	if (!e) goto out;
++	/* A retained CSID latch can predate this graph binding. It belongs to
++	 * an old session and cannot identify any current DMA buffer. */
++	if (hw_sof < e->bind_hw) {
++		record(s, 12, eye, irq_ns, hw_sof, e->bind_hw, 0, 0, 0);
++		goto out;
++	}
++	/* CSID's QTimer latch and the ARM counter share the 19.2MHz timebase.
++	 * Map the hardware frame event to CLOCK_MONOTONIC at the current IRQ,
++	 * rather than letting IRQ scheduling jitter select another pulse.
++	 */
++	mapping_valid = rate == 19200000 && hw_sof && counter >= hw_sof && counter-hw_sof < rate;
++	if (mapping_valid) {
++		now -= div_u64((counter-hw_sof)*10000,192);
++	} else fail(s, SYNC_HARDWARE_FRAME);
++	record(s, 8, eye, irq_ns, now, counter, rate, e->sof_count, mapping_valid ? 0 : SYNC_HARDWARE_FRAME);
++	e->sof_count++;
++	if (hw_sof <= e->last_hw) fail(s, SYNC_HW_REGRESSION);
++	e->last_hw = hw_sof;
++	/* Copy one immutable trigger at a time; no long producer lock or
++	 * shared diagnostic lock can postpone the electrical edge. */
++	for (i = 0; i < PULSES; i++) {
++		struct camss_sync_trigger pulse, candidate;
++		raw_spin_lock(&s->trigger_lock);
++		pulse = s->pulses[i];
++		raw_spin_unlock(&s->trigger_lock);
++		if (camss_sync_match(&pulse, 1, now, (u64)sof_min_us * 1000,
++			(u64)sof_max_us * 1000, &candidate)) {
++			found = candidate;
++			matches++;
++		}
++	}
++	if (fsync_mode == 2 && !e->last_trigger) {
++		bool initial = !e->armed || hw_sof < e->arm_hw;
++		if (!initial && !e->first_post_arm) {
++			e->first_post_arm = true;
++			initial = true;
++		}
++		acquiring = (initial || matches == 0) &&
++			irq_ns >= e->bind_ns && irq_ns - e->bind_ns < ACQUIRE_NS;
++		if (initial && !acquiring) fail(s, SYNC_NO_TRIGGER);
++	}
++	/* Ambiguity, hardware regressions and overflow remain fatal even while
++	 * acquiring.  Untrusted startup frames never receive a trigger identity. */
++	if (matches > 1) fail(s, SYNC_AMBIGUOUS);
++	else if (matches != 1 && !acquiring) fail(s, SYNC_NO_TRIGGER);
++	if (!acquiring && matches == 1) {
++		if (found.id <= e->last_trigger) fail(s, SYNC_DUPLICATE);
++		if (e->last_trigger && found.id != e->last_trigger + 1)
++			fail(s, SYNC_TRIGGER_GAP);
++		e->last_trigger = found.id;
++	}
++	record(s, 2, eye, now, acquiring ? 0 : found.id, hw_sof, s->pulse_id, e->sof_count,
++		acquiring ? SYNC_ACQUIRING : matches != 1);
++	if (e->count == FRAMES) { fail(s, SYNC_OVERFLOW); goto out; }
++	e->frames[(e->head + e->count) % FRAMES] = (struct frame_event){
++		.trigger = !acquiring && matches == 1 ? found.id : 0,
++		.timestamp = acquiring ? 0 : found.after,
++		.sof = now, .hw_sof = hw_sof, .startup = acquiring};
++	e->count++;
++out:
++	spin_unlock_irqrestore(&s->lock, flags);
++}
++static u64 read_stamp(struct csid_device *csid, u32 rdi, u32 offset)
++{
++	u32 base = (csid_is_lite(csid) ? 0x200 : 0x300) + rdi * 0x100 + offset;
++	u32 hi, lo, again;
++	do {
++		hi = readl_relaxed(csid->base + base + 4);
++		lo = readl_relaxed(csid->base + base);
++		again = readl_relaxed(csid->base + base + 4);
++	} while (hi != again);
++	return ((u64)hi << 32) | lo;
++}
++bool camss_sync_done(struct vfe_line *line, struct camss_buffer *buffer, u64 done_ns)
++{
++	struct camss_sync *s = to_vfe(line)->camss->sync;
++	struct sync_eye *e = NULL;
++	struct frame_event frame = {};
++	unsigned long flags;
++	u32 i, eye = 2;
++	bool valid = true;
++	if (!s) return true;
++	spin_lock_irqsave(&s->lock, flags);
++	for (i = 0; i < 2; i++) if (s->eyes[i].line == line) { e = &s->eyes[i]; eye = i; break; }
++	if (!e) { fail(s, SYNC_NO_SOF); goto out; }
++	e->done_count++;
++	if (!e->count) {
++		if (fsync_mode == 2 && !e->last_trigger && done_ns >= e->bind_ns &&
++		    done_ns - e->bind_ns < ACQUIRE_NS)
++			frame.startup = true;
++		else
++			fail(s, SYNC_NO_SOF);
++	}
++	else {
++		frame = e->frames[e->head];
++		e->head = (e->head + 1) % FRAMES; e->count--;
++	}
++	if (!line->output.buf[1]) fail(s, SYNC_STARVATION);
++	if (!s->running || (!frame.trigger && !frame.startup)) fail(s, SYNC_NO_TRIGGER);
++	if (frame.hw_sof) {
++		u64 current_sof = read_stamp(e->csid, e->rdi, 0x90);
++		u64 previous = read_stamp(e->csid, e->rdi, 0x98);
++		u64 eof = read_stamp(e->csid, e->rdi, 0xa0);
++		bool hw_valid = camss_sync_hardware_frame(frame.hw_sof, current_sof, previous, eof);
++		if (!hw_valid)
++			fail(s, SYNC_HARDWARE_FRAME);
++		record(s, 7, eye, done_ns, current_sof, previous, eof, buffer->vb.sequence, hw_valid ? 0 : SYNC_HARDWARE_FRAME);
++	}
++	if (frame.startup) {
++		s->startup_dropped++;
++		e->startup_end = buffer->vb.sequence + 1;
++	}
++	record(s, 3, eye, done_ns, frame.trigger, frame.hw_sof, frame.sof,
++		buffer->vb.sequence, s->error ? s->error : frame.startup ? SYNC_ACQUIRING : 0);
++out:
++	if (fsync_mode == 2) {
++		valid = !s->error && !READ_ONCE(s->trigger_error) && frame.trigger;
++		if (valid) {
++			/* Identity and raw trigger timestamps remain unchanged. */
++			buffer->vb.vb2_buf.timestamp = frame.timestamp + timestamp_offset_ns;
++			e->qualified = true;
++		}
++	}
++	spin_unlock_irqrestore(&s->lock, flags);
++	return valid;
++}
+--- /dev/null
++++ b/camss-sync.h
+@@ -0,0 +1,19 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef CAMSS_SC132GS_SYNC_H
++#define CAMSS_SC132GS_SYNC_H
++#include <linux/types.h>
++struct camss;
++struct csid_device;
++struct vfe_line;
++struct camss_buffer;
++struct camss_video;
++struct camss_sync;
++int camss_sync_init(struct camss *camss);
++void camss_sync_remove(struct camss *camss);
++int camss_sync_bind(struct vfe_line *line);
++void camss_sync_unbind(struct vfe_line *line);
++void camss_sync_stream_started(struct camss_video *video);
++bool camss_sync_observes(struct csid_device *csid, unsigned int rdi);
++void camss_sync_sof(struct csid_device *csid, unsigned int rdi, u64 hw_sof);
++bool camss_sync_done(struct vfe_line *line, struct camss_buffer *buffer, u64 done_ns);
++#endif
+--- /dev/null
++++ b/camss-sync-match.h
+@@ -0,0 +1,58 @@
++/* SPDX-License-Identifier: GPL-2.0-only */
++#ifndef CAMSS_SYNC_MATCH_H
++#define CAMSS_SYNC_MATCH_H
++#include <linux/types.h>
++struct camss_sync_trigger { __u64 id, before, after; };
++/* Retain the absolute epoch but rearm a too-close edge instead of inventing
++ * a missing pulse. Both same-polarity GPIO brackets remain separated. */
++static inline __u64 camss_sync_earliest_edge(__u64 deadline, __u64 last_low_after,
++		__u64 last_high_after, __u64 minimum_period, __u64 pulse_ns)
++{
++	__u64 next = deadline;
++	if (last_low_after && last_low_after + minimum_period > next)
++		next = last_low_after + minimum_period;
++	if (last_high_after && last_high_after + minimum_period > next + pulse_ns)
++		next = last_high_after + minimum_period - pulse_ns;
++	return next;
++}
++/* First absolute slot strictly after a time; never rebase the epoch. */
++static inline __u64 camss_sync_future_slot(__u64 epoch, __u64 now,
++		__u64 period_ns)
++{
++	return now < epoch ? 0 : (now - epoch) / period_ns + 1;
++}
++/* A DMA completion must refer to the latest finished hardware frame. If a
++ * newer SOF has arrived, EOF must still precede it and identify the prior SOF.
++ * Reject coalesced/missing frame events instead of consuming a guessed FIFO.
++ */
++static inline int camss_sync_hardware_frame(__u64 frame, __u64 current_sof,
++		__u64 previous, __u64 eof)
++{
++	if (!frame || !current_sof || !eof || frame > eof) return 0;
++	if (eof >= current_sof) return frame == current_sof;
++	return frame == previous && previous < current_sof;
++}
++/* Returns number of eligible triggers, never guesses a candidate. Caller must
++ * accept exactly one and separately enforce monotonic identity/session. */
++static inline unsigned int camss_sync_match(const struct camss_sync_trigger *pulses,
++		unsigned int size, __u64 sof_ns, __u64 minimum_ns, __u64 maximum_ns,
++		struct camss_sync_trigger *matched)
++{
++	unsigned int i, count = 0;
++	matched->id = 0;
++	matched->before = 0;
++	matched->after = 0;
++	if (minimum_ns > maximum_ns) return 0;
++	for (i = 0; i < size; i++) {
++		const struct camss_sync_trigger *p = &pulses[i];
++		__u64 delay;
++		if (!p->id || sof_ns < p->before || p->before > p->after) continue;
++		delay = sof_ns - p->before;
++		if (delay >= minimum_ns && delay <= maximum_ns) {
++			*matched = *p;
++			count++;
++		}
++	}
++	return count;
++}
++#endif

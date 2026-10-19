@@ -1,0 +1,73 @@
+{
+  "before_boot_id": "ba9da222-5ca3-4b9d-b599-adf1f2ad12e0",
+  "after_boot_id": "a3a945b1-30a4-4ff8-822f-ad497503d09f",
+  "state": {
+    "sensor_mode": "linear",
+    "binning": 0,
+    "max_fps": 24,
+    "fps": 24,
+    "ae": 1,
+    "brightness": 40,
+    "width": 1088,
+    "height": 1280,
+    "measured_fps_x10": 239,
+    "exposure_rows": 1243,
+    "gain_index": 0,
+    "exposure_ceiling_rows": 2560,
+    "limited": 0,
+    "control_error": 0,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 42,
+    "native_target": 17
+  },
+  "durable": {
+    "mode": "linear",
+    "binning": 0,
+    "max_fps": 24,
+    "fps": 24,
+    "ae": 1,
+    "brightness": 40,
+    "rows": 672,
+    "gain": 29,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 42,
+    "schema": 1
+  },
+  "runtime": {
+    "mode": "linear",
+    "binning": 0,
+    "max_fps": 24,
+    "fps": 24,
+    "ae": 1,
+    "brightness": 40,
+    "rows": 672,
+    "gain": 29,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 42,
+    "schema": 1
+  },
+  "loaded_srcversion": "C64E79680C45EF0FB084F9D",
+  "disk_srcversion": {
+    "returncode": 0,
+    "stdout": "C64E79680C45EF0FB084F9D",
+    "stderr": ""
+  },
+  "boot_service": {
+    "returncode": 0,
+    "stdout": "\u25cf sc132gs-camera-restore.service - Restore last verified SC132GS stereo camera settings\n     Loaded: loaded (/etc/systemd/system/sc132gs-camera-restore.service; enabled; preset: enabled)\n     Active: active (exited) since Wed 2026-10-07 18:40:22 CST; 15s ago\n    Process: 2016 ExecStart=/usr/bin/python3 /home/ubuntu/stereo-h265-rtsp/camera_platform.py restore (code=exited, status=0/SUCCESS)\n   Main PID: 2016 (code=exited, status=0/SUCCESS)\n        CPU: 11.427s\n\nOct 07 18:40:09 ubuntu systemd[1]: Starting sc132gs-camera-restore.service - Restore last verified SC132GS stereo camera settings...\nOct 07 18:40:22 ubuntu python3[2016]: ok sensor_mode=linear binning=0 max_fps=24 fps=24 ae=1 brightness=40 width=1088 height=1280 measured_fps_x10=239 exposure_rows=1243 gain_index=0 exposure_ceiling_rows=2560 limited=0 control_error=0 max_exposure_us=0 max_gain_index=128 revision=42 native_target=17\nOct 07 18:40:22 ubuntu systemd[1]: Finished sc132gs-camera-restore.service - Restore last verified SC132GS stereo camera settings.",
+    "stderr": ""
+  },
+  "boot_enabled": {
+    "returncode": 0,
+    "stdout": "enabled",
+    "stderr": ""
+  },
+  "kernel_errors": {
+    "returncode": 0,
+    "stdout": "Oct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 4080000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 8a00000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 4080000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas a300000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 3000000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 8a00000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas a300000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 4080000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 8a00000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 3000000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas a300000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 4080000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 8a00000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 3000000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas a300000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 4080000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 8a00000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 3000000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas a300000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 4080000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:55 ubuntu kernel: qcom_q6v5_pas 8a00000.remoteproc: failed to initialize qmi handle\nOct 07 18:39:58 ubuntu kernel: brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43456-sdio for chip BCM4345/9\nOct 07 18:39:59 ubuntu kernel: brcmfmac: brcmf_c_process_txcap_blob: no txcap_blob available (err=-2)\nOct 07 18:39:59 ubuntu kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/9 wl0: May 14 2020 17:26:08 version 7.84.17.1 (r871554) FWID 01-3d9e1d87\nOct 07 18:40:01 ubuntu kernel: qcom-apm gprsvc:service:2:1: CMD timeout for [1001021] opcode\nOct 07 18:40:01 ubuntu kernel: q6apm_lpass_dai_dev_probe: dai_data->cc is null\nOct 07 18:40:01 ubuntu kernel: snd-qcm6490 sound: ASoC: DAPM unknown pin Headset",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "runtime": {
+    "captured": 361,
+    "processed": 344,
+    "replaced": 17,
+    "capture_error": 0,
+    "capture_device_error": 0,
+    "processing_error": 0,
+    "capture_stop_error": 0,
+    "warmup_seconds": 2,
+    "requested_seconds": 10,
+    "first_api_ready_ns": 3272158276721,
+    "gray_encoded": 344,
+    "depth_encoded": 344,
+    "gray_max_queue": 0,
+    "depth_max_queue": 0,
+    "encoder_failed": false,
+    "interrupted": false,
+    "workers_joined": true
+  },
+  "restoration": {
+    "child_exit": 0,
+    "profile_hashes_unchanged": true,
+    "original_active": true
+  }
+}

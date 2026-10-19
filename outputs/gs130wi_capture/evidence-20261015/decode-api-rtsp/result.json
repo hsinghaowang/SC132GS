@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "failure": null,
+  "codec": "hevc",
+  "profile": "Main 10",
+  "decoded_frames": 91,
+  "correct_main10_pixel_format": true,
+  "correct_codec_profile": true,
+  "steady_pts_monotonic": true,
+  "steady_media_fps": 29.999833334259254,
+  "steady_wall_fps": 30.472320975113483,
+  "missing_pts_indices": [
+    0
+  ],
+  "scope": "bounded real RTSP/TCP decode; first 30 client-startup frames excluded only from rate calculation; no timestamps rewritten; no optical timing proof"
+}

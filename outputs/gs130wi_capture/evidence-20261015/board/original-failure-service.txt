@@ -1,0 +1,13 @@
+× sc132gs-camera-rtsp.service - /bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh
+     Loaded: loaded (/run/systemd/transient/sc132gs-camera-rtsp.service; transient)
+  Transient: yes
+     Active: failed (Result: exit-code) since Thu 2026-10-15 15:46:11 CST; 4min 18s ago
+   Duration: 1h 29min 13.575s
+    Process: 4471 ExecStart=/bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh (code=exited, status=1/FAILURE)
+   Main PID: 4471 (code=exited, status=1/FAILURE)
+        CPU: 56min 19.725s
+
+Oct 15 14:16:57 ubuntu systemd[1]: Started sc132gs-camera-rtsp.service - /bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh.
+Oct 15 15:46:11 ubuntu systemd[1]: sc132gs-camera-rtsp.service: Main process exited, code=exited, status=1/FAILURE
+Oct 15 15:46:11 ubuntu systemd[1]: sc132gs-camera-rtsp.service: Failed with result 'exit-code'.
+Oct 15 15:46:11 ubuntu systemd[1]: sc132gs-camera-rtsp.service: Consumed 56min 19.725s CPU time, 32.4M memory peak, 0B memory swap peak.

@@ -1,0 +1,13 @@
+Format Video Capture Multiplanar:
+	Width/Height      : 1088/1280
+	Pixel Format      : 'pRAA' (10-bit Bayer RGRG/GBGB Packed)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : sRGB
+	Transfer Function : sRGB
+	YCbCr/HSV Encoding: ITU-R 601
+	Quantization      : Full Range
+	Plane 0           :
+	   Bytes per Line : 1360
+	   Size Image     : 1740800

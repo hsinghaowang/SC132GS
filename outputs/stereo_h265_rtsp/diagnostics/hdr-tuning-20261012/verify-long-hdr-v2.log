@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/hdr-tuning-20261012/verify_long_hdr.py", line 49, in <module>
+    entry['accepted']=command('sc132gs-camera','apply','--mode','hdr',
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hdr-tuning-20261012/verify_long_hdr.py", line 29, in command
+    process.check_returncode()
+  File "/usr/lib/python3.12/subprocess.py", line 502, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '('sc132gs-camera', 'apply', '--mode', 'hdr', '--max-fps', '15', '--ae', 'off', '--hdr-total-rows', '4492', '--gain-index', '0')' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/hdr-tuning-20261012/verify_long_hdr.py", line 74, in <module>
+    record['restore']=command('sc132gs-camera','apply','--mode',saved['mode'],
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/hdr-tuning-20261012/verify_long_hdr.py", line 29, in command
+    process.check_returncode()
+  File "/usr/lib/python3.12/subprocess.py", line 502, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '('sc132gs-camera', 'apply', '--mode', 'hdr', '--max-fps', '30', '--ae', 'on', '--ae-target', '10', '--max-gain-index', '128', '--max-exposure-us', '0')' returned non-zero exit status 1.

@@ -1,0 +1,115 @@
+--- a/camss-csid-gen2.c
++++ b/camss-csid-gen2.c
+@@ -11,6 +11,18 @@
+ #include <linux/io.h>
+ #include <linux/kernel.h>
+ #include <linux/of.h>
++#include <linux/moduleparam.h>
++
++static bool geometry_guard;
++module_param(geometry_guard, bool, 0644);
++MODULE_PARM_DESC(geometry_guard, "Bound RAW10 payload to negotiated geometry");
++static unsigned int geometry_test_extra_lines;
++module_param(geometry_test_extra_lines, uint, 0644);
++MODULE_PARM_DESC(geometry_test_extra_lines, "Test-generator-only extra input lines (max 16)");
++
++static bool geometry_monitor;
++module_param(geometry_monitor, bool, 0644);
++MODULE_PARM_DESC(geometry_monitor, "Measure and report CSID input geometry errors");
+ 
+ #include "camss-csid.h"
+ #include "camss-csid-gen2.h"
+@@ -98,6 +110,15 @@
+ #define		RDI_CFG0_PACKING_FORMAT		30
+ #define		RDI_CFG0_ENABLE			31
+ 
++#define CSID_RDI_FORMAT_CFG0(rdi) ((csid_is_lite(csid) ? 0x270 : 0x370) + 0x100 * (rdi))
++#define CSID_RDI_FORMAT_CFG1(rdi) ((csid_is_lite(csid) ? 0x274 : 0x374) + 0x100 * (rdi))
++#define CSID_RDI_FORMAT_MEASURE(rdi) ((csid_is_lite(csid) ? 0x278 : 0x378) + 0x100 * (rdi))
++#define CSID_RDI_BYTE_PING(rdi) ((csid_is_lite(csid) ? 0x2e0 : 0x3e0) + 0x100 * (rdi))
++#define CSID_RDI_BYTE_PONG(rdi) ((csid_is_lite(csid) ? 0x2e4 : 0x3e4) + 0x100 * (rdi))
++#define CSID_GEOMETRY_ERRORS (BIT(13) | BIT(14))
++#define CSID_RDI_HCROP(rdi) ((csid_is_lite(csid) ? 0x21c : 0x31c) + 0x100 * (rdi))
++#define CSID_RDI_VCROP(rdi) ((csid_is_lite(csid) ? 0x220 : 0x320) + 0x100 * (rdi))
++
+ #define CSID_RDI_CFG1(rdi)			((csid_is_lite(csid) ? 0x204 : 0x304)\
+ 						+ 0x100 * (rdi))
+ #define		RDI_CFG1_TIMESTAMP_STB_SEL	0
+@@ -234,7 +255,7 @@
+ 
+ 	writel_relaxed(0x12345678, csid->base + CSID_TPG_LFSR_SEED);
+ 
+-	val = (input_format->height & 0x1fff) << TPG_DT_n_CFG_0_FRAME_HEIGHT;
++	val = ((input_format->height + min(geometry_test_extra_lines, 16U)) & 0x1fff) << TPG_DT_n_CFG_0_FRAME_HEIGHT;
+ 	val |= (input_format->width & 0x1fff) << TPG_DT_n_CFG_0_FRAME_WIDTH;
+ 	writel_relaxed(val, csid->base + CSID_TPG_DT_n_CFG_0(0));
+ 
+@@ -282,15 +303,50 @@
+ 	 */
+ 	u8 dt_id = vc & 0x03;
+ 
++	if (geometry_guard && format->data_type == DATA_TYPE_RAW_10BIT) {
++		u32 bytes = DIV_ROUND_UP(input_format->width * format->bpp * format->spp, 8);
++		/* Payload-only decoding measures horizontal positions in bytes.
++		 * Inclusive windows preserve every negotiated byte/line and prevent
++		 * malformed packets from extending DMA beyond sizeimage.
++		 */
++		writel_relaxed((bytes - 1) << 16, csid->base + CSID_RDI_HCROP(vc));
++		writel_relaxed((input_format->height - 1) << 16, csid->base + CSID_RDI_VCROP(vc));
++	}
++
+ 	val = 1 << RDI_CFG0_BYTE_CNTR_EN;
+ 	val |= 1 << RDI_CFG0_FORMAT_MEASURE_EN;
+ 	val |= 1 << RDI_CFG0_TIMESTAMP_EN;
+ 	/* note: for non-RDI path, this should be format->decode_format */
+-	val |= DECODE_FORMAT_PAYLOAD_ONLY << RDI_CFG0_DECODE_FORMAT;
++	/* RAW8 decoding preserves every packed RAW10 payload byte while
++	 * enabling the crop engine, which payload-only decoding bypasses.
++	 * The public media format and DMA allocation remain packed RAW10.
++	 */
++	val |= ((geometry_guard && format->data_type == DATA_TYPE_RAW_10BIT) ?
++		DECODE_FORMAT_UNCOMPRESSED_8_BIT : DECODE_FORMAT_PAYLOAD_ONLY) << RDI_CFG0_DECODE_FORMAT;
++
++	if (geometry_guard && format->data_type == DATA_TYPE_RAW_10BIT)
++		val |= BIT(RDI_CFG0_CROP_H_EN) | BIT(RDI_CFG0_CROP_V_EN);
++
+ 	val |= format->data_type << RDI_CFG0_DATA_TYPE;
+ 	val |= vc << RDI_CFG0_VIRTUAL_CHANNEL;
+ 	val |= dt_id << RDI_CFG0_DT_ID;
+ 	writel_relaxed(val, csid->base + CSID_RDI_CFG0(vc));
++
++	if (geometry_monitor) {
++		u32 bytes = DIV_ROUND_UP(input_format->width * format->bpp * format->spp, 8);
++		writel_relaxed((input_format->height << 16) | bytes,
++			       csid->base + CSID_RDI_FORMAT_CFG1(vc));
++		writel_relaxed(3, csid->base + CSID_RDI_FORMAT_CFG0(vc));
++		writel_relaxed(CSID_GEOMETRY_ERRORS, csid->base + CSID_CSI2_RDIN_IRQ_MASK(vc));
++		dev_info(csid->camss->dev, "csid_geometry armed csid=%u rdi=%u expected_bytes=%u height=%u\n",
++			 csid->id, vc, bytes, input_format->height);
++	} else {
++		/* Comparing malformed input size can suppress its EOF. Production
++		 * bounding must not depend on this opt-in diagnostic comparison.
++		 */
++		writel_relaxed(0, csid->base + CSID_RDI_FORMAT_CFG0(vc));
++		writel_relaxed(0, csid->base + CSID_CSI2_RDIN_IRQ_MASK(vc));
++	}
+ 
+ 	/* CSID_TIMESTAMP_STB_POST_IRQ */
+ 	val = 2 << RDI_CFG1_TIMESTAMP_STB_SEL;
+@@ -401,6 +457,16 @@
+ 		if (csid->phy.en_vc & BIT(i)) {
+ 			val = readl_relaxed(csid->base + CSID_CSI2_RDIN_IRQ_STATUS(i));
+ 			writel_relaxed(val, csid->base + CSID_CSI2_RDIN_IRQ_CLEAR(i));
++			if (geometry_monitor && (val & CSID_GEOMETRY_ERRORS)) {
++				u32 actual = readl_relaxed(csid->base + CSID_RDI_FORMAT_MEASURE(i));
++				u32 expected = readl_relaxed(csid->base + CSID_RDI_FORMAT_CFG1(i));
++				dev_warn_ratelimited(csid->camss->dev,
++					"csid_geometry mismatch csid=%u rdi=%u irq=%#x actual=%#x expected=%#x ping_bytes=%#x pong_bytes=%#x\n",
++					csid->id, i, val, actual, expected,
++					readl_relaxed(csid->base + CSID_RDI_BYTE_PING(i)),
++					readl_relaxed(csid->base + CSID_RDI_BYTE_PONG(i)));
++			}
++
+ 		}
+ 
+ 	val = 1 << IRQ_CMD_CLEAR;

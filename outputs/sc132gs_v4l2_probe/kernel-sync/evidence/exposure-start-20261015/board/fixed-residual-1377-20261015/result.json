@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "matched_triggers": 3698,
+  "first_trigger": 58,
+  "last_trigger": 3755,
+  "rows": 1377,
+  "nominal_rows_per_second": 84000,
+  "nominal_B_ns": 16392857.142857144,
+  "formula": "C = R - Y - B",
+  "Y": "raw actual GPIO-after host monotonic reference; not corrected DQBUF",
+  "R": "VFE DMA-done ISR host time; includes interrupt latency",
+  "selection": "first valid DMA-done of both eyes for each verified trigger",
+  "first_R_minus_Y": {
+    "count": 3698,
+    "mean_ns": 32139811.269334774,
+    "stddev_ns": 3787.2119371413587,
+    "min_ns": 32129850,
+    "median_ns": 32139563.0,
+    "p95_ns": 32144046,
+    "max_ns": 32303063
+  },
+  "first_C": {
+    "count": 3698,
+    "mean_ns": 15746954.12647763,
+    "stddev_ns": 3787.2119371413587,
+    "min_ns": 15736992.857142856,
+    "median_ns": 15746705.857142856,
+    "p95_ns": 15751188.857142856,
+    "max_ns": 15910205.857142856
+  },
+  "per_eye_R_minus_Y": [
+    {
+      "count": 3698,
+      "mean_ns": 32140292.319361817,
+      "stddev_ns": 8672.362732056581,
+      "min_ns": 32129850,
+      "median_ns": 32139578.5,
+      "p95_ns": 32144206,
+      "max_ns": 32358957
+    },
+    {
+      "count": 3698,
+      "mean_ns": 32376894.08977826,
+      "stddev_ns": 27128.130670367278,
+      "min_ns": 32131537,
+      "median_ns": 32370642.0,
+      "p95_ns": 32406285,
+      "max_ns": 32657531
+    }
+  ],
+  "per_eye_C": [
+    {
+      "count": 3698,
+      "mean_ns": 15747435.176504673,
+      "stddev_ns": 8672.362732056581,
+      "min_ns": 15736992.857142856,
+      "median_ns": 15746721.357142856,
+      "p95_ns": 15751348.857142856,
+      "max_ns": 15966099.857142856
+    },
+    {
+      "count": 3698,
+      "mean_ns": 15984036.946921114,
+      "stddev_ns": 27128.130670367278,
+      "min_ns": 15738679.857142856,
+      "median_ns": 15977784.857142856,
+      "p95_ns": 16013427.857142856,
+      "max_ns": 16264673.857142856
+    }
+  ],
+  "trace_lost": 0,
+  "physically_calibrated_exposure_start": false,
+  "output_offset_unchanged": true,
+  "limitations": [
+    "C combines trigger-to-exposure and readout/transport/IRQ latency",
+    "R-B equals exposure start plus post-exposure latency",
+    "B is register/row-rate nominal duration, not optical measurement"
+  ]
+}

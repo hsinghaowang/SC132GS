@@ -1,0 +1,10 @@
+{
+  "started_unix_ns": 1791802960251813108,
+  "finished_unix_ns": 1791802960345897088,
+  "arguments": [
+    "python3",
+    "-c",
+    "from pathlib import Path; names=[(p.parent.name,p.read_text().strip()) for p in Path('/proc').glob('[0-9]*/comm') if p.exists()]; camera=[r for r in names if r[1].startswith(('stereo-h265','sc132gs-fsync'))]; print(camera); assert not camera"
+  ],
+  "returncode": 0
+}

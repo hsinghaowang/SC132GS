@@ -1,0 +1,20 @@
+Internal ctest changing into directory: /home/ubuntu/hdr-tuning-20261012/build
+Test project /home/ubuntu/hdr-tuning-20261012/build
+    Start 1: hdr-ae-policy-check
+1/7 Test #1: hdr-ae-policy-check ..............   Passed    0.02 sec
+    Start 2: camera-configuration-check
+2/7 Test #2: camera-configuration-check .......   Passed    0.01 sec
+    Start 3: linear-video-luma-check
+3/7 Test #3: linear-video-luma-check ..........   Passed    0.00 sec
+    Start 4: camera-mode-check
+4/7 Test #4: camera-mode-check ................   Passed    0.00 sec
+    Start 5: bayer-luma-check
+5/7 Test #5: bayer-luma-check .................   Passed    0.01 sec
+    Start 6: raw10-luma-check
+6/7 Test #6: raw10-luma-check .................   Passed    0.03 sec
+    Start 7: stereo-compose-check
+7/7 Test #7: stereo-compose-check .............   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Total Test time (real) =   0.09 sec

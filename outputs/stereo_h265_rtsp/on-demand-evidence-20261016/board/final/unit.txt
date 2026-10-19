@@ -1,0 +1,48 @@
+# /run/systemd/transient/sc132gs-camera-rtsp.service
+# This is a transient unit file, created programmatically via the systemd API. Do not edit.
+[Unit]
+Description=/bin/bash /home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh
+
+[Service]
+TimeoutStopSec=15s
+Restart=no
+Environment="BINNING=0" "FPS=30" "SENSOR_MODE=linear" "TOKEN=d5e38516-7bcb-4c79-bb82-2f47ee440ec2" "GPU_RECTIFICATION_MAP=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map" "DEPTH_CALIBRATION=/home/ubuntu/main10-rectification-20261016/depth-calibration" "AUTO_EXPOSURE=1" "BRIGHTNESS=30" "CAMERA_CPUS=4-6" "SERVER_BIN=/home/ubuntu/shared8-rectified-20261016/run-rectified8.sh" "SC132GS_CAPTURE_TRACE_DIR=/home/ubuntu/shared8-rectified-20261016/traces" "HEVC_PROFILE=main"
+ExecStart=
+ExecStart="/bin/bash" "/home/ubuntu/stereo-h265-rtsp/run-camera-profile.sh"
+
+# /etc/systemd/system/sc132gs-camera-rtsp.service.d/40-gpu-rectification.conf
+[Service]
+Environment="GPU_RECTIFICATION_MAP=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map"
+Environment="DEPTH_CALIBRATION=/home/ubuntu/main10-rectification-20261016/depth-calibration"
+
+# /etc/systemd/system/sc132gs-camera-rtsp.service.d/45-auto-exposure.conf
+[Service]
+Environment="AUTO_EXPOSURE=1" "BRIGHTNESS=30" "CAMERA_CPUS=4-6"
+
+# /run/systemd/system/sc132gs-camera-rtsp.service.d/90-capture-api-opt.conf
+[Service]
+Environment="SERVER_BIN=/home/ubuntu/fsync-api-opt-20261016/run-shared8.sh"
+Environment="SC132GS_CAPTURE_TRACE_DIR=/home/ubuntu/fsync-api-opt-20261016/traces"
+Environment="HEVC_PROFILE=main"
+Environment="GPU_RECTIFICATION_MAP="
+
+# /etc/systemd/system/sc132gs-camera-rtsp.service.d/95-rectified-shared8.conf
+[Service]
+Environment="SERVER_BIN=/home/ubuntu/shared8-rectified-20261016/run-rectified8.sh"
+Environment="GPU_RECTIFICATION_MAP=/home/ubuntu/main10-rectification-20261016/fixtures/calibration.map"
+Environment="HEVC_PROFILE=main"
+Environment="SC132GS_CAPTURE_TRACE_DIR=/home/ubuntu/shared8-rectified-20261016/traces"
+
+# /etc/systemd/system/sc132gs-camera-rtsp.service.d/98-shared8-detail.conf
+[Service]
+Environment="SERVER_BIN=/home/ubuntu/shared8-contrast-20261016-1740/run-detail8.sh"
+Environment="HEVC_PROFILE=main"
+
+# /etc/systemd/system/sc132gs-camera-rtsp.service.d/99-on-demand.conf
+[Service]
+ExecStart=
+ExecStart=/bin/bash /home/ubuntu/rtsp-demand-20261016/run-camera-profile.sh
+Environment="SERVER_BIN=/home/ubuntu/rtsp-demand-20261016/run-demand.sh"
+Environment="BRIGHTNESS=10"
+Environment="SC132GS_CAPTURE_TRACE_DIR=/home/ubuntu/rtsp-demand-20261016/traces"
+Environment="GST_PLUGIN_PATH=/home/ubuntu/rtsp-demand-20261016/plugin-build/sys/v4l2" "GST_REGISTRY=/home/ubuntu/rtsp-demand-20261016/registry.bin"

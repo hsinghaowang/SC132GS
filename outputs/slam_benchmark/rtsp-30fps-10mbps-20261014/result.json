@@ -1,0 +1,11 @@
+{
+  "status": "configured_decode_pending",
+  "requested_fps": 30,
+  "target_bitrate_bits_per_second": 10000000,
+  "camera_status": "ok sensor_mode=linear binning=0 max_fps=30 effective_fps=30 measured_fps_x10=299 eye_resolution=1088x1280 ae=1 brightness=30 ae_target_percent=30 exposure_rows=1377 gain_index=128 exposure_ceiling_rows=1377 max_exposure_us=0 max_gain_index=128 limited=0 control_error=0 revision=182\n",
+  "live_arguments": "/home/ubuntu/stereo-h265-rtsp/build-main10/stereo-h265-rtsp --cam0 /dev/video0 --cam1 /dev/video3 --bind 192.168.137.226 --port 8554 --mount /stereo --downscale 1 --fps 30 --brightness 30 --auto-exposure off --hevc-profile main10 --bitrate 10000000 ",
+  "trigger_requested_hz": 60,
+  "output_requested_fps": 30,
+  "physical_exposure_synchronization_proven": false,
+  "persistent_profile_sha256": "8e4349ffca8cbde5d8b6c5cd5958fde1ecba60dd5d36b8902d412edcba21bf0f"
+}

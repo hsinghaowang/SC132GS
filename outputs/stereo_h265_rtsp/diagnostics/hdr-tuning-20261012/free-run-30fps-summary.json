@@ -1,0 +1,210 @@
+{
+  "method": "Same CFA four-neighbor high-pass of 32-frame mean, x=320..831, 128-row bands, valid RAW=40..950, same method as 2026-10-06/08. Includes real texture; neither FPN calibration nor SNR.",
+  "restored": true,
+  "cases": [
+    {
+      "name": "no-fsync-vendor-seed30",
+      "mode": "hdr",
+      "total_nominal_rows": 1492,
+      "second_ticks": 746,
+      "gain_index": 0,
+      "fsync_gpio_input_no_source": true,
+      "eyes": [
+        {
+          "eye": 0,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 30.000822603176108,
+            "median_frame_interval_ms": 33.332000000882545
+          },
+          "sensor_luma_median": 140.81854248046875,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 1.3125,
+          "bottom128_relative_residual_percent": 1.890489101409912
+        },
+        {
+          "eye": 1,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 30.00639813845622,
+            "median_frame_interval_ms": 33.33100000054401
+          },
+          "sensor_luma_median": 144.05735778808594,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 1.2578125,
+          "bottom128_relative_residual_percent": 1.4898279905319214
+        }
+      ]
+    },
+    {
+      "name": "no-fsync-vendor-short30",
+      "mode": "hdr",
+      "total_nominal_rows": 1492,
+      "second_ticks": 1,
+      "gain_index": 0,
+      "fsync_gpio_input_no_source": true,
+      "eyes": [
+        {
+          "eye": 0,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 29.99388511761785,
+            "median_frame_interval_ms": 33.33399999974063
+          },
+          "sensor_luma_median": 141.214111328125,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 1.3125,
+          "bottom128_relative_residual_percent": 1.8946125507354736
+        },
+        {
+          "eye": 1,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 30.008954284780664,
+            "median_frame_interval_ms": 33.338999999614316
+          },
+          "sensor_luma_median": 144.52334594726562,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 1.2734375,
+          "bottom128_relative_residual_percent": 1.4917618036270142
+        }
+      ]
+    },
+    {
+      "name": "no-fsync-vendor-safe30",
+      "mode": "hdr",
+      "total_nominal_rows": 1259,
+      "second_ticks": 79,
+      "gain_index": 0,
+      "fsync_gpio_input_no_source": true,
+      "eyes": [
+        {
+          "eye": 0,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 30.005875343974594,
+            "median_frame_interval_ms": 33.32899999986694
+          },
+          "sensor_luma_median": 130.40853881835938,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 1.1953125,
+          "bottom128_relative_residual_percent": 1.9854586124420166
+        },
+        {
+          "eye": 1,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 29.999458074347608,
+            "median_frame_interval_ms": 33.33000000020547
+          },
+          "sensor_luma_median": 133.3747100830078,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 1.1484375,
+          "bottom128_relative_residual_percent": 1.580974817276001
+        }
+      ]
+    },
+    {
+      "name": "external-safe30",
+      "mode": "hdr",
+      "total_nominal_rows": 1259,
+      "second_ticks": 79,
+      "gain_index": 0,
+      "fsync_gpio_input_no_source": false,
+      "eyes": [
+        {
+          "eye": 0,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 29.998732311641955,
+            "median_frame_interval_ms": 33.31599999910395
+          },
+          "sensor_luma_median": 135.4112548828125,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 6.8828125,
+          "bottom128_relative_residual_percent": 7.156743049621582
+        },
+        {
+          "eye": 1,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 30.008547595978943,
+            "median_frame_interval_ms": 33.320000000458094
+          },
+          "sensor_luma_median": 141.20042419433594,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 8.5234375,
+          "bottom128_relative_residual_percent": 6.263986110687256
+        }
+      ]
+    },
+    {
+      "name": "no-fsync-vendor-long15",
+      "mode": "hdr",
+      "total_nominal_rows": 4350,
+      "second_ticks": 1,
+      "gain_index": 0,
+      "fsync_gpio_input_no_source": true,
+      "eyes": [
+        {
+          "eye": 0,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 14.995752815823252,
+            "median_frame_interval_ms": 66.66899999981979
+          },
+          "sensor_luma_median": 316.290283203125,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 3.4453125,
+          "bottom128_relative_residual_percent": 2.1437222957611084
+        },
+        {
+          "eye": 1,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 15.000171776159844,
+            "median_frame_interval_ms": 66.66600000062317
+          },
+          "sensor_luma_median": 327.1933898925781,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 3.390625,
+          "bottom128_relative_residual_percent": 1.5414295196533203
+        }
+      ]
+    },
+    {
+      "name": "external-short30-repeat",
+      "mode": "hdr",
+      "total_nominal_rows": 1492,
+      "second_ticks": 1,
+      "gain_index": 0,
+      "fsync_gpio_input_no_source": false,
+      "eyes": [
+        {
+          "eye": 0,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 30.023369803654877,
+            "median_frame_interval_ms": 33.339000001433305
+          },
+          "sensor_luma_median": 144.860107421875,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 1.375,
+          "bottom128_relative_residual_percent": 1.9349478483200073
+        },
+        {
+          "eye": 1,
+          "rate": {
+            "measured_frames": 32,
+            "eof_fps": 30.03861415397395,
+            "median_frame_interval_ms": 33.325000000331784
+          },
+          "sensor_luma_median": 148.40200805664062,
+          "unique_frames": 32,
+          "bottom128_spatial_residual": 1.3046875,
+          "bottom128_relative_residual_percent": 1.5126398801803589
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "first_assertion_skipped": false,
+  "late_by_ns": 700000,
+  "assertion_interval_ns": 15966667,
+  "observed_bad_interval_ns": 15984272,
+  "scope": "actual callback, mocked clock/GPIO/publication; no hardware proof",
+  "source_sha256": "f9eaa33c4a1337564ae325e6000be877a79a979f68868858e2d506f803e76e80",
+  "callback_sha256": "637ec2c47fb1df8df31a9f56ec990c7ac029d2468e13fc32ef42b6e02246ed1c"
+}

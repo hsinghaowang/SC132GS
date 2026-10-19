@@ -1,0 +1,50 @@
+Internal ctest changing into directory: /home/ubuntu/rtsp-demand-20261016/build
+Test project /home/ubuntu/rtsp-demand-20261016/build
+      Start  1: fused-raw10-check
+ 1/22 Test  #1: fused-raw10-check ..................   Passed    0.19 sec
+      Start  2: move-handoff-check
+ 2/22 Test  #2: move-handoff-check .................   Passed    0.02 sec
+      Start  3: capture-buffer-return-check
+ 3/22 Test  #3: capture-buffer-return-check ........   Passed    0.05 sec
+      Start  4: stereo-signal-path-check
+ 4/22 Test  #4: stereo-signal-path-check ...........   Passed    0.01 sec
+      Start  5: stereo-tone-mapper-check
+ 5/22 Test  #5: stereo-tone-mapper-check ...........   Passed    0.01 sec
+      Start  6: stereo-detail-mapper-check
+ 6/22 Test  #6: stereo-detail-mapper-check .........   Passed    0.01 sec
+      Start  7: linear-ae-policy-check
+ 7/22 Test  #7: linear-ae-policy-check .............   Passed    0.01 sec
+      Start  8: image-processing-plan-check
+ 8/22 Test  #8: image-processing-plan-check ........   Passed    0.02 sec
+      Start  9: depth-mono8-input-check
+ 9/22 Test  #9: depth-mono8-input-check ............   Passed    0.05 sec
+      Start 10: depth-pipeline-failure-isolation
+10/22 Test #10: depth-pipeline-failure-isolation ...   Passed    0.03 sec
+      Start 11: kernel-sync-status-check
+11/22 Test #11: kernel-sync-status-check ...........   Passed    0.01 sec
+      Start 12: stereo-pending-frames-check
+12/22 Test #12: stereo-pending-frames-check ........   Passed    0.01 sec
+      Start 13: fsync-schedule-check
+13/22 Test #13: fsync-schedule-check ...............   Passed    0.01 sec
+      Start 14: sensor-signal-calibration-check
+14/22 Test #14: sensor-signal-calibration-check ....   Passed    0.01 sec
+      Start 15: hdr-ae-policy-check
+15/22 Test #15: hdr-ae-policy-check ................   Passed    0.01 sec
+      Start 16: camera-configuration-check
+16/22 Test #16: camera-configuration-check .........   Passed    0.01 sec
+      Start 17: linear-video-luma-check
+17/22 Test #17: linear-video-luma-check ............   Passed    0.01 sec
+      Start 18: camera-mode-check
+18/22 Test #18: camera-mode-check ..................   Passed    0.01 sec
+      Start 19: bayer-luma-check
+19/22 Test #19: bayer-luma-check ...................   Passed    0.01 sec
+      Start 20: raw10-luma-check
+20/22 Test #20: raw10-luma-check ...................   Passed    0.03 sec
+      Start 21: stereo-compose-check
+21/22 Test #21: stereo-compose-check ...............   Passed    0.02 sec
+      Start 22: gs130wi-api-contract
+22/22 Test #22: gs130wi-api-contract ...............   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 22
+
+Total Test time (real) =   0.61 sec

@@ -1,0 +1,12 @@
+{
+  "mode": "linear",
+  "binning": 0,
+  "max_fps": 15,
+  "fps": 15,
+  "ae": 1,
+  "brightness": 40,
+  "rows": 1330,
+  "gain": 0,
+  "max_exposure_us": 0,
+  "max_gain_index": 128
+}

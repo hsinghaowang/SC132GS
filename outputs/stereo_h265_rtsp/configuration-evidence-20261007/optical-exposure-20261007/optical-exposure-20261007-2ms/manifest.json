@@ -1,0 +1,145 @@
+{
+  "files": {
+    "analysis.json": {
+      "bytes": 13581,
+      "sha256": "464a2c7bd23aae4f999534badf405f47fd8834a569d48231edf9ea37257ad7cd"
+    },
+    "eye0-45.json": {
+      "bytes": 112,
+      "sha256": "3157f649e0a1367b29fb03188a16cfc0afb8371728aecbb171d33b07032a962f"
+    },
+    "eye0-1.raw10": {
+      "bytes": 1740800,
+      "sha256": "c51d3fe89dde4698e2040f5b0d0df68154eb7c9062f7ae471fd2203eed2b9cba"
+    },
+    "frames.bin": {
+      "bytes": 235580404,
+      "sha256": "c2a6c58adc9e87097db1d4cf9331ca24ede40dcd49da2362de95aa23419e1803"
+    },
+    "eye1-45.raw10": {
+      "bytes": 1740800,
+      "sha256": "cce7a8017737923f2e92ff44e1bd42208cab980b29b62c694d3370dd4daf68af"
+    },
+    "eye1-1.raw10": {
+      "bytes": 1740800,
+      "sha256": "9dacd0de3ceb75d55066ab22ebe2120164a090b1a9fb5566b5d97b0e30574761"
+    },
+    "eye0-90.raw10": {
+      "bytes": 1740800,
+      "sha256": "5dc4603f5e4ec02364478428175a5e8f596a038c5daa474c3a53b2cfb7bfea36"
+    },
+    "capture-ready.json": {
+      "bytes": 27,
+      "sha256": "ce4daef48d929457594aad9f06a90101b6e4172e19e5b2b4e3acf0caab09faa3"
+    },
+    "eye0-90.png": {
+      "bytes": 359429,
+      "sha256": "beb1dd484cc54023b8d83d1cb085a98ea799059c1cec681e6b582c7636f9f453"
+    },
+    "eye0-1.png": {
+      "bytes": 370157,
+      "sha256": "43902911c79f2209c8cdf57eff5482a830e79b75def8a2053a87626b909cfc69"
+    },
+    "transaction.json": {
+      "bytes": 2015,
+      "sha256": "8b52d3a1591ebb3269aadc9e7bf4e7256b2e8c97f3b0b724e138c288193d6d12"
+    },
+    "capture.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "eye0-trace.json": {
+      "bytes": 186528,
+      "sha256": "1504426b611dd174ab126592389a3e660285c37e066bdd718aed955b930f7fb2"
+    },
+    "eye1-90.raw10": {
+      "bytes": 1740800,
+      "sha256": "e29a12e384c2f13fb1a877e474c839dd8abc003cf862490e48e5c749acc4e709"
+    },
+    "eye1-trace.json": {
+      "bytes": 192067,
+      "sha256": "a822a2464ecd4ec39dad3c339180662f27c4c679cb84f56543dfb7ca6e167113"
+    },
+    "eye0-dark.pgm": {
+      "bytes": 21775,
+      "sha256": "1aa84176a4a660d02ba8479c42d0aba483b60f803765bd7ba840a661c8768369"
+    },
+    "fsync.log": {
+      "bytes": 177,
+      "sha256": "770a051ef152a740693afa36ca798e64f84d5679c5feb371e9f3b30209e2bb9f"
+    },
+    "led-events.jsonl": {
+      "bytes": 47488,
+      "sha256": "5525cbb72f0862c07fda9b16377c943717949cb13d09d882fa406fb5158270aa"
+    },
+    "eye1-45.png": {
+      "bytes": 385471,
+      "sha256": "0691c8c14b8ac4a16fb75fe7bcbf28eac4fbc2e0728994a204a8fe784e29bc6e"
+    },
+    "eye1-1.png": {
+      "bytes": 387160,
+      "sha256": "cdab9ce8c86c39a75428ffcea469d31ac3ffccb1be7a151719016b1f472db767"
+    },
+    "eye0-90.json": {
+      "bytes": 112,
+      "sha256": "35280ad268ab6f2caf108be4ce90fc02d7b2a1148e0f15a2bc6916f8d7930603"
+    },
+    "eye0-45.raw10": {
+      "bytes": 1740800,
+      "sha256": "b3bb7d21105e29323567be0d5b309ffc3bf820639412d731517cd1f159758880"
+    },
+    "eye1-45.json": {
+      "bytes": 112,
+      "sha256": "cbacc9ec401ecba306fbbe3949a693821fd9cd6322aa8fdcad14541b468ca72f"
+    },
+    "eye0-45.png": {
+      "bytes": 359001,
+      "sha256": "9ff6d677efba25ee59c98fc0cfc0c5d34a58bd806a1cfc06b6a315564104a5e3"
+    },
+    "raw-audit.json": {
+      "bytes": 654,
+      "sha256": "84c24216502fd068e8052f23634dd34aaf95b56f694e1072663ae96eb9927261"
+    },
+    "eye0-light.pgm": {
+      "bytes": 21775,
+      "sha256": "87b7be1048331de22cd8b78923c132bb3dd1ba818bf5c32b854a6c49698dc0c3"
+    },
+    "analysis-clipped-core.json": {
+      "bytes": 10911,
+      "sha256": "f0a26fe75e6a2768a1d60f6aae4d0ded3a0eb1355e4cb5b56f22562b5605cc2c"
+    },
+    "eye1-1.json": {
+      "bytes": 111,
+      "sha256": "8b38e304f814a59b96fec7143ec94a232755093c6b87f67e3705677d0b7edde6"
+    },
+    "eye1-light.pgm": {
+      "bytes": 21775,
+      "sha256": "32c2c378db7fd5f2e568dfe8b1bfb922649b75e2d510bcd2f69d25df56776c97"
+    },
+    "eye1-90.png": {
+      "bytes": 379427,
+      "sha256": "ae7f37909640a466c7388a222d72396d74bbddb2259f1b8940269d2ecc1a4720"
+    },
+    "eye1-90.json": {
+      "bytes": 112,
+      "sha256": "03511bd7fce29c5e5b1e2d6a555733882aa7096c367ac77b0e6c67650e88716b"
+    },
+    "eye0-1.json": {
+      "bytes": 111,
+      "sha256": "fbb99df79fccecb3f384fddbf44f991d7e7c561c1f3d7bb7c3d606128976fe58"
+    },
+    "eye1-dark.pgm": {
+      "bytes": 21775,
+      "sha256": "a575523683ea817747ce1bec6b6e41a47edd09fafa3bfe9aef3d34d9cc86b7fc"
+    }
+  },
+  "source_sha256": {
+    "RawOpticalCapture.cpp": "187df2d81fecaa7e97eec3cf2582435ad902190da9286fc0b1e3854c3f5b27eb",
+    "RawOpticalCapture.hpp": "cae3d64862dc8f46950311eab545bfa74de711a8f6b818723e7bf887ca11a8cf",
+    "OpticalCaptureMain.cpp": "e2ea8a31491303047abe185418e31f138acc54853711b1dccb6b6e6aa54409e5",
+    "optical_exposure_test.py": "f5847dcf49ef8639ba9c40e24bad6d409ca2f879508013312b67c5f5b3f9c11a",
+    "analyze_optical_exposure.py": "89f0dd625f0caf99aeeab8f8c2ba2439af6568eed41bada2a930d1ea651ea598",
+    "inspect_optical_capture.py": "41c6b71b0994864fbfc61e3d30adaa213e11da7f803a4e672320dcb6f8ce9c98"
+  },
+  "binary_sha256": "3e5b0923a448a61c39dfdc2b05b1992256f143386dcc888c73521fadd6d3881c"
+}

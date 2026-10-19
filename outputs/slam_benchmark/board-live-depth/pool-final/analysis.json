@@ -1,0 +1,241 @@
+{
+  "runtime": {
+    "captured": 9061,
+    "processed": 8927,
+    "replaced": 134,
+    "capture_error": 0,
+    "capture_device_error": 0,
+    "processing_error": 0,
+    "capture_stop_error": 0,
+    "warmup_seconds": 2,
+    "requested_seconds": 300,
+    "first_api_ready_ns": 2928267461651,
+    "gray_encoded": 8927,
+    "depth_encoded": 8927,
+    "gray_max_queue": 0,
+    "depth_max_queue": 0,
+    "encoder_failed": false,
+    "interrupted": false,
+    "workers_joined": true
+  },
+  "capture_fps": 30.0,
+  "depth_fps": 29.56085751061707,
+  "depth_valid_fraction": {
+    "p50": 0.27373046875,
+    "p95": 0.2777533318014706,
+    "p99": 0.2800135569852941
+  },
+  "timing_ms": {
+    "gpu": {
+      "p50": 23.345,
+      "p95": 23.921,
+      "p99": 24.129
+    },
+    "rectify_half": {
+      "p50": 0.813,
+      "p95": 0.9396000000000003,
+      "p99": 1.083
+    },
+    "process": {
+      "p50": 29.02982,
+      "p95": 30.0824196,
+      "p99": 30.94307232
+    },
+    "capture_ready_from_driver_estimate": {
+      "p50": 48.514804,
+      "p95": 51.061525599999996,
+      "p99": 52.5097204
+    },
+    "queue": {
+      "p50": 11.604618,
+      "p95": 29.71910220000001,
+      "p99": 32.56375084
+    },
+    "depth_ready_from_driver_estimate": {
+      "p50": 89.311381,
+      "p95": 107.4934422,
+      "p99": 110.25603704000001
+    }
+  },
+  "windows_10s": [
+    {
+      "offset_s": 0.0,
+      "fps": 29.5,
+      "gaps": 5
+    },
+    {
+      "offset_s": 10.0,
+      "fps": 29.5,
+      "gaps": 5
+    },
+    {
+      "offset_s": 20.0,
+      "fps": 29.7,
+      "gaps": 3
+    },
+    {
+      "offset_s": 30.0,
+      "fps": 29.6,
+      "gaps": 4
+    },
+    {
+      "offset_s": 40.0,
+      "fps": 29.5,
+      "gaps": 5
+    },
+    {
+      "offset_s": 50.0,
+      "fps": 29.7,
+      "gaps": 3
+    },
+    {
+      "offset_s": 60.0,
+      "fps": 29.7,
+      "gaps": 3
+    },
+    {
+      "offset_s": 70.0,
+      "fps": 29.7,
+      "gaps": 3
+    },
+    {
+      "offset_s": 80.0,
+      "fps": 29.6,
+      "gaps": 4
+    },
+    {
+      "offset_s": 90.0,
+      "fps": 29.6,
+      "gaps": 4
+    },
+    {
+      "offset_s": 100.0,
+      "fps": 29.2,
+      "gaps": 8
+    },
+    {
+      "offset_s": 110.0,
+      "fps": 29.1,
+      "gaps": 9
+    },
+    {
+      "offset_s": 120.0,
+      "fps": 29.2,
+      "gaps": 8
+    },
+    {
+      "offset_s": 130.0,
+      "fps": 29.6,
+      "gaps": 5
+    },
+    {
+      "offset_s": 140.0,
+      "fps": 30.0,
+      "gaps": 0
+    },
+    {
+      "offset_s": 150.0,
+      "fps": 30.0,
+      "gaps": 0
+    },
+    {
+      "offset_s": 160.0,
+      "fps": 30.0,
+      "gaps": 0
+    },
+    {
+      "offset_s": 170.0,
+      "fps": 29.7,
+      "gaps": 2
+    },
+    {
+      "offset_s": 180.0,
+      "fps": 30.1,
+      "gaps": 0
+    },
+    {
+      "offset_s": 190.0,
+      "fps": 29.9,
+      "gaps": 0
+    },
+    {
+      "offset_s": 200.0,
+      "fps": 30.1,
+      "gaps": 0
+    },
+    {
+      "offset_s": 210.0,
+      "fps": 30.0,
+      "gaps": 0
+    },
+    {
+      "offset_s": 220.0,
+      "fps": 28.9,
+      "gaps": 10
+    },
+    {
+      "offset_s": 230.0,
+      "fps": 29.0,
+      "gaps": 10
+    },
+    {
+      "offset_s": 240.0,
+      "fps": 29.1,
+      "gaps": 10
+    },
+    {
+      "offset_s": 250.0,
+      "fps": 28.9,
+      "gaps": 10
+    },
+    {
+      "offset_s": 260.0,
+      "fps": 28.9,
+      "gaps": 11
+    },
+    {
+      "offset_s": 270.0,
+      "fps": 29.1,
+      "gaps": 10
+    },
+    {
+      "offset_s": 280.0,
+      "fps": 30.0,
+      "gaps": 0
+    }
+  ],
+  "gray_encoder_ms": {
+    "depth_to_encoded": {
+      "p50": 37.272875,
+      "p95": 39.331803,
+      "p99": 44.69540508
+    },
+    "source_estimate_to_encoded": {
+      "p50": 124.725085,
+      "p95": 144.4170876,
+      "p99": 148.47433203999998
+    }
+  },
+  "depth_encoder_ms": {
+    "depth_to_encoded": {
+      "p50": 15.926654,
+      "p95": 39.692467,
+      "p99": 42.40933088
+    },
+    "source_estimate_to_encoded": {
+      "p50": 117.248851,
+      "p95": 144.6443918,
+      "p99": 148.59009996
+    }
+  },
+  "cpu_remap_exact": {
+    "full_gray": true,
+    "half_left": true
+  },
+  "cpu_depth_replay": {
+    "valid_mask_exact": true,
+    "valid_pixels": 96273,
+    "max_depth_error_m": 2.384185791015625e-07,
+    "all_positive": true
+  }
+}

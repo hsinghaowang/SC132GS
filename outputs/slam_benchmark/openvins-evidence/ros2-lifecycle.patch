@@ -1,0 +1,24 @@
+diff --git a/ov_msckf/src/run_simulation.cpp b/ov_msckf/src/run_simulation.cpp
+index 7b5ee4e..22797dc 100644
+--- a/ov_msckf/src/run_simulation.cpp
++++ b/ov_msckf/src/run_simulation.cpp
+@@ -183,6 +183,7 @@ int main(int argc, char **argv) {
+   ros::shutdown();
+ #elif ROS_AVAILABLE == 2
+   viz->visualize_final();
++  viz.reset(); // Release ROS publishers while the context still exists.
+   rclcpp::shutdown();
+ #endif
+ 
+diff --git a/ov_msckf/src/run_subscribe_msckf.cpp b/ov_msckf/src/run_subscribe_msckf.cpp
+index 6a5b341..61947ee 100644
+--- a/ov_msckf/src/run_subscribe_msckf.cpp
++++ b/ov_msckf/src/run_subscribe_msckf.cpp
+@@ -117,6 +117,7 @@ int main(int argc, char **argv) {
+ #if ROS_AVAILABLE == 1
+   ros::shutdown();
+ #elif ROS_AVAILABLE == 2
++  viz.reset(); // Release ROS publishers before process-wide static destruction.
+   rclcpp::shutdown();
+ #endif
+ 

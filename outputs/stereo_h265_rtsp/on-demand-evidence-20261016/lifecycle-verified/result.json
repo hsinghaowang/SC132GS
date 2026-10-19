@@ -1,0 +1,2169 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "name": "initial_idle",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 8,
+            "threads": 3,
+            "rss_kb": 13348
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "0",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "94",
+          "pulses": "0",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 0.5149999999994179
+      }
+    },
+    {
+      "name": "/stereo_alone",
+      "result": {
+        "fps": [
+          30.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2088390656",
+            "inst_2044194816"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 214176
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "95",
+            "pulses": "135",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/stereo_teardown_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 130732
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "95",
+          "pulses": "168",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.514999999999418
+      }
+    },
+    {
+      "name": "/depth_alone",
+      "result": {
+        "fps": [
+          30.333333333333332
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2085605376",
+            "inst_2088390656"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 264028
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "96",
+            "pulses": "135",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/depth_teardown_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 180612
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "96",
+          "pulses": "166",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 1.610000000000582
+      }
+    },
+    {
+      "name": "('/stereo', '/depth')_both",
+      "result": {
+        "fps": [
+          29.666666666666668,
+          30.333333333333332
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 51,
+              "threads": 29,
+              "rss_kb": 278628
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "97",
+            "pulses": "137",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "('/stereo', '/depth')_survivor",
+      "result": {
+        "fps": [
+          30.333333333333332
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 278608
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "97",
+            "pulses": "246",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "('/stereo', '/depth')_rst_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 195108
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "97",
+          "pulses": "281",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.672000000005937
+      }
+    },
+    {
+      "name": "('/depth', '/stereo')_both",
+      "result": {
+        "fps": [
+          29.666666666666668,
+          29.666666666666668
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2085605376",
+            "inst_2087055360"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 51,
+              "threads": 29,
+              "rss_kb": 291676
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "98",
+            "pulses": "136",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "('/depth', '/stereo')_survivor",
+      "result": {
+        "fps": [
+          29.666666666666668
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2085605376",
+            "inst_2087055360"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 291680
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "98",
+            "pulses": "244",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "('/depth', '/stereo')_rst_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 208172
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "98",
+          "pulses": "279",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.5939999999973224
+      }
+    },
+    {
+      "name": "('/stereo', '/stereo')_both",
+      "result": {
+        "fps": [
+          29.666666666666668,
+          29.666666666666668
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2085605376",
+            "inst_2087055360"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 48,
+              "threads": 24,
+              "rss_kb": 319608
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "99",
+            "pulses": "133",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "('/stereo', '/stereo')_survivor",
+      "result": {
+        "fps": [
+          30.333333333333332
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2085605376",
+            "inst_2087055360"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 319656
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "99",
+            "pulses": "244",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "('/stereo', '/stereo')_rst_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 236244
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "99",
+          "pulses": "278",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.4839999999967404
+      }
+    },
+    {
+      "name": "('/depth', '/depth')_both",
+      "result": {
+        "fps": [
+          30.333333333333332,
+          30.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 48,
+              "threads": 24,
+              "rss_kb": 327504
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "100",
+            "pulses": "136",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "('/depth', '/depth')_survivor",
+      "result": {
+        "fps": [
+          29.666666666666668
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 327504
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "100",
+            "pulses": "248",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "('/depth', '/depth')_rst_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 244048
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "100",
+          "pulses": "281",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "2",
+          "error_count": "1",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.8590000000112923
+      }
+    },
+    {
+      "name": "reconnect_0",
+      "result": {
+        "fps": [
+          30.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 327708
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "101",
+            "pulses": "158",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "release_0",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 244308
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "101",
+          "pulses": "191",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.5319999999919673
+      }
+    },
+    {
+      "name": "reconnect_1",
+      "result": {
+        "fps": [
+          30.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2087055360"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 328004
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "102",
+            "pulses": "134",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "release_1",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 244568
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "102",
+          "pulses": "166",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.5939999999973224
+      }
+    },
+    {
+      "name": "reconnect_2",
+      "result": {
+        "fps": [
+          30.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2087055360"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 328436
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "103",
+            "pulses": "134",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "release_2",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 245040
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "103",
+          "pulses": "166",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.4839999999967404
+      }
+    },
+    {
+      "name": "reconnect_3",
+      "result": {
+        "fps": [
+          30.333333333333332
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 328540
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "104",
+            "pulses": "134",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "release_3",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 245096
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "104",
+          "pulses": "166",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.561999999990803
+      }
+    },
+    {
+      "name": "reconnect_4",
+      "result": {
+        "fps": [
+          30.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2085605376",
+            "inst_2087055360"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 328684
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "105",
+            "pulses": "133",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "release_4",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 245288
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "105",
+          "pulses": "167",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.610000000000582
+      }
+    },
+    {
+      "name": "reconnect_5",
+      "result": {
+        "fps": [
+          27.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2085605376",
+            "inst_2087055360"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 328816
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "106",
+            "pulses": "134",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "release_5",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 245360
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "106",
+          "pulses": "166",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.6089999999967404
+      }
+    },
+    {
+      "name": "/stereo_before_pause",
+      "result": {
+        "fps": [
+          30.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2088390656"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 328804
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "107",
+            "pulses": "134",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/stereo_paused_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 15,
+            "threads": 9,
+            "rss_kb": 245564
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "107",
+          "pulses": "167",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.514999999999418
+      }
+    },
+    {
+      "name": "/stereo_resumed",
+      "result": {
+        "fps": [
+          20.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 371460
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "108",
+            "pulses": "109",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/stereo_resume_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 288024
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "108",
+          "pulses": "142",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 1.8119999999908032
+      }
+    },
+    {
+      "name": "/stereo_describe_only_bounded",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 15,
+            "threads": 8,
+            "rss_kb": 315916
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "109",
+          "pulses": "330",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 11.468999999997322
+      }
+    },
+    {
+      "name": "/depth_before_pause",
+      "result": {
+        "fps": [
+          30.333333333333332
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 415044
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "110",
+            "pulses": "134",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/depth_paused_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 15,
+            "threads": 9,
+            "rss_kb": 331796
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "110",
+          "pulses": "167",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.610000000000582
+      }
+    },
+    {
+      "name": "/depth_resumed",
+      "result": {
+        "fps": [
+          19.333333333333332
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2088390656"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 467476
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "111",
+            "pulses": "103",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/depth_resume_release",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 10,
+            "threads": 4,
+            "rss_kb": 384024
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "111",
+          "pulses": "136",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 2.5310000000026776
+      }
+    },
+    {
+      "name": "/depth_describe_only_bounded",
+      "result": {
+        "listening": true,
+        "vpu_sessions": [],
+        "process": [
+          {
+            "pid": 101106,
+            "video_fds": [],
+            "fd_count": 15,
+            "threads": 8,
+            "rss_kb": 385492
+          }
+        ],
+        "sync": {
+          "abi": "4",
+          "timestamp_offset_ns": "344903",
+          "trigger_hz": "30",
+          "frame_step": "1",
+          "locked_mask": "0",
+          "startup_dropped": "2",
+          "startup_end0": "0",
+          "startup_end1": "0",
+          "node0": "4294967295",
+          "node1": "4294967295",
+          "mode": "2",
+          "running": "0",
+          "session": "112",
+          "pulses": "326",
+          "skipped": "0",
+          "cpu": "7",
+          "worker_cpu": "0",
+          "error": "0",
+          "error_count": "0",
+          "source": "exposure_start_estimate"
+        },
+        "power": [
+          "suspended",
+          "suspended"
+        ],
+        "idle_latency_s": 11.297000000005937
+      }
+    },
+    {
+      "name": "no_keepalive_initial",
+      "result": {
+        "fps": [
+          30.0
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 24,
+              "rss_kb": 484692
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "113",
+            "pulses": "134",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    },
+    {
+      "name": "tcp_reader_without_rtsp_keepalive",
+      "result": {
+        "fps": [
+          30.333333333333332
+        ],
+        "board": {
+          "listening": true,
+          "vpu_sessions": [
+            "inst_2044194816",
+            "inst_2085605376"
+          ],
+          "process": [
+            {
+              "pid": 101106,
+              "video_fds": [
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video33",
+                "/dev/video0",
+                "/dev/video3"
+              ],
+              "fd_count": 47,
+              "threads": 23,
+              "rss_kb": 484808
+            }
+          ],
+          "sync": {
+            "abi": "4",
+            "timestamp_offset_ns": "344903",
+            "trigger_hz": "30",
+            "frame_step": "1",
+            "locked_mask": "3",
+            "startup_dropped": "2",
+            "startup_end0": "1",
+            "startup_end1": "1",
+            "node0": "0",
+            "node1": "3",
+            "mode": "2",
+            "running": "1",
+            "session": "113",
+            "pulses": "1323",
+            "skipped": "0",
+            "cpu": "7",
+            "worker_cpu": "0",
+            "error": "0",
+            "error_count": "0",
+            "source": "exposure_start_estimate"
+          },
+          "power": [
+            "active",
+            "active"
+          ]
+        }
+      }
+    }
+  ],
+  "error": "AssertionError('Firewall rules changed')"
+}

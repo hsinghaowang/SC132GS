@@ -1,0 +1,200 @@
+Oct 13 15:12:55 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 15:12:56 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 15:14:29 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 15:14:29 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 15:14:29 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:14:29 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:14:29 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 15:14:30 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 15:14:30 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:14:30 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:14:30 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:14:30 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:14:30 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:746cd000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:14:30 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:746cd000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:14:30 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:746cd000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:14:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:746cd000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:14:31 ubuntu kernel: msm_vidc: err : 7c795000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+Oct 13 15:24:47 ubuntu kernel: msm_vidc:     fw: <VFW_E:CmdDec:265e:7c795000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+Oct 13 15:24:47 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 15:24:47 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 15:24:50 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 15:24:50 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 15:24:50 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:24:50 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:24:50 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 15:24:50 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 15:24:50 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:24:50 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:24:50 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:24:50 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:24:50 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:24:50 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:24:50 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:25:00 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:25:00 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:25:00 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:25:00 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:25:00 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:25:00 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 15:25:00 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 15:25:15 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 15:25:15 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 15:25:15 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:25:15 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:25:15 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 15:25:16 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 15:25:16 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:25:16 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:25:16 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:25:16 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:25:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:25:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:25:16 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:25:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:25:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:25:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:25:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:25:25 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:25:25 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 15:25:25 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 15:25:40 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 15:25:40 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 15:25:40 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:25:40 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:25:40 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 15:25:41 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 15:25:41 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:25:41 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:25:41 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:25:41 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:25:41 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:25:41 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:25:41 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:25:50 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:25:50 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:25:50 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:25:50 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:25:50 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:25:50 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 15:25:50 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 15:26:05 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 15:26:05 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 15:26:05 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:26:05 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:26:05 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 15:26:05 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 15:26:06 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:26:06 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:26:06 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:26:06 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:26:06 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:26:06 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:26:06 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:26:15 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:26:15 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:26:15 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:26:15 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:26:15 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:26:15 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 15:26:15 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 15:26:30 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 15:26:31 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 15:26:31 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:26:31 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:26:31 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 15:26:31 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 15:26:31 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:26:31 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:26:31 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:26:31 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:26:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:26:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:26:31 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:26:41 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:26:41 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:26:41 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:26:41 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:26:41 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:26:41 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 15:26:41 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 15:26:51 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 15:26:51 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 15:26:51 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:26:51 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:26:51 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 15:26:51 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 15:26:51 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:26:51 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:26:51 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:26:51 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:26:51 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:26:51 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:26:51 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:26:52 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c795000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:26:52 ubuntu kernel: msm_vidc: err : 7c995000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+Oct 13 15:27:57 ubuntu kernel: msm_vidc:     fw: <VFW_E:CmdDec:265e:7c995000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+Oct 13 15:27:57 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 15:27:57 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 15:28:00 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 15:28:00 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 15:28:00 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:28:00 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:28:00 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 15:28:01 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 15:28:01 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 15:28:01 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 15:28:01 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:28:01 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 15:28:01 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c995000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:28:01 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c995000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:28:01 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c995000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:28:02 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:7c995000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:28:02 ubuntu kernel: msm_vidc: err : 781a7000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+Oct 13 15:40:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:CmdDec:265e:781a7000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+Oct 13 15:40:33 ubuntu kernel: msm_vidc: err : 7c995000:  avcE_0: msm_venc_g_selection: invalid type 1
+Oct 13 15:40:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:781a7000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 15:40:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:781a7000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 15:40:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:781a7000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 15:40:33 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:781a7000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 15:40:33 ubuntu kernel: msm_vidc: err : 7c995000:  avcE_0: msm_venc_g_selection: invalid type 1
+Oct 13 15:41:47 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 15:41:47 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 16:25:27 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 16:25:27 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 16:25:27 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 16:25:27 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 16:25:27 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 16:25:28 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 16:25:28 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 16:25:28 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 16:25:38 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 16:25:38 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 16:30:19 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 16:30:20 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 16:30:20 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 16:30:20 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 16:30:20 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 16:30:20 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 16:30:20 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 16:30:20 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 16:30:30 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 16:30:30 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)
+Oct 13 18:00:57 ubuntu kernel: sc132gs 18-0032: stream request: on (current=off)
+Oct 13 18:00:57 ubuntu kernel: sc132gs 18-0032: mode table written (130 registers, external-trigger slave)
+Oct 13 18:00:57 ubuntu kernel: sc132gs 18-0032: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 18:00:57 ubuntu kernel: sc132gs 18-0032: stream-on confirmed: reg 0x0100=0x01
+Oct 13 18:00:57 ubuntu kernel: sc132gs 16-0030: stream request: on (current=off)
+Oct 13 18:00:57 ubuntu kernel: sc132gs 16-0030: mode table written (130 registers, external-trigger slave)
+Oct 13 18:00:57 ubuntu kernel: sc132gs 16-0030: mode read-back verified (22 critical registers, external-trigger slave)
+Oct 13 18:00:57 ubuntu kernel: sc132gs 16-0030: stream-on confirmed: reg 0x0100=0x01
+Oct 13 18:00:57 ubuntu kernel: sc132gs 18-0032: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 18:00:57 ubuntu kernel: sc132gs 16-0030: 60 Hz FSYNC overrides applied after stream-on
+Oct 13 18:00:57 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:781a7000:00> VenusHostDriver_ParseC2Command(928): QC_IMAGE_VERSION_STRING=video-firmware.2.4.2-1bb9d0b4565acc9b6c035192fdacbad5a65effbf
+Oct 13 18:00:57 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:781a7000:00> VenusHostDriver_ParseC2Command(929): IMAGE_VARIANT_STRING=PROD
+Oct 13 18:00:57 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:781a7000:00> VenusHostDriver_ParseC2Command(930): OEM_IMAGE_VERSION_STRING=hw-rahutrip-hyd
+Oct 13 18:00:58 ubuntu kernel: msm_vidc:     fw: <VFW_E:HostDr:265e:781a7000:00> VenusHostDriver_ParseC2Command(931): BUILD_TIME: Nov 12 2024 11:44:20
+Oct 13 18:00:58 ubuntu kernel: msm_vidc: err : 7c995000: hevcE: msm_venc_set_colorspace: invalid v4l2 transfer char 5
+Oct 13 22:02:44 ubuntu kernel: msm_vidc:     fw: <VFW_E:CmdDec:265e:7c995000:00> VenusVencFWSessionLoadConfig(5984): Adaptive Chroma QP Offset is NOT supported for 10 bit encoding
+Oct 13 22:02:44 ubuntu kernel: sc132gs 16-0030: stream request: off (current=on)
+Oct 13 22:02:44 ubuntu kernel: sc132gs 18-0032: stream request: off (current=on)

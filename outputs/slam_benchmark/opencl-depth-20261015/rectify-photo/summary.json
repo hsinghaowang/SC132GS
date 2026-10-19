@@ -1,0 +1,22 @@
+{
+  "gpu_stereo_remap_median_ms": 1.757,
+  "source_stereo_size": [
+    2176,
+    1280
+  ],
+  "rectified_eye_size": [
+    544,
+    640
+  ],
+  "photo_rectification_matches_fixed_OpenCV_reference": true,
+  "border_fractional_and_mirror_fixture_passed": true,
+  "disparity_matches_separate_CPU_fixed_remap_reference": true,
+  "processing_including_upload_remap_matching_readback_median_ms": 33.3542,
+  "processing_including_upload_remap_matching_readback_p95_ms": 35.2848,
+  "samples": 30,
+  "binning_changed": false,
+  "camera_configuration_changed": false,
+  "metric_accuracy_verified": false,
+  "live_stream_updated": false,
+  "warning": "Fixed-coordinate interpolation differs by up to 2 gray levels from the previous OpenCV floating-map path on this photo."
+}

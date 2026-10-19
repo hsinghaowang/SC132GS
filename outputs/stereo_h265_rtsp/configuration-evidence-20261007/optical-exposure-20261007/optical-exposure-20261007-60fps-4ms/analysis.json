@@ -1,0 +1,82 @@
+{
+  "status": "inconclusive",
+  "nominal_exposure_us": 4000.0,
+  "valid_joint_events": 0,
+  "rejected_events": 512,
+  "eyes": [
+    {
+      "eye": 0,
+      "frames": 1807,
+      "sequence_gaps": 0,
+      "measured_receive_fps": 29.984684898816134,
+      "source_peak_tile": 13498,
+      "excluded_clipped_tiles": 11,
+      "roi_tiles": [
+        13224,
+        13225,
+        13226,
+        13360,
+        13495,
+        13496,
+        13632
+      ],
+      "roi_pixel_bounds": [
+        240,
+        768,
+        280,
+        808
+      ],
+      "dark_raw10": 37.0,
+      "light_raw10": 92.28571428571429,
+      "amplitude_raw10": 55.28571428571429,
+      "noise_raw10": 0.16721792393246446,
+      "saturation_fraction": 0.0,
+      "dark_drift_fraction": 0.0,
+      "failures": [
+        "capture_cadence_does_not_match_requested_FPS"
+      ]
+    },
+    {
+      "eye": 1,
+      "frames": 1800,
+      "sequence_gaps": 0,
+      "measured_receive_fps": 30.004008595589745,
+      "source_peak_tile": 13545,
+      "excluded_clipped_tiles": 12,
+      "roi_tiles": [
+        13407,
+        13543,
+        13680,
+        13681,
+        13682,
+        13683
+      ],
+      "roi_pixel_bounds": [
+        632,
+        784,
+        672,
+        824
+      ],
+      "dark_raw10": 37.0,
+      "light_raw10": 123.33333333333333,
+      "amplitude_raw10": 86.33333333333333,
+      "noise_raw10": 0.26341895841115304,
+      "saturation_fraction": 0.0,
+      "dark_drift_fraction": 0.0,
+      "failures": [
+        "capture_cadence_does_not_match_requested_FPS"
+      ]
+    }
+  ],
+  "failed_checks": [
+    "capture_cadence_does_not_match_requested_FPS",
+    "capture_cadence_does_not_match_requested_FPS",
+    "insufficient_joint_partial_events"
+  ],
+  "candidates": [],
+  "estimate": null,
+  "raw_candidate_statistics": null,
+  "calibrated_accuracy_us": null,
+  "exposure_sync_verified": false,
+  "note": "This estimates relative optical exposure timing, not GPIO edge timing or absolute exposure timestamp."
+}

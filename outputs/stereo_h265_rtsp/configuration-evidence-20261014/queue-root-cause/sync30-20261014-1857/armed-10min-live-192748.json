@@ -1,0 +1,21 @@
+{
+  "scope": "partial live observation; not a completed 605-second acceptance",
+  "observed_at": "2026-10-14T19:27:48+08:00",
+  "boot_id": "b0220435-decf-4c94-b1ac-e41ba7bea41a",
+  "module_srcversion": "E06BFE4497044149C75C90A",
+  "pid": 4409,
+  "start_ticks": 16159,
+  "live": true,
+  "session": 6,
+  "locked_mask": 3,
+  "startup_dropped": 2,
+  "pulses": 7705,
+  "skipped": 0,
+  "error": 0,
+  "eyes": {
+    "0": {"frames": 7688, "timestamp_fps": 30.00000003902693,
+          "dequeue_fps": 30.008075915291396, "error_flags": 0},
+    "1": {"frames": 7684, "timestamp_fps": 30.0,
+          "dequeue_fps": 30.00001160336255, "error_flags": 0}
+  }
+}

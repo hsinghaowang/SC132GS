@@ -1,0 +1,31 @@
+{
+  "scope": "OpenVINS native image/IMU estimator replay, CPU baseline, no viewer, no ROS DDS transport, no physical camera or IMU capture",
+  "algorithm_revision": "69488123ed9362dd44b6f28e7f4680abbff1442b",
+  "algorithm_config": "upstream config/euroc_mav; stereo 752x480 at 20 Hz, IMU 200 Hz, num_pts=200 total target, divided to 100 points per camera by pinned implementation, 11 clones, 50 SLAM features, online camera calibration and time offset enabled",
+  "runtime_overrides": {
+    "subscriber_threading": false,
+    "publisher_threading": false,
+    "opencv_threads": 4,
+    "internal_timing_output": true
+  },
+  "initialization": "natural inertial/visual initialization; no ground truth initialization; full sequence from timestamp zero with no initial skip",
+  "paced_policy": "single sequential worker with sleep-until absolute sensor-release schedule; no intentional frame drops; lag measured from scheduled camera timestamp to completion including image load/decode and IMU lookahead; not physical exposure or ROS enqueue latency",
+  "clock_policy": "existing schedutil governor retained, default inherited CPU affinity 0-7; sampled clock frequencies retained; no clock or thermal-policy changes",
+  "background_work": {
+    "MH_01_easy-unpaced-1": "V2 mirror download overlapped",
+    "MH_01_easy-unpaced-2": "V2 mirror download overlapped",
+    "MH_01_easy-unpaced-3": "V2 mirror download overlapped",
+    "MH_01_easy-paced-1": "V2 mirror download and archive hashing overlapped",
+    "MH_01_easy-paced-2": "V2 archive extraction overlapped",
+    "MH_01_easy-paced-3": "no concurrent dataset preparation",
+    "V2_02_medium-all": "no concurrent dataset preparation; estimator runs sequentially"
+  },
+  "limitations": [
+    "MH unpaced results are exploratory throughput under recorded background download",
+    "MH first two paced runs include data preparation load; do not aggregate them with the final paced run as controlled repeats",
+    "other host processes may still exist; host-workload.txt is a snapshot",
+    "fixed offline calibration is EuRoC, not SC132GS/ICM-42688 hardware calibration",
+    "ROS2 active-input background-publisher lifecycle remains untested",
+    "input FPS is not the rate of valid poses before initialization"
+  ]
+}

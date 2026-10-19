@@ -1,0 +1,36 @@
+[  2%] Built target move-handoff-check
+[  5%] Built target fused-raw10-check
+[  7%] Built target raw-processing-benchmark
+[ 10%] Built target capture-buffer-return-check
+[ 16%] Built target stereo-tone-mapper-check
+[ 16%] Built target stereo-detail-mapper-check
+[ 20%] Built target linear-ae-policy-check
+[ 20%] Built target image-processing-plan-check
+[ 22%] Built target depth-mono8-input-check
+[ 27%] Built target stereo-signal-path-check
+[ 30%] Built target stereo_gpu_rectification
+[ 32%] Built target stereo_depth_pipeline
+[ 38%] Built target gs130wi_capture
+[ 41%] Built target optical-raw-capture
+[ 44%] Built target raw-noise-capture
+[ 47%] Built target sc132gs-camera
+[ 51%] Built target depth-precision-benchmark
+[ 57%] Built target tone-depth-replay
+[ 58%] Built target gpu-stereo-rectifier-check
+[ 59%] Linking CXX executable depth-pipeline-check
+[ 61%] Built target kernel-sync-status-check
+[ 62%] Built target stereo-pending-frames-check
+[ 63%] Built target fsync-schedule-check
+[ 66%] Built target sensor-signal-calibration-check
+[ 67%] Built target hdr-ae-policy-check
+[ 69%] Built target camera-configuration-check
+[ 71%] Built target linear-video-luma-check
+[ 72%] Built target depth-pipeline-check
+[ 75%] Built target camera-mode-check
+[ 77%] Built target bayer-luma-check
+[ 80%] Built target raw10-luma-check
+[ 82%] Built target stereo-compose-check
+[ 86%] Built target stereo-capture-check
+[ 88%] Built target gs130wi-capture-probe
+[ 90%] Built target gs130wi-api-check
+[100%] Built target stereo-h265-rtsp

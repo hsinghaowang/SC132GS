@@ -1,0 +1,34 @@
+{
+  "camera_saved": [
+    51,
+    50
+  ],
+  "nearest_selected_driver_stamp_delta_ms": {
+    "p50": 66.906,
+    "p95": 67.52600000000001,
+    "max": 243.072
+  },
+  "camera_selected_rate_hz": [
+    4.9752238825871045,
+    4.962477592894542
+  ],
+  "timestamp_flags": [
+    8193
+  ],
+  "imu": {
+    "status": "ok",
+    "mode": "gpio_irq",
+    "samples": 2631,
+    "valid": 2631,
+    "wraps": 189,
+    "min_sensor_delta_ns": 4999467,
+    "max_sensor_delta_ns": 5000533,
+    "sensor_rate_hz": 200,
+    "host_observed_rate_hz": 202.517,
+    "max_fifo_bytes": 816,
+    "restored": true,
+    "host_sample_time_validated": false
+  },
+  "camera_state_preserved": true,
+  "exposure_and_IMU_sample_synchronization_validated": false
+}

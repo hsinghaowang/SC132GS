@@ -1,0 +1,8312 @@
+[
+  {
+    "elapsed_s": 0.08260484400000223,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1189",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 1.139624842999993,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1220",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 2.2402297910000044,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1253",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 3.3199842690000025,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1286",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 4.431679113000001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1319",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 5.5071672889999945,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1351",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 6.617310205999999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1385",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 7.693108746999997,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1417",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 8.801864006999992,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1450",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 9.877290298999995,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1482",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 10.970602193999994,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1515",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 12.044662548000005,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1547",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 13.146754028000004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1581",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 14.218480051,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1613",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 15.321703694999997,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1646",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 16.39466120499999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1678",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 17.49851443,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1711",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 18.569182501,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1743",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 19.66366608199999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1776",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 20.740385684999993,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1808",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 21.84969373,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1842",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 22.925375650999996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1874",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 24.041332476999997,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1907",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 25.138921011999997,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1940",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 26.21228918,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "1972",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 27.317506245000004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2005",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 28.396672394999996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2038",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 29.458839936000004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2070",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 30.531554835999998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2102",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 31.630367824000004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2135",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 32.700995405,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2167",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 33.78069197399999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2199",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 34.891710171,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2233",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 35.964966104,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2265",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 37.051318929000004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2297",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 38.142084772000004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2331",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 39.209318280999994,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2362",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 40.262322694000005,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2394",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 41.38036824699999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2427",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 42.45069018299999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2459",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 43.56088888399999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2493",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 44.634608239,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2525",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 45.739757232,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2558",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 46.808183,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2590",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 47.877373105000004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2622",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 48.978612763,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2655",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 50.05855747299999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2688",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 51.143975585999996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2721",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 52.190492606999996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2752",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 53.241814250000004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2784",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 54.331973932,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2817",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 55.377263111000005,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2848",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 56.445355344000006,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2879",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 57.521238727999986,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2912",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 58.604132171,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2945",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 59.645909630999995,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "2976",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 60.721545529,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3008",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 61.820845972,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3041",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 62.891920389000006,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3073",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 63.99998526600001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3106",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 65.068496093,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3138",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 66.14587802400001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3171",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 67.20229857999999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3202",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 68.278142877,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3234",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 69.36136076899999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3267",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 70.468560677,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3300",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 71.54568612599999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3332",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 72.660458635,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3366",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 73.734248549,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3398",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 74.84778675199999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3431",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 75.925769409,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3464",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 77.04089248,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3497",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 78.113100341,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3529",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 79.213059999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3563",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 80.283357363,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3595",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 81.392195897,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3628",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 82.490617319,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3661",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 83.56500689999999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3693",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 84.674568551,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3726",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 85.75059158299999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3759",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 86.868849563,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3792",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 87.94569919700001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3824",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 89.06021951400001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3858",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 90.13926479599999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3890",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 91.23477159500001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3923",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 92.306412244,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3955",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 93.40783627900001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "3988",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 94.48532030199999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4021",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 95.59682114699999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4054",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 96.67176167299999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4086",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 97.778725525,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4119",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 98.855068303,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4152",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 99.964761778,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4185",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 101.03563863100001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4217",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 102.13989045599999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4250",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 103.21219673799999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4282",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 104.31723838299999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4316",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 105.394103099,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4348",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 106.51146723900001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4381",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 107.58107836100001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4413",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 108.685267359,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4447",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 109.760026211,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4479",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 110.869565962,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4512",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 111.94288812599999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4544",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 113.040411036,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4577",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 114.11230685199999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4609",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 115.21348830400001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4642",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 116.28734426700001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4675",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 117.398399917,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4708",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 118.486552641,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4741",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 119.53724595899999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4773",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 120.60165495000001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4804",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 121.700995872,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4837",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 122.79272249499999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4869",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 123.90262480499999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4903",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 124.993593347,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4936",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 126.06662642999999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "4968",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 127.17264344399999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5001",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 128.243609595,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5033",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 129.346102534,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5066",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 130.413095964,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5098",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 131.50439504,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5131",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 132.576076712,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5163",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 133.677990289,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5196",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 134.754278134,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5229",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 135.860807437,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5262",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 136.937990542,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5294",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 138.05069189,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5327",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 139.121034231,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5360",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 140.196372704,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5392",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 141.306621306,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5425",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 142.375389436,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5457",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 143.473609263,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5490",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 144.541364274,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5522",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 145.640119192,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5555",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 146.710301915,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5587",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 147.809141144,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5620",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 148.883570495,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5652",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 150.001001866,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5686",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 151.076083004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5718",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 152.183314962,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5751",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 153.258711375,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5784",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 154.372845033,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5817",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 155.446541253,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5850",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 156.5590354,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5883",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 157.637047691,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5915",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 158.745200692,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5948",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 159.819111651,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "5981",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 160.913241011,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6014",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 161.981265366,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6045",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 163.109601169,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6078",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 164.182366897,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6111",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 165.283061546,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6145",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 166.356501517,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6177",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 167.471177949,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6210",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 168.549329069,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6242",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 169.66853402,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6276",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 170.734295677,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6308",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 171.81444186299998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6340",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 172.88738677199999,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6373",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 173.973116605,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6405",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 175.034721045,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6437",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 176.109038679,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6469",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 177.215660897,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6502",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 178.283337969,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6535",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 179.384807922,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6568",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 180.466590619,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6600",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 181.564665225,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6633",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 182.637327841,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6665",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 183.738651936,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6698",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 184.81123924,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6730",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 185.91281775399997,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6763",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 186.984982025,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6796",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 188.09312230700002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6829",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 189.16480519400002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6861",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 190.27435545799997,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6894",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 191.350064613,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6926",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 192.45043224399998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6960",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 193.524032824,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "6992",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 194.622989425,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7025",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 195.69930242,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7057",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 196.808907206,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7090",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 197.86537512099997,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7122",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 198.93531625199998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7154",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 200.04857736300002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7187",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 201.122287983,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7220",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 202.22990199400002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7253",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 203.300000982,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7285",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 204.38334646500002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7317",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 205.462048575,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7350",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 206.578998214,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7383",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 207.650071721,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7416",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 208.754400297,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7449",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 209.82899752400002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7481",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 210.93228438399998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7514",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 212.002972546,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7546",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 213.108495224,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7579",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 214.183714987,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7612",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 215.2886278,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7645",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 216.36504239500002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7677",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 217.469045808,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7710",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 218.53763992600003,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7742",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 219.607581989,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7774",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 220.67981921499998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7806",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 221.786249094,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7840",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 222.856306192,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7872",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 223.956520079,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7905",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 225.02743318600002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7937",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 226.139158305,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "7970",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 227.207939241,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8002",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 228.27838398600002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8034",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 229.386395385,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8068",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 230.459978377,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8100",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 231.55727670899998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8133",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 232.623717034,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8165",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 233.72111418300003,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8198",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 234.79299593300001,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8230",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 235.898434982,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8263",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 236.97484269999998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8295",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 238.044152761,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8327",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 239.119367014,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8360",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 240.255599591,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8393",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 241.32361616,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8426",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 242.40006911499998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8458",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 243.50485784499998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8491",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 244.57773789,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8523",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 245.68169491199998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8556",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 246.755258479,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8589",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 247.849817376,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8622",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 248.91549143400002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8654",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 249.99587353500002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8686",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 251.110974267,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8719",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 252.180698363,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8751",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 253.278718388,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8784",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 254.35451038099998,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8817",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 255.452775801,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8850",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 256.52359968300004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8882",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 257.625885638,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8915",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 258.686243743,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8947",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 259.813033002,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "8980",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 260.953836303,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9013",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 262.02679589800005,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9047",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 263.10137011300003,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9079",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 264.207392702,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9112",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 265.273063501,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9144",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 266.34563653600003,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9176",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 267.445970353,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9210",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 268.51277069800005,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9241",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 269.61306026700004,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9274",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 270.68739550199996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9306",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 271.753720208,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9339",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 272.83855543699997,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9372",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 273.912228316,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9403",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 275.00941913199995,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9436",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 276.07952646399997,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9468",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 277.18045686899995,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9501",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 278.253763068,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9533",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 279.360485733,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9567",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 280.42970300699994,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9599",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 281.528355044,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9632",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 282.60268844300003,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9664",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 283.71245905399996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9697",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 284.794395356,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9730",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 285.90558876800003,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9763",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 286.976264182,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9795",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 288.07942925400005,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9828",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 289.157334816,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9861",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 290.26590610899996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9894",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 291.339861177,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9926",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 292.45024796999996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9959",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 293.528174646,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "9992",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 294.63923758399994,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "10025",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 295.709903509,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "10057",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 296.80906655499996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "10090",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 297.87376363199996,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "10122",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 298.975891219,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "10155",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  },
+  {
+    "elapsed_s": 300.04205978899995,
+    "control": {
+      "abi": "4",
+      "timestamp_offset_ns": "344903",
+      "trigger_hz": "30",
+      "frame_step": "1",
+      "locked_mask": "3",
+      "startup_dropped": "2",
+      "startup_end0": "1",
+      "startup_end1": "1",
+      "node0": "0",
+      "node1": "3",
+      "mode": "2",
+      "running": "1",
+      "session": "1",
+      "pulses": "10187",
+      "skipped": "0",
+      "cpu": "7",
+      "worker_cpu": "0",
+      "error": "0",
+      "error_count": "0",
+      "source": "exposure_start_estimate"
+    },
+    "service": {
+      "MainPID": "2799",
+      "NRestarts": "0",
+      "ActiveState": "active"
+    }
+  }
+]

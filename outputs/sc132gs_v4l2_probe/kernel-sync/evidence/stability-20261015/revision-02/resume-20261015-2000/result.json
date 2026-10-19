@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-10-15T12:02:00.887279+00:00",
+  "status": "awaiting_owner_selection",
+  "tests_started": false,
+  "boot_id": "c5c9582b-15bc-42d1-a61a-976a368933fd",
+  "module_srcversion": "C243ABE8CAC3FA872B2A08C",
+  "camera_owner": "stereo-gpu-live.service / board-live-depth PID 20183",
+  "original_rtsp_active": false,
+  "paused_archive": "/home/ubuntu/sc132gs-stability-20261015/revision-02/paused-20261015-1847.tar.gz",
+  "paused_archive_sha256": "a29e8769e2b4bfec9b1bef053ff8d28ecf7206cb2f4568b826806c3a80fa7c3e",
+  "reason": "A different live depth owner holds both camera nodes; no owner was stopped or changed."
+}

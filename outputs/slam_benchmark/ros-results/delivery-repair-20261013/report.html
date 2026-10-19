@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>RUBIK Pi 3 IMU 傳輸修正</title>
+<style>body{font:16px/1.65 system-ui,sans-serif;max-width:1100px;margin:32px auto;padding:0 24px;color:#16263b}table{border-collapse:collapse;width:100%;margin:18px 0}td,th{padding:9px;border-bottom:1px solid #dce3eb;text-align:right}td:first-child,th:first-child{text-align:left}th{background:#edf4fb}.note{background:#f3f6fa;padding:16px;border-radius:8px}a{color:#1753bb}</style>
+<h1>RUBIK Pi 3：提前解碼的 IMU 傳輸修正</h1><p>2026-10-13。Fast DDS 2.6.12／ROS Humble。演算法、估測器 binary、YAML、發布器 binary 與 topic QoS 保持相同，針對 DDS 共用記憶體容量做單一變因對照。</p>
+<div class="note">4 MiB 容量的四次完整回放均零漏收、初始化後位姿涵蓋率 100%。延遲是<strong>提前解碼管線的影格排程到 stock 位姿接收</strong>；先前原版延遲包含排程後 PNG 解碼，量測範圍不同，且並非本輪同期延遲對照。不能將差額當成演算法加速，實體曝光到位姿仍未驗證。</div>
+<table><tr><th>資料集</th><th>原 PNG 路徑 P95 ms</th><th>已解碼回放 P95 ms</th><th>已解碼最大 ms</th><th>ATE cm</th></tr>
+<tr><td>MH_01_easy</td><td>78.5</td><td>48.8–49.5</td><td>86.4–97.7</td><td>12.004–12.004</td></tr>
+<tr><td>V2_02_medium</td><td>77.9</td><td>56.5–57.2</td><td>77.6–82.2</td><td>5.526–5.526</td></tr>
+</table><h2>完整回放驗證</h2><table><tr><th>回放</th><th>影像對／IMU</th><th>漏收</th><th>P95／P99／最大 ms</th><th>ATE cm</th><th>初始化後位姿</th></tr>
+<tr><td>MH_01_easy-paced-delivery-shm4m-1</td><td>3682／36820</td><td>0</td><td>49.5／62.2／86.4</td><td>12.004</td><td>100%</td></tr>
+<tr><td>V2_02_medium-paced-delivery-shm4m-1</td><td>2348／23490</td><td>0</td><td>57.2／68.4／77.6</td><td>5.526</td><td>100%</td></tr>
+<tr><td>V2_02_medium-paced-delivery-shm4m-2</td><td>2348／23490</td><td>0</td><td>56.5／67.3／82.2</td><td>5.526</td><td>100%</td></tr>
+<tr><td>MH_01_easy-paced-delivery-shm4m-2</td><td>3682／36820</td><td>0</td><td>48.8／60.3／97.7</td><td>12.004</td><td>100%</td></tr>
+</table><h2>CPU 使用量</h2><table><tr><th>資料集</th><th>估測器 CPU %</th><th>發布器＋位姿接收 CPU %</th></tr>
+<tr><td>MH_01_easy</td><td>117.5–129.8</td><td>56.5–67.2</td></tr>
+<tr><td>V2_02_medium</td><td>139.5–142.6</td><td>52.2–56.3</td></tr>
+</table><p>CPU 100% 代表一個邏輯核心，平均包含啟動、回放與收尾。發布器數據包含 PNG 提前解碼工作者，解碼成本仍存在。程序 peak RSS 不是各角色記憶體總和，完整資源與 /proc 抽樣見 comparison.json／full-load.jsonl。</p>
+<h2>容量對照與反向驗證</h2><p>600 對影像短測試：預設容量漏收 62 筆 IMU、明確 512 KiB 漏收 78 筆、4 MiB 零漏收。完整修正測試之後再改回 512 KiB，完整性檢查器回傳錯誤碼 4；4 MiB 回傳 0，證明正常退出不再被當作零漏收。新入口只對本次程序設定 DDS profile，不修改系統或其他工作的 DDS 環境。</p>
+<p>容器實際 IPC namespace 觀測到三個約 4 MiB 的 SHM 區段，設定確實生效。兩份 XML 除 segment_size 外相同。官方文件提醒太小的 segment 可能導致資料遺失；本次容量介入及反向對照支持傳輸容量原因，但沒有直接捕獲內部覆寫事件。<a href="https://fast-dds.docs.eprosima.com/en/v2.6.11/fastdds/transport/shared_memory/shared_memory.html">Fast DDS 說明</a>。</p>
+<p>獨立 DDS 接收驗證：120 對影像逐像素與全部 IMU 數值通過。四次完整回放的來源事件種類／索引／時間戳順序 SHA-256 與原對照相同。ATE 使用 stock 位姿的校正後 IMU stamp 對真值；全段位姿涵蓋率與初始化前缺口仍應看 comparison.json。</p>
+<h2>板上狀態</h2><p>使用者已暫停其他測試；開始與結束相機服務均 inactive，沒有本工作啟停串流。保存的相機設定／runtime state 雜湊相同，維持使用者原暫停狀態。相機、FSYNC 與編譯程序在四次完整回放監測中均未出現。</p>
+<p><a href="comparison.json">完整分段／對照</a> · <a href="provenance.json">受測執行檔與設定</a> · <a href="gate-validation.json">失敗／成功完整性檢查</a> · <a href="../prefetch-comparison-20261013/report.html">先前失敗候選</a> · <a href="../publisher-comparison-20261013/report.html">原發布器同期比較</a></p></html>

@@ -1,0 +1,19 @@
+{
+  "returncode": 0,
+  "summary": {
+    "status": "ok",
+    "mode": "gpio_irq",
+    "samples": 6069,
+    "valid": 6069,
+    "wraps": 434,
+    "min_sensor_delta_ns": 4999467,
+    "max_sensor_delta_ns": 5000533,
+    "sensor_rate_hz": 200,
+    "host_observed_rate_hz": 202.494,
+    "max_fifo_bytes": 176,
+    "restored": true,
+    "host_sample_time_validated": false
+  },
+  "camera_saved_state_unchanged": true,
+  "imu_binary_sha256": "8a732507cc3e6a6feb58f51dc1c2c332a88af688ac678736fa6b99873452fe84"
+}

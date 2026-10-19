@@ -1,0 +1,106 @@
+{
+  "status": "captured",
+  "output": "/home/ubuntu/sc132gs-camera-tests/optical-exposure-20261007-60fps-4ms-verified",
+  "leds": [
+    {
+      "path": "/sys/class/leds/red",
+      "brightness": "0",
+      "trigger": "none"
+    },
+    {
+      "path": "/sys/class/leds/green",
+      "brightness": "0",
+      "trigger": "heartbeat"
+    },
+    {
+      "path": "/sys/class/leds/blue",
+      "brightness": "0",
+      "trigger": "none"
+    }
+  ],
+  "timestamp_semantics": "receiver completion; LED writes are software diagnostics, not measured light edges",
+  "estimate_semantics": "conditional optical integration model; uncalibrated",
+  "saved_sha256_before": {
+    "yaml": "63bb800adc70b211691fbee976d2ba37685e8094ecbe34849fdb24ec0943b370",
+    "runtime": "9b5e81da2631dcc2fbb3cb6820050d834b6896b2bfd312e9f453be8c566a3f26"
+  },
+  "before": {
+    "sensor_mode": "linear",
+    "binning": 0,
+    "max_fps": 60,
+    "fps": 60,
+    "ae": 1,
+    "brightness": 40,
+    "width": 1088,
+    "height": 1280,
+    "measured_fps_x10": 599,
+    "exposure_rows": 1330,
+    "gain_index": 128,
+    "exposure_ceiling_rows": 1330,
+    "limited": 1,
+    "control_error": 0,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 43,
+    "native_target": 17
+  },
+  "test": {
+    "mode": "linear",
+    "binning": 0,
+    "max_fps": 60,
+    "fps": 60,
+    "ae": 0,
+    "brightness": 40,
+    "rows": 336,
+    "gain": 0,
+    "max_exposure_us": 0,
+    "max_gain_index": 128
+  },
+  "requested_duration_seconds": 60,
+  "nominal_exposure_us": 4000.0,
+  "devices": [
+    "/dev/video0",
+    "/dev/video3"
+  ],
+  "post_stream_high_rate_profile_applied": true,
+  "controls": [
+    {
+      "exposure": 336,
+      "wide_dynamic_range": 0,
+      "analogue_gain": 0
+    },
+    {
+      "exposure": 336,
+      "wide_dynamic_range": 0,
+      "analogue_gain": 0
+    }
+  ],
+  "restore_attempts": [
+    {
+      "attempt": 1,
+      "success": true
+    }
+  ],
+  "restored": true,
+  "after": {
+    "sensor_mode": "linear",
+    "binning": 0,
+    "max_fps": 60,
+    "fps": 60,
+    "ae": 1,
+    "brightness": 40,
+    "width": 1088,
+    "height": 1280,
+    "measured_fps_x10": 598,
+    "exposure_rows": 1330,
+    "gain_index": 128,
+    "exposure_ceiling_rows": 1330,
+    "limited": 1,
+    "control_error": 0,
+    "max_exposure_us": 0,
+    "max_gain_index": 128,
+    "revision": 43,
+    "native_target": 17
+  },
+  "restore_errors": []
+}

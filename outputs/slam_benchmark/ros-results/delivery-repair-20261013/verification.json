@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "raw_files_verified": 162,
+  "frozen_experiment_sources_verified": 12,
+  "input_gate_sources_verified": 4,
+  "report_relative_links_passed": true,
+  "capacity_single_variable": true,
+  "original_camera_off_state_preserved": true,
+  "source_sha256": {
+    "analyze-delivery-repair.py": "9d7d11ab332da1c6384f4c291682faa0b0d0305e66f79caa2e1f94b26f562f4f",
+    "finalize-delivery-repair.py": "35bbf14cf7ef122d7a161416f380143147fc32be31cbac02635cb3ee0fbd8904",
+    "analyze-ros-replay.py": "a600e220a71b552e028bba77b386602a7f33505af4d7aef99f66e7fb66884613"
+  }
+}

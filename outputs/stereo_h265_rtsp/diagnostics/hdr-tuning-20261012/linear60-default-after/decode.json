@@ -1,0 +1,26 @@
+{
+  "viewer": "Windows/PyAV",
+  "codec": "HEVC",
+  "decoded_frames": 422,
+  "width": 2176,
+  "height": 1280,
+  "format": "yuv420p10le",
+  "pts_fps": 52.62375749461472,
+  "wall_seconds": 8.688000000023749,
+  "sampled_unique_frames": 14,
+  "channel_extrema": [
+    [
+      1,
+      255
+    ],
+    [
+      1,
+      255
+    ],
+    [
+      1,
+      255
+    ]
+  ],
+  "passed": false
+}

@@ -1,0 +1,17 @@
+{
+  "candidates": [
+    {
+      "eye": 0,
+      "mean_SOF_minus_Y_ns": 16737167.404542996,
+      "SOF_minus_Y_minus_nominal_B_ns": 344310.26168585196
+    },
+    {
+      "eye": 1,
+      "mean_SOF_minus_Y_ns": 16738353.590048676,
+      "SOF_minus_Y_minus_nominal_B_ns": 345496.4471915327
+    }
+  ],
+  "applied": false,
+  "assumption": "SOF coincides with exposure end; unverified",
+  "independent_replay_agrees": true
+}
